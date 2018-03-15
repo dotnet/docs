@@ -66,6 +66,7 @@
 #### [How to: Customize a Time-Based Cache Policy](how-to-customize-a-time-based-cache-policy.md)
 #### [How to: Set Cache Policy for a Request](how-to-set-cache-policy-for-a-request.md)
 ## [Security in Network Programming](security-in-network-programming.md)
+### [Transport Layer Security (TLS) best practices](tls.md)
 ### [Using Secure Sockets Layer](using-secure-sockets-layer.md)
 #### [Certificate Selection and Validation](certificate-selection-and-validation.md)
 ### [Internet Authentication](internet-authentication.md)

@@ -31,7 +31,7 @@
     <!--</SnippetXMLDataProvider>-->
 
     <!--<SnippetHierarchicalDataTemplate>-->
-    <HierarchicalDataTemplate DataType="EmployeeInfo" 
+    <HierarchicalDataTemplate x:Key="SampleTemplate" DataType="EmployeeInfo" 
       ItemsSource ="{Binding XPath=EmployeeWorkDay}">
       <TextBlock Text="{Binding XPath=EmployeeName}" />
     </HierarchicalDataTemplate>
@@ -58,6 +58,7 @@
     </TextBlock>
     <!--<SnippetSelectedValuePath>-->
     <TreeView ItemsSource="{Binding Source={StaticResource myEmployeeData}, 
+        ItemTemplate={StaticResource SampleTemplate},
         XPath=EmployeeInfo}" 
         Name="myTreeView" 
         SelectedValuePath="EmployeeNumber" 

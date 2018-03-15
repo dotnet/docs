@@ -1213,7 +1213,7 @@ FieldName = @OriginalFieldName
   
  If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider tries to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
   
- Both the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> and <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> properties can be inferred by setting the <xref:System.Data.SqlClient.SqlParameter.Value%2A>.  
+ Both the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> and <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> properties can be inferred by setting the <xref:System.Data.SqlClient.SqlParameter.Value%2A?displayProperty=nameWithType>.  
   
  The <xref:System.Data.SqlClient.SqlParameter.Value%2A?displayProperty=nameWithType> property is overwritten by `SqlDataAdapter.UpdateCommand`.  
   

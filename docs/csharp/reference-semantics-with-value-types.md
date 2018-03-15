@@ -35,7 +35,7 @@ edit the *csproj* file and add the following node:
 
 You can use either "7.2" or "latest" for the value.
 
-## Specifying `in` parameters
+## Passing arguments by readonly reference
 
 C# 7.2 adds the `in` keyword to complement the existing `ref`
 and `out` keywords when you write a method that passes arguments
@@ -89,15 +89,33 @@ There are several ways in which the compiler ensures that the read-only
 nature of an `in` argument is enforced.  First of all, the called method
 can't directly assign to an `in` parameter. It can't directly assign
 to any field of an `in` parameter. In addition, you cannot pass
-an `in` parameter to any method demanding the `ref` or `out` modifier.
-The compiler enforces that the `in` argument is a readonly variable. You
-can call any instance method that uses pass-by-value semantics. In
+an `in` parameter to any method using the `ref` or `out` modifier.
+The compiler enforces that the `in` argument is a readonly variable.
+
+The use of `in` parameters is to avoid the potential performance costs
+of copies. It does not change the semantics of any method call. Therefore,
+you do not need to specify the `in` modifier at the call site. However,
+omitting the `in` modifier at the call site informs the compiler that it is
+allowed to make a copy of the argument for the following reasons:
+
+- There is an implicit conversion but not an identity conversion from the argument type to the parameter type.
+- The argument is an expression but does not have a known storage variable.
+- An overload exists that differs by the presence or absence of `in`. In that case, the by value overload is a better match.
+
+These rules are useful as you update existing code to use readonly
+reference arguments. Inside the called method, you can call any instance
+method that uses by value parameters. In
 those instances, a copy of the `in` parameter is created. Because the compiler
 can create a temporary variable for any `in` parameter, you can also specify default
 values for any `in` parameter. The follow code uses that to specify the origin
 (point 0,0) as the default value for the second point:
 
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
+
+To force the compiler to pass readonly arguments by reference, specify the `in` modifer
+on the arguments at the callsite, as shown in the following code:
+
+[!code-csharp[UseInArgument](../../samples/csharp/reference-semantics/Program.cs#ExplicitInArgument "Specifying an In argument")]
 
 The `in` parameter designation can also be used with reference types or built in
 numeric values. However, the benefits in both cases are minimal, if any.

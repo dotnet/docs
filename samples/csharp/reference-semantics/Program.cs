@@ -12,17 +12,34 @@ namespace reference_semantics
 #region UseInArgument
             var distance = CalculateDistance(pt1, pt2);
             var fromOrigin = CalculateDistance(pt1, new Point3D());
-#endregion
+            #endregion
+
+            #region ExplicitInArgument
+            distance = CalculateDistance(in pt1, in pt2);
+            distance = CalculateDistance(in pt1, new Point3D());
+            distance = CalculateDistance(pt1, in Point3D.Origin);
+            #endregion
+
             fromOrigin = CalculateDistance2(pt1);
 
-
-#region AssignRefReadonly
+            #region AssignRefReadonly
             var originValue = Point3D.Origin;
             ref readonly var originReference = ref Point3D.Origin;
 #endregion
         }
 
-#region InArgument
+        #region ByValue
+        private static double CalculateDistance(Point3D point1, Point3D point2)
+        {
+            double xDifference = point1.X - point2.X;
+            double yDifference = point1.Y - point2.Y;
+            double zDifference = point1.Z - point2.Z;
+
+            return Math.Sqrt(xDifference * xDifference + yDifference * yDifference + zDifference * zDifference);
+        }
+        #endregion
+
+        #region InArgument
         private static double CalculateDistance(in Point3D point1, in Point3D point2)
         {
             double xDifference = point1.X - point2.X;

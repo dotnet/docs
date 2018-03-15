@@ -18,7 +18,7 @@ The `in` keyword causes arguments to be passed by reference. It is like the [ref
 
 [!code-csharp-interactive[cs-in-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/InParameterModifier.cs#1)]  
 
-The preceding example demonstrates that the `in` modifier is unnecessary at the call site. It is only required in the method declaration.
+The preceding example demonstrates that the `in` modifier is usually unnecessary at the call site. It is only required in the method declaration.
 
 > [!NOTE] 
 > The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md) which provides links to all those uses.
@@ -37,36 +37,90 @@ class CS0663_Example
 }
 ```
   
-Overloading based on the presence of `in` is allowed, but generates a compiler warning:  
+Overloading based on the presence of `in` is allowed:  
   
 ```csharp
 class InOverloads
 {
-    // Discouraged. Calling SampleMethod(value) is ambiguous.
     public void SampleMethod(in int i) { }
     public void SampleMethod(int i) { }
 }
 ```
 
-Properties or constants may be passed as `in` parameters, because the calling method may not modify their values.
-  
+## Overload resolution rules
+
+You can most easily understand the overload resolution rules for methods with by value vs. `in` arguments like the previous example methods through understanding the motivation for `in` arguments. Defining methodss using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. 
+
+Specifying `in` on arguments at the call site is typically optional because the `in` modifier does not allow the value of the argument to be modified. You would explicitly add the `in` modifier at the callsite to ensure the argument is passed by reference, not by value. Explicitly using `in` has two effects:
+
+First, specifying `in` at the call site forces selection of a method defined with a matching `in` argument. Otherwise, when two methods differ only in the presence of `in`, the by value overload is a better match.
+
+Second, specifying `in` declares your intent to pass an argument by reference. The argument used with `in` must represent a location that can be directly referred to. The same general rules for `out` and `ref` arguments apply: You cannot use constants, properties or other expressions. Omitting `in` at the callsite informs the compiler that you will allow the compiler to create a temporary variable to pass by read only reference to the method. Enabling the compiler to create a temporary has several implications:
+
+- You can pass compile time constants as `in` parameters.
+- You can pass properties, or other expressions expressions for `in` parameters.
+- You can pass arguments where there is an implicit conversion from the argument to the parameter type.
+
+The following code illustrates these rules using this method:
+
+```csharp
+static void Method(in int argument)
+{
+    // implementation removed
+}
+
+Method(5); // OK, temporary variable created.
+Method(5L); // CS1503: no implicit conversion from long to int
+short s = 0;
+Method(s); // OK, temporary int created with the value 0
+Method(in s); // CS1503: cannot convert from in short to in int
+int i = 42;
+Method(i); // passed by readonly reference
+Method(in i); // passed by readonly reference, explicitly using `in`
+```
+
+Now, suppose another method using by value arguments was available, the results change as shown in the following code:
+
+```csharp
+static void Method(int argument)
+{
+    // implementation removed
+}
+
+static void Method(in int argument)
+{
+    // implementation removed
+}
+
+Method(5); // Calls overload passed by value
+Method(5L); // CS1503: no implicit conversion from long to int
+short s = 0;
+Method(s); // Calls overload passed by value, creates a temporary int with the value 0
+Method(in s); // CS1503: cannot convert from in short to in int
+int i = 42;
+Method(i); // Calls overload passed by value
+Method(in i); // passed by readonly reference, explicitly using `in`
+```
+
+The only method call where the argument is passed by reference is the final argument.
+
+> [!NOTE]
+> The preceding code uses `int` as the argument type for simplicity. Because `int` is no larger than a reference in most modern machines, there is no benefit to passing a single `int` as a readonly reference. 
+
+## Limitations on `in` parameters
+
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
-- Async methods, which you define by using the [async](../../../csharp/language-reference/keywords/async.md) modifier.  
-  
-- Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
+- Async methods, which you define by using the [async](async.md) modifier.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
 
-You typically declare `in` arguments to avoid the copy operations necessary for passing arguments by value. This is most useful when arguments are value types such as structures where copy operations are more expensive than passing by reference.
-
-> [!WARNING]
->  `in` parameters can be even more expensive if misused. The compiler may not know if member methods modify the state of the struct. Whenever the compiler cannot ensure that the object is not modified, it defensively creates a copy and calls member references using that copy. Any possible modifications are to that defensive copy. The two ways to avoid these copies are to pass `in` parameters as `in` arguments or to define structures as `readonly struct`.
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
- [C# Reference](../../../csharp/language-reference/index.md)  
- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
- [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)  
- [Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)
+ [C# Reference](../index.md)  
+ [C# Programming Guide](../../programming-guide/index.md)  
+ [C# Keywords](index.md)  
+ [Method Parameters](method-parameters.md)
+ [Reference Semantics with Value Types](../../reference-semantics-with-value-types.md)

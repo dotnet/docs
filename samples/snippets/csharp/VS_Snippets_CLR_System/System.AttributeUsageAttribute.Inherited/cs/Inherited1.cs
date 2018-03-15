@@ -42,19 +42,19 @@ public class Example
                         memberA.GetCustomAttributes(typeof(InheritedAttribute), true).Length > 0); 
       
       Type typeB = typeof(DerivedB);
-      Console.WriteLine("DerivedB has Inherited attribute: {0}", 
-                        typeB.GetCustomAttributes(typeof(InheritedAttribute), true).Length > 0); 
+      Console.WriteLine("DerivedB has NotInherited attribute: {0}", 
+                        typeB.GetCustomAttributes(typeof(NotInheritedAttribute), true).Length > 0); 
       MethodInfo memberB = typeB.GetMethod("MethodB");
-      Console.WriteLine("DerivedB.MemberB has Inherited attribute: {0}", 
-                        memberB.GetCustomAttributes(typeof(InheritedAttribute), true).Length > 0); 
+      Console.WriteLine("DerivedB.MemberB has NotInherited attribute: {0}", 
+                        memberB.GetCustomAttributes(typeof(NotInheritedAttribute), true).Length > 0); 
    }
 }
 // The example displays the following output:
 //       DerivedA has Inherited attribute: True
 //       DerivedA.MemberA has Inherited attribute: True
 //       
-//       DerivedB has Inherited attribute: False
-//       DerivedB.MemberB has Inherited attribute: False
+//       DerivedB has NotInherited attribute: False
+//       DerivedB.MemberB has NotInherited attribute: False
 // </Snippet2>
 
 // <Snippet1>

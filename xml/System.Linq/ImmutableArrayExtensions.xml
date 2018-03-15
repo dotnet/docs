@@ -991,11 +991,12 @@
       </Parameters>
       <Docs>
         <typeparam name="T">The type of element contained by the collection.</typeparam>
-        <param name="immutableArray">To be added.</param>
+        <param name="immutableArray">The array.</param>
         <summary>  
   
  Returns the only element of the array, or a default value if the sequence is empty; this method throws an exception if there is more than one element in the sequence.</summary>
         <returns>The element in the array, or the default value if the array is empty.</returns>
+        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> contains more than one element.</exception>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1029,6 +1030,7 @@
  Returns the only element of a sequence that satisfies a specified condition or a default value if no such element exists; this method throws an exception if more than one element satisfies the condition.</summary>
         <returns>The element if it satisfies the specified condition; otherwise the default element.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">More than one element satisfies the condition in <paramref name="predicate" />. </exception>
       </Docs>
     </Member>
     <Member MemberName="ToArray&lt;T&gt;">

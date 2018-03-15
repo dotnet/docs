@@ -6740,6 +6740,7 @@
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is a null reference (Nothing in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException"><paramref name="source" /> has more than one element. </exception>
         <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
       </Docs>
     </Member>

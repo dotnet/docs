@@ -51,6 +51,8 @@ If you can't avoid hardcoding a protocol version, we strongly recommend that you
 
 WCF Supports TLS1.0, 1.1 and 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
 
+You can ask questions about this document in the GitHub issue [Transport Layer Security (TLS) best practices with the .NET Framework](https://github.com/dotnet/docs/issues/4675).
+
 ## Audit your code and make code changes
 
 For ASP.NET applications, inspect the `<system.web><httpRuntime targetFramework>` element of _web.config_ to verify you're using the intended version of the .NET Framework.

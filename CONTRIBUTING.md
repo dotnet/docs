@@ -13,10 +13,20 @@ The document covers the process for contributing to the articles and code sample
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
-**Step 1:** Skip this step for small changes. Open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do, such as change an existing article or create a new one.
+**Step 1:** Skip this step for small changes. If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
 The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
 
-You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution.
+-or-
+
+You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for commmunity contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
+
+- **Maintenance**. This category includes fairly simple contributions, such as fixing broken or incorrect links, adding missing code examples, or addressing limited content issues. In some cases, these issues may concern large numbers of files. In that case, you should let us know what you'd like to work on before you begin.
+
+- **Content updates**. Given the enormity of the doc set, content easily becomes outdated and requires revision. In addition, for a variety of reason, some content has been duplicated or even triplicated. Updating content involves making sure that individual topics are current or revising content in a feature area to eliminate duplication and ensure that all unique content is preserved in the smaller documentation set.
+
+- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue. 
+
+You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
 
 **Step 2:** Fork the `/dotnet/docs` repo and create a branch for your changes.
 

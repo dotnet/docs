@@ -50,6 +50,11 @@
   
      To address this exception, access the methods defined in the DLL by using the features provided by your development language, such as the `Declare` statement in Visual Basic or the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute with the `extern` keyword in C#.  
   
+- You are attempting to load a reference assembly a context other than the reflection-only context. You can address this issue in either of two ways:
+
+   - You can load the implementation assembly rather than the reference assembly.
+   - You can load the reference assembly in the reflection-only context by calling the <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> method.
+   
 -   A DLL or executable is loaded as a 64-bit assembly, but it contains 32-bit features or resources. For example, it relies on COM interop or calls methods in a 32-bit dynamic link library.  
   
      To address this exception, set the project's **Platform target** property to x86 (instead of x64 or AnyCPU) and recompile.  

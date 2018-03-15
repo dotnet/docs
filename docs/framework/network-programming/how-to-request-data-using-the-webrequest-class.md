@@ -88,7 +88,7 @@ The following procedure describes the steps used to request a resource from a se
 5.  To get the stream containing response data sent by the server, use the <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method of the **WebResponse**.  
   
     ```csharp  
-    Stream dataStream = response.GetResponseStream ();  
+    Stream dataStream = response.GetResponseStream();  
     ```  
   
     ```vb  

@@ -1,6 +1,6 @@
 ---
 title: "new Operator (C# Reference)"
-ms.date: 07/20/2015
+ms.date: 03/15/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -15,26 +15,26 @@ ms.author: "wiwagn"
 # new Operator (C# Reference)
 Used to create objects and invoke constructors. For example:  
   
-```  
+```csharp
 Class1 obj  = new Class1();  
 ```  
   
  It is also used to create instances of anonymous types:  
   
-```  
+```csharp
 var query = from cust in customers  
-            select new {Name = cust.Name, Address = cust.PrimaryAddress};  
+            select new { Name = cust.Name, Address = cust.PrimaryAddress };  
 ```  
   
  The `new` operator is also used to invoke the default constructor for value types. For example:  
   
-```  
+```csharp
 int i = new int();  
 ```  
   
  In the preceding statement, `i` is initialized to `0`, which is the default value for the type `int`. The statement has the same effect as the following:  
   
-```  
+```csharp
 int i = 0;  
 ```  
   
@@ -51,7 +51,7 @@ int i = 0;
 ## Example  
  In the following example, a `struct` object and a class object are created and initialized by using the `new` operator and then assigned values. The default and the assigned values are displayed.  
   
- [!code-csharp[csrefKeywordsOperator#7](../../../csharp/language-reference/keywords/codesnippet/CSharp/new-operator_1.cs)]  
+ [!code-csharp[csrefKeywordsOperator#7](codesnippet/CSharp/new-operator_1.cs)]  
   
  Notice in the example that the default value of a string is `null`. Therefore, it is not displayed.  
   

@@ -8066,6 +8066,8 @@ From i As Integer In objects
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          More than one element satisfies the condition in <paramref name="predicate" />. </exception>    
       </Docs>
     </Member>
     <Member MemberName="Skip&lt;TSource&gt;">

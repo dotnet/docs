@@ -22,13 +22,13 @@ ms.workload:
 # How to: Authenticate with a User Name and Password
 This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
   
- To configure a service to authenticate its clients using Windows Domain username and passwords use the <!--zz xref:System.ServiceModel.WsHttpBinding --> `<xref:System.ServiceModel.WsHttpBinding>` and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.  
+ To configure a service to authenticate its clients using Windows Domain username and passwords use the `<xref:System.ServiceModel.WSHttpBinding%2A>` and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.  
   
  On the client, you must prompt the user for the username and password and specify the user’s credentials on the WCF client proxy.  
   
 ### To configure a WCF service to authenticate using Windows domain username and password.  
   
-1.  Create an instance of the <!--zz xref:System.ServiceModel.WsHttpBinding --> `<xref:System.ServiceModel.WsHttpBinding>`, set the security mode of the binding to `SecurityMode.Message`, set the `ClientCredentialType` of the binding to `MessageCredentialType.UserName`, and add a service endpoint using the configured binding to the service host as shown in the following code:  
+1.  Create an instance of the `<xref:System.ServiceModel.WSHttpBinding%2A>`, set the security mode of the binding to `SecurityMode.Message`, set the `ClientCredentialType` of the binding to `MessageCredentialType.UserName`, and add a service endpoint using the configured binding to the service host as shown in the following code:  
   
     ```  
     // ...  
@@ -90,7 +90,7 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
     ```  
   
 ## See Also  
- <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`>  
+ <xref:System.ServiceModel.WSHttpBinding%2A>  
  <xref:System.ServiceModel.WSHttpSecurity>  
  <xref:System.ServiceModel.SecurityMode>  
  <xref:System.ServiceModel.Security.UserNamePasswordClientCredential.UserName%2A>  

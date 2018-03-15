@@ -1209,15 +1209,15 @@ FieldName = @OriginalFieldName
 ## Remarks  
  For input parameters, the value is bound to the <xref:System.Data.SqlClient.SqlCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.SqlClient.SqlCommand> and after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
   
- This property can be set to null or <xref:System.DBNull.Value>. Use <xref:System.DBNull.Value> to send a NULL value as the value of the parameter. Use null or do not set <xref:System.Data.SqlClient.SqlParameter.SqlValue%2A> to use the default value for the parameter.  
+ This property can be set to null or <xref:System.DBNull.Value?displayProperty=nameWithType>. Use <xref:System.DBNull.Value?displayProperty=nameWithType> to send a NULL value as the value of the parameter. Use null or do not set <xref:System.Data.SqlClient.SqlParameter.SqlValue%2A?displayProperty=nameWithType> to use the default value for the parameter.  
   
  If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider tries to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
   
- Both the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> and <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> properties can be inferred by setting the <xref:System.Data.SqlClient.SqlParameter.Value%2A>.  
+ Both the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> and <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> properties can be inferred by setting the <xref:System.Data.SqlClient.SqlParameter.Value%2A?displayProperty=nameWithType>.  
   
- The <xref:System.Data.SqlClient.SqlParameter.Value%2A> property is overwritten by `SqlDataAdapter.UpdateCommand`.  
+ The <xref:System.Data.SqlClient.SqlParameter.Value%2A?displayProperty=nameWithType> property is overwritten by `SqlDataAdapter.UpdateCommand`.  
   
- Use the <xref:System.Data.SqlClient.SqlParameter.Value%2A> property to return parameter values as common language runtime (CLR) types.  
+ Use the <xref:System.Data.SqlClient.SqlParameter.Value%2A?displayProperty=nameWithType> property to return parameter values as common language runtime (CLR) types.  
   
  For information about streaming, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   

@@ -264,14 +264,14 @@ For your app to negotiate TLS 1.2, the OS and the .NET Framework version both ne
 
 **Operating system requirements to support TLS 1.2**
 
-To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, see [TLS/SSL Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn786418(v=ws.11)).
+To enable or re-enable TLS 1.2 and/or TLS 1.1 on a system that supports them, see [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings).
 
 | **OS** | **TLS 1.2 support** |
 | --- | --- |
 | Windows 10</br>Windows Server 2016 | Supported, and enabled by default. |
 | Windows 8.1</br>Windows Server 2012 R2 | Supported, and enabled by default. |
 | Windows 8.0</br>Windows Server 2012 | Supported, and enabled by default. |
-| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [TLS/SSL Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn786418(v=ws.11)) web page for details on how to enable TLS 1.2. |
+| Windows 7 SP1</br>Windows Server 2008 R2 SP1 | Supported, but not enabled by default. See the [Transport Layer Security (TLS) registry settings](/windows-server/security/tls/tls-registry-settings) web page for details on how to enable TLS 1.2. |
 | Windows Server 2008 | Support for TLS 1.2 and TLS 1.1 requires an update. See [Update to add support for TLS 1.1 and TLS 1.2 in Windows Server 2008 SP2](https://support.microsoft.com/help/4019276/update-to-add-support-for-tls-1-1-and-tls-1-2-in-windows-server-2008-s). |
 | Windows Vista | Not supported. |
 

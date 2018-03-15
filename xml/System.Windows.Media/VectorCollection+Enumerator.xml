@@ -1,7 +1,10 @@
-<Type Name="VectorCollection+Enumerator" FullName="System.Windows.Media.VectorCollection+Enumerator">
+﻿<Type Name="VectorCollection+Enumerator" FullName="System.Windows.Media.VectorCollection+Enumerator">
   <TypeSignature Language="C#" Value="public struct VectorCollection.Enumerator : System.Collections.Generic.IEnumerator&lt;System.Windows.Vector&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit VectorCollection/Enumerator extends System.ValueType implements class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Windows.Vector&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.VectorCollection.Enumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure VectorCollection.Enumerator&#xA;Implements IEnumerator(Of Vector)" />
+  <TypeSignature Language="F#" Value="type VectorCollection.Enumerator = struct&#xA;    interface IEnumerator&#xA;    interface IEnumerator&lt;Vector&gt;&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public: value class VectorCollection::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Windows::Vector&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,7 +33,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.Vector Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VectorCollection.Enumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As Vector" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Vector" Usage="System.Windows.Media.VectorCollection.Enumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector Current { System::Windows::Vector get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,7 +59,13 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VectorCollection.Enumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,7 +94,13 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VectorCollection.Enumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="enumerator.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,7 +120,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.VectorCollection.Enumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.VectorCollection.Enumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,7 +144,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.VectorCollection.Enumerator.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

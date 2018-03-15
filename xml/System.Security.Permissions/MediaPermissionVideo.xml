@@ -1,7 +1,10 @@
-<Type Name="MediaPermissionVideo" FullName="System.Security.Permissions.MediaPermissionVideo">
+﻿<Type Name="MediaPermissionVideo" FullName="System.Security.Permissions.MediaPermissionVideo">
   <TypeSignature Language="C#" Value="public enum MediaPermissionVideo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MediaPermissionVideo extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.MediaPermissionVideo" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MediaPermissionVideo" />
+  <TypeSignature Language="F#" Value="type MediaPermissionVideo = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MediaPermissionVideo" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="AllVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo AllVideo = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.AllVideo" />
+      <MemberSignature Language="VB.NET" Value="AllVideo" />
+      <MemberSignature Language="F#" Value="AllVideo = 3" Usage="System.Security.Permissions.MediaPermissionVideo.AllVideo" />
+      <MemberSignature Language="C++ CLI" Value="AllVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Permission that allows unrestricted video playback.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="NoVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo NoVideo = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.NoVideo" />
+      <MemberSignature Language="VB.NET" Value="NoVideo" />
+      <MemberSignature Language="F#" Value="NoVideo = 0" Usage="System.Security.Permissions.MediaPermissionVideo.NoVideo" />
+      <MemberSignature Language="C++ CLI" Value="NoVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Permission that denies all video playback.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="SafeVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SafeVideo = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SafeVideo" />
+      <MemberSignature Language="VB.NET" Value="SafeVideo" />
+      <MemberSignature Language="F#" Value="SafeVideo = 2" Usage="System.Security.Permissions.MediaPermissionVideo.SafeVideo" />
+      <MemberSignature Language="C++ CLI" Value="SafeVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Permission that allows safe, limited video playback, which includes denying stream access to the image file.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="SiteOfOriginVideo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.MediaPermissionVideo SiteOfOriginVideo = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.MediaPermissionVideo.SiteOfOriginVideo" />
+      <MemberSignature Language="VB.NET" Value="SiteOfOriginVideo" />
+      <MemberSignature Language="F#" Value="SiteOfOriginVideo = 1" Usage="System.Security.Permissions.MediaPermissionVideo.SiteOfOriginVideo" />
+      <MemberSignature Language="C++ CLI" Value="SiteOfOriginVideo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.MediaPermissionVideo</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Permission that only allows video playback of files that are located at the application's site of origin.</summary>
       </Docs>

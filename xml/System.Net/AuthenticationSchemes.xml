@@ -1,7 +1,10 @@
-<Type Name="AuthenticationSchemes" FullName="System.Net.AuthenticationSchemes">
+﻿<Type Name="AuthenticationSchemes" FullName="System.Net.AuthenticationSchemes">
   <TypeSignature Language="C#" Value="public enum AuthenticationSchemes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationSchemes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.AuthenticationSchemes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationSchemes" />
+  <TypeSignature Language="F#" Value="type AuthenticationSchemes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationSchemes" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="Anonymous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes Anonymous = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Anonymous" />
+      <MemberSignature Language="VB.NET" Value="Anonymous" />
+      <MemberSignature Language="F#" Value="Anonymous = 32768" Usage="System.Net.AuthenticationSchemes.Anonymous" />
+      <MemberSignature Language="C++ CLI" Value="Anonymous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Specifies anonymous authentication.</summary>
       </Docs>
@@ -78,6 +85,9 @@
       <MemberSignature Language="C#" Value="Basic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes Basic = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Basic" />
+      <MemberSignature Language="VB.NET" Value="Basic" />
+      <MemberSignature Language="F#" Value="Basic = 8" Usage="System.Net.AuthenticationSchemes.Basic" />
+      <MemberSignature Language="C++ CLI" Value="Basic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -97,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies basic authentication.</summary>
         <remarks>
@@ -113,6 +124,9 @@
       <MemberSignature Language="C#" Value="Digest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes Digest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Digest" />
+      <MemberSignature Language="VB.NET" Value="Digest" />
+      <MemberSignature Language="F#" Value="Digest = 1" Usage="System.Net.AuthenticationSchemes.Digest" />
+      <MemberSignature Language="C++ CLI" Value="Digest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -132,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies digest authentication.</summary>
         <remarks>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="IntegratedWindowsAuthentication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes IntegratedWindowsAuthentication = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication" />
+      <MemberSignature Language="VB.NET" Value="IntegratedWindowsAuthentication" />
+      <MemberSignature Language="F#" Value="IntegratedWindowsAuthentication = 6" Usage="System.Net.AuthenticationSchemes.IntegratedWindowsAuthentication" />
+      <MemberSignature Language="C++ CLI" Value="IntegratedWindowsAuthentication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -167,6 +185,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies Windows authentication.</summary>
       </Docs>
@@ -175,6 +194,9 @@
       <MemberSignature Language="C#" Value="Negotiate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes Negotiate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Negotiate" />
+      <MemberSignature Language="VB.NET" Value="Negotiate" />
+      <MemberSignature Language="F#" Value="Negotiate = 2" Usage="System.Net.AuthenticationSchemes.Negotiate" />
+      <MemberSignature Language="C++ CLI" Value="Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -194,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Negotiates with the client to determine the authentication scheme. If both client and server support Kerberos, it is used; otherwise, NTLM is used.</summary>
       </Docs>
@@ -202,6 +225,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.AuthenticationSchemes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -221,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No authentication is allowed. A client requesting an <see cref="T:System.Net.HttpListener" /> object with this flag set will always receive a 403 Forbidden status. Use this flag when a resource should never be served to a client.</summary>
       </Docs>
@@ -229,6 +256,9 @@
       <MemberSignature Language="C#" Value="Ntlm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.AuthenticationSchemes Ntlm = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.AuthenticationSchemes.Ntlm" />
+      <MemberSignature Language="VB.NET" Value="Ntlm" />
+      <MemberSignature Language="F#" Value="Ntlm = 4" Usage="System.Net.AuthenticationSchemes.Ntlm" />
+      <MemberSignature Language="C++ CLI" Value="Ntlm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -248,6 +278,7 @@
       <ReturnValue>
         <ReturnType>System.Net.AuthenticationSchemes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies NTLM authentication.</summary>
       </Docs>

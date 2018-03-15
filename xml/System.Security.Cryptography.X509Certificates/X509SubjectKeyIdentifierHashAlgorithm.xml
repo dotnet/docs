@@ -1,7 +1,10 @@
-<Type Name="X509SubjectKeyIdentifierHashAlgorithm" FullName="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm">
+﻿<Type Name="X509SubjectKeyIdentifierHashAlgorithm" FullName="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm">
   <TypeSignature Language="C#" Value="public enum X509SubjectKeyIdentifierHashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509SubjectKeyIdentifierHashAlgorithm extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509SubjectKeyIdentifierHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type X509SubjectKeyIdentifierHashAlgorithm = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509SubjectKeyIdentifierHashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="CapiSha1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm CapiSha1 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1" />
+      <MemberSignature Language="VB.NET" Value="CapiSha1" />
+      <MemberSignature Language="F#" Value="CapiSha1 = 2" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.CapiSha1" />
+      <MemberSignature Language="C++ CLI" Value="CapiSha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -57,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The subject key identifier (SKI) is composed of a 160-bit SHA-1 hash of the encoded public key (including the tag, length, and number of unused bits).</summary>
       </Docs>
@@ -65,6 +72,9 @@
       <MemberSignature Language="C#" Value="Sha1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm Sha1 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1" />
+      <MemberSignature Language="VB.NET" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 0" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.Sha1" />
+      <MemberSignature Language="C++ CLI" Value="Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -84,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The SKI is composed of the 160-bit SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bits).</summary>
       </Docs>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="ShortSha1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm ShortSha1 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1" />
+      <MemberSignature Language="VB.NET" Value="ShortSha1" />
+      <MemberSignature Language="F#" Value="ShortSha1 = 1" Usage="System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm.ShortSha1" />
+      <MemberSignature Language="C++ CLI" Value="ShortSha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -111,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierHashAlgorithm</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The SKI is composed of a four-bit type field with the value 0100, followed by the least significant 60 bits of the SHA-1 hash of the value of the public key (excluding the tag, length, and number of unused bit string bits)</summary>
       </Docs>

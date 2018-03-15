@@ -1,7 +1,10 @@
-<Type Name="ImportBuilder" FullName="System.ComponentModel.Composition.Registration.ImportBuilder">
+﻿<Type Name="ImportBuilder" FullName="System.ComponentModel.Composition.Registration.ImportBuilder">
   <TypeSignature Language="C#" Value="public sealed class ImportBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImportBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.ImportBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImportBuilder" />
+  <TypeSignature Language="F#" Value="type ImportBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImportBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ImportBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AllowDefault ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AllowDefault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AllowDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllowDefault () As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.AllowDefault : unit -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AllowDefault " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ AllowDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -53,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AllowRecomposition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AllowRecomposition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AllowRecomposition" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllowRecomposition () As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.AllowRecomposition : unit -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AllowRecomposition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ AllowRecomposition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -72,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AsContractName (string contractName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AsContractName(string contractName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AsContractName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsContractName (contractName As String) As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.AsContractName : string -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AsContractName contractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ AsContractName(System::String ^ contractName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AsContractType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AsContractType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AsContractType(System.Type)" />
+      <MemberSignature Language="F#" Value="member this.AsContractType : Type -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AsContractType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ AsContractType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -122,6 +138,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AsContractType&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AsContractType&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AsContractType``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsContractType(Of T) () As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.AsContractType : unit -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AsContractType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ AsContractType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -145,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder AsMany (bool isMany = true);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder AsMany(bool isMany) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.AsMany(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMany (Optional isMany As Boolean = true) As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.AsMany : bool -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.AsMany isMany" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -168,6 +189,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder RequiredCreationPolicy (System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder RequiredCreationPolicy(valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.RequiredCreationPolicy(System.ComponentModel.Composition.CreationPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequiredCreationPolicy (requiredCreationPolicy As CreationPolicy) As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.RequiredCreationPolicy : System.ComponentModel.Composition.CreationPolicy -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.RequiredCreationPolicy requiredCreationPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ RequiredCreationPolicy(System::ComponentModel::Composition::CreationPolicy requiredCreationPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -190,6 +214,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.ImportBuilder Source (System.ComponentModel.Composition.ImportSource source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.ImportBuilder Source(valuetype System.ComponentModel.Composition.ImportSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ImportBuilder.Source(System.ComponentModel.Composition.ImportSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Source (source As ImportSource) As ImportBuilder" />
+      <MemberSignature Language="F#" Value="member this.Source : System.ComponentModel.Composition.ImportSource -&gt; System.ComponentModel.Composition.Registration.ImportBuilder" Usage="importBuilder.Source source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::ImportBuilder ^ Source(System::ComponentModel::Composition::ImportSource source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>

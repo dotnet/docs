@@ -1,7 +1,10 @@
-<Type Name="DataContractSerializerSettings" FullName="System.Runtime.Serialization.DataContractSerializerSettings">
+﻿<Type Name="DataContractSerializerSettings" FullName="System.Runtime.Serialization.DataContractSerializerSettings">
   <TypeSignature Language="C#" Value="public class DataContractSerializerSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataContractSerializerSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializerSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataContractSerializerSettings" />
+  <TypeSignature Language="F#" Value="type DataContractSerializerSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractSerializerSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public DataContractSerializerSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializerSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractSerializerSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -54,6 +59,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DataContractResolver DataContractResolver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.DataContractResolver DataContractResolver" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.DataContractResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataContractResolver As DataContractResolver" />
+      <MemberSignature Language="F#" Value="member this.DataContractResolver : System.Runtime.Serialization.DataContractResolver with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.DataContractResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DataContractResolver ^ DataContractResolver { System::Runtime::Serialization::DataContractResolver ^ get(); void set(System::Runtime::Serialization::DataContractResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -82,6 +90,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.DataContractSurrogate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataContractSurrogate As IDataContractSurrogate" />
+      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.DataContractSurrogate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); void set(System::Runtime::Serialization::IDataContractSurrogate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.IgnoreExtensionDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreExtensionDataObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.IgnoreExtensionDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -129,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; KnownTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; KnownTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.KnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property KnownTypes As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.KnownTypes : seq&lt;Type&gt; with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.KnownTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ KnownTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -157,6 +174,9 @@
       <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.MaxItemsInObjectGraph" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItemsInObjectGraph As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.MaxItemsInObjectGraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -185,6 +205,9 @@
       <MemberSignature Language="C#" Value="public bool PreserveObjectReferences { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveObjectReferences" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.PreserveObjectReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveObjectReferences As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreserveObjectReferences : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.PreserveObjectReferences" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveObjectReferences { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -214,6 +237,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString RootName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.RootName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootName As XmlDictionaryString" />
+      <MemberSignature Language="F#" Value="member this.RootName : System.Xml.XmlDictionaryString with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.RootName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootName { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -242,6 +268,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryString RootNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryString RootNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As XmlDictionaryString" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : System.Xml.XmlDictionaryString with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.RootNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryString ^ RootNamespace { System::Xml::XmlDictionaryString ^ get(); void set(System::Xml::XmlDictionaryString ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -270,6 +299,9 @@
       <MemberSignature Language="C#" Value="public bool SerializeReadOnlyTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializeReadOnlyTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataContractSerializerSettings.SerializeReadOnlyTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeReadOnlyTypes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SerializeReadOnlyTypes : bool with get, set" Usage="System.Runtime.Serialization.DataContractSerializerSettings.SerializeReadOnlyTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeReadOnlyTypes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

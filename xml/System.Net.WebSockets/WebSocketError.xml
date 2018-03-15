@@ -1,7 +1,10 @@
-<Type Name="WebSocketError" FullName="System.Net.WebSockets.WebSocketError">
+﻿<Type Name="WebSocketError" FullName="System.Net.WebSockets.WebSocketError">
   <TypeSignature Language="C#" Value="public enum WebSocketError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebSocketError" />
+  <TypeSignature Language="F#" Value="type WebSocketError = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebSocketError" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="ConnectionClosedPrematurely" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError ConnectionClosedPrematurely = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.ConnectionClosedPrematurely" />
+      <MemberSignature Language="VB.NET" Value="ConnectionClosedPrematurely" />
+      <MemberSignature Language="F#" Value="ConnectionClosedPrematurely = 8" Usage="System.Net.WebSockets.WebSocketError.ConnectionClosedPrematurely" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionClosedPrematurely" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that the connection was terminated unexpectedly.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Faulted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError Faulted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 2" Usage="System.Net.WebSockets.WebSocketError.Faulted" />
+      <MemberSignature Language="C++ CLI" Value="Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates a general error.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="HeaderError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError HeaderError = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.HeaderError" />
+      <MemberSignature Language="VB.NET" Value="HeaderError" />
+      <MemberSignature Language="F#" Value="HeaderError = 7" Usage="System.Net.WebSockets.WebSocketError.HeaderError" />
+      <MemberSignature Language="C++ CLI" Value="HeaderError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates an error occurred when parsing the HTTP headers during the opening handshake.</summary>
       </Docs>
@@ -106,6 +121,9 @@
       <MemberSignature Language="C#" Value="InvalidMessageType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError InvalidMessageType = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidMessageType" />
+      <MemberSignature Language="VB.NET" Value="InvalidMessageType" />
+      <MemberSignature Language="F#" Value="InvalidMessageType = 1" Usage="System.Net.WebSockets.WebSocketError.InvalidMessageType" />
+      <MemberSignature Language="C++ CLI" Value="InvalidMessageType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -124,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a WebSocket frame with an unknown opcode was received.</summary>
       </Docs>
@@ -132,6 +151,9 @@
       <MemberSignature Language="C#" Value="InvalidState" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError InvalidState = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.InvalidState" />
+      <MemberSignature Language="VB.NET" Value="InvalidState" />
+      <MemberSignature Language="F#" Value="InvalidState = 9" Usage="System.Net.WebSockets.WebSocketError.InvalidState" />
+      <MemberSignature Language="C++ CLI" Value="InvalidState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -150,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Indicates the WebSocket is an invalid state for the given operation (such as being closed or aborted).</summary>
       </Docs>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="NativeError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError NativeError = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NativeError" />
+      <MemberSignature Language="VB.NET" Value="NativeError" />
+      <MemberSignature Language="F#" Value="NativeError = 3" Usage="System.Net.WebSockets.WebSocketError.NativeError" />
+      <MemberSignature Language="C++ CLI" Value="NativeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -176,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that an unknown native error occurred.</summary>
       </Docs>
@@ -184,6 +211,9 @@
       <MemberSignature Language="C#" Value="NotAWebSocket" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError NotAWebSocket = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.NotAWebSocket" />
+      <MemberSignature Language="VB.NET" Value="NotAWebSocket" />
+      <MemberSignature Language="F#" Value="NotAWebSocket = 4" Usage="System.Net.WebSockets.WebSocketError.NotAWebSocket" />
+      <MemberSignature Language="C++ CLI" Value="NotAWebSocket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -202,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the incoming request was not a valid websocket request.</summary>
       </Docs>
@@ -210,6 +241,9 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.WebSockets.WebSocketError.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -228,6 +262,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that there was no native error information for the exception.</summary>
       </Docs>
@@ -236,6 +271,9 @@
       <MemberSignature Language="C#" Value="UnsupportedProtocol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError UnsupportedProtocol = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedProtocol" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedProtocol" />
+      <MemberSignature Language="F#" Value="UnsupportedProtocol = 6" Usage="System.Net.WebSockets.WebSocketError.UnsupportedProtocol" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedProtocol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -254,6 +292,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates that the client requested an unsupported WebSocket subprotocol.</summary>
       </Docs>
@@ -262,6 +301,9 @@
       <MemberSignature Language="C#" Value="UnsupportedVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketError UnsupportedVersion = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketError.UnsupportedVersion" />
+      <MemberSignature Language="VB.NET" Value="UnsupportedVersion" />
+      <MemberSignature Language="F#" Value="UnsupportedVersion = 5" Usage="System.Net.WebSockets.WebSocketError.UnsupportedVersion" />
+      <MemberSignature Language="C++ CLI" Value="UnsupportedVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -280,6 +322,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates that the client requested an unsupported version of the WebSocket protocol.</summary>
       </Docs>

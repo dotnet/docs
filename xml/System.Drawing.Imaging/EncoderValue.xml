@@ -1,7 +1,10 @@
-<Type Name="EncoderValue" FullName="System.Drawing.Imaging.EncoderValue">
+﻿<Type Name="EncoderValue" FullName="System.Drawing.Imaging.EncoderValue">
   <TypeSignature Language="C#" Value="public enum EncoderValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EncoderValue extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EncoderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EncoderValue" />
+  <TypeSignature Language="F#" Value="type EncoderValue = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EncoderValue" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="ColorTypeCMYK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue ColorTypeCMYK = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ColorTypeCMYK" />
+      <MemberSignature Language="VB.NET" Value="ColorTypeCMYK" />
+      <MemberSignature Language="F#" Value="ColorTypeCMYK = 0" Usage="System.Drawing.Imaging.EncoderValue.ColorTypeCMYK" />
+      <MemberSignature Language="C++ CLI" Value="ColorTypeCMYK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="ColorTypeYCCK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue ColorTypeYCCK = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ColorTypeYCCK" />
+      <MemberSignature Language="VB.NET" Value="ColorTypeYCCK" />
+      <MemberSignature Language="F#" Value="ColorTypeYCCK = 1" Usage="System.Drawing.Imaging.EncoderValue.ColorTypeYCCK" />
+      <MemberSignature Language="C++ CLI" Value="ColorTypeYCCK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="CompressionCCITT3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue CompressionCCITT3 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionCCITT3" />
+      <MemberSignature Language="VB.NET" Value="CompressionCCITT3" />
+      <MemberSignature Language="F#" Value="CompressionCCITT3 = 3" Usage="System.Drawing.Imaging.EncoderValue.CompressionCCITT3" />
+      <MemberSignature Language="C++ CLI" Value="CompressionCCITT3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies the CCITT3 compression scheme. Can be passed to the TIFF encoder as a parameter that belongs to the compression category.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="CompressionCCITT4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue CompressionCCITT4 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionCCITT4" />
+      <MemberSignature Language="VB.NET" Value="CompressionCCITT4" />
+      <MemberSignature Language="F#" Value="CompressionCCITT4 = 4" Usage="System.Drawing.Imaging.EncoderValue.CompressionCCITT4" />
+      <MemberSignature Language="C++ CLI" Value="CompressionCCITT4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the CCITT4 compression scheme. Can be passed to the TIFF encoder as a parameter that belongs to the compression category.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="CompressionLZW" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue CompressionLZW = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionLZW" />
+      <MemberSignature Language="VB.NET" Value="CompressionLZW" />
+      <MemberSignature Language="F#" Value="CompressionLZW = 2" Usage="System.Drawing.Imaging.EncoderValue.CompressionLZW" />
+      <MemberSignature Language="C++ CLI" Value="CompressionLZW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the LZW compression scheme. Can be passed to the TIFF encoder as a parameter that belongs to the Compression category.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="CompressionNone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue CompressionNone = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionNone" />
+      <MemberSignature Language="VB.NET" Value="CompressionNone" />
+      <MemberSignature Language="F#" Value="CompressionNone = 6" Usage="System.Drawing.Imaging.EncoderValue.CompressionNone" />
+      <MemberSignature Language="C++ CLI" Value="CompressionNone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies no compression. Can be passed to the TIFF encoder as a parameter that belongs to the compression category.</summary>
       </Docs>
@@ -121,6 +148,9 @@
       <MemberSignature Language="C#" Value="CompressionRle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue CompressionRle = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.CompressionRle" />
+      <MemberSignature Language="VB.NET" Value="CompressionRle" />
+      <MemberSignature Language="F#" Value="CompressionRle = 5" Usage="System.Drawing.Imaging.EncoderValue.CompressionRle" />
+      <MemberSignature Language="C++ CLI" Value="CompressionRle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -129,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies the RLE compression scheme. Can be passed to the TIFF encoder as a parameter that belongs to the compression category.</summary>
       </Docs>
@@ -137,6 +168,9 @@
       <MemberSignature Language="C#" Value="Flush" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue Flush = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.Flush" />
+      <MemberSignature Language="VB.NET" Value="Flush" />
+      <MemberSignature Language="F#" Value="Flush = 20" Usage="System.Drawing.Imaging.EncoderValue.Flush" />
+      <MemberSignature Language="C++ CLI" Value="Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -145,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies that a multiple-frame file or stream should be closed. Can be passed to the TIFF encoder as a parameter that belongs to the save flag category.</summary>
       </Docs>
@@ -153,6 +188,9 @@
       <MemberSignature Language="C#" Value="FrameDimensionPage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue FrameDimensionPage = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionPage" />
+      <MemberSignature Language="VB.NET" Value="FrameDimensionPage" />
+      <MemberSignature Language="F#" Value="FrameDimensionPage = 23" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionPage" />
+      <MemberSignature Language="C++ CLI" Value="FrameDimensionPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -161,6 +199,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>Specifies that a frame is to be added to the page dimension of an image. Can be passed to the TIFF encoder as a parameter that belongs to the save flag category.</summary>
       </Docs>
@@ -169,6 +208,9 @@
       <MemberSignature Language="C#" Value="FrameDimensionResolution" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue FrameDimensionResolution = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionResolution" />
+      <MemberSignature Language="VB.NET" Value="FrameDimensionResolution" />
+      <MemberSignature Language="F#" Value="FrameDimensionResolution = 22" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionResolution" />
+      <MemberSignature Language="C++ CLI" Value="FrameDimensionResolution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -177,6 +219,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -185,6 +228,9 @@
       <MemberSignature Language="C#" Value="FrameDimensionTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue FrameDimensionTime = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.FrameDimensionTime" />
+      <MemberSignature Language="VB.NET" Value="FrameDimensionTime" />
+      <MemberSignature Language="F#" Value="FrameDimensionTime = 21" Usage="System.Drawing.Imaging.EncoderValue.FrameDimensionTime" />
+      <MemberSignature Language="C++ CLI" Value="FrameDimensionTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -193,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -201,6 +248,9 @@
       <MemberSignature Language="C#" Value="LastFrame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue LastFrame = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.LastFrame" />
+      <MemberSignature Language="VB.NET" Value="LastFrame" />
+      <MemberSignature Language="F#" Value="LastFrame = 19" Usage="System.Drawing.Imaging.EncoderValue.LastFrame" />
+      <MemberSignature Language="C++ CLI" Value="LastFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -209,6 +259,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Specifies the last frame in a multiple-frame image. Can be passed to the TIFF encoder as a parameter that belongs to the save flag category.</summary>
       </Docs>
@@ -217,6 +268,9 @@
       <MemberSignature Language="C#" Value="MultiFrame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue MultiFrame = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.MultiFrame" />
+      <MemberSignature Language="VB.NET" Value="MultiFrame" />
+      <MemberSignature Language="F#" Value="MultiFrame = 18" Usage="System.Drawing.Imaging.EncoderValue.MultiFrame" />
+      <MemberSignature Language="C++ CLI" Value="MultiFrame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -225,6 +279,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Specifies that the image has more than one frame (page). Can be passed to the TIFF encoder as a parameter that belongs to the save flag category.</summary>
       </Docs>
@@ -233,6 +288,9 @@
       <MemberSignature Language="C#" Value="RenderNonProgressive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue RenderNonProgressive = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.RenderNonProgressive" />
+      <MemberSignature Language="VB.NET" Value="RenderNonProgressive" />
+      <MemberSignature Language="F#" Value="RenderNonProgressive = 12" Usage="System.Drawing.Imaging.EncoderValue.RenderNonProgressive" />
+      <MemberSignature Language="C++ CLI" Value="RenderNonProgressive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -241,6 +299,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -249,6 +308,9 @@
       <MemberSignature Language="C#" Value="RenderProgressive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue RenderProgressive = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.RenderProgressive" />
+      <MemberSignature Language="VB.NET" Value="RenderProgressive" />
+      <MemberSignature Language="F#" Value="RenderProgressive = 11" Usage="System.Drawing.Imaging.EncoderValue.RenderProgressive" />
+      <MemberSignature Language="C++ CLI" Value="RenderProgressive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -257,6 +319,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -265,6 +328,9 @@
       <MemberSignature Language="C#" Value="ScanMethodInterlaced" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue ScanMethodInterlaced = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ScanMethodInterlaced" />
+      <MemberSignature Language="VB.NET" Value="ScanMethodInterlaced" />
+      <MemberSignature Language="F#" Value="ScanMethodInterlaced = 7" Usage="System.Drawing.Imaging.EncoderValue.ScanMethodInterlaced" />
+      <MemberSignature Language="C++ CLI" Value="ScanMethodInterlaced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -273,6 +339,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -281,6 +348,9 @@
       <MemberSignature Language="C#" Value="ScanMethodNonInterlaced" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue ScanMethodNonInterlaced = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.ScanMethodNonInterlaced" />
+      <MemberSignature Language="VB.NET" Value="ScanMethodNonInterlaced" />
+      <MemberSignature Language="F#" Value="ScanMethodNonInterlaced = 8" Usage="System.Drawing.Imaging.EncoderValue.ScanMethodNonInterlaced" />
+      <MemberSignature Language="C++ CLI" Value="ScanMethodNonInterlaced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -289,6 +359,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -297,6 +368,9 @@
       <MemberSignature Language="C#" Value="TransformFlipHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue TransformFlipHorizontal = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformFlipHorizontal" />
+      <MemberSignature Language="VB.NET" Value="TransformFlipHorizontal" />
+      <MemberSignature Language="F#" Value="TransformFlipHorizontal = 16" Usage="System.Drawing.Imaging.EncoderValue.TransformFlipHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="TransformFlipHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -305,6 +379,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies that the image is to be flipped horizontally (about the vertical axis). Can be passed to the JPEG encoder as a parameter that belongs to the transformation category.</summary>
       </Docs>
@@ -313,6 +388,9 @@
       <MemberSignature Language="C#" Value="TransformFlipVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue TransformFlipVertical = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformFlipVertical" />
+      <MemberSignature Language="VB.NET" Value="TransformFlipVertical" />
+      <MemberSignature Language="F#" Value="TransformFlipVertical = 17" Usage="System.Drawing.Imaging.EncoderValue.TransformFlipVertical" />
+      <MemberSignature Language="C++ CLI" Value="TransformFlipVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -321,6 +399,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Specifies that the image is to be flipped vertically (about the horizontal axis). Can be passed to the JPEG encoder as a parameter that belongs to the transformation category.</summary>
       </Docs>
@@ -329,6 +408,9 @@
       <MemberSignature Language="C#" Value="TransformRotate180" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue TransformRotate180 = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate180" />
+      <MemberSignature Language="VB.NET" Value="TransformRotate180" />
+      <MemberSignature Language="F#" Value="TransformRotate180 = 14" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate180" />
+      <MemberSignature Language="C++ CLI" Value="TransformRotate180" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -337,6 +419,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Specifies that the image is to be rotated 180 degrees about its center. Can be passed to the JPEG encoder as a parameter that belongs to the transformation category.</summary>
       </Docs>
@@ -345,6 +428,9 @@
       <MemberSignature Language="C#" Value="TransformRotate270" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue TransformRotate270 = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate270" />
+      <MemberSignature Language="VB.NET" Value="TransformRotate270" />
+      <MemberSignature Language="F#" Value="TransformRotate270 = 15" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate270" />
+      <MemberSignature Language="C++ CLI" Value="TransformRotate270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -353,6 +439,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Specifies that the image is to be rotated clockwise 270 degrees about its center. Can be passed to the JPEG encoder as a parameter that belongs to the transformation category.</summary>
       </Docs>
@@ -361,6 +448,9 @@
       <MemberSignature Language="C#" Value="TransformRotate90" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue TransformRotate90 = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.TransformRotate90" />
+      <MemberSignature Language="VB.NET" Value="TransformRotate90" />
+      <MemberSignature Language="F#" Value="TransformRotate90 = 13" Usage="System.Drawing.Imaging.EncoderValue.TransformRotate90" />
+      <MemberSignature Language="C++ CLI" Value="TransformRotate90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -369,6 +459,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Specifies that the image is to be rotated clockwise 90 degrees about its center. Can be passed to the JPEG encoder as a parameter that belongs to the transformation category.</summary>
       </Docs>
@@ -377,6 +468,9 @@
       <MemberSignature Language="C#" Value="VersionGif87" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue VersionGif87 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.VersionGif87" />
+      <MemberSignature Language="VB.NET" Value="VersionGif87" />
+      <MemberSignature Language="F#" Value="VersionGif87 = 9" Usage="System.Drawing.Imaging.EncoderValue.VersionGif87" />
+      <MemberSignature Language="C++ CLI" Value="VersionGif87" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -385,6 +479,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>
@@ -393,6 +488,9 @@
       <MemberSignature Language="C#" Value="VersionGif89" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EncoderValue VersionGif89 = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EncoderValue.VersionGif89" />
+      <MemberSignature Language="VB.NET" Value="VersionGif89" />
+      <MemberSignature Language="F#" Value="VersionGif89 = 10" Usage="System.Drawing.Imaging.EncoderValue.VersionGif89" />
+      <MemberSignature Language="C++ CLI" Value="VersionGif89" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -401,6 +499,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.EncoderValue</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Not used in GDI+ version 1.0.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="DBNull" FullName="System.DBNull">
+﻿<Type Name="DBNull" FullName="System.DBNull">
   <TypeSignature Language="C#" Value="public sealed class DBNull : IConvertible, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DBNull extends System.Object implements class System.IConvertible, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.DBNull" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DBNull&#xA;Implements IConvertible, ISerializable" />
+  <TypeSignature Language="F#" Value="type DBNull = class&#xA;    interface ISerializable&#xA;    interface IConvertible" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DBNull sealed : IConvertible, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -66,7 +69,13 @@
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="dBNull.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -109,7 +118,13 @@
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="dBNull.GetTypeCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -138,7 +153,12 @@
       <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -171,7 +191,12 @@
       <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -204,7 +229,12 @@
       <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -237,7 +267,12 @@
       <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -270,7 +305,12 @@
       <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -303,7 +343,12 @@
       <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -336,7 +381,12 @@
       <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -369,7 +419,12 @@
       <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -402,7 +457,12 @@
       <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -435,7 +495,12 @@
       <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -468,7 +533,12 @@
       <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -501,7 +571,11 @@
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -546,7 +620,12 @@
       <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -579,7 +658,12 @@
       <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -612,7 +696,12 @@
       <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -641,10 +730,22 @@
         <altmember cref="T:System.IConvertible" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an empty string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dBNull.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -678,7 +779,13 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DBNull.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="dBNull.ToString provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -718,6 +825,9 @@
       <MemberSignature Language="C#" Value="public static readonly DBNull Value;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.DBNull Value" />
       <MemberSignature Language="DocId" Value="F:System.DBNull.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As DBNull " />
+      <MemberSignature Language="F#" Value=" staticval mutable Value : DBNull" Usage="System.DBNull.Value" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly DBNull ^ Value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -763,14 +873,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an empty string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

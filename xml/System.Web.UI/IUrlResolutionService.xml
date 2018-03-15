@@ -1,7 +1,10 @@
-<Type Name="IUrlResolutionService" FullName="System.Web.UI.IUrlResolutionService">
+﻿<Type Name="IUrlResolutionService" FullName="System.Web.UI.IUrlResolutionService">
   <TypeSignature Language="C#" Value="public interface IUrlResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUrlResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IUrlResolutionService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUrlResolutionService" />
+  <TypeSignature Language="F#" Value="type IUrlResolutionService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUrlResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="public string ResolveClientUrl (string relativeUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveClientUrl(string relativeUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IUrlResolutionService.ResolveClientUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveClientUrl (relativeUrl As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member ResolveClientUrl : string -&gt; string" Usage="iUrlResolutionService.ResolveClientUrl relativeUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveClientUrl(System::String ^ relativeUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

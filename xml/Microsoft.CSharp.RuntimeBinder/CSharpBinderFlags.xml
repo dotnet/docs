@@ -1,7 +1,10 @@
-<Type Name="CSharpBinderFlags" FullName="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">
+﻿<Type Name="CSharpBinderFlags" FullName="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags">
   <TypeSignature Language="C#" Value="public enum CSharpBinderFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CSharpBinderFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CSharpBinderFlags" />
+  <TypeSignature Language="F#" Value="type CSharpBinderFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CSharpBinderFlags" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="BinaryOperationLogical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags BinaryOperationLogical = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.BinaryOperationLogical" />
+      <MemberSignature Language="VB.NET" Value="BinaryOperationLogical" />
+      <MemberSignature Language="F#" Value="BinaryOperationLogical = 8" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.BinaryOperationLogical" />
+      <MemberSignature Language="C++ CLI" Value="BinaryOperationLogical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The binder represents a logical AND or logical OR that is part of a conditional logical operator evaluation.</summary>
         <forInternalUseOnly />
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="CheckedContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags CheckedContext = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.CheckedContext" />
+      <MemberSignature Language="VB.NET" Value="CheckedContext" />
+      <MemberSignature Language="F#" Value="CheckedContext = 1" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.CheckedContext" />
+      <MemberSignature Language="C++ CLI" Value="CheckedContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The evaluation of this binder happens in a checked context.</summary>
         <forInternalUseOnly />
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="ConvertArrayIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags ConvertArrayIndex = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertArrayIndex" />
+      <MemberSignature Language="VB.NET" Value="ConvertArrayIndex" />
+      <MemberSignature Language="F#" Value="ConvertArrayIndex = 32" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertArrayIndex" />
+      <MemberSignature Language="C++ CLI" Value="ConvertArrayIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The binder represents an implicit conversion for use in an array creation expression.</summary>
         <forInternalUseOnly />
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="ConvertExplicit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags ConvertExplicit = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertExplicit" />
+      <MemberSignature Language="VB.NET" Value="ConvertExplicit" />
+      <MemberSignature Language="F#" Value="ConvertExplicit = 16" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ConvertExplicit" />
+      <MemberSignature Language="C++ CLI" Value="ConvertExplicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The binder represents an explicit conversion.</summary>
         <forInternalUseOnly />
@@ -97,6 +116,9 @@
       <MemberSignature Language="C#" Value="InvokeSimpleName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags InvokeSimpleName = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSimpleName" />
+      <MemberSignature Language="VB.NET" Value="InvokeSimpleName" />
+      <MemberSignature Language="F#" Value="InvokeSimpleName = 2" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSimpleName" />
+      <MemberSignature Language="C++ CLI" Value="InvokeSimpleName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The binder represents an invoke on a simple name.</summary>
         <forInternalUseOnly />
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="InvokeSpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags InvokeSpecialName = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSpecialName" />
+      <MemberSignature Language="VB.NET" Value="InvokeSpecialName" />
+      <MemberSignature Language="F#" Value="InvokeSpecialName = 4" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.InvokeSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="InvokeSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -124,6 +150,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The binder represents an invoke on a specialname.</summary>
         <forInternalUseOnly />
@@ -133,6 +160,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>There is no additional information required for this binder.</summary>
         <forInternalUseOnly />
@@ -151,6 +182,9 @@
       <MemberSignature Language="C#" Value="ResultDiscarded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags ResultDiscarded = int32(256)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultDiscarded" />
+      <MemberSignature Language="VB.NET" Value="ResultDiscarded" />
+      <MemberSignature Language="F#" Value="ResultDiscarded = 256" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultDiscarded" />
+      <MemberSignature Language="C++ CLI" Value="ResultDiscarded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -160,6 +194,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The binder is used in a position that does not require a result, and can therefore bind to a void returning method.</summary>
         <forInternalUseOnly />
@@ -169,6 +204,9 @@
       <MemberSignature Language="C#" Value="ResultIndexed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags ResultIndexed = int32(64)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultIndexed" />
+      <MemberSignature Language="VB.NET" Value="ResultIndexed" />
+      <MemberSignature Language="F#" Value="ResultIndexed = 64" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ResultIndexed" />
+      <MemberSignature Language="C++ CLI" Value="ResultIndexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -178,6 +216,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The result of any bind is going to be indexed get a set index or get index binder.</summary>
         <forInternalUseOnly />
@@ -187,6 +226,9 @@
       <MemberSignature Language="C#" Value="ValueFromCompoundAssignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags ValueFromCompoundAssignment = int32(128)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ValueFromCompoundAssignment" />
+      <MemberSignature Language="VB.NET" Value="ValueFromCompoundAssignment" />
+      <MemberSignature Language="F#" Value="ValueFromCompoundAssignment = 128" Usage="Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags.ValueFromCompoundAssignment" />
+      <MemberSignature Language="C++ CLI" Value="ValueFromCompoundAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -196,6 +238,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpBinderFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The value in this set index or set member comes a compound assignment operator.</summary>
         <forInternalUseOnly />

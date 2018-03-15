@@ -1,7 +1,10 @@
-<Type Name="WebBrowserArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray">
+﻿<Type Name="WebBrowserArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray">
   <TypeSignature Language="C#" Value="public class WebBrowserArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebBrowserArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebBrowserArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type WebBrowserArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebBrowserArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public WebBrowserArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="webBrowserArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -132,6 +152,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -161,6 +184,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ClientSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ClientSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ClientSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -190,6 +216,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -224,6 +253,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -253,6 +285,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -280,6 +315,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -307,6 +345,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -336,6 +377,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserDocumentCompletedEventHandler DocumentCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserDocumentCompletedEventHandler DocumentCompleted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.DocumentCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event DocumentCompleted As WebBrowserDocumentCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventHandler " Usage="member this.DocumentCompleted : System.Windows.Forms.WebBrowserDocumentCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::WebBrowserDocumentCompletedEventHandler ^ DocumentCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -385,6 +429,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler FileDownload;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FileDownload" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.FileDownload" />
+      <MemberSignature Language="VB.NET" Value="Public Event FileDownload As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FileDownload : EventHandler " Usage="member this.FileDownload : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FileDownload;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -412,6 +459,9 @@
       <MemberSignature Language="C#" Value="protected override Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="webBrowserArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -441,6 +491,9 @@
       <MemberSignature Language="C#" Value="public short GetIndex (System.Windows.Forms.WebBrowser o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 GetIndex(class System.Windows.Forms.WebBrowser o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.GetIndex(System.Windows.Forms.WebBrowser)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As WebBrowser) As Short" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.WebBrowser -&gt; int16" Usage="webBrowserArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::WebBrowser ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -473,6 +526,9 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="webBrowserArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -504,6 +560,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.WebBrowser this[short Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.WebBrowser Item(int16)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Item(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As WebBrowser" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.WebBrowser" Usage="Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::WebBrowser ^ default[short] { System::Windows::Forms::WebBrowser ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -541,6 +600,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -570,6 +632,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MarginChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MarginChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.MarginChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -599,6 +664,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -627,6 +695,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserNavigatedEventHandler Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserNavigatedEventHandler Navigated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Navigated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigated As WebBrowserNavigatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Forms.WebBrowserNavigatedEventHandler " Usage="member this.Navigated : System.Windows.Forms.WebBrowserNavigatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::WebBrowserNavigatedEventHandler ^ Navigated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -676,6 +747,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserNavigatingEventHandler Navigating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserNavigatingEventHandler Navigating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Navigating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigating As WebBrowserNavigatingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Forms.WebBrowserNavigatingEventHandler " Usage="member this.Navigating : System.Windows.Forms.WebBrowserNavigatingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::WebBrowserNavigatingEventHandler ^ Navigating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -727,6 +801,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler NewWindow;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler NewWindow" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.NewWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Event NewWindow As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NewWindow : System.ComponentModel.CancelEventHandler " Usage="member this.NewWindow : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ NewWindow;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -758,6 +835,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -787,6 +867,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.WebBrowserProgressChangedEventHandler ProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.WebBrowserProgressChangedEventHandler ProgressChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProgressChanged As WebBrowserProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventHandler " Usage="member this.ProgressChanged : System.Windows.Forms.WebBrowserProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::WebBrowserProgressChangedEventHandler ^ ProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -816,6 +899,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RegionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RegionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.RegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RegionChanged : EventHandler " Usage="member this.RegionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -845,6 +931,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public void ResetIndex (System.Windows.Forms.WebBrowser o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void ResetIndex(class System.Windows.Forms.WebBrowser o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ResetIndex(System.Windows.Forms.WebBrowser)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As WebBrowser)" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.WebBrowser -&gt; unit" Usage="webBrowserArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::WebBrowser ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -881,6 +970,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -913,6 +1005,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public void SetIndex (System.Windows.Forms.WebBrowser o, short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetIndex(class System.Windows.Forms.WebBrowser o, int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.SetIndex(System.Windows.Forms.WebBrowser,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As WebBrowser, Index As Short)" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.WebBrowser * int16 -&gt; unit" Usage="webBrowserArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::WebBrowser ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -951,6 +1046,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIndex (System.Windows.Forms.WebBrowser o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ShouldSerializeIndex(class System.Windows.Forms.WebBrowser o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.ShouldSerializeIndex(System.Windows.Forms.WebBrowser)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As WebBrowser) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.WebBrowser -&gt; bool" Usage="webBrowserArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::WebBrowser ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -989,6 +1087,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1018,6 +1119,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1048,6 +1152,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1108,6 +1215,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1168,6 +1278,9 @@ MsgBox(CStr(WebBrowserArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1193,14 +1306,5 @@ MsgBox(CStr(WebBrowserArray(1).Text))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.WebBrowserArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ColorMatrix" FullName="System.Drawing.Imaging.ColorMatrix">
+﻿<Type Name="ColorMatrix" FullName="System.Drawing.Imaging.ColorMatrix">
   <TypeSignature Language="C#" Value="public sealed class ColorMatrix" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ColorMatrix extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ColorMatrix" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorMatrix" />
+  <TypeSignature Language="F#" Value="type ColorMatrix = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColorMatrix sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,10 +65,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.ColorMatrix" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ColorMatrix ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ColorMatrix.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorMatrix();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +95,9 @@
       <MemberSignature Language="C#" Value="public ColorMatrix (float[][] newColorMatrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32[][] newColorMatrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Imaging.ColorMatrix.#ctor(System.Single[][])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (newColorMatrix As Single()())" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Imaging.ColorMatrix : single[][] -&gt; System.Drawing.Imaging.ColorMatrix" Usage="new System.Drawing.Imaging.ColorMatrix newColorMatrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColorMatrix(cli::array &lt;cli::array &lt;float&gt; ^&gt; ^ newColorMatrix);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +131,9 @@
       <MemberSignature Language="C#" Value="public float this[int row, int column] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Item(int32, int32)" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Item(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(row As Integer, column As Integer) As Single" />
+      <MemberSignature Language="F#" Value="member this.Item(int * int) : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float default[int, int] { float get(int row, int column); void set(int row, int column, float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -138,6 +158,9 @@
       <MemberSignature Language="C#" Value="public float Matrix00 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix00" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix00" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix00 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix00 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix00" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix00 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -156,6 +179,9 @@
       <MemberSignature Language="C#" Value="public float Matrix01 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix01" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix01" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix01 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix01 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix01" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix01 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -174,6 +200,9 @@
       <MemberSignature Language="C#" Value="public float Matrix02 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix02" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix02" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix02 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix02 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix02" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix02 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -192,6 +221,9 @@
       <MemberSignature Language="C#" Value="public float Matrix03 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix03" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix03" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix03 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix03 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix03" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix03 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -210,6 +242,9 @@
       <MemberSignature Language="C#" Value="public float Matrix04 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix04" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix04" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix04 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix04 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix04" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix04 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -228,6 +263,9 @@
       <MemberSignature Language="C#" Value="public float Matrix10 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix10" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix10" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix10 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix10 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix10" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix10 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -246,6 +284,9 @@
       <MemberSignature Language="C#" Value="public float Matrix11 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix11" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix11" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix11 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix11 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix11" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix11 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -264,6 +305,9 @@
       <MemberSignature Language="C#" Value="public float Matrix12 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix12" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix12" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix12 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix12 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix12" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix12 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -282,6 +326,9 @@
       <MemberSignature Language="C#" Value="public float Matrix13 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix13" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix13" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix13 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix13 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix13" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix13 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -300,6 +347,9 @@
       <MemberSignature Language="C#" Value="public float Matrix14 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix14" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix14" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix14 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix14 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix14" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix14 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -318,6 +368,9 @@
       <MemberSignature Language="C#" Value="public float Matrix20 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix20" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix20" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix20 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix20 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix20" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix20 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -336,6 +389,9 @@
       <MemberSignature Language="C#" Value="public float Matrix21 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix21" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix21" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix21 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix21 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix21" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix21 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -354,6 +410,9 @@
       <MemberSignature Language="C#" Value="public float Matrix22 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix22" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix22" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix22 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix22 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix22" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix22 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -372,6 +431,9 @@
       <MemberSignature Language="C#" Value="public float Matrix23 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix23" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix23" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix23 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix23 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix23" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix23 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -390,6 +452,9 @@
       <MemberSignature Language="C#" Value="public float Matrix24 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix24" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix24" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix24 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix24 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix24" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix24 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -408,6 +473,9 @@
       <MemberSignature Language="C#" Value="public float Matrix30 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix30" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix30" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix30 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix30 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix30" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix30 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -426,6 +494,9 @@
       <MemberSignature Language="C#" Value="public float Matrix31 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix31" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix31" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix31 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix31 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix31" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix31 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -444,6 +515,9 @@
       <MemberSignature Language="C#" Value="public float Matrix32 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix32" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix32" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix32 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix32 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix32" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix32 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -462,6 +536,9 @@
       <MemberSignature Language="C#" Value="public float Matrix33 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix33" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix33" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix33 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix33 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix33" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix33 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -480,6 +557,9 @@
       <MemberSignature Language="C#" Value="public float Matrix34 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix34" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix34" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix34 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix34 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix34" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix34 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -498,6 +578,9 @@
       <MemberSignature Language="C#" Value="public float Matrix40 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix40" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix40" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix40 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix40 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix40" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix40 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -516,6 +599,9 @@
       <MemberSignature Language="C#" Value="public float Matrix41 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix41" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix41" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix41 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix41 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix41" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix41 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -534,6 +620,9 @@
       <MemberSignature Language="C#" Value="public float Matrix42 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix42" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix42" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix42 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix42 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix42" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix42 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -552,6 +641,9 @@
       <MemberSignature Language="C#" Value="public float Matrix43 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix43" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix43" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix43 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix43 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix43" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix43 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -570,6 +662,9 @@
       <MemberSignature Language="C#" Value="public float Matrix44 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Matrix44" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Imaging.ColorMatrix.Matrix44" />
+      <MemberSignature Language="VB.NET" Value="Public Property Matrix44 As Single" />
+      <MemberSignature Language="F#" Value="member this.Matrix44 : single with get, set" Usage="System.Drawing.Imaging.ColorMatrix.Matrix44" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Matrix44 { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -584,14 +679,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Imaging.ColorMatrix" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

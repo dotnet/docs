@@ -1,7 +1,10 @@
-<Type Name="DateInterval" FullName="Microsoft.VisualBasic.DateInterval">
+﻿<Type Name="DateInterval" FullName="Microsoft.VisualBasic.DateInterval">
   <TypeSignature Language="C#" Value="public enum DateInterval" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateInterval extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateInterval" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateInterval" />
+  <TypeSignature Language="F#" Value="type DateInterval = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DateInterval" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Day" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Day = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Day" />
+      <MemberSignature Language="VB.NET" Value="Day" />
+      <MemberSignature Language="F#" Value="Day = 4" Usage="Microsoft.VisualBasic.DateInterval.Day" />
+      <MemberSignature Language="C++ CLI" Value="Day" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Day of month (1 through 31)</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="DayOfYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval DayOfYear = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.DayOfYear" />
+      <MemberSignature Language="VB.NET" Value="DayOfYear" />
+      <MemberSignature Language="F#" Value="DayOfYear = 3" Usage="Microsoft.VisualBasic.DateInterval.DayOfYear" />
+      <MemberSignature Language="C++ CLI" Value="DayOfYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Day of year (1 through 366)</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="Hour" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Hour = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Hour" />
+      <MemberSignature Language="VB.NET" Value="Hour" />
+      <MemberSignature Language="F#" Value="Hour = 7" Usage="Microsoft.VisualBasic.DateInterval.Hour" />
+      <MemberSignature Language="C++ CLI" Value="Hour" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Hour (0 through 23)</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="Minute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Minute = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Minute" />
+      <MemberSignature Language="VB.NET" Value="Minute" />
+      <MemberSignature Language="F#" Value="Minute = 8" Usage="Microsoft.VisualBasic.DateInterval.Minute" />
+      <MemberSignature Language="C++ CLI" Value="Minute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Minute (0 through 59)</summary>
       </Docs>
@@ -96,6 +115,9 @@
       <MemberSignature Language="C#" Value="Month" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Month = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Month" />
+      <MemberSignature Language="VB.NET" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 2" Usage="Microsoft.VisualBasic.DateInterval.Month" />
+      <MemberSignature Language="C++ CLI" Value="Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -104,6 +126,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Month (1 through 12)</summary>
       </Docs>
@@ -112,6 +135,9 @@
       <MemberSignature Language="C#" Value="Quarter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Quarter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Quarter" />
+      <MemberSignature Language="VB.NET" Value="Quarter" />
+      <MemberSignature Language="F#" Value="Quarter = 1" Usage="Microsoft.VisualBasic.DateInterval.Quarter" />
+      <MemberSignature Language="C++ CLI" Value="Quarter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -120,6 +146,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Quarter of year (1 through 4)</summary>
       </Docs>
@@ -128,6 +155,9 @@
       <MemberSignature Language="C#" Value="Second" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Second = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Second" />
+      <MemberSignature Language="VB.NET" Value="Second" />
+      <MemberSignature Language="F#" Value="Second = 9" Usage="Microsoft.VisualBasic.DateInterval.Second" />
+      <MemberSignature Language="C++ CLI" Value="Second" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -136,6 +166,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Second (0 through 59)</summary>
       </Docs>
@@ -144,6 +175,9 @@
       <MemberSignature Language="C#" Value="Weekday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Weekday = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Weekday" />
+      <MemberSignature Language="VB.NET" Value="Weekday" />
+      <MemberSignature Language="F#" Value="Weekday = 6" Usage="Microsoft.VisualBasic.DateInterval.Weekday" />
+      <MemberSignature Language="C++ CLI" Value="Weekday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -152,6 +186,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Day of week (1 through 7)</summary>
       </Docs>
@@ -160,6 +195,9 @@
       <MemberSignature Language="C#" Value="WeekOfYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval WeekOfYear = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.WeekOfYear" />
+      <MemberSignature Language="VB.NET" Value="WeekOfYear" />
+      <MemberSignature Language="F#" Value="WeekOfYear = 5" Usage="Microsoft.VisualBasic.DateInterval.WeekOfYear" />
+      <MemberSignature Language="C++ CLI" Value="WeekOfYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -168,6 +206,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Week of year (1 through 53)</summary>
       </Docs>
@@ -176,6 +215,9 @@
       <MemberSignature Language="C#" Value="Year" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Year = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Year" />
+      <MemberSignature Language="VB.NET" Value="Year" />
+      <MemberSignature Language="F#" Value="Year = 0" Usage="Microsoft.VisualBasic.DateInterval.Year" />
+      <MemberSignature Language="C++ CLI" Value="Year" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -184,6 +226,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Year</summary>
       </Docs>

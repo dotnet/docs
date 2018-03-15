@@ -1,7 +1,10 @@
-<Type Name="UrlSyndicationContent" FullName="System.ServiceModel.Syndication.UrlSyndicationContent">
+﻿<Type Name="UrlSyndicationContent" FullName="System.ServiceModel.Syndication.UrlSyndicationContent">
   <TypeSignature Language="C#" Value="public class UrlSyndicationContent : System.ServiceModel.Syndication.SyndicationContent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UrlSyndicationContent extends System.ServiceModel.Syndication.SyndicationContent" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.UrlSyndicationContent" />
+  <TypeSignature Language="VB.NET" Value="Public Class UrlSyndicationContent&#xA;Inherits SyndicationContent" />
+  <TypeSignature Language="F#" Value="type UrlSyndicationContent = class&#xA;    inherit SyndicationContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlSyndicationContent : System::ServiceModel::Syndication::SyndicationContent" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected UrlSyndicationContent (System.ServiceModel.Syndication.UrlSyndicationContent source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.UrlSyndicationContent source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.#ctor(System.ServiceModel.Syndication.UrlSyndicationContent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As UrlSyndicationContent)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.UrlSyndicationContent : System.ServiceModel.Syndication.UrlSyndicationContent -&gt; System.ServiceModel.Syndication.UrlSyndicationContent" Usage="new System.ServiceModel.Syndication.UrlSyndicationContent source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UrlSyndicationContent(System::ServiceModel::Syndication::UrlSyndicationContent ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +70,9 @@
       <MemberSignature Language="C#" Value="public UrlSyndicationContent (Uri url, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri url, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (url As Uri, mediaType As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.UrlSyndicationContent : Uri * string -&gt; System.ServiceModel.Syndication.UrlSyndicationContent" Usage="new System.ServiceModel.Syndication.UrlSyndicationContent (url, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlSyndicationContent(Uri ^ url, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +112,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Syndication.SyndicationContent Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Syndication.SyndicationContent Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As SyndicationContent" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Syndication.SyndicationContent" Usage="urlSyndicationContent.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Syndication::SyndicationContent ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,6 +138,9 @@
       <MemberSignature Language="C#" Value="public override string Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.UrlSyndicationContent.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.ServiceModel.Syndication.UrlSyndicationContent.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +170,9 @@
       <MemberSignature Language="C#" Value="public Uri Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.UrlSyndicationContent.Url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.ServiceModel.Syndication.UrlSyndicationContent.Url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +195,9 @@
       <MemberSignature Language="C#" Value="protected override void WriteContentsTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WriteContentsTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.UrlSyndicationContent.WriteContentsTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WriteContentsTo (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteContentsTo : System.Xml.XmlWriter -&gt; unit" Usage="urlSyndicationContent.WriteContentsTo writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WriteContentsTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,14 +219,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Syndication.UrlSyndicationContent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

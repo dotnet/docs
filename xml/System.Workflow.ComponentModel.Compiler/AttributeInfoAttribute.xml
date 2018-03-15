@@ -1,7 +1,10 @@
-<Type Name="AttributeInfoAttribute" FullName="System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute">
+﻿<Type Name="AttributeInfoAttribute" FullName="System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute">
   <TypeSignature Language="C#" Value="public sealed class AttributeInfoAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeInfoAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeInfoAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AttributeInfoAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttributeInfoAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.AttributeInfo AttributeInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Compiler.AttributeInfo AttributeInfo" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute.AttributeInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeInfo As AttributeInfo" />
+      <MemberSignature Language="F#" Value="member this.AttributeInfo : System.Workflow.ComponentModel.Compiler.AttributeInfo" Usage="System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute.AttributeInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::AttributeInfo ^ AttributeInfo { System::Workflow::ComponentModel::Compiler::AttributeInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

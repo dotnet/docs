@@ -1,7 +1,10 @@
-<Type Name="IUnrestrictedPermission" FullName="System.Security.Permissions.IUnrestrictedPermission">
+﻿<Type Name="IUnrestrictedPermission" FullName="System.Security.Permissions.IUnrestrictedPermission">
   <TypeSignature Language="C#" Value="public interface IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type IUnrestrictedPermission = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool" Usage="iUnrestrictedPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

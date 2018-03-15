@@ -1,7 +1,10 @@
-<Type Name="SymMethodBase" FullName="System.Diagnostics.SymbolStore.SymMethodBase">
+﻿<Type Name="SymMethodBase" FullName="System.Diagnostics.SymbolStore.SymMethodBase">
   <TypeSignature Language="C#" Value="public class SymMethodBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SymMethodBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymMethodBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class SymMethodBase" />
+  <TypeSignature Language="F#" Value="type SymMethodBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SymMethodBase" />
   <AssemblyInfo>
     <AssemblyName>ISymWrapper</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="protected SymMethodBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethodBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SymMethodBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public void {dtor} ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance void {dtor}() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.SymMethodBase.{dtor}" />
+      <MemberSignature Language="VB.NET" Value="Public Sub {dtor} ()" />
+      <MemberSignature Language="F#" Value="member this.{dtor} : unit -&gt; unit" Usage="symMethodBase.{dtor} " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void {dtor}();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ISymWrapper</AssemblyName>

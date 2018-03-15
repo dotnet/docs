@@ -1,7 +1,10 @@
-<Type Name="CompletionCallback&lt;TResult&gt;" FullName="System.Activities.CompletionCallback&lt;TResult&gt;">
+﻿<Type Name="CompletionCallback&lt;TResult&gt;" FullName="System.Activities.CompletionCallback&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public delegate void CompletionCallback&lt;TResult&gt;(NativeActivityContext context, ActivityInstance completedInstance, TResult result);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompletionCallback`1&lt;TResult&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.CompletionCallback`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CompletionCallback(Of TResult)(context As NativeActivityContext, completedInstance As ActivityInstance, result As TResult)" />
+  <TypeSignature Language="F#" Value="type CompletionCallback&lt;'Result&gt; = delegate of NativeActivityContext * ActivityInstance * 'Result -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public delegate void CompletionCallback(NativeActivityContext ^ context, ActivityInstance ^ completedInstance, TResult result);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

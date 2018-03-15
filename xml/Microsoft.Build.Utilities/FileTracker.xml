@@ -1,7 +1,10 @@
-<Type Name="FileTracker" FullName="Microsoft.Build.Utilities.FileTracker">
+﻿<Type Name="FileTracker" FullName="Microsoft.Build.Utilities.FileTracker">
   <TypeSignature Language="C#" Value="public static class FileTracker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FileTracker extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.FileTracker" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileTracker" />
+  <TypeSignature Language="F#" Value="type FileTracker = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileTracker abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateRootingMarkerResponseFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a temporary response file containing the rooting marker.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateRootingMarkerResponseFile">
       <MemberSignature Language="C#" Value="public static string CreateRootingMarkerResponseFile (Microsoft.Build.Framework.ITaskItem[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateRootingMarkerResponseFile(class Microsoft.Build.Framework.ITaskItem[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.CreateRootingMarkerResponseFile(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRootingMarkerResponseFile (sources As ITaskItem()) As String" />
+      <MemberSignature Language="F#" Value="static member CreateRootingMarkerResponseFile : Microsoft.Build.Framework.ITaskItem[] -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.CreateRootingMarkerResponseFile sources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateRootingMarkerResponseFile(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static string CreateRootingMarkerResponseFile (string rootMarker);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateRootingMarkerResponseFile(string rootMarker) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.CreateRootingMarkerResponseFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateRootingMarkerResponseFile (rootMarker As String) As String" />
+      <MemberSignature Language="F#" Value="static member CreateRootingMarkerResponseFile : string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.CreateRootingMarkerResponseFile rootMarker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateRootingMarkerResponseFile(System::String ^ rootMarker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -63,6 +81,9 @@
       <MemberSignature Language="C#" Value="public static void EndTrackingContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndTrackingContext() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.EndTrackingContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EndTrackingContext ()" />
+      <MemberSignature Language="F#" Value="static member EndTrackingContext : unit -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.EndTrackingContext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndTrackingContext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -77,10 +98,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnsureFileTrackerOnPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepends the path to the appropriate FileTracker assembly to the PATH environment variable.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnsureFileTrackerOnPath">
       <MemberSignature Language="C#" Value="public static string EnsureFileTrackerOnPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnsureFileTrackerOnPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.EnsureFileTrackerOnPath" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnsureFileTrackerOnPath () As String" />
+      <MemberSignature Language="F#" Value="static member EnsureFileTrackerOnPath : unit -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.EnsureFileTrackerOnPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EnsureFileTrackerOnPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -100,6 +133,9 @@
       <MemberSignature Language="C#" Value="public static string EnsureFileTrackerOnPath (string rootPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnsureFileTrackerOnPath(string rootPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.EnsureFileTrackerOnPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnsureFileTrackerOnPath (rootPath As String) As String" />
+      <MemberSignature Language="F#" Value="static member EnsureFileTrackerOnPath : string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.EnsureFileTrackerOnPath rootPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EnsureFileTrackerOnPath(System::String ^ rootPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -122,6 +158,9 @@
       <MemberSignature Language="C#" Value="public static bool FileIsExcludedFromDependencies (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FileIsExcludedFromDependencies(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FileIsExcludedFromDependencies(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileIsExcludedFromDependencies (fileName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member FileIsExcludedFromDependencies : string -&gt; bool" Usage="Microsoft.Build.Utilities.FileTracker.FileIsExcludedFromDependencies fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FileIsExcludedFromDependencies(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -144,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static bool FileIsUnderPath (string fileName, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool FileIsUnderPath(string fileName, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FileIsUnderPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FileIsUnderPath (fileName As String, path As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member FileIsUnderPath : string * string -&gt; bool" Usage="Microsoft.Build.Utilities.FileTracker.FileIsUnderPath (fileName, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool FileIsUnderPath(System::String ^ fileName, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -168,6 +210,9 @@
       <MemberSignature Language="C#" Value="public static string FindTrackerOnPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FindTrackerOnPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FindTrackerOnPath" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindTrackerOnPath () As String" />
+      <MemberSignature Language="F#" Value="static member FindTrackerOnPath : unit -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.FindTrackerOnPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FindTrackerOnPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -183,10 +228,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ForceOutOfProcTracking">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether we must track out of process, or whether in process tracking will work.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ForceOutOfProcTracking">
       <MemberSignature Language="C#" Value="public static bool ForceOutOfProcTracking (Microsoft.Build.Utilities.ExecutableType toolType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ForceOutOfProcTracking(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.ForceOutOfProcTracking(Microsoft.Build.Utilities.ExecutableType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForceOutOfProcTracking (toolType As ExecutableType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ForceOutOfProcTracking : Microsoft.Build.Utilities.ExecutableType -&gt; bool" Usage="Microsoft.Build.Utilities.FileTracker.ForceOutOfProcTracking toolType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForceOutOfProcTracking(Microsoft::Build::Utilities::ExecutableType toolType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -209,6 +266,9 @@
       <MemberSignature Language="C#" Value="public static bool ForceOutOfProcTracking (Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string cancelEventName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ForceOutOfProcTracking(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string cancelEventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.ForceOutOfProcTracking(Microsoft.Build.Utilities.ExecutableType,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForceOutOfProcTracking (toolType As ExecutableType, dllName As String, cancelEventName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ForceOutOfProcTracking : Microsoft.Build.Utilities.ExecutableType * string * string -&gt; bool" Usage="Microsoft.Build.Utilities.FileTracker.ForceOutOfProcTracking (toolType, dllName, cancelEventName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ForceOutOfProcTracking(Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ dllName, System::String ^ cancelEventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -231,10 +291,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FormatRootingMarker">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FormatRootingMarker">
       <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FormatRootingMarker(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FormatRootingMarker (source As ITaskItem) As String" />
+      <MemberSignature Language="F#" Value="static member FormatRootingMarker : Microsoft.Build.Framework.ITaskItem -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.FormatRootingMarker source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FormatRootingMarker(Microsoft::Build::Framework::ITaskItem ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -257,6 +329,9 @@
       <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FormatRootingMarker(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FormatRootingMarker (sources As ITaskItem()) As String" />
+      <MemberSignature Language="F#" Value="static member FormatRootingMarker : Microsoft.Build.Framework.ITaskItem[] -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.FormatRootingMarker sources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FormatRootingMarker(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -279,6 +354,9 @@
       <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem source, Microsoft.Build.Framework.ITaskItem output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem source, class Microsoft.Build.Framework.ITaskItem output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FormatRootingMarker(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FormatRootingMarker (source As ITaskItem, output As ITaskItem) As String" />
+      <MemberSignature Language="F#" Value="static member FormatRootingMarker : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.FormatRootingMarker (source, output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FormatRootingMarker(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -303,6 +381,9 @@
       <MemberSignature Language="C#" Value="public static string FormatRootingMarker (Microsoft.Build.Framework.ITaskItem[] sources, Microsoft.Build.Framework.ITaskItem[] outputs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FormatRootingMarker(class Microsoft.Build.Framework.ITaskItem[] sources, class Microsoft.Build.Framework.ITaskItem[] outputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.FormatRootingMarker(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FormatRootingMarker (sources As ITaskItem(), outputs As ITaskItem()) As String" />
+      <MemberSignature Language="F#" Value="static member FormatRootingMarker : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.FormatRootingMarker (sources, outputs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ FormatRootingMarker(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ outputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -323,10 +404,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFileTrackerPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Figures out and returns the path to the correct FileTracker.dll.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFileTrackerPath">
       <MemberSignature Language="C#" Value="public static string GetFileTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.GetFileTrackerPath(Microsoft.Build.Utilities.ExecutableType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileTrackerPath (toolType As ExecutableType) As String" />
+      <MemberSignature Language="F#" Value="static member GetFileTrackerPath : Microsoft.Build.Utilities.ExecutableType -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.GetFileTrackerPath toolType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFileTrackerPath(Microsoft::Build::Utilities::ExecutableType toolType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -349,6 +442,9 @@
       <MemberSignature Language="C#" Value="public static string GetFileTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType, string rootPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetFileTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.GetFileTrackerPath(Microsoft.Build.Utilities.ExecutableType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileTrackerPath (toolType As ExecutableType, rootPath As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetFileTrackerPath : Microsoft.Build.Utilities.ExecutableType * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.GetFileTrackerPath (toolType, rootPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetFileTrackerPath(Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ rootPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -369,10 +465,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTrackerPath">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Figures out and returns the path to the correct Tracker.exe.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTrackerPath">
       <MemberSignature Language="C#" Value="public static string GetTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.GetTrackerPath(Microsoft.Build.Utilities.ExecutableType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTrackerPath (toolType As ExecutableType) As String" />
+      <MemberSignature Language="F#" Value="static member GetTrackerPath : Microsoft.Build.Utilities.ExecutableType -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.GetTrackerPath toolType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTrackerPath(Microsoft::Build::Utilities::ExecutableType toolType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -395,6 +503,9 @@
       <MemberSignature Language="C#" Value="public static string GetTrackerPath (Microsoft.Build.Utilities.ExecutableType toolType, string rootPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTrackerPath(valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.GetTrackerPath(Microsoft.Build.Utilities.ExecutableType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTrackerPath (toolType As ExecutableType, rootPath As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetTrackerPath : Microsoft.Build.Utilities.ExecutableType * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.GetTrackerPath (toolType, rootPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetTrackerPath(Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ rootPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -419,6 +530,9 @@
       <MemberSignature Language="C#" Value="public static void ResumeTracking ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ResumeTracking() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.ResumeTracking" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ResumeTracking ()" />
+      <MemberSignature Language="F#" Value="static member ResumeTracking : unit -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.ResumeTracking " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ResumeTracking();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -437,6 +551,9 @@
       <MemberSignature Language="C#" Value="public static void SetThreadCount (int threadCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetThreadCount(int32 threadCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.SetThreadCount(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetThreadCount (threadCount As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetThreadCount : int -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.SetThreadCount threadCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetThreadCount(int threadCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -454,10 +571,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartProcess">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Start the process; tracking the command.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartProcess">
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartProcess(System.String,System.String,Microsoft.Build.Utilities.ExecutableType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartProcess (command As String, arguments As String, toolType As ExecutableType) As Process" />
+      <MemberSignature Language="F#" Value="static member StartProcess : string * string * Microsoft.Build.Utilities.ExecutableType -&gt; System.Diagnostics.Process" Usage="Microsoft.Build.Utilities.FileTracker.StartProcess (command, arguments, toolType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ StartProcess(System::String ^ command, System::String ^ arguments, Microsoft::Build::Utilities::ExecutableType toolType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -484,6 +613,9 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string rootFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string rootFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartProcess(System.String,System.String,Microsoft.Build.Utilities.ExecutableType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartProcess (command As String, arguments As String, toolType As ExecutableType, rootFiles As String) As Process" />
+      <MemberSignature Language="F#" Value="static member StartProcess : string * string * Microsoft.Build.Utilities.ExecutableType * string -&gt; System.Diagnostics.Process" Usage="Microsoft.Build.Utilities.FileTracker.StartProcess (command, arguments, toolType, rootFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ StartProcess(System::String ^ command, System::String ^ arguments, Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ rootFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -512,6 +644,9 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string intermediateDirectory, string rootFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string intermediateDirectory, string rootFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartProcess(System.String,System.String,Microsoft.Build.Utilities.ExecutableType,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartProcess (command As String, arguments As String, toolType As ExecutableType, intermediateDirectory As String, rootFiles As String) As Process" />
+      <MemberSignature Language="F#" Value="static member StartProcess : string * string * Microsoft.Build.Utilities.ExecutableType * string * string -&gt; System.Diagnostics.Process" Usage="Microsoft.Build.Utilities.FileTracker.StartProcess (command, arguments, toolType, intermediateDirectory, rootFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ StartProcess(System::String ^ command, System::String ^ arguments, Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ intermediateDirectory, System::String ^ rootFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -542,6 +677,9 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartProcess(System.String,System.String,Microsoft.Build.Utilities.ExecutableType,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartProcess (command As String, arguments As String, toolType As ExecutableType, dllName As String, intermediateDirectory As String, rootFiles As String) As Process" />
+      <MemberSignature Language="F#" Value="static member StartProcess : string * string * Microsoft.Build.Utilities.ExecutableType * string * string * string -&gt; System.Diagnostics.Process" Usage="Microsoft.Build.Utilities.FileTracker.StartProcess (command, arguments, toolType, dllName, intermediateDirectory, rootFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ StartProcess(System::String ^ command, System::String ^ arguments, Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -574,6 +712,9 @@
       <MemberSignature Language="C#" Value="public static System.Diagnostics.Process StartProcess (string command, string arguments, Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Diagnostics.Process StartProcess(string command, string arguments, valuetype Microsoft.Build.Utilities.ExecutableType toolType, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartProcess(System.String,System.String,Microsoft.Build.Utilities.ExecutableType,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StartProcess (command As String, arguments As String, toolType As ExecutableType, dllName As String, intermediateDirectory As String, rootFiles As String, cancelEventName As String) As Process" />
+      <MemberSignature Language="F#" Value="static member StartProcess : string * string * Microsoft.Build.Utilities.ExecutableType * string * string * string * string -&gt; System.Diagnostics.Process" Usage="Microsoft.Build.Utilities.FileTracker.StartProcess (command, arguments, toolType, dllName, intermediateDirectory, rootFiles, cancelEventName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Diagnostics::Process ^ StartProcess(System::String ^ command, System::String ^ arguments, Microsoft::Build::Utilities::ExecutableType toolType, System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles, System::String ^ cancelEventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -608,6 +749,9 @@
       <MemberSignature Language="C#" Value="public static void StartTrackingContext (string intermediateDirectory, string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartTrackingContext(string intermediateDirectory, string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartTrackingContext(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StartTrackingContext (intermediateDirectory As String, taskName As String)" />
+      <MemberSignature Language="F#" Value="static member StartTrackingContext : string * string -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.StartTrackingContext (intermediateDirectory, taskName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartTrackingContext(System::String ^ intermediateDirectory, System::String ^ taskName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -631,6 +775,9 @@
       <MemberSignature Language="C#" Value="public static void StartTrackingContextWithRoot (string intermediateDirectory, string taskName, string rootMarkerResponseFile);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartTrackingContextWithRoot(string intermediateDirectory, string taskName, string rootMarkerResponseFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StartTrackingContextWithRoot(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StartTrackingContextWithRoot (intermediateDirectory As String, taskName As String, rootMarkerResponseFile As String)" />
+      <MemberSignature Language="F#" Value="static member StartTrackingContextWithRoot : string * string * string -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.StartTrackingContextWithRoot (intermediateDirectory, taskName, rootMarkerResponseFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartTrackingContextWithRoot(System::String ^ intermediateDirectory, System::String ^ taskName, System::String ^ rootMarkerResponseFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -656,6 +803,9 @@
       <MemberSignature Language="C#" Value="public static void StopTrackingAndCleanup ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopTrackingAndCleanup() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.StopTrackingAndCleanup" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StopTrackingAndCleanup ()" />
+      <MemberSignature Language="F#" Value="static member StopTrackingAndCleanup : unit -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.StopTrackingAndCleanup " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StopTrackingAndCleanup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -674,6 +824,9 @@
       <MemberSignature Language="C#" Value="public static void SuspendTracking ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SuspendTracking() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.SuspendTracking" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SuspendTracking ()" />
+      <MemberSignature Language="F#" Value="static member SuspendTracking : unit -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.SuspendTracking " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SuspendTracking();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -688,10 +841,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackerArguments">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method constructs the correct Tracker.exe arguments from its parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TrackerArguments">
       <MemberSignature Language="C#" Value="public static string TrackerArguments (string command, string arguments, string dllName, string intermediateDirectory, string rootFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerArguments(string command, string arguments, string dllName, string intermediateDirectory, string rootFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.TrackerArguments(System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrackerArguments (command As String, arguments As String, dllName As String, intermediateDirectory As String, rootFiles As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrackerArguments : string * string * string * string * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.TrackerArguments (command, arguments, dllName, intermediateDirectory, rootFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrackerArguments(System::String ^ command, System::String ^ arguments, System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -722,6 +887,9 @@
       <MemberSignature Language="C#" Value="public static string TrackerArguments (string command, string arguments, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerArguments(string command, string arguments, string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.TrackerArguments(System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrackerArguments (command As String, arguments As String, dllName As String, intermediateDirectory As String, rootFiles As String, cancelEventName As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrackerArguments : string * string * string * string * string * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.TrackerArguments (command, arguments, dllName, intermediateDirectory, rootFiles, cancelEventName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrackerArguments(System::String ^ command, System::String ^ arguments, System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles, System::String ^ cancelEventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -754,6 +922,9 @@
       <MemberSignature Language="C#" Value="public static string TrackerCommandArguments (string command, string arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerCommandArguments(string command, string arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.TrackerCommandArguments(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrackerCommandArguments (command As String, arguments As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrackerCommandArguments : string * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.TrackerCommandArguments (command, arguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrackerCommandArguments(System::String ^ command, System::String ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -774,10 +945,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrackerResponseFileArguments">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method constructs the correct Tracker.exe response file arguments from its parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TrackerResponseFileArguments">
       <MemberSignature Language="C#" Value="public static string TrackerResponseFileArguments (string dllName, string intermediateDirectory, string rootFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerResponseFileArguments(string dllName, string intermediateDirectory, string rootFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.TrackerResponseFileArguments(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrackerResponseFileArguments (dllName As String, intermediateDirectory As String, rootFiles As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrackerResponseFileArguments : string * string * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.TrackerResponseFileArguments (dllName, intermediateDirectory, rootFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrackerResponseFileArguments(System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -804,6 +987,9 @@
       <MemberSignature Language="C#" Value="public static string TrackerResponseFileArguments (string dllName, string intermediateDirectory, string rootFiles, string cancelEventName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string TrackerResponseFileArguments(string dllName, string intermediateDirectory, string rootFiles, string cancelEventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.TrackerResponseFileArguments(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TrackerResponseFileArguments (dllName As String, intermediateDirectory As String, rootFiles As String, cancelEventName As String) As String" />
+      <MemberSignature Language="F#" Value="static member TrackerResponseFileArguments : string * string * string * string -&gt; string" Usage="Microsoft.Build.Utilities.FileTracker.TrackerResponseFileArguments (dllName, intermediateDirectory, rootFiles, cancelEventName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TrackerResponseFileArguments(System::String ^ dllName, System::String ^ intermediateDirectory, System::String ^ rootFiles, System::String ^ cancelEventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -832,6 +1018,9 @@
       <MemberSignature Language="C#" Value="public static void WriteAllTLogs (string intermediateDirectory, string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteAllTLogs(string intermediateDirectory, string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.WriteAllTLogs(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteAllTLogs (intermediateDirectory As String, taskName As String)" />
+      <MemberSignature Language="F#" Value="static member WriteAllTLogs : string * string -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.WriteAllTLogs (intermediateDirectory, taskName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteAllTLogs(System::String ^ intermediateDirectory, System::String ^ taskName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -855,6 +1044,9 @@
       <MemberSignature Language="C#" Value="public static void WriteContextTLogs (string intermediateDirectory, string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteContextTLogs(string intermediateDirectory, string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FileTracker.WriteContextTLogs(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteContextTLogs (intermediateDirectory As String, taskName As String)" />
+      <MemberSignature Language="F#" Value="static member WriteContextTLogs : string * string -&gt; unit" Usage="Microsoft.Build.Utilities.FileTracker.WriteContextTLogs (intermediateDirectory, taskName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteContextTLogs(System::String ^ intermediateDirectory, System::String ^ taskName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -874,86 +1066,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TrackerArguments">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This method constructs the correct Tracker.exe arguments from its parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTrackerPath">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Figures out and returns the path to the correct Tracker.exe.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateRootingMarkerResponseFile">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a temporary response file containing the rooting marker.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FormatRootingMarker">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Construct a rooting marker string from the ITaskItem array of primary sources.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ForceOutOfProcTracking">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether we must track out of process, or whether in process tracking will work.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFileTrackerPath">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Figures out and returns the path to the correct FileTracker.dll.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TrackerResponseFileArguments">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This method constructs the correct Tracker.exe response file arguments from its parameters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StartProcess">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Start the process; tracking the command.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EnsureFileTrackerOnPath">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Prepends the path to the appropriate FileTracker assembly to the PATH environment variable.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

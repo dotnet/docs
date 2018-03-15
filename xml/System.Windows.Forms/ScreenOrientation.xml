@@ -1,7 +1,10 @@
-<Type Name="ScreenOrientation" FullName="System.Windows.Forms.ScreenOrientation">
+﻿<Type Name="ScreenOrientation" FullName="System.Windows.Forms.ScreenOrientation">
   <TypeSignature Language="C#" Value="public enum ScreenOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScreenOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScreenOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScreenOrientation" />
+  <TypeSignature Language="F#" Value="type ScreenOrientation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScreenOrientation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="Angle0" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScreenOrientation Angle0 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScreenOrientation.Angle0" />
+      <MemberSignature Language="VB.NET" Value="Angle0" />
+      <MemberSignature Language="F#" Value="Angle0 = 0" Usage="System.Windows.Forms.ScreenOrientation.Angle0" />
+      <MemberSignature Language="C++ CLI" Value="Angle0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScreenOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The screen is oriented at 0 degrees.</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="Angle180" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScreenOrientation Angle180 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScreenOrientation.Angle180" />
+      <MemberSignature Language="VB.NET" Value="Angle180" />
+      <MemberSignature Language="F#" Value="Angle180 = 2" Usage="System.Windows.Forms.ScreenOrientation.Angle180" />
+      <MemberSignature Language="C++ CLI" Value="Angle180" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScreenOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The screen is oriented at 180 degrees.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="Angle270" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScreenOrientation Angle270 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScreenOrientation.Angle270" />
+      <MemberSignature Language="VB.NET" Value="Angle270" />
+      <MemberSignature Language="F#" Value="Angle270 = 3" Usage="System.Windows.Forms.ScreenOrientation.Angle270" />
+      <MemberSignature Language="C++ CLI" Value="Angle270" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScreenOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The screen is oriented at 270 degrees.</summary>
       </Docs>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="Angle90" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScreenOrientation Angle90 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScreenOrientation.Angle90" />
+      <MemberSignature Language="VB.NET" Value="Angle90" />
+      <MemberSignature Language="F#" Value="Angle90 = 1" Usage="System.Windows.Forms.ScreenOrientation.Angle90" />
+      <MemberSignature Language="C++ CLI" Value="Angle90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScreenOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The screen is oriented at 90 degrees</summary>
       </Docs>

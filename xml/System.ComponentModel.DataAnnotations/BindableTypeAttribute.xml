@@ -1,7 +1,10 @@
-<Type Name="BindableTypeAttribute" FullName="System.ComponentModel.DataAnnotations.BindableTypeAttribute">
+﻿<Type Name="BindableTypeAttribute" FullName="System.ComponentModel.DataAnnotations.BindableTypeAttribute">
   <TypeSignature Language="C#" Value="public sealed class BindableTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindableTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.BindableTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BindableTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type BindableTypeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindableTypeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,7 +16,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum, AllowMultiple=false, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Struct, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public BindableTypeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.BindableTypeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindableTypeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public bool IsBindable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBindable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.BindableTypeAttribute.IsBindable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsBindable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBindable : bool with get, set" Usage="System.ComponentModel.DataAnnotations.BindableTypeAttribute.IsBindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBindable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

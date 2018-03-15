@@ -1,7 +1,10 @@
-<Type Name="ExportDescriptorPromise" FullName="System.Composition.Hosting.Core.ExportDescriptorPromise">
+﻿<Type Name="ExportDescriptorPromise" FullName="System.Composition.Hosting.Core.ExportDescriptorPromise">
   <TypeSignature Language="C#" Value="public class ExportDescriptorPromise" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportDescriptorPromise extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptorPromise" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExportDescriptorPromise" />
+  <TypeSignature Language="F#" Value="type ExportDescriptorPromise = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExportDescriptorPromise" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public ExportDescriptorPromise (System.Composition.Hosting.Core.CompositionContract contract, string origin, bool isShared, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt; dependencies, Func&lt;System.Collections.Generic.IEnumerable&lt;System.Composition.Hosting.Core.CompositionDependency&gt;,System.Composition.Hosting.Core.ExportDescriptor&gt; getDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Composition.Hosting.Core.CompositionContract contract, string origin, bool isShared, class System.Func`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;&gt; dependencies, class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt;, class System.Composition.Hosting.Core.ExportDescriptor&gt; getDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.#ctor(System.Composition.Hosting.Core.CompositionContract,System.String,System.Boolean,System.Func{System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.CompositionDependency}},System.Func{System.Collections.Generic.IEnumerable{System.Composition.Hosting.Core.CompositionDependency},System.Composition.Hosting.Core.ExportDescriptor})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contract As CompositionContract, origin As String, isShared As Boolean, dependencies As Func(Of IEnumerable(Of CompositionDependency)), getDescriptor As Func(Of IEnumerable(Of CompositionDependency), ExportDescriptor))" />
+      <MemberSignature Language="F#" Value="new System.Composition.Hosting.Core.ExportDescriptorPromise : System.Composition.Hosting.Core.CompositionContract * string * bool * Func&lt;seq&lt;System.Composition.Hosting.Core.CompositionDependency&gt;&gt; * Func&lt;seq&lt;System.Composition.Hosting.Core.CompositionDependency&gt;, System.Composition.Hosting.Core.ExportDescriptor&gt; -&gt; System.Composition.Hosting.Core.ExportDescriptorPromise" Usage="new System.Composition.Hosting.Core.ExportDescriptorPromise (contract, origin, isShared, dependencies, getDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportDescriptorPromise(System::Composition::Hosting::Core::CompositionContract ^ contract, System::String ^ origin, bool isShared, Func&lt;System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::CompositionDependency ^&gt; ^&gt; ^ dependencies, Func&lt;System::Collections::Generic::IEnumerable&lt;System::Composition::Hosting::Core::CompositionDependency ^&gt; ^, System::Composition::Hosting::Core::ExportDescriptor ^&gt; ^ getDescriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -48,14 +54,16 @@
         <param name="dependencies">A function that provides the dependencies required to fulfill the promise.</param>
         <param name="getDescriptor">A function that provides the promised descriptor.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Contract">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.CompositionContract Contract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Composition.Hosting.Core.CompositionContract Contract" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As CompositionContract" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.Composition.Hosting.Core.CompositionContract" Usage="System.Composition.Hosting.Core.ExportDescriptorPromise.Contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Composition::Hosting::Core::CompositionContract ^ Contract { System::Composition::Hosting::Core::CompositionContract ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -68,14 +76,16 @@
       <Docs>
         <summary>Gets the contract fulfilled by this promise.</summary>
         <value>The contract</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dependencies">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt; Dependencies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Composition.Hosting.Core.CompositionDependency&gt; Dependencies" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Dependencies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dependencies As ReadOnlyCollection(Of CompositionDependency)" />
+      <MemberSignature Language="F#" Value="member this.Dependencies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Composition.Hosting.Core.CompositionDependency&gt;" Usage="System.Composition.Hosting.Core.ExportDescriptorPromise.Dependencies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Composition::Hosting::Core::CompositionDependency ^&gt; ^ Dependencies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Composition::Hosting::Core::CompositionDependency ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -88,14 +98,16 @@
       <Docs>
         <summary>Gets the dependencies that are required to fulfill this promise.</summary>
         <value>A collection of dependencies.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDescriptor">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.Core.ExportDescriptor GetDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.Core.ExportDescriptor GetDescriptor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.GetDescriptor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDescriptor () As ExportDescriptor" />
+      <MemberSignature Language="F#" Value="member this.GetDescriptor : unit -&gt; System.Composition.Hosting.Core.ExportDescriptor" Usage="exportDescriptorPromise.GetDescriptor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::Core::ExportDescriptor ^ GetDescriptor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -109,14 +121,16 @@
       <Docs>
         <summary>Retrieves the promised descriptor.</summary>
         <returns>The descriptor.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsShared">
       <MemberSignature Language="C#" Value="public bool IsShared { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsShared" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.IsShared" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsShared As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsShared : bool" Usage="System.Composition.Hosting.Core.ExportDescriptorPromise.IsShared" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsShared { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -130,14 +144,16 @@
         <summary>Gets a value that indicates whether the promise is shared.</summary>
         <value>
           <see langword="true" /> if the promise is shared within some context; otherwise, <see langword="false" />.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Origin">
       <MemberSignature Language="C#" Value="public string Origin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Origin" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptorPromise.Origin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As String" />
+      <MemberSignature Language="F#" Value="member this.Origin : string" Usage="System.Composition.Hosting.Core.ExportDescriptorPromise.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -150,14 +166,16 @@
       <Docs>
         <summary>Gets a description of where the promise originates (for example, a part type), used to provide readable errors.</summary>
         <value>A description of the promise's origin.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptorPromise.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exportDescriptorPromise.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -171,8 +189,7 @@
       <Docs>
         <summary>Returns the string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</summary>
         <returns>The string representation of this <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise" /> object.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

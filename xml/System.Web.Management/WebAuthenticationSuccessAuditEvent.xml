@@ -1,7 +1,10 @@
-<Type Name="WebAuthenticationSuccessAuditEvent" FullName="System.Web.Management.WebAuthenticationSuccessAuditEvent">
+﻿<Type Name="WebAuthenticationSuccessAuditEvent" FullName="System.Web.Management.WebAuthenticationSuccessAuditEvent">
   <TypeSignature Language="C#" Value="public class WebAuthenticationSuccessAuditEvent : System.Web.Management.WebSuccessAuditEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebAuthenticationSuccessAuditEvent extends System.Web.Management.WebSuccessAuditEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebAuthenticationSuccessAuditEvent&#xA;Inherits WebSuccessAuditEvent" />
+  <TypeSignature Language="F#" Value="type WebAuthenticationSuccessAuditEvent = class&#xA;    inherit WebSuccessAuditEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebAuthenticationSuccessAuditEvent : System::Web::Management::WebSuccessAuditEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,10 +90,22 @@
     <altmember cref="T:System.Web.Management.WebEventCodes" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebAuthenticationSuccessAuditEvent (string message, object eventSource, int eventCode, string nameToAuthenticate);" />
+      <MemberSignature Language="C#" Value="protected internal WebAuthenticationSuccessAuditEvent (string message, object eventSource, int eventCode, string nameToAuthenticate);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, string nameToAuthenticate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuthenticationSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, nameToAuthenticate As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuthenticationSuccessAuditEvent : string * obj * int * string -&gt; System.Web.Management.WebAuthenticationSuccessAuditEvent" Usage="new System.Web.Management.WebAuthenticationSuccessAuditEvent (message, eventSource, eventCode, nameToAuthenticate)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuthenticationSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, System::String ^ nameToAuthenticate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,9 +145,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebAuthenticationSuccessAuditEvent (string message, object eventSource, int eventCode, int eventDetailCode, string nameToAuthenticate);" />
+      <MemberSignature Language="C#" Value="protected internal WebAuthenticationSuccessAuditEvent (string message, object eventSource, int eventCode, int eventDetailCode, string nameToAuthenticate);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode, string nameToAuthenticate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebAuthenticationSuccessAuditEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer, nameToAuthenticate As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebAuthenticationSuccessAuditEvent : string * obj * int * int * string -&gt; System.Web.Management.WebAuthenticationSuccessAuditEvent" Usage="new System.Web.Management.WebAuthenticationSuccessAuditEvent (message, eventSource, eventCode, eventDetailCode, nameToAuthenticate)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebAuthenticationSuccessAuditEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode, System::String ^ nameToAuthenticate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +195,9 @@
       <MemberSignature Language="C#" Value="public string NameToAuthenticate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameToAuthenticate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebAuthenticationSuccessAuditEvent.NameToAuthenticate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameToAuthenticate As String" />
+      <MemberSignature Language="F#" Value="member this.NameToAuthenticate : string" Usage="System.Web.Management.WebAuthenticationSuccessAuditEvent.NameToAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameToAuthenticate { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,14 +229,5 @@
         <altmember cref="T:System.Web.Management.WebEventCodes" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebAuthenticationSuccessAuditEvent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

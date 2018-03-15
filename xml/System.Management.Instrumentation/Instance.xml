@@ -1,7 +1,10 @@
-<Type Name="Instance" FullName="System.Management.Instrumentation.Instance">
+﻿<Type Name="Instance" FullName="System.Management.Instrumentation.Instance">
   <TypeSignature Language="C#" Value="public abstract class Instance : System.Management.Instrumentation.IInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Instance extends System.Object implements class System.Management.Instrumentation.IInstance" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.Instance" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Instance&#xA;Implements IInstance" />
+  <TypeSignature Language="F#" Value="type Instance = class&#xA;    interface IInstance" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Instance abstract : System::Management::Instrumentation::IInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected Instance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instance.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Instance();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -55,7 +60,13 @@
       <MemberSignature Language="C#" Value="public bool Published { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Published" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.Instance.Published" />
+      <MemberSignature Language="VB.NET" Value="Public Property Published As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Published : bool with get, set" Usage="System.Management.Instrumentation.Instance.Published" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Published { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Management.Instrumentation.IInstance.Published</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

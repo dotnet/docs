@@ -1,7 +1,10 @@
-<Type Name="View" FullName="System.Web.UI.WebControls.View">
+﻿<Type Name="View" FullName="System.Web.UI.WebControls.View">
   <TypeSignature Language="C#" Value="public class View : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit View extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.View" />
+  <TypeSignature Language="VB.NET" Value="Public Class View&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class View : System::Web::UI::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +90,8 @@
       <MemberSignature Language="C#" Value="public View ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; View();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +107,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Activate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Activate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Activate : EventHandler " Usage="member this.Activate : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -136,6 +144,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Deactivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Deactivate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Deactivate : EventHandler " Usage="member this.Deactivate : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +181,9 @@
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.EnableTheming" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.View.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,9 +215,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
-      <MemberSignature Language="C#" Value="protected virtual void OnActivate (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnActivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivate (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivate : EventArgs -&gt; unit&#xA;override this.OnActivate : EventArgs -&gt; unit" Usage="view.OnActivate e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -230,9 +247,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnDeactivate">
-      <MemberSignature Language="C#" Value="protected virtual void OnDeactivate (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnDeactivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnDeactivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnDeactivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnDeactivate (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivate : EventArgs -&gt; unit&#xA;override this.OnDeactivate : EventArgs -&gt; unit" Usage="view.OnDeactivate e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnDeactivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -262,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.View.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,7 +295,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

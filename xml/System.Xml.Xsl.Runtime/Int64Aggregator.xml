@@ -1,7 +1,10 @@
-<Type Name="Int64Aggregator" FullName="System.Xml.Xsl.Runtime.Int64Aggregator">
+﻿<Type Name="Int64Aggregator" FullName="System.Xml.Xsl.Runtime.Int64Aggregator">
   <TypeSignature Language="C#" Value="public struct Int64Aggregator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Int64Aggregator extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.Int64Aggregator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Int64Aggregator" />
+  <TypeSignature Language="F#" Value="type Int64Aggregator = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Int64Aggregator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public void Average (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Average(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int64Aggregator.Average(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Average (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.Average : int64 -&gt; unit" Usage="int64Aggregator.Average value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Average(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public long AverageResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AverageResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int64Aggregator.AverageResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AverageResult As Long" />
+      <MemberSignature Language="F#" Value="member this.AverageResult : int64" Usage="System.Xml.Xsl.Runtime.Int64Aggregator.AverageResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long AverageResult { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public void Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int64Aggregator.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create ()" />
+      <MemberSignature Language="F#" Value="member this.Create : unit -&gt; unit" Usage="int64Aggregator.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -101,6 +113,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int64Aggregator.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Xml.Xsl.Runtime.Int64Aggregator.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -125,6 +140,9 @@
       <MemberSignature Language="C#" Value="public void Maximum (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Maximum(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int64Aggregator.Maximum(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Maximum (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.Maximum : int64 -&gt; unit" Usage="int64Aggregator.Maximum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Maximum(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -151,6 +169,9 @@
       <MemberSignature Language="C#" Value="public long MaximumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int64Aggregator.MaximumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumResult As Long" />
+      <MemberSignature Language="F#" Value="member this.MaximumResult : int64" Usage="System.Xml.Xsl.Runtime.Int64Aggregator.MaximumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaximumResult { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -174,6 +195,9 @@
       <MemberSignature Language="C#" Value="public void Minimum (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Minimum(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int64Aggregator.Minimum(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Minimum (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.Minimum : int64 -&gt; unit" Usage="int64Aggregator.Minimum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Minimum(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -200,6 +224,9 @@
       <MemberSignature Language="C#" Value="public long MinimumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MinimumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int64Aggregator.MinimumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumResult As Long" />
+      <MemberSignature Language="F#" Value="member this.MinimumResult : int64" Usage="System.Xml.Xsl.Runtime.Int64Aggregator.MinimumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MinimumResult { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -223,6 +250,9 @@
       <MemberSignature Language="C#" Value="public void Sum (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sum(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.Int64Aggregator.Sum(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sum (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.Sum : int64 -&gt; unit" Usage="int64Aggregator.Sum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sum(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -249,6 +279,9 @@
       <MemberSignature Language="C#" Value="public long SumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 SumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.Int64Aggregator.SumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SumResult As Long" />
+      <MemberSignature Language="F#" Value="member this.SumResult : int64" Usage="System.Xml.Xsl.Runtime.Int64Aggregator.SumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long SumResult { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

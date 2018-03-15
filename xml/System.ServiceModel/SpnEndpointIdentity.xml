@@ -1,7 +1,10 @@
-<Type Name="SpnEndpointIdentity" FullName="System.ServiceModel.SpnEndpointIdentity">
+﻿<Type Name="SpnEndpointIdentity" FullName="System.ServiceModel.SpnEndpointIdentity">
   <TypeSignature Language="C#" Value="public class SpnEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpnEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.SpnEndpointIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpnEndpointIdentity&#xA;Inherits EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type SpnEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpnEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +50,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.SpnEndpointIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SpnEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.SpnEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.SpnEndpointIdentity" Usage="new System.ServiceModel.SpnEndpointIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="public SpnEndpointIdentity (string spnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string spnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.SpnEndpointIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (spnName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.SpnEndpointIdentity : string -&gt; System.ServiceModel.SpnEndpointIdentity" Usage="new System.ServiceModel.SpnEndpointIdentity spnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpnEndpointIdentity(System::String ^ spnName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static TimeSpan SpnLookupTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan SpnLookupTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.SpnEndpointIdentity.SpnLookupTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property SpnLookupTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.SpnLookupTime : TimeSpan with get, set" Usage="System.ServiceModel.SpnEndpointIdentity.SpnLookupTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeSpan SpnLookupTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,14 +172,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The value is set to less than 0.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.ServiceModel.SpnEndpointIdentity" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

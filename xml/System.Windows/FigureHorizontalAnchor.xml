@@ -1,7 +1,10 @@
-<Type Name="FigureHorizontalAnchor" FullName="System.Windows.FigureHorizontalAnchor">
+﻿<Type Name="FigureHorizontalAnchor" FullName="System.Windows.FigureHorizontalAnchor">
   <TypeSignature Language="C#" Value="public enum FigureHorizontalAnchor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FigureHorizontalAnchor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FigureHorizontalAnchor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FigureHorizontalAnchor" />
+  <TypeSignature Language="F#" Value="type FigureHorizontalAnchor = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FigureHorizontalAnchor" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="ColumnCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ColumnCenter = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ColumnCenter" />
+      <MemberSignature Language="VB.NET" Value="ColumnCenter" />
+      <MemberSignature Language="F#" Value="ColumnCenter = 7" Usage="System.Windows.FigureHorizontalAnchor.ColumnCenter" />
+      <MemberSignature Language="C++ CLI" Value="ColumnCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Anchor the figure in the center of the column content area.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="ColumnLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ColumnLeft = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ColumnLeft" />
+      <MemberSignature Language="VB.NET" Value="ColumnLeft" />
+      <MemberSignature Language="F#" Value="ColumnLeft = 6" Usage="System.Windows.FigureHorizontalAnchor.ColumnLeft" />
+      <MemberSignature Language="C++ CLI" Value="ColumnLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Anchor the figure to the left of the column content area.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="ColumnRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ColumnRight = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ColumnRight" />
+      <MemberSignature Language="VB.NET" Value="ColumnRight" />
+      <MemberSignature Language="F#" Value="ColumnRight = 8" Usage="System.Windows.FigureHorizontalAnchor.ColumnRight" />
+      <MemberSignature Language="C++ CLI" Value="ColumnRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Anchor the figure to the right of the column content area.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="ContentCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ContentCenter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ContentCenter" />
+      <MemberSignature Language="VB.NET" Value="ContentCenter" />
+      <MemberSignature Language="F#" Value="ContentCenter = 4" Usage="System.Windows.FigureHorizontalAnchor.ContentCenter" />
+      <MemberSignature Language="C++ CLI" Value="ContentCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Anchor the figure in the center of the page content area.</summary>
       </Docs>
@@ -96,6 +115,9 @@
       <MemberSignature Language="C#" Value="ContentLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ContentLeft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ContentLeft" />
+      <MemberSignature Language="VB.NET" Value="ContentLeft" />
+      <MemberSignature Language="F#" Value="ContentLeft = 3" Usage="System.Windows.FigureHorizontalAnchor.ContentLeft" />
+      <MemberSignature Language="C++ CLI" Value="ContentLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Anchor the figure to the left of the page content area.</summary>
       </Docs>
@@ -112,6 +135,9 @@
       <MemberSignature Language="C#" Value="ContentRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor ContentRight = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.ContentRight" />
+      <MemberSignature Language="VB.NET" Value="ContentRight" />
+      <MemberSignature Language="F#" Value="ContentRight = 5" Usage="System.Windows.FigureHorizontalAnchor.ContentRight" />
+      <MemberSignature Language="C++ CLI" Value="ContentRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Anchor the figure to the right of the page content area.</summary>
       </Docs>
@@ -128,6 +155,9 @@
       <MemberSignature Language="C#" Value="PageCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor PageCenter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.PageCenter" />
+      <MemberSignature Language="VB.NET" Value="PageCenter" />
+      <MemberSignature Language="F#" Value="PageCenter = 1" Usage="System.Windows.FigureHorizontalAnchor.PageCenter" />
+      <MemberSignature Language="C++ CLI" Value="PageCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Anchor the figure in the center of the page area.</summary>
       </Docs>
@@ -144,6 +175,9 @@
       <MemberSignature Language="C#" Value="PageLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor PageLeft = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.PageLeft" />
+      <MemberSignature Language="VB.NET" Value="PageLeft" />
+      <MemberSignature Language="F#" Value="PageLeft = 0" Usage="System.Windows.FigureHorizontalAnchor.PageLeft" />
+      <MemberSignature Language="C++ CLI" Value="PageLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Anchor the figure to the left of the page area.</summary>
       </Docs>
@@ -160,6 +195,9 @@
       <MemberSignature Language="C#" Value="PageRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FigureHorizontalAnchor PageRight = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FigureHorizontalAnchor.PageRight" />
+      <MemberSignature Language="VB.NET" Value="PageRight" />
+      <MemberSignature Language="F#" Value="PageRight = 2" Usage="System.Windows.FigureHorizontalAnchor.PageRight" />
+      <MemberSignature Language="C++ CLI" Value="PageRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.FigureHorizontalAnchor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Anchor the figure to the right of the page area.</summary>
       </Docs>

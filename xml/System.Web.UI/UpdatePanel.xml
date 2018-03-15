@@ -1,7 +1,10 @@
-<Type Name="UpdatePanel" FullName="System.Web.UI.UpdatePanel">
-  <TypeSignature Language="C#" Value="public class UpdatePanel : System.Web.UI.Control, System.Web.UI.IAttributeAccessor" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpdatePanel extends System.Web.UI.Control implements class System.Web.UI.IAttributeAccessor" />
+﻿<Type Name="UpdatePanel" FullName="System.Web.UI.UpdatePanel">
+  <TypeSignature Language="C#" Value="public class UpdatePanel : System.Web.UI.Control, System.Web.UI.IAttributeAccessor, System.Web.UI.IUpdatePanel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpdatePanel extends System.Web.UI.Control implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.IUpdatePanel" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class UpdatePanel&#xA;Inherits Control&#xA;Implements IAttributeAccessor, IUpdatePanel" />
+  <TypeSignature Language="F#" Value="type UpdatePanel = class&#xA;    inherit Control&#xA;    interface IAttributeAccessor&#xA;    interface IUpdatePanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdatePanel : System::Web::UI::Control, System::Web::UI::IAttributeAccessor, System::Web::UI::IUpdatePanel" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +15,9 @@
   <Interfaces>
     <Interface>
       <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IUpdatePanel</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
@@ -180,6 +186,8 @@
       <MemberSignature Language="C#" Value="public UpdatePanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdatePanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -211,6 +219,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.UpdatePanel.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -221,7 +232,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.WebSysDescription("WebControl_Attributes")</AttributeName>
@@ -247,6 +258,9 @@
       <MemberSignature Language="C#" Value="public bool ChildrenAsTriggers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ChildrenAsTriggers" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChildrenAsTriggers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ChildrenAsTriggers : bool with get, set" Usage="System.Web.UI.UpdatePanel.ChildrenAsTriggers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ChildrenAsTriggers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -288,6 +302,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate ContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ContentTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.ContentTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.UpdatePanel.ContentTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ITemplate ^ ContentTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -298,10 +315,10 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateInstance(System.Web.UI.TemplateInstance.Single)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateInstance</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -332,6 +349,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ContentTemplateContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ContentTemplateContainer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentTemplateContainer As Control" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplateContainer : System.Web.UI.Control" Usage="System.Web.UI.UpdatePanel.ContentTemplateContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ ContentTemplateContainer { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -371,6 +391,9 @@
       <MemberSignature Language="C#" Value="public override sealed System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.UpdatePanel.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -398,6 +421,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Control CreateContentTemplateContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Control CreateContentTemplateContainer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.CreateContentTemplateContainer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateContentTemplateContainer () As Control" />
+      <MemberSignature Language="F#" Value="abstract member CreateContentTemplateContainer : unit -&gt; System.Web.UI.Control&#xA;override this.CreateContentTemplateContainer : unit -&gt; System.Web.UI.Control" Usage="updatePanel.CreateContentTemplateContainer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::Control ^ CreateContentTemplateContainer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -441,6 +467,9 @@
       <MemberSignature Language="C#" Value="protected override sealed System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="updatePanel.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -467,9 +496,12 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected virtual void Initialize ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit&#xA;override this.Initialize : unit -&gt; unit" Usage="updatePanel.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -500,6 +532,9 @@
       <MemberSignature Language="C#" Value="public bool IsInPartialRendering { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInPartialRendering" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.IsInPartialRendering" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInPartialRendering As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInPartialRendering : bool" Usage="System.Web.UI.UpdatePanel.IsInPartialRendering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInPartialRendering { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -529,9 +564,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="updatePanel.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -563,9 +601,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="updatePanel.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -589,9 +630,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="updatePanel.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -620,9 +664,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
-      <MemberSignature Language="C#" Value="protected override void OnUnload (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnUnload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.OnUnload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnUnload (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="updatePanel.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -648,9 +695,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="updatePanel.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -678,9 +728,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
-      <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="updatePanel.RenderChildren writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -711,6 +764,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.UpdatePanelRenderMode RenderMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.UpdatePanelRenderMode RenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.RenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RenderMode As UpdatePanelRenderMode" />
+      <MemberSignature Language="F#" Value="member this.RenderMode : System.Web.UI.UpdatePanelRenderMode with get, set" Usage="System.Web.UI.UpdatePanel.RenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::UpdatePanelRenderMode RenderMode { System::Web::UI::UpdatePanelRenderMode get(); void set(System::Web::UI::UpdatePanelRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -750,9 +806,12 @@
       </Docs>
     </Member>
     <Member MemberName="RequiresUpdate">
-      <MemberSignature Language="C#" Value="protected virtual bool RequiresUpdate { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool RequiresUpdate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.RequiresUpdate" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property RequiresUpdate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUpdate : bool" Usage="System.Web.UI.UpdatePanel.RequiresUpdate" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool RequiresUpdate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -781,6 +840,8 @@
       <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAttribute (key As String) As String Implements IAttributeAccessor.GetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ key) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -810,6 +871,8 @@
       <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string key, string value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string key, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetAttribute (key As String, value As String) Implements IAttributeAccessor.SetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ key, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -840,6 +903,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.UpdatePanelTriggerCollection Triggers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.UpdatePanelTriggerCollection Triggers" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.Triggers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Triggers As UpdatePanelTriggerCollection" />
+      <MemberSignature Language="F#" Value="member this.Triggers : System.Web.UI.UpdatePanelTriggerCollection" Usage="System.Web.UI.UpdatePanel.Triggers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::UpdatePanelTriggerCollection ^ Triggers { System::Web::UI::UpdatePanelTriggerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -859,7 +925,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -891,6 +957,9 @@
       <MemberSignature Language="C#" Value="public void Update ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UpdatePanel.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update ()" />
+      <MemberSignature Language="F#" Value="member this.Update : unit -&gt; unit" Usage="updatePanel.Update " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -935,6 +1004,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.UpdatePanelUpdateMode UpdateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.UpdatePanelUpdateMode UpdateMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.UpdatePanel.UpdateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateMode As UpdatePanelUpdateMode" />
+      <MemberSignature Language="F#" Value="member this.UpdateMode : System.Web.UI.UpdatePanelUpdateMode with get, set" Usage="System.Web.UI.UpdatePanel.UpdateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::UpdatePanelUpdateMode UpdateMode { System::Web::UI::UpdatePanelUpdateMode get(); void set(System::Web::UI::UpdatePanelUpdateMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="LateBoundBitmapDecoder" FullName="System.Windows.Media.Imaging.LateBoundBitmapDecoder">
+﻿<Type Name="LateBoundBitmapDecoder" FullName="System.Windows.Media.Imaging.LateBoundBitmapDecoder">
   <TypeSignature Language="C#" Value="public sealed class LateBoundBitmapDecoder : System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LateBoundBitmapDecoder extends System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.LateBoundBitmapDecoder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LateBoundBitmapDecoder&#xA;Inherits BitmapDecoder" />
+  <TypeSignature Language="F#" Value="type LateBoundBitmapDecoder = class&#xA;    inherit BitmapDecoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LateBoundBitmapDecoder sealed : System::Windows::Media::Imaging::BitmapDecoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Imaging.BitmapCodecInfo CodecInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapCodecInfo CodecInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.CodecInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CodecInfo As BitmapCodecInfo" />
+      <MemberSignature Language="F#" Value="member this.CodecInfo : System.Windows.Media.Imaging.BitmapCodecInfo" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.CodecInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapCodecInfo ^ CodecInfo { System::Windows::Media::Imaging::BitmapCodecInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt; ColorContexts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.ColorContext&gt; ColorContexts" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.ColorContexts" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ColorContexts As ReadOnlyCollection(Of ColorContext)" />
+      <MemberSignature Language="F#" Value="member this.ColorContexts : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.ColorContext&gt;" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.ColorContexts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ ColorContexts { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::ColorContext ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapDecoder Decoder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapDecoder Decoder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Decoder As BitmapDecoder" />
+      <MemberSignature Language="F#" Value="member this.Decoder : System.Windows.Media.Imaging.BitmapDecoder" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Imaging::BitmapDecoder ^ Decoder { System::Windows::Media::Imaging::BitmapDecoder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +121,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.Imaging.BitmapFrame&gt; Frames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Media.Imaging.BitmapFrame&gt; Frames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Frames" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Frames As ReadOnlyCollection(Of BitmapFrame)" />
+      <MemberSignature Language="F#" Value="member this.Frames : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Media.Imaging.BitmapFrame&gt;" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.Frames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::Imaging::BitmapFrame ^&gt; ^ Frames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Media::Imaging::BitmapFrame ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +164,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDownloading { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDownloading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.IsDownloading" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsDownloading As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDownloading : bool" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.IsDownloading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsDownloading { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +186,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Imaging.BitmapPalette Palette { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapPalette Palette" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Palette" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Palette As BitmapPalette" />
+      <MemberSignature Language="F#" Value="member this.Palette : System.Windows.Media.Imaging.BitmapPalette" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.Palette" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapPalette ^ Palette { System::Windows::Media::Imaging::BitmapPalette ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +213,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Imaging.BitmapSource Preview { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapSource Preview" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Preview" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Preview As BitmapSource" />
+      <MemberSignature Language="F#" Value="member this.Preview : System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.Preview" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapSource ^ Preview { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +247,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Imaging.BitmapSource Thumbnail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Imaging.BitmapSource Thumbnail" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Thumbnail" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Thumbnail As BitmapSource" />
+      <MemberSignature Language="F#" Value="member this.Thumbnail : System.Windows.Media.Imaging.BitmapSource" Usage="System.Windows.Media.Imaging.LateBoundBitmapDecoder.Thumbnail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Imaging::BitmapSource ^ Thumbnail { System::Windows::Media::Imaging::BitmapSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

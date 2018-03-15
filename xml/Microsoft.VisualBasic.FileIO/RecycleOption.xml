@@ -1,7 +1,10 @@
-<Type Name="RecycleOption" FullName="Microsoft.VisualBasic.FileIO.RecycleOption">
+﻿<Type Name="RecycleOption" FullName="Microsoft.VisualBasic.FileIO.RecycleOption">
   <TypeSignature Language="C#" Value="public enum RecycleOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecycleOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.RecycleOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RecycleOption" />
+  <TypeSignature Language="F#" Value="type RecycleOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RecycleOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="DeletePermanently" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.RecycleOption DeletePermanently = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.DeletePermanently" />
+      <MemberSignature Language="VB.NET" Value="DeletePermanently" />
+      <MemberSignature Language="F#" Value="DeletePermanently = 2" Usage="Microsoft.VisualBasic.FileIO.RecycleOption.DeletePermanently" />
+      <MemberSignature Language="C++ CLI" Value="DeletePermanently" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Delete the file or directory permanently. Default.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="SendToRecycleBin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.RecycleOption SendToRecycleBin = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.RecycleOption.SendToRecycleBin" />
+      <MemberSignature Language="VB.NET" Value="SendToRecycleBin" />
+      <MemberSignature Language="F#" Value="SendToRecycleBin = 3" Usage="Microsoft.VisualBasic.FileIO.RecycleOption.SendToRecycleBin" />
+      <MemberSignature Language="C++ CLI" Value="SendToRecycleBin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.RecycleOption</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Send the file or directory to the **Recycle Bin**.</summary>
       </Docs>

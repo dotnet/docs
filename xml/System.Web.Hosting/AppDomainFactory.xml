@@ -1,7 +1,10 @@
-<Type Name="AppDomainFactory" FullName="System.Web.Hosting.AppDomainFactory">
+﻿<Type Name="AppDomainFactory" FullName="System.Web.Hosting.AppDomainFactory">
   <TypeSignature Language="C#" Value="public sealed class AppDomainFactory : System.Web.Hosting.IAppDomainFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AppDomainFactory extends System.Object implements class System.Web.Hosting.IAppDomainFactory" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AppDomainFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppDomainFactory&#xA;Implements IAppDomainFactory" />
+  <TypeSignature Language="F#" Value="type AppDomainFactory = class&#xA;    interface IAppDomainFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppDomainFactory sealed : System::Web::Hosting::IAppDomainFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public AppDomainFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,7 +47,13 @@
       <MemberSignature Language="C#" Value="public object Create (string module, string typeName, string appId, string appPath, string strUrlOfAppOrigin, int iZone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(string module, string typeName, string appId, string appPath, string strUrlOfAppOrigin, int32 iZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Create (module As String, typeName As String, appId As String, appPath As String, strUrlOfAppOrigin As String, iZone As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string * string * string * string * int -&gt; obj&#xA;override this.Create : string * string * string * string * string * int -&gt; obj" Usage="appDomainFactory.Create (module, typeName, appId, appPath, strUrlOfAppOrigin, iZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::String ^ module, System::String ^ typeName, System::String ^ appId, System::String ^ appPath, System::String ^ strUrlOfAppOrigin, int iZone);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.Hosting.IAppDomainFactory.Create(System.String,System.String,System.String,System.String,System.String,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

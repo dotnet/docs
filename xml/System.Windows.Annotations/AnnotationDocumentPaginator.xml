@@ -1,7 +1,10 @@
-<Type Name="AnnotationDocumentPaginator" FullName="System.Windows.Annotations.AnnotationDocumentPaginator">
+﻿<Type Name="AnnotationDocumentPaginator" FullName="System.Windows.Annotations.AnnotationDocumentPaginator">
   <TypeSignature Language="C#" Value="public sealed class AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationDocumentPaginator extends System.Windows.Documents.DocumentPaginator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationDocumentPaginator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnotationDocumentPaginator&#xA;Inherits DocumentPaginator" />
+  <TypeSignature Language="F#" Value="type AnnotationDocumentPaginator = class&#xA;    inherit DocumentPaginator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationDocumentPaginator sealed : System::Windows::Documents::DocumentPaginator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +57,9 @@
       <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.IO.Stream annotationStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.IO.Stream annotationStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (originalPaginator As DocumentPaginator, annotationStore As Stream)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator * System.IO.Stream -&gt; System.Windows.Annotations.AnnotationDocumentPaginator" Usage="new System.Windows.Annotations.AnnotationDocumentPaginator (originalPaginator, annotationStore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationDocumentPaginator(System::Windows::Documents::DocumentPaginator ^ originalPaginator, System::IO::Stream ^ annotationStore);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.Windows.Annotations.Storage.AnnotationStore annotationStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.Windows.Annotations.Storage.AnnotationStore annotationStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.Windows.Annotations.Storage.AnnotationStore)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator * System.Windows.Annotations.Storage.AnnotationStore -&gt; System.Windows.Annotations.AnnotationDocumentPaginator" Usage="new System.Windows.Annotations.AnnotationDocumentPaginator (originalPaginator, annotationStore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationDocumentPaginator(System::Windows::Documents::DocumentPaginator ^ originalPaginator, System::Windows::Annotations::Storage::AnnotationStore ^ annotationStore);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.IO.Stream annotationStore, System.Windows.FlowDirection flowDirection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.IO.Stream annotationStore, valuetype System.Windows.FlowDirection flowDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.IO.Stream,System.Windows.FlowDirection)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator * System.IO.Stream * System.Windows.FlowDirection -&gt; System.Windows.Annotations.AnnotationDocumentPaginator" Usage="new System.Windows.Annotations.AnnotationDocumentPaginator (originalPaginator, annotationStore, flowDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationDocumentPaginator(System::Windows::Documents::DocumentPaginator ^ originalPaginator, System::IO::Stream ^ annotationStore, System::Windows::FlowDirection flowDirection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.Windows.Annotations.Storage.AnnotationStore annotationStore, System.Windows.FlowDirection flowDirection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.Windows.Annotations.Storage.AnnotationStore annotationStore, valuetype System.Windows.FlowDirection flowDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.#ctor(System.Windows.Documents.DocumentPaginator,System.Windows.Annotations.Storage.AnnotationStore,System.Windows.FlowDirection)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Annotations.AnnotationDocumentPaginator : System.Windows.Documents.DocumentPaginator * System.Windows.Annotations.Storage.AnnotationStore * System.Windows.FlowDirection -&gt; System.Windows.Annotations.AnnotationDocumentPaginator" Usage="new System.Windows.Annotations.AnnotationDocumentPaginator (originalPaginator, annotationStore, flowDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationDocumentPaginator(System::Windows::Documents::DocumentPaginator ^ originalPaginator, System::Windows::Annotations::Storage::AnnotationStore ^ annotationStore, System::Windows::FlowDirection flowDirection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -181,6 +193,9 @@
       <MemberSignature Language="C#" Value="public override void CancelAsync (object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelAsync(object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.CancelAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelAsync (userState As Object)" />
+      <MemberSignature Language="F#" Value="override this.CancelAsync : obj -&gt; unit" Usage="annotationDocumentPaginator.CancelAsync userState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +219,9 @@
       <MemberSignature Language="C#" Value="public override void ComputePageCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ComputePageCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ComputePageCount ()" />
+      <MemberSignature Language="F#" Value="override this.ComputePageCount : unit -&gt; unit" Usage="annotationDocumentPaginator.ComputePageCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ComputePageCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +250,9 @@
       <MemberSignature Language="C#" Value="public override void ComputePageCountAsync (object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ComputePageCountAsync(object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.ComputePageCountAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ComputePageCountAsync (userState As Object)" />
+      <MemberSignature Language="F#" Value="override this.ComputePageCountAsync : obj -&gt; unit" Usage="annotationDocumentPaginator.ComputePageCountAsync userState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ComputePageCountAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -264,6 +285,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.DocumentPage GetPage (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.DocumentPage GetPage(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPage (pageNumber As Integer) As DocumentPage" />
+      <MemberSignature Language="F#" Value="override this.GetPage : int -&gt; System.Windows.Documents.DocumentPage" Usage="annotationDocumentPaginator.GetPage pageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Documents::DocumentPage ^ GetPage(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -287,6 +311,9 @@
       <MemberSignature Language="C#" Value="public override void GetPageAsync (int pageNumber, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetPageAsync(int32 pageNumber, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationDocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetPageAsync (pageNumber As Integer, userState As Object)" />
+      <MemberSignature Language="F#" Value="override this.GetPageAsync : int * obj -&gt; unit" Usage="annotationDocumentPaginator.GetPageAsync (pageNumber, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetPageAsync(int pageNumber, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +348,9 @@
       <MemberSignature Language="C#" Value="public override bool IsPageCountValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPageCountValid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPageCountValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPageCountValid : bool" Usage="System.Windows.Annotations.AnnotationDocumentPaginator.IsPageCountValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPageCountValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -347,6 +377,9 @@
       <MemberSignature Language="C#" Value="public override int PageCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PageCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageCount : int" Usage="System.Windows.Annotations.AnnotationDocumentPaginator.PageCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PageCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -372,6 +405,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Size PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PageSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.PageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property PageSize As Size" />
+      <MemberSignature Language="F#" Value="member this.PageSize : System.Windows.Size with get, set" Usage="System.Windows.Annotations.AnnotationDocumentPaginator.PageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Size PageSize { System::Windows::Size get(); void set(System::Windows::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -397,6 +433,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.IDocumentPaginatorSource Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.IDocumentPaginatorSource Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationDocumentPaginator.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Source As IDocumentPaginatorSource" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Windows.Documents.IDocumentPaginatorSource" Usage="System.Windows.Annotations.AnnotationDocumentPaginator.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Documents::IDocumentPaginatorSource ^ Source { System::Windows::Documents::IDocumentPaginatorSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

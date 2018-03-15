@@ -1,7 +1,10 @@
-<Type Name="MessageBoxResult" FullName="System.Windows.MessageBoxResult">
+﻿<Type Name="MessageBoxResult" FullName="System.Windows.MessageBoxResult">
   <TypeSignature Language="C#" Value="public enum MessageBoxResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxResult" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxResult" />
+  <TypeSignature Language="F#" Value="type MessageBoxResult = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxResult" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult Cancel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 2" Usage="System.Windows.MessageBoxResult.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxResult</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The result value of the message box is **Cancel**.</summary>
       </Docs>
@@ -60,6 +67,9 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult No = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="F#" Value="No = 7" Usage="System.Windows.MessageBoxResult.No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxResult</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The result value of the message box is **No**.</summary>
       </Docs>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.MessageBoxResult.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxResult</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message box returns no result.</summary>
       </Docs>
@@ -92,6 +107,9 @@
       <MemberSignature Language="C#" Value="OK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult OK = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.OK" />
+      <MemberSignature Language="VB.NET" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 1" Usage="System.Windows.MessageBoxResult.OK" />
+      <MemberSignature Language="C++ CLI" Value="OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxResult</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The result value of the message box is **OK**.</summary>
       </Docs>
@@ -108,6 +127,9 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult Yes = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 6" Usage="System.Windows.MessageBoxResult.Yes" />
+      <MemberSignature Language="C++ CLI" Value="Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxResult</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The result value of the message box is **Yes**.</summary>
       </Docs>

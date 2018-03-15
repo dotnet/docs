@@ -1,7 +1,10 @@
-<Type Name="TimelineGroup" FullName="System.Windows.Media.Animation.TimelineGroup">
+﻿<Type Name="TimelineGroup" FullName="System.Windows.Media.Animation.TimelineGroup">
   <TypeSignature Language="C#" Value="public abstract class TimelineGroup : System.Windows.Media.Animation.Timeline, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TimelineGroup extends System.Windows.Media.Animation.Timeline implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.TimelineGroup" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TimelineGroup&#xA;Inherits Timeline&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type TimelineGroup = class&#xA;    inherit Timeline&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimelineGroup abstract : System::Windows::Media::Animation::Timeline, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     <altmember cref="T:System.Windows.Media.Animation.BeginStoryboard" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected TimelineGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimelineGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +67,9 @@
       <MemberSignature Language="C#" Value="protected TimelineGroup (Nullable&lt;TimeSpan&gt; beginTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.#ctor(System.Nullable{System.TimeSpan})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (beginTime As Nullable(Of TimeSpan))" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.TimelineGroup : Nullable&lt;TimeSpan&gt; -&gt; System.Windows.Media.Animation.TimelineGroup" Usage="new System.Windows.Media.Animation.TimelineGroup beginTime" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimelineGroup(Nullable&lt;TimeSpan&gt; beginTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected TimelineGroup (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.TimelineGroup : Nullable&lt;TimeSpan&gt; * System.Windows.Duration -&gt; System.Windows.Media.Animation.TimelineGroup" Usage="new System.Windows.Media.Animation.TimelineGroup (beginTime, duration)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimelineGroup(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected TimelineGroup (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration, System.Windows.Media.Animation.RepeatBehavior repeatBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.TimelineGroup : Nullable&lt;TimeSpan&gt; * System.Windows.Duration * System.Windows.Media.Animation.RepeatBehavior -&gt; System.Windows.Media.Animation.TimelineGroup" Usage="new System.Windows.Media.Animation.TimelineGroup (beginTime, duration, repeatBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimelineGroup(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration, System::Windows::Media::Animation::RepeatBehavior repeatBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,7 +134,13 @@
       <MemberSignature Language="C#" Value="protected virtual void AddChild (object child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddChild(object child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (child As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="timelineGroup.AddChild child" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ child);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,7 +167,13 @@
       <MemberSignature Language="C#" Value="protected virtual void AddText (string childText);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddText(string childText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (childText As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="timelineGroup.AddText childText" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ childText);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -170,9 +203,12 @@
       </Docs>
     </Member>
     <Member MemberName="AllocateClock">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Animation.Clock AllocateClock ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Media.Animation.Clock AllocateClock ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Windows.Media.Animation.Clock AllocateClock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.AllocateClock" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function AllocateClock () As Clock" />
+      <MemberSignature Language="F#" Value="override this.AllocateClock : unit -&gt; System.Windows.Media.Animation.Clock" Usage="timelineGroup.AllocateClock " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::Media::Animation::Clock ^ AllocateClock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +235,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineCollection Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.TimelineCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As TimelineCollection" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.Animation.TimelineCollection with get, set" Usage="System.Windows.Media.Animation.TimelineGroup.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::TimelineCollection ^ Children { System::Windows::Media::Animation::TimelineCollection ^ get(); void set(System::Windows::Media::Animation::TimelineCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +270,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ChildrenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ChildrenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.TimelineGroup.ChildrenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ChildrenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.TimelineGroup.ChildrenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +297,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineGroup Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.TimelineGroup Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TimelineGroup" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.TimelineGroup" Usage="timelineGroup.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::TimelineGroup ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +328,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineGroup CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.TimelineGroup CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TimelineGroup" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Animation.TimelineGroup" Usage="timelineGroup.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::TimelineGroup ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +359,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ClockGroup CreateClock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.ClockGroup CreateClock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.CreateClock" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateClock () As ClockGroup" />
+      <MemberSignature Language="F#" Value="override this.CreateClock : unit -&gt; System.Windows.Media.Animation.ClockGroup" Usage="timelineGroup.CreateClock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ClockGroup ^ CreateClock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -330,7 +381,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object child);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (child As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ child) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -351,7 +407,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string childText);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string childText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineGroup.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (childText As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ childText) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -368,14 +429,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineGroup" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

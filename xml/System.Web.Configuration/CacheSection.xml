@@ -1,7 +1,10 @@
-<Type Name="CacheSection" FullName="System.Web.Configuration.CacheSection">
+﻿<Type Name="CacheSection" FullName="System.Web.Configuration.CacheSection">
   <TypeSignature Language="C#" Value="public sealed class CacheSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CacheSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CacheSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type CacheSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public CacheSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CacheSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +82,9 @@
       <MemberSignature Language="C#" Value="public string DefaultProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.DefaultProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultProvider As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultProvider : string with get, set" Usage="System.Web.Configuration.CacheSection.DefaultProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultProvider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="public bool DisableExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.DisableExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableExpiration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableExpiration : bool with get, set" Usage="System.Web.Configuration.CacheSection.DisableExpiration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableExpiration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +156,9 @@
       <MemberSignature Language="C#" Value="public bool DisableMemoryCollection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableMemoryCollection" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.DisableMemoryCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableMemoryCollection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableMemoryCollection : bool with get, set" Usage="System.Web.Configuration.CacheSection.DisableMemoryCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableMemoryCollection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +202,9 @@
       <MemberSignature Language="C#" Value="public int PercentagePhysicalMemoryUsedLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PercentagePhysicalMemoryUsedLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.PercentagePhysicalMemoryUsedLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentagePhysicalMemoryUsedLimit As Integer" />
+      <MemberSignature Language="F#" Value="member this.PercentagePhysicalMemoryUsedLimit : int with get, set" Usage="System.Web.Configuration.CacheSection.PercentagePhysicalMemoryUsedLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentagePhysicalMemoryUsedLimit { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -227,6 +244,9 @@
       <MemberSignature Language="C#" Value="public long PrivateBytesLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 PrivateBytesLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.PrivateBytesLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBytesLimit As Long" />
+      <MemberSignature Language="F#" Value="member this.PrivateBytesLimit : int64 with get, set" Usage="System.Web.Configuration.CacheSection.PrivateBytesLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long PrivateBytesLimit { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -266,6 +286,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan PrivateBytesPollTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PrivateBytesPollTime" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.PrivateBytesPollTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBytesPollTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.PrivateBytesPollTime : TimeSpan with get, set" Usage="System.Web.Configuration.CacheSection.PrivateBytesPollTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PrivateBytesPollTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -299,6 +322,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.CacheSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -317,6 +343,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CacheSection.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Providers As ProviderSettingsCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.ProviderSettingsCollection" Usage="System.Web.Configuration.CacheSection.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ProviderSettingsCollection ^ Providers { System::Configuration::ProviderSettingsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

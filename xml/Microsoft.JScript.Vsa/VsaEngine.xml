@@ -1,7 +1,10 @@
-<Type Name="VsaEngine" FullName="Microsoft.JScript.Vsa.VsaEngine">
+﻿<Type Name="VsaEngine" FullName="Microsoft.JScript.Vsa.VsaEngine">
   <TypeSignature Language="C#" Value="public sealed class VsaEngine : Microsoft.JScript.Vsa.BaseVsaEngine, Microsoft.JScript.IEngine2, Microsoft.JScript.IRedirectOutput" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VsaEngine extends Microsoft.JScript.Vsa.BaseVsaEngine implements class Microsoft.JScript.IEngine2, class Microsoft.JScript.IRedirectOutput" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.VsaEngine" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VsaEngine&#xA;Inherits BaseVsaEngine&#xA;Implements IEngine2, IRedirectOutput" />
+  <TypeSignature Language="F#" Value="type VsaEngine = class&#xA;    inherit BaseVsaEngine&#xA;    interface IEngine2&#xA;    interface IRedirectOutput" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VsaEngine sealed : Microsoft::JScript::Vsa::BaseVsaEngine, Microsoft::JScript::IEngine2, Microsoft::JScript::IRedirectOutput" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,10 +36,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VsaEngine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VsaEngine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +66,9 @@
       <MemberSignature Language="C#" Value="public VsaEngine (bool fast);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool fast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fast As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Vsa.VsaEngine : bool -&gt; Microsoft.JScript.Vsa.VsaEngine" Usage="new Microsoft.JScript.Vsa.VsaEngine fast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VsaEngine(bool fast);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -70,7 +87,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaEngine Clone (AppDomain domain);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaEngine Clone(class System.AppDomain domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Clone(System.AppDomain)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone (domain As AppDomain) As IJSVsaEngine" />
+      <MemberSignature Language="F#" Value="abstract member Clone : AppDomain -&gt; Microsoft.JScript.Vsa.IJSVsaEngine&#xA;override this.Clone : AppDomain -&gt; Microsoft.JScript.Vsa.IJSVsaEngine" Usage="vsaEngine.Clone domain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::Vsa::IJSVsaEngine ^ Clone(AppDomain ^ domain);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.Clone(System.AppDomain)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -92,7 +115,13 @@
       <MemberSignature Language="C#" Value="public bool CompileEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompileEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CompileEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileEmpty () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CompileEmpty : unit -&gt; bool&#xA;override this.CompileEmpty : unit -&gt; bool" Usage="vsaEngine.CompileEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CompileEmpty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.CompileEmpty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -111,7 +140,13 @@
       <MemberSignature Language="C#" Value="public void ConnectEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConnectEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ConnectEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ConnectEvents ()" />
+      <MemberSignature Language="F#" Value="abstract member ConnectEvents : unit -&gt; unit&#xA;override this.ConnectEvents : unit -&gt; unit" Usage="vsaEngine.ConnectEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ConnectEvents();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.ConnectEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -129,6 +164,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine CreateEngine ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Vsa.VsaEngine CreateEngine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEngine () As VsaEngine" />
+      <MemberSignature Language="F#" Value="static member CreateEngine : unit -&gt; Microsoft.JScript.Vsa.VsaEngine" Usage="Microsoft.JScript.Vsa.VsaEngine.CreateEngine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::Vsa::VsaEngine ^ CreateEngine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -148,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScope (bool fast, string[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScope(bool fast, string[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScope(System.Boolean,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEngineAndGetGlobalScope (fast As Boolean, assemblyNames As String()) As GlobalScope" />
+      <MemberSignature Language="F#" Value="static member CreateEngineAndGetGlobalScope : bool * string[] -&gt; Microsoft.JScript.GlobalScope" Usage="Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScope (fast, assemblyNames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::GlobalScope ^ CreateEngineAndGetGlobalScope(bool fast, cli::array &lt;System::String ^&gt; ^ assemblyNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -172,6 +213,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithType (bool fast, string[] assemblyNames, RuntimeTypeHandle callingTypeHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithType(bool fast, string[] assemblyNames, valuetype System.RuntimeTypeHandle callingTypeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithType(System.Boolean,System.String[],System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEngineAndGetGlobalScopeWithType (fast As Boolean, assemblyNames As String(), callingTypeHandle As RuntimeTypeHandle) As GlobalScope" />
+      <MemberSignature Language="F#" Value="static member CreateEngineAndGetGlobalScopeWithType : bool * string[] * RuntimeTypeHandle -&gt; Microsoft.JScript.GlobalScope" Usage="Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithType (fast, assemblyNames, callingTypeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::GlobalScope ^ CreateEngineAndGetGlobalScopeWithType(bool fast, cli::array &lt;System::String ^&gt; ^ assemblyNames, RuntimeTypeHandle callingTypeHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -198,6 +242,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace (bool fast, string[] assemblyNames, RuntimeTypeHandle callingTypeHandle, string rootNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(bool fast, string[] assemblyNames, valuetype System.RuntimeTypeHandle callingTypeHandle, string rootNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(System.Boolean,System.String[],System.RuntimeTypeHandle,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace (fast As Boolean, assemblyNames As String(), callingTypeHandle As RuntimeTypeHandle, rootNamespace As String) As GlobalScope" />
+      <MemberSignature Language="F#" Value="static member CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace : bool * string[] * RuntimeTypeHandle * string -&gt; Microsoft.JScript.GlobalScope" Usage="Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace (fast, assemblyNames, callingTypeHandle, rootNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::GlobalScope ^ CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(bool fast, cli::array &lt;System::String ^&gt; ^ assemblyNames, RuntimeTypeHandle callingTypeHandle, System::String ^ rootNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -226,6 +273,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine CreateEngineWithType (RuntimeTypeHandle callingTypeHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Vsa.VsaEngine CreateEngineWithType(valuetype System.RuntimeTypeHandle callingTypeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineWithType(System.RuntimeTypeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateEngineWithType (callingTypeHandle As RuntimeTypeHandle) As VsaEngine" />
+      <MemberSignature Language="F#" Value="static member CreateEngineWithType : RuntimeTypeHandle -&gt; Microsoft.JScript.Vsa.VsaEngine" Usage="Microsoft.JScript.Vsa.VsaEngine.CreateEngineWithType callingTypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::Vsa::VsaEngine ^ CreateEngineWithType(RuntimeTypeHandle callingTypeHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -248,7 +298,13 @@
       <MemberSignature Language="C#" Value="public void DisconnectEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisconnectEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DisconnectEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisconnectEvents ()" />
+      <MemberSignature Language="F#" Value="abstract member DisconnectEvents : unit -&gt; unit&#xA;override this.DisconnectEvents : unit -&gt; unit" Usage="vsaEngine.DisconnectEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DisconnectEvents();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.DisconnectEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -266,6 +322,9 @@
       <MemberSignature Language="C#" Value="protected override void DoClose ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoClose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoClose" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DoClose ()" />
+      <MemberSignature Language="F#" Value="override this.DoClose : unit -&gt; unit" Usage="vsaEngine.DoClose " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DoClose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -284,6 +343,9 @@
       <MemberSignature Language="C#" Value="protected override bool DoCompile ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DoCompile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoCompile" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function DoCompile () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.DoCompile : unit -&gt; bool" Usage="vsaEngine.DoCompile " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool DoCompile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -303,6 +365,9 @@
       <MemberSignature Language="C#" Value="protected override void DoLoadSourceState (Microsoft.JScript.Vsa.IJSVsaPersistSite site);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoLoadSourceState(class Microsoft.JScript.Vsa.IJSVsaPersistSite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoLoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DoLoadSourceState (site As IJSVsaPersistSite)" />
+      <MemberSignature Language="F#" Value="override this.DoLoadSourceState : Microsoft.JScript.Vsa.IJSVsaPersistSite -&gt; unit" Usage="vsaEngine.DoLoadSourceState site" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DoLoadSourceState(Microsoft::JScript::Vsa::IJSVsaPersistSite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -324,6 +389,9 @@
       <MemberSignature Language="C#" Value="protected override void DoSaveCompiledState (out byte[] pe, out byte[] pdb);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveCompiledState([out] unsigned int8[]&amp; pe, [out] unsigned int8[]&amp; pdb) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoSaveCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DoSaveCompiledState (ByRef pe As Byte(), ByRef pdb As Byte())" />
+      <MemberSignature Language="F#" Value="override this.DoSaveCompiledState :  *  -&gt; unit" Usage="vsaEngine.DoSaveCompiledState (pe, pdb)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DoSaveCompiledState([Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pe, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % pdb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -347,6 +415,9 @@
       <MemberSignature Language="C#" Value="protected override void DoSaveSourceState (Microsoft.JScript.Vsa.IJSVsaPersistSite site);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveSourceState(class Microsoft.JScript.Vsa.IJSVsaPersistSite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoSaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DoSaveSourceState (site As IJSVsaPersistSite)" />
+      <MemberSignature Language="F#" Value="override this.DoSaveSourceState : Microsoft.JScript.Vsa.IJSVsaPersistSite -&gt; unit" Usage="vsaEngine.DoSaveSourceState site" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DoSaveSourceState(Microsoft::JScript::Vsa::IJSVsaPersistSite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -368,7 +439,13 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetAssembly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetAssembly() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAssembly () As Assembly" />
+      <MemberSignature Language="F#" Value="abstract member GetAssembly : unit -&gt; System.Reflection.Assembly&#xA;override this.GetAssembly : unit -&gt; System.Reflection.Assembly" Usage="vsaEngine.GetAssembly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Assembly ^ GetAssembly();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.GetAssembly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -387,6 +464,9 @@
       <MemberSignature Language="C#" Value="protected override object GetCustomOption (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetCustomOption(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetCustomOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetCustomOption (name As String) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetCustomOption : string -&gt; obj" Usage="vsaEngine.GetCustomOption name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetCustomOption(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -409,7 +489,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.IVsaScriptScope GetGlobalScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IVsaScriptScope GetGlobalScope() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetGlobalScope" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalScope () As IVsaScriptScope" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.IVsaScriptScope&#xA;override this.GetGlobalScope : unit -&gt; Microsoft.JScript.IVsaScriptScope" Usage="vsaEngine.GetGlobalScope " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::IVsaScriptScope ^ GetGlobalScope();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.GetGlobalScope</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -428,6 +514,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItem (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.Vsa.IJSVsaItem GetItem(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItem(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (itemName As String) As IJSVsaItem" />
+      <MemberSignature Language="F#" Value="member this.GetItem : string -&gt; Microsoft.JScript.Vsa.IJSVsaItem" Usage="vsaEngine.GetItem itemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ GetItem(System::String ^ itemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -450,6 +539,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItemAtIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemAtIndex (index As Integer) As IJSVsaItem" />
+      <MemberSignature Language="F#" Value="member this.GetItemAtIndex : int -&gt; Microsoft.JScript.Vsa.IJSVsaItem" Usage="vsaEngine.GetItemAtIndex index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::Vsa::IJSVsaItem ^ GetItemAtIndex(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -472,6 +564,9 @@
       <MemberSignature Language="C#" Value="public int GetItemCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetItemCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemCount () As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetItemCount : unit -&gt; int" Usage="vsaEngine.GetItemCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetItemCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -491,6 +586,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.GlobalScope GetMainScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.GlobalScope GetMainScope() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetMainScope" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMainScope () As GlobalScope" />
+      <MemberSignature Language="F#" Value="member this.GetMainScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="vsaEngine.GetMainScope " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::GlobalScope ^ GetMainScope();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -510,7 +608,13 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Module GetModule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module GetModule() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetModule" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetModule () As Module" />
+      <MemberSignature Language="F#" Value="abstract member GetModule : unit -&gt; System.Reflection.Module&#xA;override this.GetModule : unit -&gt; System.Reflection.Module" Usage="vsaEngine.GetModule " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Module ^ GetModule();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.GetModule</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -529,6 +633,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayConstructor GetOriginalArrayConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ArrayConstructor GetOriginalArrayConstructor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalArrayConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOriginalArrayConstructor () As ArrayConstructor" />
+      <MemberSignature Language="F#" Value="member this.GetOriginalArrayConstructor : unit -&gt; Microsoft.JScript.ArrayConstructor" Usage="vsaEngine.GetOriginalArrayConstructor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ArrayConstructor ^ GetOriginalArrayConstructor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -548,6 +655,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ObjectConstructor GetOriginalObjectConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ObjectConstructor GetOriginalObjectConstructor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalObjectConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOriginalObjectConstructor () As ObjectConstructor" />
+      <MemberSignature Language="F#" Value="member this.GetOriginalObjectConstructor : unit -&gt; Microsoft.JScript.ObjectConstructor" Usage="vsaEngine.GetOriginalObjectConstructor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ObjectConstructor ^ GetOriginalObjectConstructor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -567,6 +677,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpConstructor GetOriginalRegExpConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpConstructor GetOriginalRegExpConstructor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalRegExpConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOriginalRegExpConstructor () As RegExpConstructor" />
+      <MemberSignature Language="F#" Value="member this.GetOriginalRegExpConstructor : unit -&gt; Microsoft.JScript.RegExpConstructor" Usage="vsaEngine.GetOriginalRegExpConstructor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::RegExpConstructor ^ GetOriginalRegExpConstructor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -586,7 +699,13 @@
       <MemberSignature Language="C#" Value="public void InitVsaEngine (string rootMoniker, Microsoft.JScript.Vsa.IJSVsaSite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitVsaEngine(string rootMoniker, class Microsoft.JScript.Vsa.IJSVsaSite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.InitVsaEngine(System.String,Microsoft.JScript.Vsa.IJSVsaSite)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitVsaEngine (rootMoniker As String, site As IJSVsaSite)" />
+      <MemberSignature Language="F#" Value="abstract member InitVsaEngine : string * Microsoft.JScript.Vsa.IJSVsaSite -&gt; unit&#xA;override this.InitVsaEngine : string * Microsoft.JScript.Vsa.IJSVsaSite -&gt; unit" Usage="vsaEngine.InitVsaEngine (rootMoniker, site)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitVsaEngine(System::String ^ rootMoniker, Microsoft::JScript::Vsa::IJSVsaSite ^ site);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.InitVsaEngine(System.String,Microsoft.JScript.Vsa.IJSVsaSite)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -609,7 +728,13 @@
       <MemberSignature Language="C#" Value="public void Interrupt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Interrupt() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Interrupt" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Interrupt ()" />
+      <MemberSignature Language="F#" Value="abstract member Interrupt : unit -&gt; unit&#xA;override this.Interrupt : unit -&gt; unit" Usage="vsaEngine.Interrupt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Interrupt();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.Interrupt</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -627,6 +752,9 @@
       <MemberSignature Language="C#" Value="public override bool IsValidIdentifier (string ident);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValidIdentifier(string ident) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.IsValidIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValidIdentifier (ident As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsValidIdentifier : string -&gt; bool" Usage="vsaEngine.IsValidIdentifier ident" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValidIdentifier(System::String ^ ident);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -649,6 +777,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsValidNamespaceName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsValidNamespaceName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.IsValidNamespaceName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsValidNamespaceName (name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsValidNamespaceName : string -&gt; bool" Usage="vsaEngine.IsValidNamespaceName name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsValidNamespaceName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -671,6 +802,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.LenientGlobalObject LenientGlobalObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.JScript.LenientGlobalObject LenientGlobalObject" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.VsaEngine.LenientGlobalObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LenientGlobalObject As LenientGlobalObject" />
+      <MemberSignature Language="F#" Value="member this.LenientGlobalObject : Microsoft.JScript.LenientGlobalObject" Usage="Microsoft.JScript.Vsa.VsaEngine.LenientGlobalObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::LenientGlobalObject ^ LenientGlobalObject { Microsoft::JScript::LenientGlobalObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -689,6 +823,9 @@
       <MemberSignature Language="C#" Value="protected override System.Reflection.Assembly LoadCompiledState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.Assembly LoadCompiledState() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.LoadCompiledState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadCompiledState () As Assembly" />
+      <MemberSignature Language="F#" Value="override this.LoadCompiledState : unit -&gt; System.Reflection.Assembly" Usage="vsaEngine.LoadCompiledState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Reflection::Assembly ^ LoadCompiledState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -708,6 +845,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ScriptObject PopScriptObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ScriptObject PopScriptObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.PopScriptObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function PopScriptObject () As ScriptObject" />
+      <MemberSignature Language="F#" Value="member this.PopScriptObject : unit -&gt; Microsoft.JScript.ScriptObject" Usage="vsaEngine.PopScriptObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ScriptObject ^ PopScriptObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -727,6 +867,9 @@
       <MemberSignature Language="C#" Value="public void PushScriptObject (Microsoft.JScript.ScriptObject obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushScriptObject(class Microsoft.JScript.ScriptObject obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.PushScriptObject(Microsoft.JScript.ScriptObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PushScriptObject (obj As ScriptObject)" />
+      <MemberSignature Language="F#" Value="member this.PushScriptObject : Microsoft.JScript.ScriptObject -&gt; unit" Usage="vsaEngine.PushScriptObject obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushScriptObject(Microsoft::JScript::ScriptObject ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -748,7 +891,13 @@
       <MemberSignature Language="C#" Value="public void RegisterEventSource (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterEventSource(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.RegisterEventSource(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterEventSource (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterEventSource : string -&gt; unit&#xA;override this.RegisterEventSource : string -&gt; unit" Usage="vsaEngine.RegisterEventSource name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterEventSource(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.RegisterEventSource(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -769,6 +918,9 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="vsaEngine.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -787,6 +939,9 @@
       <MemberSignature Language="C#" Value="protected override void ResetCompiledState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ResetCompiledState() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ResetCompiledState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ResetCompiledState ()" />
+      <MemberSignature Language="F#" Value="override this.ResetCompiledState : unit -&gt; unit" Usage="vsaEngine.ResetCompiledState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ResetCompiledState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -805,7 +960,13 @@
       <MemberSignature Language="C#" Value="public void Restart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Restart() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Restart" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
+      <MemberSignature Language="F#" Value="abstract member Restart : unit -&gt; unit&#xA;override this.Restart : unit -&gt; unit" Usage="vsaEngine.Restart " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Restart();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.Restart</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -823,7 +984,13 @@
       <MemberSignature Language="C#" Value="public void Run (AppDomain domain);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Run(class System.AppDomain domain) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Run(System.AppDomain)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Run (domain As AppDomain)" />
+      <MemberSignature Language="F#" Value="override this.Run : AppDomain -&gt; unit" Usage="vsaEngine.Run domain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Run(AppDomain ^ domain);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.Run(System.AppDomain)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -844,7 +1011,13 @@
       <MemberSignature Language="C#" Value="public void RunEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RunEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.RunEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RunEmpty ()" />
+      <MemberSignature Language="F#" Value="abstract member RunEmpty : unit -&gt; unit&#xA;override this.RunEmpty : unit -&gt; unit" Usage="vsaEngine.RunEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RunEmpty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IEngine2.RunEmpty</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -862,6 +1035,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ScriptObject ScriptObjectStackTop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ScriptObject ScriptObjectStackTop() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ScriptObjectStackTop" />
+      <MemberSignature Language="VB.NET" Value="Public Function ScriptObjectStackTop () As ScriptObject" />
+      <MemberSignature Language="F#" Value="member this.ScriptObjectStackTop : unit -&gt; Microsoft.JScript.ScriptObject" Usage="vsaEngine.ScriptObjectStackTop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ScriptObject ^ ScriptObjectStackTop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -881,6 +1057,9 @@
       <MemberSignature Language="C#" Value="protected override void SetCustomOption (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetCustomOption(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.SetCustomOption(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetCustomOption (name As String, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetCustomOption : string * obj -&gt; unit" Usage="vsaEngine.SetCustomOption (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetCustomOption(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -904,7 +1083,13 @@
       <MemberSignature Language="C#" Value="public void SetOutputStream (Microsoft.JScript.IMessageReceiver output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutputStream(class Microsoft.JScript.IMessageReceiver output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.SetOutputStream(Microsoft.JScript.IMessageReceiver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetOutputStream (output As IMessageReceiver)" />
+      <MemberSignature Language="F#" Value="abstract member SetOutputStream : Microsoft.JScript.IMessageReceiver -&gt; unit&#xA;override this.SetOutputStream : Microsoft.JScript.IMessageReceiver -&gt; unit" Usage="vsaEngine.SetOutputStream output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetOutputStream(Microsoft::JScript::IMessageReceiver ^ output);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IRedirectOutput.SetOutputStream(Microsoft.JScript.IMessageReceiver)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -925,6 +1110,9 @@
       <MemberSignature Language="C#" Value="protected override void ValidateRootMoniker (string rootMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateRootMoniker(string rootMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ValidateRootMoniker(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateRootMoniker (rootMoniker As String)" />
+      <MemberSignature Language="F#" Value="override this.ValidateRootMoniker : string -&gt; unit" Usage="vsaEngine.ValidateRootMoniker rootMoniker" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateRootMoniker(System::String ^ rootMoniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -942,14 +1130,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

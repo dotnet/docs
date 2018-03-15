@@ -1,7 +1,10 @@
-<Type Name="TypeExtensions" FullName="System.Reflection.TypeExtensions">
+﻿<Type Name="TypeExtensions" FullName="System.Reflection.TypeExtensions">
   <TypeSignature Language="C#" Value="public static class TypeExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TypeExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TypeExtensions" />
+  <TypeSignature Language="F#" Value="type TypeExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo GetConstructor (this Type type, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.ConstructorInfo GetConstructor(class System.Type type, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetConstructor(System.Type,System.Type[])" />
+      <MemberSignature Language="F#" Value="static member GetConstructor : Type * Type[] -&gt; System.Reflection.ConstructorInfo" Usage="System.Reflection.TypeExtensions.GetConstructor (type, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::ConstructorInfo ^ GetConstructor(Type ^ type, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo[] GetConstructors (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.ConstructorInfo[] GetConstructors(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetConstructors(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetConstructors : Type -&gt; System.Reflection.ConstructorInfo[]" Usage="System.Reflection.TypeExtensions.GetConstructors type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -68,6 +75,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo[] GetConstructors (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.ConstructorInfo[] GetConstructors(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetConstructors(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetConstructors : Type * System.Reflection.BindingFlags -&gt; System.Reflection.ConstructorInfo[]" Usage="System.Reflection.TypeExtensions.GetConstructors (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -93,6 +102,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetDefaultMembers (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetDefaultMembers(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetDefaultMembers(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetDefaultMembers : Type -&gt; System.Reflection.MemberInfo[]" Usage="System.Reflection.TypeExtensions.GetDefaultMembers type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetDefaultMembers(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -116,6 +127,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.EventInfo GetEvent (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.EventInfo GetEvent(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetEvent(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetEvent : Type * string -&gt; System.Reflection.EventInfo" Usage="System.Reflection.TypeExtensions.GetEvent (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::EventInfo ^ GetEvent(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -141,6 +154,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.EventInfo GetEvent (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.EventInfo GetEvent(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetEvent(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetEvent : Type * string * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo" Usage="System.Reflection.TypeExtensions.GetEvent (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::EventInfo ^ GetEvent(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -168,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.EventInfo[] GetEvents (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.EventInfo[] GetEvents(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetEvents(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetEvents : Type -&gt; System.Reflection.EventInfo[]" Usage="System.Reflection.TypeExtensions.GetEvents type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -191,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.EventInfo[] GetEvents (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.EventInfo[] GetEvents(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetEvents(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetEvents : Type * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo[]" Usage="System.Reflection.TypeExtensions.GetEvents (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -216,6 +235,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo GetField(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetField(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetField : Type * string -&gt; System.Reflection.FieldInfo" Usage="System.Reflection.TypeExtensions.GetField (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::FieldInfo ^ GetField(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -241,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetField (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo GetField(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetField(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetField : Type * string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="System.Reflection.TypeExtensions.GetField (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::FieldInfo ^ GetField(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -268,6 +291,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo[] GetFields (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo[] GetFields(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetFields(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetFields : Type -&gt; System.Reflection.FieldInfo[]" Usage="System.Reflection.TypeExtensions.GetFields type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -291,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo[] GetFields (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo[] GetFields(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetFields(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetFields : Type * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="System.Reflection.TypeExtensions.GetFields (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -316,6 +343,8 @@
       <MemberSignature Language="C#" Value="public static Type[] GetGenericArguments (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetGenericArguments(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetGenericArguments(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetGenericArguments : Type -&gt; Type[]" Usage="System.Reflection.TypeExtensions.GetGenericArguments type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;Type ^&gt; ^ GetGenericArguments(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -339,6 +368,8 @@
       <MemberSignature Language="C#" Value="public static Type[] GetInterfaces (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetInterfaces(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetInterfaces(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetInterfaces : Type -&gt; Type[]" Usage="System.Reflection.TypeExtensions.GetInterfaces type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;Type ^&gt; ^ GetInterfaces(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -362,6 +393,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetMember (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetMember(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMember(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetMember : Type * string -&gt; System.Reflection.MemberInfo[]" Usage="System.Reflection.TypeExtensions.GetMember (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -387,6 +420,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetMember (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetMember(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMember(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetMember : Type * string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="System.Reflection.TypeExtensions.GetMember (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -414,6 +449,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetMembers (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetMembers(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMembers(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetMembers : Type -&gt; System.Reflection.MemberInfo[]" Usage="System.Reflection.TypeExtensions.GetMembers type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -437,6 +474,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetMembers (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetMembers(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMembers(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetMembers : Type * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="System.Reflection.TypeExtensions.GetMembers (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -462,6 +501,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetMethod (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetMethod(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMethod(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetMethod : Type * string -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.TypeExtensions.GetMethod (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetMethod(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -487,6 +528,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetMethod (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetMethod(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetMethod : Type * string * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.TypeExtensions.GetMethod (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetMethod(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -514,6 +557,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetMethod (this Type type, string name, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetMethod(class System.Type type, string name, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMethod(System.Type,System.String,System.Type[])" />
+      <MemberSignature Language="F#" Value="static member GetMethod : Type * string * Type[] -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.TypeExtensions.GetMethod (type, name, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetMethod(Type ^ type, System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -541,6 +586,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo[] GetMethods (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo[] GetMethods(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMethods(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetMethods : Type -&gt; System.Reflection.MethodInfo[]" Usage="System.Reflection.TypeExtensions.GetMethods type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -564,6 +611,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo[] GetMethods (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo[] GetMethods(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetMethods(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetMethods : Type * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="System.Reflection.TypeExtensions.GetMethods (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -589,6 +638,8 @@
       <MemberSignature Language="C#" Value="public static Type GetNestedType (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetNestedType(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetNestedType(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetNestedType : Type * string * System.Reflection.BindingFlags -&gt; Type" Usage="System.Reflection.TypeExtensions.GetNestedType (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Type ^ GetNestedType(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -616,6 +667,8 @@
       <MemberSignature Language="C#" Value="public static Type[] GetNestedTypes (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetNestedTypes(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetNestedTypes(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetNestedTypes : Type * System.Reflection.BindingFlags -&gt; Type[]" Usage="System.Reflection.TypeExtensions.GetNestedTypes (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;Type ^&gt; ^ GetNestedTypes(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -641,6 +694,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetProperties (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo[] GetProperties(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperties(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetProperties : Type -&gt; System.Reflection.PropertyInfo[]" Usage="System.Reflection.TypeExtensions.GetProperties type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -664,6 +719,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetProperties (this Type type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo[] GetProperties(class System.Type type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperties(System.Type,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetProperties : Type * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="System.Reflection.TypeExtensions.GetProperties (type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(Type ^ type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -689,6 +746,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetProperty(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperty(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetProperty : Type * string -&gt; System.Reflection.PropertyInfo" Usage="System.Reflection.TypeExtensions.GetProperty (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::PropertyInfo ^ GetProperty(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -714,6 +773,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetProperty(class System.Type type, string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="F#" Value="static member GetProperty : Type * string * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo" Usage="System.Reflection.TypeExtensions.GetProperty (type, name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::PropertyInfo ^ GetProperty(Type ^ type, System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -741,6 +802,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name, Type returnType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetProperty(class System.Type type, string name, class System.Type returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetProperty : Type * string * Type -&gt; System.Reflection.PropertyInfo" Usage="System.Reflection.TypeExtensions.GetProperty (type, name, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::PropertyInfo ^ GetProperty(Type ^ type, System::String ^ name, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -768,6 +831,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetProperty (this Type type, string name, Type returnType, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetProperty(class System.Type type, string name, class System.Type returnType, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.GetProperty(System.Type,System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="F#" Value="static member GetProperty : Type * string * Type * Type[] -&gt; System.Reflection.PropertyInfo" Usage="System.Reflection.TypeExtensions.GetProperty (type, name, returnType, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::PropertyInfo ^ GetProperty(Type ^ type, System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -797,6 +862,8 @@
       <MemberSignature Language="C#" Value="public static bool IsAssignableFrom (this Type type, Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssignableFrom(class System.Type type, class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.IsAssignableFrom(System.Type,System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsAssignableFrom : Type * Type -&gt; bool" Usage="System.Reflection.TypeExtensions.IsAssignableFrom (type, c)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsAssignableFrom(Type ^ type, Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -822,6 +889,8 @@
       <MemberSignature Language="C#" Value="public static bool IsInstanceOfType (this Type type, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsInstanceOfType(class System.Type type, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeExtensions.IsInstanceOfType(System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="static member IsInstanceOfType : Type * obj -&gt; bool" Usage="System.Reflection.TypeExtensions.IsInstanceOfType (type, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsInstanceOfType(Type ^ type, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

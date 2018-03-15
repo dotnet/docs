@@ -1,7 +1,10 @@
-<Type Name="DesignerDataSourceView" FullName="System.Web.UI.Design.DesignerDataSourceView">
+﻿<Type Name="DesignerDataSourceView" FullName="System.Web.UI.Design.DesignerDataSourceView">
   <TypeSignature Language="C#" Value="public abstract class DesignerDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerDataSourceView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerDataSourceView" />
+  <TypeSignature Language="F#" Value="type DesignerDataSourceView = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataSourceView abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="protected DesignerDataSourceView (System.Web.UI.Design.IDataSourceDesigner owner, string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.IDataSourceDesigner owner, string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerDataSourceView.#ctor(System.Web.UI.Design.IDataSourceDesigner,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As IDataSourceDesigner, viewName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DesignerDataSourceView : System.Web.UI.Design.IDataSourceDesigner * string -&gt; System.Web.UI.Design.DesignerDataSourceView" Usage="new System.Web.UI.Design.DesignerDataSourceView (owner, viewName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataSourceView(System::Web::UI::Design::IDataSourceDesigner ^ owner, System::String ^ viewName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +68,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanDelete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanDelete As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanDelete : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanDelete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -81,6 +90,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanInsert { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInsert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanInsert As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanInsert : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanInsert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +112,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanPage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanPage : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRetrieveTotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRetrieveTotalRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanRetrieveTotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRetrieveTotalRowCount : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanRetrieveTotalRowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -138,6 +156,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanSort { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanSort" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanSort As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -157,6 +178,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanUpdate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.CanUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanUpdate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUpdate : bool" Usage="System.Web.UI.Design.DesignerDataSourceView.CanUpdate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -176,6 +200,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceDesigner DataSourceDesigner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceDesigner DataSourceDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.DataSourceDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceDesigner As IDataSourceDesigner" />
+      <MemberSignature Language="F#" Value="member this.DataSourceDesigner : System.Web.UI.Design.IDataSourceDesigner" Usage="System.Web.UI.Design.DesignerDataSourceView.DataSourceDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IDataSourceDesigner ^ DataSourceDesigner { System::Web::UI::Design::IDataSourceDesigner ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -194,6 +221,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerable GetDesignTimeData (int minimumRows, out bool isSampleData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, [out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeData (minimumRows As Integer, ByRef isSampleData As Boolean) As IEnumerable" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable&#xA;override this.GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable" Usage="designerDataSourceView.GetDesignTimeData (minimumRows, isSampleData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerable ^ GetDesignTimeData(int minimumRows, [Runtime::InteropServices::Out] bool % isSampleData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -226,6 +256,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.DesignerDataSourceView.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -244,6 +277,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.IDataSourceViewSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerDataSourceView.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Schema As IDataSourceViewSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.DesignerDataSourceView.Schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

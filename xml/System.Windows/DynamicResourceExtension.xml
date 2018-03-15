@@ -1,7 +1,10 @@
-<Type Name="DynamicResourceExtension" FullName="System.Windows.DynamicResourceExtension">
+﻿<Type Name="DynamicResourceExtension" FullName="System.Windows.DynamicResourceExtension">
   <TypeSignature Language="C#" Value="public class DynamicResourceExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicResourceExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DynamicResourceExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicResourceExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type DynamicResourceExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicResourceExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +39,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.DynamicResourceExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicResourceExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DynamicResourceExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicResourceExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +69,9 @@
       <MemberSignature Language="C#" Value="public DynamicResourceExtension (object resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DynamicResourceExtension.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceKey As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.DynamicResourceExtension : obj -&gt; System.Windows.DynamicResourceExtension" Usage="new System.Windows.DynamicResourceExtension resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicResourceExtension(System::Object ^ resourceKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +97,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DynamicResourceExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="dynamicResourceExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +134,9 @@
       <MemberSignature Language="C#" Value="public object ResourceKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ResourceKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DynamicResourceExtension.ResourceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceKey As Object" />
+      <MemberSignature Language="F#" Value="member this.ResourceKey : obj with get, set" Usage="System.Windows.DynamicResourceExtension.ResourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceKey { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -144,14 +167,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.DynamicResourceExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

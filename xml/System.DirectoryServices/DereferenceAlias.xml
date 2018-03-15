@@ -1,7 +1,10 @@
-<Type Name="DereferenceAlias" FullName="System.DirectoryServices.DereferenceAlias">
+﻿<Type Name="DereferenceAlias" FullName="System.DirectoryServices.DereferenceAlias">
   <TypeSignature Language="C#" Value="public enum DereferenceAlias" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DereferenceAlias extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DereferenceAlias" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DereferenceAlias" />
+  <TypeSignature Language="F#" Value="type DereferenceAlias = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DereferenceAlias" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias Always = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 3" Usage="System.DirectoryServices.DereferenceAlias.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Dereferences aliases when both searching subordinates and locating the base objects of the search.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="FindingBaseObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias FindingBaseObject = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.FindingBaseObject" />
+      <MemberSignature Language="VB.NET" Value="FindingBaseObject" />
+      <MemberSignature Language="F#" Value="FindingBaseObject = 2" Usage="System.DirectoryServices.DereferenceAlias.FindingBaseObject" />
+      <MemberSignature Language="C++ CLI" Value="FindingBaseObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Dereferences aliases when locating the base object of the search, but not when searching its subordinates.</summary>
       </Docs>
@@ -53,6 +64,9 @@
       <MemberSignature Language="C#" Value="InSearching" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias InSearching = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.InSearching" />
+      <MemberSignature Language="VB.NET" Value="InSearching" />
+      <MemberSignature Language="F#" Value="InSearching = 1" Usage="System.DirectoryServices.DereferenceAlias.InSearching" />
+      <MemberSignature Language="C++ CLI" Value="InSearching" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -62,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Dereferences aliases when searching subordinates of the base object, but not when locating the base itself.</summary>
       </Docs>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias Never = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.DirectoryServices.DereferenceAlias.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the alias will not be dereferenced. If the <see cref="P:System.DirectoryServices.DirectorySearcher.DerefAlias" /> property is not set, the default value is <see cref="F:System.DirectoryServices.DereferenceAlias.Never" />.</summary>
       </Docs>

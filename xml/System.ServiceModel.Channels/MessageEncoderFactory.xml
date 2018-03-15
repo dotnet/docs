@@ -1,7 +1,10 @@
-<Type Name="MessageEncoderFactory" FullName="System.ServiceModel.Channels.MessageEncoderFactory">
+﻿<Type Name="MessageEncoderFactory" FullName="System.ServiceModel.Channels.MessageEncoderFactory">
   <TypeSignature Language="C#" Value="public abstract class MessageEncoderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageEncoderFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncoderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageEncoderFactory" />
+  <TypeSignature Language="F#" Value="type MessageEncoderFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEncoderFactory abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected MessageEncoderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoderFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageEncoderFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +78,9 @@
       <MemberSignature Language="C#" Value="public virtual System.ServiceModel.Channels.MessageEncoder CreateSessionEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.MessageEncoder CreateSessionEncoder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoderFactory.CreateSessionEncoder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateSessionEncoder () As MessageEncoder" />
+      <MemberSignature Language="F#" Value="abstract member CreateSessionEncoder : unit -&gt; System.ServiceModel.Channels.MessageEncoder&#xA;override this.CreateSessionEncoder : unit -&gt; System.ServiceModel.Channels.MessageEncoder" Usage="messageEncoderFactory.CreateSessionEncoder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ServiceModel::Channels::MessageEncoder ^ CreateSessionEncoder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +114,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.MessageEncoder Encoder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageEncoder Encoder" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncoderFactory.Encoder" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Encoder As MessageEncoder" />
+      <MemberSignature Language="F#" Value="member this.Encoder : System.ServiceModel.Channels.MessageEncoder" Usage="System.ServiceModel.Channels.MessageEncoderFactory.Encoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageEncoder ^ Encoder { System::ServiceModel::Channels::MessageEncoder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +151,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.MessageVersion MessageVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncoderFactory.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageEncoderFactory.MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

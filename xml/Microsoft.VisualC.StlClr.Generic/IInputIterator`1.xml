@@ -1,7 +1,10 @@
-<Type Name="IInputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;">
+﻿<Type Name="IInputIterator&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IInputIterator&lt;TValue&gt; : Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IInputIterator`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBaseIterator`1&lt;!TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.IInputIterator`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInputIterator(Of TValue)&#xA;Implements IBaseIterator(Of TValue)" />
+  <TypeSignature Language="F#" Value="type IInputIterator&lt;'Value&gt; = interface&#xA;    interface IBaseIterator&lt;'Value&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IInputIterator : Microsoft::VisualC::StlClr::Generic::IBaseIterator&lt;TValue&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.IInputIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function equal_to (A_0 As IInputIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member equal_to : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; bool" Usage="iInputIterator.equal_to A_0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

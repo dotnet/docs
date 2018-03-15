@@ -1,7 +1,10 @@
-<Type Name="DelegateOutArgument&lt;T&gt;" FullName="System.Activities.DelegateOutArgument&lt;T&gt;">
+﻿<Type Name="DelegateOutArgument&lt;T&gt;" FullName="System.Activities.DelegateOutArgument&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class DelegateOutArgument&lt;T&gt; : System.Activities.DelegateOutArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DelegateOutArgument`1&lt;T&gt; extends System.Activities.DelegateOutArgument" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateOutArgument`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DelegateOutArgument(Of T)&#xA;Inherits DelegateOutArgument" />
+  <TypeSignature Language="F#" Value="type DelegateOutArgument&lt;'T&gt; = class&#xA;    inherit DelegateOutArgument" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DelegateOutArgument sealed : System::Activities::DelegateOutArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateOutArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DelegateOutArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateOutArgument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -38,6 +52,9 @@
       <MemberSignature Language="C#" Value="public DelegateOutArgument (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.DelegateOutArgument&lt;'T&gt; : string -&gt; System.Activities.DelegateOutArgument&lt;'T&gt;" Usage="new System.Activities.DelegateOutArgument&lt;'T&gt; name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateOutArgument(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -56,6 +73,9 @@
       <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
+      <MemberSignature Language="F#" Value="override this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="delegateOutArgument.Get context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,6 +98,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!T&gt; GetLocation(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.GetLocation(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location(Of T)" />
+      <MemberSignature Language="F#" Value="override this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location&lt;'T&gt;" Usage="delegateOutArgument.GetLocation context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,6 +123,9 @@
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateOutArgument`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
+      <MemberSignature Language="F#" Value="member this.Set : System.Activities.ActivityContext * 'T -&gt; unit" Usage="delegateOutArgument.Set (context, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -123,6 +149,9 @@
       <MemberSignature Language="C#" Value="protected override Type TypeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DelegateOutArgument`1.TypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TypeCore As Type" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.DelegateOutArgument&lt;'T&gt;.TypeCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ TypeCore { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -137,14 +166,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateOutArgument`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

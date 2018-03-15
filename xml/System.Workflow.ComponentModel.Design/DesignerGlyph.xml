@@ -1,7 +1,10 @@
-<Type Name="DesignerGlyph" FullName="System.Workflow.ComponentModel.Design.DesignerGlyph">
+﻿<Type Name="DesignerGlyph" FullName="System.Workflow.ComponentModel.Design.DesignerGlyph">
   <TypeSignature Language="C#" Value="public abstract class DesignerGlyph" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerGlyph extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerGlyph" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerGlyph" />
+  <TypeSignature Language="F#" Value="type DesignerGlyph = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerGlyph abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="protected DesignerGlyph ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerGlyph();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBeActivated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanBeActivated" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerGlyph.CanBeActivated" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanBeActivated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanBeActivated : bool" Usage="System.Workflow.ComponentModel.Design.DesignerGlyph.CanBeActivated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanBeActivated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,6 +102,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Rectangle GetBounds (System.Workflow.ComponentModel.Design.ActivityDesigner designer, bool activated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.Rectangle GetBounds(class System.Workflow.ComponentModel.Design.ActivityDesigner designer, bool activated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.GetBounds(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBounds (designer As ActivityDesigner, activated As Boolean) As Rectangle" />
+      <MemberSignature Language="F#" Value="abstract member GetBounds : System.Workflow.ComponentModel.Design.ActivityDesigner * bool -&gt; System.Drawing.Rectangle&#xA;override this.GetBounds : System.Workflow.ComponentModel.Design.ActivityDesigner * bool -&gt; System.Drawing.Rectangle" Usage="designerGlyph.GetBounds (designer, activated)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Drawing::Rectangle GetBounds(System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer, bool activated);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -138,6 +149,9 @@
       <MemberSignature Language="C#" Value="public const int HighestPriority = 0;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 HighestPriority = (0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Const HighestPriority As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable HighestPriority : int" Usage="System.Workflow.ComponentModel.Design.DesignerGlyph.HighestPriority" />
+      <MemberSignature Language="C++ CLI" Value="public: int HighestPriority = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -166,6 +180,9 @@
       <MemberSignature Language="C#" Value="public const int LowestPriority = 1000000;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 LowestPriority = (1000000)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Const LowestPriority As Integer  = 1000000" />
+      <MemberSignature Language="F#" Value="val mutable LowestPriority : int" Usage="System.Workflow.ComponentModel.Design.DesignerGlyph.LowestPriority" />
+      <MemberSignature Language="C++ CLI" Value="public: int LowestPriority = 1000000;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -194,6 +211,9 @@
       <MemberSignature Language="C#" Value="public const int NormalPriority = 10000;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 NormalPriority = (10000)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Const NormalPriority As Integer  = 10000" />
+      <MemberSignature Language="F#" Value="val mutable NormalPriority : int" Usage="System.Workflow.ComponentModel.Design.DesignerGlyph.NormalPriority" />
+      <MemberSignature Language="C++ CLI" Value="public: int NormalPriority = 10000;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -222,6 +242,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActivate (System.Workflow.ComponentModel.Design.ActivityDesigner designer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivate(class System.Workflow.ComponentModel.Design.ActivityDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnActivate(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivate (designer As ActivityDesigner)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivate : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit&#xA;override this.OnActivate : System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="designerGlyph.OnActivate designer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivate(System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -253,6 +276,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnPaint (System.Drawing.Graphics graphics, bool activated, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme, System.Workflow.ComponentModel.Design.ActivityDesigner designer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPaint(class System.Drawing.Graphics graphics, bool activated, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme, class System.Workflow.ComponentModel.Design.ActivityDesigner designer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.DesignerGlyph.OnPaint(System.Drawing.Graphics,System.Boolean,System.Workflow.ComponentModel.Design.AmbientTheme,System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberSignature Language="F#" Value="abstract member OnPaint : System.Drawing.Graphics * bool * System.Workflow.ComponentModel.Design.AmbientTheme * System.Workflow.ComponentModel.Design.ActivityDesigner -&gt; unit" Usage="designerGlyph.OnPaint (graphics, activated, ambientTheme, designer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnPaint(System::Drawing::Graphics ^ graphics, bool activated, System::Workflow::ComponentModel::Design::AmbientTheme ^ ambientTheme, System::Workflow::ComponentModel::Design::ActivityDesigner ^ designer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -298,6 +323,9 @@
       <MemberSignature Language="C#" Value="public virtual int Priority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.DesignerGlyph.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Priority As Integer" />
+      <MemberSignature Language="F#" Value="member this.Priority : int" Usage="System.Workflow.ComponentModel.Design.DesignerGlyph.Priority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Priority { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

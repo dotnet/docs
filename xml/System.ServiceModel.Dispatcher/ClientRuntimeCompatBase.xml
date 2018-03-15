@@ -1,7 +1,10 @@
-<Type Name="ClientRuntimeCompatBase" FullName="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase">
+﻿<Type Name="ClientRuntimeCompatBase" FullName="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase">
   <TypeSignature Language="C#" Value="public class ClientRuntimeCompatBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientRuntimeCompatBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClientRuntimeCompatBase" />
+  <TypeSignature Language="F#" Value="type ClientRuntimeCompatBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientRuntimeCompatBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.ServiceModel.Dispatcher.IClientMessageInspector&gt; MessageInspectors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageInspectors As IList(Of IClientMessageInspector)" />
+      <MemberSignature Language="F#" Value="member this.MessageInspectors : System.Collections.Generic.IList&lt;System.ServiceModel.Dispatcher.IClientMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.MessageInspectors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ MessageInspectors { System::Collections::Generic::IList&lt;System::ServiceModel::Dispatcher::IClientMessageInspector ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;string,System.ServiceModel.Dispatcher.ClientOperation&gt; Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.ServiceModel.Dispatcher.ClientOperation&gt; Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As KeyedCollection(Of String, ClientOperation)" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.ObjectModel.KeyedCollection&lt;string, System.ServiceModel.Dispatcher.ClientOperation&gt;" Usage="System.ServiceModel.Dispatcher.ClientRuntimeCompatBase.Operations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ Operations { System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::ClientOperation ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="RangeType" FullName="System.Web.UI.WebControls.Expressions.RangeType">
+﻿<Type Name="RangeType" FullName="System.Web.UI.WebControls.Expressions.RangeType">
   <TypeSignature Language="C#" Value="public enum RangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.RangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RangeType" />
+  <TypeSignature Language="F#" Value="type RangeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="Exclusive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType Exclusive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Exclusive" />
+      <MemberSignature Language="VB.NET" Value="Exclusive" />
+      <MemberSignature Language="F#" Value="Exclusive = 1" Usage="System.Web.UI.WebControls.Expressions.RangeType.Exclusive" />
+      <MemberSignature Language="C++ CLI" Value="Exclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a greater-than-or-less-than comparison. Corresponds to the <see langword="&gt;" /> or <see langword="&lt;" /> operator.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="Inclusive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType Inclusive = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Inclusive" />
+      <MemberSignature Language="VB.NET" Value="Inclusive" />
+      <MemberSignature Language="F#" Value="Inclusive = 2" Usage="System.Web.UI.WebControls.Expressions.RangeType.Inclusive" />
+      <MemberSignature Language="C++ CLI" Value="Inclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies an equal-to-or-greater-than comparison or an equal-to-or-less-than comparison. Corresponds to the <see langword="&gt;=" /> or <see langword="&lt;=" /> operator.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.WebControls.Expressions.RangeType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the search does not have a boundary.</summary>
       </Docs>

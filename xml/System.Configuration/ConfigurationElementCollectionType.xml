@@ -1,7 +1,10 @@
-<Type Name="ConfigurationElementCollectionType" FullName="System.Configuration.ConfigurationElementCollectionType">
+﻿<Type Name="ConfigurationElementCollectionType" FullName="System.Configuration.ConfigurationElementCollectionType">
   <TypeSignature Language="C#" Value="public enum ConfigurationElementCollectionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationElementCollectionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElementCollectionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationElementCollectionType" />
+  <TypeSignature Language="F#" Value="type ConfigurationElementCollectionType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationElementCollectionType" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="AddRemoveClearMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType AddRemoveClearMap = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />
+      <MemberSignature Language="VB.NET" Value="AddRemoveClearMap" />
+      <MemberSignature Language="F#" Value="AddRemoveClearMap = 1" Usage="System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />
+      <MemberSignature Language="C++ CLI" Value="AddRemoveClearMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The default type of <see cref="T:System.Configuration.ConfigurationElementCollection" />. Collections of this type contain elements that can be merged across a hierarchy of configuration files. At any particular level within such a hierarchy, <see langword="add" />, <see langword="remove" />, and <see langword="clear" /> directives are used to modify any inherited properties and specify new ones.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="AddRemoveClearMapAlternate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType AddRemoveClearMapAlternate = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />
+      <MemberSignature Language="VB.NET" Value="AddRemoveClearMapAlternate" />
+      <MemberSignature Language="F#" Value="AddRemoveClearMapAlternate = 3" Usage="System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMapAlternate" />
+      <MemberSignature Language="C++ CLI" Value="AddRemoveClearMapAlternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Same as <see cref="F:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap" />, except that this type causes the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object to sort its contents such that inherited elements are listed last.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="BasicMap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType BasicMap = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMap" />
+      <MemberSignature Language="VB.NET" Value="BasicMap" />
+      <MemberSignature Language="F#" Value="BasicMap = 0" Usage="System.Configuration.ConfigurationElementCollectionType.BasicMap" />
+      <MemberSignature Language="C++ CLI" Value="BasicMap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Collections of this type contain elements that apply to the level at which they are specified, and to all child levels. A child level cannot modify the properties specified by a parent element of this type.</summary>
       </Docs>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="BasicMapAlternate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationElementCollectionType BasicMapAlternate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate" />
+      <MemberSignature Language="VB.NET" Value="BasicMapAlternate" />
+      <MemberSignature Language="F#" Value="BasicMapAlternate = 2" Usage="System.Configuration.ConfigurationElementCollectionType.BasicMapAlternate" />
+      <MemberSignature Language="C++ CLI" Value="BasicMapAlternate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -103,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Same as <see cref="F:System.Configuration.ConfigurationElementCollectionType.BasicMap" />, except that this type causes the <see cref="T:System.Configuration.ConfigurationElementCollection" /> object to sort its contents such that inherited elements are listed last.</summary>
       </Docs>

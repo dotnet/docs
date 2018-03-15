@@ -1,7 +1,10 @@
-<Type Name="RemotingException" FullName="System.Runtime.Remoting.RemotingException">
+﻿<Type Name="RemotingException" FullName="System.Runtime.Remoting.RemotingException">
   <TypeSignature Language="C#" Value="public class RemotingException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RemotingException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingException" />
+  <TypeSignature Language="VB.NET" Value="Public Class RemotingException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type RemotingException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemotingException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,10 +36,22 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.RemotingException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RemotingException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="public RemotingException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : string -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +116,9 @@
       <MemberSignature Language="C#" Value="protected RemotingException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RemotingException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +148,9 @@
       <MemberSignature Language="C#" Value="public RemotingException (string message, Exception InnerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception InnerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, InnerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingException : string * Exception -&gt; System.Runtime.Remoting.RemotingException" Usage="new System.Runtime.Remoting.RemotingException (message, InnerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingException(System::String ^ message, Exception ^ InnerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,15 +183,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.RemotingException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="IProcessHostFactoryHelper" FullName="System.Web.Hosting.IProcessHostFactoryHelper">
+﻿<Type Name="IProcessHostFactoryHelper" FullName="System.Web.Hosting.IProcessHostFactoryHelper">
   <TypeSignature Language="C#" Value="public interface IProcessHostFactoryHelper" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProcessHostFactoryHelper" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IProcessHostFactoryHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProcessHostFactoryHelper" />
+  <TypeSignature Language="F#" Value="type IProcessHostFactoryHelper = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProcessHostFactoryHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +15,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("02fd465d-5c5d-4b7e-95b6-82faa031b74a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public object GetProcessHost (System.Web.Hosting.IProcessHostSupportFunctions functions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProcessHost(class System.Web.Hosting.IProcessHostSupportFunctions functions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessHost (functions As IProcessHostSupportFunctions) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetProcessHost : System.Web.Hosting.IProcessHostSupportFunctions -&gt; obj" Usage="iProcessHostFactoryHelper.GetProcessHost functions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProcessHost(System::Web::Hosting::IProcessHostSupportFunctions ^ functions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

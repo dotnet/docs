@@ -1,7 +1,10 @@
-<Type Name="StaticExtension" FullName="System.Windows.Markup.StaticExtension">
+﻿<Type Name="StaticExtension" FullName="System.Windows.Markup.StaticExtension">
   <TypeSignature Language="C#" Value="public class StaticExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StaticExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.StaticExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class StaticExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type StaticExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StaticExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.StaticExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StaticExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -54,6 +68,9 @@
       <MemberSignature Language="C#" Value="public StaticExtension (string member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (member As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.StaticExtension : string -&gt; System.Windows.Markup.StaticExtension" Usage="new System.Windows.Markup.StaticExtension member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticExtension(System::String ^ member);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -81,6 +98,9 @@
       <MemberSignature Language="C#" Value="public string Member { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Member" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.Member" />
+      <MemberSignature Language="VB.NET" Value="Public Property Member As String" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Windows.Markup.StaticExtension.Member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -118,6 +138,9 @@
       <MemberSignature Language="C#" Value="public Type MemberType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.StaticExtension.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberType As Type" />
+      <MemberSignature Language="F#" Value="member this.MemberType : Type with get, set" Usage="System.Windows.Markup.StaticExtension.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ MemberType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.StaticExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="staticExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -194,14 +220,5 @@
           <paramref name="serviceProvider" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.StaticExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

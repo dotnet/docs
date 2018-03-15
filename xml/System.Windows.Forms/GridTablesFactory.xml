@@ -1,7 +1,10 @@
-<Type Name="GridTablesFactory" FullName="System.Windows.Forms.GridTablesFactory">
+﻿<Type Name="GridTablesFactory" FullName="System.Windows.Forms.GridTablesFactory">
   <TypeSignature Language="C#" Value="public sealed class GridTablesFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GridTablesFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridTablesFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GridTablesFactory" />
+  <TypeSignature Language="F#" Value="type GridTablesFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridTablesFactory sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.DataGridTableStyle[] CreateGridTables (System.Windows.Forms.DataGridTableStyle gridTable, object dataSource, string dataMember, System.Windows.Forms.BindingContext bindingManager);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.DataGridTableStyle[] CreateGridTables(class System.Windows.Forms.DataGridTableStyle gridTable, object dataSource, string dataMember, class System.Windows.Forms.BindingContext bindingManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTablesFactory.CreateGridTables(System.Windows.Forms.DataGridTableStyle,System.Object,System.String,System.Windows.Forms.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateGridTables (gridTable As DataGridTableStyle, dataSource As Object, dataMember As String, bindingManager As BindingContext) As DataGridTableStyle()" />
+      <MemberSignature Language="F#" Value="static member CreateGridTables : System.Windows.Forms.DataGridTableStyle * obj * string * System.Windows.Forms.BindingContext -&gt; System.Windows.Forms.DataGridTableStyle[]" Usage="System.Windows.Forms.GridTablesFactory.CreateGridTables (gridTable, dataSource, dataMember, bindingManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Windows::Forms::DataGridTableStyle ^&gt; ^ CreateGridTables(System::Windows::Forms::DataGridTableStyle ^ gridTable, System::Object ^ dataSource, System::String ^ dataMember, System::Windows::Forms::BindingContext ^ bindingManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

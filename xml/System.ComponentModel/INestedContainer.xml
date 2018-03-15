@@ -1,7 +1,10 @@
-<Type Name="INestedContainer" FullName="System.ComponentModel.INestedContainer">
+﻿<Type Name="INestedContainer" FullName="System.ComponentModel.INestedContainer">
   <TypeSignature Language="C#" Value="public interface INestedContainer : IDisposable, System.ComponentModel.IContainer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INestedContainer implements class System.ComponentModel.IContainer, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INestedContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INestedContainer&#xA;Implements IContainer, IDisposable" />
+  <TypeSignature Language="F#" Value="type INestedContainer = interface&#xA;    interface IContainer&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INestedContainer : IDisposable, System::ComponentModel::IContainer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Owner" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.INestedContainer.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As IComponent" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.ComponentModel.IComponent" Usage="System.ComponentModel.INestedContainer.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ Owner { System::ComponentModel::IComponent ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

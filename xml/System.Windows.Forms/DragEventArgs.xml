@@ -1,7 +1,10 @@
-<Type Name="DragEventArgs" FullName="System.Windows.Forms.DragEventArgs">
+﻿<Type Name="DragEventArgs" FullName="System.Windows.Forms.DragEventArgs">
   <TypeSignature Language="C#" Value="public class DragEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DragEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DragEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DragEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +70,9 @@
       <MemberSignature Language="C#" Value="public DragEventArgs (System.Windows.Forms.IDataObject data, int keyState, int x, int y, System.Windows.Forms.DragDropEffects allowedEffect, System.Windows.Forms.DragDropEffects effect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.IDataObject data, int32 keyState, int32 x, int32 y, valuetype System.Windows.Forms.DragDropEffects allowedEffect, valuetype System.Windows.Forms.DragDropEffects effect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DragEventArgs.#ctor(System.Windows.Forms.IDataObject,System.Int32,System.Int32,System.Int32,System.Windows.Forms.DragDropEffects,System.Windows.Forms.DragDropEffects)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (data As IDataObject, keyState As Integer, x As Integer, y As Integer, allowedEffect As DragDropEffects, effect As DragDropEffects)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DragEventArgs : System.Windows.Forms.IDataObject * int * int * int * System.Windows.Forms.DragDropEffects * System.Windows.Forms.DragDropEffects -&gt; System.Windows.Forms.DragEventArgs" Usage="new System.Windows.Forms.DragEventArgs (data, keyState, x, y, allowedEffect, effect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DragEventArgs(System::Windows::Forms::IDataObject ^ data, int keyState, int x, int y, System::Windows::Forms::DragDropEffects allowedEffect, System::Windows::Forms::DragDropEffects effect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DragDropEffects AllowedEffect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DragDropEffects AllowedEffect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.AllowedEffect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedEffect As DragDropEffects" />
+      <MemberSignature Language="F#" Value="member this.AllowedEffect : System.Windows.Forms.DragDropEffects" Usage="System.Windows.Forms.DragEventArgs.AllowedEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DragDropEffects AllowedEffect { System::Windows::Forms::DragDropEffects get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +151,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.IDataObject Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IDataObject Data" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.Data" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As IDataObject" />
+      <MemberSignature Language="F#" Value="member this.Data : System.Windows.Forms.IDataObject" Usage="System.Windows.Forms.DragEventArgs.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IDataObject ^ Data { System::Windows::Forms::IDataObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +197,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DragDropEffects Effect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DragDropEffects Effect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.Effect" />
+      <MemberSignature Language="VB.NET" Value="Public Property Effect As DragDropEffects" />
+      <MemberSignature Language="F#" Value="member this.Effect : System.Windows.Forms.DragDropEffects with get, set" Usage="System.Windows.Forms.DragEventArgs.Effect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DragDropEffects Effect { System::Windows::Forms::DragDropEffects get(); void set(System::Windows::Forms::DragDropEffects value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +245,9 @@
       <MemberSignature Language="C#" Value="public int KeyState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.KeyState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyState As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyState : int" Usage="System.Windows.Forms.DragEventArgs.KeyState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyState { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -285,6 +303,9 @@
       <MemberSignature Language="C#" Value="public int X { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.X" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property X As Integer" />
+      <MemberSignature Language="F#" Value="member this.X : int" Usage="System.Windows.Forms.DragEventArgs.X" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +344,9 @@
       <MemberSignature Language="C#" Value="public int Y { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DragEventArgs.Y" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Y As Integer" />
+      <MemberSignature Language="F#" Value="member this.Y : int" Usage="System.Windows.Forms.DragEventArgs.Y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="X509NameType" FullName="System.Security.Cryptography.X509Certificates.X509NameType">
+﻿<Type Name="X509NameType" FullName="System.Security.Cryptography.X509Certificates.X509NameType">
   <TypeSignature Language="C#" Value="public enum X509NameType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509NameType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509NameType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509NameType" />
+  <TypeSignature Language="F#" Value="type X509NameType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509NameType" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="DnsFromAlternativeName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType DnsFromAlternativeName = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.DnsFromAlternativeName" />
+      <MemberSignature Language="VB.NET" Value="DnsFromAlternativeName" />
+      <MemberSignature Language="F#" Value="DnsFromAlternativeName = 4" Usage="System.Security.Cryptography.X509Certificates.X509NameType.DnsFromAlternativeName" />
+      <MemberSignature Language="C++ CLI" Value="DnsFromAlternativeName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The DNS name associated with the alternative name of either the subject or the issuer of an X.509 certificate.  This value is equivalent to the <see cref="F:System.Security.Cryptography.X509Certificates.X509NameType.DnsName" /> value.</summary>
       </Docs>
@@ -72,6 +79,9 @@
       <MemberSignature Language="C#" Value="DnsName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType DnsName = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.DnsName" />
+      <MemberSignature Language="VB.NET" Value="DnsName" />
+      <MemberSignature Language="F#" Value="DnsName = 3" Usage="System.Security.Cryptography.X509Certificates.X509NameType.DnsName" />
+      <MemberSignature Language="C++ CLI" Value="DnsName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -91,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The DNS name associated with the alternative name of either the subject or issuer of an X509 certificate.</summary>
       </Docs>
@@ -99,6 +110,9 @@
       <MemberSignature Language="C#" Value="EmailName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType EmailName = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.EmailName" />
+      <MemberSignature Language="VB.NET" Value="EmailName" />
+      <MemberSignature Language="F#" Value="EmailName = 1" Usage="System.Security.Cryptography.X509Certificates.X509NameType.EmailName" />
+      <MemberSignature Language="C++ CLI" Value="EmailName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -118,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The email address of the subject or issuer associated of an X509 certificate.</summary>
       </Docs>
@@ -126,6 +141,9 @@
       <MemberSignature Language="C#" Value="SimpleName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType SimpleName = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.SimpleName" />
+      <MemberSignature Language="VB.NET" Value="SimpleName" />
+      <MemberSignature Language="F#" Value="SimpleName = 0" Usage="System.Security.Cryptography.X509Certificates.X509NameType.SimpleName" />
+      <MemberSignature Language="C++ CLI" Value="SimpleName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -145,6 +163,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The simple name of a subject or issuer of an X509 certificate.</summary>
       </Docs>
@@ -153,6 +172,9 @@
       <MemberSignature Language="C#" Value="UpnName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType UpnName = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.UpnName" />
+      <MemberSignature Language="VB.NET" Value="UpnName" />
+      <MemberSignature Language="F#" Value="UpnName = 2" Usage="System.Security.Cryptography.X509Certificates.X509NameType.UpnName" />
+      <MemberSignature Language="C++ CLI" Value="UpnName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -172,6 +194,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The UPN name of the subject or issuer of an X509 certificate.</summary>
       </Docs>
@@ -180,6 +203,9 @@
       <MemberSignature Language="C#" Value="UrlName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509NameType UrlName = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509NameType.UrlName" />
+      <MemberSignature Language="VB.NET" Value="UrlName" />
+      <MemberSignature Language="F#" Value="UrlName = 5" Usage="System.Security.Cryptography.X509Certificates.X509NameType.UrlName" />
+      <MemberSignature Language="C++ CLI" Value="UrlName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -199,6 +225,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509NameType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The URL address associated with the alternative name of either the subject or issuer of an X509 certificate.</summary>
       </Docs>

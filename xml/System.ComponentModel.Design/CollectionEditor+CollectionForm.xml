@@ -1,7 +1,9 @@
-<Type Name="CollectionEditor+CollectionForm" FullName="System.ComponentModel.Design.CollectionEditor+CollectionForm">
+﻿<Type Name="CollectionEditor+CollectionForm" FullName="System.ComponentModel.Design.CollectionEditor+CollectionForm">
   <TypeSignature Language="C#" Value="protected abstract class CollectionEditor.CollectionForm : System.Windows.Forms.Form" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi abstract beforefieldinit CollectionEditor/CollectionForm extends System.Windows.Forms.Form" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" />
+  <TypeSignature Language="VB.NET" Value="Protected MustInherit Class CollectionEditor.CollectionForm&#xA;Inherits Form" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class CollectionEditor::CollectionForm abstract : System::Windows::Forms::Form" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,9 @@
       <MemberSignature Language="C#" Value="public CollectionForm (System.ComponentModel.Design.CollectionEditor editor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.CollectionEditor editor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.#ctor(System.ComponentModel.Design.CollectionEditor)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (editor As CollectionEditor)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.CollectionEditor.CollectionForm : System.ComponentModel.Design.CollectionEditor -&gt; System.ComponentModel.Design.CollectionEditor.CollectionForm" Usage="new System.ComponentModel.Design.CollectionEditor.CollectionForm editor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionForm(System::ComponentModel::Design::CollectionEditor ^ editor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -40,6 +45,9 @@
       <MemberSignature Language="C#" Value="protected bool CanRemoveInstance (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool CanRemoveInstance(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.CanRemoveInstance(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CanRemoveInstance (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRemoveInstance : obj -&gt; bool" Usage="collectionForm.CanRemoveInstance value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool CanRemoveInstance(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanSelectMultipleInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanSelectMultipleInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.CanSelectMultipleInstances" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CanSelectMultipleInstances () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanSelectMultipleInstances : unit -&gt; bool&#xA;override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="collectionForm.CanSelectMultipleInstances " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CanSelectMultipleInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -99,6 +110,9 @@
       <MemberSignature Language="C#" Value="protected Type CollectionItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CollectionItemType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.CollectionItemType" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CollectionItemType As Type" />
+      <MemberSignature Language="F#" Value="member this.CollectionItemType : Type" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.CollectionItemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ CollectionItemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -124,6 +138,9 @@
       <MemberSignature Language="C#" Value="protected Type CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CollectionType As Type" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : Type" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ CollectionType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -149,6 +166,9 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.ITypeDescriptorContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ITypeDescriptorContext Context" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.Context" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Context As ITypeDescriptorContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.ComponentModel.ITypeDescriptorContext" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.Context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::ITypeDescriptorContext ^ Context { System::ComponentModel::ITypeDescriptorContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -167,6 +187,9 @@
       <MemberSignature Language="C#" Value="protected object CreateInstance (Type itemType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object CreateInstance(class System.Type itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.CreateInstance(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateInstance (itemType As Type) As Object" />
+      <MemberSignature Language="F#" Value="member this.CreateInstance : Type -&gt; obj" Usage="collectionForm.CreateInstance itemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ CreateInstance(Type ^ itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -196,6 +219,9 @@
       <MemberSignature Language="C#" Value="protected void DestroyInstance (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DestroyInstance(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.DestroyInstance(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DestroyInstance (instance As Object)" />
+      <MemberSignature Language="F#" Value="member this.DestroyInstance : obj -&gt; unit" Usage="collectionForm.DestroyInstance instance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DestroyInstance(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +243,9 @@
       <MemberSignature Language="C#" Value="protected virtual void DisplayError (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DisplayError(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.DisplayError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub DisplayError (e As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member DisplayError : Exception -&gt; unit&#xA;override this.DisplayError : Exception -&gt; unit" Usage="collectionForm.DisplayError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DisplayError(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -238,6 +267,9 @@
       <MemberSignature Language="C#" Value="public object EditValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object EditValue" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.EditValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditValue As Object" />
+      <MemberSignature Language="F#" Value="member this.EditValue : obj with get, set" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.EditValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ EditValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -256,6 +288,9 @@
       <MemberSignature Language="C#" Value="protected override object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetService : Type -&gt; obj" Usage="collectionForm.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -278,6 +313,9 @@
       <MemberSignature Language="C#" Value="protected object[] Items { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] Items" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.Items" />
+      <MemberSignature Language="VB.NET" Value="Protected Property Items As Object()" />
+      <MemberSignature Language="F#" Value="member this.Items : obj[] with get, set" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.Items" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property cli::array &lt;System::Object ^&gt; ^ Items { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -303,6 +341,9 @@
       <MemberSignature Language="C#" Value="protected Type[] NewItemTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] NewItemTypes" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.CollectionEditor.CollectionForm.NewItemTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NewItemTypes As Type()" />
+      <MemberSignature Language="F#" Value="member this.NewItemTypes : Type[]" Usage="System.ComponentModel.Design.CollectionEditor.CollectionForm.NewItemTypes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property cli::array &lt;Type ^&gt; ^ NewItemTypes { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -328,6 +369,9 @@
       <MemberSignature Language="C#" Value="protected abstract void OnEditValueChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEditValueChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.OnEditValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEditValueChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnEditValueChanged : unit -&gt; unit" Usage="collectionForm.OnEditValueChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEditValueChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -353,9 +397,12 @@
       </Docs>
     </Member>
     <Member MemberName="ShowEditorDialog">
-      <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.DialogResult ShowEditorDialog (System.Windows.Forms.Design.IWindowsFormsEditorService edSvc);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Windows.Forms.DialogResult ShowEditorDialog (System.Windows.Forms.Design.IWindowsFormsEditorService edSvc);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowEditorDialog(class System.Windows.Forms.Design.IWindowsFormsEditorService edSvc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.CollectionEditor.CollectionForm.ShowEditorDialog(System.Windows.Forms.Design.IWindowsFormsEditorService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShowEditorDialog (edSvc As IWindowsFormsEditorService) As DialogResult" />
+      <MemberSignature Language="F#" Value="abstract member ShowEditorDialog : System.Windows.Forms.Design.IWindowsFormsEditorService -&gt; System.Windows.Forms.DialogResult&#xA;override this.ShowEditorDialog : System.Windows.Forms.Design.IWindowsFormsEditorService -&gt; System.Windows.Forms.DialogResult" Usage="collectionForm.ShowEditorDialog edSvc" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Forms::DialogResult ShowEditorDialog(System::Windows::Forms::Design::IWindowsFormsEditorService ^ edSvc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

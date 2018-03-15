@@ -1,7 +1,10 @@
-<Type Name="SoapBindingStyle" FullName="System.Web.Services.Description.SoapBindingStyle">
+﻿<Type Name="SoapBindingStyle" FullName="System.Web.Services.Description.SoapBindingStyle">
   <TypeSignature Language="C#" Value="public enum SoapBindingStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapBindingStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBindingStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SoapBindingStyle" />
+  <TypeSignature Language="F#" Value="type SoapBindingStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SoapBindingStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingStyle Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Services.Description.SoapBindingStyle.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.SoapBindingStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default type of action for the current hierarchical level of the Web Services Description Language (WSDL) file.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingStyle Document = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 1" Usage="System.Web.Services.Description.SoapBindingStyle.Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.SoapBindingStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message being transmitted is document-oriented.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="Rpc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingStyle Rpc = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingStyle.Rpc" />
+      <MemberSignature Language="VB.NET" Value="Rpc" />
+      <MemberSignature Language="F#" Value="Rpc = 2" Usage="System.Web.Services.Description.SoapBindingStyle.Rpc" />
+      <MemberSignature Language="C++ CLI" Value="Rpc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.SoapBindingStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The message being transmitted contains the parameters to call a procedure or the return values from that procedure. RPC is an acronym for "remote procedure call."</summary>
       </Docs>

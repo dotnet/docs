@@ -1,7 +1,10 @@
-<Type Name="CustomBinding" FullName="System.ServiceModel.Channels.CustomBinding">
+﻿<Type Name="CustomBinding" FullName="System.ServiceModel.Channels.CustomBinding">
   <TypeSignature Language="C#" Value="public class CustomBinding : System.ServiceModel.Channels.Binding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomBinding extends System.ServiceModel.Channels.Binding" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CustomBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomBinding&#xA;Inherits Binding" />
+  <TypeSignature Language="F#" Value="type CustomBinding = class&#xA;    inherit Binding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomBinding : System::ServiceModel::Channels::Binding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -108,10 +111,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CustomBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +158,9 @@
       <MemberSignature Language="C#" Value="public CustomBinding (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.BindingElement&gt; bindingElementsInTopDownChannelStackOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Channels.BindingElement&gt; bindingElementsInTopDownChannelStackOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bindingElementsInTopDownChannelStackOrder As IEnumerable(Of BindingElement))" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CustomBinding : seq&lt;System.ServiceModel.Channels.BindingElement&gt; -&gt; System.ServiceModel.Channels.CustomBinding" Usage="new System.ServiceModel.Channels.CustomBinding bindingElementsInTopDownChannelStackOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ bindingElementsInTopDownChannelStackOrder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public CustomBinding (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CustomBinding : System.ServiceModel.Channels.Binding -&gt; System.ServiceModel.Channels.CustomBinding" Usage="new System.ServiceModel.Channels.CustomBinding binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +225,9 @@
       <MemberSignature Language="C#" Value="public CustomBinding (params System.ServiceModel.Channels.BindingElement[] bindingElementsInTopDownChannelStackOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.BindingElement[] bindingElementsInTopDownChannelStackOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.BindingElement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray bindingElementsInTopDownChannelStackOrder As BindingElement())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CustomBinding : System.ServiceModel.Channels.BindingElement[] -&gt; System.ServiceModel.Channels.CustomBinding" Usage="new System.ServiceModel.Channels.CustomBinding bindingElementsInTopDownChannelStackOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(... cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ bindingElementsInTopDownChannelStackOrder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,9 +266,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CustomBinding (string name);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.String)" />
+      <MemberSignature Language="C#" Value="public CustomBinding (string configurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configurationName) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configurationName As String)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CustomBinding : string -&gt; System.ServiceModel.Channels.CustomBinding" Usage="new System.ServiceModel.Channels.CustomBinding name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(System::String ^ configurationName);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public CustomBinding (string name);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(System::String ^ name);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,7 +284,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="configurationName" Type="System.String" />
+        <Parameter Name="configurationName" Type="System.String" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -273,6 +305,9 @@
       <MemberSignature Language="C#" Value="public CustomBinding (string name, string ns, params System.ServiceModel.Channels.BindingElement[] bindingElementsInTopDownChannelStackOrder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns, class System.ServiceModel.Channels.BindingElement[] bindingElementsInTopDownChannelStackOrder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.#ctor(System.String,System.String,System.ServiceModel.Channels.BindingElement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String, ParamArray bindingElementsInTopDownChannelStackOrder As BindingElement())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CustomBinding : string * string * System.ServiceModel.Channels.BindingElement[] -&gt; System.ServiceModel.Channels.CustomBinding" Usage="new System.ServiceModel.Channels.CustomBinding (name, ns, bindingElementsInTopDownChannelStackOrder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomBinding(System::String ^ name, System::String ^ ns, ... cli::array &lt;System::ServiceModel::Channels::BindingElement ^&gt; ^ bindingElementsInTopDownChannelStackOrder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +353,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CustomBinding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="customBinding.CreateBindingElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +382,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BindingElementCollection Elements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.BindingElementCollection Elements" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CustomBinding.Elements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As BindingElementCollection" />
+      <MemberSignature Language="F#" Value="member this.Elements : System.ServiceModel.Channels.BindingElementCollection" Usage="System.ServiceModel.Channels.CustomBinding.Elements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::BindingElementCollection ^ Elements { System::ServiceModel::Channels::BindingElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -369,6 +410,9 @@
       <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CustomBinding.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Scheme As String" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string" Usage="System.ServiceModel.Channels.CustomBinding.Scheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -397,15 +441,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CustomBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

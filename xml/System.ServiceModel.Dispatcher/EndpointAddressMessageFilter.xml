@@ -1,7 +1,10 @@
-<Type Name="EndpointAddressMessageFilter" FullName="System.ServiceModel.Dispatcher.EndpointAddressMessageFilter">
+﻿<Type Name="EndpointAddressMessageFilter" FullName="System.ServiceModel.Dispatcher.EndpointAddressMessageFilter">
   <TypeSignature Language="C#" Value="public class EndpointAddressMessageFilter : System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointAddressMessageFilter extends System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndpointAddressMessageFilter&#xA;Inherits MessageFilter" />
+  <TypeSignature Language="F#" Value="type EndpointAddressMessageFilter = class&#xA;    inherit MessageFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddressMessageFilter : System::ServiceModel::Dispatcher::MessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EndpointAddressMessageFilter (System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.#ctor(System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.EndpointAddressMessageFilter : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" Usage="new System.ServiceModel.Dispatcher.EndpointAddressMessageFilter address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddressMessageFilter(System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +63,9 @@
       <MemberSignature Language="C#" Value="public EndpointAddressMessageFilter (System.ServiceModel.EndpointAddress address, bool includeHostNameInComparison);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address, bool includeHostNameInComparison) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.#ctor(System.ServiceModel.EndpointAddress,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress, includeHostNameInComparison As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.EndpointAddressMessageFilter : System.ServiceModel.EndpointAddress * bool -&gt; System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" Usage="new System.ServiceModel.Dispatcher.EndpointAddressMessageFilter (address, includeHostNameInComparison)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddressMessageFilter(System::ServiceModel::EndpointAddress ^ address, bool includeHostNameInComparison);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +106,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,9 +124,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFilterTable&lt;FilterData&gt;">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Dispatcher.IMessageFilterTable`1&lt;!!FilterData&gt; CreateFilterTable&lt;FilterData&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.CreateFilterTable``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateFilterTable(Of FilterData) () As IMessageFilterTable(Of FilterData)" />
+      <MemberSignature Language="F#" Value="override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="endpointAddressMessageFilter.CreateFilterTable " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename FilterData&gt;&#xA; override System::ServiceModel::Dispatcher::IMessageFilterTable&lt;FilterData&gt; ^ CreateFilterTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +162,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeHostNameInComparison { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeHostNameInComparison" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncludeHostNameInComparison As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeHostNameInComparison : bool" Usage="System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.IncludeHostNameInComparison" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeHostNameInComparison { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +220,8 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="endpointAddressMessageFilter.Match message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +254,8 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer messageBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="endpointAddressMessageFilter.Match messageBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -253,14 +284,5 @@
           <paramref name="messageBuffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.EndpointAddressMessageFilter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

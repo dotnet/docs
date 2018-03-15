@@ -1,7 +1,10 @@
-<Type Name="ControlAdapter" FullName="System.Web.UI.Adapters.ControlAdapter">
+﻿<Type Name="ControlAdapter" FullName="System.Web.UI.Adapters.ControlAdapter">
   <TypeSignature Language="C#" Value="public abstract class ControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ControlAdapter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Adapters.ControlAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ControlAdapter" />
+  <TypeSignature Language="F#" Value="type ControlAdapter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlAdapter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="protected ControlAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,9 +91,12 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRender">
-      <MemberSignature Language="C#" Value="protected virtual void BeginRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void BeginRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void BeginRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.BeginRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub BeginRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member BeginRender : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.BeginRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.BeginRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void BeginRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +135,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.HttpBrowserCapabilities Browser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpBrowserCapabilities Browser" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Browser" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Browser As HttpBrowserCapabilities" />
+      <MemberSignature Language="F#" Value="member this.Browser : System.Web.HttpBrowserCapabilities" Usage="System.Web.UI.Adapters.ControlAdapter.Browser" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::HttpBrowserCapabilities ^ Browser { System::Web::HttpBrowserCapabilities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +175,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Control Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Control" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.Control" Usage="System.Web.UI.Adapters.ControlAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Control ^ Control { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -174,7 +188,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,9 +221,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected virtual void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CreateChildControls ()" />
+      <MemberSignature Language="F#" Value="abstract member CreateChildControls : unit -&gt; unit&#xA;override this.CreateChildControls : unit -&gt; unit" Usage="controlAdapter.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,9 +256,12 @@
       </Docs>
     </Member>
     <Member MemberName="EndRender">
-      <MemberSignature Language="C#" Value="protected virtual void EndRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void EndRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void EndRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.EndRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub EndRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member EndRender : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.EndRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.EndRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void EndRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,9 +297,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterControlState">
-      <MemberSignature Language="C#" Value="protected virtual void LoadAdapterControlState (object state);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void LoadAdapterControlState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadAdapterControlState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub LoadAdapterControlState (state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LoadAdapterControlState : obj -&gt; unit&#xA;override this.LoadAdapterControlState : obj -&gt; unit" Usage="controlAdapter.LoadAdapterControlState state" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void LoadAdapterControlState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -313,9 +336,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterViewState">
-      <MemberSignature Language="C#" Value="protected virtual void LoadAdapterViewState (object state);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void LoadAdapterViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadAdapterViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.LoadAdapterViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub LoadAdapterViewState (state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LoadAdapterViewState : obj -&gt; unit&#xA;override this.LoadAdapterViewState : obj -&gt; unit" Usage="controlAdapter.LoadAdapterViewState state" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void LoadAdapterViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,9 +376,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected virtual void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="controlAdapter.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,9 +424,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected virtual void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="controlAdapter.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,9 +463,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected virtual void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="controlAdapter.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -467,9 +502,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
-      <MemberSignature Language="C#" Value="protected virtual void OnUnload (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnUnload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.OnUnload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnUnload (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnUnload : EventArgs -&gt; unit&#xA;override this.OnUnload : EventArgs -&gt; unit" Usage="controlAdapter.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -506,6 +544,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Page Page { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.Page" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Page As Page" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.Page" Usage="System.Web.UI.Adapters.ControlAdapter.Page" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Page ^ Page { System::Web::UI::Page ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -516,7 +557,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -541,6 +582,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Adapters.PageAdapter PageAdapter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Adapters.PageAdapter PageAdapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Adapters.ControlAdapter.PageAdapter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PageAdapter As PageAdapter" />
+      <MemberSignature Language="F#" Value="member this.PageAdapter : System.Web.UI.Adapters.PageAdapter" Usage="System.Web.UI.Adapters.ControlAdapter.PageAdapter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Adapters::PageAdapter ^ PageAdapter { System::Web::UI::Adapters::PageAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -551,7 +595,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -575,9 +619,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -616,6 +663,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.RenderChildren writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -650,9 +700,12 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterControlState">
-      <MemberSignature Language="C#" Value="protected virtual object SaveAdapterControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object SaveAdapterControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveAdapterControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveAdapterControlState () As Object" />
+      <MemberSignature Language="F#" Value="abstract member SaveAdapterControlState : unit -&gt; obj&#xA;override this.SaveAdapterControlState : unit -&gt; obj" Usage="controlAdapter.SaveAdapterControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveAdapterControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -684,9 +737,12 @@
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterViewState">
-      <MemberSignature Language="C#" Value="protected virtual object SaveAdapterViewState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object SaveAdapterViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveAdapterViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Adapters.ControlAdapter.SaveAdapterViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveAdapterViewState () As Object" />
+      <MemberSignature Language="F#" Value="abstract member SaveAdapterViewState : unit -&gt; obj&#xA;override this.SaveAdapterViewState : unit -&gt; obj" Usage="controlAdapter.SaveAdapterViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveAdapterViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

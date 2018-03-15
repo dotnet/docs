@@ -1,7 +1,10 @@
-<Type Name="SimpleValueProvider" FullName="System.Web.ModelBinding.SimpleValueProvider">
+﻿<Type Name="SimpleValueProvider" FullName="System.Web.ModelBinding.SimpleValueProvider">
   <TypeSignature Language="C#" Value="public abstract class SimpleValueProvider : System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SimpleValueProvider extends System.Object implements class System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.SimpleValueProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SimpleValueProvider&#xA;Implements IValueProvider" />
+  <TypeSignature Language="F#" Value="type SimpleValueProvider = class&#xA;    interface IValueProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleValueProvider abstract : System::Web::ModelBinding::IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.SimpleValueProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected SimpleValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.SimpleValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.SimpleValueProvider" Usage="new System.Web.ModelBinding.SimpleValueProvider modelBindingExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimpleValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected SimpleValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Globalization.CultureInfo cultureInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.SimpleValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext * System.Globalization.CultureInfo -&gt; System.Web.ModelBinding.SimpleValueProvider" Usage="new System.Web.ModelBinding.SimpleValueProvider (modelBindingExecutionContext, cultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SimpleValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Globalization::CultureInfo ^ cultureInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,7 +84,13 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsPrefix (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPrefix(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleValueProvider.ContainsPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsPrefix (prefix As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsPrefix : string -&gt; bool&#xA;override this.ContainsPrefix : string -&gt; bool" Usage="simpleValueProvider.ContainsPrefix prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsPrefix(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +114,9 @@
       <MemberSignature Language="C#" Value="protected abstract object FetchValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object FetchValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleValueProvider.FetchValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function FetchValue (key As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member FetchValue : string -&gt; obj" Usage="simpleValueProvider.FetchValue key" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ FetchValue(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,7 +139,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.ModelBinding.ValueProviderResult GetValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.SimpleValueProvider.GetValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (key As String) As ValueProviderResult" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult&#xA;override this.GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="simpleValueProvider.GetValue key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +168,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.ModelBinding.ModelBindingExecutionContext ModelBindingExecutionContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelBindingExecutionContext ModelBindingExecutionContext" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.SimpleValueProvider.ModelBindingExecutionContext" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ModelBindingExecutionContext As ModelBindingExecutionContext" />
+      <MemberSignature Language="F#" Value="member this.ModelBindingExecutionContext : System.Web.ModelBinding.ModelBindingExecutionContext" Usage="System.Web.ModelBinding.SimpleValueProvider.ModelBindingExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::ModelBinding::ModelBindingExecutionContext ^ ModelBindingExecutionContext { System::Web::ModelBinding::ModelBindingExecutionContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,14 +185,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.SimpleValueProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

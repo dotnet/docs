@@ -1,7 +1,10 @@
-<Type Name="ScrollBarSizeBoxState" FullName="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState">
+﻿<Type Name="ScrollBarSizeBoxState" FullName="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState">
   <TypeSignature Language="C#" Value="public enum ScrollBarSizeBoxState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBarSizeBoxState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarSizeBoxState" />
+  <TypeSignature Language="F#" Value="type ScrollBarSizeBoxState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarSizeBoxState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="LeftAlign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState LeftAlign = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.LeftAlign" />
+      <MemberSignature Language="VB.NET" Value="LeftAlign" />
+      <MemberSignature Language="F#" Value="LeftAlign = 2" Usage="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.LeftAlign" />
+      <MemberSignature Language="C++ CLI" Value="LeftAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The sizing handle is aligned to the left.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="RightAlign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState RightAlign = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.RightAlign" />
+      <MemberSignature Language="VB.NET" Value="RightAlign" />
+      <MemberSignature Language="F#" Value="RightAlign = 1" Usage="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.RightAlign" />
+      <MemberSignature Language="C++ CLI" Value="RightAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The sizing handle is aligned to the right.</summary>
       </Docs>

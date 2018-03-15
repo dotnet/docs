@@ -1,7 +1,10 @@
-<Type Name="RuleSetValidationException" FullName="System.Workflow.Activities.Rules.RuleSetValidationException">
+﻿<Type Name="RuleSetValidationException" FullName="System.Workflow.Activities.Rules.RuleSetValidationException">
   <TypeSignature Language="C#" Value="public class RuleSetValidationException : System.Workflow.Activities.Rules.RuleException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RuleSetValidationException extends System.Workflow.Activities.Rules.RuleException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSetValidationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleSetValidationException&#xA;Inherits RuleException" />
+  <TypeSignature Language="F#" Value="type RuleSetValidationException = class&#xA;    inherit RuleException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleSetValidationException : System::Workflow::Activities::Rules::RuleException" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleSetValidationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public RuleSetValidationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSetValidationException : string -&gt; System.Workflow.Activities.Rules.RuleSetValidationException" Usage="new System.Workflow.Activities.Rules.RuleSetValidationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected RuleSetValidationException (System.Runtime.Serialization.SerializationInfo serializeInfo, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializeInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (serializeInfo As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSetValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Workflow.Activities.Rules.RuleSetValidationException" Usage="new System.Workflow.Activities.Rules.RuleSetValidationException (serializeInfo, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleSetValidationException(System::Runtime::Serialization::SerializationInfo ^ serializeInfo, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -79,6 +99,9 @@
       <MemberSignature Language="C#" Value="public RuleSetValidationException (string message, Exception ex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception ex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, ex As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSetValidationException : string * Exception -&gt; System.Workflow.Activities.Rules.RuleSetValidationException" Usage="new System.Workflow.Activities.Rules.RuleSetValidationException (message, ex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetValidationException(System::String ^ message, Exception ^ ex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -99,6 +122,9 @@
       <MemberSignature Language="C#" Value="public RuleSetValidationException (string message, System.Workflow.ComponentModel.Compiler.ValidationErrorCollection errors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.#ctor(System.String,System.Workflow.ComponentModel.Compiler.ValidationErrorCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errors As ValidationErrorCollection)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSetValidationException : string * System.Workflow.ComponentModel.Compiler.ValidationErrorCollection -&gt; System.Workflow.Activities.Rules.RuleSetValidationException" Usage="new System.Workflow.Activities.Rules.RuleSetValidationException (message, errors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetValidationException(System::String ^ message, System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ errors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -119,6 +145,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSetValidationException.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ValidationErrorCollection" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="System.Workflow.Activities.Rules.RuleSetValidationException.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Errors { System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -137,7 +166,13 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="ruleSetValidationException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -156,14 +191,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetValidationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

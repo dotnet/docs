@@ -1,7 +1,10 @@
-<Type Name="IDebugConvert" FullName="Microsoft.JScript.IDebugConvert">
+﻿<Type Name="IDebugConvert" FullName="Microsoft.JScript.IDebugConvert">
   <TypeSignature Language="C#" Value="public interface IDebugConvert" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDebugConvert" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDebugConvert" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDebugConvert" />
+  <TypeSignature Language="F#" Value="type IDebugConvert = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDebugConvert" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public string BooleanToString (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BooleanToString(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.BooleanToString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BooleanToString (value As Boolean) As String" />
+      <MemberSignature Language="F#" Value="abstract member BooleanToString : bool -&gt; string" Usage="iDebugConvert.BooleanToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ BooleanToString(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public string ByteToString (byte value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ByteToString(unsigned int8 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.ByteToString(System.Byte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ByteToString (value As Byte, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member ByteToString : byte * int -&gt; string" Usage="iDebugConvert.ByteToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ByteToString(System::Byte value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +88,9 @@
       <MemberSignature Language="C#" Value="public string DoubleToDateString (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DoubleToDateString(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.DoubleToDateString(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoubleToDateString (value As Double) As String" />
+      <MemberSignature Language="F#" Value="abstract member DoubleToDateString : double -&gt; string" Usage="iDebugConvert.DoubleToDateString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DoubleToDateString(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -104,6 +116,9 @@
       <MemberSignature Language="C#" Value="public string DoubleToString (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string DoubleToString(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.DoubleToString(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DoubleToString (value As Double) As String" />
+      <MemberSignature Language="F#" Value="abstract member DoubleToString : double -&gt; string" Usage="iDebugConvert.DoubleToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ DoubleToString(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -129,6 +144,9 @@
       <MemberSignature Language="C#" Value="public string GetErrorMessageForHR (int hr, Microsoft.JScript.Vsa.IJSVsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetErrorMessageForHR(int32 hr, class Microsoft.JScript.Vsa.IJSVsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.GetErrorMessageForHR(System.Int32,Microsoft.JScript.Vsa.IJSVsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetErrorMessageForHR (hr As Integer, engine As IJSVsaEngine) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetErrorMessageForHR : int * Microsoft.JScript.Vsa.IJSVsaEngine -&gt; string" Usage="iDebugConvert.GetErrorMessageForHR (hr, engine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetErrorMessageForHR(int hr, Microsoft::JScript::Vsa::IJSVsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -156,6 +174,9 @@
       <MemberSignature Language="C#" Value="public object GetManagedCharObject (ushort i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetManagedCharObject(unsigned int16 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.GetManagedCharObject(System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetManagedCharObject (i As UShort) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedCharObject : uint16 -&gt; obj" Usage="iDebugConvert.GetManagedCharObject i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetManagedCharObject(System::UInt16 i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -182,6 +203,9 @@
       <MemberSignature Language="C#" Value="public object GetManagedInt64Object (long i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetManagedInt64Object(int64 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.GetManagedInt64Object(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetManagedInt64Object (i As Long) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedInt64Object : int64 -&gt; obj" Usage="iDebugConvert.GetManagedInt64Object i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetManagedInt64Object(long i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -208,6 +232,9 @@
       <MemberSignature Language="C#" Value="public object GetManagedObject (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetManagedObject(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.GetManagedObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetManagedObject (value As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedObject : obj -&gt; obj" Usage="iDebugConvert.GetManagedObject value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetManagedObject(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -234,6 +261,9 @@
       <MemberSignature Language="C#" Value="public object GetManagedUInt64Object (ulong i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetManagedUInt64Object(unsigned int64 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.GetManagedUInt64Object(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetManagedUInt64Object (i As ULong) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetManagedUInt64Object : uint64 -&gt; obj" Usage="iDebugConvert.GetManagedUInt64Object i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetManagedUInt64Object(System::UInt64 i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -260,6 +290,9 @@
       <MemberSignature Language="C#" Value="public string Int16ToString (short value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Int16ToString(int16 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.Int16ToString(System.Int16,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Int16ToString (value As Short, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member Int16ToString : int16 * int -&gt; string" Usage="iDebugConvert.Int16ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Int16ToString(short value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -287,6 +320,9 @@
       <MemberSignature Language="C#" Value="public string Int32ToString (int value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Int32ToString(int32 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.Int32ToString(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Int32ToString (value As Integer, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member Int32ToString : int * int -&gt; string" Usage="iDebugConvert.Int32ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Int32ToString(int value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -314,6 +350,9 @@
       <MemberSignature Language="C#" Value="public string Int64ToString (long value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Int64ToString(int64 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.Int64ToString(System.Int64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Int64ToString (value As Long, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member Int64ToString : int64 * int -&gt; string" Usage="iDebugConvert.Int64ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Int64ToString(long value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -341,6 +380,9 @@
       <MemberSignature Language="C#" Value="public string RegexpToString (string source, bool ignoreCase, bool global, bool multiline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RegexpToString(string source, bool ignoreCase, bool global, bool multiline) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.RegexpToString(System.String,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegexpToString (source As String, ignoreCase As Boolean, global As Boolean, multiline As Boolean) As String" />
+      <MemberSignature Language="F#" Value="abstract member RegexpToString : string * bool * bool * bool -&gt; string" Usage="iDebugConvert.RegexpToString (source, ignoreCase, global, multiline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ RegexpToString(System::String ^ source, bool ignoreCase, bool global, bool multiline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -375,6 +417,9 @@
       <MemberSignature Language="C#" Value="public string SByteToString (sbyte value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SByteToString(int8 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.SByteToString(System.SByte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SByteToString (value As SByte, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member SByteToString : sbyte * int -&gt; string" Usage="iDebugConvert.SByteToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SByteToString(System::SByte value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -402,6 +447,9 @@
       <MemberSignature Language="C#" Value="public string SingleToString (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SingleToString(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.SingleToString(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SingleToString (value As Single) As String" />
+      <MemberSignature Language="F#" Value="abstract member SingleToString : single -&gt; string" Usage="iDebugConvert.SingleToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SingleToString(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -427,6 +475,9 @@
       <MemberSignature Language="C#" Value="public string StringToPrintable (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string StringToPrintable(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.StringToPrintable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StringToPrintable (source As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member StringToPrintable : string -&gt; string" Usage="iDebugConvert.StringToPrintable source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ StringToPrintable(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -452,6 +503,8 @@
       <MemberSignature Language="C#" Value="public object ToPrimitive (object value, TypeCode typeCode, bool truncationPermitted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ToPrimitive(object value, valuetype System.TypeCode typeCode, bool truncationPermitted) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.ToPrimitive(System.Object,System.TypeCode,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member ToPrimitive : obj * TypeCode * bool -&gt; obj" Usage="iDebugConvert.ToPrimitive (value, typeCode, truncationPermitted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ToPrimitive(System::Object ^ value, TypeCode typeCode, bool truncationPermitted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -483,6 +536,9 @@
       <MemberSignature Language="C#" Value="public string UInt16ToString (ushort value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string UInt16ToString(unsigned int16 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.UInt16ToString(System.UInt16,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UInt16ToString (value As UShort, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member UInt16ToString : uint16 * int -&gt; string" Usage="iDebugConvert.UInt16ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UInt16ToString(System::UInt16 value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -510,6 +566,9 @@
       <MemberSignature Language="C#" Value="public string UInt32ToString (uint value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string UInt32ToString(unsigned int32 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.UInt32ToString(System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UInt32ToString (value As UInteger, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member UInt32ToString : uint32 * int -&gt; string" Usage="iDebugConvert.UInt32ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UInt32ToString(System::UInt32 value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -537,6 +596,9 @@
       <MemberSignature Language="C#" Value="public string UInt64ToString (ulong value, int radix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string UInt64ToString(unsigned int64 value, int32 radix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDebugConvert.UInt64ToString(System.UInt64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UInt64ToString (value As ULong, radix As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member UInt64ToString : uint64 * int -&gt; string" Usage="iDebugConvert.UInt64ToString (value, radix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ UInt64ToString(System::UInt64 value, int radix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

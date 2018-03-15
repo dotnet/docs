@@ -1,7 +1,10 @@
-<Type Name="ISoapMessage" FullName="System.Runtime.Serialization.Formatters.ISoapMessage">
+﻿<Type Name="ISoapMessage" FullName="System.Runtime.Serialization.Formatters.ISoapMessage">
   <TypeSignature Language="C#" Value="public interface ISoapMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapMessage" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.ISoapMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISoapMessage" />
+  <TypeSignature Language="F#" Value="type ISoapMessage = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISoapMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.Header[] Headers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.Header[] Headers" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Headers As Header()" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Runtime.Remoting.Messaging.Header[] with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ Headers { cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ get(); void set(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.MethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +79,9 @@
       <MemberSignature Language="C#" Value="public string[] ParamNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ParamNames" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamNames As String()" />
+      <MemberSignature Language="F#" Value="member this.ParamNames : string[] with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ParamNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +101,9 @@
       <MemberSignature Language="C#" Value="public Type[] ParamTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] ParamTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamTypes As Type()" />
+      <MemberSignature Language="F#" Value="member this.ParamTypes : Type[] with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ParamTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +123,9 @@
       <MemberSignature Language="C#" Value="public object[] ParamValues { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] ParamValues" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamValues As Object()" />
+      <MemberSignature Language="F#" Value="member this.ParamValues : obj[] with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ParamValues { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +145,9 @@
       <MemberSignature Language="C#" Value="public string XmlNameSpace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlNameSpace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlNameSpace As String" />
+      <MemberSignature Language="F#" Value="member this.XmlNameSpace : string with get, set" Usage="System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNameSpace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

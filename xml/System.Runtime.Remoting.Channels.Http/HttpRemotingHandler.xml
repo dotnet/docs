@@ -1,7 +1,10 @@
-<Type Name="HttpRemotingHandler" FullName="System.Runtime.Remoting.Channels.Http.HttpRemotingHandler">
+﻿<Type Name="HttpRemotingHandler" FullName="System.Runtime.Remoting.Channels.Http.HttpRemotingHandler">
   <TypeSignature Language="C#" Value="public class HttpRemotingHandler : System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpRemotingHandler extends System.Object implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpRemotingHandler&#xA;Implements IHttpHandler" />
+  <TypeSignature Language="F#" Value="type HttpRemotingHandler = class&#xA;    interface IHttpHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRemotingHandler : System::Web::IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpRemotingHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRemotingHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -45,6 +59,8 @@
       <MemberSignature Language="C#" Value="public HttpRemotingHandler (Type type, object srvID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, object srvID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor(System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Http.HttpRemotingHandler : Type * obj -&gt; System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" Usage="new System.Runtime.Remoting.Channels.Http.HttpRemotingHandler (type, srvID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRemotingHandler(Type ^ type, System::Object ^ srvID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -72,6 +88,9 @@
       <MemberSignature Language="C#" Value="public bool IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.IsReusable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReusable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="public void ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (context As HttpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="httpRemotingHandler.ProcessRequest context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -115,14 +137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Http.HttpRemotingHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

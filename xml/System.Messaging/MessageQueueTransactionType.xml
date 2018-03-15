@@ -1,7 +1,10 @@
-<Type Name="MessageQueueTransactionType" FullName="System.Messaging.MessageQueueTransactionType">
+﻿<Type Name="MessageQueueTransactionType" FullName="System.Messaging.MessageQueueTransactionType">
   <TypeSignature Language="C#" Value="public enum MessageQueueTransactionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessageQueueTransactionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransactionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageQueueTransactionType" />
+  <TypeSignature Language="F#" Value="type MessageQueueTransactionType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageQueueTransactionType" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Automatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionType Automatic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionType.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Messaging.MessageQueueTransactionType.Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A transaction type used for Microsoft Transaction Server (MTS) or COM+ 1.0 Services. If there is already an MTS transaction context, it will be used when sending or receiving the message.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.MessageQueueTransactionType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Operation will not be transactional.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionType Single = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionType.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 3" Usage="System.Messaging.MessageQueueTransactionType.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A transaction type used for single internal transactions.</summary>
       </Docs>

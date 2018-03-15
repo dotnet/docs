@@ -1,7 +1,10 @@
-<Type Name="IssuedTokenClientElement" FullName="System.ServiceModel.Configuration.IssuedTokenClientElement">
+﻿<Type Name="IssuedTokenClientElement" FullName="System.ServiceModel.Configuration.IssuedTokenClientElement">
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenClientElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenClientElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenClientElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuedTokenClientElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type IssuedTokenClientElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IssuedTokenClientElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public IssuedTokenClientElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IssuedTokenClientElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuedTokenClientElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool CacheIssuedTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CacheIssuedTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.CacheIssuedTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheIssuedTokens As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CacheIssuedTokens : bool with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.CacheIssuedTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheIssuedTokens { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +66,9 @@
       <MemberSignature Language="C#" Value="public void Copy (System.ServiceModel.Configuration.IssuedTokenClientElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Copy(class System.ServiceModel.Configuration.IssuedTokenClientElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IssuedTokenClientElement.Copy(System.ServiceModel.Configuration.IssuedTokenClientElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy (from As IssuedTokenClientElement)" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.IssuedTokenClientElement -&gt; unit" Usage="issuedTokenClientElement.Copy from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy(System::ServiceModel::Configuration::IssuedTokenClientElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityKeyEntropyMode DefaultKeyEntropyMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.SecurityKeyEntropyMode DefaultKeyEntropyMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.DefaultKeyEntropyMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultKeyEntropyMode As SecurityKeyEntropyMode" />
+      <MemberSignature Language="F#" Value="member this.DefaultKeyEntropyMode : System.ServiceModel.Security.SecurityKeyEntropyMode with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.DefaultKeyEntropyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityKeyEntropyMode DefaultKeyEntropyMode { System::ServiceModel::Security::SecurityKeyEntropyMode get(); void set(System::ServiceModel::Security::SecurityKeyEntropyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +119,9 @@
       <MemberSignature Language="C#" Value="public int IssuedTokenRenewalThresholdPercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 IssuedTokenRenewalThresholdPercentage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuedTokenRenewalThresholdPercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuedTokenRenewalThresholdPercentage As Integer" />
+      <MemberSignature Language="F#" Value="member this.IssuedTokenRenewalThresholdPercentage : int with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.IssuedTokenRenewalThresholdPercentage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IssuedTokenRenewalThresholdPercentage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection IssuerChannelBehaviors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection IssuerChannelBehaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuerChannelBehaviors As IssuedTokenClientBehaviorsElementCollection" />
+      <MemberSignature Language="F#" Value="member this.IssuerChannelBehaviors : System.ServiceModel.Configuration.IssuedTokenClientBehaviorsElementCollection" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.IssuerChannelBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::IssuedTokenClientBehaviorsElementCollection ^ IssuerChannelBehaviors { System::ServiceModel::Configuration::IssuedTokenClientBehaviorsElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +174,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement LocalIssuer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement LocalIssuer" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalIssuer As IssuedTokenParametersEndpointAddressElement" />
+      <MemberSignature Language="F#" Value="member this.LocalIssuer : System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::IssuedTokenParametersEndpointAddressElement ^ LocalIssuer { System::ServiceModel::Configuration::IssuedTokenParametersEndpointAddressElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -177,6 +200,9 @@
       <MemberSignature Language="C#" Value="public string LocalIssuerChannelBehaviors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalIssuerChannelBehaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuerChannelBehaviors" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalIssuerChannelBehaviors As String" />
+      <MemberSignature Language="F#" Value="member this.LocalIssuerChannelBehaviors : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.LocalIssuerChannelBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalIssuerChannelBehaviors { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +229,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxIssuedTokenCachingTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxIssuedTokenCachingTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.MaxIssuedTokenCachingTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxIssuedTokenCachingTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxIssuedTokenCachingTime : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.MaxIssuedTokenCachingTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxIssuedTokenCachingTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +258,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenClientElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IssuedTokenClientElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

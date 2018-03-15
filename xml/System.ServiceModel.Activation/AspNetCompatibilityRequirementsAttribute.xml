@@ -1,7 +1,10 @@
-<Type Name="AspNetCompatibilityRequirementsAttribute" FullName="System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute">
+﻿<Type Name="AspNetCompatibilityRequirementsAttribute" FullName="System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute">
   <TypeSignature Language="C#" Value="public sealed class AspNetCompatibilityRequirementsAttribute : Attribute, System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetCompatibilityRequirementsAttribute extends System.Attribute implements class System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AspNetCompatibilityRequirementsAttribute&#xA;Inherits Attribute&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type AspNetCompatibilityRequirementsAttribute = class&#xA;    inherit Attribute&#xA;    interface IServiceBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AspNetCompatibilityRequirementsAttribute sealed : Attribute, System::ServiceModel::Description::IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="public AspNetCompatibilityRequirementsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AspNetCompatibilityRequirementsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode RequirementsMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode RequirementsMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequirementsMode As AspNetCompatibilityRequirementsMode" />
+      <MemberSignature Language="F#" Value="member this.RequirementsMode : System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode with get, set" Usage="System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode RequirementsMode { System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode get(); void set(System::ServiceModel::Activation::AspNetCompatibilityRequirementsMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,7 +123,11 @@
       <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ parameters) = System::ServiceModel::Description::IServiceBehavior::AddBindingParameters;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,7 +161,11 @@
       <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase) = System::ServiceModel::Description::IServiceBehavior::ApplyDispatchBehavior;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -182,7 +198,11 @@
       <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IServiceBehavior.Validate(System::ServiceModel::Description::ServiceDescription ^ description, System::ServiceModel::ServiceHostBase ^ serviceHostBase) = System::ServiceModel::Description::IServiceBehavior::Validate;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

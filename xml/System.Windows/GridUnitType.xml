@@ -1,7 +1,10 @@
-<Type Name="GridUnitType" FullName="System.Windows.GridUnitType">
+﻿<Type Name="GridUnitType" FullName="System.Windows.GridUnitType">
   <TypeSignature Language="C#" Value="public enum GridUnitType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridUnitType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.GridUnitType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridUnitType" />
+  <TypeSignature Language="F#" Value="type GridUnitType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridUnitType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.GridUnitType Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.GridUnitType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.GridUnitType.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.GridUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The size is determined by the size properties of the content object.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.GridUnitType Pixel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.GridUnitType.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 1" Usage="System.Windows.GridUnitType.Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.GridUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The value is expressed as a pixel.</summary>
       </Docs>
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="Star" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.GridUnitType Star = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.GridUnitType.Star" />
+      <MemberSignature Language="VB.NET" Value="Star" />
+      <MemberSignature Language="F#" Value="Star = 2" Usage="System.Windows.GridUnitType.Star" />
+      <MemberSignature Language="C++ CLI" Value="Star" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.GridUnitType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The value is expressed as a weighted proportion of available space.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="RichTextBoxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray">
+﻿<Type Name="RichTextBoxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray">
   <TypeSignature Language="C#" Value="public class RichTextBoxArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RichTextBoxArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray" />
+  <TypeSignature Language="VB.NET" Value="Public Class RichTextBoxArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type RichTextBoxArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RichTextBoxArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RichTextBoxArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RichTextBoxArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public RichTextBoxArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RichTextBoxArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler AcceptsTabChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AcceptsTabChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.AcceptsTabChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AcceptsTabChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AcceptsTabChanged : EventHandler " Usage="member this.AcceptsTabChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AcceptsTabChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -123,6 +143,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -152,6 +175,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BindingContextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BindingContextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.BindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -181,6 +207,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BorderStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BorderStyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.BorderStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BorderStyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BorderStyleChanged : EventHandler " Usage="member this.BorderStyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BorderStyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -210,6 +239,9 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="richTextBoxArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -248,6 +280,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -277,6 +312,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.UICuesEventHandler ChangeUICues;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.UICuesEventHandler ChangeUICues" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ChangeUICues" />
+      <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -304,6 +342,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -335,6 +376,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ClientSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ClientSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ClientSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -364,6 +408,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ContentsResizedEventHandler ContentsResized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ContentsResizedEventHandler ContentsResized" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ContentsResized" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContentsResized As ContentsResizedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContentsResized : System.Windows.Forms.ContentsResizedEventHandler " Usage="member this.ContentsResized : System.Windows.Forms.ContentsResizedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ContentsResizedEventHandler ^ ContentsResized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -391,6 +438,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -425,6 +475,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -454,6 +507,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -481,6 +537,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -508,6 +567,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -537,6 +599,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -566,6 +631,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -593,6 +661,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -622,6 +693,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -649,6 +723,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.FontChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -678,6 +755,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -707,6 +787,9 @@
       <MemberSignature Language="C#" Value="protected override Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="richTextBoxArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -736,6 +819,9 @@
       <MemberSignature Language="C#" Value="public short GetIndex (System.Windows.Forms.RichTextBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 GetIndex(class System.Windows.Forms.RichTextBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.GetIndex(System.Windows.Forms.RichTextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As RichTextBox) As Short" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.RichTextBox -&gt; int16" Usage="richTextBoxArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::RichTextBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -768,6 +854,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HelpEventHandler HelpRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HelpEventHandler HelpRequested" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.HelpRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -798,6 +887,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler HideSelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HideSelectionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.HideSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event HideSelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.HideSelectionChanged : EventHandler " Usage="member this.HideSelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HideSelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -827,6 +919,9 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="richTextBoxArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -858,6 +953,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler HScroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler HScroll" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.HScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Event HScroll As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.HScroll : EventHandler " Usage="member this.HScroll : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ HScroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -885,6 +983,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeChange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeChange" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ImeChange" />
+      <MemberSignature Language="VB.NET" Value="Public Event ImeChange As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ImeChange : EventHandler " Usage="member this.ImeChange : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -912,6 +1013,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -941,6 +1045,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.RichTextBox this[short Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.RichTextBox Item(int16)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Item(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As RichTextBox" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.RichTextBox" Usage="Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::RichTextBox ^ default[short] { System::Windows::Forms::RichTextBox ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -978,6 +1085,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1016,6 +1126,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1058,6 +1171,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1096,6 +1212,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LayoutEventHandler Layout;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LayoutEventHandler Layout" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1126,6 +1245,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1174,6 +1296,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LinkClickedEventHandler LinkClicked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LinkClickedEventHandler LinkClicked" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.LinkClicked" />
+      <MemberSignature Language="VB.NET" Value="Public Event LinkClicked As LinkClickedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LinkClicked : System.Windows.Forms.LinkClickedEventHandler " Usage="member this.LinkClicked : System.Windows.Forms.LinkClickedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LinkClickedEventHandler ^ LinkClicked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1203,6 +1328,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1232,6 +1360,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MarginChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MarginChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MarginChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1261,6 +1392,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ModifiedChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ModifiedChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ModifiedChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ModifiedChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ModifiedChanged : EventHandler " Usage="member this.ModifiedChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ModifiedChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1290,6 +1424,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseCaptureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseCaptureChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseCaptureChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseCaptureChanged : EventHandler " Usage="member this.MouseCaptureChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1332,6 +1469,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1375,6 +1515,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1418,6 +1561,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1458,6 +1604,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1498,6 +1647,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseHover" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1542,6 +1694,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1582,6 +1737,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1622,6 +1780,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1662,6 +1823,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1690,6 +1854,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MultilineChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MultilineChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.MultilineChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MultilineChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MultilineChanged : EventHandler " Usage="member this.MultilineChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MultilineChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1719,6 +1886,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1748,6 +1918,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Protected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Protected" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Protected" />
+      <MemberSignature Language="VB.NET" Value="Public Event Protected As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Protected : EventHandler " Usage="member this.Protected : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Protected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1777,6 +1950,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.QueryAccessibilityHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1807,6 +1983,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ReadOnlyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ReadOnlyChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ReadOnlyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ReadOnlyChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyChanged : EventHandler " Usage="member this.ReadOnlyChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ReadOnlyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1836,6 +2015,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RegionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RegionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.RegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RegionChanged : EventHandler " Usage="member this.RegionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1865,6 +2047,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public void ResetIndex (System.Windows.Forms.RichTextBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void ResetIndex(class System.Windows.Forms.RichTextBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ResetIndex(System.Windows.Forms.RichTextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As RichTextBox)" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.RichTextBox -&gt; unit" Usage="richTextBoxArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::RichTextBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1901,6 +2086,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1933,6 +2121,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1962,6 +2153,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1991,6 +2185,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public void SetIndex (System.Windows.Forms.RichTextBox o, short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetIndex(class System.Windows.Forms.RichTextBox o, int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.SetIndex(System.Windows.Forms.RichTextBox,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As RichTextBox, Index As Short)" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.RichTextBox * int16 -&gt; unit" Usage="richTextBoxArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::RichTextBox ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2029,6 +2226,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIndex (System.Windows.Forms.RichTextBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ShouldSerializeIndex(class System.Windows.Forms.RichTextBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.ShouldSerializeIndex(System.Windows.Forms.RichTextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As RichTextBox) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.RichTextBox -&gt; bool" Usage="richTextBoxArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::RichTextBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2067,6 +2267,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2096,6 +2299,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler StyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.StyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2127,6 +2333,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2157,6 +2366,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.TabIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2186,6 +2398,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.TabStopChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2215,6 +2430,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2244,6 +2462,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2304,6 +2525,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2364,6 +2588,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2393,6 +2620,9 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VScroll;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VScroll" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray.VScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Event VScroll As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VScroll : EventHandler " Usage="member this.VScroll : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VScroll;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2416,14 +2646,5 @@ MsgBox(CStr(RichTextBoxArray(1).Text))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.RichTextBoxArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ChartDashStyle" FullName="System.Web.UI.DataVisualization.Charting.ChartDashStyle">
+﻿<Type Name="ChartDashStyle" FullName="System.Web.UI.DataVisualization.Charting.ChartDashStyle">
   <TypeSignature Language="C#" Value="public enum ChartDashStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartDashStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartDashStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChartDashStyle" />
+  <TypeSignature Language="F#" Value="type ChartDashStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChartDashStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Dash" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle Dash = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.Dash" />
+      <MemberSignature Language="VB.NET" Value="Dash" />
+      <MemberSignature Language="F#" Value="Dash = 1" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.Dash" />
+      <MemberSignature Language="C++ CLI" Value="Dash" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A dashed line.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="DashDot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle DashDot = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.DashDot" />
+      <MemberSignature Language="VB.NET" Value="DashDot" />
+      <MemberSignature Language="F#" Value="DashDot = 2" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.DashDot" />
+      <MemberSignature Language="C++ CLI" Value="DashDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A line with a repeating dash-dot pattern.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="DashDotDot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle DashDotDot = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.DashDotDot" />
+      <MemberSignature Language="VB.NET" Value="DashDotDot" />
+      <MemberSignature Language="F#" Value="DashDotDot = 3" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.DashDotDot" />
+      <MemberSignature Language="C++ CLI" Value="DashDotDot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A line a repeating dash-dot-dot pattern.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Dot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle Dot = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.Dot" />
+      <MemberSignature Language="VB.NET" Value="Dot" />
+      <MemberSignature Language="F#" Value="Dot = 4" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.Dot" />
+      <MemberSignature Language="C++ CLI" Value="Dot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A line with a repeating dot pattern.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The line style is not set.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="Solid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartDashStyle Solid = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartDashStyle.Solid" />
+      <MemberSignature Language="VB.NET" Value="Solid" />
+      <MemberSignature Language="F#" Value="Solid = 5" Usage="System.Web.UI.DataVisualization.Charting.ChartDashStyle.Solid" />
+      <MemberSignature Language="C++ CLI" Value="Solid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartDashStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A solid line.</summary>
       </Docs>

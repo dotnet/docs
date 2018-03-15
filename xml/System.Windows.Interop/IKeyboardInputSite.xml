@@ -1,7 +1,10 @@
-<Type Name="IKeyboardInputSite" FullName="System.Windows.Interop.IKeyboardInputSite">
+﻿<Type Name="IKeyboardInputSite" FullName="System.Windows.Interop.IKeyboardInputSite">
   <TypeSignature Language="C#" Value="public interface IKeyboardInputSite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyboardInputSite" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IKeyboardInputSite" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IKeyboardInputSite" />
+  <TypeSignature Language="F#" Value="type IKeyboardInputSite = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IKeyboardInputSite" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public bool OnNoMoreTabStops (System.Windows.Input.TraversalRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnNoMoreTabStops(class System.Windows.Input.TraversalRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops(System.Windows.Input.TraversalRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnNoMoreTabStops (request As TraversalRequest) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnNoMoreTabStops : System.Windows.Input.TraversalRequest -&gt; bool" Usage="iKeyboardInputSite.OnNoMoreTabStops request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnNoMoreTabStops(System::Windows::Input::TraversalRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSink Sink { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Interop.IKeyboardInputSink Sink" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IKeyboardInputSite.Sink" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sink As IKeyboardInputSink" />
+      <MemberSignature Language="F#" Value="member this.Sink : System.Windows.Interop.IKeyboardInputSink" Usage="System.Windows.Interop.IKeyboardInputSite.Sink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Interop::IKeyboardInputSink ^ Sink { System::Windows::Interop::IKeyboardInputSink ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public void Unregister ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.Unregister" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unregister ()" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : unit -&gt; unit" Usage="iKeyboardInputSite.Unregister " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unregister();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

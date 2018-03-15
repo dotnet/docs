@@ -1,7 +1,10 @@
-<Type Name="ClientWindowsAuthenticationMembershipProvider" FullName="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider">
+﻿<Type Name="ClientWindowsAuthenticationMembershipProvider" FullName="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider">
   <TypeSignature Language="C#" Value="public class ClientWindowsAuthenticationMembershipProvider : System.Web.Security.MembershipProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientWindowsAuthenticationMembershipProvider extends System.Web.Security.MembershipProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClientWindowsAuthenticationMembershipProvider&#xA;Inherits MembershipProvider" />
+  <TypeSignature Language="F#" Value="type ClientWindowsAuthenticationMembershipProvider = class&#xA;    inherit MembershipProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientWindowsAuthenticationMembershipProvider : System::Web::Security::MembershipProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public ClientWindowsAuthenticationMembershipProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientWindowsAuthenticationMembershipProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -63,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ApplicationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -88,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override bool ChangePassword (string username, string oldPassword, string newPassword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePassword(string username, string oldPassword, string newPassword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePassword(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePassword (username As String, oldPassword As String, newPassword As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ChangePassword : string * string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ChangePassword (username, oldPassword, newPassword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePassword(System::String ^ username, System::String ^ oldPassword, System::String ^ newPassword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override bool ChangePasswordQuestionAndAnswer (string username, string password, string newPasswordQuestion, string newPasswordAnswer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion, string newPasswordAnswer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePasswordQuestionAndAnswer (username As String, password As String, newPasswordQuestion As String, newPasswordAnswer As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ChangePasswordQuestionAndAnswer : string * string * string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer (username, password, newPasswordQuestion, newPasswordAnswer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePasswordQuestionAndAnswer(System::String ^ username, System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -144,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser CreateUser (string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, out System.Web.Security.MembershipCreateStatus status);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer, bool isApproved, object providerUserKey, [out] valuetype System.Web.Security.MembershipCreateStatus&amp; status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateUser (username As String, password As String, email As String, passwordQuestion As String, passwordAnswer As String, isApproved As Boolean, providerUserKey As Object, ByRef status As MembershipCreateStatus) As MembershipUser" />
+      <MemberSignature Language="F#" Value="override this.CreateUser : string * string * string * string * string * bool * obj *  -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.CreateUser (username, password, email, passwordQuestion, passwordAnswer, isApproved, providerUserKey, status)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ CreateUser(System::String ^ username, System::String ^ password, System::String ^ email, System::String ^ passwordQuestion, System::String ^ passwordAnswer, bool isApproved, System::Object ^ providerUserKey, [Runtime::InteropServices::Out] System::Web::Security::MembershipCreateStatus % status);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -181,6 +198,9 @@
       <MemberSignature Language="C#" Value="public override bool DeleteUser (string username, bool deleteAllRelatedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool DeleteUser(string username, bool deleteAllRelatedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.DeleteUser(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteUser (username As String, deleteAllRelatedData As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.DeleteUser : string * bool -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.DeleteUser (username, deleteAllRelatedData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteUser(System::String ^ username, bool deleteAllRelatedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -206,6 +226,9 @@
       <MemberSignature Language="C#" Value="public override bool EnablePasswordReset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordReset" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordReset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordReset As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordReset : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordReset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordReset { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -231,6 +254,9 @@
       <MemberSignature Language="C#" Value="public override bool EnablePasswordRetrieval { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePasswordRetrieval" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordRetrieval" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordRetrieval As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordRetrieval : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordRetrieval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordRetrieval { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -256,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByEmail (string emailToMatch, int pageIndex, int pageSize, out int totalRecords);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByEmail(string emailToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByEmail (emailToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByEmail : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.FindUsersByEmail (emailToMatch, pageIndex, pageSize, totalRecords)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByEmail(System::String ^ emailToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -285,6 +314,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection FindUsersByName (string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection FindUsersByName(string usernameToMatch, int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByName (usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByName : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.FindUsersByName (usernameToMatch, pageIndex, pageSize, totalRecords)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByName(System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -314,6 +346,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUserCollection GetAllUsers (int pageIndex, int pageSize, out int totalRecords);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUserCollection GetAllUsers(int32 pageIndex, int32 pageSize, [out] int32&amp; totalRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllUsers (pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
+      <MemberSignature Language="F#" Value="override this.GetAllUsers : int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.GetAllUsers (pageIndex, pageSize, totalRecords)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ GetAllUsers(int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -341,6 +376,9 @@
       <MemberSignature Language="C#" Value="public override int GetNumberOfUsersOnline ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetNumberOfUsersOnline() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNumberOfUsersOnline () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetNumberOfUsersOnline : unit -&gt; int" Usage="clientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetNumberOfUsersOnline();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -361,6 +399,9 @@
       <MemberSignature Language="C#" Value="public override string GetPassword (string username, string answer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPassword(string username, string answer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetPassword(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPassword (username As String, answer As String) As String" />
+      <MemberSignature Language="F#" Value="override this.GetPassword : string * string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.GetPassword (username, answer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPassword(System::String ^ username, System::String ^ answer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -382,10 +423,22 @@
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUser">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetUser">
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser GetUser (object providerUserKey, bool userIsOnline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(object providerUserKey, bool userIsOnline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (providerUserKey As Object, userIsOnline As Boolean) As MembershipUser" />
+      <MemberSignature Language="F#" Value="override this.GetUser : obj * bool -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.GetUser (providerUserKey, userIsOnline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::Object ^ providerUserKey, bool userIsOnline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -411,6 +464,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipUser GetUser (string username, bool userIsOnline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Security.MembershipUser GetUser(string username, bool userIsOnline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (username As String, userIsOnline As Boolean) As MembershipUser" />
+      <MemberSignature Language="F#" Value="override this.GetUser : string * bool -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.GetUser (username, userIsOnline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::String ^ username, bool userIsOnline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -436,6 +492,9 @@
       <MemberSignature Language="C#" Value="public override string GetUserNameByEmail (string email);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUserNameByEmail(string email) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUserNameByEmail(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUserNameByEmail (email As String) As String" />
+      <MemberSignature Language="F#" Value="override this.GetUserNameByEmail : string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.GetUserNameByEmail email" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUserNameByEmail(System::String ^ email);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -459,6 +518,9 @@
       <MemberSignature Language="C#" Value="public void Logout ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Logout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
+      <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="clientWindowsAuthenticationMembershipProvider.Logout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -493,6 +555,9 @@
       <MemberSignature Language="C#" Value="public override int MaxInvalidPasswordAttempts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxInvalidPasswordAttempts" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxInvalidPasswordAttempts As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxInvalidPasswordAttempts : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxInvalidPasswordAttempts { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -518,6 +583,9 @@
       <MemberSignature Language="C#" Value="public override int MinRequiredNonAlphanumericCharacters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredNonAlphanumericCharacters" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredNonAlphanumericCharacters As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredNonAlphanumericCharacters : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredNonAlphanumericCharacters { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -543,6 +611,9 @@
       <MemberSignature Language="C#" Value="public override int MinRequiredPasswordLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinRequiredPasswordLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredPasswordLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredPasswordLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredPasswordLength : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredPasswordLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredPasswordLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -568,6 +639,9 @@
       <MemberSignature Language="C#" Value="public override int PasswordAttemptWindow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PasswordAttemptWindow" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordAttemptWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordAttemptWindow As Integer" />
+      <MemberSignature Language="F#" Value="member this.PasswordAttemptWindow : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordAttemptWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PasswordAttemptWindow { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -593,6 +667,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.Security.MembershipPasswordFormat PasswordFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Security.MembershipPasswordFormat PasswordFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordFormat As MembershipPasswordFormat" />
+      <MemberSignature Language="F#" Value="member this.PasswordFormat : System.Web.Security.MembershipPasswordFormat" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Security::MembershipPasswordFormat PasswordFormat { System::Web::Security::MembershipPasswordFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -618,6 +695,9 @@
       <MemberSignature Language="C#" Value="public override string PasswordStrengthRegularExpression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PasswordStrengthRegularExpression" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordStrengthRegularExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordStrengthRegularExpression As String" />
+      <MemberSignature Language="F#" Value="member this.PasswordStrengthRegularExpression : string" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordStrengthRegularExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordStrengthRegularExpression { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -643,6 +723,9 @@
       <MemberSignature Language="C#" Value="public override bool RequiresQuestionAndAnswer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresQuestionAndAnswer" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresQuestionAndAnswer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresQuestionAndAnswer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresQuestionAndAnswer : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresQuestionAndAnswer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresQuestionAndAnswer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -668,6 +751,9 @@
       <MemberSignature Language="C#" Value="public override bool RequiresUniqueEmail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueEmail" />
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresUniqueEmail" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresUniqueEmail As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueEmail : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresUniqueEmail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueEmail { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -693,6 +779,9 @@
       <MemberSignature Language="C#" Value="public override string ResetPassword (string username, string answer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ResetPassword(string username, string answer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ResetPassword(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResetPassword (username As String, answer As String) As String" />
+      <MemberSignature Language="F#" Value="override this.ResetPassword : string * string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.ResetPassword (username, answer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ResetPassword(System::String ^ username, System::String ^ answer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -718,6 +807,9 @@
       <MemberSignature Language="C#" Value="public override bool UnlockUser (string username);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool UnlockUser(string username) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UnlockUser(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function UnlockUser (username As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.UnlockUser : string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.UnlockUser username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool UnlockUser(System::String ^ username);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -741,6 +833,9 @@
       <MemberSignature Language="C#" Value="public override void UpdateUser (System.Web.Security.MembershipUser user);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateUser(class System.Web.Security.MembershipUser user) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateUser (user As MembershipUser)" />
+      <MemberSignature Language="F#" Value="override this.UpdateUser : System.Web.Security.MembershipUser -&gt; unit" Usage="clientWindowsAuthenticationMembershipProvider.UpdateUser user" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateUser(System::Web::Security::MembershipUser ^ user);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -763,6 +858,9 @@
       <MemberSignature Language="C#" Value="public override bool ValidateUser (string username, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ValidateUser(string username, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateUser (username As String, password As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ValidateUser : string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ValidateUser (username, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateUser(System::String ^ username, System::String ^ password);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -810,14 +908,5 @@
         <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetUser">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This method is not used by this class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

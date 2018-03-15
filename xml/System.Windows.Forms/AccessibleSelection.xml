@@ -1,7 +1,10 @@
-<Type Name="AccessibleSelection" FullName="System.Windows.Forms.AccessibleSelection">
+﻿<Type Name="AccessibleSelection" FullName="System.Windows.Forms.AccessibleSelection">
   <TypeSignature Language="C#" Value="public enum AccessibleSelection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessibleSelection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleSelection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessibleSelection" />
+  <TypeSignature Language="F#" Value="type AccessibleSelection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessibleSelection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="AddSelection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection AddSelection = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.AddSelection" />
+      <MemberSignature Language="VB.NET" Value="AddSelection" />
+      <MemberSignature Language="F#" Value="AddSelection = 8" Usage="System.Windows.Forms.AccessibleSelection.AddSelection" />
+      <MemberSignature Language="C++ CLI" Value="AddSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Adds the object to the selection.</summary>
       </Docs>
@@ -66,6 +73,9 @@
       <MemberSignature Language="C#" Value="ExtendSelection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection ExtendSelection = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.ExtendSelection" />
+      <MemberSignature Language="VB.NET" Value="ExtendSelection" />
+      <MemberSignature Language="F#" Value="ExtendSelection = 4" Usage="System.Windows.Forms.AccessibleSelection.ExtendSelection" />
+      <MemberSignature Language="C++ CLI" Value="ExtendSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Selects all objects between the anchor and the selected object.</summary>
       </Docs>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.AccessibleSelection.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The selection or focus of an object is unchanged.</summary>
       </Docs>
@@ -98,6 +113,9 @@
       <MemberSignature Language="C#" Value="RemoveSelection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection RemoveSelection = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.RemoveSelection" />
+      <MemberSignature Language="VB.NET" Value="RemoveSelection" />
+      <MemberSignature Language="F#" Value="RemoveSelection = 16" Usage="System.Windows.Forms.AccessibleSelection.RemoveSelection" />
+      <MemberSignature Language="C++ CLI" Value="RemoveSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Removes the object from the selection.</summary>
       </Docs>
@@ -114,6 +133,9 @@
       <MemberSignature Language="C#" Value="TakeFocus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection TakeFocus = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeFocus" />
+      <MemberSignature Language="VB.NET" Value="TakeFocus" />
+      <MemberSignature Language="F#" Value="TakeFocus = 1" Usage="System.Windows.Forms.AccessibleSelection.TakeFocus" />
+      <MemberSignature Language="C++ CLI" Value="TakeFocus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Assigns focus to an object and makes it the anchor, which is the starting point for the selection. Can be combined with <see langword="TakeSelection" />, <see langword="ExtendSelection" />, <see langword="AddSelection" />, or <see langword="RemoveSelection" />.</summary>
       </Docs>
@@ -130,6 +153,9 @@
       <MemberSignature Language="C#" Value="TakeSelection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection TakeSelection = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeSelection" />
+      <MemberSignature Language="VB.NET" Value="TakeSelection" />
+      <MemberSignature Language="F#" Value="TakeSelection = 2" Usage="System.Windows.Forms.AccessibleSelection.TakeSelection" />
+      <MemberSignature Language="C++ CLI" Value="TakeSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Selects the object and deselects all other objects in the container.</summary>
       </Docs>

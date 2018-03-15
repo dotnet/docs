@@ -1,7 +1,10 @@
-<Type Name="ContractFailedEventArgs" FullName="System.Diagnostics.Contracts.ContractFailedEventArgs">
+﻿<Type Name="ContractFailedEventArgs" FullName="System.Diagnostics.Contracts.ContractFailedEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ContractFailedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractFailedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractFailedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractFailedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ContractFailedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractFailedEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public ContractFailedEventArgs (System.Diagnostics.Contracts.ContractFailureKind failureKind, string message, string condition, Exception originalException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Contracts.ContractFailureKind failureKind, string message, string condition, class System.Exception originalException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractFailedEventArgs.#ctor(System.Diagnostics.Contracts.ContractFailureKind,System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (failureKind As ContractFailureKind, message As String, condition As String, originalException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Contracts.ContractFailedEventArgs : System.Diagnostics.Contracts.ContractFailureKind * string * string * Exception -&gt; System.Diagnostics.Contracts.ContractFailedEventArgs" Usage="new System.Diagnostics.Contracts.ContractFailedEventArgs (failureKind, message, condition, originalException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractFailedEventArgs(System::Diagnostics::Contracts::ContractFailureKind failureKind, System::String ^ message, System::String ^ condition, Exception ^ originalException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -75,6 +81,9 @@
       <MemberSignature Language="C#" Value="public string Condition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -103,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Contracts.ContractFailureKind FailureKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Contracts.ContractFailureKind FailureKind" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.FailureKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FailureKind As ContractFailureKind" />
+      <MemberSignature Language="F#" Value="member this.FailureKind : System.Diagnostics.Contracts.ContractFailureKind" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.FailureKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Contracts::ContractFailureKind FailureKind { System::Diagnostics::Contracts::ContractFailureKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -131,6 +143,9 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -167,6 +182,9 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -195,6 +213,9 @@
       <MemberSignature Language="C#" Value="public Exception OriginalException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception OriginalException" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.OriginalException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalException As Exception" />
+      <MemberSignature Language="F#" Value="member this.OriginalException : Exception" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.OriginalException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ OriginalException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -223,6 +244,9 @@
       <MemberSignature Language="C#" Value="public void SetHandled ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHandled() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractFailedEventArgs.SetHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHandled ()" />
+      <MemberSignature Language="F#" Value="member this.SetHandled : unit -&gt; unit" Usage="contractFailedEventArgs.SetHandled " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHandled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -264,6 +288,9 @@
       <MemberSignature Language="C#" Value="public void SetUnwind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUnwind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractFailedEventArgs.SetUnwind" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetUnwind ()" />
+      <MemberSignature Language="F#" Value="member this.SetUnwind : unit -&gt; unit" Usage="contractFailedEventArgs.SetUnwind " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetUnwind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
@@ -305,6 +332,9 @@
       <MemberSignature Language="C#" Value="public bool Unwind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Unwind" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unwind As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Unwind : bool" Usage="System.Diagnostics.Contracts.ContractFailedEventArgs.Unwind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Unwind { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

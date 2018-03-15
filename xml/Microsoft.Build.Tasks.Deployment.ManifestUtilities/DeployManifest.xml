@@ -1,7 +1,10 @@
-<Type Name="DeployManifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest">
+﻿<Type Name="DeployManifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest">
   <TypeSignature Language="C#" Value="public sealed class DeployManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeployManifest extends Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeployManifest&#xA;Inherits Manifest" />
+  <TypeSignature Language="F#" Value="type DeployManifest = class&#xA;    inherit Manifest" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeployManifest sealed : Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +26,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeployManifest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeployManifest();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -42,6 +56,9 @@
       <MemberSignature Language="C#" Value="public DeployManifest (string targetFrameworkMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetFrameworkMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetFrameworkMoniker As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" Usage="new Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest targetFrameworkMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeployManifest(System::String ^ targetFrameworkMoniker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +77,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection CompatibleFrameworks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection CompatibleFrameworks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CompatibleFrameworks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompatibleFrameworks As CompatibleFrameworkCollection" />
+      <MemberSignature Language="F#" Value="member this.CompatibleFrameworks : Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFrameworkCollection" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CompatibleFrameworks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFrameworkCollection ^ CompatibleFrameworks { Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFrameworkCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -83,6 +103,9 @@
       <MemberSignature Language="C#" Value="public bool CreateDesktopShortcut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CreateDesktopShortcut" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CreateDesktopShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreateDesktopShortcut As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CreateDesktopShortcut : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.CreateDesktopShortcut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CreateDesktopShortcut { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -106,6 +129,9 @@
       <MemberSignature Language="C#" Value="public string DeploymentUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeploymentUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DeploymentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentUrl As String" />
+      <MemberSignature Language="F#" Value="member this.DeploymentUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DeploymentUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeploymentUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -136,6 +162,9 @@
       <MemberSignature Language="C#" Value="public bool DisallowUrlActivation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowUrlActivation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DisallowUrlActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowUrlActivation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowUrlActivation : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.DisallowUrlActivation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowUrlActivation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -167,6 +196,9 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EntryPoint As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.EntryPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ EntryPoint { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -190,6 +222,9 @@
       <MemberSignature Language="C#" Value="public string ErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.ErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.ErrorReportUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorReportUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -213,6 +248,9 @@
       <MemberSignature Language="C#" Value="public bool Install { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Install" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install" />
+      <MemberSignature Language="VB.NET" Value="Public Property Install As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Install : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Install" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Install { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -248,6 +286,9 @@
       <MemberSignature Language="C#" Value="public bool MapFileExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MapFileExtensions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MapFileExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapFileExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MapFileExtensions : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MapFileExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapFileExtensions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -279,6 +320,9 @@
       <MemberSignature Language="C#" Value="public string MinimumRequiredVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinimumRequiredVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MinimumRequiredVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumRequiredVersion As String" />
+      <MemberSignature Language="F#" Value="member this.MinimumRequiredVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.MinimumRequiredVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinimumRequiredVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -309,6 +353,9 @@
       <MemberSignature Language="C#" Value="public string Product { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Product" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Product" />
+      <MemberSignature Language="VB.NET" Value="Public Property Product As String" />
+      <MemberSignature Language="F#" Value="member this.Product : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Product" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Product { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -339,6 +386,9 @@
       <MemberSignature Language="C#" Value="public string Publisher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Publisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Publisher" />
+      <MemberSignature Language="VB.NET" Value="Public Property Publisher As String" />
+      <MemberSignature Language="F#" Value="member this.Publisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Publisher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Publisher { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -369,6 +419,9 @@
       <MemberSignature Language="C#" Value="public string SuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.SuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SuiteName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SuiteName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -392,6 +445,9 @@
       <MemberSignature Language="C#" Value="public string SupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.SupportUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -422,6 +478,9 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkMoniker { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TargetFrameworkMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TargetFrameworkMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -445,6 +504,9 @@
       <MemberSignature Language="C#" Value="public bool TrustUrlParameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrustUrlParameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TrustUrlParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustUrlParameters As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrustUrlParameters : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.TrustUrlParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrustUrlParameters { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -476,6 +538,9 @@
       <MemberSignature Language="C#" Value="public bool UpdateEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UpdateEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UpdateEnabled : bool with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpdateEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -507,6 +572,9 @@
       <MemberSignature Language="C#" Value="public int UpdateInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 UpdateInterval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateInterval As Integer" />
+      <MemberSignature Language="F#" Value="member this.UpdateInterval : int with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int UpdateInterval { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -537,6 +605,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode UpdateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode UpdateMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateMode As UpdateMode" />
+      <MemberSignature Language="F#" Value="member this.UpdateMode : Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateMode with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode UpdateMode { Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -569,6 +640,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit UpdateUnit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit UpdateUnit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateUnit As UpdateUnit" />
+      <MemberSignature Language="F#" Value="member this.UpdateUnit : Microsoft.Build.Tasks.Deployment.ManifestUtilities.UpdateUnit with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit UpdateUnit { Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::UpdateUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -601,6 +675,9 @@
       <MemberSignature Language="C#" Value="public override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="deployManifest.Validate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -619,6 +696,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework[] XmlCompatibleFrameworks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework[] XmlCompatibleFrameworks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCompatibleFrameworks" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlCompatibleFrameworks As CompatibleFramework()" />
+      <MemberSignature Language="F#" Value="member this.XmlCompatibleFrameworks : Microsoft.Build.Tasks.Deployment.ManifestUtilities.CompatibleFramework[] with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCompatibleFrameworks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ XmlCompatibleFrameworks { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::CompatibleFramework ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -648,6 +728,9 @@
       <MemberSignature Language="C#" Value="public string XmlCreateDesktopShortcut { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlCreateDesktopShortcut" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCreateDesktopShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlCreateDesktopShortcut As String" />
+      <MemberSignature Language="F#" Value="member this.XmlCreateDesktopShortcut : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlCreateDesktopShortcut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlCreateDesktopShortcut { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -677,6 +760,9 @@
       <MemberSignature Language="C#" Value="public string XmlDeploymentUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDeploymentUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDeploymentUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDeploymentUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlDeploymentUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDeploymentUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDeploymentUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -706,6 +792,9 @@
       <MemberSignature Language="C#" Value="public string XmlDisallowUrlActivation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDisallowUrlActivation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDisallowUrlActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDisallowUrlActivation As String" />
+      <MemberSignature Language="F#" Value="member this.XmlDisallowUrlActivation : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlDisallowUrlActivation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDisallowUrlActivation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -735,6 +824,9 @@
       <MemberSignature Language="C#" Value="public string XmlErrorReportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlErrorReportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlErrorReportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlErrorReportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlErrorReportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlErrorReportUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlErrorReportUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -764,6 +856,9 @@
       <MemberSignature Language="C#" Value="public string XmlInstall { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlInstall" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlInstall" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlInstall As String" />
+      <MemberSignature Language="F#" Value="member this.XmlInstall : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlInstall" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlInstall { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -793,6 +888,9 @@
       <MemberSignature Language="C#" Value="public string XmlMapFileExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlMapFileExtensions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMapFileExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlMapFileExtensions As String" />
+      <MemberSignature Language="F#" Value="member this.XmlMapFileExtensions : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMapFileExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlMapFileExtensions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -822,6 +920,9 @@
       <MemberSignature Language="C#" Value="public string XmlMinimumRequiredVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlMinimumRequiredVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMinimumRequiredVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlMinimumRequiredVersion As String" />
+      <MemberSignature Language="F#" Value="member this.XmlMinimumRequiredVersion : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlMinimumRequiredVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlMinimumRequiredVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -851,6 +952,9 @@
       <MemberSignature Language="C#" Value="public string XmlProduct { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlProduct" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlProduct" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlProduct As String" />
+      <MemberSignature Language="F#" Value="member this.XmlProduct : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlProduct" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProduct { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -880,6 +984,9 @@
       <MemberSignature Language="C#" Value="public string XmlPublisher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlPublisher" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlPublisher" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlPublisher As String" />
+      <MemberSignature Language="F#" Value="member this.XmlPublisher : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlPublisher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlPublisher { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -909,6 +1016,9 @@
       <MemberSignature Language="C#" Value="public string XmlSuiteName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSuiteName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSuiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSuiteName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlSuiteName : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSuiteName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSuiteName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -938,6 +1048,9 @@
       <MemberSignature Language="C#" Value="public string XmlSupportUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSupportUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSupportUrl As String" />
+      <MemberSignature Language="F#" Value="member this.XmlSupportUrl : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlSupportUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSupportUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -967,6 +1080,9 @@
       <MemberSignature Language="C#" Value="public string XmlTrustUrlParameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTrustUrlParameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlTrustUrlParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTrustUrlParameters As String" />
+      <MemberSignature Language="F#" Value="member this.XmlTrustUrlParameters : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlTrustUrlParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTrustUrlParameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -996,6 +1112,9 @@
       <MemberSignature Language="C#" Value="public string XmlUpdateEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlUpdateEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateEnabled As String" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateEnabled : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateEnabled { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1025,6 +1144,9 @@
       <MemberSignature Language="C#" Value="public string XmlUpdateInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlUpdateInterval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateInterval As String" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateInterval : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateInterval { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1054,6 +1176,9 @@
       <MemberSignature Language="C#" Value="public string XmlUpdateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlUpdateMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateMode As String" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateMode : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateMode { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1083,6 +1208,9 @@
       <MemberSignature Language="C#" Value="public string XmlUpdateUnit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlUpdateUnit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateUnit" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlUpdateUnit As String" />
+      <MemberSignature Language="F#" Value="member this.XmlUpdateUnit : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.XmlUpdateUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlUpdateUnit { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -1108,14 +1236,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

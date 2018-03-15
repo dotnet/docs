@@ -1,7 +1,10 @@
-<Type Name="ButtonColumn" FullName="System.Web.UI.WebControls.ButtonColumn">
+﻿<Type Name="ButtonColumn" FullName="System.Web.UI.WebControls.ButtonColumn">
   <TypeSignature Language="C#" Value="public class ButtonColumn : System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ButtonColumn extends System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class ButtonColumn&#xA;Inherits DataGridColumn" />
+  <TypeSignature Language="F#" Value="type ButtonColumn = class&#xA;    inherit DataGridColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ButtonColumn : System::Web::UI::WebControls::DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public ButtonColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ButtonColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +84,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonColumnType ButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonColumnType ButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.ButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ButtonType As ButtonColumnType" />
+      <MemberSignature Language="F#" Value="member this.ButtonType : System.Web.UI.WebControls.ButtonColumnType with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.ButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonColumnType ButtonType { System::Web::UI::WebControls::ButtonColumnType get(); void set(System::Web::UI::WebControls::ButtonColumnType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +137,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +177,9 @@
       <MemberSignature Language="C#" Value="public virtual string CommandName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.CommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CommandName As String" />
+      <MemberSignature Language="F#" Value="member this.CommandName : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.CommandName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +222,9 @@
       <MemberSignature Language="C#" Value="public virtual string DataTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.DataTextField" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextField As String" />
+      <MemberSignature Language="F#" Value="member this.DataTextField : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.DataTextField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +268,9 @@
       <MemberSignature Language="C#" Value="public virtual string DataTextFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataTextFormatString As String" />
+      <MemberSignature Language="F#" Value="member this.DataTextFormatString : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.DataTextFormatString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataTextFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -321,6 +341,9 @@
       <MemberSignature Language="C#" Value="protected virtual string FormatDataTextValue (object dataTextValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataTextValue(object dataTextValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.FormatDataTextValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FormatDataTextValue (dataTextValue As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member FormatDataTextValue : obj -&gt; string&#xA;override this.FormatDataTextValue : obj -&gt; string" Usage="buttonColumn.FormatDataTextValue dataTextValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FormatDataTextValue(System::Object ^ dataTextValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +377,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="buttonColumn.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -380,6 +406,9 @@
       <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.TableCell cell, int columnIndex, System.Web.UI.WebControls.ListItemType itemType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.TableCell cell, int32 columnIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.TableCell * int * System.Web.UI.WebControls.ListItemType -&gt; unit" Usage="buttonColumn.InitializeCell (cell, columnIndex, itemType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -413,6 +442,9 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -465,6 +497,9 @@
       <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.ButtonColumn.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

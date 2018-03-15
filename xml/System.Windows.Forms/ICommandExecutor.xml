@@ -1,7 +1,10 @@
-<Type Name="ICommandExecutor" FullName="System.Windows.Forms.ICommandExecutor">
+﻿<Type Name="ICommandExecutor" FullName="System.Windows.Forms.ICommandExecutor">
   <TypeSignature Language="C#" Value="public interface ICommandExecutor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommandExecutor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ICommandExecutor" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICommandExecutor" />
+  <TypeSignature Language="F#" Value="type ICommandExecutor = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICommandExecutor" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public void Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ICommandExecutor.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute ()" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; unit" Usage="iCommandExecutor.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

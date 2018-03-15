@@ -1,7 +1,10 @@
-<Type Name="JumpItemRejectionReason" FullName="System.Windows.Shell.JumpItemRejectionReason">
+﻿<Type Name="JumpItemRejectionReason" FullName="System.Windows.Shell.JumpItemRejectionReason">
   <TypeSignature Language="C#" Value="public enum JumpItemRejectionReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JumpItemRejectionReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemRejectionReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JumpItemRejectionReason" />
+  <TypeSignature Language="F#" Value="type JumpItemRejectionReason = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class JumpItemRejectionReason" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="InvalidItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason InvalidItem = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.InvalidItem" />
+      <MemberSignature Language="VB.NET" Value="InvalidItem" />
+      <MemberSignature Language="F#" Value="InvalidItem = 1" Usage="System.Windows.Shell.JumpItemRejectionReason.InvalidItem" />
+      <MemberSignature Language="C++ CLI" Value="InvalidItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Shell.JumpItem" /> references an invalid file path, or the operating system does not support Jump Lists.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Shell.JumpItemRejectionReason.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The reason is not specified.</summary>
       </Docs>
@@ -52,6 +63,9 @@
       <MemberSignature Language="C#" Value="NoRegisteredHandler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason NoRegisteredHandler = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.NoRegisteredHandler" />
+      <MemberSignature Language="VB.NET" Value="NoRegisteredHandler" />
+      <MemberSignature Language="F#" Value="NoRegisteredHandler = 2" Usage="System.Windows.Shell.JumpItemRejectionReason.NoRegisteredHandler" />
+      <MemberSignature Language="C++ CLI" Value="NoRegisteredHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The application is not registered to handle the file name extension of the <see cref="T:System.Windows.Shell.JumpItem" />.</summary>
       </Docs>
@@ -68,6 +83,9 @@
       <MemberSignature Language="C#" Value="RemovedByUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.JumpItemRejectionReason RemovedByUser = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shell.JumpItemRejectionReason.RemovedByUser" />
+      <MemberSignature Language="VB.NET" Value="RemovedByUser" />
+      <MemberSignature Language="F#" Value="RemovedByUser = 3" Usage="System.Windows.Shell.JumpItemRejectionReason.RemovedByUser" />
+      <MemberSignature Language="C++ CLI" Value="RemovedByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Shell.JumpItemRejectionReason</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The item was previously in the Jump List but was removed by the user.</summary>
       </Docs>

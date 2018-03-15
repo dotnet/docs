@@ -1,7 +1,10 @@
-<Type Name="ListViewArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.ListViewArray">
+﻿<Type Name="ListViewArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.ListViewArray">
   <TypeSignature Language="C#" Value="public class ListViewArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ListViewArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type ListViewArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListViewArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public ListViewArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.ListViewArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.ListViewArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.ListViewArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LabelEditEventHandler AfterLabelEdit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LabelEditEventHandler AfterLabelEdit" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.AfterLabelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Event AfterLabelEdit As LabelEditEventHandler " />
+      <MemberSignature Language="F#" Value="member this.AfterLabelEdit : System.Windows.Forms.LabelEditEventHandler " Usage="member this.AfterLabelEdit : System.Windows.Forms.LabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LabelEditEventHandler ^ AfterLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -125,6 +145,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -154,6 +177,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -183,6 +209,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LabelEditEventHandler BeforeLabelEdit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LabelEditEventHandler BeforeLabelEdit" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.BeforeLabelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Event BeforeLabelEdit As LabelEditEventHandler " />
+      <MemberSignature Language="F#" Value="member this.BeforeLabelEdit : System.Windows.Forms.LabelEditEventHandler " Usage="member this.BeforeLabelEdit : System.Windows.Forms.LabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LabelEditEventHandler ^ BeforeLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -212,6 +241,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BindingContextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BindingContextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.BindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -241,6 +273,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.CacheVirtualItemsEventHandler CacheVirtualItems;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.CacheVirtualItemsEventHandler CacheVirtualItems" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.CacheVirtualItems" />
+      <MemberSignature Language="VB.NET" Value="Public Event CacheVirtualItems As CacheVirtualItemsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventHandler " Usage="member this.CacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::CacheVirtualItemsEventHandler ^ CacheVirtualItems;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -270,6 +305,9 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="listViewArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -308,6 +346,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -337,6 +378,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.UICuesEventHandler ChangeUICues;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.UICuesEventHandler ChangeUICues" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ChangeUICues" />
+      <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -364,6 +408,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -395,6 +442,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ClientSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ClientSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ClientSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -424,6 +474,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnClickEventHandler ColumnClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnClickEventHandler ColumnClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ColumnClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event ColumnClick As ColumnClickEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnClick : System.Windows.Forms.ColumnClickEventHandler " Usage="member this.ColumnClick : System.Windows.Forms.ColumnClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnClickEventHandler ^ ColumnClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -453,6 +506,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnReorderedEventHandler ColumnReordered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnReorderedEventHandler ColumnReordered" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ColumnReordered" />
+      <MemberSignature Language="VB.NET" Value="Public Event ColumnReordered As ColumnReorderedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnReordered : System.Windows.Forms.ColumnReorderedEventHandler " Usage="member this.ColumnReordered : System.Windows.Forms.ColumnReorderedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnReorderedEventHandler ^ ColumnReordered;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -482,6 +538,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnWidthChangedEventHandler ColumnWidthChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnWidthChangedEventHandler ColumnWidthChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ColumnWidthChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ColumnWidthChanged As ColumnWidthChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventHandler " Usage="member this.ColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnWidthChangedEventHandler ^ ColumnWidthChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -509,6 +568,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnWidthChangingEventHandler ColumnWidthChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnWidthChangingEventHandler ColumnWidthChanging" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ColumnWidthChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event ColumnWidthChanging As ColumnWidthChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventHandler " Usage="member this.ColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnWidthChangingEventHandler ^ ColumnWidthChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -538,6 +600,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -572,6 +637,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -601,6 +669,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -628,6 +699,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -655,6 +729,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -684,6 +761,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -713,6 +793,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -740,6 +823,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragDrop;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragDrop" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -768,6 +854,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DragEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -798,6 +887,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -828,6 +920,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -858,6 +953,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewColumnHeaderEventHandler DrawColumnHeader;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewColumnHeaderEventHandler DrawColumnHeader" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DrawColumnHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Event DrawColumnHeader As DrawListViewColumnHeaderEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventHandler " Usage="member this.DrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewColumnHeaderEventHandler ^ DrawColumnHeader;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -887,6 +985,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event DrawItem As DrawListViewItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawListViewItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawListViewItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -916,6 +1017,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewSubItemEventHandler DrawSubItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewSubItemEventHandler DrawSubItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.DrawSubItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event DrawSubItem As DrawListViewSubItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawSubItem : System.Windows.Forms.DrawListViewSubItemEventHandler " Usage="member this.DrawSubItem : System.Windows.Forms.DrawListViewSubItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewSubItemEventHandler ^ DrawSubItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -945,6 +1049,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -974,6 +1081,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1021,6 +1131,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.FontChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1050,6 +1163,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1079,6 +1195,9 @@
       <MemberSignature Language="C#" Value="protected override Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="listViewArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1108,6 +1227,9 @@
       <MemberSignature Language="C#" Value="public short GetIndex (System.Windows.Forms.ListView o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 GetIndex(class System.Windows.Forms.ListView o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.GetIndex(System.Windows.Forms.ListView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As ListView) As Short" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : System.Windows.Forms.ListView -&gt; int16" Usage="listViewArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(System::Windows::Forms::ListView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1140,6 +1262,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.GiveFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
+      <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1170,6 +1295,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HelpEventHandler HelpRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HelpEventHandler HelpRequested" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.HelpRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1200,6 +1328,9 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="listViewArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1231,6 +1362,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1260,6 +1394,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView this[short Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView Item(int16)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Item(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As ListView" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : System.Windows.Forms.ListView" Usage="Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView ^ default[short] { System::Windows::Forms::ListView ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1297,6 +1434,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ItemActivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ItemActivate" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemActivate" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemActivate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemActivate : EventHandler " Usage="member this.ItemActivate : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ItemActivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1326,6 +1466,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemCheckEventHandler ItemCheck;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemCheckEventHandler ItemCheck" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemCheck As ItemCheckEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " Usage="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemCheckEventHandler ^ ItemCheck;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1355,6 +1498,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemCheckedEventHandler ItemChecked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemCheckedEventHandler ItemChecked" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemChecked As ItemCheckedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemChecked : System.Windows.Forms.ItemCheckedEventHandler " Usage="member this.ItemChecked : System.Windows.Forms.ItemCheckedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemCheckedEventHandler ^ ItemChecked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1382,6 +1528,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemDragEventHandler ItemDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemDragEventHandler ItemDrag" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemDrag As ItemDragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " Usage="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemDragEventHandler ^ ItemDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1411,6 +1560,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewItemMouseHoverEventHandler ItemMouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewItemMouseHoverEventHandler ItemMouseHover" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemMouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemMouseHover As ListViewItemMouseHoverEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventHandler " Usage="member this.ItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewItemMouseHoverEventHandler ^ ItemMouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1438,6 +1590,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewItemSelectionChangedEventHandler ItemSelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewItemSelectionChangedEventHandler ItemSelectionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ItemSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ItemSelectionChanged As ListViewItemSelectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventHandler " Usage="member this.ItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewItemSelectionChangedEventHandler ^ ItemSelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1469,6 +1624,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1507,6 +1665,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1549,6 +1710,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1587,6 +1751,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LayoutEventHandler Layout;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LayoutEventHandler Layout" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1617,6 +1784,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1665,6 +1835,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1694,6 +1867,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MarginChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MarginChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MarginChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1723,6 +1899,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseCaptureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseCaptureChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseCaptureChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseCaptureChanged : EventHandler " Usage="member this.MouseCaptureChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1751,6 +1930,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1794,6 +1976,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseDoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDoubleClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDoubleClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1837,6 +2022,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1881,6 +2069,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1921,6 +2112,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseHover" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1967,6 +2161,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2007,6 +2204,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2047,6 +2247,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2087,6 +2290,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2115,6 +2321,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2144,6 +2353,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2173,6 +2385,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.QueryAccessibilityHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2203,6 +2418,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.QueryContinueDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2231,6 +2449,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RegionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RegionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.RegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RegionChanged : EventHandler " Usage="member this.RegionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2260,6 +2481,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public void ResetIndex (System.Windows.Forms.ListView o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void ResetIndex(class System.Windows.Forms.ListView o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ResetIndex(System.Windows.Forms.ListView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As ListView)" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : System.Windows.Forms.ListView -&gt; unit" Usage="listViewArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(System::Windows::Forms::ListView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2296,6 +2520,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2328,6 +2555,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.RetrieveVirtualItemEventHandler RetrieveVirtualItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.RetrieveVirtualItemEventHandler RetrieveVirtualItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.RetrieveVirtualItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event RetrieveVirtualItem As RetrieveVirtualItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.RetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventHandler " Usage="member this.RetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::RetrieveVirtualItemEventHandler ^ RetrieveVirtualItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2357,6 +2587,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2386,6 +2619,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.RightToLeftLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RightToLeftLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2415,6 +2651,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.SearchForVirtualItemEventHandler SearchForVirtualItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.SearchForVirtualItemEventHandler SearchForVirtualItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.SearchForVirtualItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event SearchForVirtualItem As SearchForVirtualItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventHandler " Usage="member this.SearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SearchForVirtualItemEventHandler ^ SearchForVirtualItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2444,6 +2683,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.SelectedIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectedIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2473,6 +2715,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public void SetIndex (System.Windows.Forms.ListView o, short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetIndex(class System.Windows.Forms.ListView o, int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.SetIndex(System.Windows.Forms.ListView,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As ListView, Index As Short)" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : System.Windows.Forms.ListView * int16 -&gt; unit" Usage="listViewArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(System::Windows::Forms::ListView ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2511,6 +2756,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIndex (System.Windows.Forms.ListView o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ShouldSerializeIndex(class System.Windows.Forms.ListView o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.ShouldSerializeIndex(System.Windows.Forms.ListView)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As ListView) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : System.Windows.Forms.ListView -&gt; bool" Usage="listViewArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(System::Windows::Forms::ListView ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2549,6 +2797,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2578,6 +2829,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler StyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.StyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2609,6 +2863,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2639,6 +2896,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.TabIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2668,6 +2928,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.TabStopChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2697,6 +2960,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2757,6 +3023,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2817,6 +3086,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler VirtualItemsSelectionRangeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler VirtualItemsSelectionRangeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.VirtualItemsSelectionRangeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VirtualItemsSelectionRangeChanged As ListViewVirtualItemsSelectionRangeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.VirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler " Usage="member this.VirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewVirtualItemsSelectionRangeChangedEventHandler ^ VirtualItemsSelectionRangeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2847,6 +3119,9 @@ MsgBox(CStr(ListViewArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2872,14 +3147,5 @@ MsgBox(CStr(ListViewArray(1).Text))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.ListViewArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

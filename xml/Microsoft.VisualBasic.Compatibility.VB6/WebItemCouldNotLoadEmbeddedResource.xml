@@ -1,7 +1,10 @@
-<Type Name="WebItemCouldNotLoadEmbeddedResource" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource">
+﻿<Type Name="WebItemCouldNotLoadEmbeddedResource" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource">
   <TypeSignature Language="C#" Value="public class WebItemCouldNotLoadEmbeddedResource : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebItemCouldNotLoadEmbeddedResource extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebItemCouldNotLoadEmbeddedResource&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type WebItemCouldNotLoadEmbeddedResource = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebItemCouldNotLoadEmbeddedResource : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public WebItemCouldNotLoadEmbeddedResource ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebItemCouldNotLoadEmbeddedResource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebItemCouldNotLoadEmbeddedResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

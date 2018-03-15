@@ -1,7 +1,10 @@
-<Type Name="TemplateControl" FullName="System.Web.UI.TemplateControl">
+﻿<Type Name="TemplateControl" FullName="System.Web.UI.TemplateControl">
   <TypeSignature Language="C#" Value="public abstract class TemplateControl : System.Web.UI.Control, System.Web.UI.IFilterResolutionService, System.Web.UI.INamingContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TemplateControl extends System.Web.UI.Control implements class System.Web.UI.IFilterResolutionService, class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateControl" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TemplateControl&#xA;Inherits Control&#xA;Implements IFilterResolutionService, INamingContainer" />
+  <TypeSignature Language="F#" Value="type TemplateControl = class&#xA;    inherit Control&#xA;    interface INamingContainer&#xA;    interface IFilterResolutionService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateControl abstract : System::Web::UI::Control, System::Web::UI::IFilterResolutionService, System::Web::UI::INamingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="protected TemplateControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TemplateControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +80,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler AbortTransaction;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AbortTransaction" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.AbortTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AbortTransaction As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AbortTransaction : EventHandler " Usage="member this.AbortTransaction : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AbortTransaction;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +113,9 @@
       <MemberSignature Language="C#" Value="public string AppRelativeVirtualPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeVirtualPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.AppRelativeVirtualPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppRelativeVirtualPath As String" />
+      <MemberSignature Language="F#" Value="member this.AppRelativeVirtualPath : string with get, set" Usage="System.Web.UI.TemplateControl.AppRelativeVirtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppRelativeVirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected virtual int AutoHandlers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AutoHandlers" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.AutoHandlers" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Property AutoHandlers As Integer" />
+      <MemberSignature Language="F#" Value="member this.AutoHandlers : int with get, set" Usage="System.Web.UI.TemplateControl.AutoHandlers" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int AutoHandlers { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +185,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CommitTransaction;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CommitTransaction" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.CommitTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CommitTransaction As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CommitTransaction : EventHandler " Usage="member this.CommitTransaction : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CommitTransaction;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -201,6 +218,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Construct ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Construct() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Construct" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Construct ()" />
+      <MemberSignature Language="F#" Value="abstract member Construct : unit -&gt; unit&#xA;override this.Construct : unit -&gt; unit" Usage="templateControl.Construct " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Construct();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +257,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.LiteralControl CreateResourceBasedLiteralControl (int offset, int size, bool fAsciiOnly);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.LiteralControl CreateResourceBasedLiteralControl(int32 offset, int32 size, bool fAsciiOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.CreateResourceBasedLiteralControl(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateResourceBasedLiteralControl (offset As Integer, size As Integer, fAsciiOnly As Boolean) As LiteralControl" />
+      <MemberSignature Language="F#" Value="member this.CreateResourceBasedLiteralControl : int * int * bool -&gt; System.Web.UI.LiteralControl" Usage="templateControl.CreateResourceBasedLiteralControl (offset, size, fAsciiOnly)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::UI::LiteralControl ^ CreateResourceBasedLiteralControl(int offset, int size, bool fAsciiOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +294,9 @@
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.EnableTheming" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.TemplateControl.EnableTheming" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +329,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Error;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Error" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.TemplateControl.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Error As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Error : EventHandler " Usage="member this.Error : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Error;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,10 +347,22 @@
         <altmember cref="E:System.Web.UI.TemplateControl.CommitTransaction" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating a data-binding expression against an object at run time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Eval">
-      <MemberSignature Language="C#" Value="protected object Eval (string expression);" />
+      <MemberSignature Language="C#" Value="protected internal object Eval (string expression);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object Eval(string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Eval(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function Eval (expression As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Eval : string -&gt; obj" Usage="templateControl.Eval expression" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Object ^ Eval(System::String ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,9 +399,12 @@
       </Docs>
     </Member>
     <Member MemberName="Eval">
-      <MemberSignature Language="C#" Value="protected string Eval (string expression, string format);" />
+      <MemberSignature Language="C#" Value="protected internal string Eval (string expression, string format);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string Eval(string expression, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.Eval(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function Eval (expression As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Eval : string * string -&gt; string" Usage="templateControl.Eval (expression, format)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ Eval(System::String ^ expression, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -402,6 +446,9 @@
       <MemberSignature Language="C#" Value="protected virtual void FrameworkInitialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FrameworkInitialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.FrameworkInitialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FrameworkInitialize ()" />
+      <MemberSignature Language="F#" Value="abstract member FrameworkInitialize : unit -&gt; unit&#xA;override this.FrameworkInitialize : unit -&gt; unit" Usage="templateControl.FrameworkInitialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FrameworkInitialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -428,10 +475,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGlobalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an application-level resource.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetGlobalResourceObject">
       <MemberSignature Language="C#" Value="protected object GetGlobalResourceObject (string className, string resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetGlobalResourceObject(string className, string resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetGlobalResourceObject (className As String, resourceKey As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetGlobalResourceObject : string * string -&gt; obj" Usage="templateControl.GetGlobalResourceObject (className, resourceKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetGlobalResourceObject(System::String ^ className, System::String ^ resourceKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +531,9 @@
       <MemberSignature Language="C#" Value="protected object GetGlobalResourceObject (string className, string resourceKey, Type objType, string propName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetGlobalResourceObject(string className, string resourceKey, class System.Type objType, string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetGlobalResourceObject(System.String,System.String,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetGlobalResourceObject (className As String, resourceKey As String, objType As Type, propName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetGlobalResourceObject : string * string * Type * string -&gt; obj" Usage="templateControl.GetGlobalResourceObject (className, resourceKey, objType, propName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetGlobalResourceObject(System::String ^ className, System::String ^ resourceKey, Type ^ objType, System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -504,10 +566,22 @@
         <altmember cref="T:System.Web.Compilation.ResourceExpressionBuilder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLocalResourceObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a page-level resource.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLocalResourceObject">
       <MemberSignature Language="C#" Value="protected object GetLocalResourceObject (string resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetLocalResourceObject(string resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetLocalResourceObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetLocalResourceObject (resourceKey As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetLocalResourceObject : string -&gt; obj" Usage="templateControl.GetLocalResourceObject resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetLocalResourceObject(System::String ^ resourceKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -546,6 +620,9 @@
       <MemberSignature Language="C#" Value="protected object GetLocalResourceObject (string resourceKey, Type objType, string propName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetLocalResourceObject(string resourceKey, class System.Type objType, string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.GetLocalResourceObject(System.String,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetLocalResourceObject (resourceKey As String, objType As Type, propName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetLocalResourceObject : string * Type * string -&gt; obj" Usage="templateControl.GetLocalResourceObject (resourceKey, objType, propName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetLocalResourceObject(System::String ^ resourceKey, Type ^ objType, System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -599,6 +676,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control LoadControl (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control LoadControl(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadControl (virtualPath As String) As Control" />
+      <MemberSignature Language="F#" Value="member this.LoadControl : string -&gt; System.Web.UI.Control" Usage="templateControl.LoadControl virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ LoadControl(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -647,6 +727,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control LoadControl (Type t, object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control LoadControl(class System.Type t, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadControl(System.Type,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadControl (t As Type, parameters As Object()) As Control" />
+      <MemberSignature Language="F#" Value="member this.LoadControl : Type * obj[] -&gt; System.Web.UI.Control" Usage="templateControl.LoadControl (t, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ LoadControl(Type ^ t, cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -684,6 +767,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate LoadTemplate (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ITemplate LoadTemplate(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.LoadTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadTemplate (virtualPath As String) As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.LoadTemplate : string -&gt; System.Web.UI.ITemplate" Usage="templateControl.LoadTemplate virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ITemplate ^ LoadTemplate(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -717,6 +803,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAbortTransaction (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAbortTransaction(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnAbortTransaction(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAbortTransaction (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAbortTransaction : EventArgs -&gt; unit&#xA;override this.OnAbortTransaction : EventArgs -&gt; unit" Usage="templateControl.OnAbortTransaction e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAbortTransaction(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -748,6 +837,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCommitTransaction (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitTransaction(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCommitTransaction (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCommitTransaction : EventArgs -&gt; unit&#xA;override this.OnCommitTransaction : EventArgs -&gt; unit" Usage="templateControl.OnCommitTransaction e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCommitTransaction(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -784,6 +876,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnError (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnError(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.OnError(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnError (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnError : EventArgs -&gt; unit&#xA;override this.OnError : EventArgs -&gt; unit" Usage="templateControl.OnError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnError(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -880,6 +975,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ParseControl (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ParseControl(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ParseControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ParseControl (content As String) As Control" />
+      <MemberSignature Language="F#" Value="member this.ParseControl : string -&gt; System.Web.UI.Control" Usage="templateControl.ParseControl content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ ParseControl(System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -918,6 +1016,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ParseControl (string content, bool ignoreParserFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ParseControl(string content, bool ignoreParserFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ParseControl(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ParseControl (content As String, ignoreParserFilter As Boolean) As Control" />
+      <MemberSignature Language="F#" Value="member this.ParseControl : string * bool -&gt; System.Web.UI.Control" Usage="templateControl.ParseControl (content, ignoreParserFilter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Control ^ ParseControl(System::String ^ content, bool ignoreParserFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -947,10 +1048,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadStringResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a string resource.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadStringResource">
       <MemberSignature Language="C#" Value="public object ReadStringResource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ReadStringResource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ReadStringResource" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadStringResource () As Object" />
+      <MemberSignature Language="F#" Value="member this.ReadStringResource : unit -&gt; obj" Usage="templateControl.ReadStringResource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ReadStringResource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -983,6 +1096,9 @@
       <MemberSignature Language="C#" Value="public static object ReadStringResource (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ReadStringResource(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.ReadStringResource(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadStringResource (t As Type) As Object" />
+      <MemberSignature Language="F#" Value="static member ReadStringResource : Type -&gt; obj" Usage="System.Web.UI.TemplateControl.ReadStringResource t" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ReadStringResource(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1017,6 +1133,9 @@
       <MemberSignature Language="C#" Value="protected void SetStringResourcePointer (object stringResourcePointer, int maxResourceOffset);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetStringResourcePointer(object stringResourcePointer, int32 maxResourceOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.SetStringResourcePointer(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetStringResourcePointer (stringResourcePointer As Object, maxResourceOffset As Integer)" />
+      <MemberSignature Language="F#" Value="member this.SetStringResourcePointer : obj * int -&gt; unit" Usage="templateControl.SetStringResourcePointer (stringResourcePointer, maxResourceOffset)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetStringResourcePointer(System::Object ^ stringResourcePointer, int maxResourceOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1045,6 +1164,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool SupportAutoEvents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportAutoEvents" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateControl.SupportAutoEvents" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SupportAutoEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportAutoEvents : bool" Usage="System.Web.UI.TemplateControl.SupportAutoEvents" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool SupportAutoEvents { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1075,7 +1197,12 @@
       <MemberSignature Language="C#" Value="int IFilterResolutionService.CompareFilters (string filter1, string filter2);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Web.UI.IFilterResolutionService.CompareFilters(string filter1, string filter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#CompareFilters(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareFilters (filter1 As String, filter2 As String) As Integer Implements IFilterResolutionService.CompareFilters" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Web.UI.IFilterResolutionService.CompareFilters(System::String ^ filter1, System::String ^ filter2) = System::Web::UI::IFilterResolutionService::CompareFilters;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1107,7 +1234,12 @@
       <MemberSignature Language="C#" Value="bool IFilterResolutionService.EvaluateFilter (string filterName);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IFilterResolutionService.EvaluateFilter(string filterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.System#Web#UI#IFilterResolutionService#EvaluateFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function EvaluateFilter (filterName As String) As Boolean Implements IFilterResolutionService.EvaluateFilter" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IFilterResolutionService.EvaluateFilter(System::String ^ filterName) = System::Web::UI::IFilterResolutionService::EvaluateFilter;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1138,6 +1270,9 @@
       <MemberSignature Language="C#" Value="public virtual bool TestDeviceFilter (string filterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TestDeviceFilter(string filterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.TestDeviceFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TestDeviceFilter (filterName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TestDeviceFilter : string -&gt; bool&#xA;override this.TestDeviceFilter : string -&gt; bool" Usage="templateControl.TestDeviceFilter filterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TestDeviceFilter(System::String ^ filterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1171,6 +1306,9 @@
       <MemberSignature Language="C#" Value="protected void WriteUTF8ResourceString (System.Web.UI.HtmlTextWriter output, int offset, int size, bool fAsciiOnly);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteUTF8ResourceString(class System.Web.UI.HtmlTextWriter output, int32 offset, int32 size, bool fAsciiOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.WriteUTF8ResourceString(System.Web.UI.HtmlTextWriter,System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteUTF8ResourceString (output As HtmlTextWriter, offset As Integer, size As Integer, fAsciiOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.WriteUTF8ResourceString : System.Web.UI.HtmlTextWriter * int * int * bool -&gt; unit" Usage="templateControl.WriteUTF8ResourceString (output, offset, size, fAsciiOnly)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteUTF8ResourceString(System::Web::UI::HtmlTextWriter ^ output, int offset, int size, bool fAsciiOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1205,10 +1343,22 @@
  The sum of <paramref name="offset" /> and <paramref name="size" /> is greater than the resource size.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating an XPath data-binding expression against an object at run time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="XPath">
-      <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression);" />
+      <MemberSignature Language="C#" Value="protected internal object XPath (string xPathExpression);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object XPath(string xPathExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPath (xPathExpression As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.XPath : string -&gt; obj" Usage="templateControl.XPath xPathExpression" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Object ^ XPath(System::String ^ xPathExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1260,9 +1410,12 @@
       </Docs>
     </Member>
     <Member MemberName="XPath">
-      <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format);" />
+      <MemberSignature Language="C#" Value="protected internal string XPath (string xPathExpression, string format);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string XPath(string xPathExpression, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPath (xPathExpression As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * string -&gt; string" Usage="templateControl.XPath (xPathExpression, format)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ XPath(System::String ^ xPathExpression, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1293,9 +1446,12 @@
       </Docs>
     </Member>
     <Member MemberName="XPath">
-      <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="C#" Value="protected internal object XPath (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance object XPath(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPath (xPathExpression As String, resolver As IXmlNamespaceResolver) As Object" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="templateControl.XPath (xPathExpression, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Object ^ XPath(System::String ^ xPathExpression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1326,9 +1482,12 @@
       </Docs>
     </Member>
     <Member MemberName="XPath">
-      <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="C#" Value="protected internal string XPath (string xPathExpression, string format, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string XPath(string xPathExpression, string format, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPath(System.String,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPath (xPathExpression As String, format As String, resolver As IXmlNamespaceResolver) As String" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * string * System.Xml.IXmlNamespaceResolver -&gt; string" Usage="templateControl.XPath (xPathExpression, format, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ XPath(System::String ^ xPathExpression, System::String ^ format, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1360,10 +1519,22 @@
         <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPathSelect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides run-time data binding against XML-based data and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="XPathSelect">
-      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression);" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.IEnumerable XPathSelect (string xPathExpression);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPathSelect(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPathSelect (xPathExpression As String) As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.XPathSelect : string -&gt; System.Collections.IEnumerable" Usage="templateControl.XPathSelect xPathExpression" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Collections::IEnumerable ^ XPathSelect(System::String ^ xPathExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1414,9 +1585,12 @@
       </Docs>
     </Member>
     <Member MemberName="XPathSelect">
-      <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.IEnumerable XPathSelect (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateControl.XPathSelect(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function XPathSelect (xPathExpression As String, resolver As IXmlNamespaceResolver) As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.XPathSelect : string * System.Xml.IXmlNamespaceResolver -&gt; System.Collections.IEnumerable" Usage="templateControl.XPathSelect (xPathExpression, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::Collections::IEnumerable ^ XPathSelect(System::String ^ xPathExpression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1445,59 +1619,5 @@
         <altmember cref="T:System.Web.UI.XPathBinder" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="XPathSelect">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides run-time data binding against XML-based data and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Eval">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides support for parsing and evaluating a data-binding expression against an object at run time.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="XPath">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides support for parsing and evaluating an XPath data-binding expression against an object at run time.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetLocalResourceObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a page-level resource.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetGlobalResourceObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets an application-level resource.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadStringResource">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a string resource.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

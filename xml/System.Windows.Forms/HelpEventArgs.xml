@@ -1,7 +1,10 @@
-<Type Name="HelpEventArgs" FullName="System.Windows.Forms.HelpEventArgs">
+﻿<Type Name="HelpEventArgs" FullName="System.Windows.Forms.HelpEventArgs">
   <TypeSignature Language="C#" Value="public class HelpEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HelpEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HelpEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type HelpEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HelpEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public HelpEventArgs (System.Drawing.Point mousePos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point mousePos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HelpEventArgs.#ctor(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mousePos As Point)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.HelpEventArgs : System.Drawing.Point -&gt; System.Windows.Forms.HelpEventArgs" Usage="new System.Windows.Forms.HelpEventArgs mousePos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HelpEventArgs(System::Drawing::Point mousePos);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.HelpEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +107,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point MousePos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point MousePos" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HelpEventArgs.MousePos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MousePos As Point" />
+      <MemberSignature Language="F#" Value="member this.MousePos : System.Drawing.Point" Usage="System.Windows.Forms.HelpEventArgs.MousePos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point MousePos { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

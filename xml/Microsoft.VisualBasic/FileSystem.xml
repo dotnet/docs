@@ -1,7 +1,10 @@
-<Type Name="FileSystem" FullName="Microsoft.VisualBasic.FileSystem">
+﻿<Type Name="FileSystem" FullName="Microsoft.VisualBasic.FileSystem">
   <TypeSignature Language="C#" Value="public sealed class FileSystem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSystem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileSystem" />
+  <TypeSignature Language="VB.NET" Value="Public Module FileSystem" />
+  <TypeSignature Language="F#" Value="type FileSystem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileSystem sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public static void ChDir (string Path);" />
       <MemberSignature Language="ILAsm" Value=".method public static void ChDir(string Path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.ChDir(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChDir (Path As String)" />
+      <MemberSignature Language="F#" Value="static member ChDir : string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.ChDir Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChDir(System::String ^ Path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -91,10 +97,22 @@
         <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChDrive">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the current drive.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ChDrive">
       <MemberSignature Language="C#" Value="public static void ChDrive (char Drive);" />
       <MemberSignature Language="ILAsm" Value=".method public static void ChDrive(char Drive) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.ChDrive(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChDrive (Drive As Char)" />
+      <MemberSignature Language="F#" Value="static member ChDrive : char -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.ChDrive Drive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChDrive(char Drive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -137,6 +155,9 @@
       <MemberSignature Language="C#" Value="public static void ChDrive (string Drive);" />
       <MemberSignature Language="ILAsm" Value=".method public static void ChDrive(string Drive) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.ChDrive(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ChDrive (Drive As String)" />
+      <MemberSignature Language="F#" Value="static member ChDrive : string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.ChDrive Drive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ChDrive(System::String ^ Drive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,10 +196,22 @@
         <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CurDir">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the current path. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="CurDir" />. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CurDir">
       <MemberSignature Language="C#" Value="public static string CurDir ();" />
       <MemberSignature Language="ILAsm" Value=".method public static string CurDir() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.CurDir" />
+      <MemberSignature Language="VB.NET" Value="Public Function CurDir () As String" />
+      <MemberSignature Language="F#" Value="static member CurDir : unit -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.CurDir " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CurDir();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -213,6 +246,9 @@
       <MemberSignature Language="C#" Value="public static string CurDir (char Drive);" />
       <MemberSignature Language="ILAsm" Value=".method public static string CurDir(char Drive) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.CurDir(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CurDir (Drive As Char) As String" />
+      <MemberSignature Language="F#" Value="static member CurDir : char -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.CurDir Drive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CurDir(char Drive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -246,10 +282,22 @@
         <altmember cref="T:System.ArgumentException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dir">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dir">
       <MemberSignature Language="C#" Value="public static string Dir ();" />
       <MemberSignature Language="ILAsm" Value=".method public static string Dir() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dir () As String" />
+      <MemberSignature Language="F#" Value="static member Dir : unit -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Dir();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -309,6 +357,8 @@
       <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -373,6 +423,9 @@
       <MemberSignature Language="C#" Value="public static bool EOF (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool EOF(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.EOF(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EOF (FileNumber As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member EOF : int -&gt; bool" Usage="Microsoft.VisualBasic.FileSystem.EOF FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool EOF(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -419,6 +472,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.OpenMode FileAttr (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.OpenMode FileAttr(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileAttr(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FileAttr (FileNumber As Integer) As OpenMode" />
+      <MemberSignature Language="F#" Value="static member FileAttr : int -&gt; Microsoft.VisualBasic.OpenMode" Usage="Microsoft.VisualBasic.FileSystem.FileAttr FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::OpenMode FileAttr(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -475,6 +531,9 @@
       <MemberSignature Language="C#" Value="public static void FileClose (params int[] FileNumbers);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileClose(int32[] FileNumbers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileClose (ParamArray FileNumbers As Integer())" />
+      <MemberSignature Language="F#" Value="static member FileClose : int[] -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileClose FileNumbers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FileClose(... cli::array &lt;int&gt; ^ FileNumbers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -526,6 +585,9 @@
       <MemberSignature Language="C#" Value="public static void FileCopy (string Source, string Destination);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileCopy(string Source, string Destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileCopy(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileCopy (Source As String, Destination As String)" />
+      <MemberSignature Language="F#" Value="static member FileCopy : string * string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileCopy (Source, Destination)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FileCopy(System::String ^ Source, System::String ^ Destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -573,6 +635,9 @@
       <MemberSignature Language="C#" Value="public static DateTime FileDateTime (string PathName);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime FileDateTime(string PathName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileDateTime(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FileDateTime (PathName As String) As DateTime" />
+      <MemberSignature Language="F#" Value="static member FileDateTime : string -&gt; DateTime" Usage="Microsoft.VisualBasic.FileSystem.FileDateTime PathName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FileDateTime(System::String ^ PathName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -608,10 +673,21 @@
         <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FileGet">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads data from an open disk file into a variable. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileGet" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FileGet">
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref bool Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, bool&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Boolean@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Boolean, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -693,6 +769,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref byte Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, unsigned int8&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Byte@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Byte, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -774,6 +852,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref char Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, char&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Char@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Char, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -855,6 +935,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref DateTime Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.DateTime&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.DateTime@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As DateTime, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -936,6 +1018,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref decimal Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, valuetype System.Decimal&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Decimal@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Decimal, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1017,6 +1101,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref double Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Double@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Double, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1098,6 +1184,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref short Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int16&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int16@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Short, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1179,6 +1267,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref int Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int32@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Integer, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1260,6 +1350,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref long Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, int64&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Int64@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Long, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1341,6 +1433,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref float Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, float32&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Single@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Single, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1422,6 +1516,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref ValueType Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.ValueType&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.ValueType@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As ValueType, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1503,6 +1599,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, string&amp; Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.String@,System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As String, Optional RecordNumber As Long = -1, Optional StringIsFixedLength As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 * bool -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber, StringIsFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1586,6 +1684,8 @@
       <MemberSignature Language="C#" Value="public static void FileGet (int FileNumber, ref Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGet(int32 FileNumber, class System.Array&amp; Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.Array@,System.Int64,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGet (FileNumber As Integer, ByRef Value As Array, Optional RecordNumber As Long = -1, Optional ArrayIsDynamic As Boolean = false, Optional StringIsFixedLength As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member FileGet : int *  * int64 * bool * bool -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGet (FileNumber, Value, RecordNumber, ArrayIsDynamic, StringIsFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1671,6 +1771,8 @@
       <MemberSignature Language="C#" Value="public static void FileGetObject (int FileNumber, ref object Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileGetObject(int32 FileNumber, object&amp; Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileGetObject (FileNumber As Integer, ByRef Value As Object, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FileGetObject : int *  * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileGetObject (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1751,6 +1853,9 @@
       <MemberSignature Language="C#" Value="public static long FileLen (string PathName);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 FileLen(string PathName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileLen(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FileLen (PathName As String) As Long" />
+      <MemberSignature Language="F#" Value="static member FileLen : string -&gt; int64" Usage="Microsoft.VisualBasic.FileSystem.FileLen PathName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long FileLen(System::String ^ PathName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1796,6 +1901,8 @@
       <MemberSignature Language="C#" Value="public static void FileOpen (int FileNumber, string FileName, Microsoft.VisualBasic.OpenMode Mode, Microsoft.VisualBasic.OpenAccess Access = Microsoft.VisualBasic.OpenAccess.Default, Microsoft.VisualBasic.OpenShare Share = Microsoft.VisualBasic.OpenShare.Default, int RecordLength = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileOpen(int32 FileNumber, string FileName, valuetype Microsoft.VisualBasic.OpenMode Mode, valuetype Microsoft.VisualBasic.OpenAccess Access, valuetype Microsoft.VisualBasic.OpenShare Share, int32 RecordLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileOpen (FileNumber As Integer, FileName As String, Mode As OpenMode, Optional Access As OpenAccess = Microsoft.VisualBasic.OpenAccess.Default, Optional Share As OpenShare = Microsoft.VisualBasic.OpenShare.Default, Optional RecordLength As Integer = -1)" />
+      <MemberSignature Language="F#" Value="static member FileOpen : int * string * Microsoft.VisualBasic.OpenMode * Microsoft.VisualBasic.OpenAccess * Microsoft.VisualBasic.OpenShare * int -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileOpen (FileNumber, FileName, Mode, Access, Share, RecordLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1870,10 +1977,21 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FreeFile" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FilePut">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data from a variable to a disk file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FilePut" />. F For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FilePut">
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, bool Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, bool Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Boolean,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Boolean, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * bool * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -1965,6 +2083,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, byte Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, unsigned int8 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Byte,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Byte, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * byte * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2056,6 +2176,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, char Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, char Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Char,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Char, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * char * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2147,6 +2269,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, DateTime Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, valuetype System.DateTime Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.DateTime,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As DateTime, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * DateTime * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2238,6 +2362,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, decimal Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, valuetype System.Decimal Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Decimal,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Decimal, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * decimal * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2329,6 +2455,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, double Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, float64 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Double,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Double, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * double * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2420,6 +2548,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, short Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int16 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Int16,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Short, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * int16 * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2511,6 +2641,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, int Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int32 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Integer, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * int * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2602,6 +2734,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, long Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, int64 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Long, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * int64 * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2693,6 +2827,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, float Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, float32 Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Single,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Single, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * single * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2784,6 +2920,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, ValueType Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, class System.ValueType Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.ValueType,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As ValueType, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * ValueType * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2875,6 +3013,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (object FileNumber, object Value, object RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(object FileNumber, object Value, object RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Object, Value As Object, Optional RecordNumber As Object = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePut : obj * obj * obj -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -2971,6 +3111,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, string Value, long RecordNumber = -1, bool StringIsFixedLength = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, string Value, int64 RecordNumber, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.String,System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As String, Optional RecordNumber As Long = -1, Optional StringIsFixedLength As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * string * int64 * bool -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber, StringIsFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3064,6 +3206,8 @@
       <MemberSignature Language="C#" Value="public static void FilePut (int FileNumber, Array Value, long RecordNumber = -1, bool ArrayIsDynamic = false, bool StringIsFixedLength = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePut(int32 FileNumber, class System.Array Value, int64 RecordNumber, bool ArrayIsDynamic, bool StringIsFixedLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.Array,System.Int64,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePut (FileNumber As Integer, Value As Array, Optional RecordNumber As Long = -1, Optional ArrayIsDynamic As Boolean = false, Optional StringIsFixedLength As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member FilePut : int * Array * int64 * bool * bool -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePut (FileNumber, Value, RecordNumber, ArrayIsDynamic, StringIsFixedLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3159,6 +3303,8 @@
       <MemberSignature Language="C#" Value="public static void FilePutObject (int FileNumber, object Value, long RecordNumber = -1);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FilePutObject(int32 FileNumber, object Value, int64 RecordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FilePutObject(System.Int32,System.Object,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FilePutObject (FileNumber As Integer, Value As Object, Optional RecordNumber As Long = -1)" />
+      <MemberSignature Language="F#" Value="static member FilePutObject : int * obj * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FilePutObject (FileNumber, Value, RecordNumber)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3229,6 +3375,9 @@
       <MemberSignature Language="C#" Value="public static void FileWidth (int FileNumber, int RecordWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public static void FileWidth(int32 FileNumber, int32 RecordWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FileWidth (FileNumber As Integer, RecordWidth As Integer)" />
+      <MemberSignature Language="F#" Value="static member FileWidth : int * int -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.FileWidth (FileNumber, RecordWidth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void FileWidth(int FileNumber, int RecordWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3266,6 +3415,9 @@
       <MemberSignature Language="C#" Value="public static int FreeFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 FreeFile() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.FreeFile" />
+      <MemberSignature Language="VB.NET" Value="Public Function FreeFile () As Integer" />
+      <MemberSignature Language="F#" Value="static member FreeFile : unit -&gt; int" Usage="Microsoft.VisualBasic.FileSystem.FreeFile " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int FreeFile();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3302,6 +3454,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.FileAttribute GetAttr (string PathName);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.FileAttribute GetAttr(string PathName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttr (PathName As String) As FileAttribute" />
+      <MemberSignature Language="F#" Value="static member GetAttr : string -&gt; Microsoft.VisualBasic.FileAttribute" Usage="Microsoft.VisualBasic.FileSystem.GetAttr PathName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::FileAttribute GetAttr(System::String ^ PathName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3373,10 +3528,22 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Input">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Input">
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref bool Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, bool&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, bool % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3444,6 +3611,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref byte Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, unsigned int8&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Byte@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Byte)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, System::Byte % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3511,6 +3681,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref char Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, char&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Char@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Char)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, char % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3578,6 +3751,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref DateTime Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.DateTime&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.DateTime@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As DateTime)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, DateTime % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3645,6 +3821,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref decimal Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, valuetype System.Decimal&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Decimal@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Decimal)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, System::Decimal % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3712,6 +3891,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref double Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Double@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Double)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, double % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3779,6 +3961,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref short Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int16&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int16@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Short)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, short % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3846,6 +4031,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref int Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Integer)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, int % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3913,6 +4101,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref long Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, int64&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Long)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, long % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -3980,6 +4171,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, object&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Object)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, System::Object ^ % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4047,6 +4241,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref float Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, float32&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.Single@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As Single)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, float % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4114,6 +4311,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Input (int FileNumber, ref string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Input(int32 FileNumber, string&amp; Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Input (FileNumber As Integer, ByRef Value As String)" />
+      <MemberSignature Language="F#" Value="static member Input : int *  -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Input (FileNumber, Value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Input(int FileNumber, System::String ^ % Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4181,6 +4381,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static string InputString (int FileNumber, int CharCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static string InputString(int32 FileNumber, int32 CharCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.InputString(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InputString (FileNumber As Integer, CharCount As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member InputString : int * int -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.InputString (FileNumber, CharCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ InputString(int FileNumber, int CharCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4233,6 +4436,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Kill (string PathName);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Kill(string PathName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Kill(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Kill (PathName As String)" />
+      <MemberSignature Language="F#" Value="static member Kill : string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Kill PathName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Kill(System::String ^ PathName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4276,6 +4482,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static string LineInput (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static string LineInput(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.LineInput(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LineInput (FileNumber As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member LineInput : int -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.LineInput FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ LineInput(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4328,6 +4537,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static long Loc (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 Loc(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Loc (FileNumber As Integer) As Long" />
+      <MemberSignature Language="F#" Value="static member Loc : int -&gt; int64" Usage="Microsoft.VisualBasic.FileSystem.Loc FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Loc(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4375,10 +4587,22 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="T:System.IO.IOException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Lock">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Lock">
       <MemberSignature Language="C#" Value="public static void Lock (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Lock(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Lock (FileNumber As Integer)" />
+      <MemberSignature Language="F#" Value="static member Lock : int -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Lock FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Lock(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4423,6 +4647,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Lock (int FileNumber, long Record);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber, int64 Record) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Lock(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Lock (FileNumber As Integer, Record As Long)" />
+      <MemberSignature Language="F#" Value="static member Lock : int * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Lock (FileNumber, Record)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Lock(int FileNumber, long Record);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4469,6 +4696,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Lock (int FileNumber, long FromRecord, long ToRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Lock(int32 FileNumber, int64 FromRecord, int64 ToRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Lock(System.Int32,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Lock (FileNumber As Integer, FromRecord As Long, ToRecord As Long)" />
+      <MemberSignature Language="F#" Value="static member Lock : int * int64 * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Lock (FileNumber, FromRecord, ToRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Lock(int FileNumber, long FromRecord, long ToRecord);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4517,6 +4747,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static long LOF (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 LOF(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.LOF(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LOF (FileNumber As Integer) As Long" />
+      <MemberSignature Language="F#" Value="static member LOF : int -&gt; int64" Usage="Microsoft.VisualBasic.FileSystem.LOF FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long LOF(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4559,6 +4792,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void MkDir (string Path);" />
       <MemberSignature Language="ILAsm" Value=".method public static void MkDir(string Path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MkDir (Path As String)" />
+      <MemberSignature Language="F#" Value="static member MkDir : string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.MkDir Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MkDir(System::String ^ Path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4603,6 +4839,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Print (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Print(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print (FileNumber As Integer, ParamArray Output As Object())" />
+      <MemberSignature Language="F#" Value="static member Print : int * obj[] -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Print (FileNumber, Output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Print(int FileNumber, ... cli::array &lt;System::Object ^&gt; ^ Output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4676,6 +4915,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void PrintLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void PrintLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintLine (FileNumber As Integer, ParamArray Output As Object())" />
+      <MemberSignature Language="F#" Value="static member PrintLine : int * obj[] -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.PrintLine (FileNumber, Output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrintLine(int FileNumber, ... cli::array &lt;System::Object ^&gt; ^ Output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4749,6 +4991,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Rename (string OldPath, string NewPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Rename(string OldPath, string NewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Rename(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rename (OldPath As String, NewPath As String)" />
+      <MemberSignature Language="F#" Value="static member Rename : string * string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Rename (OldPath, NewPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Rename(System::String ^ OldPath, System::String ^ NewPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4799,6 +5044,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="static member Reset : unit -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4833,6 +5081,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void RmDir (string Path);" />
       <MemberSignature Language="ILAsm" Value=".method public static void RmDir(string Path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RmDir (Path As String)" />
+      <MemberSignature Language="F#" Value="static member RmDir : string -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.RmDir Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RmDir(System::String ^ Path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4875,10 +5126,22 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="T:System.IO.FileNotFoundException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Seek">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Seek" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Seek">
       <MemberSignature Language="C#" Value="public static long Seek (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 Seek(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Seek(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Seek (FileNumber As Integer) As Long" />
+      <MemberSignature Language="F#" Value="static member Seek : int -&gt; int64" Usage="Microsoft.VisualBasic.FileSystem.Seek FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Seek(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -4942,6 +5205,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Seek (int FileNumber, long Position);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Seek(int32 FileNumber, int64 Position) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Seek(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Seek (FileNumber As Integer, Position As Long)" />
+      <MemberSignature Language="F#" Value="static member Seek : int * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Seek (FileNumber, Position)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Seek(int FileNumber, long Position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5006,6 +5272,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void SetAttr (string PathName, Microsoft.VisualBasic.FileAttribute Attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetAttr(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAttr (PathName As String, Attributes As FileAttribute)" />
+      <MemberSignature Language="F#" Value="static member SetAttr : string * Microsoft.VisualBasic.FileAttribute -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.SetAttr (PathName, Attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAttr(System::String ^ PathName, Microsoft::VisualBasic::FileAttribute Attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5066,6 +5335,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.SpcInfo SPC (short Count);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.SpcInfo SPC(int16 Count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SPC (Count As Short) As SpcInfo" />
+      <MemberSignature Language="F#" Value="static member SPC : int16 -&gt; Microsoft.VisualBasic.SpcInfo" Usage="Microsoft.VisualBasic.FileSystem.SPC Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::SpcInfo SPC(short Count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5110,10 +5382,22 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TAB">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used with the <see langword="Print" /> or <see langword="PrintLine" /> functions to position output.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TAB">
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.TabInfo TAB ();" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.TabInfo TAB() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.TAB" />
+      <MemberSignature Language="VB.NET" Value="Public Function TAB () As TabInfo" />
+      <MemberSignature Language="F#" Value="static member TAB : unit -&gt; Microsoft.VisualBasic.TabInfo" Usage="Microsoft.VisualBasic.FileSystem.TAB " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::TabInfo TAB();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5163,6 +5447,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.TabInfo TAB (short Column);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.VisualBasic.TabInfo TAB(int16 Column) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.TAB(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TAB (Column As Short) As TabInfo" />
+      <MemberSignature Language="F#" Value="static member TAB : int16 -&gt; Microsoft.VisualBasic.TabInfo" Usage="Microsoft.VisualBasic.FileSystem.TAB Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::VisualBasic::TabInfo TAB(short Column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5211,10 +5498,22 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Unlock">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Unlock">
       <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Unlock(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unlock (FileNumber As Integer)" />
+      <MemberSignature Language="F#" Value="static member Unlock : int -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Unlock FileNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unlock(int FileNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5259,6 +5558,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber, long Record);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber, int64 Record) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Unlock(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unlock (FileNumber As Integer, Record As Long)" />
+      <MemberSignature Language="F#" Value="static member Unlock : int * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Unlock (FileNumber, Record)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unlock(int FileNumber, long Record);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5305,6 +5607,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Unlock (int FileNumber, long FromRecord, long ToRecord);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Unlock(int32 FileNumber, int64 FromRecord, int64 ToRecord) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Unlock(System.Int32,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unlock (FileNumber As Integer, FromRecord As Long, ToRecord As Long)" />
+      <MemberSignature Language="F#" Value="static member Unlock : int * int64 * int64 -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Unlock (FileNumber, FromRecord, ToRecord)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unlock(int FileNumber, long FromRecord, long ToRecord);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5353,6 +5658,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void Write (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Write(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (FileNumber As Integer, ParamArray Output As Object())" />
+      <MemberSignature Language="F#" Value="static member Write : int * obj[] -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.Write (FileNumber, Output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(int FileNumber, ... cli::array &lt;System::Object ^&gt; ^ Output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5426,6 +5734,9 @@ Result = GetAttr(FName) And vbArchive
       <MemberSignature Language="C#" Value="public static void WriteLine (int FileNumber, params object[] Output);" />
       <MemberSignature Language="ILAsm" Value=".method public static void WriteLine(int32 FileNumber, object[] Output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteLine (FileNumber As Integer, ParamArray Output As Object())" />
+      <MemberSignature Language="F#" Value="static member WriteLine : int * obj[] -&gt; unit" Usage="Microsoft.VisualBasic.FileSystem.WriteLine (FileNumber, Output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(int FileNumber, ... cli::array &lt;System::Object ^&gt; ^ Output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -5494,95 +5805,5 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Input">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads data from an open sequential file and assigns the data to variables.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dir">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Unlock">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Seek">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see langword="Long" /> specifying the current read/write position in a file opened by using the <see langword="FileOpen" /> function, or sets the position for the next read/write operation in a file opened by using the <see langword="FileOpen" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Seek" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Lock">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Controls access by other processes to all or part of a file opened by using the <see langword="Open" /> function. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Lock" /> and <see langword="Unlock" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TAB">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Used with the <see langword="Print" /> or <see langword="PrintLine" /> functions to position output.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FilePut">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data from a variable to a disk file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FilePut" />. F For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FileGet">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads data from an open disk file into a variable. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileGet" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CurDir">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string representing the current path. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="CurDir" />. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ChDrive">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Changes the current drive.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

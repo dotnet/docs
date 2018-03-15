@@ -1,7 +1,10 @@
-<Type Name="ActivityTrackingLocationCollection" FullName="System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection">
+﻿<Type Name="ActivityTrackingLocationCollection" FullName="System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection">
   <TypeSignature Language="C#" Value="public class ActivityTrackingLocationCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActivityTrackingLocationCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTrackingLocationCollection&#xA;Inherits List(Of ActivityTrackingLocation)" />
+  <TypeSignature Language="F#" Value="type ActivityTrackingLocationCollection = class&#xA;    inherit List&lt;ActivityTrackingLocation&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityTrackingLocationCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::ActivityTrackingLocation ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityTrackingLocationCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocationCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -60,6 +74,9 @@
       <MemberSignature Language="C#" Value="public ActivityTrackingLocationCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.ActivityTrackingLocation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (locations As IEnumerable(Of ActivityTrackingLocation))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection : seq&lt;System.Workflow.Runtime.Tracking.ActivityTrackingLocation&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection locations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackingLocationCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::ActivityTrackingLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -83,14 +100,5 @@
           <paramref name="locations" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

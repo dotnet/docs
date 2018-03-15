@@ -1,7 +1,10 @@
-<Type Name="Brush" FullName="System.Drawing.Brush">
+﻿<Type Name="Brush" FullName="System.Drawing.Brush">
   <TypeSignature Language="C#" Value="public abstract class Brush : MarshalByRefObject, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Brush extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Brush" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Brush&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type Brush = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Brush abstract : MarshalByRefObject, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected Brush ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Brush();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -51,7 +56,13 @@
       <MemberSignature Language="C#" Value="public abstract object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj" Usage="brush.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,11 +77,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Drawing.Brush" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="brush.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +126,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="brush.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -137,6 +166,9 @@
       <MemberSignature Language="C#" Value="~Brush ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="brush.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!Brush ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -153,9 +185,12 @@
       </Docs>
     </Member>
     <Member MemberName="SetNativeBrush">
-      <MemberSignature Language="C#" Value="protected void SetNativeBrush (IntPtr brush);" />
+      <MemberSignature Language="C#" Value="protected internal void SetNativeBrush (IntPtr brush);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetNativeBrush(native int brush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Brush.SetNativeBrush(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub SetNativeBrush (brush As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.SetNativeBrush : nativeint -&gt; unit" Usage="brush.SetNativeBrush brush" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void SetNativeBrush(IntPtr brush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -173,14 +208,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Drawing.Brush" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="SpecialNameAttribute" FullName="System.Runtime.CompilerServices.SpecialNameAttribute">
+﻿<Type Name="SpecialNameAttribute" FullName="System.Runtime.CompilerServices.SpecialNameAttribute">
   <TypeSignature Language="C#" Value="public sealed class SpecialNameAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SpecialNameAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.SpecialNameAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SpecialNameAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SpecialNameAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpecialNameAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public SpecialNameAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.SpecialNameAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SpecialNameAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

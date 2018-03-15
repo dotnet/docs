@@ -1,7 +1,10 @@
-<Type Name="WebDescriptionAttribute" FullName="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute">
+﻿<Type Name="WebDescriptionAttribute" FullName="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute">
   <TypeSignature Language="C#" Value="public class WebDescriptionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebDescriptionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebDescriptionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type WebDescriptionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebDescriptionAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebDescriptionAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebDescriptionAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +77,9 @@
       <MemberSignature Language="C#" Value="public WebDescriptionAttribute (string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebDescriptionAttribute : string -&gt; System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" Usage="new System.Web.UI.WebControls.WebParts.WebDescriptionAttribute description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebDescriptionAttribute(System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +113,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.WebDescriptionAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.WebDescriptionAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As WebDescriptionAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" Usage="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebDescriptionAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +140,9 @@
       <MemberSignature Language="C#" Value="public virtual string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +161,9 @@
       <MemberSignature Language="C#" Value="protected string DescriptionValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DescriptionValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.DescriptionValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Property DescriptionValue As String" />
+      <MemberSignature Language="F#" Value="member this.DescriptionValue : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.DescriptionValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DescriptionValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -163,6 +189,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="webDescriptionAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +215,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="webDescriptionAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +238,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="webDescriptionAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,14 +257,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebDescriptionAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

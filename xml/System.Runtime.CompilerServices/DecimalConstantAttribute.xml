@@ -1,7 +1,10 @@
-<Type Name="DecimalConstantAttribute" FullName="System.Runtime.CompilerServices.DecimalConstantAttribute">
+﻿<Type Name="DecimalConstantAttribute" FullName="System.Runtime.CompilerServices.DecimalConstantAttribute">
   <TypeSignature Language="C#" Value="public sealed class DecimalConstantAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DecimalConstantAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DecimalConstantAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecimalConstantAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DecimalConstantAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecimalConstantAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +52,26 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DecimalConstantAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DecimalConstantAttribute (byte scale, byte sign, int hi, int mid, int low);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 scale, unsigned int8 sign, int32 hi, int32 mid, int32 low) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scale As Byte, sign As Byte, hi As Integer, mid As Integer, low As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DecimalConstantAttribute : byte * byte * int * int * int -&gt; System.Runtime.CompilerServices.DecimalConstantAttribute" Usage="new System.Runtime.CompilerServices.DecimalConstantAttribute (scale, sign, hi, mid, low)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecimalConstantAttribute(System::Byte scale, System::Byte sign, int hi, int mid, int low);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -92,6 +111,9 @@
       <MemberSignature Language="C#" Value="public DecimalConstantAttribute (byte scale, byte sign, uint hi, uint mid, uint low);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 scale, unsigned int8 sign, unsigned int32 hi, unsigned int32 mid, unsigned int32 low) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DecimalConstantAttribute.#ctor(System.Byte,System.Byte,System.UInt32,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scale As Byte, sign As Byte, hi As UInteger, mid As UInteger, low As UInteger)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.DecimalConstantAttribute : byte * byte * uint32 * uint32 * uint32 -&gt; System.Runtime.CompilerServices.DecimalConstantAttribute" Usage="new System.Runtime.CompilerServices.DecimalConstantAttribute (scale, sign, hi, mid, low)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecimalConstantAttribute(System::Byte scale, System::Byte sign, System::UInt32 hi, System::UInt32 mid, System::UInt32 low);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -138,6 +160,9 @@
       <MemberSignature Language="C#" Value="public decimal Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Decimal" />
+      <MemberSignature Language="F#" Value="member this.Value : decimal" Usage="System.Runtime.CompilerServices.DecimalConstantAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal Value { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -165,18 +190,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.DecimalConstantAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

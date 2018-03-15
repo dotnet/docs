@@ -1,7 +1,10 @@
-<Type Name="TabItem" FullName="System.Windows.Controls.TabItem">
+﻿<Type Name="TabItem" FullName="System.Windows.Controls.TabItem">
   <TypeSignature Language="C#" Value="public class TabItem : System.Windows.Controls.HeaderedContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TabItem extends System.Windows.Controls.HeaderedContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TabItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class TabItem&#xA;Inherits HeaderedContentControl" />
+  <TypeSignature Language="F#" Value="type TabItem = class&#xA;    inherit HeaderedContentControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TabItem : System::Windows::Controls::HeaderedContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public TabItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TabItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +66,9 @@
       <MemberSignature Language="C#" Value="public bool IsSelected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabItem.IsSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSelected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool with get, set" Usage="System.Windows.Controls.TabItem.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -109,6 +117,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSelectedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSelectedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabItem.IsSelectedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabItem.IsSelectedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +137,9 @@
       <MemberSignature Language="C#" Value="protected override void OnAccessKey (System.Windows.Input.AccessKeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAccessKey(class System.Windows.Input.AccessKeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnAccessKey(System.Windows.Input.AccessKeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAccessKey (e As AccessKeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnAccessKey : System.Windows.Input.AccessKeyEventArgs -&gt; unit" Usage="tabItem.OnAccessKey e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAccessKey(System::Windows::Input::AccessKeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +161,9 @@
       <MemberSignature Language="C#" Value="protected override void OnContentChanged (object oldContent, object newContent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentChanged(object oldContent, object newContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentChanged(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContentChanged (oldContent As Object, newContent As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnContentChanged : obj * obj -&gt; unit" Usage="tabItem.OnContentChanged (oldContent, newContent)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContentChanged(System::Object ^ oldContent, System::Object ^ newContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +187,9 @@
       <MemberSignature Language="C#" Value="protected override void OnContentTemplateChanged (System.Windows.DataTemplate oldContentTemplate, System.Windows.DataTemplate newContentTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentTemplateChanged(class System.Windows.DataTemplate oldContentTemplate, class System.Windows.DataTemplate newContentTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContentTemplateChanged (oldContentTemplate As DataTemplate, newContentTemplate As DataTemplate)" />
+      <MemberSignature Language="F#" Value="override this.OnContentTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="tabItem.OnContentTemplateChanged (oldContentTemplate, newContentTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContentTemplateChanged(System::Windows::DataTemplate ^ oldContentTemplate, System::Windows::DataTemplate ^ newContentTemplate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +213,9 @@
       <MemberSignature Language="C#" Value="protected override void OnContentTemplateSelectorChanged (System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, System.Windows.Controls.DataTemplateSelector newContentTemplateSelector);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentTemplateSelectorChanged(class System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, class System.Windows.Controls.DataTemplateSelector newContentTemplateSelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContentTemplateSelectorChanged (oldContentTemplateSelector As DataTemplateSelector, newContentTemplateSelector As DataTemplateSelector)" />
+      <MemberSignature Language="F#" Value="override this.OnContentTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit" Usage="tabItem.OnContentTemplateSelectorChanged (oldContentTemplateSelector, newContentTemplateSelector)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContentTemplateSelectorChanged(System::Windows::Controls::DataTemplateSelector ^ oldContentTemplateSelector, System::Windows::Controls::DataTemplateSelector ^ newContentTemplateSelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="tabItem.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -235,6 +261,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="tabItem.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +285,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewGotKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewGotKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="tabItem.OnPreviewGotKeyboardFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +309,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelected (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelected(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnSelected(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnSelected : System.Windows.RoutedEventArgs -&gt; unit" Usage="tabItem.OnSelected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +333,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnUnselected (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnselected(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.TabItem.OnUnselected(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnselected (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnUnselected : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnUnselected : System.Windows.RoutedEventArgs -&gt; unit" Usage="tabItem.OnUnselected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnselected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -319,6 +357,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Dock TabStripPlacement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Dock TabStripPlacement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.TabItem.TabStripPlacement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabStripPlacement As Dock" />
+      <MemberSignature Language="F#" Value="member this.TabStripPlacement : System.Windows.Controls.Dock" Usage="System.Windows.Controls.TabItem.TabStripPlacement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Dock TabStripPlacement { System::Windows::Controls::Dock get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +401,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabStripPlacementProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabStripPlacementProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.TabItem.TabStripPlacementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabStripPlacementProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TabStripPlacementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.TabItem.TabStripPlacementProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabStripPlacementProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

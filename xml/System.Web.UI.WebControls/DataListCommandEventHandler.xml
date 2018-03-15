@@ -1,7 +1,10 @@
-<Type Name="DataListCommandEventHandler" FullName="System.Web.UI.WebControls.DataListCommandEventHandler">
+﻿<Type Name="DataListCommandEventHandler" FullName="System.Web.UI.WebControls.DataListCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataListCommandEventHandler(object source, DataListCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataListCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataListCommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataListCommandEventHandler(source As Object, e As DataListCommandEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataListCommandEventHandler = delegate of obj * DataListCommandEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataListCommandEventHandler(System::Object ^ source, DataListCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

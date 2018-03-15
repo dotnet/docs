@@ -1,7 +1,10 @@
-<Type Name="OracleDataReader" FullName="System.Data.OracleClient.OracleDataReader">
+﻿<Type Name="OracleDataReader" FullName="System.Data.OracleClient.OracleDataReader">
   <TypeSignature Language="C#" Value="public sealed class OracleDataReader : System.Data.Common.DbDataReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleDataReader extends System.Data.Common.DbDataReader" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleDataReader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OracleDataReader&#xA;Inherits DbDataReader" />
+  <TypeSignature Language="F#" Value="type OracleDataReader = class&#xA;    inherit DbDataReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OracleDataReader sealed : System::Data::Common::DbDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -229,6 +232,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="oracleDataReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -257,6 +263,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override int Depth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.Depth" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.OracleClient.OracleDataReader.Depth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -282,6 +291,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.FieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.OracleClient.OracleDataReader.FieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -310,6 +322,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override bool GetBoolean (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetBoolean(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetBoolean(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (i As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="oracleDataReader.GetBoolean i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -340,6 +355,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override byte GetByte (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8 GetByte(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetByte(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (i As Integer) As Byte" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="oracleDataReader.GetByte i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -370,6 +388,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override long GetBytes (int i, long fieldOffset, byte[] buffer2, int bufferoffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetBytes(int32 i, int64 fieldOffset, unsigned int8[] buffer2, int32 bufferoffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (i As Integer, fieldOffset As Long, buffer2 As Byte(), bufferoffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="oracleDataReader.GetBytes (i, fieldOffset, buffer2, bufferoffset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int i, long fieldOffset, cli::array &lt;System::Byte&gt; ^ buffer2, int bufferoffset, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -409,6 +430,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override char GetChar (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetChar(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetChar(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (i As Integer) As Char" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="oracleDataReader.GetChar i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -439,6 +463,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override long GetChars (int i, long fieldOffset, char[] buffer2, int bufferoffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetChars(int32 i, int64 fieldOffset, char[] buffer2, int32 bufferoffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (i As Integer, fieldOffset As Long, buffer2 As Char(), bufferoffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="oracleDataReader.GetChars (i, fieldOffset, buffer2, bufferoffset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int i, long fieldOffset, cli::array &lt;char&gt; ^ buffer2, int bufferoffset, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -478,6 +505,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override string GetDataTypeName (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetDataTypeName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (i As Integer) As String" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="oracleDataReader.GetDataTypeName i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -500,6 +530,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override DateTime GetDateTime (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime GetDateTime(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetDateTime(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (i As Integer) As DateTime" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="oracleDataReader.GetDateTime i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -530,6 +563,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override decimal GetDecimal (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Decimal GetDecimal(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetDecimal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (i As Integer) As Decimal" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="oracleDataReader.GetDecimal i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -560,6 +596,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override double GetDouble (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetDouble(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetDouble(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (i As Integer) As Double" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="oracleDataReader.GetDouble i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -590,6 +629,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="oracleDataReader.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -616,6 +658,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override Type GetFieldType (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetFieldType(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (i As Integer) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="oracleDataReader.GetFieldType i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -638,6 +683,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override float GetFloat (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float32 GetFloat(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetFloat(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (i As Integer) As Single" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="oracleDataReader.GetFloat i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -668,6 +716,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override Guid GetGuid (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Guid GetGuid(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetGuid(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (i As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="oracleDataReader.GetGuid i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -698,6 +749,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override short GetInt16 (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int16 GetInt16(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetInt16(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (i As Integer) As Short" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="oracleDataReader.GetInt16 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -728,6 +782,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override int GetInt32 (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetInt32(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetInt32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (i As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="oracleDataReader.GetInt32 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -758,6 +815,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override long GetInt64 (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetInt64(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetInt64(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (i As Integer) As Long" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="oracleDataReader.GetInt64 i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -788,6 +848,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override string GetName (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetName(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (i As Integer) As String" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="oracleDataReader.GetName i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -811,6 +874,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleBFile GetOracleBFile (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleBFile GetOracleBFile(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleBFile(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleBFile (i As Integer) As OracleBFile" />
+      <MemberSignature Language="F#" Value="member this.GetOracleBFile : int -&gt; System.Data.OracleClient.OracleBFile" Usage="oracleDataReader.GetOracleBFile i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleBFile ^ GetOracleBFile(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -841,6 +907,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleBinary GetOracleBinary (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleBinary GetOracleBinary(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleBinary(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleBinary (i As Integer) As OracleBinary" />
+      <MemberSignature Language="F#" Value="member this.GetOracleBinary : int -&gt; System.Data.OracleClient.OracleBinary" Usage="oracleDataReader.GetOracleBinary i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleBinary GetOracleBinary(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -871,6 +940,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleDateTime GetOracleDateTime (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleDateTime GetOracleDateTime(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleDateTime(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleDateTime (i As Integer) As OracleDateTime" />
+      <MemberSignature Language="F#" Value="member this.GetOracleDateTime : int -&gt; System.Data.OracleClient.OracleDateTime" Usage="oracleDataReader.GetOracleDateTime i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleDateTime GetOracleDateTime(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -901,6 +973,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleLob GetOracleLob (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleLob GetOracleLob(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleLob(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleLob (i As Integer) As OracleLob" />
+      <MemberSignature Language="F#" Value="member this.GetOracleLob : int -&gt; System.Data.OracleClient.OracleLob" Usage="oracleDataReader.GetOracleLob i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleLob ^ GetOracleLob(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -931,6 +1006,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleMonthSpan GetOracleMonthSpan (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleMonthSpan GetOracleMonthSpan(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleMonthSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleMonthSpan (i As Integer) As OracleMonthSpan" />
+      <MemberSignature Language="F#" Value="member this.GetOracleMonthSpan : int -&gt; System.Data.OracleClient.OracleMonthSpan" Usage="oracleDataReader.GetOracleMonthSpan i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleMonthSpan GetOracleMonthSpan(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -961,6 +1039,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleNumber GetOracleNumber (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleNumber GetOracleNumber(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleNumber(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleNumber (i As Integer) As OracleNumber" />
+      <MemberSignature Language="F#" Value="member this.GetOracleNumber : int -&gt; System.Data.OracleClient.OracleNumber" Usage="oracleDataReader.GetOracleNumber i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleNumber GetOracleNumber(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -991,6 +1072,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleString GetOracleString (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleString GetOracleString(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleString (i As Integer) As OracleString" />
+      <MemberSignature Language="F#" Value="member this.GetOracleString : int -&gt; System.Data.OracleClient.OracleString" Usage="oracleDataReader.GetOracleString i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleString GetOracleString(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1021,6 +1105,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleTimeSpan GetOracleTimeSpan (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.OracleClient.OracleTimeSpan GetOracleTimeSpan(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleTimeSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleTimeSpan (i As Integer) As OracleTimeSpan" />
+      <MemberSignature Language="F#" Value="member this.GetOracleTimeSpan : int -&gt; System.Data.OracleClient.OracleTimeSpan" Usage="oracleDataReader.GetOracleTimeSpan i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OracleClient::OracleTimeSpan GetOracleTimeSpan(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1051,6 +1138,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public object GetOracleValue (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetOracleValue(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleValue (i As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetOracleValue : int -&gt; obj" Usage="oracleDataReader.GetOracleValue i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOracleValue(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1080,6 +1170,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public int GetOracleValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetOracleValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOracleValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOracleValues (values As Object()) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetOracleValues : obj[] -&gt; int" Usage="oracleDataReader.GetOracleValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOracleValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1113,6 +1206,9 @@ public void ReadOracleTypesExample(string connectionString)
       <MemberSignature Language="C#" Value="public override int GetOrdinal (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetOrdinal(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetOrdinal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="oracleDataReader.GetOrdinal name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1193,6 +1289,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override Type GetProviderSpecificFieldType (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetProviderSpecificFieldType(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetProviderSpecificFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificFieldType (i As Integer) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificFieldType : int -&gt; Type" Usage="oracleDataReader.GetProviderSpecificFieldType i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetProviderSpecificFieldType(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1215,6 +1314,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override object GetProviderSpecificValue (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetProviderSpecificValue(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetProviderSpecificValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValue (i As Integer) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificValue : int -&gt; obj" Usage="oracleDataReader.GetProviderSpecificValue i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetProviderSpecificValue(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1237,6 +1339,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override int GetProviderSpecificValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetProviderSpecificValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetProviderSpecificValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValues (values As Object()) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificValues : obj[] -&gt; int" Usage="oracleDataReader.GetProviderSpecificValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetProviderSpecificValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1270,6 +1375,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchemaTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetSchemaTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
+      <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="oracleDataReader.GetSchemaTable " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1317,6 +1425,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override string GetString (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (i As Integer) As String" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="oracleDataReader.GetString i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1347,6 +1458,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public TimeSpan GetTimeSpan (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetTimeSpan(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetTimeSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTimeSpan (i As Integer) As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.GetTimeSpan : int -&gt; TimeSpan" Usage="oracleDataReader.GetTimeSpan i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetTimeSpan(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1377,6 +1491,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override object GetValue (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (i As Integer) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="oracleDataReader.GetValue i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1407,6 +1524,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override int GetValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.GetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="oracleDataReader.GetValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1441,6 +1561,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override bool HasRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.HasRows" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.OracleClient.OracleDataReader.HasRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1460,6 +1583,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override bool IsClosed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.IsClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.OracleClient.OracleDataReader.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1486,6 +1612,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override bool IsDBNull (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDBNull(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.IsDBNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (i As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="oracleDataReader.IsDBNull i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1512,10 +1641,22 @@ public void ReadOracleData(string connectionString)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a column in its native format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public override object this[int i] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(i As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.OracleClient.OracleDataReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1539,6 +1680,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override object this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.OracleClient.OracleDataReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1562,6 +1706,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override bool NextResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NextResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.NextResult" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="oracleDataReader.NextResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1589,6 +1736,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDataReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="oracleDataReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1626,6 +1776,9 @@ public void ReadOracleData(string connectionString)
       <MemberSignature Language="C#" Value="public override int RecordsAffected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDataReader.RecordsAffected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.OracleClient.OracleDataReader.RecordsAffected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -1649,14 +1802,5 @@ public void ReadOracleData(string connectionString)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the value of a column in its native format.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

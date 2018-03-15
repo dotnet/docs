@@ -1,7 +1,10 @@
-<Type Name="HttpStaticObjectsCollection" FullName="System.Web.HttpStaticObjectsCollection">
+﻿<Type Name="HttpStaticObjectsCollection" FullName="System.Web.HttpStaticObjectsCollection">
   <TypeSignature Language="C#" Value="public sealed class HttpStaticObjectsCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpStaticObjectsCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpStaticObjectsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpStaticObjectsCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type HttpStaticObjectsCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpStaticObjectsCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public HttpStaticObjectsCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpStaticObjectsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,7 +43,12 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="httpStaticObjectsCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,7 +81,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.HttpStaticObjectsCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +115,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.HttpStaticObjectsCollection Deserialize (System.IO.BinaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.HttpStaticObjectsCollection Deserialize(class System.IO.BinaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.Deserialize(System.IO.BinaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize (reader As BinaryReader) As HttpStaticObjectsCollection" />
+      <MemberSignature Language="F#" Value="static member Deserialize : System.IO.BinaryReader -&gt; System.Web.HttpStaticObjectsCollection" Usage="System.Web.HttpStaticObjectsCollection.Deserialize reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::HttpStaticObjectsCollection ^ Deserialize(System::IO::BinaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,7 +147,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="httpStaticObjectsCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,6 +182,9 @@
       <MemberSignature Language="C#" Value="public object GetObject (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetObject(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.GetObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObject (name As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetObject : string -&gt; obj" Usage="httpStaticObjectsCollection.GetObject name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObject(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +217,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.HttpStaticObjectsCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,7 +248,13 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.HttpStaticObjectsCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -235,6 +272,9 @@
       <MemberSignature Language="C#" Value="public object this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Web.HttpStaticObjectsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +307,9 @@
       <MemberSignature Language="C#" Value="public bool NeverAccessed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NeverAccessed" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.NeverAccessed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NeverAccessed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NeverAccessed : bool" Usage="System.Web.HttpStaticObjectsCollection.NeverAccessed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NeverAccessed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -286,6 +329,9 @@
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.BinaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.BinaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpStaticObjectsCollection.Serialize(System.IO.BinaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Serialize (writer As BinaryWriter)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.IO.BinaryWriter -&gt; unit" Usage="httpStaticObjectsCollection.Serialize writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::BinaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,7 +360,13 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpStaticObjectsCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.HttpStaticObjectsCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

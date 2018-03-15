@@ -1,7 +1,10 @@
-<Type Name="WorkflowCompiler" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompiler">
+﻿<Type Name="WorkflowCompiler" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompiler">
   <TypeSignature Language="C#" Value="public sealed class WorkflowCompiler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowCompiler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompiler" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowCompiler" />
+  <TypeSignature Language="F#" Value="type WorkflowCompiler = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowCompiler sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public WorkflowCompiler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowCompiler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +71,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, params string[] files);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile(class System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, string[] files) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compile (parameters As WorkflowCompilerParameters, ParamArray files As String()) As WorkflowCompilerResults" />
+      <MemberSignature Language="F#" Value="member this.Compile : System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters * string[] -&gt; System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults" Usage="workflowCompiler.Compile (parameters, files)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Compiler::WorkflowCompilerResults ^ Compile(System::Workflow::ComponentModel::Compiler::WorkflowCompilerParameters ^ parameters, ... cli::array &lt;System::String ^&gt; ^ files);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

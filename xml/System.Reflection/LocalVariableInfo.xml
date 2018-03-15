@@ -1,7 +1,10 @@
-<Type Name="LocalVariableInfo" FullName="System.Reflection.LocalVariableInfo">
+﻿<Type Name="LocalVariableInfo" FullName="System.Reflection.LocalVariableInfo">
   <TypeSignature Language="C#" Value="public class LocalVariableInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit LocalVariableInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.LocalVariableInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalVariableInfo" />
+  <TypeSignature Language="F#" Value="type LocalVariableInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalVariableInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +73,8 @@
       <MemberSignature Language="C#" Value="protected LocalVariableInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.LocalVariableInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LocalVariableInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -107,6 +112,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPinned { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPinned" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.IsPinned" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsPinned As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPinned : bool" Usage="System.Reflection.LocalVariableInfo.IsPinned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPinned { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -148,6 +156,9 @@
       <MemberSignature Language="C#" Value="public virtual int LocalIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LocalIndex" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.LocalIndex : int" Usage="System.Reflection.LocalVariableInfo.LocalIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LocalIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -188,6 +199,9 @@
       <MemberSignature Language="C#" Value="public virtual Type LocalType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type LocalType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.LocalVariableInfo.LocalType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LocalType As Type" />
+      <MemberSignature Language="F#" Value="member this.LocalType : Type" Usage="System.Reflection.LocalVariableInfo.LocalType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ LocalType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -221,6 +235,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.LocalVariableInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="localVariableInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

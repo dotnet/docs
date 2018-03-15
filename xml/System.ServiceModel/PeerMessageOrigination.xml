@@ -1,7 +1,10 @@
-<Type Name="PeerMessageOrigination" FullName="System.ServiceModel.PeerMessageOrigination">
+﻿<Type Name="PeerMessageOrigination" FullName="System.ServiceModel.PeerMessageOrigination">
   <TypeSignature Language="C#" Value="public enum PeerMessageOrigination" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerMessageOrigination extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessageOrigination" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PeerMessageOrigination" />
+  <TypeSignature Language="F#" Value="type PeerMessageOrigination = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PeerMessageOrigination" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessageOrigination Local = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 0" Usage="System.ServiceModel.PeerMessageOrigination.Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message originated on the local computer.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="Remote" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessageOrigination Remote = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessageOrigination.Remote" />
+      <MemberSignature Language="VB.NET" Value="Remote" />
+      <MemberSignature Language="F#" Value="Remote = 1" Usage="System.ServiceModel.PeerMessageOrigination.Remote" />
+      <MemberSignature Language="C++ CLI" Value="Remote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessageOrigination</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message originated from a remote computer.</summary>
       </Docs>

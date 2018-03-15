@@ -1,7 +1,10 @@
-<Type Name="PrintRange" FullName="System.Drawing.Printing.PrintRange">
+﻿<Type Name="PrintRange" FullName="System.Drawing.Printing.PrintRange">
   <TypeSignature Language="C#" Value="public enum PrintRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrintRange extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintRange" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrintRange" />
+  <TypeSignature Language="F#" Value="type PrintRange = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrintRange" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="AllPages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange AllPages = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.AllPages" />
+      <MemberSignature Language="VB.NET" Value="AllPages" />
+      <MemberSignature Language="F#" Value="AllPages = 0" Usage="System.Drawing.Printing.PrintRange.AllPages" />
+      <MemberSignature Language="C++ CLI" Value="AllPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>All pages are printed.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="CurrentPage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange CurrentPage = int32(4194304)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.CurrentPage" />
+      <MemberSignature Language="VB.NET" Value="CurrentPage" />
+      <MemberSignature Language="F#" Value="CurrentPage = 4194304" Usage="System.Drawing.Printing.PrintRange.CurrentPage" />
+      <MemberSignature Language="C++ CLI" Value="CurrentPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
+      <MemberValue>4194304</MemberValue>
       <Docs>
         <summary>The currently displayed page is printed</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="Selection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange Selection = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.Selection" />
+      <MemberSignature Language="VB.NET" Value="Selection" />
+      <MemberSignature Language="F#" Value="Selection = 1" Usage="System.Drawing.Printing.PrintRange.Selection" />
+      <MemberSignature Language="C++ CLI" Value="Selection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The selected pages are printed.</summary>
       </Docs>
@@ -76,6 +91,9 @@
       <MemberSignature Language="C#" Value="SomePages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange SomePages = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.SomePages" />
+      <MemberSignature Language="VB.NET" Value="SomePages" />
+      <MemberSignature Language="F#" Value="SomePages = 2" Usage="System.Drawing.Printing.PrintRange.SomePages" />
+      <MemberSignature Language="C++ CLI" Value="SomePages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The pages between <see cref="P:System.Drawing.Printing.PrinterSettings.FromPage" /> and <see cref="P:System.Drawing.Printing.PrinterSettings.ToPage" /> are printed.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="StylusTip" FullName="System.Windows.Ink.StylusTip">
+﻿<Type Name="StylusTip" FullName="System.Windows.Ink.StylusTip">
   <TypeSignature Language="C#" Value="public enum StylusTip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusTip extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusTip" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StylusTip" />
+  <TypeSignature Language="F#" Value="type StylusTip = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StylusTip" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Ellipse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.StylusTip Ellipse = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.StylusTip.Ellipse" />
+      <MemberSignature Language="VB.NET" Value="Ellipse" />
+      <MemberSignature Language="F#" Value="Ellipse = 1" Usage="System.Windows.Ink.StylusTip.Ellipse" />
+      <MemberSignature Language="C++ CLI" Value="Ellipse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Ink.StylusTip</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents an ellipse-shaped tip.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Rectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.StylusTip Rectangle = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Ink.StylusTip.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Windows.Ink.StylusTip.Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Ink.StylusTip</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents a rectangle-shaped tip.</summary>
       </Docs>

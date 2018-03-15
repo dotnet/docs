@@ -1,7 +1,10 @@
-<Type Name="SystemParameter" FullName="System.Windows.Forms.SystemParameter">
+﻿<Type Name="SystemParameter" FullName="System.Windows.Forms.SystemParameter">
   <TypeSignature Language="C#" Value="public enum SystemParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SystemParameter extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SystemParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SystemParameter" />
+  <TypeSignature Language="F#" Value="type SystemParameter = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SystemParameter" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="CaretWidthMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter CaretWidthMetric = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.CaretWidthMetric" />
+      <MemberSignature Language="VB.NET" Value="CaretWidthMetric" />
+      <MemberSignature Language="F#" Value="CaretWidthMetric = 8" Usage="System.Windows.Forms.SystemParameter.CaretWidthMetric" />
+      <MemberSignature Language="C++ CLI" Value="CaretWidthMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Identifies the caret width, in pixels, for edit controls. Use the <see cref="P:System.Windows.Forms.SystemInformation.CaretWidth" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETCARETWIDTH and SPI_SETCARETWIDTH.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="DropShadow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter DropShadow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.DropShadow" />
+      <MemberSignature Language="VB.NET" Value="DropShadow" />
+      <MemberSignature Language="F#" Value="DropShadow = 0" Usage="System.Windows.Forms.SystemParameter.DropShadow" />
+      <MemberSignature Language="C++ CLI" Value="DropShadow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Identifies the drop shadow effect. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsDropShadowEnabled" /> property to determine if this effect is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETDROPSHADOW and SPI_SETDROPSHADOW.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="FlatMenu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter FlatMenu = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.FlatMenu" />
+      <MemberSignature Language="VB.NET" Value="FlatMenu" />
+      <MemberSignature Language="F#" Value="FlatMenu = 1" Usage="System.Windows.Forms.SystemParameter.FlatMenu" />
+      <MemberSignature Language="C++ CLI" Value="FlatMenu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Identifies the flat menu appearance feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsFlatMenuEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETFLATMENU and SPI_SETFLATMENU.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="FontSmoothingContrastMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter FontSmoothingContrastMetric = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.FontSmoothingContrastMetric" />
+      <MemberSignature Language="VB.NET" Value="FontSmoothingContrastMetric" />
+      <MemberSignature Language="F#" Value="FontSmoothingContrastMetric = 2" Usage="System.Windows.Forms.SystemParameter.FontSmoothingContrastMetric" />
+      <MemberSignature Language="C++ CLI" Value="FontSmoothingContrastMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Identifies the contrast value used in ClearType font smoothing. Use the <see cref="P:System.Windows.Forms.SystemInformation.FontSmoothingContrast" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETFONTSMOOTHINGCONTRAST and SPI_SETFONTSMOOTHINGCONTRAST.</summary>
       </Docs>
@@ -98,6 +117,9 @@
       <MemberSignature Language="C#" Value="FontSmoothingTypeMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter FontSmoothingTypeMetric = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.FontSmoothingTypeMetric" />
+      <MemberSignature Language="VB.NET" Value="FontSmoothingTypeMetric" />
+      <MemberSignature Language="F#" Value="FontSmoothingTypeMetric = 3" Usage="System.Windows.Forms.SystemParameter.FontSmoothingTypeMetric" />
+      <MemberSignature Language="C++ CLI" Value="FontSmoothingTypeMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Identifies the type of font smoothing. Use the <see cref="P:System.Windows.Forms.SystemInformation.FontSmoothingType" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETFONTSMOOTHINGTYPE and SPI_SETFONTSMOOTHINGTYPE.</summary>
       </Docs>
@@ -114,6 +137,9 @@
       <MemberSignature Language="C#" Value="HorizontalFocusThicknessMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter HorizontalFocusThicknessMetric = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.HorizontalFocusThicknessMetric" />
+      <MemberSignature Language="VB.NET" Value="HorizontalFocusThicknessMetric" />
+      <MemberSignature Language="F#" Value="HorizontalFocusThicknessMetric = 10" Usage="System.Windows.Forms.SystemParameter.HorizontalFocusThicknessMetric" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalFocusThicknessMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Identifies the thickness of the left and right edges of the system focus rectangle. Use the <see cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameter is SM_CXFOCUSBORDER.</summary>
       </Docs>
@@ -130,6 +157,9 @@
       <MemberSignature Language="C#" Value="MenuFadeEnabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter MenuFadeEnabled = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.MenuFadeEnabled" />
+      <MemberSignature Language="VB.NET" Value="MenuFadeEnabled" />
+      <MemberSignature Language="F#" Value="MenuFadeEnabled = 4" Usage="System.Windows.Forms.SystemParameter.MenuFadeEnabled" />
+      <MemberSignature Language="C++ CLI" Value="MenuFadeEnabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Identifies the menu fade animation feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsMenuFadeEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETMENUFADE and SPI_SETMENUFADE.</summary>
       </Docs>
@@ -146,6 +177,9 @@
       <MemberSignature Language="C#" Value="SelectionFade" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter SelectionFade = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.SelectionFade" />
+      <MemberSignature Language="VB.NET" Value="SelectionFade" />
+      <MemberSignature Language="F#" Value="SelectionFade = 5" Usage="System.Windows.Forms.SystemParameter.SelectionFade" />
+      <MemberSignature Language="C++ CLI" Value="SelectionFade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Identifies the selection fade effect. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETSELECTIONFADE and SPI_SETSELECTIONFADE.</summary>
       </Docs>
@@ -162,6 +197,9 @@
       <MemberSignature Language="C#" Value="ToolTipAnimationMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter ToolTipAnimationMetric = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.ToolTipAnimationMetric" />
+      <MemberSignature Language="VB.NET" Value="ToolTipAnimationMetric" />
+      <MemberSignature Language="F#" Value="ToolTipAnimationMetric = 6" Usage="System.Windows.Forms.SystemParameter.ToolTipAnimationMetric" />
+      <MemberSignature Language="C++ CLI" Value="ToolTipAnimationMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Identifies the ToolTip animation feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETTOOLTIPANIMATION and SPI_SETTOOLTIPANIMATION.</summary>
       </Docs>
@@ -178,6 +217,9 @@
       <MemberSignature Language="C#" Value="UIEffects" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter UIEffects = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.UIEffects" />
+      <MemberSignature Language="VB.NET" Value="UIEffects" />
+      <MemberSignature Language="F#" Value="UIEffects = 7" Usage="System.Windows.Forms.SystemParameter.UIEffects" />
+      <MemberSignature Language="C++ CLI" Value="UIEffects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +228,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Identifies the user interface (UI) effects feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.UIEffectsEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETUIEFFECTS and SPI_SETUIEFFECTS.</summary>
       </Docs>
@@ -194,6 +237,9 @@
       <MemberSignature Language="C#" Value="VerticalFocusThicknessMetric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SystemParameter VerticalFocusThicknessMetric = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SystemParameter.VerticalFocusThicknessMetric" />
+      <MemberSignature Language="VB.NET" Value="VerticalFocusThicknessMetric" />
+      <MemberSignature Language="F#" Value="VerticalFocusThicknessMetric = 9" Usage="System.Windows.Forms.SystemParameter.VerticalFocusThicknessMetric" />
+      <MemberSignature Language="C++ CLI" Value="VerticalFocusThicknessMetric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -202,6 +248,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SystemParameter</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Identifies the thickness of the top and bottom edges of the system focus rectangle. Use the <see cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameter is SM_CYFOCUSBORDER.</summary>
       </Docs>

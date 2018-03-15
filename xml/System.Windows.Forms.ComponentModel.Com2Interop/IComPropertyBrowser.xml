@@ -1,7 +1,10 @@
-<Type Name="IComPropertyBrowser" FullName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser">
+﻿<Type Name="IComPropertyBrowser" FullName="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser">
   <TypeSignature Language="C#" Value="public interface IComPropertyBrowser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComPropertyBrowser" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComPropertyBrowser" />
+  <TypeSignature Language="F#" Value="type IComPropertyBrowser = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComPropertyBrowser" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,9 +17,12 @@
   </Docs>
   <Members>
     <Member MemberName="ComComponentNameChanged">
-      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.ComponentRenameEventHandler ComComponentNameChanged;" />
+      <MemberSignature Language="C#" Value="event System.ComponentModel.Design.ComponentRenameEventHandler ComComponentNameChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.ComponentRenameEventHandler ComComponentNameChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.ComComponentNameChanged" />
+      <MemberSignature Language="VB.NET" Value="Event ComComponentNameChanged As ComponentRenameEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ComComponentNameChanged : System.ComponentModel.Design.ComponentRenameEventHandler " Usage="member this.ComComponentNameChanged : System.ComponentModel.Design.ComponentRenameEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::Design::ComponentRenameEventHandler ^ ComComponentNameChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public void DropDownDone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DropDownDone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.DropDownDone" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DropDownDone ()" />
+      <MemberSignature Language="F#" Value="abstract member DropDownDone : unit -&gt; unit" Usage="iComPropertyBrowser.DropDownDone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DropDownDone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public bool EnsurePendingChangesCommitted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EnsurePendingChangesCommitted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.EnsurePendingChangesCommitted" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnsurePendingChangesCommitted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EnsurePendingChangesCommitted : unit -&gt; bool" Usage="iComPropertyBrowser.EnsurePendingChangesCommitted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EnsurePendingChangesCommitted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public void HandleF4 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void HandleF4() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.HandleF4" />
+      <MemberSignature Language="VB.NET" Value="Public Sub HandleF4 ()" />
+      <MemberSignature Language="F#" Value="abstract member HandleF4 : unit -&gt; unit" Usage="iComPropertyBrowser.HandleF4 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void HandleF4();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="public bool InPropertySet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InPropertySet" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InPropertySet As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InPropertySet : bool" Usage="System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.InPropertySet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InPropertySet { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +139,9 @@
       <MemberSignature Language="C#" Value="public void LoadState (Microsoft.Win32.RegistryKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadState(class Microsoft.Win32.RegistryKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.LoadState(Microsoft.Win32.RegistryKey)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadState (key As RegistryKey)" />
+      <MemberSignature Language="F#" Value="abstract member LoadState : Microsoft.Win32.RegistryKey -&gt; unit" Usage="iComPropertyBrowser.LoadState key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadState(Microsoft::Win32::RegistryKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +171,9 @@
       <MemberSignature Language="C#" Value="public void SaveState (Microsoft.Win32.RegistryKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveState(class Microsoft.Win32.RegistryKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComponentModel.Com2Interop.IComPropertyBrowser.SaveState(Microsoft.Win32.RegistryKey)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveState (key As RegistryKey)" />
+      <MemberSignature Language="F#" Value="abstract member SaveState : Microsoft.Win32.RegistryKey -&gt; unit" Usage="iComPropertyBrowser.SaveState key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveState(Microsoft::Win32::RegistryKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

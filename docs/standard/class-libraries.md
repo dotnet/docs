@@ -57,7 +57,7 @@ The following platforms support .NET Standard libraries:
 * Windows Phone
 * Windows Phone Silverlight
 
-For information about which .NET Standard version is supported by which platform version please have a look at the [.NET implementation support table](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
+For more information, see the [.NET Standard](net-standard.md) topic.
 
 ### Mono Class Libraries
 

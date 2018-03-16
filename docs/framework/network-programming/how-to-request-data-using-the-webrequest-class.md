@@ -88,7 +88,7 @@ The following procedure describes the steps used to request a resource from a se
 5.  To get the stream containing response data sent by the server, use the <xref:System.Net.HttpWebResponse.GetResponseStream%2A> method of the **WebResponse**.  
   
     ```csharp  
-    Stream dataStream = response.GetResponseStream ();  
+    Stream dataStream = response.GetResponseStream();  
     ```  
   
     ```vb  
@@ -117,28 +117,28 @@ namespace Examples.System.Net
 {  
     public class WebRequestGetExample  
     {  
-        public static void Main ()  
+        public static void Main()  
         {  
             // Create a request for the URL.   
-            WebRequest request = WebRequest.Create (  
+            WebRequest request = WebRequest.Create(  
               "http://www.contoso.com/default.html");  
             // If required by the server, set the credentials.  
             request.Credentials = CredentialCache.DefaultCredentials;  
             // Get the response.  
-            WebResponse response = request.GetResponse ();  
+            WebResponse response = request.GetResponse();  
             // Display the status.  
             Console.WriteLine (((HttpWebResponse)response).StatusDescription);  
             // Get the stream containing content returned by the server.  
-            Stream dataStream = response.GetResponseStream ();  
+            Stream dataStream = response.GetResponseStream();  
             // Open the stream using a StreamReader for easy access.  
-            StreamReader reader = new StreamReader (dataStream);  
+            StreamReader reader = new StreamReader(dataStream);  
             // Read the content.  
-            string responseFromServer = reader.ReadToEnd ();  
+            string responseFromServer = reader.ReadToEnd();  
             // Display the content.  
-            Console.WriteLine (responseFromServer);  
+            Console.WriteLine(responseFromServer);  
             // Clean up the streams and the response.  
-            reader.Close ();  
-            response.Close ();  
+            reader.Close();  
+            response.Close();  
         }  
     }  
 }  

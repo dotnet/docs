@@ -54,7 +54,7 @@ namespace HowToStrings
             bool areEqual = String.Equals(root, root2, StringComparison.Ordinal);
             Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
             areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal staticignore case: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
+            Console.WriteLine($"Ordinal static ignore case: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
             // </Snippet3>
         }
         private static void ReferenceEqualAndInterning()
@@ -232,21 +232,17 @@ namespace HowToStrings
             Console.WriteLine($"First sentence is <{first}>");
             Console.WriteLine($"Second sentence is <{second}>");
 
-            System.Threading.Thread thread = System.Threading.Thread.CurrentThread;
-            System.Globalization.CultureInfo originalCulture = thread.CurrentCulture;
-
-            thread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+            var en = new System.Globalization.CultureInfo("en-US");
 
             // For culture-sensitive comparisons, use the String.Compare 
             // overload that takes a StringComparison value.
-            int i = String.Compare(first, second, StringComparison.CurrentCulture);
-            Console.WriteLine($"Comparing in {originalCulture.EnglishName} returns {i}.");
+            int i = String.Compare(first, second, en, System.Globalization.CompareOptions.IgnoreNonSpace);
+            Console.WriteLine($"Comparing in {en.Name} returns {i}.");
 
-            thread.CurrentCulture = new System.Globalization.CultureInfo("de-DE");
-            i = String.Compare(first, second, StringComparison.CurrentCulture);
-            Console.WriteLine($"Comparing in {thread.CurrentCulture.Name} returns {i}.");
+            var de = new System.Globalization.CultureInfo("de-DE");
+            i = String.Compare(first, second, de, System.Globalization.CompareOptions.IgnoreNonSpace);
+            Console.WriteLine($"Comparing in {de.Name} returns {i}.");
 
-            thread.CurrentCulture = originalCulture;
             bool b = String.Equals(first, second, StringComparison.CurrentCulture);
             Console.WriteLine($"The two strings {(b == true ? "are" : "are not")} equal.");
             //</snippet9>

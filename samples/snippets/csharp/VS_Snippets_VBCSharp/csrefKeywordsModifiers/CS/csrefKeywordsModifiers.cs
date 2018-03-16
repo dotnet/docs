@@ -276,7 +276,7 @@ namespace csrefKeywordsModifiers
             public string name;
 
             // Basepay is defined as protected, so that it may be 
-            // accessed only by this class and derrived classes.
+            // accessed only by this class and derived classes.
             protected decimal basepay;
 
             // Constructor to set the name and basepay values.

@@ -18,14 +18,14 @@ ms.author: "wiwagn"
 # stackalloc (C# Reference)
 The `stackalloc` keyword is used in an unsafe code context to allocate a block of memory on the stack.  
   
-```  
+```csharp  
 int* block = stackalloc int[100];  
 ```  
   
 ## Remarks  
  The keyword is valid only in local variable initializers. The following code causes compiler errors.  
   
-```  
+```csharp  
 int* block;  
 // The following assignment statement causes compiler errors. You  
 // can use stackalloc only when declaring and initializing a local   

@@ -38,7 +38,7 @@ We recommend that you:
 - Do not specify the TLS version. Configure your code to let the OS decide on the TLS version.
 - Perform a thorough code audit to verify you're not specifying a TLS or SSL version.
 
-When your app lets the OS to choose the TLS version:
+When your app lets the OS choose the TLS version:
 
 - It automatically takes advantage of new protocols added in the future, such as TLS 1.3.
 - The OS blocks protocols that are discovered not to be secure.

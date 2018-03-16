@@ -416,7 +416,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The User tracking location is a way to filter user tracked data. The user can filter by the type of the user tracked data by specifying the <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentType" /> or <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentTypeName" />. Setting the <see langword="MatchDerrivedArgumentTypes" /><see langword="Boolean" /> value to <see langword="true" /> specifies that the user tracked data can be of type ArgumentType/ArgumentTypeName or a type derived from the ArgumentType/ArgumentTypeName.</summary>
+        <summary>The User tracking location is a way to filter user tracked data. The user can filter by the type of the user tracked data by specifying the <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentType" /> or <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentTypeName" />. Setting the <see langword="MatchDerivedArgumentTypes" /> to <see langword="true" /> specifies that the user tracked data can be of type ArgumentType/ArgumentTypeName or a type derived from the ArgumentType/ArgumentTypeName.</summary>
         <value>
           <see langword="true" /> if user data derived from the type of the user data specified by <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentType" /> or <see cref="P:System.Workflow.Runtime.Tracking.UserTrackingLocation.ArgumentTypeName" /> should be tracked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>

@@ -51,11 +51,16 @@ The .NET Standard does not expose the entire functionality of the .NET Framework
 
 The following platforms support .NET Standard libraries:
 
-*   .NET Core
-*   ASP.NET Core
-*   .NET Framework 4.5+
-*   Windows Store Apps
-*   Windows Phone 8+
+* .NET Core
+* .NET Framework
+* Mono
+* Xamarin.iOS, Xamarin.Mac, Xamarin.Android
+* Universal Windows Platform (UWP)
+* Windows
+* Windows Phone
+* Windows Phone Silverlight
+
+For more information, see the [.NET Standard](net-standard.md) topic.
 
 ### Mono Class Libraries
 

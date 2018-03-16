@@ -79,7 +79,7 @@ C# provides many operators, which are symbols that specify which operations (mat
   
  [++x](../../../csharp/language-reference/operators/increment-operator.md) – prefix increment.  Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).  
   
- [--x](../../../csharp/language-reference/operators/decrement-operator.md) – prefix decrement.  Returns the value of x after updating the storage location with the value of x that is one less (typically adds the integer 1).  
+ [--x](../../../csharp/language-reference/operators/decrement-operator.md) – prefix decrement.  Returns the value of x after updating the storage location with the value of x that is one less (typically subtracts the integer 1).  
   
  [(T)x](../../../csharp/language-reference/operators/invocation-operator.md) – type casting.  
   

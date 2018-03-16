@@ -1,7 +1,9 @@
-<Type Name="RadioButtonState" FullName="System.Windows.Forms.VisualStyles.RadioButtonState">
+﻿<Type Name="RadioButtonState" FullName="System.Windows.Forms.VisualStyles.RadioButtonState">
   <TypeSignature Language="C#" Value="public enum RadioButtonState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RadioButtonState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.RadioButtonState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RadioButtonState" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RadioButtonState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="CheckedDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedDisabled = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedDisabled" />
+      <MemberSignature Language="VB.NET" Value="CheckedDisabled" />
+      <MemberSignature Language="C++ CLI" Value="CheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The option button is checked and disabled.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="CheckedHot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedHot = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedHot" />
+      <MemberSignature Language="VB.NET" Value="CheckedHot" />
+      <MemberSignature Language="C++ CLI" Value="CheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The option button is checked and hot.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="CheckedNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedNormal = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedNormal" />
+      <MemberSignature Language="VB.NET" Value="CheckedNormal" />
+      <MemberSignature Language="C++ CLI" Value="CheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The option button is checked and normal.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="CheckedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedPressed = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedPressed" />
+      <MemberSignature Language="VB.NET" Value="CheckedPressed" />
+      <MemberSignature Language="C++ CLI" Value="CheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The option button is checked and pressed.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="UncheckedDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedDisabled = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedDisabled" />
+      <MemberSignature Language="VB.NET" Value="UncheckedDisabled" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The option button is unchecked and disabled.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="UncheckedHot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedHot = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedHot" />
+      <MemberSignature Language="VB.NET" Value="UncheckedHot" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedHot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The option button is unchecked and hot.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="UncheckedNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedNormal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedNormal" />
+      <MemberSignature Language="VB.NET" Value="UncheckedNormal" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The option button is unchecked and normal.</summary>
       </Docs>
@@ -137,6 +160,8 @@
       <MemberSignature Language="C#" Value="UncheckedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedPressed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedPressed" />
+      <MemberSignature Language="VB.NET" Value="UncheckedPressed" />
+      <MemberSignature Language="C++ CLI" Value="UncheckedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The option button is unchecked and pressed.</summary>
       </Docs>

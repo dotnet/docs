@@ -1,7 +1,9 @@
-<Type Name="OraclePermissionAttribute" FullName="System.Data.OracleClient.OraclePermissionAttribute">
+﻿<Type Name="OraclePermissionAttribute" FullName="System.Data.OracleClient.OraclePermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class OraclePermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OraclePermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OraclePermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OraclePermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OraclePermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Obsolete("OraclePermissionAttribute has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)</AttributeName>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public OraclePermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OraclePermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool AllowBlankPassword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowBlankPassword" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.AllowBlankPassword" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowBlankPassword As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowBlankPassword { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public System.Data.KeyRestrictionBehavior KeyRestrictionBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.KeyRestrictionBehavior KeyRestrictionBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictionBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictionBehavior As KeyRestrictionBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::KeyRestrictionBehavior KeyRestrictionBehavior { System::Data::KeyRestrictionBehavior get(); void set(System::Data::KeyRestrictionBehavior value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -157,6 +169,8 @@
       <MemberSignature Language="C#" Value="public string KeyRestrictions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyRestrictions" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OraclePermissionAttribute.KeyRestrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyRestrictions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyRestrictions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -190,6 +204,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeConnectionString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeConnectionString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.ShouldSerializeConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeConnectionString () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeConnectionString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -219,6 +235,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeKeyRestrictions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeKeyRestrictions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OraclePermissionAttribute.ShouldSerializeKeyRestrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyRestrictions () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeKeyRestrictions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>

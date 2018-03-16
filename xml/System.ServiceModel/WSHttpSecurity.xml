@@ -1,7 +1,9 @@
-<Type Name="WSHttpSecurity" FullName="System.ServiceModel.WSHttpSecurity">
+﻿<Type Name="WSHttpSecurity" FullName="System.ServiceModel.WSHttpSecurity">
   <TypeSignature Language="C#" Value="public sealed class WSHttpSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WSHttpSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSHttpSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSHttpSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public WSHttpSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.NonDualMessageSecurityOverHttp Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.NonDualMessageSecurityOverHttp Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpSecurity.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As NonDualMessageSecurityOverHttp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NonDualMessageSecurityOverHttp ^ Message { System::ServiceModel::NonDualMessageSecurityOverHttp ^ get(); void set(System::ServiceModel::NonDualMessageSecurityOverHttp ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.SecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.SecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpSecurity.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As SecurityMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SecurityMode Mode { System::ServiceModel::SecurityMode get(); void set(System::ServiceModel::SecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpSecurity.ShouldSerializeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessage () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +138,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpSecurity.ShouldSerializeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMode () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +165,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransport ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransport() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpSecurity.ShouldSerializeTransport" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransport () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransport();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -178,6 +192,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HttpTransportSecurity Transport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.HttpTransportSecurity Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpSecurity.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transport As HttpTransportSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpTransportSecurity ^ Transport { System::ServiceModel::HttpTransportSecurity ^ get(); void set(System::ServiceModel::HttpTransportSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

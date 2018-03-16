@@ -1,7 +1,9 @@
-<Type Name="DesignerHierarchicalDataSourceView" FullName="System.Web.UI.Design.DesignerHierarchicalDataSourceView">
+﻿<Type Name="DesignerHierarchicalDataSourceView" FullName="System.Web.UI.Design.DesignerHierarchicalDataSourceView">
   <TypeSignature Language="C#" Value="public abstract class DesignerHierarchicalDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerHierarchicalDataSourceView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerHierarchicalDataSourceView abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected DesignerHierarchicalDataSourceView (System.Web.UI.Design.IHierarchicalDataSourceDesigner owner, string viewPath);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.IHierarchicalDataSourceDesigner owner, string viewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerHierarchicalDataSourceView.#ctor(System.Web.UI.Design.IHierarchicalDataSourceDesigner,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As IHierarchicalDataSourceDesigner, viewPath As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerHierarchicalDataSourceView(System::Web::UI::Design::IHierarchicalDataSourceDesigner ^ owner, System::String ^ viewPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IHierarchicalDataSourceDesigner DataSourceDesigner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IHierarchicalDataSourceDesigner DataSourceDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerHierarchicalDataSourceView.DataSourceDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceDesigner As IHierarchicalDataSourceDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IHierarchicalDataSourceDesigner ^ DataSourceDesigner { System::Web::UI::Design::IHierarchicalDataSourceDesigner ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.IHierarchicalEnumerable GetDesignTimeData (out bool isSampleData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData([out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeData (ByRef isSampleData As Boolean) As IHierarchicalEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::IHierarchicalEnumerable ^ GetDesignTimeData([Runtime::InteropServices::Out] bool % isSampleData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -111,6 +119,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +147,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.IDataSourceSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerHierarchicalDataSourceView.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Schema As IDataSourceSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceSchema ^ Schema { System::Web::UI::Design::IDataSourceSchema ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

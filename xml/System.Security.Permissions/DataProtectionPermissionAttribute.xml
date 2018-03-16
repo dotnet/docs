@@ -1,7 +1,9 @@
-<Type Name="DataProtectionPermissionAttribute" FullName="System.Security.Permissions.DataProtectionPermissionAttribute">
+﻿<Type Name="DataProtectionPermissionAttribute" FullName="System.Security.Permissions.DataProtectionPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class DataProtectionPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DataProtectionPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.DataProtectionPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataProtectionPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataProtectionPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public DataProtectionPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataProtectionPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.DataProtectionPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.DataProtectionPermissionFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.DataProtectionPermissionFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.DataProtectionPermissionAttribute.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As DataProtectionPermissionFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::DataProtectionPermissionFlags Flags { System::Security::Permissions::DataProtectionPermissionFlags get(); void set(System::Security::Permissions::DataProtectionPermissionFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public bool ProtectData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ProtectData" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.DataProtectionPermissionAttribute.ProtectData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProtectData { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="public bool ProtectMemory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ProtectMemory" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.DataProtectionPermissionAttribute.ProtectMemory" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectMemory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProtectMemory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -149,6 +161,8 @@
       <MemberSignature Language="C#" Value="public bool UnprotectData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnprotectData" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.DataProtectionPermissionAttribute.UnprotectData" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnprotectData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnprotectData { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -175,6 +189,8 @@
       <MemberSignature Language="C#" Value="public bool UnprotectMemory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnprotectMemory" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.DataProtectionPermissionAttribute.UnprotectMemory" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnprotectMemory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnprotectMemory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

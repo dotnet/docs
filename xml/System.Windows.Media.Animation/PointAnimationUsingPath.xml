@@ -1,7 +1,9 @@
-<Type Name="PointAnimationUsingPath" FullName="System.Windows.Media.Animation.PointAnimationUsingPath">
+﻿<Type Name="PointAnimationUsingPath" FullName="System.Windows.Media.Animation.PointAnimationUsingPath">
   <TypeSignature Language="C#" Value="public class PointAnimationUsingPath : System.Windows.Media.Animation.PointAnimationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PointAnimationUsingPath extends System.Windows.Media.Animation.PointAnimationBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PointAnimationUsingPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class PointAnimationUsingPath&#xA;Inherits PointAnimationBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PointAnimationUsingPath : System::Windows::Media::Animation::PointAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public PointAnimationUsingPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationUsingPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PointAnimationUsingPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.PointAnimationUsingPath Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.PointAnimationUsingPath Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationUsingPath.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As PointAnimationUsingPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::PointAnimationUsingPath ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationUsingPath.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +111,7 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Point GetCurrentValueCore (System.Windows.Point defaultOriginValue, System.Windows.Point defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetCurrentValueCore(valuetype System.Windows.Point defaultOriginValue, valuetype System.Windows.Point defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationUsingPath.GetCurrentValueCore(System.Windows.Point,System.Windows.Point,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetCurrentValueCore(System::Windows::Point defaultOriginValue, System::Windows::Point defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +148,8 @@
       <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointAnimationUsingPath.IsAdditive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +185,8 @@
       <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointAnimationUsingPath.IsCumulative" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +224,8 @@
       <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PointAnimationUsingPath.OnChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -233,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry PathGeometry { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.PathGeometry PathGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.PointAnimationUsingPath.PathGeometry" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathGeometry As PathGeometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::PathGeometry ^ PathGeometry { System::Windows::Media::PathGeometry ^ get(); void set(System::Windows::Media::PathGeometry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +284,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PathGeometryProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PathGeometryProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.PointAnimationUsingPath.PathGeometryProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PathGeometryProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PathGeometryProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

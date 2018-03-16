@@ -1,7 +1,9 @@
-<Type Name="XObject" FullName="System.Xml.Linq.XObject">
+﻿<Type Name="XObject" FullName="System.Xml.Linq.XObject">
   <TypeSignature Language="C#" Value="public abstract class XObject : System.Xml.IXmlLineInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XObject extends System.Object implements class System.Xml.IXmlLineInfo" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XObject&#xA;Implements IXmlLineInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XObject abstract : System::Xml::IXmlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public void AddAnnotation (object annotation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAnnotation(object annotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.AddAnnotation(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAnnotation (annotation As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAnnotation(System::Object ^ annotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -145,6 +149,7 @@ T1
       <MemberSignature Language="C#" Value="public object Annotation (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Annotation(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotation(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Annotation(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -243,6 +248,8 @@ T1
       <MemberSignature Language="C#" Value="public T Annotation&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Annotation&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotation``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Annotation(Of T As Class) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T Annotation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -345,6 +352,7 @@ T1
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; Annotations (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Annotations(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotations(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ Annotations(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -473,6 +481,8 @@ def
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;T&gt; Annotations&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; Annotations&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotations``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Annotations(Of T As Class) () As IEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class System::Collections::Generic::IEnumerable&lt;T&gt; ^ Annotations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -601,6 +611,8 @@ def
       <MemberSignature Language="C#" Value="public string BaseUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseUri As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseUri { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -730,6 +742,8 @@ PurchaseOrder       2    2
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Xml.Linq.XObjectChangeEventArgs&gt; Changed" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Linq.XObject.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler(Of XObjectChangeEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Xml::Linq::XObjectChangeEventArgs ^&gt; ^ Changed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -949,6 +963,8 @@ Total:308
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; Changing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Xml.Linq.XObjectChangeEventArgs&gt; Changing" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Linq.XObject.Changing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changing As EventHandler(Of XObjectChangeEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Xml::Linq::XObjectChangeEventArgs ^&gt; ^ Changing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1055,6 +1071,8 @@ Changed event raised
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XDocument Document { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.Document" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As XDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDocument ^ Document { System::Xml::Linq::XDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1121,6 +1139,8 @@ Console.WriteLine(documentOfChild.FirstNode)
       <MemberSignature Language="C#" Value="public abstract System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1223,6 +1243,8 @@ Text
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XElement Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XElement Parent" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As XElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XElement ^ Parent { System::Xml::Linq::XElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1297,6 +1319,7 @@ Root
       <MemberSignature Language="C#" Value="public void RemoveAnnotations (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAnnotations(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.RemoveAnnotations(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAnnotations(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1402,6 +1425,8 @@ Count after removing: 2
       <MemberSignature Language="C#" Value="public void RemoveAnnotations&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAnnotations&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.RemoveAnnotations``1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAnnotations(Of T As Class) ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void RemoveAnnotations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1510,7 +1535,12 @@ Count after removing: 2
       <MemberSignature Language="C#" Value="bool IXmlLineInfo.HasLineInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Xml.IXmlLineInfo.HasLineInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#HasLineInfo" />
+      <MemberSignature Language="VB.NET" Value="Function HasLineInfo () As Boolean Implements IXmlLineInfo.HasLineInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Xml.IXmlLineInfo.HasLineInfo() = System::Xml::IXmlLineInfo::HasLineInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlLineInfo.HasLineInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1646,7 +1676,12 @@ Root                1    2
       <MemberSignature Language="C#" Value="int System.Xml.IXmlLineInfo.LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LineNumber" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IXmlLineInfo.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1778,7 +1813,12 @@ Root                1    2
       <MemberSignature Language="C#" Value="int System.Xml.IXmlLineInfo.LinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LinePosition" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property LinePosition As Integer Implements IXmlLineInfo.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="AutomationInteropProvider" FullName="System.Windows.Automation.Provider.AutomationInteropProvider">
+﻿<Type Name="AutomationInteropProvider" FullName="System.Windows.Automation.Provider.AutomationInteropProvider">
   <TypeSignature Language="C#" Value="public static class AutomationInteropProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AutomationInteropProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.AutomationInteropProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class AutomationInteropProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AutomationInteropProvider abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public const int AppendRuntimeId = 3;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 AppendRuntimeId = (3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.AutomationInteropProvider.AppendRuntimeId" />
+      <MemberSignature Language="VB.NET" Value="Public Const AppendRuntimeId As Integer  = 3" />
+      <MemberSignature Language="C++ CLI" Value="public: int AppendRuntimeId = 3;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static bool ClientsAreListening { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool ClientsAreListening" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.AutomationInteropProvider.ClientsAreListening" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ClientsAreListening As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ClientsAreListening { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Automation.Provider.IRawElementProviderSimple HostProviderFromHandle (IntPtr hwnd);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.Provider.IRawElementProviderSimple HostProviderFromHandle(native int hwnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.AutomationInteropProvider.HostProviderFromHandle(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HostProviderFromHandle (hwnd As IntPtr) As IRawElementProviderSimple" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::Provider::IRawElementProviderSimple ^ HostProviderFromHandle(IntPtr hwnd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -114,6 +122,8 @@
       <MemberSignature Language="C#" Value="public const int InvalidateLimit = 20;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 InvalidateLimit = (20)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.AutomationInteropProvider.InvalidateLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Const InvalidateLimit As Integer  = 20" />
+      <MemberSignature Language="C++ CLI" Value="public: int InvalidateLimit = 20;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public const int ItemsInvalidateLimit = 5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 ItemsInvalidateLimit = (5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.AutomationInteropProvider.ItemsInvalidateLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Const ItemsInvalidateLimit As Integer  = 5" />
+      <MemberSignature Language="C++ CLI" Value="public: int ItemsInvalidateLimit = 5;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -157,6 +169,8 @@
       <MemberSignature Language="C#" Value="public static void RaiseAutomationEvent (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.Provider.IRawElementProviderSimple provider, System.Windows.Automation.AutomationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseAutomationEvent(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.Provider.IRawElementProviderSimple provider, class System.Windows.Automation.AutomationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationEvent(System.Windows.Automation.AutomationEvent,System.Windows.Automation.Provider.IRawElementProviderSimple,System.Windows.Automation.AutomationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RaiseAutomationEvent (eventId As AutomationEvent, provider As IRawElementProviderSimple, e As AutomationEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseAutomationEvent(System::Windows::Automation::AutomationEvent ^ eventId, System::Windows::Automation::Provider::IRawElementProviderSimple ^ provider, System::Windows::Automation::AutomationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -195,6 +209,8 @@
       <MemberSignature Language="C#" Value="public static void RaiseAutomationPropertyChangedEvent (System.Windows.Automation.Provider.IRawElementProviderSimple element, System.Windows.Automation.AutomationPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseAutomationPropertyChangedEvent(class System.Windows.Automation.Provider.IRawElementProviderSimple element, class System.Windows.Automation.AutomationPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseAutomationPropertyChangedEvent(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Windows.Automation.AutomationPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RaiseAutomationPropertyChangedEvent (element As IRawElementProviderSimple, e As AutomationPropertyChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseAutomationPropertyChangedEvent(System::Windows::Automation::Provider::IRawElementProviderSimple ^ element, System::Windows::Automation::AutomationPropertyChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -226,6 +242,8 @@
       <MemberSignature Language="C#" Value="public static void RaiseStructureChangedEvent (System.Windows.Automation.Provider.IRawElementProviderSimple provider, System.Windows.Automation.StructureChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RaiseStructureChangedEvent(class System.Windows.Automation.Provider.IRawElementProviderSimple provider, class System.Windows.Automation.StructureChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.AutomationInteropProvider.RaiseStructureChangedEvent(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Windows.Automation.StructureChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RaiseStructureChangedEvent (provider As IRawElementProviderSimple, e As StructureChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RaiseStructureChangedEvent(System::Windows::Automation::Provider::IRawElementProviderSimple ^ provider, System::Windows::Automation::StructureChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -269,6 +287,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ReturnRawElementProvider (IntPtr hwnd, IntPtr wParam, IntPtr lParam, System.Windows.Automation.Provider.IRawElementProviderSimple el);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ReturnRawElementProvider(native int hwnd, native int wParam, native int lParam, class System.Windows.Automation.Provider.IRawElementProviderSimple el) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.AutomationInteropProvider.ReturnRawElementProvider(System.IntPtr,System.IntPtr,System.IntPtr,System.Windows.Automation.Provider.IRawElementProviderSimple)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReturnRawElementProvider (hwnd As IntPtr, wParam As IntPtr, lParam As IntPtr, el As IRawElementProviderSimple) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ReturnRawElementProvider(IntPtr hwnd, IntPtr wParam, IntPtr lParam, System::Windows::Automation::Provider::IRawElementProviderSimple ^ el);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -305,6 +325,8 @@
       <MemberSignature Language="C#" Value="public const int RootObjectId = -25;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 RootObjectId = (-25)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Provider.AutomationInteropProvider.RootObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public Const RootObjectId As Integer  = -25" />
+      <MemberSignature Language="C++ CLI" Value="public: int RootObjectId = -25;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

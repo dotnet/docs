@@ -1,7 +1,9 @@
-<Type Name="DBID" FullName="Microsoft.VisualBasic.Compatibility.VB6.DBID">
+﻿<Type Name="DBID" FullName="Microsoft.VisualBasic.Compatibility.VB6.DBID">
   <TypeSignature Language="C#" Value="public struct DBID" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed DBID extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DBID" />
+  <TypeSignature Language="C++ CLI" Value="public value class DBID" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM dbkind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM dbkind" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.dbkind" />
+      <MemberSignature Language="VB.NET" Value="Public dbkind As DBKINDENUM " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::DBKINDENUM dbkind;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.UGUID uGuid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.UGUID uGuid" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uGuid" />
+      <MemberSignature Language="VB.NET" Value="Public uGuid As UGUID " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::UGUID uGuid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.UNAME uName;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.UNAME uName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uName" />
+      <MemberSignature Language="VB.NET" Value="Public uName As UNAME " />
+      <MemberSignature Language="C++ CLI" Value="public: Microsoft::VisualBasic::Compatibility::VB6::UNAME uName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

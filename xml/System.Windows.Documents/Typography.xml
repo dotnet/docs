@@ -1,7 +1,9 @@
-<Type Name="Typography" FullName="System.Windows.Documents.Typography">
+﻿<Type Name="Typography" FullName="System.Windows.Documents.Typography">
   <TypeSignature Language="C#" Value="public sealed class Typography" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Typography extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Typography" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Typography" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Typography sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +104,8 @@ Text using OpenType capitals
       <MemberSignature Language="C#" Value="public int AnnotationAlternates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AnnotationAlternates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.AnnotationAlternates" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnnotationAlternates As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AnnotationAlternates { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,6 +147,8 @@ Text using OpenType capitals
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AnnotationAlternatesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AnnotationAlternatesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.AnnotationAlternatesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnnotationAlternatesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AnnotationAlternatesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +166,8 @@ Text using OpenType capitals
       <MemberSignature Language="C#" Value="public System.Windows.FontCapitals Capitals { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontCapitals Capitals" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.Capitals" />
+      <MemberSignature Language="VB.NET" Value="Public Property Capitals As FontCapitals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontCapitals Capitals { System::Windows::FontCapitals get(); void set(System::Windows::FontCapitals value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -214,6 +222,8 @@ Example of capitals
       <MemberSignature Language="C#" Value="public bool CapitalSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CapitalSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.CapitalSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property CapitalSpacing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CapitalSpacing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -262,6 +272,8 @@ Example of normal and capital spacing
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CapitalSpacingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CapitalSpacingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.CapitalSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CapitalSpacingProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CapitalSpacingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +291,8 @@ Example of normal and capital spacing
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CapitalsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CapitalsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.CapitalsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CapitalsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CapitalsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -296,6 +310,8 @@ Example of normal and capital spacing
       <MemberSignature Language="C#" Value="public bool CaseSensitiveForms { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CaseSensitiveForms" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.CaseSensitiveForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property CaseSensitiveForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CaseSensitiveForms { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -334,6 +350,8 @@ Example of normal and capital spacing
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CaseSensitiveFormsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CaseSensitiveFormsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.CaseSensitiveFormsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CaseSensitiveFormsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CaseSensitiveFormsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -351,6 +369,8 @@ Example of normal and capital spacing
       <MemberSignature Language="C#" Value="public bool ContextualAlternates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContextualAlternates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.ContextualAlternates" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextualAlternates As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextualAlternates { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -399,6 +419,8 @@ Example of random contextual alternates
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextualAlternatesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextualAlternatesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.ContextualAlternatesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualAlternatesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualAlternatesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -416,6 +438,8 @@ Example of random contextual alternates
       <MemberSignature Language="C#" Value="public bool ContextualLigatures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContextualLigatures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.ContextualLigatures" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextualLigatures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextualLigatures { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -461,6 +485,8 @@ Example of random contextual alternates
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextualLigaturesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextualLigaturesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.ContextualLigaturesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualLigaturesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualLigaturesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -478,6 +504,8 @@ Example of random contextual alternates
       <MemberSignature Language="C#" Value="public int ContextualSwashes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ContextualSwashes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.ContextualSwashes" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextualSwashes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ContextualSwashes { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -525,6 +553,8 @@ Example of a contextual swash
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextualSwashesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextualSwashesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.ContextualSwashesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualSwashesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualSwashesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -542,6 +572,8 @@ Example of a contextual swash
       <MemberSignature Language="C#" Value="public bool DiscretionaryLigatures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DiscretionaryLigatures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.DiscretionaryLigatures" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscretionaryLigatures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DiscretionaryLigatures { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -592,6 +624,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DiscretionaryLigaturesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DiscretionaryLigaturesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.DiscretionaryLigaturesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DiscretionaryLigaturesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DiscretionaryLigaturesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -609,6 +643,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public bool EastAsianExpertForms { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EastAsianExpertForms" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.EastAsianExpertForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property EastAsianExpertForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EastAsianExpertForms { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -649,6 +685,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EastAsianExpertFormsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EastAsianExpertFormsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.EastAsianExpertFormsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EastAsianExpertFormsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EastAsianExpertFormsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -666,6 +704,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public System.Windows.FontEastAsianLanguage EastAsianLanguage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontEastAsianLanguage EastAsianLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.EastAsianLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property EastAsianLanguage As FontEastAsianLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontEastAsianLanguage EastAsianLanguage { System::Windows::FontEastAsianLanguage get(); void set(System::Windows::FontEastAsianLanguage value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -705,6 +745,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EastAsianLanguageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EastAsianLanguageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.EastAsianLanguageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EastAsianLanguageProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EastAsianLanguageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -722,6 +764,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public System.Windows.FontEastAsianWidths EastAsianWidths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontEastAsianWidths EastAsianWidths" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.EastAsianWidths" />
+      <MemberSignature Language="VB.NET" Value="Public Property EastAsianWidths As FontEastAsianWidths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontEastAsianWidths EastAsianWidths { System::Windows::FontEastAsianWidths get(); void set(System::Windows::FontEastAsianWidths value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -761,6 +805,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EastAsianWidthsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EastAsianWidthsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.EastAsianWidthsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EastAsianWidthsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EastAsianWidthsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -778,6 +824,8 @@ Example of discretionary set of ligatures
       <MemberSignature Language="C#" Value="public System.Windows.FontFraction Fraction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontFraction Fraction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.Fraction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Fraction As FontFraction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontFraction Fraction { System::Windows::FontFraction get(); void set(System::Windows::FontFraction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -826,6 +874,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FractionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FractionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.FractionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FractionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FractionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -843,6 +893,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static int GetAnnotationAlternates (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetAnnotationAlternates(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetAnnotationAlternates(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAnnotationAlternates (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetAnnotationAlternates(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -872,6 +924,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontCapitals GetCapitals (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontCapitals GetCapitals(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetCapitals(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCapitals (element As DependencyObject) As FontCapitals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontCapitals GetCapitals(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -900,6 +954,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetCapitalSpacing (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetCapitalSpacing(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetCapitalSpacing(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCapitalSpacing (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCapitalSpacing(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -928,6 +984,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetCaseSensitiveForms (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetCaseSensitiveForms(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetCaseSensitiveForms(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCaseSensitiveForms (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetCaseSensitiveForms(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -956,6 +1014,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetContextualAlternates (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetContextualAlternates(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetContextualAlternates(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContextualAlternates (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetContextualAlternates(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -984,6 +1044,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetContextualLigatures (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetContextualLigatures(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetContextualLigatures(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContextualLigatures (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetContextualLigatures(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1012,6 +1074,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static int GetContextualSwashes (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetContextualSwashes(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetContextualSwashes(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContextualSwashes (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetContextualSwashes(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1040,6 +1104,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetDiscretionaryLigatures (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetDiscretionaryLigatures(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetDiscretionaryLigatures(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDiscretionaryLigatures (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetDiscretionaryLigatures(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1068,6 +1134,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetEastAsianExpertForms (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEastAsianExpertForms(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetEastAsianExpertForms(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEastAsianExpertForms (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetEastAsianExpertForms(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1096,6 +1164,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontEastAsianLanguage GetEastAsianLanguage (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontEastAsianLanguage GetEastAsianLanguage(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetEastAsianLanguage(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEastAsianLanguage (element As DependencyObject) As FontEastAsianLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontEastAsianLanguage GetEastAsianLanguage(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1124,6 +1194,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontEastAsianWidths GetEastAsianWidths (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontEastAsianWidths GetEastAsianWidths(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetEastAsianWidths(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEastAsianWidths (element As DependencyObject) As FontEastAsianWidths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontEastAsianWidths GetEastAsianWidths(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1152,6 +1224,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontFraction GetFraction (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontFraction GetFraction(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetFraction(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFraction (element As DependencyObject) As FontFraction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontFraction GetFraction(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1180,6 +1254,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetHistoricalForms (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetHistoricalForms(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetHistoricalForms(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHistoricalForms (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetHistoricalForms(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1208,6 +1284,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetHistoricalLigatures (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetHistoricalLigatures(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetHistoricalLigatures(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHistoricalLigatures (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetHistoricalLigatures(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1236,6 +1314,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetKerning (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetKerning(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetKerning(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetKerning (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetKerning(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1264,6 +1344,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetMathematicalGreek (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetMathematicalGreek(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetMathematicalGreek(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMathematicalGreek (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetMathematicalGreek(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1292,6 +1374,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontNumeralAlignment GetNumeralAlignment (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontNumeralAlignment GetNumeralAlignment(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetNumeralAlignment(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumeralAlignment (element As DependencyObject) As FontNumeralAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontNumeralAlignment GetNumeralAlignment(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1320,6 +1404,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontNumeralStyle GetNumeralStyle (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontNumeralStyle GetNumeralStyle(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetNumeralStyle(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumeralStyle (element As DependencyObject) As FontNumeralStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontNumeralStyle GetNumeralStyle(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1348,6 +1434,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetSlashedZero (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetSlashedZero(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetSlashedZero(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSlashedZero (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetSlashedZero(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1376,6 +1464,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStandardLigatures (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStandardLigatures(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStandardLigatures(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStandardLigatures (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStandardLigatures(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1404,6 +1494,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static int GetStandardSwashes (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetStandardSwashes(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStandardSwashes(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStandardSwashes (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetStandardSwashes(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1432,6 +1524,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static int GetStylisticAlternates (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetStylisticAlternates(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticAlternates(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticAlternates (element As DependencyObject) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetStylisticAlternates(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1460,6 +1554,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet1 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet1(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet1(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet1 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet1(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1488,6 +1584,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet10 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet10(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet10(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet10 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet10(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1516,6 +1614,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet11 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet11(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet11(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet11 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet11(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1544,6 +1644,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet12 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet12(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet12(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet12 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet12(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1572,6 +1674,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet13 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet13(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet13(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet13 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet13(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1600,6 +1704,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet14 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet14(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet14(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet14 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet14(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1628,6 +1734,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet15 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet15(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet15(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet15 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet15(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1656,6 +1764,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet16 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet16(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet16(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet16 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet16(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1684,6 +1794,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet17 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet17(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet17(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet17 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet17(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1712,6 +1824,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet18 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet18(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet18(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet18 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet18(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1740,6 +1854,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet19 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet19(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet19(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet19 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet19(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1768,6 +1884,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet2 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet2(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet2(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet2 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet2(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1796,6 +1914,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet20 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet20(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet20(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet20 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet20(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1824,6 +1944,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet3 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet3(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet3(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet3 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet3(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1852,6 +1974,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet4 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet4(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet4(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet4 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet4(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1880,6 +2004,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet5 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet5(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet5(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet5 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet5(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1908,6 +2034,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet6 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet6(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet6(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet6 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet6(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1936,6 +2064,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet7 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet7(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet7(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet7 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet7(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1964,6 +2094,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet8 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet8(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet8(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet8 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet8(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1992,6 +2124,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static bool GetStylisticSet9 (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetStylisticSet9(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetStylisticSet9(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStylisticSet9 (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetStylisticSet9(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2020,6 +2154,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public static System.Windows.FontVariants GetVariants (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.FontVariants GetVariants(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.GetVariants(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetVariants (element As DependencyObject) As FontVariants" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FontVariants GetVariants(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2048,6 +2184,8 @@ Example of slashed and stacked fraction styles
       <MemberSignature Language="C#" Value="public bool HistoricalForms { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HistoricalForms" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.HistoricalForms" />
+      <MemberSignature Language="VB.NET" Value="Public Property HistoricalForms As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HistoricalForms { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2096,6 +2234,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HistoricalFormsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HistoricalFormsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.HistoricalFormsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HistoricalFormsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HistoricalFormsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2113,6 +2253,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public bool HistoricalLigatures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HistoricalLigatures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.HistoricalLigatures" />
+      <MemberSignature Language="VB.NET" Value="Public Property HistoricalLigatures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HistoricalLigatures { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2157,6 +2299,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HistoricalLigaturesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HistoricalLigaturesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.HistoricalLigaturesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HistoricalLigaturesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HistoricalLigaturesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2174,6 +2318,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public bool Kerning { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Kerning" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.Kerning" />
+      <MemberSignature Language="VB.NET" Value="Public Property Kerning As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Kerning { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2214,6 +2360,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KerningProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KerningProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.KerningProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KerningProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KerningProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2231,6 +2379,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public bool MathematicalGreek { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MathematicalGreek" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.MathematicalGreek" />
+      <MemberSignature Language="VB.NET" Value="Public Property MathematicalGreek As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MathematicalGreek { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2271,6 +2421,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MathematicalGreekProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MathematicalGreekProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.MathematicalGreekProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MathematicalGreekProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MathematicalGreekProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2288,6 +2440,8 @@ Example of historical forms
       <MemberSignature Language="C#" Value="public System.Windows.FontNumeralAlignment NumeralAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontNumeralAlignment NumeralAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.NumeralAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeralAlignment As FontNumeralAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontNumeralAlignment NumeralAlignment { System::Windows::FontNumeralAlignment get(); void set(System::Windows::FontNumeralAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2338,6 +2492,8 @@ Example of proportional and tabbed figures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NumeralAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NumeralAlignmentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.NumeralAlignmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumeralAlignmentProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NumeralAlignmentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2355,6 +2511,8 @@ Example of proportional and tabbed figures
       <MemberSignature Language="C#" Value="public System.Windows.FontNumeralStyle NumeralStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontNumeralStyle NumeralStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.NumeralStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumeralStyle As FontNumeralStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontNumeralStyle NumeralStyle { System::Windows::FontNumeralStyle get(); void set(System::Windows::FontNumeralStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2408,6 +2566,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NumeralStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NumeralStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.NumeralStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NumeralStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NumeralStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2425,6 +2585,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetAnnotationAlternates (System.Windows.DependencyObject element, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAnnotationAlternates(class System.Windows.DependencyObject element, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetAnnotationAlternates(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAnnotationAlternates (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAnnotationAlternates(System::Windows::DependencyObject ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2450,6 +2612,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetCapitals (System.Windows.DependencyObject element, System.Windows.FontCapitals value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCapitals(class System.Windows.DependencyObject element, valuetype System.Windows.FontCapitals value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetCapitals(System.Windows.DependencyObject,System.Windows.FontCapitals)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCapitals (element As DependencyObject, value As FontCapitals)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCapitals(System::Windows::DependencyObject ^ element, System::Windows::FontCapitals value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2475,6 +2639,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetCapitalSpacing (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCapitalSpacing(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetCapitalSpacing(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCapitalSpacing (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCapitalSpacing(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2500,6 +2666,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetCaseSensitiveForms (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCaseSensitiveForms(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetCaseSensitiveForms(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCaseSensitiveForms (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCaseSensitiveForms(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2525,6 +2693,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetContextualAlternates (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContextualAlternates(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetContextualAlternates(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetContextualAlternates (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContextualAlternates(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2550,6 +2720,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetContextualLigatures (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContextualLigatures(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetContextualLigatures(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetContextualLigatures (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContextualLigatures(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2575,6 +2747,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetContextualSwashes (System.Windows.DependencyObject element, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContextualSwashes(class System.Windows.DependencyObject element, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetContextualSwashes(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetContextualSwashes (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContextualSwashes(System::Windows::DependencyObject ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2600,6 +2774,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetDiscretionaryLigatures (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDiscretionaryLigatures(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetDiscretionaryLigatures(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetDiscretionaryLigatures (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetDiscretionaryLigatures(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2625,6 +2801,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetEastAsianExpertForms (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEastAsianExpertForms(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetEastAsianExpertForms(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEastAsianExpertForms (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEastAsianExpertForms(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2650,6 +2828,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetEastAsianLanguage (System.Windows.DependencyObject element, System.Windows.FontEastAsianLanguage value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEastAsianLanguage(class System.Windows.DependencyObject element, valuetype System.Windows.FontEastAsianLanguage value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetEastAsianLanguage(System.Windows.DependencyObject,System.Windows.FontEastAsianLanguage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEastAsianLanguage (element As DependencyObject, value As FontEastAsianLanguage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEastAsianLanguage(System::Windows::DependencyObject ^ element, System::Windows::FontEastAsianLanguage value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2675,6 +2855,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetEastAsianWidths (System.Windows.DependencyObject element, System.Windows.FontEastAsianWidths value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEastAsianWidths(class System.Windows.DependencyObject element, valuetype System.Windows.FontEastAsianWidths value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetEastAsianWidths(System.Windows.DependencyObject,System.Windows.FontEastAsianWidths)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEastAsianWidths (element As DependencyObject, value As FontEastAsianWidths)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetEastAsianWidths(System::Windows::DependencyObject ^ element, System::Windows::FontEastAsianWidths value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2700,6 +2882,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetFraction (System.Windows.DependencyObject element, System.Windows.FontFraction value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFraction(class System.Windows.DependencyObject element, valuetype System.Windows.FontFraction value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetFraction(System.Windows.DependencyObject,System.Windows.FontFraction)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFraction (element As DependencyObject, value As FontFraction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetFraction(System::Windows::DependencyObject ^ element, System::Windows::FontFraction value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2725,6 +2909,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetHistoricalForms (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHistoricalForms(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetHistoricalForms(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHistoricalForms (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHistoricalForms(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2750,6 +2936,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetHistoricalLigatures (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHistoricalLigatures(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetHistoricalLigatures(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHistoricalLigatures (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetHistoricalLigatures(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2775,6 +2963,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetKerning (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetKerning(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetKerning(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetKerning (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetKerning(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2800,6 +2990,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetMathematicalGreek (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMathematicalGreek(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetMathematicalGreek(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMathematicalGreek (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetMathematicalGreek(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2825,6 +3017,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetNumeralAlignment (System.Windows.DependencyObject element, System.Windows.FontNumeralAlignment value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNumeralAlignment(class System.Windows.DependencyObject element, valuetype System.Windows.FontNumeralAlignment value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetNumeralAlignment(System.Windows.DependencyObject,System.Windows.FontNumeralAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNumeralAlignment (element As DependencyObject, value As FontNumeralAlignment)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNumeralAlignment(System::Windows::DependencyObject ^ element, System::Windows::FontNumeralAlignment value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2850,6 +3044,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetNumeralStyle (System.Windows.DependencyObject element, System.Windows.FontNumeralStyle value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNumeralStyle(class System.Windows.DependencyObject element, valuetype System.Windows.FontNumeralStyle value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetNumeralStyle(System.Windows.DependencyObject,System.Windows.FontNumeralStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetNumeralStyle (element As DependencyObject, value As FontNumeralStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNumeralStyle(System::Windows::DependencyObject ^ element, System::Windows::FontNumeralStyle value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2875,6 +3071,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetSlashedZero (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSlashedZero(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetSlashedZero(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSlashedZero (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSlashedZero(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2900,6 +3098,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStandardLigatures (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStandardLigatures(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStandardLigatures(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStandardLigatures (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStandardLigatures(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2925,6 +3125,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStandardSwashes (System.Windows.DependencyObject element, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStandardSwashes(class System.Windows.DependencyObject element, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStandardSwashes(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStandardSwashes (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStandardSwashes(System::Windows::DependencyObject ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2950,6 +3152,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticAlternates (System.Windows.DependencyObject element, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticAlternates(class System.Windows.DependencyObject element, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticAlternates(System.Windows.DependencyObject,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticAlternates (element As DependencyObject, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticAlternates(System::Windows::DependencyObject ^ element, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2975,6 +3179,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet1 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet1(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet1(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet1 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet1(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3000,6 +3206,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet10 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet10(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet10(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet10 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet10(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3025,6 +3233,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet11 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet11(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet11(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet11 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet11(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3050,6 +3260,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet12 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet12(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet12(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet12 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet12(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3075,6 +3287,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet13 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet13(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet13(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet13 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet13(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3100,6 +3314,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet14 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet14(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet14(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet14 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet14(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3125,6 +3341,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet15 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet15(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet15(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet15 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet15(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3150,6 +3368,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet16 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet16(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet16(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet16 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet16(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3175,6 +3395,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet17 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet17(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet17(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet17 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet17(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3200,6 +3422,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet18 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet18(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet18(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet18 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet18(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3225,6 +3449,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet19 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet19(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet19(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet19 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet19(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3250,6 +3476,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet2 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet2(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet2(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet2 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet2(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3275,6 +3503,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet20 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet20(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet20(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet20 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet20(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3300,6 +3530,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet3 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet3(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet3(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet3 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet3(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3325,6 +3557,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet4 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet4(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet4(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet4 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet4(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3350,6 +3584,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet5 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet5(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet5(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet5 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet5(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3375,6 +3611,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet6 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet6(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet6(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet6 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet6(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3400,6 +3638,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet7 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet7(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet7(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet7 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet7(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3425,6 +3665,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet8 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet8(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet8(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet8 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet8(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3450,6 +3692,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetStylisticSet9 (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStylisticSet9(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetStylisticSet9(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStylisticSet9 (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetStylisticSet9(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3475,6 +3719,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public static void SetVariants (System.Windows.DependencyObject element, System.Windows.FontVariants value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetVariants(class System.Windows.DependencyObject element, valuetype System.Windows.FontVariants value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Typography.SetVariants(System.Windows.DependencyObject,System.Windows.FontVariants)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetVariants (element As DependencyObject, value As FontVariants)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetVariants(System::Windows::DependencyObject ^ element, System::Windows::FontVariants value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3500,6 +3746,8 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="public bool SlashedZero { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SlashedZero" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.SlashedZero" />
+      <MemberSignature Language="VB.NET" Value="Public Property SlashedZero As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SlashedZero { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3553,6 +3801,8 @@ Example of slashed zero numerals
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SlashedZeroProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SlashedZeroProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.SlashedZeroProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SlashedZeroProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SlashedZeroProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3570,6 +3820,8 @@ Example of slashed zero numerals
       <MemberSignature Language="C#" Value="public bool StandardLigatures { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StandardLigatures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StandardLigatures" />
+      <MemberSignature Language="VB.NET" Value="Public Property StandardLigatures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StandardLigatures { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3636,6 +3888,8 @@ Example of disabled standard ligatures
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StandardLigaturesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StandardLigaturesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StandardLigaturesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StandardLigaturesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StandardLigaturesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3653,6 +3907,8 @@ Example of disabled standard ligatures
       <MemberSignature Language="C#" Value="public int StandardSwashes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StandardSwashes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StandardSwashes" />
+      <MemberSignature Language="VB.NET" Value="Public Property StandardSwashes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StandardSwashes { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3707,6 +3963,8 @@ Example of swashes used for capital letters
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StandardSwashesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StandardSwashesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StandardSwashesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StandardSwashesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StandardSwashesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3724,6 +3982,8 @@ Example of swashes used for capital letters
       <MemberSignature Language="C#" Value="public int StylisticAlternates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StylisticAlternates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticAlternates" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticAlternates As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StylisticAlternates { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3785,6 +4045,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticAlternatesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticAlternatesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticAlternatesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticAlternatesProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticAlternatesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3802,6 +4064,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet1" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet1" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet1 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet1 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3842,6 +4106,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet10 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet10" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet10" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet10 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet10 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3882,6 +4148,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet10Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet10Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet10Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet10Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet10Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3899,6 +4167,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet11 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet11" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet11" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet11 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet11 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3939,6 +4209,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet11Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet11Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet11Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet11Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet11Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3956,6 +4228,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet12 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet12" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet12" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet12 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet12 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -3996,6 +4270,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet12Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet12Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet12Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet12Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet12Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4013,6 +4289,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet13 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet13" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet13" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet13 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet13 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4053,6 +4331,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet13Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet13Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet13Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet13Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet13Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4070,6 +4350,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet14 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet14" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet14" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet14 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet14 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4110,6 +4392,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet14Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet14Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet14Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet14Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet14Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4127,6 +4411,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet15 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet15" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet15" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet15 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet15 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4167,6 +4453,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet15Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet15Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet15Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet15Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet15Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4184,6 +4472,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet16 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet16" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet16" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet16 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet16 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4224,6 +4514,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet16Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet16Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet16Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet16Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet16Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4241,6 +4533,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet17 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet17" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet17" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet17 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet17 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4281,6 +4575,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet17Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet17Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet17Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet17Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet17Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4298,6 +4594,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet18 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet18" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet18" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet18 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet18 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4338,6 +4636,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet18Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet18Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet18Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet18Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet18Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4355,6 +4655,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet19 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet19" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet19" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet19 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet19 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4395,6 +4697,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet19Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet19Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet19Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet19Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet19Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4412,6 +4716,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet1Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet1Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet1Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet1Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet1Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4429,6 +4735,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet2" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet2" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet2 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet2 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4469,6 +4777,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet20 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet20" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet20" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet20 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet20 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4509,6 +4819,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet20Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet20Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet20Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet20Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet20Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4526,6 +4838,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet2Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet2Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet2Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet2Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet2Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4543,6 +4857,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet3" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet3" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet3 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet3 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4583,6 +4899,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet3Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet3Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet3Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet3Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet3Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4600,6 +4918,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet4 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet4" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet4" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet4 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet4 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4640,6 +4960,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet4Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet4Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet4Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet4Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet4Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4657,6 +4979,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet5 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet5" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet5" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet5 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet5 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4697,6 +5021,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet5Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet5Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet5Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet5Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet5Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4714,6 +5040,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet6 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet6" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet6" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet6 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet6 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4754,6 +5082,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet6Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet6Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet6Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet6Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet6Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4771,6 +5101,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet7 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet7" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet7" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet7 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet7 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4809,6 +5141,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet7Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet7Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet7Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet7Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet7Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4826,6 +5160,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet8 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet8" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet8" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet8 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet8 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4866,6 +5202,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet8Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet8Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet8Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet8Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet8Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4883,6 +5221,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public bool StylisticSet9 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StylisticSet9" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.StylisticSet9" />
+      <MemberSignature Language="VB.NET" Value="Public Property StylisticSet9 As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StylisticSet9 { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4923,6 +5263,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StylisticSet9Property;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StylisticSet9Property" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.StylisticSet9Property" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StylisticSet9Property As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StylisticSet9Property;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4940,6 +5282,8 @@ Example of other stylistic alternate glyphs
       <MemberSignature Language="C#" Value="public System.Windows.FontVariants Variants { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontVariants Variants" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Typography.Variants" />
+      <MemberSignature Language="VB.NET" Value="Public Property Variants As FontVariants" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontVariants Variants { System::Windows::FontVariants get(); void set(System::Windows::FontVariants value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -4999,6 +5343,8 @@ Example of subscripts
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VariantsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VariantsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Typography.VariantsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VariantsProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VariantsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

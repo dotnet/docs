@@ -1,7 +1,9 @@
-<Type Name="SerializableObjectData" FullName="System.AddIn.Contract.SerializableObjectData">
+﻿<Type Name="SerializableObjectData" FullName="System.AddIn.Contract.SerializableObjectData">
   <TypeSignature Language="C#" Value="public struct SerializableObjectData" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SerializableObjectData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.SerializableObjectData" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SerializableObjectData" />
+  <TypeSignature Language="C++ CLI" Value="public value class SerializableObjectData" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public int[] DimensionLengths;" />
       <MemberSignature Language="ILAsm" Value=".field public int32[] DimensionLengths" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.DimensionLengths" />
+      <MemberSignature Language="VB.NET" Value="Public DimensionLengths As Integer() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;int&gt; ^ DimensionLengths;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public int[] DimensionLowerBounds;" />
       <MemberSignature Language="ILAsm" Value=".field public int32[] DimensionLowerBounds" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds" />
+      <MemberSignature Language="VB.NET" Value="Public DimensionLowerBounds As Integer() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;int&gt; ^ DimensionLowerBounds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public int[] ElementIndexes;" />
       <MemberSignature Language="ILAsm" Value=".field public int32[] ElementIndexes" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ElementIndexes" />
+      <MemberSignature Language="VB.NET" Value="Public ElementIndexes As Integer() " />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;int&gt; ^ ElementIndexes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public bool IsArray;" />
       <MemberSignature Language="ILAsm" Value=".field public bool IsArray" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public IsArray As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool IsArray;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -128,6 +138,8 @@
       <MemberSignature Language="C#" Value="public bool IsArrayElement;" />
       <MemberSignature Language="ILAsm" Value=".field public bool IsArrayElement" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.IsArrayElement" />
+      <MemberSignature Language="VB.NET" Value="Public IsArrayElement As Boolean " />
+      <MemberSignature Language="C++ CLI" Value="public: bool IsArrayElement;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="public string MemberName;" />
       <MemberSignature Language="ILAsm" Value=".field public string MemberName" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public MemberName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ MemberName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -180,6 +194,8 @@
       <MemberSignature Language="C#" Value="public long ObjectId;" />
       <MemberSignature Language="ILAsm" Value=".field public int64 ObjectId" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ObjectId" />
+      <MemberSignature Language="VB.NET" Value="Public ObjectId As Long " />
+      <MemberSignature Language="C++ CLI" Value="public: long ObjectId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -204,6 +220,8 @@
       <MemberSignature Language="C#" Value="public long ParentId;" />
       <MemberSignature Language="ILAsm" Value=".field public int64 ParentId" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ParentId" />
+      <MemberSignature Language="VB.NET" Value="Public ParentId As Long " />
+      <MemberSignature Language="C++ CLI" Value="public: long ParentId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

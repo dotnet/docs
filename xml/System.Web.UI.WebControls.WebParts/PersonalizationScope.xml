@@ -1,7 +1,9 @@
-<Type Name="PersonalizationScope" FullName="System.Web.UI.WebControls.WebParts.PersonalizationScope">
+﻿<Type Name="PersonalizationScope" FullName="System.Web.UI.WebControls.WebParts.PersonalizationScope">
   <TypeSignature Language="C#" Value="public enum PersonalizationScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersonalizationScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PersonalizationScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PersonalizationScope" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Shared" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope Shared = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared" />
+      <MemberSignature Language="VB.NET" Value="Shared" />
+      <MemberSignature Language="C++ CLI" Value="Shared" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="Shared" /> scope means that personalization data applies to all users for all personalizable controls on a page and is also available to be saved on the page.</summary>
         <remarks>
@@ -62,6 +67,8 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope User = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.PersonalizationScope.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>When referring to the scope on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control, <see langword="User" /> scope means that personalization data that is user-specific, as well as personalization data that applies to all users, is loaded for all personalizable controls on a page. Only personalization data that is user-specific can be saved on the page.</summary>
         <remarks>

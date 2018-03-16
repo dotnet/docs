@@ -1,7 +1,9 @@
-<Type Name="HitTestLocations" FullName="System.Workflow.ComponentModel.Design.HitTestLocations">
+﻿<Type Name="HitTestLocations" FullName="System.Workflow.ComponentModel.Design.HitTestLocations">
   <TypeSignature Language="C#" Value="public enum HitTestLocations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestLocations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.HitTestLocations" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HitTestLocations" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HitTestLocations" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="ActionArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations ActionArea = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.ActionArea" />
+      <MemberSignature Language="VB.NET" Value="ActionArea" />
+      <MemberSignature Language="C++ CLI" Value="ActionArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates the area contained by the expand button was hit.</summary>
       </Docs>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Bottom = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -69,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Indicates that the bottom of the designer was hit.</summary>
       </Docs>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="Connector" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Connector = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Connector" />
+      <MemberSignature Language="VB.NET" Value="Connector" />
+      <MemberSignature Language="C++ CLI" Value="Connector" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -85,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Indicates that a connector on the designer was hit.</summary>
       </Docs>
@@ -93,6 +104,8 @@
       <MemberSignature Language="C#" Value="Designer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Designer = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Designer" />
+      <MemberSignature Language="VB.NET" Value="Designer" />
+      <MemberSignature Language="C++ CLI" Value="Designer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -101,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that any part of the designer was hit.</summary>
       </Docs>
@@ -109,6 +123,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Left = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -117,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the left part of the designer was hit.</summary>
       </Docs>
@@ -125,6 +142,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -133,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no part of the designer was hit.</summary>
       </Docs>
@@ -141,6 +161,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Right = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -149,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Indicates the right part of the designer was hit.</summary>
       </Docs>
@@ -157,6 +180,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.HitTestLocations Top = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.HitTestLocations.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -165,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.HitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates the top of the designer was hit.</summary>
       </Docs>

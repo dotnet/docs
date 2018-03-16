@@ -1,7 +1,9 @@
-<Type Name="AmbientTheme" FullName="System.Workflow.ComponentModel.Design.AmbientTheme">
+﻿<Type Name="AmbientTheme" FullName="System.Workflow.ComponentModel.Design.AmbientTheme">
   <TypeSignature Language="C#" Value="public class AmbientTheme : System.Workflow.ComponentModel.Design.DesignerTheme" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AmbientTheme extends System.Workflow.ComponentModel.Design.DesignerTheme" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.AmbientTheme" />
+  <TypeSignature Language="VB.NET" Value="Public Class AmbientTheme&#xA;Inherits DesignerTheme" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AmbientTheme : System::Workflow::ComponentModel::Design::DesignerTheme" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public AmbientTheme (System.Workflow.ComponentModel.Design.WorkflowTheme theme);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.WorkflowTheme theme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.AmbientTheme.#ctor(System.Workflow.ComponentModel.Design.WorkflowTheme)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (theme As WorkflowTheme)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmbientTheme(System::Workflow::ComponentModel::Design::WorkflowTheme ^ theme);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush BackgroundBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush BackgroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.BackgroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackgroundBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ BackgroundBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -99,7 +107,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font BoldFont { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font BoldFont" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.BoldFont" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BoldFont As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ BoldFont { System::Drawing::Font ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -132,7 +142,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,6 +158,8 @@
       <MemberSignature Language="C#" Value="public virtual int BorderWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BorderWidth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BorderWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -158,7 +170,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,6 +186,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush CommentIndicatorBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush CommentIndicatorBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommentIndicatorBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ CommentIndicatorBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -184,7 +198,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,6 +221,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CommentIndicatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CommentIndicatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CommentIndicatorColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CommentIndicatorColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -236,6 +252,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen CommentIndicatorPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen CommentIndicatorPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.CommentIndicatorPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommentIndicatorPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ CommentIndicatorPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -246,7 +264,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,6 +287,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Workflow.ComponentModel.Design.DesignerSize DesignerSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerSize DesignerSize" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DesignerSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DesignerSize As DesignerSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::DesignerSize DesignerSize { System::Workflow::ComponentModel::Design::DesignerSize get(); void set(System::Workflow::ComponentModel::Design::DesignerSize value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -282,7 +302,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(20)</AttributeName>
@@ -301,6 +321,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.AmbientTheme.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -323,6 +345,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DrawGrayscale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DrawGrayscale" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DrawGrayscale" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DrawGrayscale As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DrawGrayscale { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -350,6 +374,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DrawRounded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DrawRounded" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DrawRounded" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DrawRounded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DrawRounded { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -377,6 +403,8 @@
       <MemberSignature Language="C#" Value="public virtual bool DrawShadow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DrawShadow" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DrawShadow" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DrawShadow As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DrawShadow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -404,6 +432,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush DropIndicatorBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush DropIndicatorBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropIndicatorBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ DropIndicatorBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -414,7 +444,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -437,6 +467,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color DropIndicatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color DropIndicatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DropIndicatorColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color DropIndicatorColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -466,6 +498,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen DropIndicatorPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen DropIndicatorPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.DropIndicatorPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DropIndicatorPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ DropIndicatorPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -476,7 +510,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -499,6 +533,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -509,7 +545,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -525,6 +561,8 @@
       <MemberSignature Language="C#" Value="public virtual string FontName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FontName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.FontName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FontName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FontName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -551,6 +589,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -580,6 +620,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush ForegroundBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush ForegroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ForegroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForegroundBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ ForegroundBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -590,7 +632,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -613,6 +655,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen ForegroundPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen ForegroundPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ForegroundPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForegroundPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ ForegroundPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -623,7 +667,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -646,6 +690,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size GlyphSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size GlyphSize" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.GlyphSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GlyphSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size GlyphSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -656,7 +702,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -684,6 +730,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color GridColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color GridColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property GridColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color GridColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -713,6 +761,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size GridSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size GridSize" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.GridSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GridSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size GridSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -723,7 +773,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -739,6 +789,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Drawing2D.DashStyle GridStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.DashStyle GridStyle" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.GridStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property GridStyle As DashStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Drawing2D::DashStyle GridStyle { System::Drawing::Drawing2D::DashStyle get(); void set(System::Drawing::Drawing2D::DashStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -746,7 +798,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(18)</AttributeName>
@@ -765,6 +817,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.AmbientTheme.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -790,6 +844,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush MajorGridBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush MajorGridBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.MajorGridBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorGridBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ MajorGridBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -800,7 +856,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -823,6 +879,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen MajorGridPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen MajorGridPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.MajorGridPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MajorGridPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ MajorGridPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -833,7 +891,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -856,6 +914,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size Margin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Margin" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Margin As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size Margin { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -866,7 +926,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -882,6 +942,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen MinorGridPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen MinorGridPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.MinorGridPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinorGridPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ MinorGridPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -892,7 +954,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -915,6 +977,7 @@
       <MemberSignature Language="C#" Value="public override void OnAmbientPropertyChanged (System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAmbientPropertyChanged(valuetype System.Workflow.ComponentModel.Design.AmbientProperty ambientProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.AmbientTheme.OnAmbientPropertyChanged(System.Workflow.ComponentModel.Design.AmbientProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnAmbientPropertyChanged(System::Workflow::ComponentModel::Design::AmbientProperty ambientProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -943,6 +1006,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush ReadonlyIndicatorBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush ReadonlyIndicatorBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ReadonlyIndicatorBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadonlyIndicatorBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ ReadonlyIndicatorBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -953,7 +1018,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -976,6 +1041,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ReadonlyIndicatorColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ReadonlyIndicatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ReadonlyIndicatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadonlyIndicatorColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ReadonlyIndicatorColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1005,6 +1072,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color SelectionForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectionForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color SelectionForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1034,6 +1103,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Brush SelectionForegroundBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Brush SelectionForegroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionForegroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionForegroundBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Brush ^ SelectionForegroundBrush { System::Drawing::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1044,7 +1115,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1067,6 +1138,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen SelectionForegroundPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen SelectionForegroundPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionForegroundPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionForegroundPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ SelectionForegroundPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1077,7 +1150,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1100,6 +1173,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color SelectionPatternColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionPatternColor" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionPatternColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectionPatternColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color SelectionPatternColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1136,6 +1211,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Pen SelectionPatternPen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Pen SelectionPatternPen" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionPatternPen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionPatternPen As Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Pen ^ SelectionPatternPen { System::Drawing::Pen ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1146,7 +1223,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1169,6 +1246,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size SelectionSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size SelectionSize" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.SelectionSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectionSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size SelectionSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1179,7 +1258,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1195,6 +1274,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowConfigErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowConfigErrors" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ShowConfigErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowConfigErrors As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowConfigErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1234,6 +1315,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowDesignerBorder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowDesignerBorder" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ShowDesignerBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowDesignerBorder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowDesignerBorder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1261,6 +1344,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowGrid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowGrid" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.ShowGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowGrid As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowGrid { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1288,6 +1373,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Workflow.ComponentModel.Design.TextQuality TextQuality { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.TextQuality TextQuality" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.TextQuality" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TextQuality As TextQuality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::TextQuality TextQuality { System::Workflow::ComponentModel::Design::TextQuality get(); void set(System::Workflow::ComponentModel::Design::TextQuality value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1321,6 +1408,8 @@
       <MemberSignature Language="C#" Value="public virtual bool UseOperatingSystemSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseOperatingSystemSettings" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.UseOperatingSystemSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UseOperatingSystemSettings As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseOperatingSystemSettings { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1331,7 +1420,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1348,6 +1437,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Workflow.ComponentModel.Design.DesignerContentAlignment WatermarkAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment WatermarkAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property WatermarkAlignment As DesignerContentAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::ComponentModel::Design::DesignerContentAlignment WatermarkAlignment { System::Workflow::ComponentModel::Design::DesignerContentAlignment get(); void set(System::Workflow::ComponentModel::Design::DesignerContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1374,6 +1465,8 @@
       <MemberSignature Language="C#" Value="public virtual string WatermarkImagePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WatermarkImagePath" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.WatermarkImagePath" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property WatermarkImagePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ WatermarkImagePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1407,6 +1500,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Image WorkflowWatermarkImage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image WorkflowWatermarkImage" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.AmbientTheme.WorkflowWatermarkImage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowWatermarkImage As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ WorkflowWatermarkImage { System::Drawing::Image ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1417,7 +1512,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,7 +1,9 @@
-<Type Name="ViewTechnology" FullName="System.ComponentModel.Design.ViewTechnology">
+﻿<Type Name="ViewTechnology" FullName="System.ComponentModel.Design.ViewTechnology">
   <TypeSignature Language="C#" Value="public enum ViewTechnology" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewTechnology extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ViewTechnology" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ViewTechnology" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ViewTechnology" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology Default = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the default view technology support.</summary>
         <remarks>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="Passthrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology Passthrough = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.Passthrough" />
+      <MemberSignature Language="VB.NET" Value="Passthrough" />
+      <MemberSignature Language="C++ CLI" Value="Passthrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents a mode in which the view object is passed directly to the development environment.</summary>
         <remarks>
@@ -138,6 +146,8 @@
       <MemberSignature Language="C#" Value="WindowsForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.ViewTechnology WindowsForms = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.ViewTechnology.WindowsForms" />
+      <MemberSignature Language="VB.NET" Value="WindowsForms" />
+      <MemberSignature Language="C++ CLI" Value="WindowsForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents a mode in which a Windows Forms control object provides the display for the root designer.</summary>
         <remarks>

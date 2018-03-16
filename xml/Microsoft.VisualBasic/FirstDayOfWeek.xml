@@ -1,7 +1,9 @@
-<Type Name="FirstDayOfWeek" FullName="Microsoft.VisualBasic.FirstDayOfWeek">
+﻿<Type Name="FirstDayOfWeek" FullName="Microsoft.VisualBasic.FirstDayOfWeek">
   <TypeSignature Language="C#" Value="public enum FirstDayOfWeek" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FirstDayOfWeek extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FirstDayOfWeek" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FirstDayOfWeek" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FirstDayOfWeek" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Friday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Friday = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Friday" />
+      <MemberSignature Language="VB.NET" Value="Friday" />
+      <MemberSignature Language="C++ CLI" Value="Friday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Friday This member is equivalent to the Visual Basic constant <see langword="vbFriday" />.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Monday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Monday = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Monday" />
+      <MemberSignature Language="VB.NET" Value="Monday" />
+      <MemberSignature Language="C++ CLI" Value="Monday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Monday This member is equivalent to the Visual Basic constant <see langword="vbMonday" />.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Saturday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Saturday = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Saturday" />
+      <MemberSignature Language="VB.NET" Value="Saturday" />
+      <MemberSignature Language="C++ CLI" Value="Saturday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Saturday This member is equivalent to the Visual Basic constant <see langword="vbSaturday" />.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Sunday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Sunday = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" />
+      <MemberSignature Language="VB.NET" Value="Sunday" />
+      <MemberSignature Language="C++ CLI" Value="Sunday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Sunday (default) This member is equivalent to the Visual Basic constant <see langword="vbSunday" />.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek System = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The first day of the week as specified in your system settings This member is equivalent to the Visual Basic constant <see langword="vbUseSystemDayOfWeek" />.</summary>
       </Docs>
@@ -117,6 +134,8 @@
       <MemberSignature Language="C#" Value="Thursday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Thursday = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Thursday" />
+      <MemberSignature Language="VB.NET" Value="Thursday" />
+      <MemberSignature Language="C++ CLI" Value="Thursday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -125,6 +144,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Thursday This member is equivalent to the Visual Basic constant <see langword="vbThursday" />.</summary>
       </Docs>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="Tuesday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Tuesday = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Tuesday" />
+      <MemberSignature Language="VB.NET" Value="Tuesday" />
+      <MemberSignature Language="C++ CLI" Value="Tuesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -141,6 +163,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Tuesday This member is equivalent to the Visual Basic constant <see langword="vbTuesday" />.</summary>
       </Docs>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="Wednesday" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstDayOfWeek Wednesday = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstDayOfWeek.Wednesday" />
+      <MemberSignature Language="VB.NET" Value="Wednesday" />
+      <MemberSignature Language="C++ CLI" Value="Wednesday" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -157,6 +182,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FirstDayOfWeek</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Wednesday This member is equivalent to the Visual Basic constant <see langword="vbWednesday" />.</summary>
       </Docs>

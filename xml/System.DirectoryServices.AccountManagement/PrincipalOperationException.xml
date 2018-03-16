@@ -1,7 +1,9 @@
-<Type Name="PrincipalOperationException" FullName="System.DirectoryServices.AccountManagement.PrincipalOperationException">
+﻿<Type Name="PrincipalOperationException" FullName="System.DirectoryServices.AccountManagement.PrincipalOperationException">
   <TypeSignature Language="C#" Value="public class PrincipalOperationException : System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrincipalOperationException extends System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrincipalOperationException&#xA;Inherits PrincipalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalOperationException : System::DirectoryServices::AccountManagement::PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +19,23 @@
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class.</summary>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrincipalOperationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalOperationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -45,6 +60,8 @@
       <MemberSignature Language="C#" Value="public PrincipalOperationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalOperationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -72,6 +89,8 @@
       <MemberSignature Language="C#" Value="protected PrincipalOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrincipalOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -94,6 +113,8 @@
       <MemberSignature Language="C#" Value="public PrincipalOperationException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalOperationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -123,6 +144,8 @@
       <MemberSignature Language="C#" Value="public PrincipalOperationException (string message, int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalOperationException(System::String ^ message, int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -152,6 +175,8 @@
       <MemberSignature Language="C#" Value="public PrincipalOperationException (string message, Exception innerException, int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.String,System.Exception,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, errorCode As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalOperationException(System::String ^ message, Exception ^ innerException, int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -183,6 +208,8 @@
       <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalOperationException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -205,6 +232,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalOperationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -237,16 +266,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException" /> class.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

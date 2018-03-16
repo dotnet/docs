@@ -1,7 +1,9 @@
-<Type Name="IUnsafeWebRequestCreate" FullName="System.Net.IUnsafeWebRequestCreate">
+﻿<Type Name="IUnsafeWebRequestCreate" FullName="System.Net.IUnsafeWebRequestCreate">
   <TypeSignature Language="C#" Value="public interface IUnsafeWebRequestCreate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnsafeWebRequestCreate" />
   <TypeSignature Language="DocId" Value="T:System.Net.IUnsafeWebRequestCreate" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUnsafeWebRequestCreate" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUnsafeWebRequestCreate" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public System.Net.WebRequest Create (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebRequest Create(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IUnsafeWebRequestCreate.Create(System.Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::WebRequest ^ Create(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

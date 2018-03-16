@@ -1,7 +1,9 @@
-<Type Name="RegistryOptions" FullName="Microsoft.Win32.RegistryOptions">
+﻿<Type Name="RegistryOptions" FullName="Microsoft.Win32.RegistryOptions">
   <TypeSignature Language="C#" Value="public enum RegistryOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed RegistryOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegistryOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegistryOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -50,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A non-volatile key. This is the default.</summary>
       </Docs>
@@ -58,6 +63,8 @@
       <MemberSignature Language="C#" Value="Volatile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryOptions Volatile = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryOptions.Volatile" />
+      <MemberSignature Language="VB.NET" Value="Volatile" />
+      <MemberSignature Language="C++ CLI" Value="Volatile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Win32.Registry</AssemblyName>
@@ -72,6 +79,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A volatile key. The information is stored in memory and is not preserved when the corresponding registry hive is unloaded.</summary>
       </Docs>

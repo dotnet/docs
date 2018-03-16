@@ -1,7 +1,9 @@
-<Type Name="RouteValueExpressionBuilder" FullName="System.Web.Compilation.RouteValueExpressionBuilder">
+﻿<Type Name="RouteValueExpressionBuilder" FullName="System.Web.Compilation.RouteValueExpressionBuilder">
   <TypeSignature Language="C#" Value="public class RouteValueExpressionBuilder : System.Web.Compilation.ExpressionBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteValueExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class RouteValueExpressionBuilder&#xA;Inherits ExpressionBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RouteValueExpressionBuilder : System::Web::Compilation::ExpressionBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public RouteValueExpressionBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RouteValueExpressionBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public override object EvaluateExpression (object target, System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(object target, class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (target As Object, entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::Object ^ target, System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public override System.CodeDom.CodeExpression GetCodeExpression (System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCodeExpression (entry As BoundPropertyEntry, parsedData As Object, context As ExpressionBuilderContext) As CodeExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeExpression ^ GetCodeExpression(System::Web::UI::BoundPropertyEntry ^ entry, System::Object ^ parsedData, System::Web::Compilation::ExpressionBuilderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -130,6 +138,7 @@
       <MemberSignature Language="C#" Value="public static object GetRouteValue (System.Web.UI.Page page, string key, Type controlType, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetRouteValue(class System.Web.UI.Page page, string key, class System.Type controlType, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.GetRouteValue(System.Web.UI.Page,System.String,System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetRouteValue(System::Web::UI::Page ^ page, System::String ^ key, Type ^ controlType, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +174,8 @@
       <MemberSignature Language="C#" Value="public override bool SupportsEvaluate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEvaluate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.RouteValueExpressionBuilder.SupportsEvaluate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsEvaluate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEvaluate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

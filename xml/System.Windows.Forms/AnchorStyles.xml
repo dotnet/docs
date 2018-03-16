@@ -1,7 +1,9 @@
-<Type Name="AnchorStyles" FullName="System.Windows.Forms.AnchorStyles">
+﻿<Type Name="AnchorStyles" FullName="System.Windows.Forms.AnchorStyles">
   <TypeSignature Language="C#" Value="public enum AnchorStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnchorStyles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AnchorStyles" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AnchorStyles" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AnchorStyles" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AnchorStyles Bottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AnchorStyles.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The control is anchored to the bottom edge of its container.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AnchorStyles Left = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AnchorStyles.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The control is anchored to the left edge of its container.</summary>
       </Docs>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AnchorStyles None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AnchorStyles.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The control is not anchored to any edges of its container.</summary>
       </Docs>
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AnchorStyles Right = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AnchorStyles.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The control is anchored to the right edge of its container.</summary>
       </Docs>
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AnchorStyles Top = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AnchorStyles.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AnchorStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The control is anchored to the top edge of its container.</summary>
       </Docs>

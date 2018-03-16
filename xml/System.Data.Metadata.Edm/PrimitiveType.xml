@@ -1,7 +1,9 @@
-<Type Name="PrimitiveType" FullName="System.Data.Metadata.Edm.PrimitiveType">
+﻿<Type Name="PrimitiveType" FullName="System.Data.Metadata.Edm.PrimitiveType">
   <TypeSignature Language="C#" Value="public sealed class PrimitiveType : System.Data.Metadata.Edm.SimpleType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrimitiveType extends System.Data.Metadata.Edm.SimpleType" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrimitiveType&#xA;Inherits SimpleType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrimitiveType sealed : System::Data::Metadata::Edm::SimpleType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public Type ClrEquivalentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ClrEquivalentType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.ClrEquivalentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClrEquivalentType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ClrEquivalentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; FacetDescriptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; FacetDescriptions" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.FacetDescriptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FacetDescriptions As ReadOnlyCollection(Of FacetDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ FacetDescriptions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::FacetDescription ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -76,10 +84,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEdmPrimitiveType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the equivalent <see cref="T:System.Data.Metadata.Edm.EdmType" /> of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEdmPrimitiveType">
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType GetEdmPrimitiveType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EdmType GetEdmPrimitiveType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEdmPrimitiveType () As EdmType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EdmType ^ GetEdmPrimitiveType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -108,6 +127,7 @@
       <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.PrimitiveType GetEdmPrimitiveType (System.Data.Metadata.Edm.PrimitiveTypeKind primitiveTypeKind);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.PrimitiveType GetEdmPrimitiveType(valuetype System.Data.Metadata.Edm.PrimitiveTypeKind primitiveTypeKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType(System.Data.Metadata.Edm.PrimitiveTypeKind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Metadata::Edm::PrimitiveType ^ GetEdmPrimitiveType(System::Data::Metadata::Edm::PrimitiveTypeKind primitiveTypeKind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -137,6 +157,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetEdmPrimitiveTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetEdmPrimitiveTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEdmPrimitiveTypes () As ReadOnlyCollection(Of PrimitiveType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetEdmPrimitiveTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -156,6 +178,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.PrimitiveTypeKind PrimitiveTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.PrimitiveTypeKind PrimitiveTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.PrimitiveTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrimitiveTypeKind As PrimitiveTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::PrimitiveTypeKind PrimitiveTypeKind { System::Data::Metadata::Edm::PrimitiveTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -170,14 +194,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetEdmPrimitiveType">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the equivalent <see cref="T:System.Data.Metadata.Edm.EdmType" /> of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

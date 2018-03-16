@@ -1,7 +1,9 @@
-<Type Name="SecurityContextSecurityToken" FullName="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken">
+﻿<Type Name="SecurityContextSecurityToken" FullName="System.ServiceModel.Security.Tokens.SecurityContextSecurityToken">
   <TypeSignature Language="C#" Value="public class SecurityContextSecurityToken : System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityContextSecurityToken extends System.IdentityModel.Tokens.SecurityToken" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityContextSecurityToken&#xA;Inherits SecurityToken" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityContextSecurityToken : System::IdentityModel::Tokens::SecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,8 +11,7 @@
   <Base>
     <BaseTypeName>System.IdentityModel.Tokens.SecurityToken</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents the token defined by the WS-SecureConversation specification.</summary>
     <remarks>
@@ -23,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityContextSecurityToken (System.Xml.UniqueId contextId, byte[] key, DateTime validFrom, DateTime validTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.#ctor(System.Xml.UniqueId,System.Byte[],System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, key As Byte(), validFrom As DateTime, validTo As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextSecurityToken(System::Xml::UniqueId ^ contextId, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +70,8 @@
       <MemberSignature Language="C#" Value="public SecurityContextSecurityToken (System.Xml.UniqueId contextId, string id, byte[] key, DateTime validFrom, DateTime validTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, string id, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.#ctor(System.Xml.UniqueId,System.String,System.Byte[],System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, id As String, key As Byte(), validFrom As DateTime, validTo As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextSecurityToken(System::Xml::UniqueId ^ contextId, System::String ^ id, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="public SecurityContextSecurityToken (System.Xml.UniqueId contextId, string id, byte[] key, DateTime validFrom, DateTime validTo, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, string id, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.#ctor(System.Xml.UniqueId,System.String,System.Byte[],System.DateTime,System.DateTime,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, id As String, key As Byte(), validFrom As DateTime, validTo As DateTime, authorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextSecurityToken(System::Xml::UniqueId ^ contextId, System::String ^ id, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +142,8 @@
       <MemberSignature Language="C#" Value="public SecurityContextSecurityToken (System.Xml.UniqueId contextId, string id, byte[] key, DateTime validFrom, DateTime validTo, System.Xml.UniqueId keyGeneration, DateTime keyEffectiveTime, DateTime keyExpirationTime, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.UniqueId contextId, string id, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo, class System.Xml.UniqueId keyGeneration, valuetype System.DateTime keyEffectiveTime, valuetype System.DateTime keyExpirationTime, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.#ctor(System.Xml.UniqueId,System.String,System.Byte[],System.DateTime,System.DateTime,System.Xml.UniqueId,System.DateTime,System.DateTime,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextId As UniqueId, id As String, key As Byte(), validFrom As DateTime, validTo As DateTime, keyGeneration As UniqueId, keyEffectiveTime As DateTime, keyExpirationTime As DateTime, authorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityContextSecurityToken(System::Xml::UniqueId ^ contextId, System::String ^ id, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo, System::Xml::UniqueId ^ keyGeneration, DateTime keyEffectiveTime, DateTime keyExpirationTime, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +185,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; AuthorizationPolicies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; AuthorizationPolicies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.AuthorizationPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ AuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +205,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityMessageProperty BootstrapMessageProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityMessageProperty BootstrapMessageProperty" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.BootstrapMessageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property BootstrapMessageProperty As SecurityMessageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityMessageProperty ^ BootstrapMessageProperty { System::ServiceModel::Security::SecurityMessageProperty ^ get(); void set(System::ServiceModel::Security::SecurityMessageProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +225,8 @@
       <MemberSignature Language="C#" Value="public override bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.CanCreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanCreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override bool CanCreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.UniqueId ContextId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.UniqueId ContextId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ContextId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextId As UniqueId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ ContextId { System::Xml::UniqueId ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,10 +271,20 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCookieSecurityContextToken">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a security context token cookie.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCookieSecurityContextToken">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.Tokens.SecurityContextSecurityToken CreateCookieSecurityContextToken (System.Xml.UniqueId contextId, string id, byte[] key, DateTime validFrom, DateTime validTo, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies, System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Security.Tokens.SecurityContextSecurityToken CreateCookieSecurityContextToken(class System.Xml.UniqueId contextId, string id, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.CreateCookieSecurityContextToken(System.Xml.UniqueId,System.String,System.Byte[],System.DateTime,System.DateTime,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityStateEncoder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ CreateCookieSecurityContextToken(System::Xml::UniqueId ^ contextId, System::String ^ id, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -283,6 +319,7 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.Tokens.SecurityContextSecurityToken CreateCookieSecurityContextToken (System.Xml.UniqueId contextId, string id, byte[] key, DateTime validFrom, DateTime validTo, System.Xml.UniqueId keyGeneration, DateTime keyEffectiveTime, DateTime keyExpirationTime, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies, System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Security.Tokens.SecurityContextSecurityToken CreateCookieSecurityContextToken(class System.Xml.UniqueId contextId, string id, unsigned int8[] key, valuetype System.DateTime validFrom, valuetype System.DateTime validTo, class System.Xml.UniqueId keyGeneration, valuetype System.DateTime keyEffectiveTime, valuetype System.DateTime keyExpirationTime, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; authorizationPolicies, class System.ServiceModel.Security.SecurityStateEncoder securityStateEncoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.CreateCookieSecurityContextToken(System.Xml.UniqueId,System.String,System.Byte[],System.DateTime,System.DateTime,System.Xml.UniqueId,System.DateTime,System.DateTime,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityStateEncoder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Security::Tokens::SecurityContextSecurityToken ^ CreateCookieSecurityContextToken(System::Xml::UniqueId ^ contextId, System::String ^ id, cli::array &lt;System::Byte&gt; ^ key, DateTime validFrom, DateTime validTo, System::Xml::UniqueId ^ keyGeneration, DateTime keyEffectiveTime, DateTime keyExpirationTime, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ authorizationPolicies, System::ServiceModel::Security::SecurityStateEncoder ^ securityStateEncoder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -323,6 +360,8 @@
       <MemberSignature Language="C#" Value="public override T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.CreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause override T CreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -350,7 +389,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -377,6 +421,8 @@
       <MemberSignature Language="C#" Value="public override string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -395,6 +441,8 @@
       <MemberSignature Language="C#" Value="public bool IsCookieMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCookieMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.IsCookieMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCookieMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCookieMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -414,6 +462,8 @@
       <MemberSignature Language="C#" Value="public DateTime KeyEffectiveTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime KeyEffectiveTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyEffectiveTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyEffectiveTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime KeyEffectiveTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -432,6 +482,8 @@
       <MemberSignature Language="C#" Value="public DateTime KeyExpirationTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime KeyExpirationTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyExpirationTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyExpirationTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime KeyExpirationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -450,6 +502,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.UniqueId KeyGeneration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.UniqueId KeyGeneration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.KeyGeneration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyGeneration As UniqueId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::UniqueId ^ KeyGeneration { System::Xml::UniqueId ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -472,9 +526,16 @@
       </Docs>
     </Member>
     <Member MemberName="MatchesKeyIdentifierClause">
-      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MatchesKeyIdentifierClause (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MatchesKeyIdentifierClause (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -484,7 +545,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="clause">To be added.</param>
@@ -498,6 +560,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.SecurityKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -516,6 +580,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -535,6 +601,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ValidFrom" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidFrom As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidFrom { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -553,6 +621,8 @@
       <MemberSignature Language="C#" Value="public override DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken.ValidTo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ValidTo As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime ValidTo { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -567,23 +637,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateCookieSecurityContextToken">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a security context token cookie.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.SecurityContextSecurityToken" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

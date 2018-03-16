@@ -1,7 +1,9 @@
-<Type Name="HotSpot" FullName="System.Web.UI.WebControls.HotSpot">
+﻿<Type Name="HotSpot" FullName="System.Web.UI.WebControls.HotSpot">
   <TypeSignature Language="C#" Value="public abstract class HotSpot : System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HotSpot extends System.Object implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpot" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HotSpot&#xA;Implements IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HotSpot abstract : System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected HotSpot ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HotSpot();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public virtual string AccessKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AccessKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.AccessKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AccessKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AccessKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public virtual string AlternateText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AlternateText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.AlternateText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternateText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AlternateText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +164,8 @@
       <MemberSignature Language="C#" Value="public abstract string GetCoordinates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCoordinates() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.GetCoordinates" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCoordinates () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetCoordinates();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +195,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.HotSpotMode HotSpotMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.HotSpotMode HotSpotMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.HotSpotMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HotSpotMode As HotSpotMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HotSpotMode HotSpotMode { System::Web::UI::WebControls::HotSpotMode get(); void set(System::Web::UI::WebControls::HotSpotMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,7 +273,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -288,7 +305,12 @@
       <MemberSignature Language="C#" Value="protected virtual void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -318,9 +340,11 @@
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
-      <MemberSignature Language="C#" Value="protected abstract string MarkupName { get; }" />
+      <MemberSignature Language="C#" Value="protected internal abstract string MarkupName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MarkupName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.MarkupName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property MarkupName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property System::String ^ MarkupName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +375,8 @@
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +420,8 @@
       <MemberSignature Language="C#" Value="public string PostBackValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.PostBackValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,7 +461,12 @@
       <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -466,7 +499,12 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -499,7 +537,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (savedState As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ savedState) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -534,7 +577,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -566,7 +614,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -599,6 +652,8 @@
       <MemberSignature Language="C#" Value="public virtual short TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 TabIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.TabIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TabIndex As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property short TabIndex { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -641,6 +696,8 @@
       <MemberSignature Language="C#" Value="public virtual string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -697,6 +754,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -723,7 +782,12 @@
       <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpot.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TrackViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -753,6 +817,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.StateBag ViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.StateBag ViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpot.ViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewState As StateBag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -763,7 +829,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

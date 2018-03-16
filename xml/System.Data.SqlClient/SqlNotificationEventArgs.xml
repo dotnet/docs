@@ -1,7 +1,9 @@
-<Type Name="SqlNotificationEventArgs" FullName="System.Data.SqlClient.SqlNotificationEventArgs">
+﻿<Type Name="SqlNotificationEventArgs" FullName="System.Data.SqlClient.SqlNotificationEventArgs">
   <TypeSignature Language="C#" Value="public class SqlNotificationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlNotificationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlNotificationEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public SqlNotificationEventArgs (System.Data.SqlClient.SqlNotificationType type, System.Data.SqlClient.SqlNotificationInfo info, System.Data.SqlClient.SqlNotificationSource source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.SqlClient.SqlNotificationType type, valuetype System.Data.SqlClient.SqlNotificationInfo info, valuetype System.Data.SqlClient.SqlNotificationSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlNotificationEventArgs.#ctor(System.Data.SqlClient.SqlNotificationType,System.Data.SqlClient.SqlNotificationInfo,System.Data.SqlClient.SqlNotificationSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As SqlNotificationType, info As SqlNotificationInfo, source As SqlNotificationSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationEventArgs(System::Data::SqlClient::SqlNotificationType type, System::Data::SqlClient::SqlNotificationInfo info, System::Data::SqlClient::SqlNotificationSource source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationInfo Info { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationInfo Info" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Info" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As SqlNotificationInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationInfo Info { System::Data::SqlClient::SqlNotificationInfo get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationSource Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationSource Source" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Source" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As SqlNotificationSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationSource Source { System::Data::SqlClient::SqlNotificationSource get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlNotificationType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.SqlClient.SqlNotificationType Type" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As SqlNotificationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationType Type { System::Data::SqlClient::SqlNotificationType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

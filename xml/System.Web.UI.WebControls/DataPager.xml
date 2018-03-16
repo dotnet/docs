@@ -1,7 +1,9 @@
-<Type Name="DataPager" FullName="System.Web.UI.WebControls.DataPager">
+﻿<Type Name="DataPager" FullName="System.Web.UI.WebControls.DataPager">
   <TypeSignature Language="C#" Value="public class DataPager : System.Web.UI.Control, System.Web.UI.IAttributeAccessor, System.Web.UI.INamingContainer, System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPager extends System.Web.UI.Control implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPager" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPager&#xA;Inherits Control&#xA;Implements IAttributeAccessor, ICompositeControlDesignerAccessor, INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPager : System::Web::UI::Control, System::Web::UI::IAttributeAccessor, System::Web::UI::INamingContainer, System::Web::UI::WebControls::ICompositeControlDesignerAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -174,6 +176,8 @@
       <MemberSignature Language="C#" Value="public DataPager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -206,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -235,6 +241,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -245,7 +253,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,6 +277,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ConnectToEvents (System.Web.UI.WebControls.IPageableItemContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConnectToEvents(class System.Web.UI.WebControls.IPageableItemContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.ConnectToEvents(System.Web.UI.WebControls.IPageableItemContainer)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConnectToEvents (container As IPageableItemContainer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectToEvents(System::Web::UI::WebControls::IPageableItemContainer ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -306,6 +316,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -335,6 +347,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CreatePagerFields ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreatePagerFields() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.CreatePagerFields" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreatePagerFields ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreatePagerFields();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -373,6 +387,8 @@
       <MemberSignature Language="C#" Value="public override void DataBind ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.DataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DataBind ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBind();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -400,6 +416,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataPagerFieldCollection Fields { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerFieldCollection Fields" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.Fields" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Fields As DataPagerFieldCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataPagerFieldCollection ^ Fields { System::Web::UI::WebControls::DataPagerFieldCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -419,7 +437,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -470,6 +488,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.IPageableItemContainer FindPageableItemContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.IPageableItemContainer FindPageableItemContainer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.FindPageableItemContainer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FindPageableItemContainer () As IPageableItemContainer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::IPageableItemContainer ^ FindPageableItemContainer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -509,9 +529,11 @@
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
-      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadControlState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -545,6 +567,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -575,6 +599,8 @@
       <MemberSignature Language="C#" Value="public int MaximumRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.MaximumRows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumRows As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumRows { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -585,7 +611,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -609,6 +635,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -631,9 +659,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -667,9 +697,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -709,6 +741,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTotalRowCountAvailable (object sender, System.Web.UI.WebControls.PageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTotalRowCountAvailable(object sender, class System.Web.UI.WebControls.PageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.OnTotalRowCountAvailable(System.Object,System.Web.UI.WebControls.PageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTotalRowCountAvailable (sender As Object, e As PageEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTotalRowCountAvailable(System::Object ^ sender, System::Web::UI::WebControls::PageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -741,6 +775,8 @@
       <MemberSignature Language="C#" Value="public virtual string PagedControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PagedControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.PagedControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PagedControlID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PagedControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -801,6 +837,8 @@
       <MemberSignature Language="C#" Value="public int PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.PageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -846,6 +884,8 @@
       <MemberSignature Language="C#" Value="public string QueryStringField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueryStringField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.QueryStringField" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryStringField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryStringField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -902,6 +942,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RecreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RecreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RecreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RecreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RecreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -927,9 +969,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -965,6 +1009,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderBeginTag (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RenderBeginTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginTag (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginTag(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -995,6 +1041,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1026,9 +1074,11 @@
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
-      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1056,6 +1106,8 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1091,6 +1143,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetPageProperties (int startRowIndex, int maximumRows, bool databind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPageProperties(int32 startRowIndex, int32 maximumRows, bool databind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.SetPageProperties(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetPageProperties (startRowIndex As Integer, maximumRows As Integer, databind As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetPageProperties(int startRowIndex, int maximumRows, bool databind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1129,6 +1183,8 @@
       <MemberSignature Language="C#" Value="public int StartRowIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.StartRowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartRowIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartRowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1139,7 +1195,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1155,6 +1211,8 @@
       <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAttribute (name As String) As String Implements IAttributeAccessor.GetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ name) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1186,6 +1244,8 @@
       <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetAttribute (name As String, value As String) Implements IAttributeAccessor.SetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ name, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1218,6 +1278,8 @@
       <MemberSignature Language="C#" Value="void ICompositeControlDesignerAccessor.RecreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.System#Web#UI#WebControls#ICompositeControlDesignerAccessor#RecreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Sub RecreateChildControls () Implements ICompositeControlDesignerAccessor.RecreateChildControls" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls() = System::Web::UI::WebControls::ICompositeControlDesignerAccessor::RecreateChildControls;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1247,6 +1309,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1257,7 +1321,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1286,6 +1350,8 @@
       <MemberSignature Language="C#" Value="public int TotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TotalRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPager.TotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -1296,7 +1362,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1313,6 +1379,8 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPager.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

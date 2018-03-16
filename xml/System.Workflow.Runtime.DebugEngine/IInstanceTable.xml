@@ -1,7 +1,9 @@
-<Type Name="IInstanceTable" FullName="System.Workflow.Runtime.DebugEngine.IInstanceTable">
+﻿<Type Name="IInstanceTable" FullName="System.Workflow.Runtime.DebugEngine.IInstanceTable">
   <TypeSignature Language="C#" Value="public interface IInstanceTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstanceTable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IInstanceTable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInstanceTable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInstanceTable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity GetActivity (string instanceId, string activityName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.ComponentModel.Activity GetActivity(string instanceId, string activityName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IInstanceTable.GetActivity(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetActivity (instanceId As String, activityName As String) As Activity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Activity ^ GetActivity(System::String ^ instanceId, System::String ^ activityName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

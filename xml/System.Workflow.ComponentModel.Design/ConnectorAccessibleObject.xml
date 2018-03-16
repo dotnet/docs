@@ -1,7 +1,9 @@
-<Type Name="ConnectorAccessibleObject" FullName="System.Workflow.ComponentModel.Design.ConnectorAccessibleObject">
+﻿<Type Name="ConnectorAccessibleObject" FullName="System.Workflow.ComponentModel.Design.ConnectorAccessibleObject">
   <TypeSignature Language="C#" Value="public class ConnectorAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectorAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConnectorAccessibleObject&#xA;Inherits AccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectorAccessibleObject : System::Windows::Forms::AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public ConnectorAccessibleObject (System.Workflow.ComponentModel.Design.Connector connector);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.Connector connector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.#ctor(System.Workflow.ComponentModel.Design.Connector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectorAccessibleObject(System::Workflow::ComponentModel::Design::Connector ^ connector);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject HitTest(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.HitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HitTest (x As Integer, y As Integer) As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ HitTest(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -97,6 +104,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -115,6 +124,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -133,6 +144,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ConnectorAccessibleObject.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

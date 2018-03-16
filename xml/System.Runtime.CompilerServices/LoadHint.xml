@@ -1,7 +1,9 @@
-<Type Name="LoadHint" FullName="System.Runtime.CompilerServices.LoadHint">
+﻿<Type Name="LoadHint" FullName="System.Runtime.CompilerServices.LoadHint">
   <TypeSignature Language="C#" Value="public enum LoadHint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LoadHint extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.LoadHint" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LoadHint" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LoadHint" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.LoadHint Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -53,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.LoadHint</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The dependency is always loaded.</summary>
       </Docs>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.LoadHint Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.LoadHint</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No preference specified.</summary>
       </Docs>
@@ -86,6 +94,8 @@
       <MemberSignature Language="C#" Value="Sometimes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.CompilerServices.LoadHint Sometimes = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.CompilerServices.LoadHint.Sometimes" />
+      <MemberSignature Language="VB.NET" Value="Sometimes" />
+      <MemberSignature Language="C++ CLI" Value="Sometimes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.LoadHint</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The dependency is sometimes loaded.</summary>
       </Docs>

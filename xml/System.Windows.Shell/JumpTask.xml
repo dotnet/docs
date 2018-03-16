@@ -1,7 +1,9 @@
-<Type Name="JumpTask" FullName="System.Windows.Shell.JumpTask">
+﻿<Type Name="JumpTask" FullName="System.Windows.Shell.JumpTask">
   <TypeSignature Language="C#" Value="public class JumpTask : System.Windows.Shell.JumpItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JumpTask extends System.Windows.Shell.JumpItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpTask" />
+  <TypeSignature Language="VB.NET" Value="Public Class JumpTask&#xA;Inherits JumpItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JumpTask : System::Windows::Shell::JumpItem" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public JumpTask ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpTask.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JumpTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.ApplicationPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public string Arguments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Arguments" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Arguments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Arguments As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Arguments { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +169,8 @@
       <MemberSignature Language="C#" Value="public int IconResourceIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 IconResourceIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.IconResourceIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconResourceIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IconResourceIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public string IconResourcePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IconResourcePath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.IconResourcePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconResourcePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IconResourcePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -233,6 +247,8 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +287,8 @@
       <MemberSignature Language="C#" Value="public string WorkingDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WorkingDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpTask.WorkingDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkingDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkingDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

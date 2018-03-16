@@ -1,7 +1,9 @@
-<Type Name="CleanUpVirtualizedItemEventArgs" FullName="System.Windows.Controls.CleanUpVirtualizedItemEventArgs">
+﻿<Type Name="CleanUpVirtualizedItemEventArgs" FullName="System.Windows.Controls.CleanUpVirtualizedItemEventArgs">
   <TypeSignature Language="C#" Value="public class CleanUpVirtualizedItemEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CleanUpVirtualizedItemEventArgs extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CleanUpVirtualizedItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CleanUpVirtualizedItemEventArgs&#xA;Inherits RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CleanUpVirtualizedItemEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public CleanUpVirtualizedItemEventArgs (object value, System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.#ctor(System.Object,System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, element As UIElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CleanUpVirtualizedItemEventArgs(System::Object ^ value, System::Windows::UIElement ^ element);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement UIElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement UIElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.UIElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UIElement As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ UIElement { System::Windows::UIElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.CleanUpVirtualizedItemEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

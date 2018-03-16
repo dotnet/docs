@@ -1,7 +1,9 @@
-<Type Name="CollectionModelBinder&lt;TElement&gt;" FullName="System.Web.ModelBinding.CollectionModelBinder&lt;TElement&gt;">
+﻿<Type Name="CollectionModelBinder&lt;TElement&gt;" FullName="System.Web.ModelBinding.CollectionModelBinder&lt;TElement&gt;">
   <TypeSignature Language="C#" Value="public class CollectionModelBinder&lt;TElement&gt; : System.Web.ModelBinding.IModelBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionModelBinder`1&lt;TElement&gt; extends System.Object implements class System.Web.ModelBinding.IModelBinder" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.CollectionModelBinder`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionModelBinder(Of TElement)&#xA;Implements IModelBinder" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TElement&gt;&#xA;public ref class CollectionModelBinder : System::Web::ModelBinding::IModelBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public CollectionModelBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CollectionModelBinder`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionModelBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,7 +46,11 @@
       <MemberSignature Language="C#" Value="public virtual bool BindModel (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BindModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CollectionModelBinder`1.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool BindModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +75,7 @@
       <MemberSignature Language="C#" Value="protected virtual bool CreateOrReplaceCollection (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext, System.Collections.Generic.IList&lt;TElement&gt; newCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CreateOrReplaceCollection(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Collections.Generic.IList`1&lt;!TElement&gt; newCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.CollectionModelBinder`1.CreateOrReplaceCollection(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Collections.Generic.IList{`0})" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CreateOrReplaceCollection(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext, System::Collections::Generic::IList&lt;TElement&gt; ^ newCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

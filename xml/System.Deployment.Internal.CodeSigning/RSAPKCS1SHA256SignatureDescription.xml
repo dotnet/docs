@@ -1,7 +1,9 @@
-<Type Name="RSAPKCS1SHA256SignatureDescription" FullName="System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription">
+﻿<Type Name="RSAPKCS1SHA256SignatureDescription" FullName="System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription">
   <TypeSignature Language="C#" Value="public sealed class RSAPKCS1SHA256SignatureDescription : System.Security.Cryptography.SignatureDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RSAPKCS1SHA256SignatureDescription extends System.Security.Cryptography.SignatureDescription" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RSAPKCS1SHA256SignatureDescription&#xA;Inherits SignatureDescription" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RSAPKCS1SHA256SignatureDescription sealed : System::Security::Cryptography::SignatureDescription" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public RSAPKCS1SHA256SignatureDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAPKCS1SHA256SignatureDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.AsymmetricSignatureDeformatter CreateDeformatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.AsymmetricSignatureDeformatter CreateDeformatter(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription.CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDeformatter (key As AsymmetricAlgorithm) As AsymmetricSignatureDeformatter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureDeformatter ^ CreateDeformatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -71,6 +77,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.AsymmetricSignatureFormatter CreateFormatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.AsymmetricSignatureFormatter CreateFormatter(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFormatter (key As AsymmetricAlgorithm) As AsymmetricSignatureFormatter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::AsymmetricSignatureFormatter ^ CreateFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

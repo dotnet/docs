@@ -1,7 +1,9 @@
-<Type Name="PictureBoxSizeMode" FullName="System.Windows.Forms.PictureBoxSizeMode">
+﻿<Type Name="PictureBoxSizeMode" FullName="System.Windows.Forms.PictureBoxSizeMode">
   <TypeSignature Language="C#" Value="public enum PictureBoxSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PictureBoxSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PictureBoxSizeMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PictureBoxSizeMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PictureBoxSizeMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="AutoSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PictureBoxSizeMode AutoSize = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="AutoSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.PictureBox" /> is sized equal to the size of the image that it contains.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="CenterImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PictureBoxSizeMode CenterImage = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.CenterImage" />
+      <MemberSignature Language="VB.NET" Value="CenterImage" />
+      <MemberSignature Language="C++ CLI" Value="CenterImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The image is displayed in the center if the <see cref="T:System.Windows.Forms.PictureBox" /> is larger than the image. If the image is larger than the <see cref="T:System.Windows.Forms.PictureBox" />, the picture is placed in the center of the <see cref="T:System.Windows.Forms.PictureBox" /> and the outside edges are clipped.</summary>
       </Docs>
@@ -65,6 +73,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PictureBoxSizeMode Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The image is placed in the upper-left corner of the <see cref="T:System.Windows.Forms.PictureBox" />. The image is clipped if it is larger than the <see cref="T:System.Windows.Forms.PictureBox" /> it is contained in.</summary>
       </Docs>
@@ -81,6 +92,8 @@
       <MemberSignature Language="C#" Value="StretchImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PictureBoxSizeMode StretchImage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.StretchImage" />
+      <MemberSignature Language="VB.NET" Value="StretchImage" />
+      <MemberSignature Language="C++ CLI" Value="StretchImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The image within the <see cref="T:System.Windows.Forms.PictureBox" /> is stretched or shrunk to fit the size of the <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
       </Docs>
@@ -97,6 +111,8 @@
       <MemberSignature Language="C#" Value="Zoom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PictureBoxSizeMode Zoom = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PictureBoxSizeMode.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Zoom" />
+      <MemberSignature Language="C++ CLI" Value="Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PictureBoxSizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The size of the image is increased or decreased maintaining the size ratio.</summary>
       </Docs>

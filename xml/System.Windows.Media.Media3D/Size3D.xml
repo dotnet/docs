@@ -1,7 +1,9 @@
-<Type Name="Size3D" FullName="System.Windows.Media.Media3D.Size3D">
+﻿<Type Name="Size3D" FullName="System.Windows.Media.Media3D.Size3D">
   <TypeSignature Language="C#" Value="public struct Size3D : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Size3D extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Size3D" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Size3D&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Size3D : IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public Size3D (double x, double y, double z);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y, float64 z) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Double, y As Double, z As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Size3D(double x, double y, double z);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Size3D Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Media3D.Size3D Empty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Size3D.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Size3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Media3D::Size3D Empty { System::Windows::Media::Media3D::Size3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,10 +109,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Size3D" /> structures for equality.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +165,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Media3D.Size3D value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Media3D.Size3D value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.Equals(System.Windows.Media.Media3D.Size3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Size3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::Media3D::Size3D value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -179,6 +198,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Media3D.Size3D size1, valuetype System.Windows.Media.Media3D.Size3D size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.Equals(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (size1 As Size3D, size2 As Size3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Media::Media3D::Size3D size1, System::Windows::Media::Media3D::Size3D size2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +242,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -250,6 +273,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Size3D.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -285,6 +310,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Size3D size1, valuetype System.Windows.Media.Media3D.Size3D size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Equality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (size1 As Size3D, size2 As Size3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::Media3D::Size3D size1, System::Windows::Media::Media3D::Size3D size2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -322,10 +349,21 @@
         <altmember cref="Overload:System.Windows.Media.Media3D.Size3D.Equals" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Point3D (System.Windows.Media.Media3D.Size3D size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Explicit(valuetype System.Windows.Media.Media3D.Size3D size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Explicit(System.Windows.Media.Media3D.Size3D)~System.Windows.Media.Media3D.Point3D" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (size As Size3D) As Point3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Point3D(System::Windows::Media::Media3D::Size3D size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -358,6 +396,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Windows.Media.Media3D.Vector3D (System.Windows.Media.Media3D.Size3D size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Explicit(valuetype System.Windows.Media.Media3D.Size3D size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Explicit(System.Windows.Media.Media3D.Size3D)~System.Windows.Media.Media3D.Vector3D" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (size As Size3D) As Vector3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Windows::Media::Media3D::Vector3D(System::Windows::Media::Media3D::Size3D size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +430,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.Media3D.Size3D size1, System.Windows.Media.Media3D.Size3D size2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Size3D size1, valuetype System.Windows.Media.Media3D.Size3D size2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.op_Inequality(System.Windows.Media.Media3D.Size3D,System.Windows.Media.Media3D.Size3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (size1 As Size3D, size2 As Size3D) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::Media3D::Size3D size1, System::Windows::Media::Media3D::Size3D size2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +472,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Size3D Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Size3D Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Size3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Media3D::Size3D Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -462,7 +506,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -490,10 +539,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -528,6 +588,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Size3D.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -557,6 +619,8 @@
       <MemberSignature Language="C#" Value="public double X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Size3D.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double X { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -590,6 +654,8 @@
       <MemberSignature Language="C#" Value="public double Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Size3D.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Y { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -622,6 +688,8 @@
       <MemberSignature Language="C#" Value="public double Z { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Z" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Size3D.Z" />
+      <MemberSignature Language="VB.NET" Value="Public Property Z As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Z { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -650,32 +718,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Size3D" /> structures for equality.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts this <see cref="T:System.Windows.Media.Media3D.Size3D" /> structure into a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure or a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

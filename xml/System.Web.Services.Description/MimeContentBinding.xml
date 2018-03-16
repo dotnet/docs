@@ -1,7 +1,9 @@
-<Type Name="MimeContentBinding" FullName="System.Web.Services.Description.MimeContentBinding">
+﻿<Type Name="MimeContentBinding" FullName="System.Web.Services.Description.MimeContentBinding">
   <TypeSignature Language="C#" Value="public sealed class MimeContentBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeContentBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeContentBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeContentBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeContentBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public MimeContentBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeContentBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MimeContentBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.MimeContentBinding.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string Part { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Part" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeContentBinding.Part" />
+      <MemberSignature Language="VB.NET" Value="Public Property Part As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Part { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeContentBinding.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

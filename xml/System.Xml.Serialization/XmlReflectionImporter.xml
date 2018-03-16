@@ -1,7 +1,9 @@
-<Type Name="XmlReflectionImporter" FullName="System.Xml.Serialization.XmlReflectionImporter">
+﻿<Type Name="XmlReflectionImporter" FullName="System.Xml.Serialization.XmlReflectionImporter">
   <TypeSignature Language="C#" Value="public class XmlReflectionImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlReflectionImporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlReflectionImporter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlReflectionImporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlReflectionImporter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +50,22 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlReflectionImporter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReflectionImporter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -84,6 +98,8 @@
       <MemberSignature Language="C#" Value="public XmlReflectionImporter (string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultNamespace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReflectionImporter(System::String ^ defaultNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -119,6 +135,8 @@
       <MemberSignature Language="C#" Value="public XmlReflectionImporter (System.Xml.Serialization.XmlAttributeOverrides attributeOverrides);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlAttributeOverrides attributeOverrides) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.#ctor(System.Xml.Serialization.XmlAttributeOverrides)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeOverrides As XmlAttributeOverrides)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReflectionImporter(System::Xml::Serialization::XmlAttributeOverrides ^ attributeOverrides);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -154,6 +172,8 @@
       <MemberSignature Language="C#" Value="public XmlReflectionImporter (System.Xml.Serialization.XmlAttributeOverrides attributeOverrides, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlAttributeOverrides attributeOverrides, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.#ctor(System.Xml.Serialization.XmlAttributeOverrides,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeOverrides As XmlAttributeOverrides, defaultNamespace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReflectionImporter(System::Xml::Serialization::XmlAttributeOverrides ^ attributeOverrides, System::String ^ defaultNamespace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -187,10 +207,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportMembersMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns internal type mappings using information from a Web service method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportMembersMapping">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (elementName As String, ns As String, members As XmlReflectionMember(), hasWrapperElement As Boolean) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::String ^ elementName, System::String ^ ns, cli::array &lt;System::Xml::Serialization::XmlReflectionMember ^&gt; ^ members, bool hasWrapperElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -247,6 +279,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (elementName As String, ns As String, members As XmlReflectionMember(), hasWrapperElement As Boolean, rpc As Boolean) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::String ^ elementName, System::String ^ ns, cli::array &lt;System::Xml::Serialization::XmlReflectionMember ^&gt; ^ members, bool hasWrapperElement, bool rpc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -289,6 +323,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc, bool openModel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc, bool openModel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (elementName As String, ns As String, members As XmlReflectionMember(), hasWrapperElement As Boolean, rpc As Boolean, openModel As Boolean) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::String ^ elementName, System::String ^ ns, cli::array &lt;System::Xml::Serialization::XmlReflectionMember ^&gt; ^ members, bool hasWrapperElement, bool rpc, bool openModel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -334,6 +370,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string elementName, string ns, System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc, bool openModel, System.Xml.Serialization.XmlMappingAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string elementName, string ns, class System.Xml.Serialization.XmlReflectionMember[] members, bool hasWrapperElement, bool rpc, bool openModel, valuetype System.Xml.Serialization.XmlMappingAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean,System.Xml.Serialization.XmlMappingAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (elementName As String, ns As String, members As XmlReflectionMember(), hasWrapperElement As Boolean, rpc As Boolean, openModel As Boolean, access As XmlMappingAccess) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::String ^ elementName, System::String ^ ns, cli::array &lt;System::Xml::Serialization::XmlReflectionMember ^&gt; ^ members, bool hasWrapperElement, bool rpc, bool openModel, System::Xml::Serialization::XmlMappingAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -377,10 +415,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportTypeMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a mapping to an XML Schema element for a specified .NET Framework type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportTypeMapping">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportTypeMapping(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -420,6 +469,7 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportTypeMapping(Type ^ type, System::String ^ defaultNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -461,6 +511,7 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type, System.Xml.Serialization.XmlRootAttribute root);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type, class System.Xml.Serialization.XmlRootAttribute root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type,System.Xml.Serialization.XmlRootAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportTypeMapping(Type ^ type, System::Xml::Serialization::XmlRootAttribute ^ root);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -502,6 +553,7 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (Type type, System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Type type, class System.Xml.Serialization.XmlRootAttribute root, string defaultNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type,System.Xml.Serialization.XmlRootAttribute,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportTypeMapping(Type ^ type, System::Xml::Serialization::XmlRootAttribute ^ root, System::String ^ defaultNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -545,6 +597,7 @@
       <MemberSignature Language="C#" Value="public void IncludeType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncludeType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.IncludeType(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncludeType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -583,6 +636,8 @@
       <MemberSignature Language="C#" Value="public void IncludeTypes (System.Reflection.ICustomAttributeProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncludeTypes(class System.Reflection.ICustomAttributeProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlReflectionImporter.IncludeTypes(System.Reflection.ICustomAttributeProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncludeTypes (provider As ICustomAttributeProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncludeTypes(System::Reflection::ICustomAttributeProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -610,35 +665,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ImportMembersMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns internal type mappings using information from a Web service method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlReflectionImporter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ImportTypeMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates a mapping to an XML Schema element for a specified .NET Framework type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

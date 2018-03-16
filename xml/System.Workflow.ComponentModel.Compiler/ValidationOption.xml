@@ -1,7 +1,9 @@
-<Type Name="ValidationOption" FullName="System.Workflow.ComponentModel.Compiler.ValidationOption">
+﻿<Type Name="ValidationOption" FullName="System.Workflow.ComponentModel.Compiler.ValidationOption">
   <TypeSignature Language="C#" Value="public enum ValidationOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationOption" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationOption" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.ValidationOption None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No validation performed.</summary>
       </Docs>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="Optional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.ValidationOption Optional = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.Optional" />
+      <MemberSignature Language="VB.NET" Value="Optional" />
+      <MemberSignature Language="C++ CLI" Value="Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Validation is optional. If value is present, it will be validated.</summary>
       </Docs>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.ValidationOption Required = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.ValidationOption.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Validation must be performed. Value must be present and will be validated.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ITable" FullName="System.Data.Linq.ITable">
+﻿<Type Name="ITable" FullName="System.Data.Linq.ITable">
   <TypeSignature Language="C#" Value="public interface ITable : System.Collections.IEnumerable, System.Linq.IQueryable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITable implements class System.Collections.IEnumerable, class System.Linq.IQueryable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ITable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITable&#xA;Implements IEnumerable, IQueryable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITable : System::Collections::IEnumerable, System::Linq::IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void Attach (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public void Attach (object entity, bool asModified);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(object entity, bool asModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object, asModified As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity, bool asModified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public void Attach (object entity, object original);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(object entity, object original) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.Attach(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Attach (entity As Object, original As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Attach(System::Object ^ entity, System::Object ^ original);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -134,10 +142,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttachAll">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AttachAll">
       <MemberSignature Language="C#" Value="public void AttachAll (System.Collections.IEnumerable entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AttachAll(class System.Collections.IEnumerable entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.AttachAll(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachAll (entities As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachAll(System::Collections::IEnumerable ^ entities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -166,6 +185,8 @@
       <MemberSignature Language="C#" Value="public void AttachAll (System.Collections.IEnumerable entities, bool asModified);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AttachAll(class System.Collections.IEnumerable entities, bool asModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.AttachAll(System.Collections.IEnumerable,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AttachAll (entities As IEnumerable, asModified As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachAll(System::Collections::IEnumerable ^ entities, bool asModified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -197,6 +218,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Linq.DataContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.DataContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ITable.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As DataContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Linq::DataContext ^ Context { System::Data::Linq::DataContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -215,6 +238,8 @@
       <MemberSignature Language="C#" Value="public void DeleteAllOnSubmit (System.Collections.IEnumerable entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteAllOnSubmit(class System.Collections.IEnumerable entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.DeleteAllOnSubmit(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteAllOnSubmit (entities As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteAllOnSubmit(System::Collections::IEnumerable ^ entities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -243,6 +268,8 @@
       <MemberSignature Language="C#" Value="public void DeleteOnSubmit (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteOnSubmit(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.DeleteOnSubmit(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteOnSubmit (entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteOnSubmit(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -271,6 +298,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Linq.ModifiedMemberInfo[] GetModifiedMembers (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Data.Linq.ModifiedMemberInfo[] GetModifiedMembers(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.GetModifiedMembers(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetModifiedMembers (entity As Object) As ModifiedMemberInfo()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::Linq::ModifiedMemberInfo&gt; ^ GetModifiedMembers(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -293,6 +322,8 @@
       <MemberSignature Language="C#" Value="public object GetOriginalEntityState (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOriginalEntityState(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.GetOriginalEntityState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOriginalEntityState (entity As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOriginalEntityState(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -326,6 +357,8 @@
       <MemberSignature Language="C#" Value="public void InsertAllOnSubmit (System.Collections.IEnumerable entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertAllOnSubmit(class System.Collections.IEnumerable entities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.InsertAllOnSubmit(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertAllOnSubmit (entities As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertAllOnSubmit(System::Collections::IEnumerable ^ entities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -354,6 +387,8 @@
       <MemberSignature Language="C#" Value="public void InsertOnSubmit (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertOnSubmit(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ITable.InsertOnSubmit(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertOnSubmit (entity As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertOnSubmit(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -382,6 +417,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.ITable.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -396,14 +433,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AttachAll">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

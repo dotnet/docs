@@ -1,7 +1,9 @@
-<Type Name="ValidationOptionAttribute" FullName="System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute">
+﻿<Type Name="ValidationOptionAttribute" FullName="System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ValidationOptionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValidationOptionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValidationOptionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationOptionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Event, AllowMultiple=false, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Event | System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
@@ -74,6 +76,7 @@ public sealed partial class Activity1: Activity
       <MemberSignature Language="C#" Value="public ValidationOptionAttribute (System.Workflow.ComponentModel.Compiler.ValidationOption validationOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Workflow.ComponentModel.Compiler.ValidationOption validationOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.#ctor(System.Workflow.ComponentModel.Compiler.ValidationOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationOptionAttribute(System::Workflow::ComponentModel::Compiler::ValidationOption validationOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -92,6 +95,8 @@ public sealed partial class Activity1: Activity
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ValidationOption ValidationOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Compiler.ValidationOption ValidationOption" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationOptionAttribute.ValidationOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationOption As ValidationOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::ValidationOption ValidationOption { System::Workflow::ComponentModel::Compiler::ValidationOption get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CngKeyHandleOpenOptions" FullName="System.Security.Cryptography.CngKeyHandleOpenOptions">
+﻿<Type Name="CngKeyHandleOpenOptions" FullName="System.Security.Cryptography.CngKeyHandleOpenOptions">
   <TypeSignature Language="C#" Value="public enum CngKeyHandleOpenOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngKeyHandleOpenOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngKeyHandleOpenOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CngKeyHandleOpenOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CngKeyHandleOpenOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="EphemeralKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngKeyHandleOpenOptions EphemeralKey = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyHandleOpenOptions.EphemeralKey" />
+      <MemberSignature Language="VB.NET" Value="EphemeralKey" />
+      <MemberSignature Language="C++ CLI" Value="EphemeralKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngKeyHandleOpenOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The key handle being opened specifies an ephemeral key.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngKeyHandleOpenOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngKeyHandleOpenOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngKeyHandleOpenOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The key handle being opened does not specify an ephemeral key.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="DocumentReferenceCollection" FullName="System.Windows.Documents.DocumentReferenceCollection">
+﻿<Type Name="DocumentReferenceCollection" FullName="System.Windows.Documents.DocumentReferenceCollection">
   <TypeSignature Language="C#" Value="public sealed class DocumentReferenceCollection : System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentReference&gt;, System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DocumentReferenceCollection extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Documents.DocumentReference&gt;, class System.Collections.IEnumerable, class System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentReferenceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DocumentReferenceCollection&#xA;Implements IEnumerable(Of DocumentReference), INotifyCollectionChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentReferenceCollection sealed : System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentReference ^&gt;, System::Collections::Specialized::INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Documents.DocumentReference item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Documents.DocumentReference item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReferenceCollection.Add(System.Windows.Documents.DocumentReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As DocumentReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentReference ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DocumentReferenceCollection.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Documents.DocumentReference[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Documents.DocumentReference[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReferenceCollection.CopyTo(System.Windows.Documents.DocumentReference[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DocumentReference(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Documents::DocumentReference ^&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +124,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentReferenceCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,7 +144,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Windows.Documents.DocumentReference&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Documents.DocumentReference&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReferenceCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of DocumentReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Documents::DocumentReference ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.DocumentReference this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.DocumentReference Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentReferenceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DocumentReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentReference ^ default[int] { System::Windows::Documents::DocumentReference ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,7 +201,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentReferenceCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

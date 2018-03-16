@@ -1,7 +1,9 @@
-<Type Name="CompareOptions" FullName="System.Globalization.CompareOptions">
+﻿<Type Name="CompareOptions" FullName="System.Globalization.CompareOptions">
   <TypeSignature Language="C#" Value="public enum CompareOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CompareOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CompareOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompareOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompareOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="IgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions IgnoreCase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -85,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must ignore case.</summary>
       </Docs>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="IgnoreKanaType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions IgnoreKanaType = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreKanaType" />
+      <MemberSignature Language="VB.NET" Value="IgnoreKanaType" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreKanaType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -115,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must ignore the Kana type. Kana type refers to Japanese hiragana and katakana characters, which represent phonetic sounds in the Japanese language. Hiragana is used for native Japanese expressions and words, while katakana is used for words borrowed from other languages, such as "computer" or "Internet". A phonetic sound can be expressed in both hiragana and katakana. If this value is selected, the hiragana character for one sound is considered equal to the katakana character for the same sound.</summary>
       </Docs>
@@ -123,6 +131,8 @@
       <MemberSignature Language="C#" Value="IgnoreNonSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions IgnoreNonSpace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreNonSpace" />
+      <MemberSignature Language="VB.NET" Value="IgnoreNonSpace" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreNonSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -145,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must ignore nonspacing combining characters, such as diacritics. The [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123) defines combining characters as characters that are combined with base characters to produce a new character. Nonspacing combining characters do not occupy a spacing position by themselves when rendered.</summary>
       </Docs>
@@ -153,6 +164,8 @@
       <MemberSignature Language="C#" Value="IgnoreSymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions IgnoreSymbols = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreSymbols" />
+      <MemberSignature Language="VB.NET" Value="IgnoreSymbols" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -175,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must ignore symbols, such as white-space characters, punctuation, currency symbols, the percent sign, mathematical symbols, the ampersand, and so on.</summary>
       </Docs>
@@ -183,6 +197,8 @@
       <MemberSignature Language="C#" Value="IgnoreWidth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions IgnoreWidth = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.IgnoreWidth" />
+      <MemberSignature Language="VB.NET" Value="IgnoreWidth" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -205,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must ignore the character width. For example, Japanese katakana characters can be written as full-width or half-width. If this value is selected, the katakana characters written as full-width are considered equal to the same characters written as half-width.</summary>
       </Docs>
@@ -213,6 +230,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -235,6 +254,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates the default option settings for string comparisons.</summary>
       </Docs>
@@ -243,6 +263,8 @@
       <MemberSignature Language="C#" Value="Ordinal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions Ordinal = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.Ordinal" />
+      <MemberSignature Language="VB.NET" Value="Ordinal" />
+      <MemberSignature Language="C++ CLI" Value="Ordinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -265,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must use successive Unicode UTF-16 encoded values of the string (code unit by code unit comparison), leading to a fast comparison but one that is culture-insensitive. A string starting with a code unit XXXX16 comes before a string starting with YYYY16, if XXXX16 is less than YYYY16. This value cannot be combined with other <see cref="T:System.Globalization.CompareOptions" /> values and must be used alone.</summary>
       </Docs>
@@ -273,6 +296,8 @@
       <MemberSignature Language="C#" Value="OrdinalIgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions OrdinalIgnoreCase = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="OrdinalIgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="OrdinalIgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -295,6 +320,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>String comparison must ignore case, then perform an ordinal comparison. This technique is equivalent to converting the string to uppercase using the invariant culture and then performing an ordinal comparison on the result.</summary>
       </Docs>
@@ -303,6 +329,8 @@
       <MemberSignature Language="C#" Value="StringSort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CompareOptions StringSort = int32(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CompareOptions.StringSort" />
+      <MemberSignature Language="VB.NET" Value="StringSort" />
+      <MemberSignature Language="C++ CLI" Value="StringSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -325,6 +353,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CompareOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>Indicates that the string comparison must use the string sort algorithm. In a string sort, the hyphen and the apostrophe, as well as other nonalphanumeric symbols, come before alphanumeric characters.</summary>
       </Docs>

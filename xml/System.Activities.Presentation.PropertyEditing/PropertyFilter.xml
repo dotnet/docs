@@ -1,7 +1,9 @@
-<Type Name="PropertyFilter" FullName="System.Activities.Presentation.PropertyEditing.PropertyFilter">
+﻿<Type Name="PropertyFilter" FullName="System.Activities.Presentation.PropertyEditing.PropertyFilter">
   <TypeSignature Language="C#" Value="public class PropertyFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PropertyFilter (System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate&gt; predicates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate&gt; predicates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.#ctor(System.Collections.Generic.IEnumerable{System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (predicates As IEnumerable(Of PropertyFilterPredicate))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyFilter(System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::PropertyEditing::PropertyFilterPredicate ^&gt; ^ predicates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +57,8 @@
       <MemberSignature Language="C#" Value="public PropertyFilter (string filterText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filterText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filterText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyFilter(System::String ^ filterText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -62,6 +77,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyFilter.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -81,6 +98,8 @@
       <MemberSignature Language="C#" Value="public bool Match (System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Match(class System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.Match(System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Match (target As IPropertyFilterTarget) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Match(System::Activities::Presentation::PropertyEditing::IPropertyFilterTarget ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -100,14 +119,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

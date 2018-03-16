@@ -1,7 +1,9 @@
-<Type Name="QueryableFilterRepeater" FullName="System.Web.DynamicData.QueryableFilterRepeater">
+﻿<Type Name="QueryableFilterRepeater" FullName="System.Web.DynamicData.QueryableFilterRepeater">
   <TypeSignature Language="C#" Value="public class QueryableFilterRepeater : System.Web.UI.Control, System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryableFilterRepeater extends System.Web.UI.Control implements class System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.QueryableFilterRepeater" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryableFilterRepeater&#xA;Inherits Control&#xA;Implements IFilterExpressionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryableFilterRepeater : System::Web::UI::Control, System::Web::DynamicData::IFilterExpressionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,6 +120,8 @@
       <MemberSignature Language="C#" Value="public QueryableFilterRepeater ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterRepeater.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryableFilterRepeater();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -140,6 +144,8 @@
       <MemberSignature Language="C#" Value="public string DynamicFilterContainerId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicFilterContainerId" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterRepeater.DynamicFilterContainerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicFilterContainerId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicFilterContainerId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -179,6 +185,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate ItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.QueryableFilterRepeater.ItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -192,7 +200,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.INamingContainer))</AttributeName>
@@ -226,6 +234,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterRepeater.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -254,7 +264,12 @@
       <MemberSignature Language="C#" Value="System.Linq.IQueryable IFilterExpressionProvider.GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.IQueryable System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterRepeater.System#Web#DynamicData#IFilterExpressionProvider#GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Function GetQueryable (source As IQueryable) As IQueryable Implements IFilterExpressionProvider.GetQueryable" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Linq::IQueryable ^ System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System::Linq::IQueryable ^ source) = System::Web::DynamicData::IFilterExpressionProvider::GetQueryable;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System.Linq.IQueryable)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -283,7 +298,12 @@
       <MemberSignature Language="C#" Value="void IFilterExpressionProvider.Initialize (System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.DynamicData.IFilterExpressionProvider.Initialize(class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.QueryableFilterRepeater.System#Web#DynamicData#IFilterExpressionProvider#Initialize(System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Sub Initialize (dataSource As IQueryableDataSource) Implements IFilterExpressionProvider.Initialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.DynamicData.IFilterExpressionProvider.Initialize(System::Web::UI::WebControls::IQueryableDataSource ^ dataSource) = System::Web::DynamicData::IFilterExpressionProvider::Initialize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IFilterExpressionProvider.Initialize(System.Web.UI.WebControls.IQueryableDataSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

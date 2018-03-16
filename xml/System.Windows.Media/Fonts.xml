@@ -1,7 +1,9 @@
-<Type Name="Fonts" FullName="System.Windows.Media.Fonts">
+﻿<Type Name="Fonts" FullName="System.Windows.Media.Fonts">
   <TypeSignature Language="C#" Value="public static class Fonts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Fonts extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Fonts" />
+  <TypeSignature Language="VB.NET" Value="Public Class Fonts" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Fonts abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@ Example of typefaces that are "Times New Roman" font family members
     <altmember cref="T:System.Windows.Media.Typeface" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetFontFamilies">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of <see cref="T:System.Windows.Media.FontFamily" /> objects from a specified font location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFontFamilies">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.FontFamily&gt; GetFontFamilies (string location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.FontFamily&gt; GetFontFamilies(string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetFontFamilies(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontFamilies (location As String) As ICollection(Of FontFamily)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::FontFamily ^&gt; ^ GetFontFamilies(System::String ^ location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +77,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.FontFamily&gt; GetFontFamilies (Uri baseUri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.FontFamily&gt; GetFontFamilies(class System.Uri baseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetFontFamilies(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontFamilies (baseUri As Uri) As ICollection(Of FontFamily)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::FontFamily ^&gt; ^ GetFontFamilies(Uri ^ baseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +117,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.FontFamily&gt; GetFontFamilies (Uri baseUri, string location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.FontFamily&gt; GetFontFamilies(class System.Uri baseUri, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetFontFamilies(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFontFamilies (baseUri As Uri, location As String) As ICollection(Of FontFamily)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::FontFamily ^&gt; ^ GetFontFamilies(Uri ^ baseUri, System::String ^ location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,10 +149,21 @@ Example of typefaces that are "Times New Roman" font family members
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTypefaces">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of <see cref="T:System.Windows.Media.Typeface" /> objects from a specified directory location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTypefaces">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.Typeface&gt; GetTypefaces (string location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Typeface&gt; GetTypefaces(string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetTypefaces(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypefaces (location As String) As ICollection(Of Typeface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::Typeface ^&gt; ^ GetTypefaces(System::String ^ location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +197,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.Typeface&gt; GetTypefaces (Uri baseUri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Typeface&gt; GetTypefaces(class System.Uri baseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetTypefaces(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypefaces (baseUri As Uri) As ICollection(Of Typeface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::Typeface ^&gt; ^ GetTypefaces(Uri ^ baseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +237,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.Typeface&gt; GetTypefaces (Uri baseUri, string location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Typeface&gt; GetTypefaces(class System.Uri baseUri, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Fonts.GetTypefaces(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypefaces (baseUri As Uri, location As String) As ICollection(Of Typeface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::ICollection&lt;System::Windows::Media::Typeface ^&gt; ^ GetTypefaces(Uri ^ baseUri, System::String ^ location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -241,6 +273,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.FontFamily&gt; SystemFontFamilies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.FontFamily&gt; SystemFontFamilies" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Fonts.SystemFontFamilies" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemFontFamilies As ICollection(Of FontFamily)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::ICollection&lt;System::Windows::Media::FontFamily ^&gt; ^ SystemFontFamilies { System::Collections::Generic::ICollection&lt;System::Windows::Media::FontFamily ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +293,8 @@ Example of typefaces that are "Times New Roman" font family members
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.ICollection&lt;System.Windows.Media.Typeface&gt; SystemTypefaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Typeface&gt; SystemTypefaces" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Fonts.SystemTypefaces" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SystemTypefaces As ICollection(Of Typeface)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::ICollection&lt;System::Windows::Media::Typeface ^&gt; ^ SystemTypefaces { System::Collections::Generic::ICollection&lt;System::Windows::Media::Typeface ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -273,23 +309,5 @@ Example of typefaces that are "Times New Roman" font family members
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetTypefaces">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of <see cref="T:System.Windows.Media.Typeface" /> objects from a specified directory location.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFontFamilies">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of <see cref="T:System.Windows.Media.FontFamily" /> objects from a specified font location.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

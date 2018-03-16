@@ -1,7 +1,9 @@
-<Type Name="DynamicFieldInfo" FullName="Microsoft.JScript.DynamicFieldInfo">
+﻿<Type Name="DynamicFieldInfo" FullName="Microsoft.JScript.DynamicFieldInfo">
   <TypeSignature Language="C#" Value="public sealed class DynamicFieldInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DynamicFieldInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.DynamicFieldInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicFieldInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicFieldInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -19,10 +21,24 @@
     <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class.</summary>
+        <altmember cref="T:System.Reflection.FieldInfo" />
+        <altmember cref="T:Microsoft.JScript.IDebugType" />
+        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicFieldInfo (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicFieldInfo(System::String ^ name, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -47,6 +63,8 @@
       <MemberSignature Language="C#" Value="public DynamicFieldInfo (string name, object value, string fieldTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value, string fieldTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.DynamicFieldInfo.#ctor(System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object, fieldTypeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicFieldInfo(System::String ^ name, System::Object ^ value, System::String ^ fieldTypeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -73,6 +91,8 @@
       <MemberSignature Language="C#" Value="public string fieldTypeName;" />
       <MemberSignature Language="ILAsm" Value=".field public string fieldTypeName" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.fieldTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public fieldTypeName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ fieldTypeName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -94,6 +114,8 @@
       <MemberSignature Language="C#" Value="public string name;" />
       <MemberSignature Language="ILAsm" Value=".field public string name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.name" />
+      <MemberSignature Language="VB.NET" Value="Public name As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +137,8 @@
       <MemberSignature Language="C#" Value="public object value;" />
       <MemberSignature Language="ILAsm" Value=".field public object value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.DynamicFieldInfo.value" />
+      <MemberSignature Language="VB.NET" Value="Public value As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -132,17 +156,5 @@
         <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.DynamicFieldInfo" /> class.</summary>
-        <altmember cref="T:System.Reflection.FieldInfo" />
-        <altmember cref="T:Microsoft.JScript.IDebugType" />
-        <altmember cref="T:Microsoft.JScript.IDebuggerObject" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

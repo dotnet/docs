@@ -1,7 +1,9 @@
-<Type Name="ClaimSet" FullName="System.IdentityModel.Claims.ClaimSet">
+﻿<Type Name="ClaimSet" FullName="System.IdentityModel.Claims.ClaimSet">
   <TypeSignature Language="C#" Value="public abstract class ClaimSet : System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ClaimSet extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.ClaimSet" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ClaimSet&#xA;Implements IEnumerable(Of Claim)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClaimSet abstract : System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Claims::Claim ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected ClaimSet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ClaimSet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -61,10 +65,20 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ContainsClaim">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> contains the specified <see cref="T:System.IdentityModel.Claims.Claim" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ContainsClaim">
       <MemberSignature Language="C#" Value="public virtual bool ContainsClaim (System.IdentityModel.Claims.Claim claim);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsClaim(class System.IdentityModel.Claims.Claim claim) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.ContainsClaim(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsClaim(System::IdentityModel::Claims::Claim ^ claim);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -95,6 +109,7 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsClaim (System.IdentityModel.Claims.Claim claim, System.Collections.Generic.IEqualityComparer&lt;System.IdentityModel.Claims.Claim&gt; comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsClaim(class System.IdentityModel.Claims.Claim claim, class System.Collections.Generic.IEqualityComparer`1&lt;class System.IdentityModel.Claims.Claim&gt; comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.ContainsClaim(System.IdentityModel.Claims.Claim,System.Collections.Generic.IEqualityComparer{System.IdentityModel.Claims.Claim})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsClaim(System::IdentityModel::Claims::Claim ^ claim, System::Collections::Generic::IEqualityComparer&lt;System::IdentityModel::Claims::Claim ^&gt; ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -127,6 +142,8 @@
       <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimSet.Count" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -149,9 +166,16 @@
       </Docs>
     </Member>
     <Member MemberName="FindClaims">
-      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string resourceType, string right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string resourceType, string right) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.FindClaims(System.String,System.String)" />
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string claimType, string right);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string claimType, string right) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.FindClaims(System.String,System.String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindClaims (claimType As String, right As String) As IEnumerable(Of Claim)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Claims::Claim ^&gt; ^ FindClaims(System::String ^ claimType, System::String ^ right);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string resourceType, string right);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string resourceType, string right) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.FindClaims(System.String,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FindClaims (resourceType As String, right As String) As IEnumerable(Of Claim)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Claims::Claim ^&gt; ^ FindClaims(System::String ^ resourceType, System::String ^ right);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -161,10 +185,12 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="claimType" Type="System.String" />
-        <Parameter Name="right" Type="System.String" />
+        <Parameter Name="claimType" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="resourceType" Type="System.String" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="right" Type="System.String" Index="1" />
       </Parameters>
       <Docs>
+        <param name="claimType">To be added.</param>
         <param name="resourceType">To be added.</param>
         <param name="right">The URI of the right associated with the new claim. Several rights are available as static properties of the <see cref="T:System.IdentityModel.Claims.Rights" /> class.</param>
         <summary>When overridden in a derived class, searches for a <see cref="T:System.IdentityModel.Claims.Claim" /> object that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.ClaimSet" />.</summary>
@@ -189,7 +215,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;System.IdentityModel.Claims.Claim&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.IdentityModel.Claims.Claim&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerator&lt;System::IdentityModel::Claims::Claim ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,6 +248,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Claims.ClaimSet Issuer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.ClaimSet Issuer" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimSet.Issuer" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Issuer As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IdentityModel::Claims::ClaimSet ^ Issuer { System::IdentityModel::Claims::ClaimSet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -242,6 +275,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Claims.Claim this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.Claim Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimSet.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(index As Integer) As Claim" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IdentityModel::Claims::Claim ^ default[int] { System::IdentityModel::Claims::Claim ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -264,6 +299,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.ClaimSet System { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Claims.ClaimSet System" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimSet.System" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property System As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Claims::ClaimSet ^ System { System::IdentityModel::Claims::ClaimSet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -291,7 +328,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.ClaimSet.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -319,6 +361,8 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Claims.ClaimSet Windows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Claims.ClaimSet Windows" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.ClaimSet.Windows" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Windows As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IdentityModel::Claims::ClaimSet ^ Windows { System::IdentityModel::Claims::ClaimSet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -340,14 +384,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ContainsClaim">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> contains the specified <see cref="T:System.IdentityModel.Claims.Claim" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="CodePagesEncodingProvider" FullName="System.Text.CodePagesEncodingProvider">
+﻿<Type Name="CodePagesEncodingProvider" FullName="System.Text.CodePagesEncodingProvider">
   <TypeSignature Language="C#" Value="public sealed class CodePagesEncodingProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodePagesEncodingProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.CodePagesEncodingProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodePagesEncodingProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodePagesEncodingProvider sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="public static System.Text.EncodingProvider Instance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.EncodingProvider Instance" />
       <MemberSignature Language="DocId" Value="P:System.Text.CodePagesEncodingProvider.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As EncodingProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::EncodingProvider ^ Instance { System::Text::EncodingProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.CodePages</AssemblyName>

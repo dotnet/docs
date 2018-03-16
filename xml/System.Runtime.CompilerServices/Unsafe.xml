@@ -1,7 +1,9 @@
-<Type Name="Unsafe" FullName="System.Runtime.CompilerServices.Unsafe">
+﻿<Type Name="Unsafe" FullName="System.Runtime.CompilerServices.Unsafe">
   <TypeSignature Language="C#" Value="public static class Unsafe" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Unsafe extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.Unsafe" />
+  <TypeSignature Language="VB.NET" Value="Public Class Unsafe" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Unsafe abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, int elementOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T&amp; source, int32 elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add(Of T) (ByRef source As T, elementOffset As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % Add(T % source, int elementOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static T Add&lt;T&gt; (ref T source, IntPtr elementOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Add&lt;T&gt;(!!T&amp; source, native int elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Add``1(``0@,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add(Of T) (ByRef source As T, elementOffset As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % Add(T % source, IntPtr elementOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static T AddByteOffset&lt;T&gt; (ref T source, IntPtr byteOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AddByteOffset&lt;T&gt;(!!T&amp; source, native int byteOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AddByteOffset``1(``0@,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddByteOffset(Of T) (ByRef source As T, byteOffset As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % AddByteOffset(T % source, IntPtr byteOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public static bool AreSame&lt;T&gt; (ref T left, ref T right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool AreSame&lt;T&gt;(!!T&amp; left, !!T&amp; right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AreSame``1(``0@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AreSame(Of T) (ByRef left As T, ByRef right As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static bool AreSame(T % left, T % right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -135,7 +145,8 @@
         <summary>
           Determines whether the specified references point to the same location.
         </summary>
-        <returns><see langword="true" /> if <paramref name="left"/> and <paramref name="right"/> point to the same location; otherwise, <see langword="false" />.</returns>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> point to the same location; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -143,6 +154,8 @@
       <MemberSignature Language="C#" Value="public static T As&lt;T&gt; (object o) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T As&lt;class T&gt;(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.As``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function As(Of T As Class) (o As Object) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T As(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -175,6 +188,8 @@
       <MemberSignature Language="C#" Value="public static TTo As&lt;TFrom,TTo&gt; (ref TFrom source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TTo As&lt;TFrom, TTo&gt;(!!TFrom&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.As``2(``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function As(Of TFrom, TTo) (ByRef source As TFrom) As TTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TFrom, typename TTo&gt;&#xA; static TTo % As(TFrom % source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -196,9 +211,9 @@
         <typeparam name="TTo">The desired type of the reference.</typeparam>
         <param name="source">The reference to reinterpret.</param>
         <summary>
-          Reinterprets the given reference as a reference to a value of type <typeparamref name="TTo"/>.
+          Reinterprets the given reference as a reference to a value of type <typeparamref name="TTo" />.
         </summary>
-        <returns>A reference to a value of type <typeparamref name="TTo"/>.</returns>
+        <returns>A reference to a value of type <typeparamref name="TTo" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,6 +221,7 @@
       <MemberSignature Language="C#" Value="public static void* AsPointer&lt;T&gt; (ref T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void* AsPointer&lt;T&gt;(!!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsPointer``1(``0@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void* AsPointer(T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -236,6 +252,7 @@
       <MemberSignature Language="C#" Value="public static T AsRef&lt;T&gt; (void* source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;(void* source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(System.Void*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % AsRef(void* source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -256,9 +273,9 @@
         <typeparam name="T">The type of the interpreted location.</typeparam>
         <param name="source">The location of the value to reference.</param>
         <summary>
-          Reinterprets the given location as a reference to a value of type <typeparamref name="T"/>.
+          Reinterprets the given location as a reference to a value of type <typeparamref name="T" />.
         </summary>
-        <returns>A reference to a value of type <typeparamref name="T"/>.</returns>
+        <returns>A reference to a value of type <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,6 +283,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ByteOffset&lt;T&gt; (ref T origin, ref T target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ByteOffset&lt;T&gt;(!!T&amp; origin, !!T&amp; target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.ByteOffset``1(``0@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ByteOffset(Of T) (ByRef origin As T, ByRef target As T) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static IntPtr ByteOffset(T % origin, T % target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -288,7 +307,7 @@
         <summary>
           Determines the byte offset from origin to target from the given references.
         </summary>
-        <returns>Byte offset from origin to target i.e. <paramref name="target"/> - <paramref name="origin"/>.</returns>
+        <returns>Byte offset from origin to target i.e. <paramref name="target" /> - <paramref name="origin" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,6 +315,7 @@
       <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (void* destination, ref T source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(void* destination, !!T&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(System.Void*,``0@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Copy(void* destination, T % source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -318,7 +338,7 @@
         <param name="destination">The location to copy to.</param>
         <param name="source">A reference to the value to copy.</param>
         <summary>
-          Copies a value of type <typeparamref name="T"/> to the given location.
+          Copies a value of type <typeparamref name="T" /> to the given location.
         </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,6 +347,7 @@
       <MemberSignature Language="C#" Value="public static void Copy&lt;T&gt; (ref T destination, void* source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Copy&lt;T&gt;(!!T&amp; destination, void* source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Copy``1(``0@,System.Void*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Copy(T % destination, void* source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -349,7 +370,7 @@
         <param name="destination">The location to copy to.</param>
         <param name="source">A pointer to the value to copy.</param>
         <summary>
-           Copies a value of type <typeparamref name="T"/> to the given location.
+           Copies a value of type <typeparamref name="T" /> to the given location.
         </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,6 +379,8 @@
       <MemberSignature Language="C#" Value="public static void CopyBlock (ref byte destination, ref byte source, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlock(unsigned int8&amp; destination, unsigned int8&amp; source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Byte@,System.Byte@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyBlock (ByRef destination As Byte, ByRef source As Byte, byteCount As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyBlock(System::Byte % destination, System::Byte % source, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -385,6 +408,7 @@
       <MemberSignature Language="C#" Value="public static void CopyBlock (void* destination, void* source, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlock(void* destination, void* source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlock(System.Void*,System.Void*,System.UInt32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyBlock(void* destination, void* source, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -414,6 +438,8 @@
       <MemberSignature Language="C#" Value="public static void CopyBlockUnaligned (ref byte destination, ref byte source, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlockUnaligned(unsigned int8&amp; destination, unsigned int8&amp; source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Byte@,System.Byte@,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyBlockUnaligned (ByRef destination As Byte, ByRef source As Byte, byteCount As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyBlockUnaligned(System::Byte % destination, System::Byte % source, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -442,6 +468,7 @@
       <MemberSignature Language="C#" Value="public static void CopyBlockUnaligned (void* destination, void* source, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyBlockUnaligned(void* destination, void* source, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.CopyBlockUnaligned(System.Void*,System.Void*,System.UInt32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CopyBlockUnaligned(void* destination, void* source, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -470,6 +497,8 @@
       <MemberSignature Language="C#" Value="public static void InitBlock (ref byte startAddress, byte value, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlock(unsigned int8&amp; startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Byte@,System.Byte,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InitBlock (ByRef startAddress As Byte, value As Byte, byteCount As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitBlock(System::Byte % startAddress, System::Byte value, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -497,6 +526,7 @@
       <MemberSignature Language="C#" Value="public static void InitBlock (void* startAddress, byte value, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlock(void* startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlock(System.Void*,System.Byte,System.UInt32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitBlock(void* startAddress, System::Byte value, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -526,6 +556,8 @@
       <MemberSignature Language="C#" Value="public static void InitBlockUnaligned (ref byte startAddress, byte value, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlockUnaligned(unsigned int8&amp; startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Byte@,System.Byte,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InitBlockUnaligned (ByRef startAddress As Byte, value As Byte, byteCount As UInteger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitBlockUnaligned(System::Byte % startAddress, System::Byte value, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -554,6 +586,7 @@
       <MemberSignature Language="C#" Value="public static void InitBlockUnaligned (void* startAddress, byte value, uint byteCount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InitBlockUnaligned(void* startAddress, unsigned int8 value, unsigned int32 byteCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.InitBlockUnaligned(System.Void*,System.Byte,System.UInt32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InitBlockUnaligned(void* startAddress, System::Byte value, System::UInt32 byteCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -582,6 +615,7 @@
       <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (void* source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;T&gt;(void* source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Read``1(System.Void*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T Read(void* source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -602,9 +636,9 @@
         <typeparam name="T">The type to read.</typeparam>
         <param name="source">The location to read from.</param>
         <summary>
-          Reads a value of type <typeparamref name="T"/> from the given location.
+          Reads a value of type <typeparamref name="T" /> from the given location.
          </summary>
-        <returns>An object of type <typeparamref name="T"/> read from the given location.</returns>
+        <returns>An object of type <typeparamref name="T" /> read from the given location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -612,6 +646,8 @@
       <MemberSignature Language="C#" Value="public static T ReadUnaligned&lt;T&gt; (ref byte source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadUnaligned&lt;T&gt;(unsigned int8&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Byte@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUnaligned(Of T) (ByRef source As Byte) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T ReadUnaligned(System::Byte % source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -630,10 +666,10 @@
         <typeparam name="T">The type to read.</typeparam>
         <param name="source">The location to read from.</param>
         <summary>
-          Reads a value of type <typeparamref name="T"/> from the given location
+          Reads a value of type <typeparamref name="T" /> from the given location
           without assuming architecture dependent alignment of the addresses.
         </summary>
-        <returns>An object of type <typeparamref name="T"/> read from the given location.</returns>
+        <returns>An object of type <typeparamref name="T" /> read from the given location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -641,6 +677,7 @@
       <MemberSignature Language="C#" Value="public static T ReadUnaligned&lt;T&gt; (void* source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T ReadUnaligned&lt;T&gt;(void* source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.ReadUnaligned``1(System.Void*)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T ReadUnaligned(void* source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -659,10 +696,10 @@
         <typeparam name="T">The type to read.</typeparam>
         <param name="source">The location to read from.</param>
         <summary>
-          Reads a value of type <typeparamref name="T"/> from the given location
+          Reads a value of type <typeparamref name="T" /> from the given location
           without assuming architecture dependent alignment of the addresses.
         </summary>
-        <returns>An object of type <typeparamref name="T"/> read from the given location.</returns>
+        <returns>An object of type <typeparamref name="T" /> read from the given location.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -670,6 +707,8 @@
       <MemberSignature Language="C#" Value="public static int SizeOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 SizeOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.SizeOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf(Of T) () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static int SizeOf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -687,7 +726,7 @@
       <Docs>
         <typeparam name="T">The type of object whose size is retrieved.</typeparam>
         <summary>Returns the size of an object of the given type parameter.</summary>
-        <returns>The size of an object of type <typeparamref name="T"/>.</returns>
+        <returns>The size of an object of type <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -695,6 +734,8 @@
       <MemberSignature Language="C#" Value="public static T Subtract&lt;T&gt; (ref T source, int elementOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T&amp; source, int32 elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract(Of T) (ByRef source As T, elementOffset As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % Subtract(T % source, int elementOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -724,6 +765,8 @@
       <MemberSignature Language="C#" Value="public static T Subtract&lt;T&gt; (ref T source, IntPtr elementOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Subtract&lt;T&gt;(!!T&amp; source, native int elementOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Subtract``1(``0@,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract(Of T) (ByRef source As T, elementOffset As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % Subtract(T % source, IntPtr elementOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -754,6 +797,8 @@
       <MemberSignature Language="C#" Value="public static T SubtractByteOffset&lt;T&gt; (ref T source, IntPtr byteOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T SubtractByteOffset&lt;T&gt;(!!T&amp; source, native int byteOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.SubtractByteOffset``1(``0@,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SubtractByteOffset(Of T) (ByRef source As T, byteOffset As IntPtr) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T % SubtractByteOffset(T % source, IntPtr byteOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -773,6 +818,7 @@
         <typeparam name="T">The type of reference.</typeparam>
         <param name="source">The reference to subtract the offset from.</param>
         <param name="bytesOffset">The offset to subtract.</param>
+        <param name="byteOffset">To be added.</param>
         <summary>
         Subtracts a byte offset from the given reference.
         </summary>
@@ -784,6 +830,7 @@
       <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (void* destination, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;T&gt;(void* destination, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Write``1(System.Void*,``0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void Write(void* destination, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -806,7 +853,7 @@
         <param name="destination">The location to write to.</param>
         <param name="value">The value to write.</param>
         <summary>
-        Writes a value of type <typeparamref name="T"/> to the given location.
+        Writes a value of type <typeparamref name="T" /> to the given location.
         </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -815,6 +862,8 @@
       <MemberSignature Language="C#" Value="public static void WriteUnaligned&lt;T&gt; (ref byte destination, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUnaligned&lt;T&gt;(unsigned int8&amp; destination, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Byte@,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUnaligned(Of T) (ByRef destination As Byte, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void WriteUnaligned(System::Byte % destination, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -835,7 +884,7 @@
         <param name="destination">The location to write to.</param>
         <param name="value">The value to write.</param>
         <summary>
-        Writes a value of type <typeparamref name="T"/> to the given location
+        Writes a value of type <typeparamref name="T" /> to the given location
         without assuming architecture dependent alignment of the addresses.
         </summary>
         <remarks>To be added.</remarks>
@@ -845,6 +894,7 @@
       <MemberSignature Language="C#" Value="public static void WriteUnaligned&lt;T&gt; (void* destination, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteUnaligned&lt;T&gt;(void* destination, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.WriteUnaligned``1(System.Void*,``0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static void WriteUnaligned(void* destination, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
@@ -865,7 +915,7 @@
         <param name="destination">The location to write to.</param>
         <param name="value">The value to write.</param>
         <summary>
-        Writes a value of type <typeparamref name="T"/> to the given location
+        Writes a value of type <typeparamref name="T" /> to the given location
         without assuming architecture dependent alignment of the addresses.
         </summary>
         <remarks>To be added.</remarks>

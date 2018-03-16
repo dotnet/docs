@@ -1,7 +1,9 @@
-<Type Name="NamespaceHandling" FullName="System.Xml.NamespaceHandling">
+﻿<Type Name="NamespaceHandling" FullName="System.Xml.NamespaceHandling">
   <TypeSignature Language="C#" Value="public enum NamespaceHandling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NamespaceHandling extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.NamespaceHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NamespaceHandling" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NamespaceHandling" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.NamespaceHandling Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -62,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.NamespaceHandling</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that duplicate namespace declarations will not be removed.</summary>
       </Docs>
@@ -70,6 +75,8 @@
       <MemberSignature Language="C#" Value="OmitDuplicates" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.NamespaceHandling OmitDuplicates = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.NamespaceHandling.OmitDuplicates" />
+      <MemberSignature Language="VB.NET" Value="OmitDuplicates" />
+      <MemberSignature Language="C++ CLI" Value="OmitDuplicates" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -90,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.NamespaceHandling</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that duplicate namespace declarations will be removed. For the duplicate namespace to be removed, the prefix and the namespace must match.</summary>
       </Docs>

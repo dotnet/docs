@@ -1,7 +1,9 @@
-<Type Name="DiagnosticSection" FullName="System.ServiceModel.Activation.Configuration.DiagnosticSection">
+﻿<Type Name="DiagnosticSection" FullName="System.ServiceModel.Activation.Configuration.DiagnosticSection">
   <TypeSignature Language="C#" Value="public sealed class DiagnosticSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiagnosticSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.Configuration.DiagnosticSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiagnosticSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiagnosticSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DiagnosticSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.Configuration.DiagnosticSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiagnosticSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public bool PerformanceCountersEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PerformanceCountersEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.DiagnosticSection.PerformanceCountersEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property PerformanceCountersEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PerformanceCountersEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.Configuration.DiagnosticSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

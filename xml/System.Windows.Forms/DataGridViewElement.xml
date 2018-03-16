@@ -1,7 +1,9 @@
-<Type Name="DataGridViewElement" FullName="System.Windows.Forms.DataGridViewElement">
+﻿<Type Name="DataGridViewElement" FullName="System.Windows.Forms.DataGridViewElement">
   <TypeSignature Language="C#" Value="public class DataGridViewElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridView DataGridView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridView DataGridView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewElement.DataGridView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataGridView As DataGridView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridView ^ DataGridView { System::Windows::Forms::DataGridView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,7 +71,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDataGridViewChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataGridViewChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.OnDataGridViewChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataGridViewChanged ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataGridViewChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseCellClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseCellClick (e As DataGridViewCellEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseCellClick(System::Windows::Forms::DataGridViewCellEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +143,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseCellContentClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellContentClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellContentClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseCellContentClick (e As DataGridViewCellEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseCellContentClick(System::Windows::Forms::DataGridViewCellEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseCellContentDoubleClick (System.Windows.Forms.DataGridViewCellEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellContentDoubleClick(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellContentDoubleClick(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseCellContentDoubleClick (e As DataGridViewCellEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseCellContentDoubleClick(System::Windows::Forms::DataGridViewCellEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -185,6 +199,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseCellValueChanged (System.Windows.Forms.DataGridViewCellEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseCellValueChanged(class System.Windows.Forms.DataGridViewCellEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseCellValueChanged(System.Windows.Forms.DataGridViewCellEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseCellValueChanged (e As DataGridViewCellEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseCellValueChanged(System::Windows::Forms::DataGridViewCellEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +227,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseDataError (System.Windows.Forms.DataGridViewDataErrorEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseDataError(class System.Windows.Forms.DataGridViewDataErrorEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseDataError(System.Windows.Forms.DataGridViewDataErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseDataError (e As DataGridViewDataErrorEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseDataError(System::Windows::Forms::DataGridViewDataErrorEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected void RaiseMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaiseMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewElement.RaiseMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaiseMouseWheel (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaiseMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +283,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewElementStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewElementStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewElement.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property State As DataGridViewElementStates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewElementStates State { System::Windows::Forms::DataGridViewElementStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ResultPropertyValueCollection" FullName="System.DirectoryServices.ResultPropertyValueCollection">
+﻿<Type Name="ResultPropertyValueCollection" FullName="System.DirectoryServices.ResultPropertyValueCollection">
   <TypeSignature Language="C#" Value="public class ResultPropertyValueCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResultPropertyValueCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ResultPropertyValueCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResultPropertyValueCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResultPropertyValueCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (object[] values, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(object[] values, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.CopyTo(System.Object[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (values As Object(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ values, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ResultPropertyValueCollection.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -98,6 +106,8 @@
       <MemberSignature Language="C#" Value="public object this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ResultPropertyValueCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

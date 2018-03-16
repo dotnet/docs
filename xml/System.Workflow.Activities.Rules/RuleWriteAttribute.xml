@@ -1,7 +1,9 @@
-<Type Name="RuleWriteAttribute" FullName="System.Workflow.Activities.Rules.RuleWriteAttribute">
+﻿<Type Name="RuleWriteAttribute" FullName="System.Workflow.Activities.Rules.RuleWriteAttribute">
   <TypeSignature Language="C#" Value="public sealed class RuleWriteAttribute : System.Workflow.Activities.Rules.RuleReadWriteAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleWriteAttribute extends System.Workflow.Activities.Rules.RuleReadWriteAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleWriteAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleWriteAttribute&#xA;Inherits RuleReadWriteAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleWriteAttribute sealed : System::Workflow::Activities::Rules::RuleReadWriteAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public RuleWriteAttribute (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleWriteAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleWriteAttribute(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public RuleWriteAttribute (string path, System.Workflow.Activities.Rules.RuleAttributeTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Workflow.Activities.Rules.RuleAttributeTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleWriteAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, target As RuleAttributeTarget)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleWriteAttribute(System::String ^ path, System::Workflow::Activities::Rules::RuleAttributeTarget target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

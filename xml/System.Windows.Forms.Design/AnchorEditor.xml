@@ -1,7 +1,9 @@
-<Type Name="AnchorEditor" FullName="System.Windows.Forms.Design.AnchorEditor">
+﻿<Type Name="AnchorEditor" FullName="System.Windows.Forms.Design.AnchorEditor">
   <TypeSignature Language="C#" Value="public sealed class AnchorEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnchorEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AnchorEditor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnchorEditor&#xA;Inherits UITypeEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnchorEditor sealed : System::Drawing::Design::UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public AnchorEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AnchorEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnchorEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AnchorEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AnchorEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TreeNodeStyle" FullName="System.Web.UI.WebControls.TreeNodeStyle">
+﻿<Type Name="TreeNodeStyle" FullName="System.Web.UI.WebControls.TreeNodeStyle">
   <TypeSignature Language="C#" Value="public sealed class TreeNodeStyle : System.Web.UI.WebControls.Style" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TreeNodeStyle extends System.Web.UI.WebControls.Style" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeStyle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TreeNodeStyle&#xA;Inherits Style" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeStyle sealed : System::Web::UI::WebControls::Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +68,23 @@
     <altmember cref="P:System.Web.UI.WebControls.TreeView.SelectedNodeStyle" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> class.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
+        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TreeNodeStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="public TreeNodeStyle (System.Web.UI.StateBag bag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.StateBag bag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.#ctor(System.Web.UI.StateBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNodeStyle(System::Web::UI::StateBag ^ bag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit ChildNodesPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ChildNodesPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyle.ChildNodesPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChildNodesPadding As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit ChildNodesPadding { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +185,8 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +230,8 @@
       <MemberSignature Language="C#" Value="protected override void FillStyleAttributes (System.Web.UI.CssStyleCollection attributes, System.Web.UI.IUrlResolutionService urlResolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FillStyleAttributes(class System.Web.UI.CssStyleCollection attributes, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.FillStyleAttributes(System.Web.UI.CssStyleCollection,System.Web.UI.IUrlResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillStyleAttributes (attributes As CssStyleCollection, urlResolver As IUrlResolutionService)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillStyleAttributes(System::Web::UI::CssStyleCollection ^ attributes, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +255,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit HorizontalPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit HorizontalPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyle.HorizontalPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalPadding As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit HorizontalPadding { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +304,8 @@
       <MemberSignature Language="C#" Value="public string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyle.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +351,8 @@
       <MemberSignature Language="C#" Value="public override void MergeWith (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MergeWith(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.MergeWith(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -365,6 +394,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit NodeSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit NodeSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeSpacing As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit NodeSpacing { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +445,8 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeStyle.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +482,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit VerticalPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit VerticalPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalPadding As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit VerticalPadding { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -492,16 +527,5 @@
         <altmember cref="P:System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TreeNodeStyle" /> class.</summary>
-        <altmember cref="T:System.Web.UI.WebControls.TreeNodeStyleCollection" />
-        <altmember cref="P:System.Web.UI.WebControls.TreeView.LevelStyles" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

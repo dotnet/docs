@@ -1,7 +1,9 @@
-<Type Name="ServiceDiscoveryElement" FullName="System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement">
+﻿<Type Name="ServiceDiscoveryElement" FullName="System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement">
   <TypeSignature Language="C#" Value="public sealed class ServiceDiscoveryElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceDiscoveryElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceDiscoveryElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceDiscoveryElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public ServiceDiscoveryElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceDiscoveryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.Configuration.AnnouncementChannelEndpointElementCollection AnnouncementEndpoints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.Configuration.AnnouncementChannelEndpointElementCollection AnnouncementEndpoints" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement.AnnouncementEndpoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnnouncementEndpoints As AnnouncementChannelEndpointElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::AnnouncementChannelEndpointElementCollection ^ AnnouncementEndpoints { System::ServiceModel::Discovery::Configuration::AnnouncementChannelEndpointElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -101,9 +109,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ServiceDiscoveryElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

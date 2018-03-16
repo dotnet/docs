@@ -1,7 +1,9 @@
-<Type Name="OutOfProcNode" FullName="Microsoft.Build.Execution.OutOfProcNode">
+﻿<Type Name="OutOfProcNode" FullName="Microsoft.Build.Execution.OutOfProcNode">
   <TypeSignature Language="C#" Value="public class OutOfProcNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OutOfProcNode extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.OutOfProcNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class OutOfProcNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutOfProcNode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public OutOfProcNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutOfProcNode();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -34,7 +38,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeEngineShutdownReason Run (out Exception shutdownException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Execution.NodeEngineShutdownReason Run([out] class System.Exception&amp; shutdownException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.Run(System.Exception@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Run (ByRef shutdownException As Exception) As NodeEngineShutdownReason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Build::Execution::NodeEngineShutdownReason Run([Runtime::InteropServices::Out] Exception ^ % shutdownException);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.BackEnd.INode.Run(System.Exception@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

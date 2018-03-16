@@ -1,7 +1,9 @@
-<Type Name="ConsumerConnectionPoint" FullName="System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint">
+﻿<Type Name="ConsumerConnectionPoint" FullName="System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint">
   <TypeSignature Language="C#" Value="public class ConsumerConnectionPoint : System.Web.UI.WebControls.WebParts.ConnectionPoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ConsumerConnectionPoint extends System.Web.UI.WebControls.WebParts.ConnectionPoint" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConsumerConnectionPoint&#xA;Inherits ConnectionPoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConsumerConnectionPoint : System::Web::UI::WebControls::WebParts::ConnectionPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +87,8 @@
       <MemberSignature Language="C#" Value="public ConsumerConnectionPoint (System.Reflection.MethodInfo callbackMethod, Type interfaceType, Type controlType, string displayName, string id, bool allowsMultipleConnections);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodInfo callbackMethod, class System.Type interfaceType, class System.Type controlType, string displayName, string id, bool allowsMultipleConnections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.#ctor(System.Reflection.MethodInfo,System.Type,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callbackMethod As MethodInfo, interfaceType As Type, controlType As Type, displayName As String, id As String, allowsMultipleConnections As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsumerConnectionPoint(System::Reflection::MethodInfo ^ callbackMethod, Type ^ interfaceType, Type ^ controlType, System::String ^ displayName, System::String ^ id, bool allowsMultipleConnections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +168,7 @@
       <MemberSignature Language="C#" Value="public virtual void SetObject (System.Web.UI.Control control, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetObject(class System.Web.UI.Control control, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.SetObject(System.Web.UI.Control,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetObject(System::Web::UI::Control ^ control, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +205,7 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsConnection (System.Web.UI.Control control, System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection secondaryInterfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsConnection(class System.Web.UI.Control control, class System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection secondaryInterfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint.SupportsConnection(System.Web.UI.Control,System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool SupportsConnection(System::Web::UI::Control ^ control, System::Web::UI::WebControls::WebParts::ConnectionInterfaceCollection ^ secondaryInterfaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

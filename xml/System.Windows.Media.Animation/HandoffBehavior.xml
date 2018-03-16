@@ -1,7 +1,9 @@
-<Type Name="HandoffBehavior" FullName="System.Windows.Media.Animation.HandoffBehavior">
+﻿<Type Name="HandoffBehavior" FullName="System.Windows.Media.Animation.HandoffBehavior">
   <TypeSignature Language="C#" Value="public enum HandoffBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HandoffBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.HandoffBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HandoffBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HandoffBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="Compose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.HandoffBehavior Compose = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.HandoffBehavior.Compose" />
+      <MemberSignature Language="VB.NET" Value="Compose" />
+      <MemberSignature Language="C++ CLI" Value="Compose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.HandoffBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>New animations are combined with existing animations by appending the new animations to the end of the composition chain.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="SnapshotAndReplace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.HandoffBehavior SnapshotAndReplace = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace" />
+      <MemberSignature Language="VB.NET" Value="SnapshotAndReplace" />
+      <MemberSignature Language="C++ CLI" Value="SnapshotAndReplace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Animation.HandoffBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>New animations replace any existing animations on the properties to which they are applied.</summary>
       </Docs>

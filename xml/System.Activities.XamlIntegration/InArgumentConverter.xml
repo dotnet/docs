@@ -1,7 +1,9 @@
-<Type Name="InArgumentConverter" FullName="System.Activities.XamlIntegration.InArgumentConverter">
+﻿<Type Name="InArgumentConverter" FullName="System.Activities.XamlIntegration.InArgumentConverter">
   <TypeSignature Language="C#" Value="public sealed class InArgumentConverter : System.Activities.XamlIntegration.TypeConverterBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InArgumentConverter extends System.Activities.XamlIntegration.TypeConverterBase" />
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.InArgumentConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InArgumentConverter&#xA;Inherits TypeConverterBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InArgumentConverter sealed : System::Activities::XamlIntegration::TypeConverterBase" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InArgumentConverter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InArgumentConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.InArgumentConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgumentConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -36,6 +49,7 @@
       <MemberSignature Language="C#" Value="public InArgumentConverter (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.InArgumentConverter.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InArgumentConverter(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,14 +65,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.InArgumentConverter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

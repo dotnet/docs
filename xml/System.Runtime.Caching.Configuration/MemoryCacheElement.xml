@@ -1,7 +1,9 @@
-<Type Name="MemoryCacheElement" FullName="System.Runtime.Caching.Configuration.MemoryCacheElement">
+﻿<Type Name="MemoryCacheElement" FullName="System.Runtime.Caching.Configuration.MemoryCacheElement">
   <TypeSignature Language="C#" Value="public sealed class MemoryCacheElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemoryCacheElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.Configuration.MemoryCacheElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryCacheElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemoryCacheElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public MemoryCacheElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.Configuration.MemoryCacheElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MemoryCacheElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public int CacheMemoryLimitMegabytes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CacheMemoryLimitMegabytes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheElement.CacheMemoryLimitMegabytes" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheMemoryLimitMegabytes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheMemoryLimitMegabytes { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public int PhysicalMemoryLimitPercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PhysicalMemoryLimitPercentage" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheElement.PhysicalMemoryLimitPercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhysicalMemoryLimitPercentage As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PhysicalMemoryLimitPercentage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -164,6 +174,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan PollingInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan PollingInterval" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheElement.PollingInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property PollingInterval As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan PollingInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -199,6 +211,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.Configuration.MemoryCacheElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

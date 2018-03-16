@@ -1,7 +1,9 @@
-<Type Name="InvokeMethod&lt;TResult&gt;" FullName="System.Activities.Expressions.InvokeMethod&lt;TResult&gt;">
+﻿<Type Name="InvokeMethod&lt;TResult&gt;" FullName="System.Activities.Expressions.InvokeMethod&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public sealed class InvokeMethod&lt;TResult&gt; : System.Activities.AsyncCodeActivity&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeMethod`1&lt;TResult&gt; extends System.Activities.AsyncCodeActivity`1&lt;!TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeMethod`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InvokeMethod(Of TResult)&#xA;Inherits AsyncCodeActivity(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class InvokeMethod sealed : System::Activities::AsyncCodeActivity&lt;TResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public InvokeMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeMethod`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvokeMethod();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult BeginExecute (System.Activities.AsyncCodeActivityContext context, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult BeginExecute(class System.Activities.AsyncCodeActivityContext context, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeMethod`1.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function BeginExecute (context As AsyncCodeActivityContext, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ BeginExecute(System::Activities::AsyncCodeActivityContext ^ context, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeMethod`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override TResult EndExecute (System.Activities.AsyncCodeActivityContext context, IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TResult EndExecute(class System.Activities.AsyncCodeActivityContext context, class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeMethod`1.EndExecute(System.Activities.AsyncCodeActivityContext,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EndExecute (context As AsyncCodeActivityContext, result As IAsyncResult) As TResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult EndExecute(System::Activities::AsyncCodeActivityContext ^ context, IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Type&gt; GenericTypeArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Type&gt; GenericTypeArguments" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.GenericTypeArguments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericTypeArguments As Collection(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ GenericTypeArguments { System::Collections::ObjectModel::Collection&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -142,6 +154,8 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -167,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Argument&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Argument&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As Collection(Of Argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ Parameters { System::Collections::ObjectModel::Collection&lt;System::Activities::Argument ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -192,6 +208,8 @@
       <MemberSignature Language="C#" Value="public bool RunAsynchronously { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RunAsynchronously" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.RunAsynchronously" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunAsynchronously As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RunAsynchronously { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -216,6 +234,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument TargetObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetObject As InArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument ^ TargetObject { System::Activities::InArgument ^ get(); void set(System::Activities::InArgument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -239,6 +259,8 @@
       <MemberSignature Language="C#" Value="public Type TargetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeMethod`1.TargetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

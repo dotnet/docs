@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaXPath" FullName="System.Xml.Schema.XmlSchemaXPath">
+﻿<Type Name="XmlSchemaXPath" FullName="System.Xml.Schema.XmlSchemaXPath">
   <TypeSignature Language="C#" Value="public class XmlSchemaXPath : System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaXPath extends System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaXPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaXPath&#xA;Inherits XmlSchemaAnnotated" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaXPath : System::Xml::Schema::XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaXPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaXPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaXPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string XPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaXPath.XPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property XPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

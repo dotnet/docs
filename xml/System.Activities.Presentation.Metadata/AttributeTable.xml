@@ -1,7 +1,9 @@
-<Type Name="AttributeTable" FullName="System.Activities.Presentation.Metadata.AttributeTable">
+﻿<Type Name="AttributeTable" FullName="System.Activities.Presentation.Metadata.AttributeTable">
   <TypeSignature Language="C#" Value="public sealed class AttributeTable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeTable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeTable" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeTable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttributeTable sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; AttributedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; AttributedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Metadata.AttributeTable.AttributedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributedTypes As IEnumerable(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ AttributedTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -53,6 +57,7 @@
       <MemberSignature Language="C#" Value="public bool ContainsAttributes (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.ContainsAttributes(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsAttributes(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,6 +100,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type ownerType, System.ComponentModel.MemberDescriptor descriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type ownerType, class System.ComponentModel.MemberDescriptor descriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, descriptor As MemberDescriptor) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::ComponentModel::MemberDescriptor ^ descriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -145,6 +153,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type ownerType, System.Reflection.MemberInfo member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type ownerType, class System.Reflection.MemberInfo member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, member As MemberInfo) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type ownerType, string memberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type ownerType, string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, memberName As String) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::String ^ memberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -197,6 +209,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type ownerType, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type ownerType, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeTable.GetCustomAttributes(System.Type,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (ownerType As Type, dp As DependencyProperty) As IEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetCustomAttributes(Type ^ ownerType, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

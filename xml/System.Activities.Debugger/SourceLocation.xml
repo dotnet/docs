@@ -1,7 +1,9 @@
-<Type Name="SourceLocation" FullName="System.Activities.Debugger.SourceLocation">
+﻿<Type Name="SourceLocation" FullName="System.Activities.Debugger.SourceLocation">
   <TypeSignature Language="C#" Value="public class SourceLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SourceLocation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Class SourceLocation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SourceLocation" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SourceLocation (string fileName, int line);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 line) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, line As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceLocation(System::String ^ fileName, int line);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -44,6 +57,8 @@
       <MemberSignature Language="C#" Value="public SourceLocation (string fileName, int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SourceLocation(System::String ^ fileName, int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +85,8 @@
       <MemberSignature Language="C#" Value="public int EndColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumn" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.EndColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +105,8 @@
       <MemberSignature Language="C#" Value="public int EndLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.EndLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLine As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLine { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -106,6 +125,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -128,6 +149,8 @@
       <MemberSignature Language="C#" Value="public string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocation.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -165,6 +190,8 @@
       <MemberSignature Language="C#" Value="public bool IsSingleWholeLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleWholeLine" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.IsSingleWholeLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSingleWholeLine As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleWholeLine { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -183,6 +210,8 @@
       <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.StartColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -201,6 +230,8 @@
       <MemberSignature Language="C#" Value="public int StartLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocation.StartLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartLine As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -215,14 +246,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.SourceLocation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

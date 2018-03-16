@@ -1,7 +1,9 @@
-<Type Name="CodeNamespaceCollection" FullName="System.CodeDom.CodeNamespaceCollection">
+﻿<Type Name="CodeNamespaceCollection" FullName="System.CodeDom.CodeNamespaceCollection">
   <TypeSignature Language="C#" Value="public class CodeNamespaceCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeNamespaceCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeNamespaceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeNamespaceCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeNamespaceCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -44,10 +46,21 @@
     <altmember cref="T:System.CodeDom.CodeNamespace" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeNamespaceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +91,8 @@
       <MemberSignature Language="C#" Value="public CodeNamespaceCollection (System.CodeDom.CodeNamespace[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespace[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.#ctor(System.CodeDom.CodeNamespace[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeNamespace())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceCollection(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +116,8 @@
       <MemberSignature Language="C#" Value="public CodeNamespaceCollection (System.CodeDom.CodeNamespaceCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeNamespaceCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.#ctor(System.CodeDom.CodeNamespaceCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeNamespaceCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeNamespaceCollection(System::CodeDom::CodeNamespaceCollection ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +142,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeNamespace value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeNamespace value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Add(System.CodeDom.CodeNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As CodeNamespace) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::CodeDom::CodeNamespace ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,10 +178,21 @@
         <altmember cref="M:System.CodeDom.CodeNamespaceCollection.AddRange(System.CodeDom.CodeNamespace[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeNamespace" /> array to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeNamespace[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeNamespace[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.AddRange(System.CodeDom.CodeNamespace[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeNamespace())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +232,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeNamespaceCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeNamespaceCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.AddRange(System.CodeDom.CodeNamespaceCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As CodeNamespaceCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::CodeDom::CodeNamespaceCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +273,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeNamespace value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeNamespace value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Contains(System.CodeDom.CodeNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As CodeNamespace) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::CodeDom::CodeNamespace ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -280,6 +314,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeNamespace[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeNamespace[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.CopyTo(System.CodeDom.CodeNamespace[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CodeNamespace(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::CodeDom::CodeNamespace ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -326,6 +362,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeNamespace value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeNamespace value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.IndexOf(System.CodeDom.CodeNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As CodeNamespace) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::CodeDom::CodeNamespace ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +402,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeNamespace value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeNamespace value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Insert(System.Int32,System.CodeDom.CodeNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As CodeNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::CodeDom::CodeNamespace ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -403,6 +443,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeNamespace this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeNamespace Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeNamespaceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As CodeNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeNamespace ^ default[int] { System::CodeDom::CodeNamespace ^ get(int index); void set(int index, System::CodeDom::CodeNamespace ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +480,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeNamespace value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeNamespace value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeNamespaceCollection.Remove(System.CodeDom.CodeNamespace)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As CodeNamespace)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::CodeDom::CodeNamespace ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -471,23 +515,5 @@
         <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeNamespace" /> array to the end of the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeNamespaceCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

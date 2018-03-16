@@ -1,7 +1,9 @@
-<Type Name="NamespaceDefinition" FullName="System.Reflection.Metadata.NamespaceDefinition">
+﻿<Type Name="NamespaceDefinition" FullName="System.Reflection.Metadata.NamespaceDefinition">
   <TypeSignature Language="C#" Value="public struct NamespaceDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NamespaceDefinition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.NamespaceDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure NamespaceDefinition" />
+  <TypeSignature Language="C++ CLI" Value="public value class NamespaceDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.ExportedTypeHandle&gt; ExportedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.ExportedTypeHandle&gt; ExportedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.ExportedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExportedTypes As ImmutableArray(Of ExportedTypeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::ExportedTypeHandle&gt; ExportedTypes { System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::ExportedTypeHandle&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.NamespaceDefinitionHandle&gt; NamespaceDefinitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.NamespaceDefinitionHandle&gt; NamespaceDefinitions" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.NamespaceDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceDefinitions As ImmutableArray(Of NamespaceDefinitionHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::NamespaceDefinitionHandle&gt; NamespaceDefinitions { System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::NamespaceDefinitionHandle&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.NamespaceDefinitionHandle Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.NamespaceDefinitionHandle Parent" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As NamespaceDefinitionHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::NamespaceDefinitionHandle Parent { System::Reflection::Metadata::NamespaceDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt; TypeDefinitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.TypeDefinitionHandle&gt; TypeDefinitions" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.TypeDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeDefinitions As ImmutableArray(Of TypeDefinitionHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::TypeDefinitionHandle&gt; TypeDefinitions { System::Collections::Immutable::ImmutableArray&lt;System::Reflection::Metadata::TypeDefinitionHandle&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SslStreamSecurityBindingElement" FullName="System.ServiceModel.Channels.SslStreamSecurityBindingElement">
+﻿<Type Name="SslStreamSecurityBindingElement" FullName="System.ServiceModel.Channels.SslStreamSecurityBindingElement">
   <TypeSignature Language="C#" Value="public class SslStreamSecurityBindingElement : System.ServiceModel.Channels.BindingElement, System.ServiceModel.Channels.ITransportTokenAssertionProvider, System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SslStreamSecurityBindingElement extends System.ServiceModel.Channels.BindingElement implements class System.ServiceModel.Channels.ITransportTokenAssertionProvider, class System.ServiceModel.Description.IPolicyExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SslStreamSecurityBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class SslStreamSecurityBindingElement&#xA;Inherits BindingElement&#xA;Implements IPolicyExportExtension, ITransportTokenAssertionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SslStreamSecurityBindingElement : System::ServiceModel::Channels::BindingElement, System::ServiceModel::Channels::ITransportTokenAssertionProvider, System::ServiceModel::Description::IPolicyExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -160,10 +162,22 @@ namespace ServiceNamespace
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.SslStreamSecurityBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SslStreamSecurityBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SslStreamSecurityBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +200,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="protected SslStreamSecurityBindingElement (System.ServiceModel.Channels.SslStreamSecurityBindingElement elementToBeCloned);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.SslStreamSecurityBindingElement elementToBeCloned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.#ctor(System.ServiceModel.Channels.SslStreamSecurityBindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (elementToBeCloned As SslStreamSecurityBindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SslStreamSecurityBindingElement(System::ServiceModel::Channels::SslStreamSecurityBindingElement ^ elementToBeCloned);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +220,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -246,6 +264,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +306,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.StreamUpgradeProvider BuildClientStreamUpgradeProvider (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.StreamUpgradeProvider BuildClientStreamUpgradeProvider(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.BuildClientStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildClientStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildClientStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -317,6 +339,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.StreamUpgradeProvider BuildServerStreamUpgradeProvider (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.StreamUpgradeProvider BuildServerStreamUpgradeProvider(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.BuildServerStreamUpgradeProvider(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildServerStreamUpgradeProvider (context As BindingContext) As StreamUpgradeProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::StreamUpgradeProvider ^ BuildServerStreamUpgradeProvider(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -348,6 +372,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,6 +417,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -432,6 +460,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -458,6 +488,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -502,7 +534,12 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement GetTransportTokenAssertion ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlElement GetTransportTokenAssertion() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.GetTransportTokenAssertion" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTransportTokenAssertion () As XmlElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlElement ^ GetTransportTokenAssertion();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.ITransportTokenAssertionProvider.GetTransportTokenAssertion</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -528,6 +565,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.IdentityVerifier IdentityVerifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.IdentityVerifier IdentityVerifier" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.IdentityVerifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentityVerifier As IdentityVerifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::IdentityVerifier ^ IdentityVerifier { System::ServiceModel::Security::IdentityVerifier ^ get(); void set(System::ServiceModel::Security::IdentityVerifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -547,6 +586,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public bool RequireClientCertificate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireClientCertificate" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.RequireClientCertificate" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireClientCertificate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireClientCertificate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -567,6 +608,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIdentityVerifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeIdentityVerifier() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.ShouldSerializeIdentityVerifier" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIdentityVerifier () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIdentityVerifier();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -592,6 +635,8 @@ namespace ServiceNamespace
       <MemberSignature Language="C#" Value="public System.Security.Authentication.SslProtocols SslProtocols { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.SslProtocols SslProtocols" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols" />
+      <MemberSignature Language="VB.NET" Value="Public Property SslProtocols As SslProtocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::SslProtocols SslProtocols { System::Security::Authentication::SslProtocols get(); void set(System::Security::Authentication::SslProtocols value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -643,7 +688,12 @@ cf.Credentials.ClientCertificate.SetCertificate(
       <MemberSignature Language="C#" Value="void IPolicyExportExtension.ExportPolicy (System.ServiceModel.Description.MetadataExporter exporter, System.ServiceModel.Description.PolicyConversionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SslStreamSecurityBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, context As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ context) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -675,15 +725,5 @@ cf.Credentials.ClientCertificate.SetCertificate(
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.SslStreamSecurityBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

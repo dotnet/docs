@@ -1,7 +1,9 @@
-<Type Name="Int32Rect" FullName="System.Windows.Int32Rect">
+﻿<Type Name="Int32Rect" FullName="System.Windows.Int32Rect">
   <TypeSignature Language="C#" Value="public struct Int32Rect : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Int32Rect extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Int32Rect" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Int32Rect&#xA;Implements IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Int32Rect : IFormattable" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public Int32Rect (int x, int y, int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, width As Integer, height As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Int32Rect(int x, int y, int width, int height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -96,6 +100,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Int32Rect Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Int32Rect Empty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Int32Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Int32Rect Empty { System::Windows::Int32Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -129,10 +135,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified rectangles are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -162,6 +179,8 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Int32Rect value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Int32Rect value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Windows.Int32Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As Int32Rect) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Int32Rect value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -191,6 +210,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Equals(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Equals(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -222,6 +243,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -241,6 +264,8 @@
       <MemberSignature Language="C#" Value="public bool HasArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.HasArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasArea As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasArea { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -259,6 +284,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -277,6 +304,8 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -295,6 +324,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Equality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -321,6 +352,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Int32Rect int32Rect1, System.Windows.Int32Rect int32Rect2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Int32Rect int32Rect1, valuetype System.Windows.Int32Rect int32Rect2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (int32Rect1 As Int32Rect, int32Rect2 As Int32Rect) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Int32Rect int32Rect1, System::Windows::Int32Rect int32Rect2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -347,6 +380,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Int32Rect Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Int32Rect Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Int32Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Int32Rect Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -369,7 +404,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -396,10 +436,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Int32Rect" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -419,6 +470,8 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Int32Rect.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -441,6 +494,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -459,6 +514,8 @@
       <MemberSignature Language="C#" Value="public int X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -477,6 +534,8 @@
       <MemberSignature Language="C#" Value="public int Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Int32Rect.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -491,23 +550,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified rectangles are equal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a string representation of this <see cref="T:System.Windows.Int32Rect" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

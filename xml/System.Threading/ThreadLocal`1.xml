@@ -1,7 +1,9 @@
-<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
+﻿<Type Name="ThreadLocal&lt;T&gt;" FullName="System.Threading.ThreadLocal&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ThreadLocal&lt;T&gt; : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThreadLocal`1&lt;T&gt; extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadLocal`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThreadLocal(Of T)&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ThreadLocal : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,10 +57,23 @@
     <altmember cref="T:System.Threading.AsyncLocal`1" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ThreadLocal ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -95,6 +110,8 @@
       <MemberSignature Language="C#" Value="public ThreadLocal (bool trackAllValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool trackAllValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (trackAllValues As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(bool trackAllValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -132,6 +149,8 @@
       <MemberSignature Language="C#" Value="public ThreadLocal (Func&lt;T&gt; valueFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -164,6 +183,8 @@
       <MemberSignature Language="C#" Value="public ThreadLocal (Func&lt;T&gt; valueFactory, bool trackAllValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory, bool trackAllValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), trackAllValues As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory, bool trackAllValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -201,11 +222,27 @@
           <paramref name="valueFactory" /> is a <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -247,6 +284,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -287,6 +326,8 @@
       <MemberSignature Language="C#" Value="~ThreadLocal`1 ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ThreadLocal`1 ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -317,6 +358,8 @@
       <MemberSignature Language="C#" Value="public bool IsValueCreated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueCreated" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.IsValueCreated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -348,6 +391,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -390,6 +435,8 @@
       <MemberSignature Language="C#" Value="public T Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -435,6 +482,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;T&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;!T&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;T&gt; ^ Values { System::Collections::Generic::IList&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -462,27 +511,5 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

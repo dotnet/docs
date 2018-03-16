@@ -1,7 +1,9 @@
-<Type Name="EnumValue" FullName="Microsoft.Build.Framework.XamlTypes.EnumValue">
+﻿<Type Name="EnumValue" FullName="Microsoft.Build.Framework.XamlTypes.EnumValue">
   <TypeSignature Language="C#" Value="public sealed class EnumValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnumValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.EnumValue" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnumValue" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumValue sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public EnumValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.EnumValue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnumValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.Argument&gt; Arguments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.Argument&gt; Arguments" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Arguments" />
+      <MemberSignature Language="VB.NET" Value="Public Property Arguments As List(Of Argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ Arguments { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::Argument ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public string HelpString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.HelpString" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -158,6 +170,8 @@
       <MemberSignature Language="C#" Value="public bool IsDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.IsDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDefault As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -184,6 +198,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property Metadata As List(Of NameValuePair)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ Metadata { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -211,6 +227,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -236,6 +254,8 @@
       <MemberSignature Language="C#" Value="public string Switch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Switch" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.Switch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Switch As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Switch { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -261,6 +281,8 @@
       <MemberSignature Language="C#" Value="public string SwitchPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SwitchPrefix" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.EnumValue.SwitchPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property SwitchPrefix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SwitchPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

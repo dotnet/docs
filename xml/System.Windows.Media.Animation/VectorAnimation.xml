@@ -1,7 +1,9 @@
-<Type Name="VectorAnimation" FullName="System.Windows.Media.Animation.VectorAnimation">
+﻿<Type Name="VectorAnimation" FullName="System.Windows.Media.Animation.VectorAnimation">
   <TypeSignature Language="C#" Value="public class VectorAnimation : System.Windows.Media.Animation.VectorAnimationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi VectorAnimation extends System.Windows.Media.Animation.VectorAnimationBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.VectorAnimation" />
+  <TypeSignature Language="VB.NET" Value="Public Class VectorAnimation&#xA;Inherits VectorAnimationBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VectorAnimation : System::Windows::Media::Animation::VectorAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     <altmember cref="T:System.Windows.Freezable" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.VectorAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VectorAnimation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorAnimation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +76,7 @@
       <MemberSignature Language="C#" Value="public VectorAnimation (System.Windows.Vector toValue, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.#ctor(System.Windows.Vector,System.Windows.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorAnimation(System::Windows::Vector toValue, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +97,7 @@
       <MemberSignature Language="C#" Value="public VectorAnimation (System.Windows.Vector toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.#ctor(System.Windows.Vector,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorAnimation(System::Windows::Vector toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +120,7 @@
       <MemberSignature Language="C#" Value="public VectorAnimation (System.Windows.Vector fromValue, System.Windows.Vector toValue, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector fromValue, valuetype System.Windows.Vector toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.#ctor(System.Windows.Vector,System.Windows.Vector,System.Windows.Duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorAnimation(System::Windows::Vector fromValue, System::Windows::Vector toValue, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +143,7 @@
       <MemberSignature Language="C#" Value="public VectorAnimation (System.Windows.Vector fromValue, System.Windows.Vector toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector fromValue, valuetype System.Windows.Vector toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.#ctor(System.Windows.Vector,System.Windows.Vector,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorAnimation(System::Windows::Vector fromValue, System::Windows::Vector toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +168,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Vector&gt; By { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Vector&gt; By" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.By" />
+      <MemberSignature Language="VB.NET" Value="Public Property By As Nullable(Of Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Vector&gt; By { Nullable&lt;System::Windows::Vector&gt; get(); void set(Nullable&lt;System::Windows::Vector&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +237,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ByProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ByProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.VectorAnimation.ByProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ByProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +256,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.VectorAnimation Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.VectorAnimation Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As VectorAnimation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::VectorAnimation ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +286,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +308,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.EasingFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -309,6 +336,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.VectorAnimation.EasingFunctionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +356,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Vector&gt; From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Vector&gt; From" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As Nullable(Of Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Vector&gt; From { Nullable&lt;System::Windows::Vector&gt; get(); void set(Nullable&lt;System::Windows::Vector&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -394,6 +425,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FromProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FromProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.VectorAnimation.FromProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FromProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +444,7 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Vector GetCurrentValueCore (System.Windows.Vector defaultOriginValue, System.Windows.Vector defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Vector GetCurrentValueCore(valuetype System.Windows.Vector defaultOriginValue, valuetype System.Windows.Vector defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.VectorAnimation.GetCurrentValueCore(System.Windows.Vector,System.Windows.Vector,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Vector GetCurrentValueCore(System::Windows::Vector defaultOriginValue, System::Windows::Vector defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -447,6 +481,8 @@
       <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.IsAdditive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -481,6 +517,8 @@
       <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.IsCumulative" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -507,6 +545,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Vector&gt; To { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Vector&gt; To" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.VectorAnimation.To" />
+      <MemberSignature Language="VB.NET" Value="Public Property To As Nullable(Of Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Windows::Vector&gt; To { Nullable&lt;System::Windows::Vector&gt; get(); void set(Nullable&lt;System::Windows::Vector&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -574,6 +614,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.VectorAnimation.ToProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -587,14 +629,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.VectorAnimation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

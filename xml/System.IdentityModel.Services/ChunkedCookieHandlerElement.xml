@@ -1,7 +1,9 @@
-<Type Name="ChunkedCookieHandlerElement" FullName="System.IdentityModel.Services.ChunkedCookieHandlerElement">
+﻿<Type Name="ChunkedCookieHandlerElement" FullName="System.IdentityModel.Services.ChunkedCookieHandlerElement">
   <TypeSignature Language="C#" Value="public class ChunkedCookieHandlerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChunkedCookieHandlerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.ChunkedCookieHandlerElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChunkedCookieHandlerElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChunkedCookieHandlerElement : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ChunkedCookieHandlerElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.ChunkedCookieHandlerElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChunkedCookieHandlerElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public int ChunkSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChunkSize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.ChunkedCookieHandlerElement.ChunkSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChunkSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChunkSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

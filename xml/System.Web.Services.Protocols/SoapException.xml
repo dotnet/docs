@@ -1,7 +1,9 @@
-<Type Name="SoapException" FullName="System.Web.Services.Protocols.SoapException">
+﻿<Type Name="SoapException" FullName="System.Web.Services.Protocols.SoapException">
   <TypeSignature Language="C#" Value="public class SoapException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SoapException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapException&#xA;Inherits SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -59,6 +73,8 @@
       <MemberSignature Language="C#" Value="protected SoapException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SoapException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -80,6 +96,8 @@
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -103,6 +121,8 @@
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -129,6 +149,8 @@
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -152,35 +174,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, System.Web.Services.Protocols.SoapFaultSubCode subcode);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Web.Services.Protocols.SoapFaultSubCode subcode) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" />
-      <MemberType>Constructor</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
-        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" />
-      </Parameters>
-      <Docs>
-        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
-        <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
-        <param name="subcode">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and subcode.</summary>
-        <remarks>To be added.</remarks>
-        <altmember cref="P:System.Exception.Message" />
-        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
-        <altmember cref="P:System.Exception.InnerException" />
-      </Docs>
-    </Member>
-    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -210,6 +208,8 @@
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, System.Xml.XmlNode detail);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, class System.Xml.XmlNode detail) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, detail As XmlNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::Xml::XmlNode ^ detail);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -232,9 +232,45 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, System.Web.Services.Protocols.SoapFaultSubCode subCode);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Web.Services.Protocols.SoapFaultSubCode subCode) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, subCode As SoapFaultSubCode)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, System.Web.Services.Protocols.SoapFaultSubCode subcode);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Web.Services.Protocols.SoapFaultSubCode subcode) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, subcode As SoapFaultSubCode)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" Index="0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
+        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="2" FrameworkAlternate="xamarinandroid-7.1" />
+      </Parameters>
+      <Docs>
+        <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
+        <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type of error that occurred. This parameter sets the <see cref="P:System.Web.Services.Protocols.SoapException.Code" /> property.</param>
+        <param name="subcode">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class with the specified exception message, exception code, and subcode.</summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="P:System.Exception.Message" />
+        <altmember cref="P:System.Web.Services.Protocols.SoapException.Code" />
+        <altmember cref="P:System.Exception.InnerException" />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, System.Xml.XmlNode detail, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, class System.Xml.XmlNode detail, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.Xml.XmlNode,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, detail As XmlNode, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::Xml::XmlNode ^ detail, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -259,9 +295,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subCode, Exception innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subCode, class System.Exception innerException) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, detail As XmlNode, subCode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, detail As XmlNode, subcode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode, Exception ^ innerException);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -269,13 +312,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
-        <Parameter Name="actor" Type="System.String" />
-        <Parameter Name="role" Type="System.String" />
-        <Parameter Name="detail" Type="System.Xml.XmlNode" />
-        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" />
-        <Parameter Name="innerException" Type="System.Exception" />
+        <Parameter Name="message" Type="System.String" Index="0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
+        <Parameter Name="actor" Type="System.String" Index="2" />
+        <Parameter Name="role" Type="System.String" Index="3" />
+        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="4" />
+        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="5" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="innerException" Type="System.Exception" Index="6" />
       </Parameters>
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
@@ -290,9 +334,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, string lang, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, string lang, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, string lang, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subCode, Exception innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, string lang, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subCode, class System.Exception innerException) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, lang As String, detail As XmlNode, subCode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::String ^ lang, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, string lang, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, string lang, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, lang As String, detail As XmlNode, subcode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::String ^ lang, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode, Exception ^ innerException);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -300,14 +351,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="message" Type="System.String" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
-        <Parameter Name="actor" Type="System.String" />
-        <Parameter Name="role" Type="System.String" />
-        <Parameter Name="lang" Type="System.String" />
-        <Parameter Name="detail" Type="System.Xml.XmlNode" />
-        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" />
-        <Parameter Name="innerException" Type="System.Exception" />
+        <Parameter Name="message" Type="System.String" Index="0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
+        <Parameter Name="actor" Type="System.String" Index="2" />
+        <Parameter Name="role" Type="System.String" Index="3" />
+        <Parameter Name="lang" Type="System.String" Index="4" />
+        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="5" />
+        <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="6" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="innerException" Type="System.Exception" Index="7" />
       </Parameters>
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
@@ -326,6 +378,8 @@
       <MemberSignature Language="C#" Value="public string Actor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Actor" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Actor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actor As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Actor { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -370,6 +424,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName ClientFaultCode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName ClientFaultCode" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapException.ClientFaultCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClientFaultCode As XmlQualifiedName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ ClientFaultCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -395,6 +451,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Code { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Code" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Code" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Code As XmlQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Code { System::Xml::XmlQualifiedName ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -448,6 +506,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode Detail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode Detail" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Detail" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Detail As XmlNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNode ^ Detail { System::Xml::XmlNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -489,6 +549,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName DetailElementName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName DetailElementName" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapException.DetailElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailElementName As XmlQualifiedName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ DetailElementName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -521,6 +583,8 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -545,6 +609,8 @@
       <MemberSignature Language="C#" Value="public static bool IsClientFaultCode (System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsClientFaultCode(class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.IsClientFaultCode(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsClientFaultCode (code As XmlQualifiedName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsClientFaultCode(System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -579,6 +645,8 @@
       <MemberSignature Language="C#" Value="public static bool IsMustUnderstandFaultCode (System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsMustUnderstandFaultCode(class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.IsMustUnderstandFaultCode(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsMustUnderstandFaultCode (code As XmlQualifiedName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsMustUnderstandFaultCode(System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -613,6 +681,8 @@
       <MemberSignature Language="C#" Value="public static bool IsServerFaultCode (System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsServerFaultCode(class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.IsServerFaultCode(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsServerFaultCode (code As XmlQualifiedName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsServerFaultCode(System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -647,6 +717,8 @@
       <MemberSignature Language="C#" Value="public static bool IsVersionMismatchFaultCode (System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsVersionMismatchFaultCode(class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.IsVersionMismatchFaultCode(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsVersionMismatchFaultCode (code As XmlQualifiedName) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsVersionMismatchFaultCode(System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -681,6 +753,8 @@
       <MemberSignature Language="C#" Value="public string Lang { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Lang" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Lang" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Lang As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Lang { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -712,6 +786,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName MustUnderstandFaultCode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName MustUnderstandFaultCode" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapException.MustUnderstandFaultCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MustUnderstandFaultCode As XmlQualifiedName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ MustUnderstandFaultCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -737,6 +813,8 @@
       <MemberSignature Language="C#" Value="public string Node { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Node" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Node" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Node As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Node { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -770,6 +848,8 @@
       <MemberSignature Language="C#" Value="public string Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Role" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.Role" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Role As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Role { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -801,6 +881,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName ServerFaultCode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName ServerFaultCode" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapException.ServerFaultCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ServerFaultCode As XmlQualifiedName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ ServerFaultCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -829,6 +911,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapFaultSubCode SubCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Protocols.SoapFaultSubCode SubCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapException.SubCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubCode As SoapFaultSubCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapFaultSubCode ^ SubCode { System::Web::Services::Protocols::SoapFaultSubCode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -860,6 +944,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.XmlQualifiedName VersionMismatchFaultCode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.XmlQualifiedName VersionMismatchFaultCode" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapException.VersionMismatchFaultCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VersionMismatchFaultCode As XmlQualifiedName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::XmlQualifiedName ^ VersionMismatchFaultCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -881,15 +967,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

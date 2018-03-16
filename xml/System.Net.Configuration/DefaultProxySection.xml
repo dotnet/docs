@@ -1,7 +1,9 @@
-<Type Name="DefaultProxySection" FullName="System.Net.Configuration.DefaultProxySection">
+﻿<Type Name="DefaultProxySection" FullName="System.Net.Configuration.DefaultProxySection">
   <TypeSignature Language="C#" Value="public sealed class DefaultProxySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefaultProxySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.DefaultProxySection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultProxySection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultProxySection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DefaultProxySection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.DefaultProxySection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultProxySection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.BypassElementCollection BypassList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.BypassElementCollection BypassList" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.BypassList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BypassList As BypassElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::BypassElementCollection ^ BypassList { System::Net::Configuration::BypassElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +118,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ModuleElement Module { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.ModuleElement Module" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.Module" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Module As ModuleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ModuleElement ^ Module { System::Net::Configuration::ModuleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +153,8 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.DefaultProxySection.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +178,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +198,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.ProxyElement Proxy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.ProxyElement Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Proxy As ProxyElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::ProxyElement ^ Proxy { System::Net::Configuration::ProxyElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -217,6 +233,8 @@
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.DefaultProxySection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public bool UseDefaultCredentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.DefaultProxySection.UseDefaultCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Collation" FullName="System.Printing.Collation">
+﻿<Type Name="Collation" FullName="System.Printing.Collation">
   <TypeSignature Language="C#" Value="public enum Collation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Collation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.Collation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Collation" />
+  <TypeSignature Language="C++ CLI" Value="public enum class Collation" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="Collated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Collated = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Collated" />
+      <MemberSignature Language="VB.NET" Value="Collated" />
+      <MemberSignature Language="C++ CLI" Value="Collated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -58,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Collation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Collated output.</summary>
       </Docs>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="Uncollated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Uncollated = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Uncollated" />
+      <MemberSignature Language="VB.NET" Value="Uncollated" />
+      <MemberSignature Language="C++ CLI" Value="Uncollated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -74,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Collation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Uncollated output.</summary>
       </Docs>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Collation Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Collation.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Collation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

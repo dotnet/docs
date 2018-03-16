@@ -1,7 +1,9 @@
-<Type Name="ChannelFactoryBase" FullName="System.ServiceModel.Channels.ChannelFactoryBase">
+﻿<Type Name="ChannelFactoryBase" FullName="System.ServiceModel.Channels.ChannelFactoryBase">
   <TypeSignature Language="C#" Value="public abstract class ChannelFactoryBase : System.ServiceModel.Channels.ChannelManagerBase, System.ServiceModel.Channels.IChannelFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelFactoryBase extends System.ServiceModel.Channels.ChannelManagerBase implements class System.ServiceModel.Channels.IChannelFactory, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelFactoryBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelFactoryBase&#xA;Inherits ChannelManagerBase&#xA;Implements IChannelFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelFactoryBase abstract : System::ServiceModel::Channels::ChannelManagerBase, System::ServiceModel::Channels::IChannelFactory" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected ChannelFactoryBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelFactoryBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +92,8 @@
       <MemberSignature Language="C#" Value="protected ChannelFactoryBase (System.ServiceModel.IDefaultCommunicationTimeouts timeouts);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.IDefaultCommunicationTimeouts timeouts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (timeouts As IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelFactoryBase(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -117,9 +123,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultCloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,9 +157,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultOpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,9 +191,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultReceiveTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultReceiveTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultReceiveTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultReceiveTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,9 +225,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultSendTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultSendTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultSendTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultSendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelFactoryBase.DefaultSendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultSendTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultSendTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -248,7 +262,12 @@
       <MemberSignature Language="C#" Value="public virtual T GetProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty(Of T As Class) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory.GetProperty``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -291,6 +310,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAbort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAbort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.OnAbort" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -323,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -356,6 +379,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClose (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClose(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.OnClose(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -391,6 +416,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelFactoryBase.OnEndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

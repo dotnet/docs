@@ -1,7 +1,9 @@
-<Type Name="ControlPager" FullName="System.Web.UI.MobileControls.ControlPager">
+﻿<Type Name="ControlPager" FullName="System.Web.UI.MobileControls.ControlPager">
   <TypeSignature Language="C#" Value="public class ControlPager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlPager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ControlPager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlPager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlPager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,7 @@
       <MemberSignature Language="C#" Value="public ControlPager (System.Web.UI.MobileControls.Form form, int pageWeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.Form form, int32 pageWeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.#ctor(System.Web.UI.MobileControls.Form,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlPager(System::Web::UI::MobileControls::Form ^ form, int pageWeight);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static readonly int DefaultWeight;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultWeight" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ControlPager.DefaultWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultWeight As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int DefaultWeight;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ItemPager GetItemPager (System.Web.UI.MobileControls.MobileControl control, int itemCount, int itemsPerPage, int itemWeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.MobileControls.ItemPager GetItemPager(class System.Web.UI.MobileControls.MobileControl control, int32 itemCount, int32 itemsPerPage, int32 itemWeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.GetItemPager(System.Web.UI.MobileControls.MobileControl,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemPager (control As MobileControl, itemCount As Integer, itemsPerPage As Integer, itemWeight As Integer) As ItemPager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::MobileControls::ItemPager ^ GetItemPager(System::Web::UI::MobileControls::MobileControl ^ control, int itemCount, int itemsPerPage, int itemWeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -107,6 +114,8 @@
       <MemberSignature Language="C#" Value="public int GetPage (int weight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetPage(int32 weight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ControlPager.GetPage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPage (weight As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetPage(int weight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int PageCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.PageCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -154,6 +165,8 @@
       <MemberSignature Language="C#" Value="public int PageWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.PageWeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageWeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageWeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -172,6 +185,8 @@
       <MemberSignature Language="C#" Value="public int RemainingWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RemainingWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ControlPager.RemainingWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemainingWeight As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RemainingWeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -190,6 +205,8 @@
       <MemberSignature Language="C#" Value="public static readonly int UseDefaultWeight;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 UseDefaultWeight" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.ControlPager.UseDefaultWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseDefaultWeight As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int UseDefaultWeight;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

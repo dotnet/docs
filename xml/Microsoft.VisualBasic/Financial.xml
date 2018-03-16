@@ -1,7 +1,9 @@
-<Type Name="Financial" FullName="Microsoft.VisualBasic.Financial">
+﻿<Type Name="Financial" FullName="Microsoft.VisualBasic.Financial">
   <TypeSignature Language="C#" Value="public sealed class Financial" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Financial extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Financial" />
+  <TypeSignature Language="VB.NET" Value="Public Module Financial" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Financial sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +40,7 @@
       <MemberSignature Language="C#" Value="public static double DDB (double Cost, double Salvage, double Life, double Period, double Factor = 2);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 DDB(float64 Cost, float64 Salvage, float64 Life, float64 Period, float64 Factor) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.DDB(System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DDB (Cost As Double, Salvage As Double, Life As Double, Period As Double, Optional Factor As Double = 2) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +96,7 @@
       <MemberSignature Language="C#" Value="public static double FV (double Rate, double NPer, double Pmt, double PV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FV(float64 Rate, float64 NPer, float64 Pmt, float64 PV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.FV(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FV (Rate As Double, NPer As Double, Pmt As Double, Optional PV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -141,6 +145,7 @@
       <MemberSignature Language="C#" Value="public static double IPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 IPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IPmt(System.Double,System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IPmt (Rate As Double, Per As Double, NPer As Double, PV As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -194,6 +199,7 @@
       <MemberSignature Language="C#" Value="public static double IRR (ref double[] ValueArray, double Guess = 0.1);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[]&amp; ValueArray, float64 Guess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IRR (ByRef ValueArray As Double(), Optional Guess As Double = 0.1) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -240,6 +246,8 @@
       <MemberSignature Language="C#" Value="public static double MIRR (ref double[] ValueArray, double FinanceRate, double ReinvestRate);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[]&amp; ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MIRR (ByRef ValueArray As Double(), FinanceRate As Double, ReinvestRate As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double MIRR(cli::array &lt;double&gt; ^ % ValueArray, double FinanceRate, double ReinvestRate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -290,6 +298,7 @@
       <MemberSignature Language="C#" Value="public static double NPer (double Rate, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 NPer(float64 Rate, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPer(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NPer (Rate As Double, Pmt As Double, PV As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -339,6 +348,8 @@
       <MemberSignature Language="C#" Value="public static double NPV (double Rate, ref double[] ValueArray);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[]&amp; ValueArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NPV (Rate As Double, ByRef ValueArray As Double()) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double NPV(double Rate, cli::array &lt;double&gt; ^ % ValueArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -390,6 +401,7 @@
       <MemberSignature Language="C#" Value="public static double Pmt (double Rate, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 Pmt(float64 Rate, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.Pmt(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pmt (Rate As Double, NPer As Double, PV As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -441,6 +453,7 @@
       <MemberSignature Language="C#" Value="public static double PPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 PPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.PPmt(System.Double,System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PPmt (Rate As Double, Per As Double, NPer As Double, PV As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -494,6 +507,7 @@
       <MemberSignature Language="C#" Value="public static double PV (double Rate, double NPer, double Pmt, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 PV(float64 Rate, float64 NPer, float64 Pmt, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.PV(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PV (Rate As Double, NPer As Double, Pmt As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -542,6 +556,7 @@
       <MemberSignature Language="C#" Value="public static double Rate (double NPer, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod, double Guess = 0.1);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 Rate(float64 NPer, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due, float64 Guess) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.Rate(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Rate (NPer As Double, Pmt As Double, PV As Double, Optional FV As Double = 0, Optional Due As DueDate = Microsoft.VisualBasic.DueDate.EndOfPeriod, Optional Guess As Double = 0.1) As Double" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -595,6 +610,8 @@
       <MemberSignature Language="C#" Value="public static double SLN (double Cost, double Salvage, double Life);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 SLN(float64 Cost, float64 Salvage, float64 Life) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SLN(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SLN (Cost As Double, Salvage As Double, Life As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double SLN(double Cost, double Salvage, double Life);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -640,6 +657,8 @@
       <MemberSignature Language="C#" Value="public static double SYD (double Cost, double Salvage, double Life, double Period);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 SYD(float64 Cost, float64 Salvage, float64 Life, float64 Period) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SYD(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SYD (Cost As Double, Salvage As Double, Life As Double, Period As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double SYD(double Cost, double Salvage, double Life, double Period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

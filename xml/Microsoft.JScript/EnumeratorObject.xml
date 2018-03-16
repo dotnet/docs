@@ -1,7 +1,9 @@
-<Type Name="EnumeratorObject" FullName="Microsoft.JScript.EnumeratorObject">
+﻿<Type Name="EnumeratorObject" FullName="Microsoft.JScript.EnumeratorObject">
   <TypeSignature Language="C#" Value="public class EnumeratorObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumeratorObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.EnumeratorObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class EnumeratorObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumeratorObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.IEnumerator enumerator;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.IEnumerator enumerator" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.EnumeratorObject.enumerator" />
+      <MemberSignature Language="VB.NET" Value="Protected enumerator As IEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::IEnumerator ^ enumerator;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected void LoadObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.EnumeratorObject.LoadObject" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub LoadObject ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

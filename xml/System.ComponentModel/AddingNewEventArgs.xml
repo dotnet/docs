@@ -1,7 +1,9 @@
-<Type Name="AddingNewEventArgs" FullName="System.ComponentModel.AddingNewEventArgs">
+﻿<Type Name="AddingNewEventArgs" FullName="System.ComponentModel.AddingNewEventArgs">
   <TypeSignature Language="C#" Value="public class AddingNewEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AddingNewEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AddingNewEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AddingNewEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddingNewEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,10 +51,22 @@
     <altmember cref="T:System.ComponentModel.ICancelAddNew" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AddingNewEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AddingNewEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AddingNewEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddingNewEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +100,8 @@
       <MemberSignature Language="C#" Value="public AddingNewEventArgs (object newObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object newObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.AddingNewEventArgs.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (newObject As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddingNewEventArgs(System::Object ^ newObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public object NewObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object NewObject" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.AddingNewEventArgs.NewObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewObject { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,15 +180,5 @@
         <altmember cref="T:System.ComponentModel.AddingNewEventHandler" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.AddingNewEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

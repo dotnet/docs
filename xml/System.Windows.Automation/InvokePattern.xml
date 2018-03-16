@@ -1,7 +1,9 @@
-<Type Name="InvokePattern" FullName="System.Windows.Automation.InvokePattern">
+﻿<Type Name="InvokePattern" FullName="System.Windows.Automation.InvokePattern">
   <TypeSignature Language="C#" Value="public class InvokePattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InvokePattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.InvokePattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class InvokePattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvokePattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public void Invoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.InvokePattern.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent InvokedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent InvokedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePattern.InvokedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As AutomationEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InvokedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

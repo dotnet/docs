@@ -1,7 +1,9 @@
-<Type Name="DataGridViewImageColumn" FullName="System.Windows.Forms.DataGridViewImageColumn">
+﻿<Type Name="DataGridViewImageColumn" FullName="System.Windows.Forms.DataGridViewImageColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewImageColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewImageColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewImageColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewImageColumn&#xA;Inherits DataGridViewColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewImageColumn : System::Windows::Forms::DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +53,21 @@
     <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridViewImageColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewImageColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +93,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewImageColumn (bool valuesAreIcons);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool valuesAreIcons) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valuesAreIcons As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewImageColumn(bool valuesAreIcons);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +143,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,7 +155,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,6 +196,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -205,6 +224,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.DefaultCellStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -308,6 +331,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Icon Icon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Icon Icon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As Icon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Icon ^ Icon { System::Drawing::Icon ^ get(); void set(System::Drawing::Icon ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -318,7 +343,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -350,6 +375,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Image Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Property Image As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -397,6 +424,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewImageCellLayout ImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewImageCellLayout ImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.ImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageLayout As DataGridViewImageCellLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewImageCellLayout ImageLayout { System::Windows::Forms::DataGridViewImageCellLayout get(); void set(System::Windows::Forms::DataGridViewImageCellLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -442,6 +471,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewImageColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -462,6 +493,8 @@
       <MemberSignature Language="C#" Value="public bool ValuesAreIcons { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValuesAreIcons" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewImageColumn.ValuesAreIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValuesAreIcons As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValuesAreIcons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -472,7 +505,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -506,14 +539,5 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewImageCell.ValueIsIcon" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewImageColumn" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

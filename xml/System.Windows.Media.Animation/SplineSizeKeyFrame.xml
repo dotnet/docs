@@ -1,7 +1,9 @@
-<Type Name="SplineSizeKeyFrame" FullName="System.Windows.Media.Animation.SplineSizeKeyFrame">
+﻿<Type Name="SplineSizeKeyFrame" FullName="System.Windows.Media.Animation.SplineSizeKeyFrame">
   <TypeSignature Language="C#" Value="public class SplineSizeKeyFrame : System.Windows.Media.Animation.SizeKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplineSizeKeyFrame extends System.Windows.Media.Animation.SizeKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SplineSizeKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class SplineSizeKeyFrame&#xA;Inherits SizeKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplineSizeKeyFrame : System::Windows::Media::Animation::SizeKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Animation.SizeKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SplineSizeKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SplineSizeKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineSizeKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public SplineSizeKeyFrame (System.Windows.Size value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.#ctor(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineSizeKeyFrame(System::Windows::Size value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +80,7 @@
       <MemberSignature Language="C#" Value="public SplineSizeKeyFrame (System.Windows.Size value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.#ctor(System.Windows.Size,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineSizeKeyFrame(System::Windows::Size value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +101,7 @@
       <MemberSignature Language="C#" Value="public SplineSizeKeyFrame (System.Windows.Size value, System.Windows.Media.Animation.KeyTime keyTime, System.Windows.Media.Animation.KeySpline keySpline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.KeySpline keySpline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.#ctor(System.Windows.Size,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplineSizeKeyFrame(System::Windows::Size value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::KeySpline ^ keySpline);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +125,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size InterpolateValueCore (System.Windows.Size baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size InterpolateValueCore(valuetype System.Windows.Size baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SplineSizeKeyFrame.InterpolateValueCore(System.Windows.Size,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Size, keyFrameProgress As Double) As Size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size InterpolateValueCore(System::Windows::Size baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +173,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.KeySpline KeySpline { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.KeySpline KeySpline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SplineSizeKeyFrame.KeySpline" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeySpline As KeySpline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeySpline ^ KeySpline { System::Windows::Media::Animation::KeySpline ^ get(); void set(System::Windows::Media::Animation::KeySpline ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeySplineProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeySplineProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.SplineSizeKeyFrame.KeySplineProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeySplineProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeySplineProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -198,14 +223,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SplineSizeKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

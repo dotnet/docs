@@ -1,7 +1,9 @@
-<Type Name="DiscreteThicknessKeyFrame" FullName="System.Windows.Media.Animation.DiscreteThicknessKeyFrame">
+﻿<Type Name="DiscreteThicknessKeyFrame" FullName="System.Windows.Media.Animation.DiscreteThicknessKeyFrame">
   <TypeSignature Language="C#" Value="public class DiscreteThicknessKeyFrame : System.Windows.Media.Animation.ThicknessKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscreteThicknessKeyFrame extends System.Windows.Media.Animation.ThicknessKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteThicknessKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscreteThicknessKeyFrame&#xA;Inherits ThicknessKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscreteThicknessKeyFrame : System::Windows::Media::Animation::ThicknessKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +30,21 @@
     <altmember cref="T:System.Windows.Media.Animation.ThicknessKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteThicknessKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscreteThicknessKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteThicknessKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +60,8 @@
       <MemberSignature Language="C#" Value="public DiscreteThicknessKeyFrame (System.Windows.Thickness value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor(System.Windows.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Thickness)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteThicknessKeyFrame(System::Windows::Thickness value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +80,7 @@
       <MemberSignature Language="C#" Value="public DiscreteThicknessKeyFrame (System.Windows.Thickness value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Thickness value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteThicknessKeyFrame(System::Windows::Thickness value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteThicknessKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Thickness InterpolateValueCore (System.Windows.Thickness baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Thickness InterpolateValueCore(valuetype System.Windows.Thickness baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Thickness, keyFrameProgress As Double) As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Thickness InterpolateValueCore(System::Windows::Thickness baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteThicknessKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="WmlMobileTextWriter" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter">
+﻿<Type Name="WmlMobileTextWriter" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter">
   <TypeSignature Language="C#" Value="public class WmlMobileTextWriter : System.Web.UI.MobileControls.Adapters.MobileTextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlMobileTextWriter extends System.Web.UI.MobileControls.Adapters.MobileTextWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlMobileTextWriter&#xA;Inherits MobileTextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlMobileTextWriter : System::Web::UI::MobileControls::Adapters::MobileTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public WmlMobileTextWriter (System.IO.TextWriter writer, System.Web.Mobile.MobileCapabilities device, System.Web.UI.MobileControls.MobilePage page);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, class System.Web.Mobile.MobileCapabilities device, class System.Web.UI.MobileControls.MobilePage page) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities,System.Web.UI.MobileControls.MobilePage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities, page As MobilePage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlMobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device, System::Web::UI::MobileControls::MobilePage ^ page);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public void AddFormVariable (string clientID, string value, bool generateRandomID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFormVariable(string clientID, string value, bool generateRandomID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AddFormVariable(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFormVariable (clientID As String, value As String, generateRandomID As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFormVariable(System::String ^ clientID, System::String ^ value, bool generateRandomID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public bool AnalyzeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AnalyzeMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AnalyzeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnalyzeMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AnalyzeMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="protected virtual void AnalyzePostBack (bool includeVariables, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AnalyzePostBack(bool includeVariables, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AnalyzePostBack(System.Boolean,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AnalyzePostBack (includeVariables As Boolean, postBackType As WmlPostFieldType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AnalyzePostBack(bool includeVariables, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public virtual void BeginCustomMarkup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginCustomMarkup() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginCustomMarkup ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginCustomMarkup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -169,6 +181,7 @@
       <MemberSignature Language="C#" Value="public virtual void BeginForm (System.Web.UI.MobileControls.Form form);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginForm(System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginForm(System::Web::UI::MobileControls::Form ^ form);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -197,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected virtual string CalculateFormPostBackUrl (bool externalSubmit, ref bool encode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormPostBackUrl(bool externalSubmit, bool&amp; encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CalculateFormPostBackUrl(System.Boolean,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormPostBackUrl (externalSubmit As Boolean, ByRef encode As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormPostBackUrl(bool externalSubmit, bool % encode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -230,6 +245,8 @@
       <MemberSignature Language="C#" Value="protected virtual string CalculateFormQueryString ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CalculateFormQueryString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CalculateFormQueryString" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormQueryString () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormQueryString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -256,6 +273,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CloseCharacterFormat ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseCharacterFormat() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CloseCharacterFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseCharacterFormat ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseCharacterFormat();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -281,6 +300,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CloseParagraph ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseParagraph() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CloseParagraph" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseParagraph ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseParagraph();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -306,6 +327,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Form CurrentForm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Form CurrentForm" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CurrentForm" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentForm As Form" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Form ^ CurrentForm { System::Web::UI::MobileControls::Form ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -324,6 +347,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat DefaultFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlFormat DefaultFormat" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultFormat As WmlMobileTextWriter.WmlFormat" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ DefaultFormat { System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -349,6 +374,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout DefaultLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlLayout DefaultLayout" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultLayout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultLayout As WmlMobileTextWriter.WmlLayout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ DefaultLayout { System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -374,6 +401,8 @@
       <MemberSignature Language="C#" Value="public virtual void EndCustomMarkup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCustomMarkup() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndCustomMarkup ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndCustomMarkup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -399,6 +428,8 @@
       <MemberSignature Language="C#" Value="public virtual void EndForm ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndForm" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndForm ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -424,6 +455,8 @@
       <MemberSignature Language="C#" Value="protected virtual void EnsureFormat ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureFormat() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnsureFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureFormat ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureFormat();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -449,6 +482,8 @@
       <MemberSignature Language="C#" Value="protected virtual void EnsureLayout ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureLayout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnsureLayout" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureLayout ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureLayout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -474,6 +509,7 @@
       <MemberSignature Language="C#" Value="public override void EnterFormat (System.Web.UI.MobileControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterFormat(System::Web::UI::MobileControls::Style ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -496,6 +532,7 @@
       <MemberSignature Language="C#" Value="public override void EnterLayout (System.Web.UI.MobileControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterLayout(System::Web::UI::MobileControls::Style ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -518,6 +555,7 @@
       <MemberSignature Language="C#" Value="public override void ExitFormat (System.Web.UI.MobileControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitFormat(System::Web::UI::MobileControls::Style ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -540,6 +578,7 @@
       <MemberSignature Language="C#" Value="public override void ExitLayout (System.Web.UI.MobileControls.Style style, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitLayout(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -564,6 +603,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsValidSoftkeyLabel (string label);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidSoftkeyLabel(string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.IsValidSoftkeyLabel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValidSoftkeyLabel (label As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValidSoftkeyLabel(System::String ^ label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -591,9 +632,11 @@
       </Docs>
     </Member>
     <Member MemberName="MapClientIDToShortName">
-      <MemberSignature Language="C#" Value="protected string MapClientIDToShortName (string clientID, bool generateRandomID);" />
+      <MemberSignature Language="C#" Value="protected internal string MapClientIDToShortName (string clientID, bool generateRandomID);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance string MapClientIDToShortName(string clientID, bool generateRandomID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.MapClientIDToShortName(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function MapClientIDToShortName (clientID As String, generateRandomID As Boolean) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ MapClientIDToShortName(System::String ^ clientID, bool generateRandomID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -627,6 +670,8 @@
       <MemberSignature Language="C#" Value="protected int NumberOfSoftkeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSoftkeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.NumberOfSoftkeys" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NumberOfSoftkeys As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int NumberOfSoftkeys { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -652,6 +697,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OpenCharacterFormat (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat format, bool writeBold, bool writeItalic, bool writeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OpenCharacterFormat(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlFormat format, bool writeBold, bool writeItalic, bool writeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.OpenCharacterFormat(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenCharacterFormat (format As WmlMobileTextWriter.WmlFormat, writeBold As Boolean, writeItalic As Boolean, writeSize As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenCharacterFormat(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ format, bool writeBold, bool writeItalic, bool writeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -686,6 +733,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OpenParagraph (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout layout, bool writeAlignment, bool writeWrapping);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OpenParagraph(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlLayout layout, bool writeAlignment, bool writeWrapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.OpenParagraph(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenParagraph (layout As WmlMobileTextWriter.WmlLayout, writeAlignment As Boolean, writeWrapping As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenParagraph(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ layout, bool writeAlignment, bool writeWrapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -718,6 +767,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.MobilePage Page { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobilePage Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.Page" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Page As MobilePage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -743,6 +794,8 @@
       <MemberSignature Language="C#" Value="protected bool PendingBreak { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PendingBreak" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.PendingBreak" />
+      <MemberSignature Language="VB.NET" Value="Protected Property PendingBreak As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool PendingBreak { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -762,6 +815,8 @@
       <MemberSignature Language="C#" Value="protected virtual void PostAnalyzeForm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void PostAnalyzeForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.PostAnalyzeForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostAnalyzeForm ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostAnalyzeForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -787,6 +842,7 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderBeginForm (System.Web.UI.MobileControls.Form form);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginForm(System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginForm(System::Web::UI::MobileControls::Form ^ form);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -815,6 +871,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderBeginHyperlink (string targetUrl, bool encodeUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginHyperlink(string targetUrl, bool encodeUrl, string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginHyperlink(System.String,System.Boolean,System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginHyperlink (targetUrl As String, encodeUrl As Boolean, softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginHyperlink(System::String ^ targetUrl, bool encodeUrl, System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -853,6 +911,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderBeginPostBack (string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginPostBack(string softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginPostBack(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginPostBack (softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginPostBack(System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -878,6 +938,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderBeginSelect (string name, string iname, string ivalue, string title, bool multiSelect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderBeginSelect(string name, string iname, string ivalue, string title, bool multiSelect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginSelect(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginSelect (name As String, iname As String, ivalue As String, title As String, multiSelect As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginSelect(System::String ^ name, System::String ^ iname, System::String ^ ivalue, System::String ^ title, bool multiSelect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -916,6 +978,8 @@
       <MemberSignature Language="C#" Value="protected void RenderDoEvent (string doType, string target, string arg, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, string text, bool includeVariables);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderDoEvent(string doType, string target, string arg, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, string text, bool includeVariables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderDoEvent(System.String,System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderDoEvent (doType As String, target As String, arg As String, postBackType As WmlPostFieldType, text As String, includeVariables As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderDoEvent(System::String ^ doType, System::String ^ target, System::String ^ arg, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, System::String ^ text, bool includeVariables);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -954,6 +1018,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderEndForm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderEndForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndForm ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -979,6 +1045,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderEndHyperlink (bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndHyperlink(bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndHyperlink(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndHyperlink (breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndHyperlink(bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1002,6 +1070,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderEndPostBack (string target, string argument, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, bool includeVariables, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndPostBack(string target, string argument, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, bool includeVariables, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndPostBack(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndPostBack (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndPostBack(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, bool includeVariables, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1031,6 +1101,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderEndSelect (bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderEndSelect(bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndSelect(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndSelect (breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndSelect(bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1052,6 +1124,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderExtraCards ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderExtraCards() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderExtraCards" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderExtraCards ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderExtraCards();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1077,6 +1151,8 @@
       <MemberSignature Language="C#" Value="protected void RenderFormDoEvent (string doType, string arg, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, string text);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderFormDoEvent(string doType, string arg, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderFormDoEvent(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderFormDoEvent (doType As String, arg As String, postBackType As WmlPostFieldType, text As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderFormDoEvent(System::String ^ doType, System::String ^ arg, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1111,6 +1187,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderGoAction (string target, string argument, System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, bool includeVariables);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderGoAction(string target, string argument, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType postBackType, bool includeVariables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderGoAction(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderGoAction (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderGoAction(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, bool includeVariables);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1145,6 +1223,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderImage (string source, string localSource, string alternateText, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderImage(string source, string localSource, string alternateText, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderImage(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderImage (source As String, localSource As String, alternateText As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderImage(System::String ^ source, System::String ^ localSource, System::String ^ alternateText, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1170,10 +1250,21 @@
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderSelectOption">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a single option within a selection list.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RenderSelectOption">
       <MemberSignature Language="C#" Value="public virtual void RenderSelectOption (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderSelectOption(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1195,6 +1286,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderSelectOption (string text, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderSelectOption(string text, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1214,10 +1307,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RenderText">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RenderText">
       <MemberSignature Language="C#" Value="public void RenderText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RenderText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1239,6 +1343,8 @@
       <MemberSignature Language="C#" Value="public void RenderText (string text, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RenderText(string text, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1262,6 +1368,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderText (string text, bool breakAfter, bool encodeText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderText(string text, bool breakAfter, bool encodeText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderText (text As String, breakAfter As Boolean, encodeText As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderText(System::String ^ text, bool breakAfter, bool encodeText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1287,6 +1395,8 @@
       <MemberSignature Language="C#" Value="public virtual void RenderTextBox (string id, string value, string format, string title, bool password, int size, int maxLength, bool generateRandomID, bool breakAfter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderTextBox(string id, string value, string format, string title, bool password, int32 size, int32 maxLength, bool generateRandomID, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderTextBox(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderTextBox (id As String, value As String, format As String, title As String, password As Boolean, size As Integer, maxLength As Integer, generateRandomID As Boolean, breakAfter As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderTextBox(System::String ^ id, System::String ^ value, System::String ^ format, System::String ^ title, bool password, int size, int maxLength, bool generateRandomID, bool breakAfter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1333,6 +1443,8 @@
       <MemberSignature Language="C#" Value="public virtual void ResetFormattingState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetFormattingState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ResetFormattingState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetFormattingState ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetFormattingState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1358,6 +1470,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool UsePostBackCard (bool includeVariables);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool UsePostBackCard(bool includeVariables) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.UsePostBackCard(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function UsePostBackCard (includeVariables As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool UsePostBackCard(bool includeVariables);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1388,6 +1502,8 @@
       <MemberSignature Language="C#" Value="public override void WriteAttribute (string attribute, string value, bool encode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteAttribute(string attribute, string value, bool encode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteAttribute (attribute As String, value As String, encode As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAttribute(System::String ^ attribute, System::String ^ value, bool encode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1415,6 +1531,8 @@
       <MemberSignature Language="C#" Value="protected void WriteBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteBreak() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteBreak" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteBreak ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1433,6 +1551,8 @@
       <MemberSignature Language="C#" Value="public override void WriteEncodedText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEncodedText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1455,6 +1575,8 @@
       <MemberSignature Language="C#" Value="public override void WriteEncodedUrl (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEncodedUrl(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedUrl (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedUrl(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1473,10 +1595,21 @@
         <altmember cref="M:System.Web.UI.HtmlTextWriter.WriteEncodedUrl(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WritePostField">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a <see langword="&amp;lt; postfield &amp;gt;" /> element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WritePostField">
       <MemberSignature Language="C#" Value="public void WritePostField (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostField(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostField(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1507,6 +1640,8 @@
       <MemberSignature Language="C#" Value="public void WritePostField (string name, string value, System.Web.UI.MobileControls.Adapters.WmlPostFieldType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostField(string name, string value, valuetype System.Web.UI.MobileControls.Adapters.WmlPostFieldType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostField(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String, type As WmlPostFieldType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value, System::Web::UI::MobileControls::Adapters::WmlPostFieldType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1532,6 +1667,8 @@
       <MemberSignature Language="C#" Value="public void WritePostFieldVariable (string name, string arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePostFieldVariable(string name, string arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostFieldVariable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePostFieldVariable (name As String, arg As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostFieldVariable(System::String ^ name, System::String ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1562,6 +1699,8 @@
       <MemberSignature Language="C#" Value="public void WriteText (string text, bool encodeText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteText(string text, bool encodeText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteText(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteText (text As String, encodeText As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteText(System::String ^ text, bool encodeText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1592,6 +1731,8 @@
       <MemberSignature Language="C#" Value="protected void WriteTextEncodedAttribute (string attribute, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteTextEncodedAttribute(string attribute, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteTextEncodedAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteTextEncodedAttribute (attribute As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteTextEncodedAttribute(System::String ^ attribute, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -1618,32 +1759,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RenderSelectOption">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Renders a single option within a selection list.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RenderText">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WritePostField">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a <see langword="&amp;lt; postfield &amp;gt;" /> element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

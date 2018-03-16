@@ -1,7 +1,9 @@
-<Type Name="CultureTypes" FullName="System.Globalization.CultureTypes">
+﻿<Type Name="CultureTypes" FullName="System.Globalization.CultureTypes">
   <TypeSignature Language="C#" Value="public enum CultureTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CultureTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CultureTypes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CultureTypes" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="AllCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes AllCultures = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.AllCultures" />
+      <MemberSignature Language="VB.NET" Value="AllCultures" />
+      <MemberSignature Language="C++ CLI" Value="AllCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>All cultures that ship with the .NET Framework, including neutral and specific cultures, cultures installed in the Windows operating system, and custom cultures created by the user.  
   
@@ -90,6 +95,8 @@
       <MemberSignature Language="C#" Value="FrameworkCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes FrameworkCultures = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.FrameworkCultures" />
+      <MemberSignature Language="VB.NET" Value="FrameworkCultures" />
+      <MemberSignature Language="C++ CLI" Value="FrameworkCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>This member is deprecated; using this value with <see cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" /> returns neutral and specific cultures shipped with the .NET Framework 2.0.</summary>
       </Docs>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="InstalledWin32Cultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes InstalledWin32Cultures = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.InstalledWin32Cultures" />
+      <MemberSignature Language="VB.NET" Value="InstalledWin32Cultures" />
+      <MemberSignature Language="C++ CLI" Value="InstalledWin32Cultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>All cultures that are installed in the Windows operating system. Note that not all cultures supported by the .NET Framework are installed in the operating system.</summary>
       </Docs>
@@ -145,6 +156,8 @@
       <MemberSignature Language="C#" Value="NeutralCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes NeutralCultures = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.NeutralCultures" />
+      <MemberSignature Language="VB.NET" Value="NeutralCultures" />
+      <MemberSignature Language="C++ CLI" Value="NeutralCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Cultures that are associated with a language but are not specific to a country/region. The names of .NET Framework cultures consist of the lowercase two-letter code derived from ISO 639-1. For example: "en" (English) is a neutral culture.</summary>
         <remarks>
@@ -180,6 +194,8 @@
       <MemberSignature Language="C#" Value="ReplacementCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes ReplacementCultures = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.ReplacementCultures" />
+      <MemberSignature Language="VB.NET" Value="ReplacementCultures" />
+      <MemberSignature Language="C++ CLI" Value="ReplacementCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +213,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Custom cultures created by the user that replace cultures shipped with the .NET Framework.</summary>
       </Docs>
@@ -205,6 +222,8 @@
       <MemberSignature Language="C#" Value="SpecificCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes SpecificCultures = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.SpecificCultures" />
+      <MemberSignature Language="VB.NET" Value="SpecificCultures" />
+      <MemberSignature Language="C++ CLI" Value="SpecificCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Cultures that are specific to a country/region. The names of these cultures follow RFC 4646 (Windows Vista and later). The format is "&lt;languagecode2&gt;-&lt;country/regioncode2&gt;", where &lt;languagecode2&gt; is a lowercase two-letter code derived from ISO 639-1 and &lt;country/regioncode2&gt; is an uppercase two-letter code derived from ISO 3166. For example, "en-US" for English (United States) is a specific culture.</summary>
         <remarks>
@@ -238,6 +258,8 @@
       <MemberSignature Language="C#" Value="UserCustomCulture" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes UserCustomCulture = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.UserCustomCulture" />
+      <MemberSignature Language="VB.NET" Value="UserCustomCulture" />
+      <MemberSignature Language="C++ CLI" Value="UserCustomCulture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -255,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Custom cultures created by the user.</summary>
         <remarks>
@@ -281,6 +304,8 @@
       <MemberSignature Language="C#" Value="WindowsOnlyCultures" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.CultureTypes WindowsOnlyCultures = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.CultureTypes.WindowsOnlyCultures" />
+      <MemberSignature Language="VB.NET" Value="WindowsOnlyCultures" />
+      <MemberSignature Language="C++ CLI" Value="WindowsOnlyCultures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -303,6 +328,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.CultureTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>This member is deprecated. If it is used as an argument to the <see cref="M:System.Globalization.CultureInfo.GetCultures(System.Globalization.CultureTypes)" /> method, the method returns an empty array.</summary>
       </Docs>

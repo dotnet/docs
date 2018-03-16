@@ -1,7 +1,9 @@
-<Type Name="DbConnection" FullName="System.Data.Common.DbConnection">
+﻿<Type Name="DbConnection" FullName="System.Data.Common.DbConnection">
   <TypeSignature Language="C#" Value="public abstract class DbConnection : System.ComponentModel.Component, IDisposable, System.Data.IDbConnection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbConnection extends System.ComponentModel.Component implements class System.Data.IDbConnection, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbConnection" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbConnection&#xA;Inherits Component&#xA;Implements IDbConnection, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbConnection abstract : System::ComponentModel::Component, IDisposable, System::Data::IDbConnection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected DbConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbConnection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -65,6 +69,7 @@
       <MemberSignature Language="C#" Value="protected abstract System.Data.Common.DbTransaction BeginDbTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbTransaction ^ BeginDbTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -121,6 +126,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbTransaction BeginTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbTransaction BeginTransaction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransaction () As DbTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbTransaction ^ BeginTransaction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -157,6 +164,7 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbTransaction BeginTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbTransaction BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.BeginTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbTransaction ^ BeginTransaction(System::Data::IsolationLevel isolationLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -189,7 +197,12 @@
       <MemberSignature Language="C#" Value="public abstract void ChangeDatabase (string databaseName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChangeDatabase(string databaseName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.ChangeDatabase(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ChangeDatabase (databaseName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ChangeDatabase(System::String ^ databaseName);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.ChangeDatabase(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -227,7 +240,12 @@
       <MemberSignature Language="C#" Value="public abstract void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Close" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -271,7 +289,12 @@
       <MemberSignature Language="C#" Value="public abstract string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property ConnectionString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.ConnectionString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -294,7 +317,7 @@
           <AttributeName>System.ComponentModel.RecommendedAsConfigurable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
@@ -320,7 +343,12 @@
       <MemberSignature Language="C#" Value="public virtual int ConnectionTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ConnectionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectionTimeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ConnectionTimeout { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.ConnectionTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -348,6 +376,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbCommand CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCommand () As DbCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -377,6 +407,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Data.Common.DbCommand CreateDbCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbCommand CreateDbCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.CreateDbCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDbCommand () As DbCommand" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Common::DbCommand ^ CreateDbCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -413,7 +445,12 @@
       <MemberSignature Language="C#" Value="public abstract string Database { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Database" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.Database" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Database As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Database { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.Database</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -448,6 +485,8 @@
       <MemberSignature Language="C#" Value="public abstract string DataSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DataSource As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -483,6 +522,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Data.Common.DbProviderFactory DbProviderFactory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbProviderFactory DbProviderFactory" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.DbProviderFactory" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DbProviderFactory As DbProviderFactory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbProviderFactory ^ DbProviderFactory { System::Data::Common::DbProviderFactory ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -510,7 +551,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -528,6 +574,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -549,6 +597,7 @@
       <MemberSignature Language="C#" Value="public virtual void EnlistTransaction (System.Transactions.Transaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.EnlistTransaction(System.Transactions.Transaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EnlistTransaction(System::Transactions::Transaction ^ transaction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -604,6 +653,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataTable GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema () As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -639,6 +690,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataTable GetSchema (string collectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable GetSchema(string collectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema (collectionName As String) As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema(System::String ^ collectionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -679,6 +732,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Data.DataTable GetSchema (string collectionName, string[] restrictionValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable GetSchema(string collectionName, string[] restrictionValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.GetSchema(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchema (collectionName As String, restrictionValues As String()) As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchema(System::String ^ collectionName, cli::array &lt;System::String ^&gt; ^ restrictionValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -725,6 +780,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStateChange (System.Data.StateChangeEventArgs stateChange);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStateChange(class System.Data.StateChangeEventArgs stateChange) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OnStateChange(System.Data.StateChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStateChange (stateChange As StateChangeEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStateChange(System::Data::StateChangeEventArgs ^ stateChange);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -766,7 +823,12 @@
       <MemberSignature Language="C#" Value="public abstract void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.Open" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Open ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Open();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -819,6 +881,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task OpenAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task OpenAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OpenAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function OpenAsync () As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ OpenAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -859,6 +923,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task OpenAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task OpenAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.OpenAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ OpenAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -906,6 +971,8 @@
       <MemberSignature Language="C#" Value="public abstract string ServerVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServerVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.ServerVersion" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ServerVersion As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ServerVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -941,7 +1008,12 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.ConnectionState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState State" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbConnection.State" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property State As ConnectionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::ConnectionState State { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbConnection.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -974,6 +1046,8 @@
       <MemberSignature Language="C#" Value="public virtual event System.Data.StateChangeEventHandler StateChange;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.StateChangeEventHandler StateChange" />
       <MemberSignature Language="DocId" Value="E:System.Data.Common.DbConnection.StateChange" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event StateChange As StateChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Data::StateChangeEventHandler ^ StateChange;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1004,11 +1078,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.IDbConnection.BeginTransaction">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins a database transaction.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.Data.IDbConnection.BeginTransaction">
       <MemberSignature Language="C#" Value="System.Data.IDbTransaction IDbConnection.BeginTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction" />
+      <MemberSignature Language="VB.NET" Value="Function BeginTransaction () As IDbTransaction Implements IDbConnection.BeginTransaction" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction() = System::Data::IDbConnection::BeginTransaction;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1046,7 +1135,11 @@
       <MemberSignature Language="C#" Value="System.Data.IDbTransaction IDbConnection.BeginTransaction (System.Data.IsolationLevel isolationLevel);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbTransaction System.Data.IDbConnection.BeginTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction(System.Data.IsolationLevel)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbTransaction ^ System.Data.IDbConnection.BeginTransaction(System::Data::IsolationLevel isolationLevel) = System::Data::IDbConnection::BeginTransaction;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.BeginTransaction(System.Data.IsolationLevel)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1085,7 +1178,12 @@
       <MemberSignature Language="C#" Value="System.Data.IDbCommand IDbConnection.CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDbCommand System.Data.IDbConnection.CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbConnection.System#Data#IDbConnection#CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Function CreateCommand () As IDbCommand Implements IDbConnection.CreateCommand" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDbCommand ^ System.Data.IDbConnection.CreateCommand() = System::Data::IDbConnection::CreateCommand;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDbConnection.CreateCommand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1117,15 +1215,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.Data.IDbConnection.BeginTransaction">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins a database transaction.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

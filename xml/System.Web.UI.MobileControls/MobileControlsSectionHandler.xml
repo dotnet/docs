@@ -1,7 +1,9 @@
-<Type Name="MobileControlsSectionHandler" FullName="System.Web.UI.MobileControls.MobileControlsSectionHandler">
+﻿<Type Name="MobileControlsSectionHandler" FullName="System.Web.UI.MobileControls.MobileControlsSectionHandler">
   <TypeSignature Language="C#" Value="public class MobileControlsSectionHandler : System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileControlsSectionHandler extends System.Object implements class System.Configuration.IConfigurationSectionHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlsSectionHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class MobileControlsSectionHandler&#xA;Implements IConfigurationSectionHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MobileControlsSectionHandler : System::Configuration::IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public MobileControlsSectionHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlsSectionHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MobileControlsSectionHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected object Create (object parent, object context, System.Xml.XmlNode input);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object Create(object parent, object context, class System.Xml.XmlNode input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlsSectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Create (parent As Object, context As Object, input As XmlNode) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="object IConfigurationSectionHandler.Create (object parent, object context, System.Xml.XmlNode input);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Configuration.IConfigurationSectionHandler.Create(object parent, object context, class System.Xml.XmlNode input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlsSectionHandler.System#Configuration#IConfigurationSectionHandler#Create(System.Object,System.Object,System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Function Create (parent As Object, context As Object, input As XmlNode) As Object Implements IConfigurationSectionHandler.Create" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Configuration.IConfigurationSectionHandler.Create(System::Object ^ parent, System::Object ^ context, System::Xml::XmlNode ^ input) = System::Configuration::IConfigurationSectionHandler::Create;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

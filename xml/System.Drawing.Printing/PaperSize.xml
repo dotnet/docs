@@ -1,7 +1,9 @@
-<Type Name="PaperSize" FullName="System.Drawing.Printing.PaperSize">
+﻿<Type Name="PaperSize" FullName="System.Drawing.Printing.PaperSize">
   <TypeSignature Language="C#" Value="public class PaperSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PaperSize extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSize" />
+  <TypeSignature Language="VB.NET" Value="Public Class PaperSize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PaperSize" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@
       <MemberSignature Language="C#" Value="public PaperSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSize.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PaperSize();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public PaperSize (string name, int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSize.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, width As Integer, height As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PaperSize(System::String ^ name, int width, int height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -146,6 +154,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PaperKind Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PaperKind Kind" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As PaperKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PaperKind Kind { System::Drawing::Printing::PaperKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -173,6 +183,8 @@
       <MemberSignature Language="C#" Value="public string PaperName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PaperName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.PaperName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PaperName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PaperName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -209,6 +221,8 @@
       <MemberSignature Language="C#" Value="public int RawKind { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RawKind" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.RawKind" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawKind As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RawKind { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -354,6 +368,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PaperSize.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -373,6 +389,8 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PaperSize.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

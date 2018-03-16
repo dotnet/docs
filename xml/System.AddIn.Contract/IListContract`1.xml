@@ -1,7 +1,9 @@
-<Type Name="IListContract&lt;T&gt;" FullName="System.AddIn.Contract.IListContract&lt;T&gt;">
+﻿<Type Name="IListContract&lt;T&gt;" FullName="System.AddIn.Contract.IListContract&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IListContract&lt;T&gt; : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IListContract`1&lt;T&gt; implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IListContract`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IListContract(Of T)&#xA;Implements IContract" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IListContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public void Add (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -79,6 +85,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -102,6 +110,8 @@
       <MemberSignature Language="C#" Value="public int GetCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.GetCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.IEnumeratorContract&lt;T&gt; GetEnumeratorContract ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.IEnumeratorContract`1&lt;!T&gt; GetEnumeratorContract() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.GetEnumeratorContract" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumeratorContract () As IEnumeratorContract(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::IEnumeratorContract&lt;T&gt; ^ GetEnumeratorContract();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -140,6 +152,8 @@
       <MemberSignature Language="C#" Value="public bool GetIsReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetIsReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.GetIsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIsReadOnly () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -160,6 +174,8 @@
       <MemberSignature Language="C#" Value="public T GetItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.GetItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (index As Integer) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T GetItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -195,6 +211,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As T) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -232,6 +250,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.Insert(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -271,6 +291,8 @@
       <MemberSignature Language="C#" Value="public bool Remove (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -301,6 +323,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -338,6 +362,8 @@
       <MemberSignature Language="C#" Value="public void SetItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IListContract`1.SetItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (index As Integer, item As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

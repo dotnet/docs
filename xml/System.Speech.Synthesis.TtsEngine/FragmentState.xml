@@ -1,7 +1,9 @@
-<Type Name="FragmentState" FullName="System.Speech.Synthesis.TtsEngine.FragmentState">
+﻿<Type Name="FragmentState" FullName="System.Speech.Synthesis.TtsEngine.FragmentState">
   <TypeSignature Language="C#" Value="public struct FragmentState : IEquatable&lt;System.Speech.Synthesis.TtsEngine.FragmentState&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FragmentState extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Speech.Synthesis.TtsEngine.FragmentState&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.FragmentState" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FragmentState&#xA;Implements IEquatable(Of FragmentState)" />
+  <TypeSignature Language="C++ CLI" Value="public value class FragmentState : IEquatable&lt;System::Speech::Synthesis::TtsEngine::FragmentState&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,7 @@
       <MemberSignature Language="C#" Value="public FragmentState (System.Speech.Synthesis.TtsEngine.TtsEngineAction action, int langId, int emphasis, int duration, System.Speech.Synthesis.TtsEngine.SayAs sayAs, System.Speech.Synthesis.TtsEngine.Prosody prosody, char[] phonemes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction action, int32 langId, int32 emphasis, int32 duration, class System.Speech.Synthesis.TtsEngine.SayAs sayAs, class System.Speech.Synthesis.TtsEngine.Prosody prosody, char[] phonemes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.#ctor(System.Speech.Synthesis.TtsEngine.TtsEngineAction,System.Int32,System.Int32,System.Int32,System.Speech.Synthesis.TtsEngine.SayAs,System.Speech.Synthesis.TtsEngine.Prosody,System.Char[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FragmentState(System::Speech::Synthesis::TtsEngine::TtsEngineAction action, int langId, int emphasis, int duration, System::Speech::Synthesis::TtsEngine::SayAs ^ sayAs, System::Speech::Synthesis::TtsEngine::Prosody ^ prosody, cli::array &lt;char&gt; ^ phonemes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -100,6 +103,8 @@
       <MemberSignature Language="C#" Value="public System.Speech.Synthesis.TtsEngine.TtsEngineAction Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.TtsEngine.TtsEngineAction Action" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As TtsEngineAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::TtsEngineAction Action { System::Speech::Synthesis::TtsEngine::TtsEngineAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -118,6 +123,8 @@
       <MemberSignature Language="C#" Value="public int Duration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Duration" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Duration { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -136,6 +143,8 @@
       <MemberSignature Language="C#" Value="public int Emphasis { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Emphasis" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.Emphasis" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Emphasis As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Emphasis { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -169,10 +178,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state as another <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> instance, or an [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) which can be cast to <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -202,7 +222,12 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Speech.Synthesis.TtsEngine.FragmentState other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Speech.Synthesis.TtsEngine.FragmentState other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.Equals(System.Speech.Synthesis.TtsEngine.FragmentState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As FragmentState) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Speech::Synthesis::TtsEngine::FragmentState other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -224,6 +249,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -244,6 +271,8 @@
       <MemberSignature Language="C#" Value="public int LangId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LangId" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.LangId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LangId As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LangId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -269,6 +298,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Equality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (state1 As FragmentState, state2 As FragmentState) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Speech::Synthesis::TtsEngine::FragmentState state1, System::Speech::Synthesis::TtsEngine::FragmentState state2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -295,6 +326,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Speech.Synthesis.TtsEngine.FragmentState state1, System.Speech.Synthesis.TtsEngine.FragmentState state2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.FragmentState state1, valuetype System.Speech.Synthesis.TtsEngine.FragmentState state2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.FragmentState.op_Inequality(System.Speech.Synthesis.TtsEngine.FragmentState,System.Speech.Synthesis.TtsEngine.FragmentState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (state1 As FragmentState, state2 As FragmentState) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Speech::Synthesis::TtsEngine::FragmentState state1, System::Speech::Synthesis::TtsEngine::FragmentState state2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -321,6 +354,8 @@
       <MemberSignature Language="C#" Value="public char[] Phoneme { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char[] Phoneme" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.Phoneme" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Phoneme As Char()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;char&gt; ^ Phoneme { cli::array &lt;char&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -348,6 +383,8 @@
       <MemberSignature Language="C#" Value="public System.Speech.Synthesis.TtsEngine.Prosody Prosody { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Synthesis.TtsEngine.Prosody Prosody" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.Prosody" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Prosody As Prosody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::Prosody ^ Prosody { System::Speech::Synthesis::TtsEngine::Prosody ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -373,6 +410,8 @@
       <MemberSignature Language="C#" Value="public System.Speech.Synthesis.TtsEngine.SayAs SayAs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Synthesis.TtsEngine.SayAs SayAs" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.FragmentState.SayAs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SayAs As SayAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::TtsEngine::SayAs ^ SayAs { System::Speech::Synthesis::TtsEngine::SayAs ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -400,14 +439,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.FragmentState" /> describes the same <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> state as another <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> instance, or an [Object](http://msdn.microsoft.com/library/vstudio/system.object\(v=vs.110\).aspx) which can be cast to <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

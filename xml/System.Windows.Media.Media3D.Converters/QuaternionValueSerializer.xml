@@ -1,7 +1,9 @@
-<Type Name="QuaternionValueSerializer" FullName="System.Windows.Media.Media3D.Converters.QuaternionValueSerializer">
+﻿<Type Name="QuaternionValueSerializer" FullName="System.Windows.Media.Media3D.Converters.QuaternionValueSerializer">
   <TypeSignature Language="C#" Value="public class QuaternionValueSerializer : System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QuaternionValueSerializer extends System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class QuaternionValueSerializer&#xA;Inherits ValueSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QuaternionValueSerializer : System::Windows::Markup::ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public QuaternionValueSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuaternionValueSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFromString (string value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFromString(string value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFromString (string value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromString(string value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public override string ConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Converters.QuaternionValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

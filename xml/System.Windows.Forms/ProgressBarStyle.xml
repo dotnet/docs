@@ -1,7 +1,9 @@
-<Type Name="ProgressBarStyle" FullName="System.Windows.Forms.ProgressBarStyle">
+﻿<Type Name="ProgressBarStyle" FullName="System.Windows.Forms.ProgressBarStyle">
   <TypeSignature Language="C#" Value="public enum ProgressBarStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProgressBarStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProgressBarStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProgressBarStyle" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProgressBarStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Blocks" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Blocks = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Blocks" />
+      <MemberSignature Language="VB.NET" Value="Blocks" />
+      <MemberSignature Language="C++ CLI" Value="Blocks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates progress by increasing the number of segmented blocks in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="Continuous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Continuous = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Continuous" />
+      <MemberSignature Language="VB.NET" Value="Continuous" />
+      <MemberSignature Language="C++ CLI" Value="Continuous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates progress by increasing the size of a smooth, continuous bar in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="Marquee" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ProgressBarStyle Marquee = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ProgressBarStyle.Marquee" />
+      <MemberSignature Language="VB.NET" Value="Marquee" />
+      <MemberSignature Language="C++ CLI" Value="Marquee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ProgressBarStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates progress by continuously scrolling a block across a <see cref="T:System.Windows.Forms.ProgressBar" /> in a marquee fashion.</summary>
       </Docs>

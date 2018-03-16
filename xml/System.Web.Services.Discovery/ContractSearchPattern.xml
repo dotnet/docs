@@ -1,7 +1,9 @@
-<Type Name="ContractSearchPattern" FullName="System.Web.Services.Discovery.ContractSearchPattern">
+﻿<Type Name="ContractSearchPattern" FullName="System.Web.Services.Discovery.ContractSearchPattern">
   <TypeSignature Language="C#" Value="public sealed class ContractSearchPattern : System.Web.Services.Discovery.DiscoverySearchPattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractSearchPattern extends System.Web.Services.Discovery.DiscoverySearchPattern" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.ContractSearchPattern" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractSearchPattern&#xA;Inherits DiscoverySearchPattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractSearchPattern sealed : System::Web::Services::Discovery::DiscoverySearchPattern" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ContractSearchPattern ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractSearchPattern.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractSearchPattern();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -46,6 +50,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.Services.Discovery.DiscoveryReference GetDiscoveryReference (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.Services.Discovery.DiscoveryReference GetDiscoveryReference(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractSearchPattern.GetDiscoveryReference(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDiscoveryReference (filename As String) As DiscoveryReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Services::Discovery::DiscoveryReference ^ GetDiscoveryReference(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public override string Pattern { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pattern" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractSearchPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Pattern As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Pattern { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

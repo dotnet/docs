@@ -1,7 +1,9 @@
-<Type Name="DashCap" FullName="System.Drawing.Drawing2D.DashCap">
+﻿<Type Name="DashCap" FullName="System.Drawing.Drawing2D.DashCap">
   <TypeSignature Language="C#" Value="public enum DashCap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DashCap extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.DashCap" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DashCap" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DashCap" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.DashCap Flat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a square cap that squares off both ends of each dash.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="Round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.DashCap Round = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a circular cap that rounds off both ends of each dash.</summary>
       </Docs>
@@ -50,6 +58,8 @@
       <MemberSignature Language="C#" Value="Triangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.DashCap Triangle = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.DashCap.Triangle" />
+      <MemberSignature Language="VB.NET" Value="Triangle" />
+      <MemberSignature Language="C++ CLI" Value="Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.DashCap</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a triangular cap that points both ends of each dash.</summary>
       </Docs>

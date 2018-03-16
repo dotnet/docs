@@ -1,7 +1,9 @@
-<Type Name="IAppDomainSetup" FullName="System.IAppDomainSetup">
+﻿<Type Name="IAppDomainSetup" FullName="System.IAppDomainSetup">
   <TypeSignature Language="C#" Value="public interface IAppDomainSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppDomainSetup" />
   <TypeSignature Language="DocId" Value="T:System.IAppDomainSetup" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAppDomainSetup" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAppDomainSetup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationBase" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.ApplicationBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationBase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public string CachePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CachePath" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.CachePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CachePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CachePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public string ConfigurationFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationFile" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.ConfigurationFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public string DynamicBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicBase" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.DynamicBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicBase As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public string LicenseFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LicenseFile" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.LicenseFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property LicenseFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LicenseFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +192,8 @@
       <MemberSignature Language="C#" Value="public string PrivateBinPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPath" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.PrivateBinPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBinPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBinPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +220,8 @@
       <MemberSignature Language="C#" Value="public string PrivateBinPathProbe { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPathProbe" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.PrivateBinPathProbe" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBinPathProbe As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBinPathProbe { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -232,6 +250,8 @@
       <MemberSignature Language="C#" Value="public string ShadowCopyDirectories { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyDirectories" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.ShadowCopyDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyDirectories As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShadowCopyDirectories { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +282,8 @@
       <MemberSignature Language="C#" Value="public string ShadowCopyFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyFiles" />
       <MemberSignature Language="DocId" Value="P:System.IAppDomainSetup.ShadowCopyFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyFiles As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShadowCopyFiles { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

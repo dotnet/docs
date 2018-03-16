@@ -1,7 +1,9 @@
-<Type Name="IBuildEngine4" FullName="Microsoft.Build.Framework.IBuildEngine4">
+﻿<Type Name="IBuildEngine4" FullName="Microsoft.Build.Framework.IBuildEngine4">
   <TypeSignature Language="C#" Value="public interface IBuildEngine4 : Microsoft.Build.Framework.IBuildEngine3" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine4 implements class Microsoft.Build.Framework.IBuildEngine, class Microsoft.Build.Framework.IBuildEngine2, class Microsoft.Build.Framework.IBuildEngine3" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine4" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine4&#xA;Implements IBuildEngine3" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine4 : Microsoft::Build::Framework::IBuildEngine3" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public object GetRegisteredTaskObject (object key, Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetRegisteredTaskObject(object key, valuetype Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.GetRegisteredTaskObject(System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRegisteredTaskObject (key As Object, lifetime As RegisteredTaskObjectLifetime) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetRegisteredTaskObject(System::Object ^ key, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public void RegisterTaskObject (object key, object obj, Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime, bool allowEarlyCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterTaskObject(object key, object obj, valuetype Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime, bool allowEarlyCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.RegisterTaskObject(System.Object,System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterTaskObject (key As Object, obj As Object, lifetime As RegisteredTaskObjectLifetime, allowEarlyCollection As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterTaskObject(System::Object ^ key, System::Object ^ obj, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime, bool allowEarlyCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public object UnregisterTaskObject (object key, Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object UnregisterTaskObject(object key, valuetype Microsoft.Build.Framework.RegisteredTaskObjectLifetime lifetime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine4.UnregisterTaskObject(System.Object,Microsoft.Build.Framework.RegisteredTaskObjectLifetime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnregisterTaskObject (key As Object, lifetime As RegisteredTaskObjectLifetime) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ UnregisterTaskObject(System::Object ^ key, Microsoft::Build::Framework::RegisteredTaskObjectLifetime lifetime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

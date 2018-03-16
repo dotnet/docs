@@ -1,7 +1,9 @@
-<Type Name="FormsProtectionEnum" FullName="System.Web.Configuration.FormsProtectionEnum">
+﻿<Type Name="FormsProtectionEnum" FullName="System.Web.Configuration.FormsProtectionEnum">
   <TypeSignature Language="C#" Value="public enum FormsProtectionEnum" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormsProtectionEnum extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsProtectionEnum" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormsProtectionEnum" />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormsProtectionEnum" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum All = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the application use both data validation and encryption to help protect cookies. This option uses the configured data-validation algorithm (based on the <see langword="machineKey" /> element). Triple-DES (3DES) is used for encryption, if it is available and if the key is at least 48 bytes long. <see langword="All" /> is the default (and recommended) value.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="Encryption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum Encryption = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Encryption" />
+      <MemberSignature Language="VB.NET" Value="Encryption" />
+      <MemberSignature Language="C++ CLI" Value="Encryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that cookies are encrypted using Triple-DES or DES, but data validation is not performed on cookies. Cookies used this way might be subject to chosen plaintext security attacks.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that both encryption and validation are disabled for sites that use cookies only for personalization and thus have weaker security requirements. Using cookies in this manner is not recommended; however, it is the least resource-intensive way to enable personalization using the .NET Framework.</summary>
       </Docs>
@@ -86,6 +97,8 @@
       <MemberSignature Language="C#" Value="Validation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.FormsProtectionEnum Validation = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.FormsProtectionEnum.Validation" />
+      <MemberSignature Language="VB.NET" Value="Validation" />
+      <MemberSignature Language="C++ CLI" Value="Validation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.FormsProtectionEnum</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the application use a validation scheme to verify that the contents of an encrypted cookie have not been altered in transit. The cookie is created by concatenating a validation key with the cookie data, computing a Message Authentication Code (MAC), and appending the MAC to the outgoing cookie.</summary>
       </Docs>

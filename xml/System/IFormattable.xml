@@ -1,7 +1,9 @@
-<Type Name="IFormattable" FullName="System.IFormattable">
+﻿<Type Name="IFormattable" FullName="System.IFormattable">
   <TypeSignature Language="C#" Value="public interface IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.IFormattable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +90,8 @@
       <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider formatProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

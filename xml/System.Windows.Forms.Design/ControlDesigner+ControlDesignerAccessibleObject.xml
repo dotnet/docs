@@ -1,7 +1,9 @@
-<Type Name="ControlDesigner+ControlDesignerAccessibleObject" FullName="System.Windows.Forms.Design.ControlDesigner+ControlDesignerAccessibleObject">
+﻿<Type Name="ControlDesigner+ControlDesignerAccessibleObject" FullName="System.Windows.Forms.Design.ControlDesigner+ControlDesignerAccessibleObject">
   <TypeSignature Language="C#" Value="public class ControlDesigner.ControlDesignerAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ControlDesigner/ControlDesignerAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlDesigner.ControlDesignerAccessibleObject&#xA;Inherits AccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ControlDesigner::ControlDesignerAccessibleObject : System::Windows::Forms::AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,7 @@
       <MemberSignature Language="C#" Value="public ControlDesignerAccessibleObject (System.Windows.Forms.Design.ControlDesigner designer, System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Design.ControlDesigner designer, class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.#ctor(System.Windows.Forms.Design.ControlDesigner,System.Windows.Forms.Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlDesignerAccessibleObject(System::Windows::Forms::Design::ControlDesigner ^ designer, System::Windows::Forms::Control ^ control);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.DefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -106,6 +115,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChild (index As Integer) As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -128,6 +139,8 @@
       <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetChildCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildCount () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetChildCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -147,6 +160,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetFocused ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetFocused() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetFocused" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFocused () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetFocused();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -166,6 +181,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetSelected ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetSelected() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.GetSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSelected () As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ GetSelected();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +202,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject HitTest(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.HitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HitTest (x As Integer, y As Integer) As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ HitTest(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -209,6 +228,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -227,6 +248,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -245,6 +268,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -263,6 +288,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -281,6 +308,8 @@
       <MemberSignature Language="C#" Value="public override string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ControlDesignerAccessibleObject.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

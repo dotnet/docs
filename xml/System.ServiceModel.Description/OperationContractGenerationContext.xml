@@ -1,7 +1,9 @@
-<Type Name="OperationContractGenerationContext" FullName="System.ServiceModel.Description.OperationContractGenerationContext">
+﻿<Type Name="OperationContractGenerationContext" FullName="System.ServiceModel.Description.OperationContractGenerationContext">
   <TypeSignature Language="C#" Value="public class OperationContractGenerationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationContractGenerationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.OperationContractGenerationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class OperationContractGenerationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationContractGenerationContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OperationContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ServiceContractGenerationContext contract, System.ServiceModel.Description.OperationDescription operation, System.CodeDom.CodeTypeDeclaration declaringType, System.CodeDom.CodeMemberMethod method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ServiceContractGenerationContext contract, class System.ServiceModel.Description.OperationDescription operation, class System.CodeDom.CodeTypeDeclaration declaringType, class System.CodeDom.CodeMemberMethod method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ServiceContractGenerationContext,System.ServiceModel.Description.OperationDescription,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ServiceContractGenerationContext ^ contract, System::ServiceModel::Description::OperationDescription ^ operation, System::CodeDom::CodeTypeDeclaration ^ declaringType, System::CodeDom::CodeMemberMethod ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public OperationContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ServiceContractGenerationContext contract, System.ServiceModel.Description.OperationDescription operation, System.CodeDom.CodeTypeDeclaration declaringType, System.CodeDom.CodeMemberMethod syncMethod, System.CodeDom.CodeMemberMethod taskMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ServiceContractGenerationContext contract, class System.ServiceModel.Description.OperationDescription operation, class System.CodeDom.CodeTypeDeclaration declaringType, class System.CodeDom.CodeMemberMethod syncMethod, class System.CodeDom.CodeMemberMethod taskMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ServiceContractGenerationContext,System.ServiceModel.Description.OperationDescription,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ServiceContractGenerationContext ^ contract, System::ServiceModel::Description::OperationDescription ^ operation, System::CodeDom::CodeTypeDeclaration ^ declaringType, System::CodeDom::CodeMemberMethod ^ syncMethod, System::CodeDom::CodeMemberMethod ^ taskMethod);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +105,7 @@
       <MemberSignature Language="C#" Value="public OperationContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ServiceContractGenerationContext contract, System.ServiceModel.Description.OperationDescription operation, System.CodeDom.CodeTypeDeclaration declaringType, System.CodeDom.CodeMemberMethod syncMethod, System.CodeDom.CodeMemberMethod beginMethod, System.CodeDom.CodeMemberMethod endMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ServiceContractGenerationContext contract, class System.ServiceModel.Description.OperationDescription operation, class System.CodeDom.CodeTypeDeclaration declaringType, class System.CodeDom.CodeMemberMethod syncMethod, class System.CodeDom.CodeMemberMethod beginMethod, class System.CodeDom.CodeMemberMethod endMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ServiceContractGenerationContext,System.ServiceModel.Description.OperationDescription,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ServiceContractGenerationContext ^ contract, System::ServiceModel::Description::OperationDescription ^ operation, System::CodeDom::CodeTypeDeclaration ^ declaringType, System::CodeDom::CodeMemberMethod ^ syncMethod, System::CodeDom::CodeMemberMethod ^ beginMethod, System::CodeDom::CodeMemberMethod ^ endMethod);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +136,7 @@
       <MemberSignature Language="C#" Value="public OperationContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ServiceContractGenerationContext contract, System.ServiceModel.Description.OperationDescription operation, System.CodeDom.CodeTypeDeclaration declaringType, System.CodeDom.CodeMemberMethod syncMethod, System.CodeDom.CodeMemberMethod beginMethod, System.CodeDom.CodeMemberMethod endMethod, System.CodeDom.CodeMemberMethod taskMethod);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ServiceContractGenerationContext contract, class System.ServiceModel.Description.OperationDescription operation, class System.CodeDom.CodeTypeDeclaration declaringType, class System.CodeDom.CodeMemberMethod syncMethod, class System.CodeDom.CodeMemberMethod beginMethod, class System.CodeDom.CodeMemberMethod endMethod, class System.CodeDom.CodeMemberMethod taskMethod) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.OperationContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ServiceContractGenerationContext,System.ServiceModel.Description.OperationDescription,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ServiceContractGenerationContext ^ contract, System::ServiceModel::Description::OperationDescription ^ operation, System::CodeDom::CodeTypeDeclaration ^ declaringType, System::CodeDom::CodeMemberMethod ^ syncMethod, System::CodeDom::CodeMemberMethod ^ beginMethod, System::CodeDom::CodeMemberMethod ^ endMethod, System::CodeDom::CodeMemberMethod ^ taskMethod);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -154,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeMemberMethod BeginMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeMemberMethod BeginMethod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.BeginMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BeginMethod As CodeMemberMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeMemberMethod ^ BeginMethod { System::CodeDom::CodeMemberMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceContractGenerationContext Contract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceContractGenerationContext Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As ServiceContractGenerationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceContractGenerationContext ^ Contract { System::ServiceModel::Description::ServiceContractGenerationContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +223,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeDeclaration DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeDeclaration DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As CodeTypeDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeDeclaration ^ DeclaringType { System::CodeDom::CodeTypeDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeMemberMethod EndMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeMemberMethod EndMethod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.EndMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndMethod As CodeMemberMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeMemberMethod ^ EndMethod { System::CodeDom::CodeMemberMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,6 +277,8 @@
       <MemberSignature Language="C#" Value="public bool IsAsync { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAsync" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.IsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAsync As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -273,6 +298,8 @@
       <MemberSignature Language="C#" Value="public bool IsTask { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTask" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.IsTask" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTask As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTask { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -292,6 +319,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.OperationDescription Operation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.OperationDescription Operation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As OperationDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::OperationDescription ^ Operation { System::ServiceModel::Description::OperationDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -317,6 +346,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceContractGenerator ServiceContractGenerator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceContractGenerator ServiceContractGenerator" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.ServiceContractGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceContractGenerator As ServiceContractGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceContractGenerator ^ ServiceContractGenerator { System::ServiceModel::Description::ServiceContractGenerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -342,6 +373,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeMemberMethod SyncMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeMemberMethod SyncMethod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.SyncMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncMethod As CodeMemberMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeMemberMethod ^ SyncMethod { System::CodeDom::CodeMemberMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,6 +412,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeMemberMethod TaskMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeMemberMethod TaskMethod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.OperationContractGenerationContext.TaskMethod" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskMethod As CodeMemberMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeMemberMethod ^ TaskMethod { System::CodeDom::CodeMemberMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -393,14 +428,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.OperationContractGenerationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="CompensationExtension" FullName="System.Activities.Statements.CompensationExtension">
+﻿<Type Name="CompensationExtension" FullName="System.Activities.Statements.CompensationExtension">
   <TypeSignature Language="C#" Value="public class CompensationExtension : System.Activities.Persistence.PersistenceParticipant, System.Activities.Hosting.IWorkflowInstanceExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompensationExtension extends System.Activities.Persistence.PersistenceParticipant implements class System.Activities.Hosting.IWorkflowInstanceExtension" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.CompensationExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompensationExtension&#xA;Inherits PersistenceParticipant&#xA;Implements IWorkflowInstanceExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompensationExtension : System::Activities::Persistence::PersistenceParticipant, System::Activities::Hosting::IWorkflowInstanceExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public CompensationExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensationExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected override void CollectValues (out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CollectValues([out] class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&amp; readWriteValues, [out] class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&amp; writeOnlyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CollectValues (ByRef readWriteValues As IDictionary(Of XName, Object), ByRef writeOnlyValues As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CollectValues([Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % readWriteValues, [Runtime::InteropServices::Out] System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ % writeOnlyValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected override void PublishValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PublishValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PublishValues (readWriteValues As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PublishValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -82,7 +90,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;object&gt; IWorkflowInstanceExtension.GetAdditionalExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.System#Activities#Hosting#IWorkflowInstanceExtension#GetAdditionalExtensions" />
+      <MemberSignature Language="VB.NET" Value="Function GetAdditionalExtensions () As IEnumerable(Of Object) Implements IWorkflowInstanceExtension.GetAdditionalExtensions" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions() = System::Activities::Hosting::IWorkflowInstanceExtension::GetAdditionalExtensions;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -101,7 +114,12 @@
       <MemberSignature Language="C#" Value="void IWorkflowInstanceExtension.SetInstance (System.Activities.Hosting.WorkflowInstanceProxy instance);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(class System.Activities.Hosting.WorkflowInstanceProxy instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.System#Activities#Hosting#IWorkflowInstanceExtension#SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetInstance (instance As WorkflowInstanceProxy) Implements IWorkflowInstanceExtension.SetInstance" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System::Activities::Hosting::WorkflowInstanceProxy ^ instance) = System::Activities::Hosting::IWorkflowInstanceExtension::SetInstance;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

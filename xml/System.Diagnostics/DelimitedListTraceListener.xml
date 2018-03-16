@@ -1,7 +1,9 @@
-<Type Name="DelimitedListTraceListener" FullName="System.Diagnostics.DelimitedListTraceListener">
+﻿<Type Name="DelimitedListTraceListener" FullName="System.Diagnostics.DelimitedListTraceListener">
   <TypeSignature Language="C#" Value="public class DelimitedListTraceListener : System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DelimitedListTraceListener extends System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DelimitedListTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public Class DelimitedListTraceListener&#xA;Inherits TextWriterTraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DelimitedListTraceListener : System::Diagnostics::TextWriterTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -105,6 +118,8 @@
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -142,6 +157,8 @@
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +195,7 @@
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (System.IO.Stream stream, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.IO.Stream,System.String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::IO::Stream ^ stream, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -221,6 +239,8 @@
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (System.IO.TextWriter writer, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.IO.TextWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::IO::TextWriter ^ writer, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -264,6 +284,8 @@
       <MemberSignature Language="C#" Value="public DelimitedListTraceListener (string fileName, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelimitedListTraceListener(System::String ^ fileName, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -311,6 +333,8 @@
       <MemberSignature Language="C#" Value="public string Delimiter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Delimiter" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DelimitedListTraceListener.Delimiter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delimiter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Delimiter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -365,9 +389,11 @@
       </Docs>
     </Member>
     <Member MemberName="GetSupportedAttributes">
-      <MemberSignature Language="C#" Value="protected override string[] GetSupportedAttributes ();" />
+      <MemberSignature Language="C#" Value="protected internal override string[] GetSupportedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string[] GetSupportedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.GetSupportedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetSupportedAttributes () As String()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -416,10 +442,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -469,6 +507,8 @@
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -520,10 +560,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes event trace information to an output file or stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -573,6 +625,8 @@
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DelimitedListTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
@@ -626,35 +680,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.DelimitedListTraceListener" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the output file or stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TextWriterTraceListener</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes event trace information to an output file or stream.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

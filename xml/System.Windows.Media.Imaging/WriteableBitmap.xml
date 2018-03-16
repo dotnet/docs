@@ -1,7 +1,9 @@
-<Type Name="WriteableBitmap" FullName="System.Windows.Media.Imaging.WriteableBitmap">
+﻿<Type Name="WriteableBitmap" FullName="System.Windows.Media.Imaging.WriteableBitmap">
   <TypeSignature Language="C#" Value="public sealed class WriteableBitmap : System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WriteableBitmap extends System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.WriteableBitmap" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WriteableBitmap&#xA;Inherits BitmapSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WriteableBitmap sealed : System::Windows::Media::Imaging::BitmapSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +54,21 @@
     <altmember cref="T:System.Windows.Media.Imaging.BitmapSource" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.WriteableBitmap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WriteableBitmap (System.Windows.Media.Imaging.BitmapSource source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Imaging.BitmapSource source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.#ctor(System.Windows.Media.Imaging.BitmapSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As BitmapSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WriteableBitmap(System::Windows::Media::Imaging::BitmapSource ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +102,7 @@
       <MemberSignature Language="C#" Value="public WriteableBitmap (int pixelWidth, int pixelHeight, double dpiX, double dpiY, System.Windows.Media.PixelFormat pixelFormat, System.Windows.Media.Imaging.BitmapPalette palette);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 pixelWidth, int32 pixelHeight, float64 dpiX, float64 dpiY, valuetype System.Windows.Media.PixelFormat pixelFormat, class System.Windows.Media.Imaging.BitmapPalette palette) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.#ctor(System.Int32,System.Int32,System.Double,System.Double,System.Windows.Media.PixelFormat,System.Windows.Media.Imaging.BitmapPalette)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WriteableBitmap(int pixelWidth, int pixelHeight, double dpiX, double dpiY, System::Windows::Media::PixelFormat pixelFormat, System::Windows::Media::Imaging::BitmapPalette ^ palette);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +144,8 @@
       <MemberSignature Language="C#" Value="public void AddDirtyRect (System.Windows.Int32Rect dirtyRect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDirtyRect(valuetype System.Windows.Int32Rect dirtyRect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.AddDirtyRect(System.Windows.Int32Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddDirtyRect (dirtyRect As Int32Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDirtyRect(System::Windows::Int32Rect dirtyRect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,6 +194,8 @@
       <MemberSignature Language="C#" Value="public IntPtr BackBuffer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int BackBuffer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WriteableBitmap.BackBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackBuffer As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr BackBuffer { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -218,6 +236,8 @@
       <MemberSignature Language="C#" Value="public int BackBufferStride { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BackBufferStride" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WriteableBitmap.BackBufferStride" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackBufferStride As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BackBufferStride { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +256,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.WriteableBitmap Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.WriteableBitmap Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As WriteableBitmap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::WriteableBitmap ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -264,6 +286,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -293,6 +317,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.WriteableBitmap CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.WriteableBitmap CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As WriteableBitmap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::WriteableBitmap ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -321,6 +347,8 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +378,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -369,6 +399,8 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -399,6 +431,8 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +462,8 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -457,6 +493,8 @@
       <MemberSignature Language="C#" Value="public void Lock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Lock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.Lock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Lock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Lock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -495,6 +533,8 @@
       <MemberSignature Language="C#" Value="public bool TryLock (System.Windows.Duration timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryLock(valuetype System.Windows.Duration timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.TryLock(System.Windows.Duration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryLock (timeout As Duration) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLock(System::Windows::Duration timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -535,6 +575,8 @@
       <MemberSignature Language="C#" Value="public void Unlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.Unlock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unlock ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -572,10 +614,21 @@
         <altmember cref="M:System.Windows.Media.Imaging.WriteableBitmap.AddDirtyRect(System.Windows.Int32Rect)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WritePixels">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the pixels of the writeable bitmap.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WritePixels">
       <MemberSignature Language="C#" Value="public void WritePixels (System.Windows.Int32Rect sourceRect, Array pixels, int stride, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePixels(valuetype System.Windows.Int32Rect sourceRect, class System.Array pixels, int32 stride, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.WritePixels(System.Windows.Int32Rect,System.Array,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePixels (sourceRect As Int32Rect, pixels As Array, stride As Integer, offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePixels(System::Windows::Int32Rect sourceRect, Array ^ pixels, int stride, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -637,6 +690,8 @@
       <MemberSignature Language="C#" Value="public void WritePixels (System.Windows.Int32Rect sourceRect, IntPtr buffer, int bufferSize, int stride);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePixels(valuetype System.Windows.Int32Rect sourceRect, native int buffer, int32 bufferSize, int32 stride) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.WritePixels(System.Windows.Int32Rect,System.IntPtr,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePixels (sourceRect As Int32Rect, buffer As IntPtr, bufferSize As Integer, stride As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePixels(System::Windows::Int32Rect sourceRect, IntPtr buffer, int bufferSize, int stride);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -689,6 +744,8 @@
       <MemberSignature Language="C#" Value="public void WritePixels (System.Windows.Int32Rect sourceRect, Array sourceBuffer, int sourceBufferStride, int destinationX, int destinationY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePixels(valuetype System.Windows.Int32Rect sourceRect, class System.Array sourceBuffer, int32 sourceBufferStride, int32 destinationX, int32 destinationY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.WritePixels(System.Windows.Int32Rect,System.Array,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePixels (sourceRect As Int32Rect, sourceBuffer As Array, sourceBufferStride As Integer, destinationX As Integer, destinationY As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePixels(System::Windows::Int32Rect sourceRect, Array ^ sourceBuffer, int sourceBufferStride, int destinationX, int destinationY);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -746,6 +803,8 @@
       <MemberSignature Language="C#" Value="public void WritePixels (System.Windows.Int32Rect sourceRect, IntPtr sourceBuffer, int sourceBufferSize, int sourceBufferStride, int destinationX, int destinationY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WritePixels(valuetype System.Windows.Int32Rect sourceRect, native int sourceBuffer, int32 sourceBufferSize, int32 sourceBufferStride, int32 destinationX, int32 destinationY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WriteableBitmap.WritePixels(System.Windows.Int32Rect,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WritePixels (sourceRect As Int32Rect, sourceBuffer As IntPtr, sourceBufferSize As Integer, sourceBufferStride As Integer, destinationX As Integer, destinationY As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePixels(System::Windows::Int32Rect sourceRect, IntPtr sourceBuffer, int sourceBufferSize, int sourceBufferStride, int destinationX, int destinationY);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -801,23 +860,5 @@
         <altmember cref="M:System.Windows.Media.Imaging.WriteableBitmap.WritePixels(System.Windows.Int32Rect,System.Array,System.Int32,System.Int32,System.Int32)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.WriteableBitmap" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WritePixels">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates the pixels of the writeable bitmap.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

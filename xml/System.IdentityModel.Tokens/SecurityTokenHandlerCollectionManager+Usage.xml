@@ -1,7 +1,9 @@
-<Type Name="SecurityTokenHandlerCollectionManager+Usage" FullName="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager+Usage">
+﻿<Type Name="SecurityTokenHandlerCollectionManager+Usage" FullName="System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager+Usage">
   <TypeSignature Language="C#" Value="public static class SecurityTokenHandlerCollectionManager.Usage" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit SecurityTokenHandlerCollectionManager/Usage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenHandlerCollectionManager.Usage" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class SecurityTokenHandlerCollectionManager::Usage abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public const string ActAs;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ActAs" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.ActAs" />
+      <MemberSignature Language="VB.NET" Value="Public Const ActAs As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ActAs;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public const string Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Default" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Const Default As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public const string OnBehalfOf;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OnBehalfOf" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager.Usage.OnBehalfOf" />
+      <MemberSignature Language="VB.NET" Value="Public Const OnBehalfOf As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OnBehalfOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

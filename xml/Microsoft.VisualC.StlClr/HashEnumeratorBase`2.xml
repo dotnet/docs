@@ -1,7 +1,9 @@
-<Type Name="HashEnumeratorBase&lt;TKey,TValue&gt;" FullName="Microsoft.VisualC.StlClr.HashEnumeratorBase&lt;TKey,TValue&gt;">
+﻿<Type Name="HashEnumeratorBase&lt;TKey,TValue&gt;" FullName="Microsoft.VisualC.StlClr.HashEnumeratorBase&lt;TKey,TValue&gt;">
   <TypeSignature Language="C#" Value="public class HashEnumeratorBase&lt;TKey,TValue&gt; : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HashEnumeratorBase`2&lt;TKey, TValue&gt; extends System.Object implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.HashEnumeratorBase`2" />
+  <TypeSignature Language="VB.NET" Value="Public Class HashEnumeratorBase(Of TKey, TValue)&#xA;Implements IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class HashEnumeratorBase : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public HashEnumeratorBase (Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt; _First);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.INode`1&lt;!TValue&gt; _First) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.HashEnumeratorBase`2.#ctor(Microsoft.VisualC.StlClr.Generic.INode{`1})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_First As INode(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HashEnumeratorBase(Microsoft::VisualC::StlClr::Generic::INode&lt;TValue&gt; ^ _First);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public virtual object Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Current" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.HashEnumeratorBase`2.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -70,7 +76,12 @@
       <MemberSignature Language="C#" Value="public virtual bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.HashEnumeratorBase`2.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -90,7 +101,12 @@
       <MemberSignature Language="C#" Value="public virtual void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.HashEnumeratorBase`2.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

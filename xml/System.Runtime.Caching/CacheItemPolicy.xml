@@ -1,7 +1,9 @@
-<Type Name="CacheItemPolicy" FullName="System.Runtime.Caching.CacheItemPolicy">
+﻿<Type Name="CacheItemPolicy" FullName="System.Runtime.Caching.CacheItemPolicy">
   <TypeSignature Language="C#" Value="public class CacheItemPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CacheItemPolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheItemPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public Class CacheItemPolicy" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheItemPolicy" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +93,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public CacheItemPolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheItemPolicy.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheItemPolicy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -106,6 +110,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public DateTimeOffset AbsoluteExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset AbsoluteExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.AbsoluteExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property AbsoluteExpiration As DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTimeOffset AbsoluteExpiration { DateTimeOffset get(); void set(DateTimeOffset value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -124,6 +130,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Runtime.Caching.ChangeMonitor&gt; ChangeMonitors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Runtime.Caching.ChangeMonitor&gt; ChangeMonitors" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.ChangeMonitors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeMonitors As Collection(Of ChangeMonitor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Runtime::Caching::ChangeMonitor ^&gt; ^ ChangeMonitors { System::Collections::ObjectModel::Collection&lt;System::Runtime::Caching::ChangeMonitor ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -149,6 +157,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public System.Runtime.Caching.CacheItemPriority Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Caching.CacheItemPriority Priority" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As CacheItemPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Caching::CacheItemPriority Priority { System::Runtime::Caching::CacheItemPriority get(); void set(System::Runtime::Caching::CacheItemPriority value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -177,6 +187,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public System.Runtime.Caching.CacheEntryRemovedCallback RemovedCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Caching.CacheEntryRemovedCallback RemovedCallback" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.RemovedCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemovedCallback As CacheEntryRemovedCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Caching::CacheEntryRemovedCallback ^ RemovedCallback { System::Runtime::Caching::CacheEntryRemovedCallback ^ get(); void set(System::Runtime::Caching::CacheEntryRemovedCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -202,6 +214,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public TimeSpan SlidingExpiration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SlidingExpiration" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.SlidingExpiration" />
+      <MemberSignature Language="VB.NET" Value="Public Property SlidingExpiration As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SlidingExpiration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -220,6 +234,8 @@ protected void Button1_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public System.Runtime.Caching.CacheEntryUpdateCallback UpdateCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Caching.CacheEntryUpdateCallback UpdateCallback" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheItemPolicy.UpdateCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateCallback As CacheEntryUpdateCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Caching::CacheEntryUpdateCallback ^ UpdateCallback { System::Runtime::Caching::CacheEntryUpdateCallback ^ get(); void set(System::Runtime::Caching::CacheEntryUpdateCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
+﻿<Type Name="ResourceWriter" FullName="System.Resources.ResourceWriter">
   <TypeSignature Language="C#" Value="public sealed class ResourceWriter : System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceWriter extends System.Object implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceWriter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResourceWriter&#xA;Implements IResourceWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceWriter sealed : System::Resources::IResourceWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.Writer</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +66,22 @@
     <altmember cref="T:System.IDisposable" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.Writer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResourceWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceWriter(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.Writer</AssemblyName>
@@ -110,6 +124,8 @@
       <MemberSignature Language="C#" Value="public ResourceWriter (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceWriter(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,11 +161,26 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="fileName" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddResource">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a resource to the list of resources to be written.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddResource">
       <MemberSignature Language="C#" Value="public void AddResource (string name, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResource(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.Byte[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -202,6 +233,8 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, System.IO.Stream value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResource(string name, class System.IO.Stream value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResource(System.String,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ name, System::IO::Stream ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,7 +293,12 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResource(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -316,7 +354,12 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.AddResource(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Resources.Writer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -372,6 +415,8 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, System.IO.Stream value, bool closeAfterWrite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResource(string name, class System.IO.Stream value, bool closeAfterWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResource(System.String,System.IO.Stream,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Stream, closeAfterWrite As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::String ^ name, System::IO::Stream ^ value, bool closeAfterWrite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -433,6 +478,8 @@
       <MemberSignature Language="C#" Value="public void AddResourceData (string name, string typeName, byte[] serializedData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResourceData(string name, string typeName, unsigned int8[] serializedData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.AddResourceData(System.String,System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResourceData (name As String, typeName As String, serializedData As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResourceData(System::String ^ name, System::String ^ typeName, cli::array &lt;System::Byte&gt; ^ serializedData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -506,7 +553,12 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -551,7 +603,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Resources.Writer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -599,7 +656,12 @@
       <MemberSignature Language="C#" Value="public void Generate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Generate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceWriter.Generate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Generate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Generate();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Resources.IResourceWriter.Generate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Resources.Writer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -656,6 +718,8 @@
       <MemberSignature Language="C#" Value="public Func&lt;Type,string&gt; TypeNameConverter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, string&gt; TypeNameConverter" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResourceWriter.TypeNameConverter" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeNameConverter As Func(Of Type, String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, System::String ^&gt; ^ TypeNameConverter { Func&lt;Type ^, System::String ^&gt; ^ get(); void set(Func&lt;Type ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -686,26 +750,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddResource">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a resource to the list of resources to be written.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Resources.Writer</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceWriter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

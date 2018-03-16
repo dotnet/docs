@@ -1,7 +1,9 @@
-<Type Name="MuxLogger" FullName="Microsoft.Build.Utilities.MuxLogger">
+﻿<Type Name="MuxLogger" FullName="Microsoft.Build.Utilities.MuxLogger">
   <TypeSignature Language="C#" Value="public class MuxLogger : Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MuxLogger extends System.Object implements class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.MuxLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Class MuxLogger&#xA;Implements INodeLogger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MuxLogger : Microsoft::Build::Framework::INodeLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +66,8 @@
       <MemberSignature Language="C#" Value="public MuxLogger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MuxLogger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -75,11 +79,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the <see langword="MuxLogger" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,7 +118,12 @@
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource, int maxNodeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource, int32 maxNodeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, maxNodeCount As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int maxNodeCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,7 +146,12 @@
       <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.MuxLogger.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -141,6 +169,8 @@
       <MemberSignature Language="C#" Value="public void RegisterLogger (int submissionId, Microsoft.Build.Framework.ILogger logger);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterLogger(int32 submissionId, class Microsoft.Build.Framework.ILogger logger) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.RegisterLogger(System.Int32,Microsoft.Build.Framework.ILogger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterLogger (submissionId As Integer, logger As ILogger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterLogger(int submissionId, Microsoft::Build::Framework::ILogger ^ logger);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -164,7 +194,12 @@
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -182,6 +217,8 @@
       <MemberSignature Language="C#" Value="public bool UnregisterLoggers (int submissionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterLoggers(int32 submissionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.MuxLogger.UnregisterLoggers(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnregisterLoggers (submissionId As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool UnregisterLoggers(int submissionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -204,7 +241,12 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.LoggerVerbosity Verbosity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.LoggerVerbosity Verbosity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.MuxLogger.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,14 +260,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the <see langword="MuxLogger" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="RibbonTab" FullName="System.Windows.Controls.Ribbon.RibbonTab">
+﻿<Type Name="RibbonTab" FullName="System.Windows.Controls.Ribbon.RibbonTab">
   <TypeSignature Language="C#" Value="public class RibbonTab : System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonTab extends System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonTab" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonTab&#xA;Inherits HeaderedItemsControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonTab : System::Windows::Controls::HeaderedItemsControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public RibbonTab ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTab();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonContextualTabGroup ContextualTabGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.RibbonContextualTabGroup ContextualTabGroup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextualTabGroup As RibbonContextualTabGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonContextualTabGroup ^ ContextualTabGroup { System::Windows::Controls::Ribbon::RibbonContextualTabGroup ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -147,6 +155,8 @@
       <MemberSignature Language="C#" Value="public object ContextualTabGroupHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ContextualTabGroupHeader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextualTabGroupHeader As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ContextualTabGroupHeader { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -179,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextualTabGroupHeaderProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextualTabGroupHeaderProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupHeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualTabGroupHeaderProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualTabGroupHeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -196,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextualTabGroupProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextualTabGroupProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.ContextualTabGroupProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextualTabGroupProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextualTabGroupProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -213,6 +227,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.GetContainerForItemOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -232,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection GroupSizeReductionOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection GroupSizeReductionOrder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.GroupSizeReductionOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupSizeReductionOrder As StringCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ GroupSizeReductionOrder { System::Collections::Specialized::StringCollection ^ get(); void set(System::Collections::Specialized::StringCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -296,6 +314,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GroupSizeReductionOrderProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GroupSizeReductionOrderProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.GroupSizeReductionOrderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GroupSizeReductionOrderProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GroupSizeReductionOrderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -310,9 +330,11 @@
       </Docs>
     </Member>
     <Member MemberName="HandlesScrolling">
-      <MemberSignature Language="C#" Value="protected override bool HandlesScrolling { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool HandlesScrolling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HandlesScrolling" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.HandlesScrolling" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -339,6 +361,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style HeaderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style HeaderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ HeaderStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -371,6 +395,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.HeaderStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -388,6 +414,8 @@
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -411,6 +439,8 @@
       <MemberSignature Language="C#" Value="public bool IsSelected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.IsSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSelected As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -446,6 +476,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSelectedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSelectedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.IsSelectedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -463,6 +495,8 @@
       <MemberSignature Language="C#" Value="public string KeyTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.KeyTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyTip As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -498,6 +532,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTipProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTipProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.KeyTipProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTipProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -515,6 +551,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -536,6 +574,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -555,6 +595,8 @@
       <MemberSignature Language="C#" Value="protected override void OnItemsChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -576,6 +618,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -597,6 +641,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnKeyTipAccessed (System.Windows.Controls.KeyTipAccessedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnKeyTipAccessed(class System.Windows.Controls.KeyTipAccessedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -618,6 +664,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelected (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelected(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnSelected(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelected (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -646,6 +694,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnUnselected (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnselected(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.OnUnselected(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnselected (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnselected(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -674,6 +724,8 @@
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonTab.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -697,6 +749,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.Ribbon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -730,6 +784,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.RibbonProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -747,6 +803,8 @@
       <MemberSignature Language="C#" Value="public double TabHeaderLeft { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 TabHeaderLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderLeft" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabHeaderLeft As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TabHeaderLeft { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -779,6 +837,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabHeaderLeftProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabHeaderLeftProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderLeftProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabHeaderLeftProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabHeaderLeftProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -796,6 +856,8 @@
       <MemberSignature Language="C#" Value="public double TabHeaderRight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 TabHeaderRight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderRight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TabHeaderRight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TabHeaderRight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -828,6 +890,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TabHeaderRightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TabHeaderRightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonTab.TabHeaderRightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabHeaderRightProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TabHeaderRightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

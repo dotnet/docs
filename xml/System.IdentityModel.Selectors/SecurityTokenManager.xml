@@ -1,7 +1,9 @@
-<Type Name="SecurityTokenManager" FullName="System.IdentityModel.Selectors.SecurityTokenManager">
+﻿<Type Name="SecurityTokenManager" FullName="System.IdentityModel.Selectors.SecurityTokenManager">
   <TypeSignature Language="C#" Value="public abstract class SecurityTokenManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenManager" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenManager abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected SecurityTokenManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -40,9 +44,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateSecurityTokenAuthenticator">
-      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator (System.IdentityModel.Selectors.SecurityTokenRequirement requirement, out System.IdentityModel.Selectors.SecurityTokenResolver resolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement, [out] class System.IdentityModel.Selectors.SecurityTokenResolver&amp; resolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" />
+      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator (System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement, out System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator(class System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement, [out] class System.IdentityModel.Selectors.SecurityTokenResolver&amp; outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenAuthenticator (tokenRequirement As SecurityTokenRequirement, ByRef outOfBandTokenResolver As SecurityTokenResolver) As SecurityTokenAuthenticator" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenAuthenticator ^ CreateSecurityTokenAuthenticator(System::IdentityModel::Selectors::SecurityTokenRequirement ^ tokenRequirement, [Runtime::InteropServices::Out] System::IdentityModel::Selectors::SecurityTokenResolver ^ % outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator (System.IdentityModel.Selectors.SecurityTokenRequirement requirement, out System.IdentityModel.Selectors.SecurityTokenResolver resolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenAuthenticator CreateSecurityTokenAuthenticator(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement, [out] class System.IdentityModel.Selectors.SecurityTokenResolver&amp; resolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator(System.IdentityModel.Selectors.SecurityTokenRequirement,System.IdentityModel.Selectors.SecurityTokenResolver@)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenAuthenticator (requirement As SecurityTokenRequirement, ByRef resolver As SecurityTokenResolver) As SecurityTokenAuthenticator" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenAuthenticator ^ CreateSecurityTokenAuthenticator(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement, [Runtime::InteropServices::Out] System::IdentityModel::Selectors::SecurityTokenResolver ^ % resolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,11 +63,15 @@
         <ReturnType>System.IdentityModel.Selectors.SecurityTokenAuthenticator</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tokenRequirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver&amp;" RefType="out" />
+        <Parameter Name="tokenRequirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver&amp;" RefType="out" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="resolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver&amp;" RefType="out" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
+        <param name="tokenRequirement">To be added.</param>
         <param name="requirement">To be added.</param>
+        <param name="outOfBandTokenResolver">To be added.</param>
         <param name="resolver">To be added.</param>
         <summary>Gets a security token authenticator that meets the specified security token requirements.</summary>
         <returns>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" /> that authenticates security tokens in incoming SOAP messages that meet the specified requirements.</returns>
@@ -71,9 +86,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateSecurityTokenProvider">
-      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider (System.IdentityModel.Selectors.SecurityTokenRequirement requirement);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
+      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider (System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider(class System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenProvider (tokenRequirement As SecurityTokenRequirement) As SecurityTokenProvider" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenProvider ^ CreateSecurityTokenProvider(System::IdentityModel::Selectors::SecurityTokenRequirement ^ tokenRequirement);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider (System.IdentityModel.Selectors.SecurityTokenRequirement requirement);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenProvider CreateSecurityTokenProvider(class System.IdentityModel.Selectors.SecurityTokenRequirement requirement) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenProvider(System.IdentityModel.Selectors.SecurityTokenRequirement)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenProvider (requirement As SecurityTokenRequirement) As SecurityTokenProvider" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenProvider ^ CreateSecurityTokenProvider(System::IdentityModel::Selectors::SecurityTokenRequirement ^ requirement);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,7 +105,8 @@
         <ReturnType>System.IdentityModel.Selectors.SecurityTokenProvider</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tokenRequirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" />
+        <Parameter Name="tokenRequirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="requirement" Type="System.IdentityModel.Selectors.SecurityTokenRequirement" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="requirement">To be added.</param>
@@ -103,6 +126,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Selectors.SecurityTokenSerializer CreateSecurityTokenSerializer (System.IdentityModel.Selectors.SecurityTokenVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenSerializer CreateSecurityTokenSerializer(class System.IdentityModel.Selectors.SecurityTokenVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenSerializer(System.IdentityModel.Selectors.SecurityTokenVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSecurityTokenSerializer (version As SecurityTokenVersion) As SecurityTokenSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Selectors::SecurityTokenSerializer ^ CreateSecurityTokenSerializer(System::IdentityModel::Selectors::SecurityTokenVersion ^ version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

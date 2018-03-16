@@ -1,7 +1,9 @@
-<Type Name="DayNameFormat" FullName="System.Web.UI.WebControls.DayNameFormat">
+﻿<Type Name="DayNameFormat" FullName="System.Web.UI.WebControls.DayNameFormat">
   <TypeSignature Language="C#" Value="public enum DayNameFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DayNameFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DayNameFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DayNameFormat" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DayNameFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="FirstLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DayNameFormat FirstLetter = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.FirstLetter" />
+      <MemberSignature Language="VB.NET" Value="FirstLetter" />
+      <MemberSignature Language="C++ CLI" Value="FirstLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DayNameFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The days of the week displayed with just the first letter. For example, M represents Monday.</summary>
       </Docs>
@@ -54,6 +59,8 @@
       <MemberSignature Language="C#" Value="FirstTwoLetters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DayNameFormat FirstTwoLetters = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.FirstTwoLetters" />
+      <MemberSignature Language="VB.NET" Value="FirstTwoLetters" />
+      <MemberSignature Language="C++ CLI" Value="FirstTwoLetters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DayNameFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The days of the week displayed with just the first two letters. For example, Mo represents Monday.</summary>
       </Docs>
@@ -70,6 +78,8 @@
       <MemberSignature Language="C#" Value="Full" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DayNameFormat Full = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Full" />
+      <MemberSignature Language="VB.NET" Value="Full" />
+      <MemberSignature Language="C++ CLI" Value="Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DayNameFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The days of the week displayed in full format. For example, Monday.</summary>
       </Docs>
@@ -86,6 +97,8 @@
       <MemberSignature Language="C#" Value="Short" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DayNameFormat Short = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Short" />
+      <MemberSignature Language="VB.NET" Value="Short" />
+      <MemberSignature Language="C++ CLI" Value="Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DayNameFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The days of the week displayed in abbreviated format. For example, Mon represents Monday.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="Shortest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DayNameFormat Shortest = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DayNameFormat.Shortest" />
+      <MemberSignature Language="VB.NET" Value="Shortest" />
+      <MemberSignature Language="C++ CLI" Value="Shortest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -110,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DayNameFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The days of the week displayed in the shortest abbreviation format possible for the current culture.</summary>
       </Docs>

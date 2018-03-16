@@ -1,7 +1,9 @@
-<Type Name="ITaskItem2" FullName="Microsoft.Build.Framework.ITaskItem2">
+﻿<Type Name="ITaskItem2" FullName="Microsoft.Build.Framework.ITaskItem2">
   <TypeSignature Language="C#" Value="public interface ITaskItem2 : Microsoft.Build.Framework.ITaskItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITaskItem2 implements class Microsoft.Build.Framework.ITaskItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITaskItem2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITaskItem2&#xA;Implements ITaskItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITaskItem2 : Microsoft::Build::Framework::ITaskItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary CloneCustomMetadataEscaped ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionary CloneCustomMetadataEscaped() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.CloneCustomMetadataEscaped" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCustomMetadataEscaped () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ CloneCustomMetadataEscaped();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public string EvaluatedIncludeEscaped { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EvaluatedIncludeEscaped" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem2.EvaluatedIncludeEscaped" />
+      <MemberSignature Language="VB.NET" Value="Public Property EvaluatedIncludeEscaped As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EvaluatedIncludeEscaped { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string GetMetadataValueEscaped (string metadataName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMetadataValueEscaped(string metadataName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.GetMetadataValueEscaped(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadataValueEscaped (metadataName As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMetadataValueEscaped(System::String ^ metadataName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -94,6 +102,8 @@
       <MemberSignature Language="C#" Value="public void SetMetadataValueLiteral (string metadataName, string metadataValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMetadataValueLiteral(string metadataName, string metadataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem2.SetMetadataValueLiteral(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMetadataValueLiteral (metadataName As String, metadataValue As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMetadataValueLiteral(System::String ^ metadataName, System::String ^ metadataValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

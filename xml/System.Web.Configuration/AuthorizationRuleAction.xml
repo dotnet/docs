@@ -1,7 +1,9 @@
-<Type Name="AuthorizationRuleAction" FullName="System.Web.Configuration.AuthorizationRuleAction">
+﻿<Type Name="AuthorizationRuleAction" FullName="System.Web.Configuration.AuthorizationRuleAction">
   <TypeSignature Language="C#" Value="public enum AuthorizationRuleAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthorizationRuleAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthorizationRuleAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthorizationRuleAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuthorizationRuleAction" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthorizationRuleAction Allow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthorizationRuleAction.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.AuthorizationRuleAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The authorization type allows access to the resource.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Deny" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthorizationRuleAction Deny = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthorizationRuleAction.Deny" />
+      <MemberSignature Language="VB.NET" Value="Deny" />
+      <MemberSignature Language="C++ CLI" Value="Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.AuthorizationRuleAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The authorization type denies access to the resource.</summary>
       </Docs>

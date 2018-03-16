@@ -1,7 +1,9 @@
-<Type Name="ITypeInfo" FullName="System.Runtime.InteropServices.ComTypes.ITypeInfo">
+﻿<Type Name="ITypeInfo" FullName="System.Runtime.InteropServices.ComTypes.ITypeInfo">
   <TypeSignature Language="C#" Value="public interface ITypeInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITypeInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITypeInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public void AddressOfMember (int memid, System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, out IntPtr ppv);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddressOfMember(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, [out] native int&amp; ppv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.AddressOfMember(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddressOfMember (memid As Integer, invKind As INVOKEKIND, ByRef ppv As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddressOfMember(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, [Runtime::InteropServices::Out] IntPtr % ppv);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public void CreateInstance (object pUnkOuter, ref Guid riid, out object ppvObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateInstance(object pUnkOuter, [in]valuetype System.Guid&amp; riid, [out] object&amp; ppvObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.CreateInstance(System.Object,System.Guid@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateInstance (pUnkOuter As Object, ByRef riid As Guid, ByRef ppvObj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateInstance(System::Object ^ pUnkOuter, Guid % riid, [Runtime::InteropServices::Out] System::Object ^ % ppvObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -139,6 +145,8 @@
       <MemberSignature Language="C#" Value="public void GetContainingTypeLib (out System.Runtime.InteropServices.ComTypes.ITypeLib ppTLB, out int pIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetContainingTypeLib([out] class System.Runtime.InteropServices.ComTypes.ITypeLib&amp; ppTLB, [out] int32&amp; pIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetContainingTypeLib(System.Runtime.InteropServices.ComTypes.ITypeLib@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetContainingTypeLib (ByRef ppTLB As ITypeLib, ByRef pIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetContainingTypeLib([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeLib ^ % ppTLB, [Runtime::InteropServices::Out] int % pIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -183,6 +191,8 @@
       <MemberSignature Language="C#" Value="public void GetDllEntry (int memid, System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDllEntry(int32 memid, valuetype System.Runtime.InteropServices.ComTypes.INVOKEKIND invKind, native int pBstrDllName, native int pBstrName, native int pwOrdinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDllEntry(System.Int32,System.Runtime.InteropServices.ComTypes.INVOKEKIND,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDllEntry (memid As Integer, invKind As INVOKEKIND, pBstrDllName As IntPtr, pBstrName As IntPtr, pwOrdinal As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDllEntry(int memid, System::Runtime::InteropServices::ComTypes::INVOKEKIND invKind, IntPtr pBstrDllName, IntPtr pBstrName, IntPtr pwOrdinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -233,6 +243,8 @@
       <MemberSignature Language="C#" Value="public void GetDocumentation (int index, out string strName, out string strDocString, out int dwHelpContext, out string strHelpFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDocumentation(int32 index, [out] string&amp; strName, [out] string&amp; strDocString, [out] int32&amp; dwHelpContext, [out] string&amp; strHelpFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -283,6 +295,8 @@
       <MemberSignature Language="C#" Value="public void GetFuncDesc (int index, out IntPtr ppFuncDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFuncDesc(int32 index, [out] native int&amp; ppFuncDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetFuncDesc(System.Int32,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetFuncDesc (index As Integer, ByRef ppFuncDesc As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetFuncDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppFuncDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -329,6 +343,8 @@
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (string[] rgszNames, int cNames, int[] pMemId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]string[] rgszNames, int32 cNames, [out] int32[] pMemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetIDsOfNames(System.String[],System.Int32,System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (rgszNames As String(), cNames As Integer, pMemId As Integer())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(cli::array &lt;System::String ^&gt; ^ rgszNames, int cNames, cli::array &lt;int&gt; ^ pMemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -375,6 +391,8 @@
       <MemberSignature Language="C#" Value="public void GetImplTypeFlags (int index, out System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS pImplTypeFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetImplTypeFlags(int32 index, [out] valuetype System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS&amp; pImplTypeFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetImplTypeFlags(System.Int32,System.Runtime.InteropServices.ComTypes.IMPLTYPEFLAGS@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetImplTypeFlags (index As Integer, ByRef pImplTypeFlags As IMPLTYPEFLAGS)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetImplTypeFlags(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IMPLTYPEFLAGS % pImplTypeFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -419,6 +437,8 @@
       <MemberSignature Language="C#" Value="public void GetMops (int memid, out string pBstrMops);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetMops(int32 memid, [out] string&amp; pBstrMops) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetMops(System.Int32,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetMops (memid As Integer, ByRef pBstrMops As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetMops(int memid, [Runtime::InteropServices::Out] System::String ^ % pBstrMops);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -463,6 +483,8 @@
       <MemberSignature Language="C#" Value="public void GetNames (int memid, string[] rgBstrNames, int cMaxNames, out int pcNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetNames(int32 memid, [out] string[] rgBstrNames, int32 cMaxNames, [out] int32&amp; pcNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetNames(System.Int32,System.String[],System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetNames (memid As Integer, rgBstrNames As String(), cMaxNames As Integer, ByRef pcNames As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetNames(int memid, cli::array &lt;System::String ^&gt; ^ rgBstrNames, int cMaxNames, [Runtime::InteropServices::Out] int % pcNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -511,6 +533,8 @@
       <MemberSignature Language="C#" Value="public void GetRefTypeInfo (int hRef, out System.Runtime.InteropServices.ComTypes.ITypeInfo ppTI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeInfo(int32 hRef, [out] class System.Runtime.InteropServices.ComTypes.ITypeInfo&amp; ppTI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeInfo(System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeInfo (hRef As Integer, ByRef ppTI As ITypeInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeInfo(int hRef, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -555,6 +579,8 @@
       <MemberSignature Language="C#" Value="public void GetRefTypeOfImplType (int index, out int href);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetRefTypeOfImplType(int32 index, [out] int32&amp; href) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetRefTypeOfImplType(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRefTypeOfImplType (index As Integer, ByRef href As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRefTypeOfImplType(int index, [Runtime::InteropServices::Out] int % href);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -599,6 +625,8 @@
       <MemberSignature Language="C#" Value="public void GetTypeAttr (out IntPtr ppTypeAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeAttr([out] native int&amp; ppTypeAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeAttr(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeAttr (ByRef ppTypeAttr As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeAttr([Runtime::InteropServices::Out] IntPtr % ppTypeAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -643,6 +671,8 @@
       <MemberSignature Language="C#" Value="public void GetTypeComp (out System.Runtime.InteropServices.ComTypes.ITypeComp ppTComp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeComp([out] class System.Runtime.InteropServices.ComTypes.ITypeComp&amp; ppTComp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetTypeComp(System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As ITypeComp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -685,6 +715,8 @@
       <MemberSignature Language="C#" Value="public void GetVarDesc (int index, out IntPtr ppVarDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetVarDesc(int32 index, [out] native int&amp; ppVarDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.GetVarDesc(System.Int32,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetVarDesc (index As Integer, ByRef ppVarDesc As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetVarDesc(int index, [Runtime::InteropServices::Out] IntPtr % ppVarDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -731,6 +763,8 @@
       <MemberSignature Language="C#" Value="public void Invoke (object pvInstance, int memid, short wFlags, ref System.Runtime.InteropServices.ComTypes.DISPPARAMS pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, out int puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(object pvInstance, int32 memid, int16 wFlags, valuetype System.Runtime.InteropServices.ComTypes.DISPPARAMS&amp; pDispParams, native int pVarResult, native int pExcepInfo, [out] int32&amp; puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.Invoke(System.Object,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.DISPPARAMS@,System.IntPtr,System.IntPtr,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke (pvInstance As Object, memid As Integer, wFlags As Short, ByRef pDispParams As DISPPARAMS, pVarResult As IntPtr, pExcepInfo As IntPtr, ByRef puArgErr As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::Object ^ pvInstance, int memid, short wFlags, System::Runtime::InteropServices::ComTypes::DISPPARAMS % pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, [Runtime::InteropServices::Out] int % puArgErr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -796,6 +830,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseFuncDesc (IntPtr pFuncDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseFuncDesc(native int pFuncDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseFuncDesc(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseFuncDesc (pFuncDesc As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseFuncDesc(IntPtr pFuncDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -838,6 +874,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseTypeAttr (IntPtr pTypeAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseTypeAttr(native int pTypeAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseTypeAttr(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTypeAttr (pTypeAttr As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTypeAttr(IntPtr pTypeAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -880,6 +918,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseVarDesc (IntPtr pVarDesc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseVarDesc(native int pVarDesc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeInfo.ReleaseVarDesc(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseVarDesc (pVarDesc As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseVarDesc(IntPtr pVarDesc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

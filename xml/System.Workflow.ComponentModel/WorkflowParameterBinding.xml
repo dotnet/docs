@@ -1,7 +1,9 @@
-<Type Name="WorkflowParameterBinding" FullName="System.Workflow.ComponentModel.WorkflowParameterBinding">
+﻿<Type Name="WorkflowParameterBinding" FullName="System.Workflow.ComponentModel.WorkflowParameterBinding">
   <TypeSignature Language="C#" Value="public sealed class WorkflowParameterBinding : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowParameterBinding extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.WorkflowParameterBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowParameterBinding&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowParameterBinding sealed : System::Workflow::ComponentModel::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +39,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowParameterBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowParameterBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -66,6 +79,8 @@
       <MemberSignature Language="C#" Value="public WorkflowParameterBinding (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.WorkflowParameterBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowParameterBinding(System::String ^ parameterName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ParameterNameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ParameterNameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowParameterBinding.ParameterNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterNameProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -135,6 +154,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.WorkflowParameterBinding.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -158,6 +179,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ValueProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ValueProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.WorkflowParameterBinding.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ValueProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -187,14 +210,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.WorkflowParameterBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

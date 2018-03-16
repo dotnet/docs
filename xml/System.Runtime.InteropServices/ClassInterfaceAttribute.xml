@@ -1,7 +1,9 @@
-<Type Name="ClassInterfaceAttribute" FullName="System.Runtime.InteropServices.ClassInterfaceAttribute">
+﻿<Type Name="ClassInterfaceAttribute" FullName="System.Runtime.InteropServices.ClassInterfaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class ClassInterfaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClassInterfaceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClassInterfaceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClassInterfaceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,10 +64,26 @@
     <altmember cref="T:System.Runtime.InteropServices.ClassInterfaceType" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClassInterfaceAttribute (short classInterfaceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 classInterfaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (classInterfaceType As Short)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClassInterfaceAttribute(short classInterfaceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -106,6 +124,7 @@
       <MemberSignature Language="C#" Value="public ClassInterfaceAttribute (System.Runtime.InteropServices.ClassInterfaceType classInterfaceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.ClassInterfaceType classInterfaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClassInterfaceAttribute(System::Runtime::InteropServices::ClassInterfaceType classInterfaceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -145,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ClassInterfaceType Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.ClassInterfaceType Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ClassInterfaceAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As ClassInterfaceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::InteropServices::ClassInterfaceType Value { System::Runtime::InteropServices::ClassInterfaceType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -173,19 +194,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

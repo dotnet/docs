@@ -1,7 +1,9 @@
-<Type Name="VoiceGender" FullName="System.Speech.Synthesis.VoiceGender">
+﻿<Type Name="VoiceGender" FullName="System.Speech.Synthesis.VoiceGender">
   <TypeSignature Language="C#" Value="public enum VoiceGender" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VoiceGender extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceGender" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VoiceGender" />
+  <TypeSignature Language="C++ CLI" Value="public enum class VoiceGender" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Female" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceGender Female = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceGender.Female" />
+      <MemberSignature Language="VB.NET" Value="Female" />
+      <MemberSignature Language="C++ CLI" Value="Female" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates a female voice.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Male" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceGender Male = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceGender.Male" />
+      <MemberSignature Language="VB.NET" Value="Male" />
+      <MemberSignature Language="C++ CLI" Value="Male" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates a male voice.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Neutral" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceGender Neutral = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceGender.Neutral" />
+      <MemberSignature Language="VB.NET" Value="Neutral" />
+      <MemberSignature Language="C++ CLI" Value="Neutral" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates a gender-neutral voice.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceGender NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceGender.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceGender</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates no voice gender specification.</summary>
       </Docs>

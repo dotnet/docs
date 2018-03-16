@@ -1,7 +1,9 @@
-<Type Name="IHttpSessionState" FullName="System.Web.SessionState.IHttpSessionState">
+﻿<Type Name="IHttpSessionState" FullName="System.Web.SessionState.IHttpSessionState">
   <TypeSignature Language="C#" Value="public interface IHttpSessionState" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpSessionState" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IHttpSessionState" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHttpSessionState" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHttpSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void Abandon ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abandon() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.Abandon" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abandon ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void Add (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +107,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +142,8 @@
       <MemberSignature Language="C#" Value="public int CodePage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CodePage" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.CodePage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodePage As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodePage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +179,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpCookieMode CookieMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.HttpCookieMode CookieMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.CookieMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CookieMode As HttpCookieMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieMode CookieMode { System::Web::HttpCookieMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -210,6 +222,7 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +256,8 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +286,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +317,8 @@
       <MemberSignature Language="C#" Value="public bool IsCookieless { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCookieless" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.IsCookieless" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCookieless As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCookieless { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,6 +353,8 @@
       <MemberSignature Language="C#" Value="public bool IsNewSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNewSession" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.IsNewSession" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNewSession As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNewSession { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +384,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -397,6 +420,8 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -422,10 +447,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets individual session-state item values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +494,8 @@
       <MemberSignature Language="C#" Value="public object this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +528,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameObjectCollectionBase.KeysCollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameObjectCollectionBase/KeysCollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -518,6 +558,8 @@
       <MemberSignature Language="C#" Value="public int LCID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -553,6 +595,8 @@
       <MemberSignature Language="C#" Value="public System.Web.SessionState.SessionStateMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.SessionState.SessionStateMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As SessionStateMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::SessionStateMode Mode { System::Web::SessionState::SessionStateMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -586,6 +630,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -617,6 +663,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -650,6 +698,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.IHttpSessionState.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -681,6 +731,8 @@
       <MemberSignature Language="C#" Value="public string SessionID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionID" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.SessionID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -709,6 +761,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpStaticObjectsCollection StaticObjects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpStaticObjectsCollection StaticObjects" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.StaticObjects" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticObjects As HttpStaticObjectsCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpStaticObjectsCollection ^ StaticObjects { System::Web::HttpStaticObjectsCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -742,6 +796,8 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -770,6 +826,8 @@
       <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.IHttpSessionState.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -794,14 +852,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets individual session-state item values.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

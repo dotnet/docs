@@ -1,7 +1,9 @@
-<Type Name="MultiViewControlBuilder" FullName="System.Web.UI.WebControls.MultiViewControlBuilder">
+﻿<Type Name="MultiViewControlBuilder" FullName="System.Web.UI.WebControls.MultiViewControlBuilder">
   <TypeSignature Language="C#" Value="public class MultiViewControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiViewControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MultiViewControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class MultiViewControlBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiViewControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public MultiViewControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiViewControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultiViewControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MultiViewControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

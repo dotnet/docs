@@ -1,7 +1,9 @@
-<Type Name="InstrumentationType" FullName="System.Management.Instrumentation.InstrumentationType">
+﻿<Type Name="InstrumentationType" FullName="System.Management.Instrumentation.InstrumentationType">
   <TypeSignature Language="C#" Value="public enum InstrumentationType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstrumentationType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InstrumentationType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class InstrumentationType" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Abstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.InstrumentationType Abstract = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Abstract" />
+      <MemberSignature Language="VB.NET" Value="Abstract" />
+      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.InstrumentationType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The class defines an abstract class for management instrumentation.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Event" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.InstrumentationType Event = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Event" />
+      <MemberSignature Language="VB.NET" Value="Event" />
+      <MemberSignature Language="C++ CLI" Value="Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.InstrumentationType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The class provides events for management instrumentation.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Instance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.InstrumentationType Instance = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.InstrumentationType.Instance" />
+      <MemberSignature Language="VB.NET" Value="Instance" />
+      <MemberSignature Language="C++ CLI" Value="Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.InstrumentationType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The class provides instances for management instrumentation.</summary>
       </Docs>

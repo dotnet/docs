@@ -1,7 +1,9 @@
-<Type Name="ITableMappingCollection" FullName="System.Data.ITableMappingCollection">
+﻿<Type Name="ITableMappingCollection" FullName="System.Data.ITableMappingCollection">
   <TypeSignature Language="C#" Value="public interface ITableMappingCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableMappingCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Data.ITableMappingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITableMappingCollection&#xA;Implements IList" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITableMappingCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public System.Data.ITableMapping Add (string sourceTableName, string dataSetTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.ITableMapping Add(string sourceTableName, string dataSetTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (sourceTableName As String, dataSetTableName As String) As ITableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::ITableMapping ^ Add(System::String ^ sourceTableName, System::String ^ dataSetTableName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +98,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string sourceTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string sourceTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (sourceTableName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ sourceTableName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +132,8 @@
       <MemberSignature Language="C#" Value="public System.Data.ITableMapping GetByDataSetTable (string dataSetTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.ITableMapping GetByDataSetTable(string dataSetTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.GetByDataSetTable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetTable (dataSetTableName As String) As ITableMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::ITableMapping ^ GetByDataSetTable(System::String ^ dataSetTableName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +165,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string sourceTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string sourceTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceTableName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ sourceTableName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -188,6 +198,8 @@
       <MemberSignature Language="C#" Value="public object this[string index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.ITableMappingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -219,6 +231,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (string sourceTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(string sourceTableName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ITableMappingCollection.RemoveAt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceTableName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ sourceTableName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

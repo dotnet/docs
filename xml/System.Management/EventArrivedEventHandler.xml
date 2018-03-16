@@ -1,7 +1,9 @@
-<Type Name="EventArrivedEventHandler" FullName="System.Management.EventArrivedEventHandler">
+﻿<Type Name="EventArrivedEventHandler" FullName="System.Management.EventArrivedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void EventArrivedEventHandler(object sender, EventArrivedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventArrivedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Management.EventArrivedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub EventArrivedEventHandler(sender As Object, e As EventArrivedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void EventArrivedEventHandler(System::Object ^ sender, EventArrivedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

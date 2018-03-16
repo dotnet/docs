@@ -1,7 +1,9 @@
-<Type Name="PauseStoryboard" FullName="System.Windows.Media.Animation.PauseStoryboard">
+﻿<Type Name="PauseStoryboard" FullName="System.Windows.Media.Animation.PauseStoryboard">
   <TypeSignature Language="C#" Value="public sealed class PauseStoryboard : System.Windows.Media.Animation.ControllableStoryboardAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PauseStoryboard extends System.Windows.Media.Animation.ControllableStoryboardAction" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.PauseStoryboard" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PauseStoryboard&#xA;Inherits ControllableStoryboardAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PauseStoryboard sealed : System::Windows::Media::Animation::ControllableStoryboardAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public PauseStoryboard ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.PauseStoryboard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PauseStoryboard();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

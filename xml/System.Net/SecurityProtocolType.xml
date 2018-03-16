@@ -1,7 +1,9 @@
-<Type Name="SecurityProtocolType" FullName="System.Net.SecurityProtocolType">
+﻿<Type Name="SecurityProtocolType" FullName="System.Net.SecurityProtocolType">
   <TypeSignature Language="C#" Value="public enum SecurityProtocolType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityProtocolType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.SecurityProtocolType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityProtocolType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityProtocolType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Ssl3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.SecurityProtocolType Ssl3 = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Ssl3" />
+      <MemberSignature Language="VB.NET" Value="Ssl3" />
+      <MemberSignature Language="C++ CLI" Value="Ssl3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>Specifies the Secure Socket Layer (SSL) 3.0 security protocol.</summary>
         <remarks>
@@ -71,6 +76,8 @@
       <MemberSignature Language="C#" Value="SystemDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.SecurityProtocolType SystemDefault = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.SystemDefault" />
+      <MemberSignature Language="VB.NET" Value="SystemDefault" />
+      <MemberSignature Language="C++ CLI" Value="SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Allows the operating system to choose the best protocol to use, and to block protocols that are not secure. Unless your app has a specific reason not to, you should use this value.</summary>
       </Docs>
@@ -91,6 +99,8 @@
       <MemberSignature Language="C#" Value="Tls" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.SecurityProtocolType Tls = int32(192)" />
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls" />
+      <MemberSignature Language="VB.NET" Value="Tls" />
+      <MemberSignature Language="C++ CLI" Value="Tls" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>Specifies the Transport Layer Security (TLS) 1.0 security protocol.</summary>
         <remarks>
@@ -124,6 +135,8 @@
       <MemberSignature Language="C#" Value="Tls11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.SecurityProtocolType Tls11 = int32(768)" />
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls11" />
+      <MemberSignature Language="VB.NET" Value="Tls11" />
+      <MemberSignature Language="C++ CLI" Value="Tls11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
+      <MemberValue>768</MemberValue>
       <Docs>
         <summary>Specifies the Transport Layer Security (TLS) 1.1 security protocol.</summary>
         <remarks>
@@ -159,6 +173,8 @@
       <MemberSignature Language="C#" Value="Tls12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.SecurityProtocolType Tls12 = int32(3072)" />
       <MemberSignature Language="DocId" Value="F:System.Net.SecurityProtocolType.Tls12" />
+      <MemberSignature Language="VB.NET" Value="Tls12" />
+      <MemberSignature Language="C++ CLI" Value="Tls12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Net.SecurityProtocolType</ReturnType>
       </ReturnValue>
+      <MemberValue>3072</MemberValue>
       <Docs>
         <summary>Specifies the Transport Layer Security (TLS) 1.2 security protocol.</summary>
         <remarks>

@@ -1,7 +1,9 @@
-<Type Name="IReceiveContextSettings" FullName="System.ServiceModel.Channels.IReceiveContextSettings">
+﻿<Type Name="IReceiveContextSettings" FullName="System.ServiceModel.Channels.IReceiveContextSettings">
   <TypeSignature Language="C#" Value="public interface IReceiveContextSettings" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReceiveContextSettings" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IReceiveContextSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReceiveContextSettings" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IReceiveContextSettings" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IReceiveContextSettings.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan ValidityDuration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ValidityDuration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IReceiveContextSettings.ValidityDuration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidityDuration As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ValidityDuration { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

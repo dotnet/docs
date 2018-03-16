@@ -1,7 +1,9 @@
-<Type Name="UninstallAction" FullName="System.Configuration.Install.UninstallAction">
+﻿<Type Name="UninstallAction" FullName="System.Configuration.Install.UninstallAction">
   <TypeSignature Language="C#" Value="public enum UninstallAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UninstallAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Install.UninstallAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UninstallAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UninstallAction" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration.Install</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="NoAction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Install.UninstallAction NoAction = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.NoAction" />
+      <MemberSignature Language="VB.NET" Value="NoAction" />
+      <MemberSignature Language="C++ CLI" Value="NoAction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -39,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Leaves the resource created by the installer as is.</summary>
       </Docs>
@@ -47,6 +52,8 @@
       <MemberSignature Language="C#" Value="Remove" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Install.UninstallAction Remove = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.Remove" />
+      <MemberSignature Language="VB.NET" Value="Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration.Install</AssemblyName>
@@ -55,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Removes the resource the installer created.</summary>
       </Docs>

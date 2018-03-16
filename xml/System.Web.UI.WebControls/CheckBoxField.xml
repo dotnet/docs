@@ -1,7 +1,9 @@
-<Type Name="CheckBoxField" FullName="System.Web.UI.WebControls.CheckBoxField">
+﻿<Type Name="CheckBoxField" FullName="System.Web.UI.WebControls.CheckBoxField">
   <TypeSignature Language="C#" Value="public class CheckBoxField : System.Web.UI.WebControls.BoundField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CheckBoxField extends System.Web.UI.WebControls.BoundField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CheckBoxField" />
+  <TypeSignature Language="VB.NET" Value="Public Class CheckBoxField&#xA;Inherits BoundField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CheckBoxField : System::Web::UI::WebControls::BoundField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +74,8 @@
       <MemberSignature Language="C#" Value="public CheckBoxField ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CheckBoxField();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +113,8 @@
       <MemberSignature Language="C#" Value="public override bool ApplyFormatInEditMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApplyFormatInEditMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.ApplyFormatInEditMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplyFormatInEditMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ApplyFormatInEditMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,7 +125,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -150,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override bool ConvertEmptyStringToNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.ConvertEmptyStringToNull" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ConvertEmptyStringToNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,7 +168,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -190,6 +198,8 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataControlField ^ newField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +233,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.CreateField" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataControlField" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::DataControlField ^ CreateField();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +266,8 @@
       <MemberSignature Language="C#" Value="public override string DataField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DataField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +299,8 @@
       <MemberSignature Language="C#" Value="public override string DataFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.DataFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DataFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,7 +311,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -324,6 +340,8 @@
       <MemberSignature Language="C#" Value="public override void ExtractValuesFromCell (System.Collections.Specialized.IOrderedDictionary dictionary, System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExtractValuesFromCell(class System.Collections.Specialized.IOrderedDictionary dictionary, class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlRowState rowState, bool includeReadOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.ExtractValuesFromCell(System.Collections.Specialized.IOrderedDictionary,System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ExtractValuesFromCell (dictionary As IOrderedDictionary, cell As DataControlFieldCell, rowState As DataControlRowState, includeReadOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExtractValuesFromCell(System::Collections::Specialized::IOrderedDictionary ^ dictionary, System::Web::UI::WebControls::DataControlFieldCell ^ cell, System::Web::UI::WebControls::DataControlRowState rowState, bool includeReadOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +387,8 @@
       <MemberSignature Language="C#" Value="protected override object GetDesignTimeValue ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetDesignTimeValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.GetDesignTimeValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignTimeValue () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetDesignTimeValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,6 +418,8 @@
       <MemberSignature Language="C#" Value="public override bool HtmlEncode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.HtmlEncode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property HtmlEncode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HtmlEncode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -408,7 +430,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -438,6 +460,8 @@
       <MemberSignature Language="C#" Value="public override bool HtmlEncodeFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncodeFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.HtmlEncodeFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property HtmlEncodeFormatString As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HtmlEncodeFormatString { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -448,7 +472,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -475,6 +499,8 @@
       <MemberSignature Language="C#" Value="protected override void InitializeDataCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlRowState rowState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeDataCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.InitializeDataCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeDataCell (cell As DataControlFieldCell, rowState As DataControlRowState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeDataCell(System::Web::UI::WebControls::DataControlFieldCell ^ cell, System::Web::UI::WebControls::DataControlRowState rowState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -507,6 +533,8 @@
       <MemberSignature Language="C#" Value="public override string NullDisplayText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.NullDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property NullDisplayText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NullDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -517,7 +545,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -546,6 +574,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDataBindField (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBindField(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.OnDataBindField(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBindField (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBindField(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -586,6 +616,8 @@
       <MemberSignature Language="C#" Value="protected override bool SupportsHtmlEncode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsHtmlEncode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.SupportsHtmlEncode" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property SupportsHtmlEncode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool SupportsHtmlEncode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -613,6 +645,8 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CheckBoxField.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -662,6 +696,8 @@
       <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CheckBoxField.ValidateSupportsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ValidateSupportsCallback ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ValidateSupportsCallback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

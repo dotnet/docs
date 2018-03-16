@@ -1,7 +1,9 @@
-<Type Name="Stack&lt;T&gt;" FullName="System.Collections.Generic.Stack&lt;T&gt;">
+﻿<Type Name="Stack&lt;T&gt;" FullName="System.Collections.Generic.Stack&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Stack&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Stack`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Stack`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Stack(Of T)&#xA;Implements ICollection, IEnumerable(Of T), IReadOnlyCollection(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Stack : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,10 +97,23 @@
  A <see cref="T:System.Collections.Generic.Stack`1" /> can support multiple readers concurrently, as long as the collection is not modified.  Even so, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Stack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Stack();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -154,6 +169,8 @@
       <MemberSignature Language="C#" Value="public Stack (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Stack(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -218,6 +235,8 @@
       <MemberSignature Language="C#" Value="public Stack (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Stack(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -262,6 +281,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -318,6 +339,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -377,6 +400,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), arrayIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;T&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -442,7 +467,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Stack`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -498,6 +529,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Stack&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.Stack`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Stack(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Stack&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -569,6 +602,8 @@
       <MemberSignature Language="C#" Value="public T Peek ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Peek() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.Peek" />
+      <MemberSignature Language="VB.NET" Value="Public Function Peek () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Peek();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -629,6 +664,8 @@
       <MemberSignature Language="C#" Value="public T Pop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Pop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.Pop" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pop () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Pop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -689,6 +726,8 @@
       <MemberSignature Language="C#" Value="public void Push (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Push(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.Push(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Push (item As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -752,7 +791,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -806,7 +850,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int arrayIndex) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -869,7 +917,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Stack`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -913,7 +966,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Stack`1.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -981,7 +1039,12 @@ finally {
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1037,6 +1100,8 @@ finally {
       <MemberSignature Language="C#" Value="public T[] ToArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;T&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1094,6 +1159,8 @@ finally {
       <MemberSignature Language="C#" Value="public void TrimExcess ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimExcess() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.TrimExcess" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrimExcess ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TrimExcess();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1136,6 +1203,8 @@ finally {
       <MemberSignature Language="C#" Value="public bool TryPeek (out T result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPeek([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.TryPeek(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryPeek (ByRef result As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPeek([Runtime::InteropServices::Out] T % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1158,6 +1227,8 @@ finally {
       <MemberSignature Language="C#" Value="public bool TryPop (out T result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryPop([out] !T&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Stack`1.TryPop(`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryPop (ByRef result As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryPop([Runtime::InteropServices::Out] T % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1176,16 +1247,5 @@ finally {
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Stack`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ModelBindingContext" FullName="System.Web.ModelBinding.ModelBindingContext">
+﻿<Type Name="ModelBindingContext" FullName="System.Web.ModelBinding.ModelBindingContext">
   <TypeSignature Language="C#" Value="public class ModelBindingContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelBindingContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBindingContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelBindingContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelBindingContext" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBindingContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ModelBindingContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelBindingContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ModelBindingContext (System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBindingContext.#ctor(System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bindingContext As ModelBindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelBindingContext(System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +67,8 @@
       <MemberSignature Language="C#" Value="public object Model { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Model" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.Model" />
+      <MemberSignature Language="VB.NET" Value="Public Property Model As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Model { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +88,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelBinderProviderCollection ModelBinderProviders { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelBinderProviderCollection ModelBinderProviders" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ModelBinderProviders" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelBinderProviders As ModelBinderProviderCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelBinderProviderCollection ^ ModelBinderProviders { System::Web::ModelBinding::ModelBinderProviderCollection ^ get(); void set(System::Web::ModelBinding::ModelBinderProviderCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelMetadata ModelMetadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadata ModelMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ModelMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelMetadata As ModelMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelMetadata ^ ModelMetadata { System::Web::ModelBinding::ModelMetadata ^ get(); void set(System::Web::ModelBinding::ModelMetadata ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +128,8 @@
       <MemberSignature Language="C#" Value="public string ModelName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ModelName" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ModelName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModelName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +148,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelStateDictionary ModelState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelStateDictionary ModelState" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ModelState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelState As ModelStateDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelStateDictionary ^ ModelState { System::Web::ModelBinding::ModelStateDictionary ^ get(); void set(System::Web::ModelBinding::ModelStateDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +168,8 @@
       <MemberSignature Language="C#" Value="public Type ModelType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ModelType" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ModelType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ModelType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +189,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.PropertyMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyMetadata As IDictionary(Of String, ModelMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Web::ModelBinding::ModelMetadata ^&gt; ^ PropertyMetadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Web::ModelBinding::ModelMetadata ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +209,8 @@
       <MemberSignature Language="C#" Value="public bool ValidateRequest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateRequest" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ValidateRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateRequest As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateRequest { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,6 +230,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelValidationNode ValidationNode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelValidationNode ValidationNode" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ValidationNode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationNode As ModelValidationNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelValidationNode ^ ValidationNode { System::Web::ModelBinding::ModelValidationNode ^ get(); void set(System::Web::ModelBinding::ModelValidationNode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -217,6 +250,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.IValueProvider ValueProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.IValueProvider ValueProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelBindingContext.ValueProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueProvider As IValueProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::IValueProvider ^ ValueProvider { System::Web::ModelBinding::IValueProvider ^ get(); void set(System::Web::ModelBinding::IValueProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -231,14 +266,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBindingContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

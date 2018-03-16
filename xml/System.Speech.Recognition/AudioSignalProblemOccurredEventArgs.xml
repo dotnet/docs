@@ -1,7 +1,9 @@
-<Type Name="AudioSignalProblemOccurredEventArgs" FullName="System.Speech.Recognition.AudioSignalProblemOccurredEventArgs">
+﻿<Type Name="AudioSignalProblemOccurredEventArgs" FullName="System.Speech.Recognition.AudioSignalProblemOccurredEventArgs">
   <TypeSignature Language="C#" Value="public class AudioSignalProblemOccurredEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioSignalProblemOccurredEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AudioSignalProblemOccurredEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AudioSignalProblemOccurredEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +82,8 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="C#" Value="public int AudioLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AudioLevel" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioLevel As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AudioLevel { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -98,6 +102,8 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -123,6 +129,8 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.AudioSignalProblem AudioSignalProblem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.AudioSignalProblem AudioSignalProblem" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.AudioSignalProblem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioSignalProblem As AudioSignalProblem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::AudioSignalProblem AudioSignalProblem { System::Speech::Recognition::AudioSignalProblem get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -141,6 +149,8 @@ void sre_AudioSignalProblemOccurred(object sender, AudioSignalProblemOccurredEve
       <MemberSignature Language="C#" Value="public TimeSpan RecognizerAudioPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RecognizerAudioPosition" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioSignalProblemOccurredEventArgs.RecognizerAudioPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecognizerAudioPosition As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RecognizerAudioPosition { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

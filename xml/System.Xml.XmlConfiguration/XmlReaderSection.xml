@@ -1,7 +1,9 @@
-<Type Name="XmlReaderSection" FullName="System.Xml.XmlConfiguration.XmlReaderSection">
+﻿<Type Name="XmlReaderSection" FullName="System.Xml.XmlConfiguration.XmlReaderSection">
   <TypeSignature Language="C#" Value="public sealed class XmlReaderSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlReaderSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlConfiguration.XmlReaderSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlReaderSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlReaderSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public XmlReaderSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlConfiguration.XmlReaderSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReaderSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public string CollapseWhiteSpaceIntoEmptyStringString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CollapseWhiteSpaceIntoEmptyStringString" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlConfiguration.XmlReaderSection.CollapseWhiteSpaceIntoEmptyStringString" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollapseWhiteSpaceIntoEmptyStringString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CollapseWhiteSpaceIntoEmptyStringString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string ProhibitDefaultResolverString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProhibitDefaultResolverString" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlConfiguration.XmlReaderSection.ProhibitDefaultResolverString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProhibitDefaultResolverString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProhibitDefaultResolverString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

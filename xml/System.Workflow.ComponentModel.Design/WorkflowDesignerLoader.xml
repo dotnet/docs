@@ -1,7 +1,9 @@
-<Type Name="WorkflowDesignerLoader" FullName="System.Workflow.ComponentModel.Design.WorkflowDesignerLoader">
+﻿<Type Name="WorkflowDesignerLoader" FullName="System.Workflow.ComponentModel.Design.WorkflowDesignerLoader">
   <TypeSignature Language="C#" Value="public abstract class WorkflowDesignerLoader : System.ComponentModel.Design.Serialization.BasicDesignerLoader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract WorkflowDesignerLoader extends System.ComponentModel.Design.Serialization.BasicDesignerLoader" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowDesignerLoader&#xA;Inherits BasicDesignerLoader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesignerLoader abstract : System::ComponentModel::Design::Serialization::BasicDesignerLoader" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowDesignerLoader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowDesignerLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -63,6 +67,7 @@
       <MemberSignature Language="C#" Value="public void AddActivityToDesigner (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddActivityToDesigner(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.AddActivityToDesigner(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddActivityToDesigner(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +100,8 @@
       <MemberSignature Language="C#" Value="public override void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -128,6 +135,8 @@
       <MemberSignature Language="C#" Value="public abstract string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FileName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -156,6 +165,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -184,6 +195,8 @@
       <MemberSignature Language="C#" Value="public virtual void ForceReload ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForceReload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.ForceReload" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ForceReload ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ForceReload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -202,6 +215,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.TextReader GetFileReader (string filePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.TextReader GetFileReader(string filePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileReader(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFileReader (filePath As String) As TextReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::TextReader ^ GetFileReader(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -234,6 +249,8 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.TextWriter GetFileWriter (string filePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.TextWriter GetFileWriter(string filePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.GetFileWriter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFileWriter (filePath As String) As TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::TextWriter ^ GetFileWriter(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -266,6 +283,8 @@
       <MemberSignature Language="C#" Value="public virtual bool InDebugMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InDebugMode" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.InDebugMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InDebugMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool InDebugMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -295,6 +314,8 @@
       <MemberSignature Language="C#" Value="protected override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -323,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected void LoadDesignerLayout (System.Xml.XmlReader layoutReader, out System.Collections.IList layoutLoadErrors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadDesignerLayout(class System.Xml.XmlReader layoutReader, [out] class System.Collections.IList&amp; layoutLoadErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayout(System.Xml.XmlReader,System.Collections.IList@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub LoadDesignerLayout (layoutReader As XmlReader, ByRef layoutLoadErrors As IList)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadDesignerLayout(System::Xml::XmlReader ^ layoutReader, [Runtime::InteropServices::Out] System::Collections::IList ^ % layoutLoadErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -356,6 +379,7 @@
       <MemberSignature Language="C#" Value="protected void LoadDesignerLayoutFromResource (Type type, string manifestResourceName, out System.Collections.IList errors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadDesignerLayoutFromResource(class System.Type type, string manifestResourceName, [out] class System.Collections.IList&amp; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.LoadDesignerLayoutFromResource(System.Type,System.String,System.Collections.IList@)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadDesignerLayoutFromResource(Type ^ type, System::String ^ manifestResourceName, [Runtime::InteropServices::Out] System::Collections::IList ^ % errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -383,6 +407,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndLoad (bool successful, System.Collections.ICollection errors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndLoad(bool successful, class System.Collections.ICollection errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.OnEndLoad(System.Boolean,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndLoad (successful As Boolean, errors As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndLoad(bool successful, System::Collections::ICollection ^ errors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -417,6 +443,8 @@
       <MemberSignature Language="C#" Value="protected override void PerformFlush (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PerformFlush(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformFlush(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformFlush (serializationManager As IDesignerSerializationManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformFlush(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -448,6 +476,8 @@
       <MemberSignature Language="C#" Value="protected override void PerformLoad (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PerformLoad(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.PerformLoad(System.ComponentModel.Design.Serialization.IDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformLoad (serializationManager As IDesignerSerializationManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformLoad(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -479,6 +509,7 @@
       <MemberSignature Language="C#" Value="public void RemoveActivityFromDesigner (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveActivityFromDesigner(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.RemoveActivityFromDesigner(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveActivityFromDesigner(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -510,6 +541,8 @@
       <MemberSignature Language="C#" Value="protected void SaveDesignerLayout (System.Xml.XmlWriter layoutWriter, System.Workflow.ComponentModel.Design.ActivityDesigner rootDesigner, out System.Collections.IList layoutSaveErrors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SaveDesignerLayout(class System.Xml.XmlWriter layoutWriter, class System.Workflow.ComponentModel.Design.ActivityDesigner rootDesigner, [out] class System.Collections.IList&amp; layoutSaveErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.SaveDesignerLayout(System.Xml.XmlWriter,System.Workflow.ComponentModel.Design.ActivityDesigner,System.Collections.IList@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SaveDesignerLayout (layoutWriter As XmlWriter, rootDesigner As ActivityDesigner, ByRef layoutSaveErrors As IList)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SaveDesignerLayout(System::Xml::XmlWriter ^ layoutWriter, System::Workflow::ComponentModel::Design::ActivityDesigner ^ rootDesigner, [Runtime::InteropServices::Out] System::Collections::IList ^ % layoutSaveErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -546,6 +579,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.TypeDescriptionProvider TargetFrameworkTypeDescriptionProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeDescriptionProvider TargetFrameworkTypeDescriptionProvider" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerLoader.TargetFrameworkTypeDescriptionProvider" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property TargetFrameworkTypeDescriptionProvider As TypeDescriptionProvider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ComponentModel::TypeDescriptionProvider ^ TargetFrameworkTypeDescriptionProvider { System::ComponentModel::TypeDescriptionProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

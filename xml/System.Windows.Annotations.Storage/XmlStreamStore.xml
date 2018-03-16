@@ -1,7 +1,9 @@
-<Type Name="XmlStreamStore" FullName="System.Windows.Annotations.Storage.XmlStreamStore">
+﻿<Type Name="XmlStreamStore" FullName="System.Windows.Annotations.Storage.XmlStreamStore">
   <TypeSignature Language="C#" Value="public sealed class XmlStreamStore : System.Windows.Annotations.Storage.AnnotationStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlStreamStore extends System.Windows.Annotations.Storage.AnnotationStore" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.XmlStreamStore" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlStreamStore&#xA;Inherits AnnotationStore" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlStreamStore sealed : System::Windows::Annotations::Storage::AnnotationStore" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Storage.XmlStreamStore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlStreamStore (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlStreamStore(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +56,7 @@
       <MemberSignature Language="C#" Value="public XmlStreamStore (System.IO.Stream stream, System.Collections.Generic.IDictionary&lt;Uri,System.Collections.Generic.IList&lt;Uri&gt;&gt; knownNamespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Collections.Generic.IDictionary`2&lt;class System.Uri, class System.Collections.Generic.IList`1&lt;class System.Uri&gt;&gt; knownNamespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.#ctor(System.IO.Stream,System.Collections.Generic.IDictionary{System.Uri,System.Collections.Generic.IList{System.Uri}})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlStreamStore(System::IO::Stream ^ stream, System::Collections::Generic::IDictionary&lt;Uri ^, System::Collections::Generic::IList&lt;Uri ^&gt; ^&gt; ^ knownNamespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -84,6 +97,8 @@
       <MemberSignature Language="C#" Value="public override void AddAnnotation (System.Windows.Annotations.Annotation newAnnotation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAnnotation(class System.Windows.Annotations.Annotation newAnnotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.AddAnnotation(System.Windows.Annotations.Annotation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAnnotation (newAnnotation As Annotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAnnotation(System::Windows::Annotations::Annotation ^ newAnnotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +134,8 @@
       <MemberSignature Language="C#" Value="public override bool AutoFlush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoFlush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.AutoFlush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoFlush As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Annotations.Annotation DeleteAnnotation (Guid annotationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Annotations.Annotation DeleteAnnotation(valuetype System.Guid annotationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.DeleteAnnotation(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteAnnotation (annotationId As Guid) As Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Annotations::Annotation ^ DeleteAnnotation(Guid annotationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -176,6 +195,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -197,6 +218,8 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +257,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Annotations.Annotation GetAnnotation (Guid annotationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Annotations.Annotation GetAnnotation(valuetype System.Guid annotationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotation (annotationId As Guid) As Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Annotations::Annotation ^ GetAnnotation(Guid annotationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -280,6 +305,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt; GetAnnotations ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Annotations.Annotation&gt; GetAnnotations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotations () As IList(Of Annotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -317,6 +344,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt; GetAnnotations (System.Windows.Annotations.ContentLocator anchorLocator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Annotations.Annotation&gt; GetAnnotations(class System.Windows.Annotations.ContentLocator anchorLocator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations(System.Windows.Annotations.ContentLocator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAnnotations (anchorLocator As ContentLocator) As IList(Of Annotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations(System::Windows::Annotations::ContentLocator ^ anchorLocator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -355,6 +384,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Uri&gt; GetWellKnownCompatibleNamespaces (Uri name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Uri&gt; GetWellKnownCompatibleNamespaces(class System.Uri name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetWellKnownCompatibleNamespaces (name As Uri) As IList(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;Uri ^&gt; ^ GetWellKnownCompatibleNamespaces(Uri ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +425,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Uri&gt; IgnoredNamespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Uri&gt; IgnoredNamespaces" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.IgnoredNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoredNamespaces As IList(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Uri ^&gt; ^ IgnoredNamespaces { System::Collections::Generic::IList&lt;Uri ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -423,6 +456,8 @@
       <MemberSignature Language="C#" Value="protected override void OnStoreContentChanged (System.Windows.Annotations.Storage.StoreContentChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStoreContentChanged(class System.Windows.Annotations.Storage.StoreContentChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.XmlStreamStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStoreContentChanged (e As StoreContentChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStoreContentChanged(System::Windows::Annotations::Storage::StoreContentChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -444,6 +479,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Uri&gt; WellKnownNamespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;class System.Uri&gt; WellKnownNamespaces" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.XmlStreamStore.WellKnownNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WellKnownNamespaces As IList(Of Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::IList&lt;Uri ^&gt; ^ WellKnownNamespaces { System::Collections::Generic::IList&lt;Uri ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -473,14 +510,5 @@
         <altmember cref="M:System.Windows.Annotations.Storage.XmlStreamStore.GetWellKnownCompatibleNamespaces(System.Uri)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.Storage.XmlStreamStore" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

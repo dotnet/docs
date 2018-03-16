@@ -1,7 +1,9 @@
-<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
+﻿<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
   <TypeSignature Language="C#" Value="public class Menu.MenuItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Menu/MenuItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu.MenuItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class Menu.MenuItemCollection&#xA;Implements IList" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class Menu::MenuItemCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public MenuItemCollection (System.Windows.Forms.Menu owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Menu owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.#ctor(System.Windows.Forms.Menu)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Menu)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemCollection(System::Windows::Forms::Menu ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,10 +65,21 @@
         <altmember cref="T:System.Windows.Forms.MenuItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.MenuItem Add (string caption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.MenuItem Add(string caption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +119,8 @@
       <MemberSignature Language="C#" Value="public virtual int Add (System.Windows.Forms.MenuItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(class System.Windows.Forms.MenuItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (item As MenuItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Windows::Forms::MenuItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +162,8 @@
       <MemberSignature Language="C#" Value="public virtual int Add (int index, System.Windows.Forms.MenuItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(int32 index, class System.Windows.Forms.MenuItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.Int32,System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (index As Integer, item As MenuItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(int index, System::Windows::Forms::MenuItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +209,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.MenuItem Add (string caption, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.MenuItem Add(string caption, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String,System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String, onClick As EventHandler) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption, EventHandler ^ onClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +257,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.MenuItem Add (string caption, System.Windows.Forms.MenuItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.MenuItem Add(string caption, class System.Windows.Forms.MenuItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Add(System.String,System.Windows.Forms.MenuItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (caption As String, items As MenuItem()) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::MenuItem ^ Add(System::String ^ caption, cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +296,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.MenuItem[] items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.MenuItem[] items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.AddRange(System.Windows.Forms.MenuItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (items As MenuItem())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,7 +337,12 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -347,6 +377,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Forms.MenuItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.MenuItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Contains(System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As MenuItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::MenuItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -386,6 +418,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -418,7 +452,12 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array dest, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array dest, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Array, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ dest, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -457,7 +496,12 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -492,6 +536,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MenuItem[] Find (string key, bool searchAllChildren);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.MenuItem[] Find(string key, bool searchAllChildren) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Find(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (key As String, searchAllChildren As Boolean) As MenuItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Forms::MenuItem ^&gt; ^ Find(System::String ^ key, bool searchAllChildren);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -528,7 +574,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -547,6 +598,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Forms.MenuItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.MenuItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.IndexOf(System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As MenuItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::MenuItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -580,6 +633,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOfKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.IndexOfKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,7 +668,12 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -628,10 +688,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an item from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.MenuItem this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.MenuItem Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::MenuItem ^ default[int] { System::Windows::Forms::MenuItem ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -671,6 +742,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.MenuItem this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.MenuItem Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::MenuItem ^ default[System::String ^] { System::Windows::Forms::MenuItem ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -702,6 +775,8 @@
       <MemberSignature Language="C#" Value="public virtual void Remove (System.Windows.Forms.MenuItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Windows.Forms.MenuItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.Remove(System.Windows.Forms.MenuItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (item As MenuItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Windows::Forms::MenuItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -739,7 +814,12 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -776,6 +856,8 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveByKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveByKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.RemoveByKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -806,7 +888,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -832,7 +919,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -857,7 +949,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -886,7 +983,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -916,7 +1018,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -945,7 +1052,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -975,7 +1087,12 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1001,7 +1118,12 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1030,7 +1152,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Menu.MenuItemCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1054,23 +1181,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets an item from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" /> to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

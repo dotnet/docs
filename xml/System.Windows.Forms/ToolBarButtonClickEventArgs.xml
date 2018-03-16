@@ -1,7 +1,9 @@
-<Type Name="ToolBarButtonClickEventArgs" FullName="System.Windows.Forms.ToolBarButtonClickEventArgs">
+﻿<Type Name="ToolBarButtonClickEventArgs" FullName="System.Windows.Forms.ToolBarButtonClickEventArgs">
   <TypeSignature Language="C#" Value="public class ToolBarButtonClickEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolBarButtonClickEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolBarButtonClickEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolBarButtonClickEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ToolBarButtonClickEventArgs (System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBarButtonClickEventArgs.#ctor(System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (button As ToolBarButton)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolBarButtonClickEventArgs(System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolBarButton Button { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolBarButton Button" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBarButtonClickEventArgs.Button" />
+      <MemberSignature Language="VB.NET" Value="Public Property Button As ToolBarButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolBarButton ^ Button { System::Windows::Forms::ToolBarButton ^ get(); void set(System::Windows::Forms::ToolBarButton ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

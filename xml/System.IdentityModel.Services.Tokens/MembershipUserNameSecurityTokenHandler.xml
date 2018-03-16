@@ -1,7 +1,9 @@
-<Type Name="MembershipUserNameSecurityTokenHandler" FullName="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler">
+﻿<Type Name="MembershipUserNameSecurityTokenHandler" FullName="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public class MembershipUserNameSecurityTokenHandler : System.IdentityModel.Tokens.UserNameSecurityTokenHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MembershipUserNameSecurityTokenHandler extends System.IdentityModel.Tokens.UserNameSecurityTokenHandler" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class MembershipUserNameSecurityTokenHandler&#xA;Inherits UserNameSecurityTokenHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MembershipUserNameSecurityTokenHandler : System::IdentityModel::Tokens::UserNameSecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MembershipUserNameSecurityTokenHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipUserNameSecurityTokenHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -35,6 +48,8 @@
       <MemberSignature Language="C#" Value="public MembershipUserNameSecurityTokenHandler (System.Web.Security.MembershipProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Security.MembershipProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor(System.Web.Security.MembershipProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (provider As MembershipProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipUserNameSecurityTokenHandler(System::Web::Security::MembershipProvider ^ provider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -53,6 +68,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.CanValidateToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -72,6 +89,8 @@
       <MemberSignature Language="C#" Value="public override void LoadCustomConfiguration (System.Xml.XmlNodeList customConfigElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList customConfigElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -93,6 +112,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.MembershipProvider MembershipProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.MembershipProvider MembershipProvider" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property MembershipProvider As MembershipProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipProvider ^ MembershipProvider { System::Web::Security::MembershipProvider ^ get(); void set(System::Web::Security::MembershipProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -111,6 +132,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -147,14 +170,5 @@
           <paramref name="token" /> failed validation with the configured <see cref="T:System.Web.Security.MembershipProvider" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

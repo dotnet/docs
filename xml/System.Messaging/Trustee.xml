@@ -1,7 +1,9 @@
-<Type Name="Trustee" FullName="System.Messaging.Trustee">
+﻿<Type Name="Trustee" FullName="System.Messaging.Trustee">
   <TypeSignature Language="C#" Value="public class Trustee" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Trustee extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.Trustee" />
+  <TypeSignature Language="VB.NET" Value="Public Class Trustee" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Trustee" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     <altmember cref="M:System.Messaging.MessageQueue.SetPermissions(System.String,System.Messaging.MessageQueueAccessRights)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Trustee ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Trustee();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public Trustee (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Trustee(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -80,6 +95,8 @@
       <MemberSignature Language="C#" Value="public Trustee (string name, string systemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string systemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, systemName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Trustee(System::String ^ name, System::String ^ systemName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -110,6 +127,7 @@
       <MemberSignature Language="C#" Value="public Trustee (string name, string systemName, System.Messaging.TrusteeType trusteeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string systemName, valuetype System.Messaging.TrusteeType trusteeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String,System.String,System.Messaging.TrusteeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Trustee(System::String ^ name, System::String ^ systemName, System::Messaging::TrusteeType trusteeType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -145,6 +163,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -176,6 +196,8 @@
       <MemberSignature Language="C#" Value="public string SystemName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SystemName" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.SystemName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SystemName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -202,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Messaging.TrusteeType TrusteeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.TrusteeType TrusteeType" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.TrusteeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrusteeType As TrusteeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::TrusteeType TrusteeType { System::Messaging::TrusteeType get(); void set(System::Messaging::TrusteeType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -227,14 +251,5 @@
         <altmember cref="T:System.Messaging.TrusteeType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

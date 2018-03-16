@@ -1,7 +1,9 @@
-<Type Name="CatalogPartDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner">
+﻿<Type Name="CatalogPartDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner">
   <TypeSignature Language="C#" Value="public class CatalogPartDesigner : System.Web.UI.Design.WebControls.WebParts.PartDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogPartDesigner extends System.Web.UI.Design.WebControls.WebParts.PartDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class CatalogPartDesigner&#xA;Inherits PartDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogPartDesigner : System::Web::UI::Design::WebControls::WebParts::PartDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public CatalogPartDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.Control CreateViewControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Control CreateViewControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.CreateViewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateViewControl () As Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Control ^ CreateViewControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -95,6 +103,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

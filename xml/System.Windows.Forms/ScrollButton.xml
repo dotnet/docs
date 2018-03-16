@@ -1,7 +1,9 @@
-<Type Name="ScrollButton" FullName="System.Windows.Forms.ScrollButton">
+﻿<Type Name="ScrollButton" FullName="System.Windows.Forms.ScrollButton">
   <TypeSignature Language="C#" Value="public enum ScrollButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollButton extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollButton" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollButton" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollButton" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Down = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A down-scroll arrow.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Left = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A left-scroll arrow.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Max" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Max = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Max" />
+      <MemberSignature Language="VB.NET" Value="Max" />
+      <MemberSignature Language="C++ CLI" Value="Max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A maximum-scroll arrow.</summary>
       </Docs>
@@ -75,6 +86,8 @@
       <MemberSignature Language="C#" Value="Min" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Min = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Min" />
+      <MemberSignature Language="VB.NET" Value="Min" />
+      <MemberSignature Language="C++ CLI" Value="Min" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A minimum-scroll arrow.</summary>
       </Docs>
@@ -91,6 +105,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A right-scroll arrow.</summary>
       </Docs>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Up = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An up-scroll arrow.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="EmbossBitmapEffect" FullName="System.Windows.Media.Effects.EmbossBitmapEffect">
+﻿<Type Name="EmbossBitmapEffect" FullName="System.Windows.Media.Effects.EmbossBitmapEffect">
   <TypeSignature Language="C#" Value="public sealed class EmbossBitmapEffect : System.Windows.Media.Effects.BitmapEffect" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmbossBitmapEffect extends System.Windows.Media.Effects.BitmapEffect" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.EmbossBitmapEffect" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EmbossBitmapEffect&#xA;Inherits BitmapEffect" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmbossBitmapEffect sealed : System::Windows::Media::Effects::BitmapEffect" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public EmbossBitmapEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmbossBitmapEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.EmbossBitmapEffect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.EmbossBitmapEffect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As EmbossBitmapEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::EmbossBitmapEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +94,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.EmbossBitmapEffect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.EmbossBitmapEffect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As EmbossBitmapEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::EmbossBitmapEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +124,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="protected override System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.CreateUnmanagedEffect" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateUnmanagedEffect () As SafeHandle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +174,8 @@
       <MemberSignature Language="C#" Value="public double LightAngle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LightAngle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.EmbossBitmapEffect.LightAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LightAngle As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LightAngle { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LightAngleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LightAngleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.EmbossBitmapEffect.LightAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LightAngleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LightAngleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +232,8 @@
       <MemberSignature Language="C#" Value="public double Relief { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Relief" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.EmbossBitmapEffect.Relief" />
+      <MemberSignature Language="VB.NET" Value="Public Property Relief As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Relief { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +269,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ReliefProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ReliefProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.EmbossBitmapEffect.ReliefProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ReliefProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ReliefProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +288,8 @@
       <MemberSignature Language="C#" Value="protected override void UpdateUnmanagedPropertyState (System.Runtime.InteropServices.SafeHandle unmanagedEffect);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateUnmanagedPropertyState(class System.Runtime.InteropServices.SafeHandle unmanagedEffect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.EmbossBitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="HelpKeywordType" FullName="System.ComponentModel.Design.HelpKeywordType">
+﻿<Type Name="HelpKeywordType" FullName="System.ComponentModel.Design.HelpKeywordType">
   <TypeSignature Language="C#" Value="public enum HelpKeywordType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpKeywordType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpKeywordType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HelpKeywordType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class HelpKeywordType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="F1Keyword" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpKeywordType F1Keyword = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.F1Keyword" />
+      <MemberSignature Language="VB.NET" Value="F1Keyword" />
+      <MemberSignature Language="C++ CLI" Value="F1Keyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpKeywordType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A keyword that F1 was pressed to request help about.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="FilterKeyword" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpKeywordType FilterKeyword = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.FilterKeyword" />
+      <MemberSignature Language="VB.NET" Value="FilterKeyword" />
+      <MemberSignature Language="C++ CLI" Value="FilterKeyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpKeywordType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A filter keyword.</summary>
       </Docs>
@@ -84,6 +92,8 @@
       <MemberSignature Language="C#" Value="GeneralKeyword" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpKeywordType GeneralKeyword = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpKeywordType.GeneralKeyword" />
+      <MemberSignature Language="VB.NET" Value="GeneralKeyword" />
+      <MemberSignature Language="C++ CLI" Value="GeneralKeyword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpKeywordType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A general keyword.</summary>
       </Docs>

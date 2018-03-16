@@ -1,7 +1,9 @@
-<Type Name="DataServiceQueryException" FullName="System.Data.Services.Client.DataServiceQueryException">
+﻿<Type Name="DataServiceQueryException" FullName="System.Data.Services.Client.DataServiceQueryException">
   <TypeSignature Language="C#" Value="public sealed class DataServiceQueryException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DataServiceQueryException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQueryException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceQueryException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceQueryException sealed : InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,10 +30,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceQueryException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataServiceQueryException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQueryException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceQueryException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -62,6 +76,8 @@
       <MemberSignature Language="C#" Value="public DataServiceQueryException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQueryException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceQueryException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -93,6 +109,8 @@
       <MemberSignature Language="C#" Value="protected DataServiceQueryException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQueryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataServiceQueryException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -114,6 +132,8 @@
       <MemberSignature Language="C#" Value="public DataServiceQueryException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQueryException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceQueryException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -149,6 +169,8 @@
       <MemberSignature Language="C#" Value="public DataServiceQueryException (string message, Exception innerException, System.Data.Services.Client.QueryOperationResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, class System.Data.Services.Client.QueryOperationResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQueryException.#ctor(System.String,System.Exception,System.Data.Services.Client.QueryOperationResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, response As QueryOperationResponse)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceQueryException(System::String ^ message, Exception ^ innerException, System::Data::Services::Client::QueryOperationResponse ^ response);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -172,6 +194,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.QueryOperationResponse Response { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.QueryOperationResponse Response" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQueryException.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As QueryOperationResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::QueryOperationResponse ^ Response { System::Data::Services::Client::QueryOperationResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -187,15 +211,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Client.DataServiceQueryException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

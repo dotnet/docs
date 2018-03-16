@@ -1,7 +1,9 @@
-<Type Name="MD5" FullName="System.Security.Cryptography.MD5">
+﻿<Type Name="MD5" FullName="System.Security.Cryptography.MD5">
   <TypeSignature Language="C#" Value="public abstract class MD5 : System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MD5 extends System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MD5" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MD5&#xA;Inherits HashAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MD5 abstract : System::Security::Cryptography::HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected MD5 ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MD5();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -88,10 +92,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allows specific implementations of this abstract class to be created.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.MD5 Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.MD5 Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As MD5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::MD5 ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -124,6 +142,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.MD5 Create (string algName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.MD5 Create(string algName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MD5.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As MD5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::MD5 ^ Create(System::String ^ algName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,17 +179,5 @@
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="algName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but is not FIPS compatible.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allows specific implementations of this abstract class to be created.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

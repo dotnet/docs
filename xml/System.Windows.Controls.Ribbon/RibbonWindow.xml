@@ -1,7 +1,9 @@
-<Type Name="RibbonWindow" FullName="System.Windows.Controls.Ribbon.RibbonWindow">
+﻿<Type Name="RibbonWindow" FullName="System.Windows.Controls.Ribbon.RibbonWindow">
   <TypeSignature Language="C#" Value="public class RibbonWindow : System.Windows.Window" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonWindow extends System.Windows.Window" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonWindow" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonWindow&#xA;Inherits Window" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonWindow : System::Windows::Window" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public RibbonWindow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonWindow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonWindow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonWindow.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

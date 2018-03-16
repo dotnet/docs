@@ -1,7 +1,9 @@
-<Type Name="ZipFile" FullName="System.IO.Compression.ZipFile">
+﻿<Type Name="ZipFile" FullName="System.IO.Compression.ZipFile">
   <TypeSignature Language="C#" Value="public static class ZipFile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ZipFile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.ZipFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class ZipFile" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ZipFile abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -67,10 +69,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateFromDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a zip archive that contains the files and directories from the specified directory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateFromDirectory">
       <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CreateFromDirectory (sourceDirectoryName As String, destinationArchiveFileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -148,6 +162,7 @@
       <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName, System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName, System::IO::Compression::CompressionLevel compressionLevel, bool includeBaseDirectory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -230,6 +245,7 @@
       <MemberSignature Language="C#" Value="public static void CreateFromDirectory (string sourceDirectoryName, string destinationArchiveFileName, System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory, System.Text.Encoding entryNameEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateFromDirectory(string sourceDirectoryName, string destinationArchiveFileName, valuetype System.IO.Compression.CompressionLevel compressionLevel, bool includeBaseDirectory, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.CreateFromDirectory(System.String,System.String,System.IO.Compression.CompressionLevel,System.Boolean,System.Text.Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateFromDirectory(System::String ^ sourceDirectoryName, System::String ^ destinationArchiveFileName, System::IO::Compression::CompressionLevel compressionLevel, bool includeBaseDirectory, System::Text::Encoding ^ entryNameEncoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -314,10 +330,22 @@
  The zip archive does not support writing.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExtractToDirectory">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Extracts all the files in the specified zip archive to a directory on the file system.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExtractToDirectory">
       <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -399,6 +427,8 @@
       <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName, bool overwriteFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, bool overwriteFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, overwriteFiles As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, bool overwriteFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -424,6 +454,8 @@
       <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName, System.Text.Encoding entryNameEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, entryNameEncoding As Encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, System::Text::Encoding ^ entryNameEncoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -515,6 +547,8 @@
       <MemberSignature Language="C#" Value="public static void ExtractToDirectory (string sourceArchiveFileName, string destinationDirectoryName, System.Text.Encoding entryNameEncoding, bool overwriteFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(string sourceArchiveFileName, string destinationDirectoryName, class System.Text.Encoding entryNameEncoding, bool overwriteFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.ExtractToDirectory(System.String,System.String,System.Text.Encoding,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ExtractToDirectory (sourceArchiveFileName As String, destinationDirectoryName As String, entryNameEncoding As Encoding, overwriteFiles As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ExtractToDirectory(System::String ^ sourceArchiveFileName, System::String ^ destinationDirectoryName, System::Text::Encoding ^ entryNameEncoding, bool overwriteFiles);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -538,10 +572,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Open">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a zip archive at the specified path and in the specified mode.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Open">
       <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive Open (string archiveFileName, System.IO.Compression.ZipArchiveMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive Open(string archiveFileName, valuetype System.IO.Compression.ZipArchiveMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (archiveFileName As String, mode As ZipArchiveMode) As ZipArchive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ Open(System::String ^ archiveFileName, System::IO::Compression::ZipArchiveMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -630,6 +676,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive Open (string archiveFileName, System.IO.Compression.ZipArchiveMode mode, System.Text.Encoding entryNameEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive Open(string archiveFileName, valuetype System.IO.Compression.ZipArchiveMode mode, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.Open(System.String,System.IO.Compression.ZipArchiveMode,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Open (archiveFileName As String, mode As ZipArchiveMode, entryNameEncoding As Encoding) As ZipArchive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ Open(System::String ^ archiveFileName, System::IO::Compression::ZipArchiveMode mode, System::Text::Encoding ^ entryNameEncoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -736,6 +784,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Compression.ZipArchive OpenRead (string archiveFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Compression.ZipArchive OpenRead(string archiveFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFile.OpenRead(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenRead (archiveFileName As String) As ZipArchive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Compression::ZipArchive ^ OpenRead(System::String ^ archiveFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
@@ -799,35 +849,5 @@
           <paramref name="archiveFileName" /> could not be interpreted as a zip archive.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Open">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a zip archive at the specified path and in the specified mode.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExtractToDirectory">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Extracts all the files in the specified zip archive to a directory on the file system.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateFromDirectory">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a zip archive that contains the files and directories from the specified directory.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

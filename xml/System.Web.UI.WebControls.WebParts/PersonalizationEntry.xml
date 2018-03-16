@@ -1,7 +1,9 @@
-<Type Name="PersonalizationEntry" FullName="System.Web.UI.WebControls.WebParts.PersonalizationEntry">
+﻿<Type Name="PersonalizationEntry" FullName="System.Web.UI.WebControls.WebParts.PersonalizationEntry">
   <TypeSignature Language="C#" Value="public sealed class PersonalizationEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersonalizationEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersonalizationEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationEntry sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PersonalizationDictionary" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PersonalizationEntry (object value, System.Web.UI.WebControls.WebParts.PersonalizationScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationEntry.#ctor(System.Object,System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, scope As PersonalizationScope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersonalizationEntry(System::Object ^ value, System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +71,8 @@
       <MemberSignature Language="C#" Value="public PersonalizationEntry (object value, System.Web.UI.WebControls.WebParts.PersonalizationScope scope, bool isSensitive);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value, valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope scope, bool isSensitive) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationEntry.#ctor(System.Object,System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object, scope As PersonalizationScope, isSensitive As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersonalizationEntry(System::Object ^ value, System::Web::UI::WebControls::WebParts::PersonalizationScope scope, bool isSensitive);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +102,8 @@
       <MemberSignature Language="C#" Value="public bool IsSensitive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSensitive" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.IsSensitive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSensitive As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSensitive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +130,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.PersonalizationScope Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PersonalizationScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As PersonalizationScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::PersonalizationScope Scope { System::Web::UI::WebControls::WebParts::PersonalizationScope get(); void set(System::Web::UI::WebControls::WebParts::PersonalizationScope value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +159,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationEntry.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,14 +182,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationEntry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

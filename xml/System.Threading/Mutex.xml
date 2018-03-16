@@ -1,7 +1,9 @@
-<Type Name="Mutex" FullName="System.Threading.Mutex">
+﻿<Type Name="Mutex" FullName="System.Threading.Mutex">
   <TypeSignature Language="C#" Value="public sealed class Mutex : System.Threading.WaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Mutex extends System.Threading.WaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Mutex" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Mutex&#xA;Inherits WaitHandle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Mutex sealed : System::Threading::WaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,10 +86,23 @@
     <altmember cref="T:System.Threading.Thread" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Mutex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Mutex ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mutex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -135,6 +150,8 @@
       <MemberSignature Language="C#" Value="public Mutex (bool initiallyOwned);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initiallyOwned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initiallyOwned As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mutex(bool initiallyOwned);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -181,6 +198,8 @@
       <MemberSignature Language="C#" Value="public Mutex (bool initiallyOwned, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initiallyOwned, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.#ctor(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initiallyOwned As Boolean, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mutex(bool initiallyOwned, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -255,6 +274,8 @@
       <MemberSignature Language="C#" Value="public Mutex (bool initiallyOwned, string name, out bool createdNew);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initiallyOwned, string name, [out] bool&amp; createdNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initiallyOwned As Boolean, name As String, ByRef createdNew As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mutex(bool initiallyOwned, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -327,6 +348,7 @@
       <MemberSignature Language="C#" Value="public Mutex (bool initiallyOwned, string name, out bool createdNew, System.Security.AccessControl.MutexSecurity mutexSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initiallyOwned, string name, [out] bool&amp; createdNew, class System.Security.AccessControl.MutexSecurity mutexSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.#ctor(System.Boolean,System.String,System.Boolean@,System.Security.AccessControl.MutexSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mutex(bool initiallyOwned, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew, System::Security::AccessControl::MutexSecurity ^ mutexSecurity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -405,6 +427,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.MutexSecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.MutexSecurity GetAccessControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.GetAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As MutexSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::MutexSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -450,10 +474,23 @@
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named mutex, if it already exists.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenExisting">
       <MemberSignature Language="C#" Value="public static System.Threading.Mutex OpenExisting (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Mutex OpenExisting(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.OpenExisting(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String) As Mutex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Mutex ^ OpenExisting(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -529,6 +566,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Mutex OpenExisting (string name, System.Security.AccessControl.MutexRights rights);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Mutex OpenExisting(string name, valuetype System.Security.AccessControl.MutexRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.OpenExisting(System.String,System.Security.AccessControl.MutexRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String, rights As MutexRights) As Mutex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Mutex ^ OpenExisting(System::String ^ name, System::Security::AccessControl::MutexRights rights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -594,6 +633,8 @@
       <MemberSignature Language="C#" Value="public void ReleaseMutex ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseMutex() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.ReleaseMutex" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseMutex ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseMutex();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -658,6 +699,7 @@
       <MemberSignature Language="C#" Value="public void SetAccessControl (System.Security.AccessControl.MutexSecurity mutexSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.MutexSecurity mutexSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.SetAccessControl(System.Security.AccessControl.MutexSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::MutexSecurity ^ mutexSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -705,10 +747,23 @@
         <exception cref="T:System.SystemException">The current <see cref="T:System.Threading.Mutex" /> object does not represent a named system mutex.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryOpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named mutex, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, out System.Threading.Mutex result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, [out] class System.Threading.Mutex&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.TryOpenExisting(System.String,System.Threading.Mutex@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, ByRef result As Mutex) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, [Runtime::InteropServices::Out] System::Threading::Mutex ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -771,6 +826,8 @@
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, System.Security.AccessControl.MutexRights rights, out System.Threading.Mutex result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.MutexRights rights, [out] class System.Threading.Mutex&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Mutex.TryOpenExisting(System.String,System.Security.AccessControl.MutexRights,System.Threading.Mutex@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, rights As MutexRights, ByRef result As Mutex) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, System::Security::AccessControl::MutexRights rights, [Runtime::InteropServices::Out] System::Threading::Mutex ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -821,38 +878,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryOpenExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a specified named mutex, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.Mutex" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a specified named mutex, if it already exists.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="IsolatedStoragePermission" FullName="System.Security.Permissions.IsolatedStoragePermission">
+﻿<Type Name="IsolatedStoragePermission" FullName="System.Security.Permissions.IsolatedStoragePermission">
   <TypeSignature Language="C#" Value="public abstract class IsolatedStoragePermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit IsolatedStoragePermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStoragePermission" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IsolatedStoragePermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsolatedStoragePermission abstract : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected IsolatedStoragePermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IsolatedStoragePermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +80,8 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,7 +114,12 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -140,6 +151,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.IsolatedStoragePermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +177,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.IsolatedStorageContainment UsageAllowed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.IsolatedStorageContainment UsageAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermission.UsageAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsageAllowed As IsolatedStorageContainment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::IsolatedStorageContainment UsageAllowed { System::Security::Permissions::IsolatedStorageContainment get(); void set(System::Security::Permissions::IsolatedStorageContainment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +202,8 @@
       <MemberSignature Language="C#" Value="public long UserQuota { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 UserQuota" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.IsolatedStoragePermission.UserQuota" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserQuota As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long UserQuota { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

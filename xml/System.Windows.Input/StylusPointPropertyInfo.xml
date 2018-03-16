@@ -1,7 +1,9 @@
-<Type Name="StylusPointPropertyInfo" FullName="System.Windows.Input.StylusPointPropertyInfo">
+﻿<Type Name="StylusPointPropertyInfo" FullName="System.Windows.Input.StylusPointPropertyInfo">
   <TypeSignature Language="C#" Value="public class StylusPointPropertyInfo : System.Windows.Input.StylusPointProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointPropertyInfo extends System.Windows.Input.StylusPointProperty" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointPropertyInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class StylusPointPropertyInfo&#xA;Inherits StylusPointProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusPointPropertyInfo : System::Windows::Input::StylusPointProperty" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,20 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointPropertyInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StylusPointPropertyInfo (System.Windows.Input.StylusPointProperty stylusPointProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointPropertyInfo(System::Windows::Input::StylusPointProperty ^ stylusPointProperty);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +76,7 @@
       <MemberSignature Language="C#" Value="public StylusPointPropertyInfo (System.Windows.Input.StylusPointProperty stylusPointProperty, int minimum, int maximum, System.Windows.Input.StylusPointPropertyUnit unit, float resolution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty, int32 minimum, int32 maximum, valuetype System.Windows.Input.StylusPointPropertyUnit unit, float32 resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointPropertyInfo.#ctor(System.Windows.Input.StylusPointProperty,System.Int32,System.Int32,System.Windows.Input.StylusPointPropertyUnit,System.Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointPropertyInfo(System::Windows::Input::StylusPointProperty ^ stylusPointProperty, int minimum, int maximum, System::Windows::Input::StylusPointPropertyUnit unit, float resolution);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +113,8 @@
       <MemberSignature Language="C#" Value="public int Maximum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Maximum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximum As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maximum { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int Minimum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minimum" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimum As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minimum { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +177,8 @@
       <MemberSignature Language="C#" Value="public float Resolution { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Resolution" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Resolution" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Resolution As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Resolution { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +214,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointPropertyUnit Unit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.StylusPointPropertyUnit Unit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointPropertyInfo.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As StylusPointPropertyUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusPointPropertyUnit Unit { System::Windows::Input::StylusPointPropertyUnit get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,14 +242,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointPropertyInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

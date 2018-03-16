@@ -1,7 +1,9 @@
-<Type Name="WebRequestModuleElementCollection" FullName="System.Net.Configuration.WebRequestModuleElementCollection">
+﻿<Type Name="WebRequestModuleElementCollection" FullName="System.Net.Configuration.WebRequestModuleElementCollection">
   <TypeSignature Language="C#" Value="public sealed class WebRequestModuleElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebRequestModuleElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebRequestModuleElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebRequestModuleElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebRequestModuleElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public WebRequestModuleElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Net.Configuration.WebRequestModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Net.Configuration.WebRequestModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.Add(System.Net.Configuration.WebRequestModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As WebRequestModuleElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Configuration::WebRequestModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +121,8 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Net.Configuration.WebRequestModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Net.Configuration.WebRequestModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.IndexOf(System.Net.Configuration.WebRequestModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As WebRequestModuleElement) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Net::Configuration::WebRequestModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,10 +165,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the element with the specified index or key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Net.Configuration.WebRequestModuleElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.WebRequestModuleElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As WebRequestModuleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::WebRequestModuleElement ^ default[int] { System::Net::Configuration::WebRequestModuleElement ^ get(int index); void set(int index, System::Net::Configuration::WebRequestModuleElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.WebRequestModuleElement this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.WebRequestModuleElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As WebRequestModuleElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::WebRequestModuleElement ^ default[System::String ^] { System::Net::Configuration::WebRequestModuleElement ^ get(System::String ^ name); void set(System::String ^ name, System::Net::Configuration::WebRequestModuleElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -205,10 +232,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Net.Configuration.WebRequestModuleElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Net.Configuration.WebRequestModuleElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.Remove(System.Net.Configuration.WebRequestModuleElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As WebRequestModuleElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::Configuration::WebRequestModuleElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +268,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -251,6 +291,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -268,23 +310,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the element with the specified index or key.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an element from the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="EventEntry" FullName="System.Web.UI.EventEntry">
+﻿<Type Name="EventEntry" FullName="System.Web.UI.EventEntry">
   <TypeSignature Language="C#" Value="public class EventEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.EventEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public EventEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.EventEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public string HandlerMethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HandlerMethodName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.EventEntry.HandlerMethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HandlerMethodName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HandlerMethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public Type HandlerType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type HandlerType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.EventEntry.HandlerType" />
+      <MemberSignature Language="VB.NET" Value="Public Property HandlerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ HandlerType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.EventEntry.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

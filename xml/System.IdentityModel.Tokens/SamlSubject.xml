@@ -1,7 +1,9 @@
-<Type Name="SamlSubject" FullName="System.IdentityModel.Tokens.SamlSubject">
+﻿<Type Name="SamlSubject" FullName="System.IdentityModel.Tokens.SamlSubject">
   <TypeSignature Language="C#" Value="public class SamlSubject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlSubject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlSubject" />
+  <TypeSignature Language="VB.NET" Value="Public Class SamlSubject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SamlSubject" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +27,21 @@
     <altmember cref="T:System.IdentityModel.Tokens.SamlSecurityToken" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SamlSubject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSubject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SamlSubject (string nameFormat, string nameQualifier, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string nameFormat, string nameQualifier, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nameFormat As String, nameQualifier As String, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSubject(System::String ^ nameFormat, System::String ^ nameQualifier, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -87,6 +102,7 @@
       <MemberSignature Language="C#" Value="public SamlSubject (string nameFormat, string nameQualifier, string name, System.Collections.Generic.IEnumerable&lt;string&gt; confirmations, string confirmationData, System.IdentityModel.Tokens.SecurityKeyIdentifier securityKeyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string nameFormat, string nameQualifier, string name, class System.Collections.Generic.IEnumerable`1&lt;string&gt; confirmations, string confirmationData, class System.IdentityModel.Tokens.SecurityKeyIdentifier securityKeyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.#ctor(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.String},System.String,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SamlSubject(System::String ^ nameFormat, System::String ^ nameQualifier, System::String ^ name, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ confirmations, System::String ^ confirmationData, System::IdentityModel::Tokens::SecurityKeyIdentifier ^ securityKeyIdentifier);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -146,6 +162,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; ConfirmationMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; ConfirmationMethods" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.ConfirmationMethods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConfirmationMethods As IList(Of String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ ConfirmationMethods { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKey Crypto { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKey Crypto" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.Crypto" />
+      <MemberSignature Language="VB.NET" Value="Public Property Crypto As SecurityKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKey ^ Crypto { System::IdentityModel::Tokens::SecurityKey ^ get(); void set(System::IdentityModel::Tokens::SecurityKey ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -207,6 +227,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.Claim&gt; ExtractClaims ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Claims.Claim&gt; ExtractClaims() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.ExtractClaims" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExtractClaims () As ReadOnlyCollection(Of Claim)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Claims::Claim ^&gt; ^ ExtractClaims();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -233,6 +255,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Claims.ClaimSet ExtractSubjectKeyClaimSet (System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator samlAuthenticator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Claims.ClaimSet ExtractSubjectKeyClaimSet(class System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator samlAuthenticator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.ExtractSubjectKeyClaimSet(System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExtractSubjectKeyClaimSet (samlAuthenticator As SamlSecurityTokenAuthenticator) As ClaimSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Claims::ClaimSet ^ ExtractSubjectKeyClaimSet(System::IdentityModel::Selectors::SamlSecurityTokenAuthenticator ^ samlAuthenticator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -264,6 +288,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -290,6 +316,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.KeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyIdentifier As SecurityKeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ KeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); void set(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -319,6 +347,8 @@
       <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -344,6 +374,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -371,6 +403,8 @@
       <MemberSignature Language="C#" Value="public static string NameClaimType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string NameClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.NameClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NameClaimType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ NameClaimType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -396,6 +430,8 @@
       <MemberSignature Language="C#" Value="public string NameFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameFormat" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.NameFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameFormat As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameFormat { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -433,6 +469,8 @@
       <MemberSignature Language="C#" Value="public string NameQualifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameQualifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.NameQualifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameQualifier As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameQualifier { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -457,9 +495,14 @@
       </Docs>
     </Member>
     <Member MemberName="ReadXml">
-      <MemberSignature Language="C#" Value="public virtual void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="C#" Value="public virtual void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlDictionaryReader ^ reader, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ outOfBandTokenResolver);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -469,14 +512,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
-        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
-        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" Index="0" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" Index="1" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="keyInfoTokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" Index="3" />
       </Parameters>
       <Docs>
         <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the <see langword="&lt;saml:Subject&gt;" /> element.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in a SAML assertion.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
         <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
         <summary>Reads the <see langword="&lt;saml:Subject&gt;" /> element from the specified XML reader.</summary>
@@ -518,6 +563,8 @@
       <MemberSignature Language="C#" Value="public string SubjectConfirmationData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubjectConfirmationData" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubject.SubjectConfirmationData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubjectConfirmationData As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubjectConfirmationData { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -542,9 +589,14 @@
       </Docs>
     </Member>
     <Member MemberName="WriteXml">
-      <MemberSignature Language="C#" Value="public virtual void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberSignature Language="C#" Value="public virtual void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoSerializer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubject.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlDictionaryWriter ^ writer, System::IdentityModel::Tokens::SamlSerializer ^ samlSerializer, System::IdentityModel::Selectors::SecurityTokenSerializer ^ keyInfoTokenSerializer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -554,13 +606,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
-        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
-        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" Index="0" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" Index="1" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="keyInfoTokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" Index="2" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the <see langword="&lt;saml:Subject&gt;" /> element.</param>
         <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in a SAML assertion.</param>
+        <param name="keyInfoSerializer">To be added.</param>
         <param name="keyInfoTokenSerializer">To be added.</param>
         <summary>Writes the <see langword="&lt;saml:Subject&gt;" /> element into the specified XML serializer.</summary>
         <remarks>
@@ -573,14 +627,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

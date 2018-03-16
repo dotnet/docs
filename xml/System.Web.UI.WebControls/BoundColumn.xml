@@ -1,7 +1,9 @@
-<Type Name="BoundColumn" FullName="System.Web.UI.WebControls.BoundColumn">
+﻿<Type Name="BoundColumn" FullName="System.Web.UI.WebControls.BoundColumn">
   <TypeSignature Language="C#" Value="public class BoundColumn : System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BoundColumn extends System.Web.UI.WebControls.DataGridColumn" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BoundColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class BoundColumn&#xA;Inherits DataGridColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BoundColumn : System::Web::UI::WebControls::DataGridColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public BoundColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BoundColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +79,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundColumn.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +120,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundColumn.DataFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,6 +191,8 @@
       <MemberSignature Language="C#" Value="protected virtual string FormatDataValue (object dataValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataValue(object dataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundColumn.FormatDataValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function FormatDataValue (dataValue As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ FormatDataValue(System::Object ^ dataValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundColumn.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +254,8 @@
       <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.TableCell cell, int columnIndex, System.Web.UI.WebControls.ListItemType itemType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.TableCell cell, int32 columnIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BoundColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As TableCell, columnIndex As Integer, itemType As ListItemType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::TableCell ^ cell, int columnIndex, System::Web::UI::WebControls::ListItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +289,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BoundColumn.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +330,8 @@
       <MemberSignature Language="C#" Value="public static readonly string thisExpr;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string thisExpr" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BoundColumn.thisExpr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly thisExpr As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ thisExpr;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

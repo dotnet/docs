@@ -1,7 +1,9 @@
-<Type Name="IcmpV4Statistics" FullName="System.Net.NetworkInformation.IcmpV4Statistics">
+﻿<Type Name="IcmpV4Statistics" FullName="System.Net.NetworkInformation.IcmpV4Statistics">
   <TypeSignature Language="C#" Value="public abstract class IcmpV4Statistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IcmpV4Statistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IcmpV4Statistics" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IcmpV4Statistics" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IcmpV4Statistics abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected IcmpV4Statistics ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IcmpV4Statistics.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IcmpV4Statistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressMaskRepliesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressMaskRepliesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.AddressMaskRepliesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressMaskRepliesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressMaskRepliesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressMaskRepliesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressMaskRepliesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.AddressMaskRepliesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressMaskRepliesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressMaskRepliesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -166,6 +174,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressMaskRequestsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressMaskRequestsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.AddressMaskRequestsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressMaskRequestsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressMaskRequestsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -210,6 +220,8 @@
       <MemberSignature Language="C#" Value="public abstract long AddressMaskRequestsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 AddressMaskRequestsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.AddressMaskRequestsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AddressMaskRequestsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long AddressMaskRequestsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -254,6 +266,8 @@
       <MemberSignature Language="C#" Value="public abstract long DestinationUnreachableMessagesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 DestinationUnreachableMessagesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.DestinationUnreachableMessagesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DestinationUnreachableMessagesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DestinationUnreachableMessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -306,6 +320,8 @@
       <MemberSignature Language="C#" Value="public abstract long DestinationUnreachableMessagesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 DestinationUnreachableMessagesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.DestinationUnreachableMessagesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DestinationUnreachableMessagesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long DestinationUnreachableMessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -360,6 +376,8 @@
       <MemberSignature Language="C#" Value="public abstract long EchoRepliesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EchoRepliesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.EchoRepliesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRepliesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRepliesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -404,6 +422,8 @@
       <MemberSignature Language="C#" Value="public abstract long EchoRepliesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EchoRepliesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.EchoRepliesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRepliesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRepliesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -448,6 +468,8 @@
       <MemberSignature Language="C#" Value="public abstract long EchoRequestsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EchoRequestsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.EchoRequestsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRequestsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRequestsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -492,6 +514,8 @@
       <MemberSignature Language="C#" Value="public abstract long EchoRequestsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 EchoRequestsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.EchoRequestsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EchoRequestsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long EchoRequestsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -536,6 +560,8 @@
       <MemberSignature Language="C#" Value="public abstract long ErrorsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ErrorsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.ErrorsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ErrorsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ErrorsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -575,6 +601,8 @@
       <MemberSignature Language="C#" Value="public abstract long ErrorsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ErrorsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.ErrorsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ErrorsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ErrorsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -614,6 +642,8 @@
       <MemberSignature Language="C#" Value="public abstract long MessagesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MessagesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.MessagesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessagesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -658,6 +688,8 @@
       <MemberSignature Language="C#" Value="public abstract long MessagesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 MessagesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.MessagesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessagesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long MessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -702,6 +734,8 @@
       <MemberSignature Language="C#" Value="public abstract long ParameterProblemsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ParameterProblemsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.ParameterProblemsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ParameterProblemsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ParameterProblemsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -746,6 +780,8 @@
       <MemberSignature Language="C#" Value="public abstract long ParameterProblemsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ParameterProblemsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.ParameterProblemsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ParameterProblemsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ParameterProblemsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -790,6 +826,8 @@
       <MemberSignature Language="C#" Value="public abstract long RedirectsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RedirectsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.RedirectsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RedirectsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RedirectsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -834,6 +872,8 @@
       <MemberSignature Language="C#" Value="public abstract long RedirectsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RedirectsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.RedirectsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RedirectsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long RedirectsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -878,6 +918,8 @@
       <MemberSignature Language="C#" Value="public abstract long SourceQuenchesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 SourceQuenchesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.SourceQuenchesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SourceQuenchesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SourceQuenchesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -922,6 +964,8 @@
       <MemberSignature Language="C#" Value="public abstract long SourceQuenchesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 SourceQuenchesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.SourceQuenchesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SourceQuenchesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long SourceQuenchesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -966,6 +1010,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimeExceededMessagesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimeExceededMessagesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimeExceededMessagesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimeExceededMessagesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimeExceededMessagesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1010,6 +1056,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimeExceededMessagesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimeExceededMessagesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimeExceededMessagesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimeExceededMessagesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimeExceededMessagesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1054,6 +1102,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimestampRepliesReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimestampRepliesReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimestampRepliesReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimestampRepliesReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimestampRepliesReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1098,6 +1148,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimestampRepliesSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimestampRepliesSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimestampRepliesSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimestampRepliesSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimestampRepliesSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1142,6 +1194,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimestampRequestsReceived { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimestampRequestsReceived" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimestampRequestsReceived" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimestampRequestsReceived As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimestampRequestsReceived { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -1186,6 +1240,8 @@
       <MemberSignature Language="C#" Value="public abstract long TimestampRequestsSent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TimestampRequestsSent" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IcmpV4Statistics.TimestampRequestsSent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TimestampRequestsSent As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long TimestampRequestsSent { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

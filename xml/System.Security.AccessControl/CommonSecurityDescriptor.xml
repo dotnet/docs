@@ -1,7 +1,9 @@
-<Type Name="CommonSecurityDescriptor" FullName="System.Security.AccessControl.CommonSecurityDescriptor">
+﻿<Type Name="CommonSecurityDescriptor" FullName="System.Security.AccessControl.CommonSecurityDescriptor">
   <TypeSignature Language="C#" Value="public sealed class CommonSecurityDescriptor : System.Security.AccessControl.GenericSecurityDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommonSecurityDescriptor extends System.Security.AccessControl.GenericSecurityDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CommonSecurityDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommonSecurityDescriptor&#xA;Inherits GenericSecurityDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommonSecurityDescriptor sealed : System::Security::AccessControl::GenericSecurityDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CommonSecurityDescriptor (bool isContainer, bool isDS, System.Security.AccessControl.RawSecurityDescriptor rawSecurityDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, class System.Security.AccessControl.RawSecurityDescriptor rawSecurityDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.#ctor(System.Boolean,System.Boolean,System.Security.AccessControl.RawSecurityDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonSecurityDescriptor(bool isContainer, bool isDS, System::Security::AccessControl::RawSecurityDescriptor ^ rawSecurityDescriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -64,6 +77,8 @@
       <MemberSignature Language="C#" Value="public CommonSecurityDescriptor (bool isContainer, bool isDS, string sddlForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, string sddlForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.#ctor(System.Boolean,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, sddlForm As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonSecurityDescriptor(bool isContainer, bool isDS, System::String ^ sddlForm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -103,6 +118,8 @@
       <MemberSignature Language="C#" Value="public CommonSecurityDescriptor (bool isContainer, bool isDS, byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.#ctor(System.Boolean,System.Boolean,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, binaryForm As Byte(), offset As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonSecurityDescriptor(bool isContainer, bool isDS, cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -144,6 +161,7 @@
       <MemberSignature Language="C#" Value="public CommonSecurityDescriptor (bool isContainer, bool isDS, System.Security.AccessControl.ControlFlags flags, System.Security.Principal.SecurityIdentifier owner, System.Security.Principal.SecurityIdentifier group, System.Security.AccessControl.SystemAcl systemAcl, System.Security.AccessControl.DiscretionaryAcl discretionaryAcl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, valuetype System.Security.AccessControl.ControlFlags flags, class System.Security.Principal.SecurityIdentifier owner, class System.Security.Principal.SecurityIdentifier group, class System.Security.AccessControl.SystemAcl systemAcl, class System.Security.AccessControl.DiscretionaryAcl discretionaryAcl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.#ctor(System.Boolean,System.Boolean,System.Security.AccessControl.ControlFlags,System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.SystemAcl,System.Security.AccessControl.DiscretionaryAcl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommonSecurityDescriptor(bool isContainer, bool isDS, System::Security::AccessControl::ControlFlags flags, System::Security::Principal::SecurityIdentifier ^ owner, System::Security::Principal::SecurityIdentifier ^ group, System::Security::AccessControl::SystemAcl ^ systemAcl, System::Security::AccessControl::DiscretionaryAcl ^ discretionaryAcl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -191,6 +209,8 @@
       <MemberSignature Language="C#" Value="public void AddDiscretionaryAcl (byte revision, int trusted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDiscretionaryAcl(unsigned int8 revision, int32 trusted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.AddDiscretionaryAcl(System.Byte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddDiscretionaryAcl (revision As Byte, trusted As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddDiscretionaryAcl(System::Byte revision, int trusted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -227,6 +247,8 @@
       <MemberSignature Language="C#" Value="public void AddSystemAcl (byte revision, int trusted);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSystemAcl(unsigned int8 revision, int32 trusted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.AddSystemAcl(System.Byte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSystemAcl (revision As Byte, trusted As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSystemAcl(System::Byte revision, int trusted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -263,6 +285,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.ControlFlags ControlFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.ControlFlags ControlFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.ControlFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ControlFlags As ControlFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::AccessControl::ControlFlags ControlFlags { System::Security::AccessControl::ControlFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -287,6 +311,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.DiscretionaryAcl DiscretionaryAcl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.DiscretionaryAcl DiscretionaryAcl" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.DiscretionaryAcl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscretionaryAcl As DiscretionaryAcl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::DiscretionaryAcl ^ DiscretionaryAcl { System::Security::AccessControl::DiscretionaryAcl ^ get(); void set(System::Security::AccessControl::DiscretionaryAcl ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -320,6 +346,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.SecurityIdentifier Group { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier Group" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Group As SecurityIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Group { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -344,6 +372,8 @@
       <MemberSignature Language="C#" Value="public bool IsContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsContainer" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.IsContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContainer As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContainer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -369,6 +399,8 @@
       <MemberSignature Language="C#" Value="public bool IsDiscretionaryAclCanonical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDiscretionaryAclCanonical" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.IsDiscretionaryAclCanonical" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDiscretionaryAclCanonical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDiscretionaryAclCanonical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -394,6 +426,8 @@
       <MemberSignature Language="C#" Value="public bool IsDS { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDS" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.IsDS" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDS { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -419,6 +453,8 @@
       <MemberSignature Language="C#" Value="public bool IsSystemAclCanonical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemAclCanonical" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.IsSystemAclCanonical" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSystemAclCanonical As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemAclCanonical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -444,6 +480,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.SecurityIdentifier Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier Owner" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Owner As SecurityIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Owner { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -468,6 +506,8 @@
       <MemberSignature Language="C#" Value="public void PurgeAccessControl (System.Security.Principal.SecurityIdentifier sid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PurgeAccessControl(class System.Security.Principal.SecurityIdentifier sid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.PurgeAccessControl(System.Security.Principal.SecurityIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PurgeAccessControl (sid As SecurityIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PurgeAccessControl(System::Security::Principal::SecurityIdentifier ^ sid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -502,6 +542,8 @@
       <MemberSignature Language="C#" Value="public void PurgeAudit (System.Security.Principal.SecurityIdentifier sid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PurgeAudit(class System.Security.Principal.SecurityIdentifier sid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.PurgeAudit(System.Security.Principal.SecurityIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PurgeAudit (sid As SecurityIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PurgeAudit(System::Security::Principal::SecurityIdentifier ^ sid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -529,6 +571,8 @@
       <MemberSignature Language="C#" Value="public void SetDiscretionaryAclProtection (bool isProtected, bool preserveInheritance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDiscretionaryAclProtection(bool isProtected, bool preserveInheritance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.SetDiscretionaryAclProtection(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDiscretionaryAclProtection (isProtected As Boolean, preserveInheritance As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDiscretionaryAclProtection(bool isProtected, bool preserveInheritance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -560,6 +604,8 @@
       <MemberSignature Language="C#" Value="public void SetSystemAclProtection (bool isProtected, bool preserveInheritance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSystemAclProtection(bool isProtected, bool preserveInheritance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CommonSecurityDescriptor.SetSystemAclProtection(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSystemAclProtection (isProtected As Boolean, preserveInheritance As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSystemAclProtection(bool isProtected, bool preserveInheritance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -591,6 +637,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.SystemAcl SystemAcl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.SystemAcl SystemAcl" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CommonSecurityDescriptor.SystemAcl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemAcl As SystemAcl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::SystemAcl ^ SystemAcl { System::Security::AccessControl::SystemAcl ^ get(); void set(System::Security::AccessControl::SystemAcl ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -611,15 +659,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.CommonSecurityDescriptor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

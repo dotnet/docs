@@ -1,7 +1,9 @@
-<Type Name="NotifyCollectionChangedAction" FullName="System.Collections.Specialized.NotifyCollectionChangedAction">
+﻿<Type Name="NotifyCollectionChangedAction" FullName="System.Collections.Specialized.NotifyCollectionChangedAction">
   <TypeSignature Language="C#" Value="public enum NotifyCollectionChangedAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyCollectionChangedAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.NotifyCollectionChangedAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NotifyCollectionChangedAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class NotifyCollectionChangedAction" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Add = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An item was added to the collection.</summary>
       </Docs>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="Move" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Move = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Move" />
+      <MemberSignature Language="VB.NET" Value="Move" />
+      <MemberSignature Language="C++ CLI" Value="Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -82,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An item was moved within the collection.</summary>
       </Docs>
@@ -90,6 +98,8 @@
       <MemberSignature Language="C#" Value="Remove" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Remove = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Remove" />
+      <MemberSignature Language="VB.NET" Value="Remove" />
+      <MemberSignature Language="C++ CLI" Value="Remove" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -109,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An item was removed from the collection.</summary>
       </Docs>
@@ -117,6 +128,8 @@
       <MemberSignature Language="C#" Value="Replace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Replace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Replace" />
+      <MemberSignature Language="VB.NET" Value="Replace" />
+      <MemberSignature Language="C++ CLI" Value="Replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -136,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An item was replaced in the collection.</summary>
       </Docs>
@@ -144,6 +158,8 @@
       <MemberSignature Language="C#" Value="Reset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Collections.Specialized.NotifyCollectionChangedAction Reset = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Specialized.NotifyCollectionChangedAction.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
+      <MemberSignature Language="C++ CLI" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -163,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NotifyCollectionChangedAction</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The content of the collection was cleared.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="DispatcherOperationCallback" FullName="System.Windows.Threading.DispatcherOperationCallback">
+﻿<Type Name="DispatcherOperationCallback" FullName="System.Windows.Threading.DispatcherOperationCallback">
   <TypeSignature Language="C#" Value="public delegate object DispatcherOperationCallback(object arg);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DispatcherOperationCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherOperationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function DispatcherOperationCallback(arg As Object) As Object " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ DispatcherOperationCallback(System::Object ^ arg);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

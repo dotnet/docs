@@ -1,7 +1,9 @@
-<Type Name="SrgsGrammarMode" FullName="System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode">
+﻿<Type Name="SrgsGrammarMode" FullName="System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode">
   <TypeSignature Language="C#" Value="public enum SrgsGrammarMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SrgsGrammarMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SrgsGrammarMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SrgsGrammarMode" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@ grammar = new Grammar(document);
       <MemberSignature Language="C#" Value="Dtmf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode Dtmf = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Dtmf" />
+      <MemberSignature Language="VB.NET" Value="Dtmf" />
+      <MemberSignature Language="C++ CLI" Value="Dtmf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -62,6 +66,7 @@ grammar = new Grammar(document);
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object will match DTMF tones similar to those found on a telephone, instead of speech.</summary>
       </Docs>
@@ -70,6 +75,8 @@ grammar = new Grammar(document);
       <MemberSignature Language="C#" Value="Voice" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode Voice = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode.Voice" />
+      <MemberSignature Language="VB.NET" Value="Voice" />
+      <MemberSignature Language="C++ CLI" Value="Voice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -78,6 +85,7 @@ grammar = new Grammar(document);
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsGrammarMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object will match speech input.</summary>
       </Docs>

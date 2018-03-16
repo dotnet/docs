@@ -1,7 +1,9 @@
-<Type Name="CompensatableSequenceActivity" FullName="System.Workflow.Activities.CompensatableSequenceActivity">
+﻿<Type Name="CompensatableSequenceActivity" FullName="System.Workflow.Activities.CompensatableSequenceActivity">
   <TypeSignature Language="C#" Value="public sealed class CompensatableSequenceActivity : System.Workflow.Activities.SequenceActivity, System.Workflow.ComponentModel.ICompensatableActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompensatableSequenceActivity extends System.Workflow.Activities.SequenceActivity implements class System.Workflow.ComponentModel.ICompensatableActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CompensatableSequenceActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompensatableSequenceActivity&#xA;Inherits SequenceActivity&#xA;Implements ICompensatableActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompensatableSequenceActivity sealed : System::Workflow::Activities::SequenceActivity, System::Workflow::ComponentModel::ICompensatableActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CompensatableSequenceActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CompensatableSequenceActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CompensatableSequenceActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensatableSequenceActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public CompensatableSequenceActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CompensatableSequenceActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompensatableSequenceActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -81,7 +96,12 @@
       <MemberSignature Language="C#" Value="System.Workflow.ComponentModel.ActivityExecutionStatus ICompensatableActivity.Compensate (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus System.Workflow.ComponentModel.ICompensatableActivity.Compensate(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CompensatableSequenceActivity.System#Workflow#ComponentModel#ICompensatableActivity#Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Function Compensate (executionContext As ActivityExecutionContext) As ActivityExecutionStatus Implements ICompensatableActivity.Compensate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Workflow::ComponentModel::ActivityExecutionStatus System.Workflow.ComponentModel.ICompensatableActivity.Compensate(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext) = System::Workflow::ComponentModel::ICompensatableActivity::Compensate;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.ICompensatableActivity.Compensate(System.Workflow.ComponentModel.ActivityExecutionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,14 +119,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CompensatableSequenceActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

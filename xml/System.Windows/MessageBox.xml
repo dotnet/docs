@@ -1,7 +1,9 @@
-<Type Name="MessageBox" FullName="System.Windows.MessageBox">
+﻿<Type Name="MessageBox" FullName="System.Windows.MessageBox">
   <TypeSignature Language="C#" Value="public sealed class MessageBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageBox extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBox" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageBox sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +102,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String, caption As String) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText, System::String ^ caption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +183,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String, caption As String, button As MessageBoxButton) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String, caption As String) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText, System::String ^ caption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +268,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -299,6 +313,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String, caption As String, button As MessageBoxButton) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -341,6 +357,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage, defaultResult As MessageBoxResult) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon, System::Windows::MessageBoxResult defaultResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -386,6 +404,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -430,6 +450,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage, defaultResult As MessageBoxResult, options As MessageBoxOptions) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon, System::Windows::MessageBoxResult defaultResult, System::Windows::MessageBoxOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -477,6 +499,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage, defaultResult As MessageBoxResult) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon, System::Windows::MessageBoxResult defaultResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +547,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (System.Windows.Window owner, string messageBoxText, string caption, System.Windows.MessageBoxButton button, System.Windows.MessageBoxImage icon, System.Windows.MessageBoxResult defaultResult, System.Windows.MessageBoxOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(class System.Windows.Window owner, string messageBoxText, string caption, valuetype System.Windows.MessageBoxButton button, valuetype System.Windows.MessageBoxImage icon, valuetype System.Windows.MessageBoxResult defaultResult, valuetype System.Windows.MessageBoxOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.MessageBox.Show(System.Windows.Window,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.Windows.MessageBoxResult,System.Windows.MessageBoxOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Show (owner As Window, messageBoxText As String, caption As String, button As MessageBoxButton, icon As MessageBoxImage, defaultResult As MessageBoxResult, options As MessageBoxOptions) As MessageBoxResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::MessageBoxResult Show(System::Windows::Window ^ owner, System::String ^ messageBoxText, System::String ^ caption, System::Windows::MessageBoxButton button, System::Windows::MessageBoxImage icon, System::Windows::MessageBoxResult defaultResult, System::Windows::MessageBoxOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

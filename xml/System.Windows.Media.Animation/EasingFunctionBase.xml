@@ -1,7 +1,9 @@
-<Type Name="EasingFunctionBase" FullName="System.Windows.Media.Animation.EasingFunctionBase">
+﻿<Type Name="EasingFunctionBase" FullName="System.Windows.Media.Animation.EasingFunctionBase">
   <TypeSignature Language="C#" Value="public abstract class EasingFunctionBase : System.Windows.Freezable, System.Windows.Media.Animation.IEasingFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EasingFunctionBase extends System.Windows.Freezable implements class System.Windows.Media.Animation.IEasingFunction" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingFunctionBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EasingFunctionBase&#xA;Inherits Freezable&#xA;Implements IEasingFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EasingFunctionBase abstract : System::Windows::Freezable, System::Windows::Media::Animation::IEasingFunction" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="protected EasingFunctionBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingFunctionBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EasingFunctionBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,7 +60,12 @@
       <MemberSignature Language="C#" Value="public double Ease (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 Ease(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingFunctionBase.Ease(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ease (normalizedTime As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double Ease(double normalizedTime);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Media.Animation.IEasingFunction.Ease(System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected abstract double EaseInCore (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance float64 EaseInCore(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingFunctionBase.EaseInCore(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function EaseInCore (normalizedTime As Double) As Double" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract double EaseInCore(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +129,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.EasingMode EasingMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.EasingMode EasingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingFunctionBase.EasingMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property EasingMode As EasingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::EasingMode EasingMode { System::Windows::Media::Animation::EasingMode get(); void set(System::Windows::Media::Animation::EasingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +171,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingFunctionBase.EasingModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingModeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

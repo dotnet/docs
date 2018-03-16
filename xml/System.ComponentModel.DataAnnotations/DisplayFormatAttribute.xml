@@ -1,7 +1,9 @@
-<Type Name="DisplayFormatAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayFormatAttribute">
+﻿<Type Name="DisplayFormatAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayFormatAttribute">
   <TypeSignature Language="C#" Value="public class DisplayFormatAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DisplayFormatAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayFormatAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DisplayFormatAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DisplayFormatAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -63,6 +65,8 @@
       <MemberSignature Language="C#" Value="public DisplayFormatAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayFormatAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -84,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool ApplyFormatInEditMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ApplyFormatInEditMode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ApplyFormatInEditMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplyFormatInEditMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApplyFormatInEditMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -124,6 +130,8 @@
       <MemberSignature Language="C#" Value="public bool ConvertEmptyStringToNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.ConvertEmptyStringToNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConvertEmptyStringToNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConvertEmptyStringToNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -167,6 +175,8 @@
       <MemberSignature Language="C#" Value="public string DataFormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataFormatString" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.DataFormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataFormatString As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataFormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -219,6 +229,8 @@
       <MemberSignature Language="C#" Value="public bool HtmlEncode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HtmlEncode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.HtmlEncode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HtmlEncode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HtmlEncode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -244,6 +256,8 @@
       <MemberSignature Language="C#" Value="public string NullDisplayText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayFormatAttribute.NullDisplayText" />
+      <MemberSignature Language="VB.NET" Value="Public Property NullDisplayText As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NullDisplayText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

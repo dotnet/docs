@@ -1,7 +1,9 @@
-<Type Name="AssociationEndMember" FullName="System.Data.Metadata.Edm.AssociationEndMember">
+﻿<Type Name="AssociationEndMember" FullName="System.Data.Metadata.Edm.AssociationEndMember">
   <TypeSignature Language="C#" Value="public sealed class AssociationEndMember : System.Data.Metadata.Edm.RelationshipEndMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssociationEndMember extends System.Data.Metadata.Edm.RelationshipEndMember" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.AssociationEndMember" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssociationEndMember&#xA;Inherits RelationshipEndMember" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssociationEndMember sealed : System::Data::Metadata::Edm::RelationshipEndMember" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationEndMember.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

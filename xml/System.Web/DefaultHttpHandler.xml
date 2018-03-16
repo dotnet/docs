@@ -1,7 +1,9 @@
-<Type Name="DefaultHttpHandler" FullName="System.Web.DefaultHttpHandler">
+﻿<Type Name="DefaultHttpHandler" FullName="System.Web.DefaultHttpHandler">
   <TypeSignature Language="C#" Value="public class DefaultHttpHandler : System.Web.IHttpAsyncHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultHttpHandler extends System.Object implements class System.Web.IHttpAsyncHandler, class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.DefaultHttpHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultHttpHandler&#xA;Implements IHttpAsyncHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultHttpHandler : System::Web::IHttpAsyncHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public DefaultHttpHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultHttpHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,7 +69,12 @@
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginProcessRequest (System.Web.HttpContext context, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginProcessRequest(class System.Web.HttpContext context, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginProcessRequest (context As HttpContext, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +108,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.Context" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,7 +136,12 @@
       <MemberSignature Language="C#" Value="public virtual void EndProcessRequest (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.EndProcessRequest(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndProcessRequest (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndProcessRequest(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,6 +169,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Specialized.NameValueCollection ExecuteUrlHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection ExecuteUrlHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.ExecuteUrlHeaders" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ExecuteUrlHeaders As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Specialized::NameValueCollection ^ ExecuteUrlHeaders { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,7 +196,12 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.DefaultHttpHandler.IsReusable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReusable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -205,6 +228,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnExecuteUrlPreconditionFailure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnExecuteUrlPreconditionFailure() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.OnExecuteUrlPreconditionFailure" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnExecuteUrlPreconditionFailure ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnExecuteUrlPreconditionFailure();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +269,8 @@
       <MemberSignature Language="C#" Value="public virtual string OverrideExecuteUrlPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string OverrideExecuteUrlPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.OverrideExecuteUrlPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OverrideExecuteUrlPath () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ OverrideExecuteUrlPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -282,7 +309,12 @@
       <MemberSignature Language="C#" Value="public virtual void ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DefaultHttpHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessRequest (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

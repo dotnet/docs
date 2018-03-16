@@ -1,7 +1,9 @@
-<Type Name="UICuesEventHandler" FullName="System.Windows.Forms.UICuesEventHandler">
+﻿<Type Name="UICuesEventHandler" FullName="System.Windows.Forms.UICuesEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UICuesEventHandler(object sender, UICuesEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UICuesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UICuesEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub UICuesEventHandler(sender As Object, e As UICuesEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void UICuesEventHandler(System::Object ^ sender, UICuesEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

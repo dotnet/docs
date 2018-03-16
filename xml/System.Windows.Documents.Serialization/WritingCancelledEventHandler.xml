@@ -1,7 +1,9 @@
-<Type Name="WritingCancelledEventHandler" FullName="System.Windows.Documents.Serialization.WritingCancelledEventHandler">
+﻿<Type Name="WritingCancelledEventHandler" FullName="System.Windows.Documents.Serialization.WritingCancelledEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WritingCancelledEventHandler(object sender, WritingCancelledEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WritingCancelledEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingCancelledEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WritingCancelledEventHandler(sender As Object, e As WritingCancelledEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WritingCancelledEventHandler(System::Object ^ sender, WritingCancelledEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

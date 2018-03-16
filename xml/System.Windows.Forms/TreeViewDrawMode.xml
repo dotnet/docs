@@ -1,7 +1,9 @@
-<Type Name="TreeViewDrawMode" FullName="System.Windows.Forms.TreeViewDrawMode">
+﻿<Type Name="TreeViewDrawMode" FullName="System.Windows.Forms.TreeViewDrawMode">
   <TypeSignature Language="C#" Value="public enum TreeViewDrawMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewDrawMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewDrawMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TreeViewDrawMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TreeViewDrawMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.TreeView" /> is drawn by the operating system.</summary>
       </Docs>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="OwnerDrawAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode OwnerDrawAll = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll" />
+      <MemberSignature Language="VB.NET" Value="OwnerDrawAll" />
+      <MemberSignature Language="C++ CLI" Value="OwnerDrawAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>All elements of a <see cref="T:System.Windows.Forms.TreeView" /> node are drawn manually, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="OwnerDrawText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode OwnerDrawText = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText" />
+      <MemberSignature Language="VB.NET" Value="OwnerDrawText" />
+      <MemberSignature Language="C++ CLI" Value="OwnerDrawText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The label portion of the <see cref="T:System.Windows.Forms.TreeView" /> nodes are drawn manually. Other node elements are drawn by the operating system, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
       </Docs>

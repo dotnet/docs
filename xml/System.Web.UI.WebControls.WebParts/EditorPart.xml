@@ -1,7 +1,9 @@
-<Type Name="EditorPart" FullName="System.Web.UI.WebControls.WebParts.EditorPart">
+﻿<Type Name="EditorPart" FullName="System.Web.UI.WebControls.WebParts.EditorPart">
   <TypeSignature Language="C#" Value="public abstract class EditorPart : System.Web.UI.WebControls.WebParts.Part" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EditorPart extends System.Web.UI.WebControls.WebParts.Part" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EditorPart&#xA;Inherits Part" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EditorPart abstract : System::Web::UI::WebControls::WebParts::Part" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +93,8 @@
       <MemberSignature Language="C#" Value="protected EditorPart ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EditorPart();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +110,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ApplyChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ApplyChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ApplyChanges () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool ApplyChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +161,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Display { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Display" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.Display" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Display As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Display { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,7 +173,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,6 +200,8 @@
       <MemberSignature Language="C#" Value="public string DisplayTitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayTitle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.DisplayTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayTitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,7 +212,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,6 +238,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.IDictionary GetDesignModeState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IDictionary GetDesignModeState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.GetDesignModeState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,9 +265,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +299,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDesignModeState (System.Collections.IDictionary data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDesignModeState(class System.Collections.IDictionary data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.SetDesignModeState(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDesignModeState (data As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDesignModeState(System::Collections::IDictionary ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +322,8 @@
       <MemberSignature Language="C#" Value="public abstract void SyncChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SyncChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPart.SyncChanges" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SyncChanges ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SyncChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -356,6 +374,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartManager" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartManager As WebPartManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +401,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPart WebPartToEdit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart WebPartToEdit" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.WebPartToEdit" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartToEdit As WebPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPart ^ WebPartToEdit { System::Web::UI::WebControls::WebParts::WebPart ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +433,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.EditorZoneBase Zone { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.EditorZoneBase Zone" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPart.Zone" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Zone As EditorZoneBase" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::EditorZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::EditorZoneBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

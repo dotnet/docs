@@ -1,7 +1,9 @@
-<Type Name="ITask" FullName="Microsoft.Build.Framework.ITask">
+﻿<Type Name="ITask" FullName="Microsoft.Build.Framework.ITask">
   <TypeSignature Language="C#" Value="public interface ITask" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITask" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITask" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IBuildEngine BuildEngine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IBuildEngine BuildEngine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.BuildEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEngine As IBuildEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IBuildEngine ^ BuildEngine { Microsoft::Build::Framework::IBuildEngine ^ get(); void set(Microsoft::Build::Framework::IBuildEngine ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITask.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost HostObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskHost HostObject" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITask.HostObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostObject As ITaskHost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskHost ^ HostObject { Microsoft::Build::Framework::ITaskHost ^ get(); void set(Microsoft::Build::Framework::ITaskHost ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

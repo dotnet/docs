@@ -1,7 +1,9 @@
-<Type Name="DiscoveryClientDocumentCollection" FullName="System.Web.Services.Discovery.DiscoveryClientDocumentCollection">
+﻿<Type Name="DiscoveryClientDocumentCollection" FullName="System.Web.Services.Discovery.DiscoveryClientDocumentCollection">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryClientDocumentCollection : System.Collections.DictionaryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientDocumentCollection extends System.Collections.DictionaryBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientDocumentCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientDocumentCollection&#xA;Inherits DictionaryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientDocumentCollection sealed : System::Collections::DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryClientDocumentCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClientDocumentCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public void Add (string url, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string url, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (url As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ url, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (url As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -131,6 +139,8 @@
       <MemberSignature Language="C#" Value="public object this[string url] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(url As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ url); void set(System::String ^ url, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -167,6 +177,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -198,6 +210,8 @@
       <MemberSignature Language="C#" Value="public void Remove (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (url As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -234,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

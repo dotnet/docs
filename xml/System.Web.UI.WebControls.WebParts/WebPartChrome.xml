@@ -1,7 +1,9 @@
-<Type Name="WebPartChrome" FullName="System.Web.UI.WebControls.WebParts.WebPartChrome">
+﻿<Type Name="WebPartChrome" FullName="System.Web.UI.WebControls.WebParts.WebPartChrome">
   <TypeSignature Language="C#" Value="public class WebPartChrome" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartChrome extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartChrome" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPartChrome" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartChrome" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,8 @@
       <MemberSignature Language="C#" Value="public WebPartChrome (System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, System.Web.UI.WebControls.WebParts.WebPartManager manager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, class System.Web.UI.WebControls.WebParts.WebPartManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.#ctor(System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Web.UI.WebControls.WebParts.WebPartManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (zone As WebPartZoneBase, manager As WebPartManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartChrome(System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ zone, System::Web::UI::WebControls::WebParts::WebPartManager ^ manager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +111,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Style CreateWebPartChromeStyle (System.Web.UI.WebControls.WebParts.WebPart webPart, System.Web.UI.WebControls.WebParts.PartChromeType chromeType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Style CreateWebPartChromeStyle(class System.Web.UI.WebControls.WebParts.WebPart webPart, valuetype System.Web.UI.WebControls.WebParts.PartChromeType chromeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.CreateWebPartChromeStyle(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.PartChromeType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Style ^ CreateWebPartChromeStyle(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::PartChromeType chromeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +166,8 @@
       <MemberSignature Language="C#" Value="protected bool DragDropEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DragDropEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartChrome.DragDropEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DragDropEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool DragDropEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +193,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.WebParts.WebPartVerbCollection FilterWebPartVerbs (System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs, System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection FilterWebPartVerbs(class System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs, class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.FilterWebPartVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbCollection,System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ FilterWebPartVerbs(System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ verbs, System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +232,7 @@
       <MemberSignature Language="C#" Value="protected string GetWebPartChromeClientID (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetWebPartChromeClientID(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartChromeClientID(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetWebPartChromeClientID(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -258,6 +267,7 @@
       <MemberSignature Language="C#" Value="protected string GetWebPartTitleClientID (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetWebPartTitleClientID(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartTitleClientID(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetWebPartTitleClientID(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,6 +302,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.WebParts.WebPartVerbCollection GetWebPartVerbs (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection GetWebPartVerbs(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.GetWebPartVerbs(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ GetWebPartVerbs(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +348,8 @@
       <MemberSignature Language="C#" Value="public virtual void PerformPreRender ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PerformPreRender() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.PerformPreRender" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PerformPreRender ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PerformPreRender();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -355,6 +368,7 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderPartContents (System.Web.UI.HtmlTextWriter writer, System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderPartContents(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.RenderPartContents(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderPartContents(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -400,6 +414,7 @@
       <MemberSignature Language="C#" Value="public virtual void RenderWebPart (System.Web.UI.HtmlTextWriter writer, System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RenderWebPart(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartChrome.RenderWebPart(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderWebPart(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +447,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartManager WebPartManager" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartChrome.WebPartManager" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartManager As WebPartManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -470,6 +487,8 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartChrome.Zone" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Zone As WebPartZoneBase" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

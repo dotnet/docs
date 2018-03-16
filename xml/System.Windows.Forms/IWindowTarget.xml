@@ -1,7 +1,9 @@
-<Type Name="IWindowTarget" FullName="System.Windows.Forms.IWindowTarget">
+﻿<Type Name="IWindowTarget" FullName="System.Windows.Forms.IWindowTarget">
   <TypeSignature Language="C#" Value="public interface IWindowTarget" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindowTarget" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IWindowTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWindowTarget" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWindowTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public void OnHandleChange (IntPtr newHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnHandleChange(native int newHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IWindowTarget.OnHandleChange(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnHandleChange (newHandle As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnHandleChange(IntPtr newHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public void OnMessage (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMessage(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IWindowTarget.OnMessage(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnMessage (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnMessage(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

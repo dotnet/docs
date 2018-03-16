@@ -1,7 +1,9 @@
-<Type Name="DependencyProperty" FullName="System.Windows.DependencyProperty">
+﻿<Type Name="DependencyProperty" FullName="System.Windows.DependencyProperty">
   <TypeSignature Language="C#" Value="public sealed class DependencyProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DependencyProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependencyProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,10 +76,21 @@
     <altmember cref="T:System.Windows.DependencyPropertyHelper" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddOwner">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds another type as an owner of a dependency property that has already been registered to a type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOwner">
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty AddOwner (Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyProperty AddOwner(class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.AddOwner(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOwner (ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyProperty ^ AddOwner(Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -115,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty AddOwner (Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyProperty AddOwner(class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.AddOwner(System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddOwner (ownerType As Type, typeMetadata As PropertyMetadata) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyProperty ^ AddOwner(Type ^ ownerType, System::Windows::PropertyMetadata ^ typeMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -154,6 +169,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata DefaultMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PropertyMetadata DefaultMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.DefaultMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultMetadata As PropertyMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PropertyMetadata ^ DefaultMetadata { System::Windows::PropertyMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -197,6 +214,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -219,10 +238,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the metadata associated with this dependency property as it exists for a particular type. This can be the type where the dependency property was first registered, one to which it was added subsequently, or a type where the dependency property was obtained through inheritance but the metadata was specifically overridden.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMetadata">
       <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (Type forType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Type forType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (forType As Type) As PropertyMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::PropertyMetadata ^ GetMetadata(Type ^ forType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -260,6 +290,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Windows.DependencyObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::PropertyMetadata ^ GetMetadata(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -299,6 +330,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata GetMetadata (System.Windows.DependencyObjectType dependencyObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.PropertyMetadata GetMetadata(class System.Windows.DependencyObjectType dependencyObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.GetMetadata(System.Windows.DependencyObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::PropertyMetadata ^ GetMetadata(System::Windows::DependencyObjectType ^ dependencyObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -336,6 +368,8 @@
       <MemberSignature Language="C#" Value="public int GlobalIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GlobalIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.GlobalIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GlobalIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GlobalIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -363,6 +397,8 @@
       <MemberSignature Language="C#" Value="public bool IsValidType (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsValidType(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.IsValidType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidType (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidType(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -401,6 +437,8 @@
       <MemberSignature Language="C#" Value="public bool IsValidValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsValidValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.IsValidValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidValue (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidValue(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -443,6 +481,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -476,10 +516,21 @@
         <altmember cref="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OverrideMetadata">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Supplies alternate metadata for this dependency property when it is present on instances of a specified type, versus the metadata that was provided in the initial dependency property registration.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OverrideMetadata">
       <MemberSignature Language="C#" Value="public void OverrideMetadata (Type forType, System.Windows.PropertyMetadata typeMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OverrideMetadata(class System.Type forType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OverrideMetadata (forType As Type, typeMetadata As PropertyMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OverrideMetadata(Type ^ forType, System::Windows::PropertyMetadata ^ typeMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -516,6 +567,8 @@
       <MemberSignature Language="C#" Value="public void OverrideMetadata (Type forType, System.Windows.PropertyMetadata typeMetadata, System.Windows.DependencyPropertyKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OverrideMetadata(class System.Type forType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.DependencyPropertyKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata,System.Windows.DependencyPropertyKey)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OverrideMetadata (forType As Type, typeMetadata As PropertyMetadata, key As DependencyPropertyKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OverrideMetadata(Type ^ forType, System::Windows::PropertyMetadata ^ typeMetadata, System::Windows::DependencyPropertyKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -554,6 +607,8 @@
       <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.OwnerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OwnerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -589,6 +644,8 @@
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -622,6 +679,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -657,10 +716,21 @@
         <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Register">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a dependency property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Register">
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (name As String, propertyType As Type, ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ Register(System::String ^ name, Type ^ propertyType, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -702,6 +772,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (name As String, propertyType As Type, ownerType As Type, typeMetadata As PropertyMetadata) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ Register(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ typeMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -739,6 +811,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty Register (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty Register(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.Register(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ Register(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ typeMetadata, System::Windows::ValidateValueCallback ^ validateValueCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -782,10 +855,21 @@
         <altmember cref="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterAttached">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers an attached property with the property system.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterAttached">
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttached (name As String, propertyType As Type, ownerType As Type) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -831,6 +915,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttached (name As String, propertyType As Type, ownerType As Type, defaultMetadata As PropertyMetadata) As DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ defaultMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -873,6 +959,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyProperty RegisterAttached (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyProperty RegisterAttached(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttached(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyProperty ^ RegisterAttached(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ defaultMetadata, System::Windows::ValidateValueCallback ^ validateValueCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -921,10 +1008,21 @@
         <altmember cref="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterAttachedReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a read-only attached property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterAttachedReadOnly">
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterAttachedReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterAttachedReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterAttachedReadOnly (name As String, propertyType As Type, ownerType As Type, defaultMetadata As PropertyMetadata) As DependencyPropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyPropertyKey ^ RegisterAttachedReadOnly(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ defaultMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -967,6 +1065,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterAttachedReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata defaultMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterAttachedReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata defaultMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterAttachedReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyPropertyKey ^ RegisterAttachedReadOnly(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ defaultMetadata, System::Windows::ValidateValueCallback ^ validateValueCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1007,10 +1106,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a dependency property as a read-only dependency property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterReadOnly">
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterReadOnly (name As String, propertyType As Type, ownerType As Type, typeMetadata As PropertyMetadata) As DependencyPropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyPropertyKey ^ RegisterReadOnly(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ typeMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1058,6 +1168,7 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyPropertyKey RegisterReadOnly (string name, Type propertyType, Type ownerType, System.Windows.PropertyMetadata typeMetadata, System.Windows.ValidateValueCallback validateValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyPropertyKey RegisterReadOnly(string name, class System.Type propertyType, class System.Type ownerType, class System.Windows.PropertyMetadata typeMetadata, class System.Windows.ValidateValueCallback validateValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.RegisterReadOnly(System.String,System.Type,System.Type,System.Windows.PropertyMetadata,System.Windows.ValidateValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyPropertyKey ^ RegisterReadOnly(System::String ^ name, Type ^ propertyType, Type ^ ownerType, System::Windows::PropertyMetadata ^ typeMetadata, System::Windows::ValidateValueCallback ^ validateValueCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1101,6 +1212,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1128,6 +1241,8 @@
       <MemberSignature Language="C#" Value="public static readonly object UnsetValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly object UnsetValue" />
       <MemberSignature Language="DocId" Value="F:System.Windows.DependencyProperty.UnsetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnsetValue As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ UnsetValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1166,6 +1281,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.ValidateValueCallback ValidateValueCallback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ValidateValueCallback ValidateValueCallback" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DependencyProperty.ValidateValueCallback" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidateValueCallback As ValidateValueCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ValidateValueCallback ^ ValidateValueCallback { System::Windows::ValidateValueCallback ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -1190,68 +1307,5 @@
         <altmember cref="T:System.Windows.ValidateValueCallback" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="OverrideMetadata">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Supplies alternate metadata for this dependency property when it is present on instances of a specified type, versus the metadata that was provided in the initial dependency property registration.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Register">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a dependency property.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddOwner">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds another type as an owner of a dependency property that has already been registered to a type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMetadata">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the metadata associated with this dependency property as it exists for a particular type. This can be the type where the dependency property was first registered, one to which it was added subsequently, or a type where the dependency property was obtained through inheritance but the metadata was specifically overridden.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterAttachedReadOnly">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a read-only attached property.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterAttached">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers an attached property with the property system.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterReadOnly">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a dependency property as a read-only dependency property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

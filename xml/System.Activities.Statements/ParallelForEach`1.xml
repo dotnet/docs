@@ -1,7 +1,9 @@
-<Type Name="ParallelForEach&lt;T&gt;" FullName="System.Activities.Statements.ParallelForEach&lt;T&gt;">
+﻿<Type Name="ParallelForEach&lt;T&gt;" FullName="System.Activities.Statements.ParallelForEach&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ParallelForEach&lt;T&gt; : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParallelForEach`1&lt;T&gt; extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.ParallelForEach`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParallelForEach(Of T)&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ParallelForEach sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ParallelForEach ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.ParallelForEach`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParallelForEach();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.ActivityAction&lt;T&gt; Body { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityAction`1&lt;!T&gt; Body" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.ParallelForEach`1.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As ActivityAction(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::ActivityAction&lt;T&gt; ^ Body { System::Activities::ActivityAction&lt;T&gt; ^ get(); void set(System::Activities::ActivityAction&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +104,8 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.ParallelForEach`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;bool&gt; CompletionCondition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;bool&gt; CompletionCondition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.ParallelForEach`1.CompletionCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompletionCondition As Activity(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;bool&gt; ^ CompletionCondition { System::Activities::Activity&lt;bool&gt; ^ get(); void set(System::Activities::Activity&lt;bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +159,8 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.ParallelForEach`1.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.ParallelForEach`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -193,6 +207,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt; Values { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.ParallelForEach`1.Values" />
+      <MemberSignature Language="VB.NET" Value="Public Property Values As InArgument(Of IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::Collections::Generic::IEnumerable&lt;T&gt; ^&gt; ^ Values { System::Activities::InArgument&lt;System::Collections::Generic::IEnumerable&lt;T&gt; ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::Collections::Generic::IEnumerable&lt;T&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IXmlLineInfo" FullName="System.Xml.IXmlLineInfo">
+﻿<Type Name="IXmlLineInfo" FullName="System.Xml.IXmlLineInfo">
   <TypeSignature Language="C#" Value="public interface IXmlLineInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlLineInfo" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlLineInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlLineInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public bool HasLineInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasLineInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlLineInfo.HasLineInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasLineInfo () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasLineInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xml.IXmlLineInfo.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public int LinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.IXmlLineInfo.LinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinePosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

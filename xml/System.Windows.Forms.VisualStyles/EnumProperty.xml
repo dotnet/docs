@@ -1,7 +1,9 @@
-<Type Name="EnumProperty" FullName="System.Windows.Forms.VisualStyles.EnumProperty">
+﻿<Type Name="EnumProperty" FullName="System.Windows.Forms.VisualStyles.EnumProperty">
   <TypeSignature Language="C#" Value="public enum EnumProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EnumProperty extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EnumProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EnumProperty" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EnumProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="BackgroundType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty BackgroundType = int32(4001)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.BackgroundType" />
+      <MemberSignature Language="VB.NET" Value="BackgroundType" />
+      <MemberSignature Language="C++ CLI" Value="BackgroundType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4001</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.BackgroundType" /> values that specifies how the element's background is drawn.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="BorderType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty BorderType = int32(4002)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.BorderType" />
+      <MemberSignature Language="VB.NET" Value="BorderType" />
+      <MemberSignature Language="C++ CLI" Value="BorderType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4002</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.BorderType" /> values that specifies the border type for elements with a filled-border background.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="ContentAlignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty ContentAlignment = int32(4006)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.ContentAlignment" />
+      <MemberSignature Language="VB.NET" Value="ContentAlignment" />
+      <MemberSignature Language="C++ CLI" Value="ContentAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4006</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ContentAlignment" /> values that specifies how text is aligned in a window caption.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="FillType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty FillType = int32(4003)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.FillType" />
+      <MemberSignature Language="VB.NET" Value="FillType" />
+      <MemberSignature Language="C++ CLI" Value="FillType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4003</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.FillType" /> values that specifies the fill type for elements with a filled-border background.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="GlyphFontSizingType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty GlyphFontSizingType = int32(4014)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.GlyphFontSizingType" />
+      <MemberSignature Language="VB.NET" Value="GlyphFontSizingType" />
+      <MemberSignature Language="C++ CLI" Value="GlyphFontSizingType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4014</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.GlyphFontSizingType" /> values that specifies when the visual style selects a different glyph font size.</summary>
       </Docs>
@@ -105,6 +122,8 @@
       <MemberSignature Language="C#" Value="GlyphType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty GlyphType = int32(4012)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.GlyphType" />
+      <MemberSignature Language="VB.NET" Value="GlyphType" />
+      <MemberSignature Language="C++ CLI" Value="GlyphType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4012</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.GlyphType" /> values that specifies the type of glyph for elements with a bitmap background.</summary>
       </Docs>
@@ -121,6 +141,8 @@
       <MemberSignature Language="C#" Value="HorizontalAlignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty HorizontalAlignment = int32(4005)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.HorizontalAlignment" />
+      <MemberSignature Language="VB.NET" Value="HorizontalAlignment" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4005</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.HorizontalAlign" /> values that specifies the horizontal alignment for elements with a fixed size.</summary>
       </Docs>
@@ -137,6 +160,8 @@
       <MemberSignature Language="C#" Value="IconEffect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty IconEffect = int32(4009)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.IconEffect" />
+      <MemberSignature Language="VB.NET" Value="IconEffect" />
+      <MemberSignature Language="C++ CLI" Value="IconEffect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4009</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.IconEffect" /> values that specifies the effect that the visual style will apply to an icon.</summary>
       </Docs>
@@ -153,6 +179,8 @@
       <MemberSignature Language="C#" Value="ImageLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty ImageLayout = int32(4011)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.ImageLayout" />
+      <MemberSignature Language="VB.NET" Value="ImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="ImageLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4011</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ImageOrientation" /> values that specifies how multiple images are arranged in a single image file.</summary>
       </Docs>
@@ -169,6 +198,8 @@
       <MemberSignature Language="C#" Value="ImageSelectType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty ImageSelectType = int32(4013)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.ImageSelectType" />
+      <MemberSignature Language="VB.NET" Value="ImageSelectType" />
+      <MemberSignature Language="C++ CLI" Value="ImageSelectType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4013</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.ImageSelectType" /> values that specifies when the visual style selects a different multiple-image file to draw an element.</summary>
       </Docs>
@@ -185,6 +217,8 @@
       <MemberSignature Language="C#" Value="OffsetType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty OffsetType = int32(4008)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.OffsetType" />
+      <MemberSignature Language="VB.NET" Value="OffsetType" />
+      <MemberSignature Language="C++ CLI" Value="OffsetType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4008</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.OffsetType" /> values that specifies where an offset is applied to a window element.</summary>
       </Docs>
@@ -201,6 +236,8 @@
       <MemberSignature Language="C#" Value="SizingType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty SizingType = int32(4004)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.SizingType" />
+      <MemberSignature Language="VB.NET" Value="SizingType" />
+      <MemberSignature Language="C++ CLI" Value="SizingType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +246,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4004</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.SizingType" /> values that specifies how elements with a bitmap background will adjust to fill the bounds.</summary>
       </Docs>
@@ -217,6 +255,8 @@
       <MemberSignature Language="C#" Value="TextShadowType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty TextShadowType = int32(4010)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.TextShadowType" />
+      <MemberSignature Language="VB.NET" Value="TextShadowType" />
+      <MemberSignature Language="C++ CLI" Value="TextShadowType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +265,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4010</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.TextShadowType" /> values that specifies the type of shadow to add to text.</summary>
       </Docs>
@@ -233,6 +274,8 @@
       <MemberSignature Language="C#" Value="TrueSizeScalingType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty TrueSizeScalingType = int32(4015)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.TrueSizeScalingType" />
+      <MemberSignature Language="VB.NET" Value="TrueSizeScalingType" />
+      <MemberSignature Language="C++ CLI" Value="TrueSizeScalingType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,6 +284,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4015</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.TrueSizeScalingType" /> values that specifies when the visual style rescales an element with a fixed size.</summary>
       </Docs>
@@ -249,6 +293,8 @@
       <MemberSignature Language="C#" Value="VerticalAlignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EnumProperty VerticalAlignment = int32(4007)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EnumProperty.VerticalAlignment" />
+      <MemberSignature Language="VB.NET" Value="VerticalAlignment" />
+      <MemberSignature Language="C++ CLI" Value="VerticalAlignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.EnumProperty</ReturnType>
       </ReturnValue>
+      <MemberValue>4007</MemberValue>
       <Docs>
         <summary>One of the <see cref="T:System.Windows.Forms.VisualStyles.VerticalAlignment" /> values that specifies the vertical alignment for elements with a fixed size.</summary>
       </Docs>

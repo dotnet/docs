@@ -1,7 +1,9 @@
-<Type Name="NamedImage" FullName="System.Windows.Forms.DataVisualization.Charting.NamedImage">
+﻿<Type Name="NamedImage" FullName="System.Windows.Forms.DataVisualization.Charting.NamedImage">
   <TypeSignature Language="C#" Value="public class NamedImage : System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamedImage extends System.Windows.Forms.DataVisualization.Charting.ChartNamedElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.NamedImage" />
+  <TypeSignature Language="VB.NET" Value="Public Class NamedImage&#xA;Inherits ChartNamedElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedImage : System::Windows::Forms::DataVisualization::Charting::ChartNamedElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.NamedImage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NamedImage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedImage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -50,6 +63,7 @@
       <MemberSignature Language="C#" Value="public NamedImage (string name, System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor(System.String,System.Drawing.Image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedImage(System::String ^ name, System::Drawing::Image ^ image);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -70,6 +84,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.NamedImage.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -92,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Image Image { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.NamedImage.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Property Image As Image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ Image { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -124,6 +142,8 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.NamedImage.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -156,14 +176,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.NamedImage" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

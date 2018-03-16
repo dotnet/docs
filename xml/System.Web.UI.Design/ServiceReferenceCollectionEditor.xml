@@ -1,7 +1,9 @@
-<Type Name="ServiceReferenceCollectionEditor" FullName="System.Web.UI.Design.ServiceReferenceCollectionEditor">
+﻿<Type Name="ServiceReferenceCollectionEditor" FullName="System.Web.UI.Design.ServiceReferenceCollectionEditor">
   <TypeSignature Language="C#" Value="public class ServiceReferenceCollectionEditor : System.Web.UI.Design.CollectionEditorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceReferenceCollectionEditor extends System.Web.UI.Design.CollectionEditorBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ServiceReferenceCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceReferenceCollectionEditor&#xA;Inherits CollectionEditorBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceReferenceCollectionEditor : System::Web::UI::Design::CollectionEditorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,7 @@
       <MemberSignature Language="C#" Value="public ServiceReferenceCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ServiceReferenceCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceReferenceCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ServiceReferenceCollectionEditor.CanSelectMultipleInstances" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] CreateNewItemTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] CreateNewItemTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ServiceReferenceCollectionEditor.CreateNewItemTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewItemTypes () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ CreateNewItemTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions.Design</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="IServiceContainer" FullName="System.ComponentModel.Design.IServiceContainer">
+﻿<Type Name="IServiceContainer" FullName="System.ComponentModel.Design.IServiceContainer">
   <TypeSignature Language="C#" Value="public interface IServiceContainer : IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceContainer implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IServiceContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IServiceContainer&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IServiceContainer : IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,10 +54,22 @@
     <altmember cref="T:System.IServiceProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified service to the service container.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddService">
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, class System.ComponentModel.Design.ServiceCreatorCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, callback As ServiceCreatorCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::ComponentModel::Design::ServiceCreatorCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, object serviceInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, object serviceInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, serviceInstance As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::Object ^ serviceInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -142,6 +158,8 @@
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, class System.ComponentModel.Design.ServiceCreatorCallback callback, bool promote) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, callback As ServiceCreatorCallback, promote As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::ComponentModel::Design::ServiceCreatorCallback ^ callback, bool promote);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +195,8 @@
       <MemberSignature Language="C#" Value="public void AddService (Type serviceType, object serviceInstance, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(class System.Type serviceType, object serviceInstance, bool promote) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.AddService(System.Type,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (serviceType As Type, serviceInstance As Object, promote As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(Type ^ serviceType, System::Object ^ serviceInstance, bool promote);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,10 +228,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveService">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified service type from the service container.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveService">
       <MemberSignature Language="C#" Value="public void RemoveService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveService (serviceType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +285,8 @@
       <MemberSignature Language="C#" Value="public void RemoveService (Type serviceType, bool promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveService(class System.Type serviceType, bool promote) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IServiceContainer.RemoveService(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveService (serviceType As Type, promote As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveService(Type ^ serviceType, bool promote);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,25 +327,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveService">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified service type from the service container.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddService">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified service to the service container.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

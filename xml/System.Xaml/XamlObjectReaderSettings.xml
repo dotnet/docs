@@ -1,7 +1,9 @@
-<Type Name="XamlObjectReaderSettings" FullName="System.Xaml.XamlObjectReaderSettings">
+﻿<Type Name="XamlObjectReaderSettings" FullName="System.Xaml.XamlObjectReaderSettings">
   <TypeSignature Language="C#" Value="public class XamlObjectReaderSettings : System.Xaml.XamlReaderSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectReaderSettings extends System.Xaml.XamlReaderSettings" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectReaderSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlObjectReaderSettings&#xA;Inherits XamlReaderSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectReaderSettings : System::Xaml::XamlReaderSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public XamlObjectReaderSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectReaderSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectReaderSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public bool RequireExplicitContentVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireExplicitContentVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectReaderSettings.RequireExplicitContentVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireExplicitContentVisibility As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireExplicitContentVisibility { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

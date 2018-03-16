@@ -1,7 +1,9 @@
-<Type Name="CodeGenerationHelper" FullName="Mono.CodeGeneration.CodeGenerationHelper">
+﻿<Type Name="CodeGenerationHelper" FullName="Mono.CodeGeneration.CodeGenerationHelper">
   <TypeSignature Language="C#" Value="public class CodeGenerationHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeGenerationHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeGenerationHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeGenerationHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeGenerationHelper" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CodeGenerationHelper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeGenerationHelper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, Mono.CodeGeneration.CodeMethod method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateMethodCall(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression target, class Mono.CodeGeneration.CodeMethod method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GenerateMethodCall(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeMethod,Mono.CodeGeneration.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GenerateMethodCall (gen As ILGenerator, target As CodeExpression, method As CodeMethod, ParamArray parameters As CodeExpression())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GenerateMethodCall(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ target, Mono::CodeGeneration::CodeMethod ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public static void GenerateMethodCall (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression target, System.Reflection.MethodBase method, params Mono.CodeGeneration.CodeExpression[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateMethodCall(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression target, class System.Reflection.MethodBase method, class Mono.CodeGeneration.CodeExpression[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GenerateMethodCall(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression,System.Reflection.MethodBase,Mono.CodeGeneration.CodeExpression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GenerateMethodCall (gen As ILGenerator, target As CodeExpression, method As MethodBase, ParamArray parameters As CodeExpression())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GenerateMethodCall(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ target, System::Reflection::MethodBase ^ method, ... cli::array &lt;Mono::CodeGeneration::CodeExpression ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static void GeneratePrimitiveValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GeneratePrimitiveValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GeneratePrimitiveValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GeneratePrimitiveValue ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GeneratePrimitiveValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +133,8 @@
       <MemberSignature Language="C#" Value="public static void GenerateSafeConversion (System.Reflection.Emit.ILGenerator gen, Type targetType, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GenerateSafeConversion(class System.Reflection.Emit.ILGenerator gen, class System.Type targetType, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GenerateSafeConversion(System.Reflection.Emit.ILGenerator,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GenerateSafeConversion (gen As ILGenerator, targetType As Type, sourceType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GenerateSafeConversion(System::Reflection::Emit::ILGenerator ^ gen, Type ^ targetType, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static Exception GetMethodException (System.Reflection.MethodBase method, string msg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Exception GetMethodException(class System.Reflection.MethodBase method, string msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.GetMethodException(System.Reflection.MethodBase,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMethodException (method As MethodBase, msg As String) As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ GetMethodException(System::Reflection::MethodBase ^ method, System::String ^ msg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -174,6 +188,8 @@
       <MemberSignature Language="C#" Value="public static bool IsNumber (Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNumber(class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.IsNumber(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumber (t As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumber(Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static void LoadFromPtr (System.Reflection.Emit.ILGenerator ig, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadFromPtr(class System.Reflection.Emit.ILGenerator ig, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.LoadFromPtr(System.Reflection.Emit.ILGenerator,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LoadFromPtr (ig As ILGenerator, t As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LoadFromPtr(System::Reflection::Emit::ILGenerator ^ ig, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,6 +239,8 @@
       <MemberSignature Language="C#" Value="public static void SaveToPtr (System.Reflection.Emit.ILGenerator ig, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SaveToPtr(class System.Reflection.Emit.ILGenerator ig, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeGenerationHelper.SaveToPtr(System.Reflection.Emit.ILGenerator,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SaveToPtr (ig As ILGenerator, t As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SaveToPtr(System::Reflection::Emit::ILGenerator ^ ig, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

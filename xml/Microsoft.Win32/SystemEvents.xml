@@ -1,7 +1,9 @@
-<Type Name="SystemEvents" FullName="Microsoft.Win32.SystemEvents">
+﻿<Type Name="SystemEvents" FullName="Microsoft.Win32.SystemEvents">
   <TypeSignature Language="C#" Value="public sealed class SystemEvents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemEvents extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SystemEvents" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemEvents" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemEvents sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr CreateTimer (int interval);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int CreateTimer(int32 interval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SystemEvents.CreateTimer(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateTimer (interval As Integer) As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CreateTimer(int interval);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +115,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler DisplaySettingsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplaySettingsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.DisplaySettingsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event DisplaySettingsChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ DisplaySettingsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +160,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler DisplaySettingsChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplaySettingsChanging" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.DisplaySettingsChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event DisplaySettingsChanging As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ DisplaySettingsChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,6 +196,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler EventsThreadShutdown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EventsThreadShutdown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.EventsThreadShutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event EventsThreadShutdown As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ EventsThreadShutdown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -222,6 +232,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler InstalledFontsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler InstalledFontsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.InstalledFontsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event InstalledFontsChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ InstalledFontsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +267,8 @@
       <MemberSignature Language="C#" Value="public static void InvokeOnEventsThread (Delegate method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeOnEventsThread(class System.Delegate method) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SystemEvents.InvokeOnEventsThread(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeOnEventsThread (method As Delegate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeOnEventsThread(Delegate ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +306,8 @@
       <MemberSignature Language="C#" Value="public static void KillTimer (IntPtr timerId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void KillTimer(native int timerId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SystemEvents.KillTimer(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub KillTimer (timerId As IntPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void KillTimer(IntPtr timerId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +331,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler LowMemory;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LowMemory" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.LowMemory" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event LowMemory As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ LowMemory;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -364,6 +382,8 @@
       <MemberSignature Language="C#" Value="public static event EventHandler PaletteChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaletteChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.PaletteChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event PaletteChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ PaletteChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -409,6 +429,8 @@
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.PowerModeChangedEventHandler PowerModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.PowerModeChangedEventHandler PowerModeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.PowerModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event PowerModeChanged As PowerModeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::PowerModeChangedEventHandler ^ PowerModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -448,6 +470,8 @@
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.SessionEndedEventHandler SessionEnded;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.SessionEndedEventHandler SessionEnded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.SessionEnded" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SessionEnded As SessionEndedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::SessionEndedEventHandler ^ SessionEnded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -487,6 +511,8 @@
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.SessionEndingEventHandler SessionEnding;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.SessionEndingEventHandler SessionEnding" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.SessionEnding" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SessionEnding As SessionEndingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::SessionEndingEventHandler ^ SessionEnding;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -600,6 +626,8 @@ private void Form1_Closing(
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.SessionSwitchEventHandler SessionSwitch;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.SessionSwitchEventHandler SessionSwitch" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.SessionSwitch" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SessionSwitch As SessionSwitchEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::SessionSwitchEventHandler ^ SessionSwitch;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -637,6 +665,8 @@ private void Form1_Closing(
       <MemberSignature Language="C#" Value="public static event EventHandler TimeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TimeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.TimeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event TimeChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ TimeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -674,6 +704,8 @@ private void Form1_Closing(
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.TimerElapsedEventHandler TimerElapsed;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.TimerElapsedEventHandler TimerElapsed" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.TimerElapsed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event TimerElapsed As TimerElapsedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::TimerElapsedEventHandler ^ TimerElapsed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -707,6 +739,8 @@ private void Form1_Closing(
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.UserPreferenceChangedEventHandler UserPreferenceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.UserPreferenceChangedEventHandler UserPreferenceChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.UserPreferenceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event UserPreferenceChanged As UserPreferenceChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::UserPreferenceChangedEventHandler ^ UserPreferenceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -746,6 +780,8 @@ private void Form1_Closing(
       <MemberSignature Language="C#" Value="public static event Microsoft.Win32.UserPreferenceChangingEventHandler UserPreferenceChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class Microsoft.Win32.UserPreferenceChangingEventHandler UserPreferenceChanging" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Win32.SystemEvents.UserPreferenceChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event UserPreferenceChanging As UserPreferenceChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event Microsoft::Win32::UserPreferenceChangingEventHandler ^ UserPreferenceChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

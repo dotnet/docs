@@ -1,7 +1,9 @@
-<Type Name="CoreCompatibilityPreferences" FullName="System.Windows.CoreCompatibilityPreferences">
+﻿<Type Name="CoreCompatibilityPreferences" FullName="System.Windows.CoreCompatibilityPreferences">
   <TypeSignature Language="C#" Value="public static class CoreCompatibilityPreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CoreCompatibilityPreferences extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.CoreCompatibilityPreferences" />
+  <TypeSignature Language="VB.NET" Value="Public Class CoreCompatibilityPreferences" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CoreCompatibilityPreferences abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; EnableMultiMonitorDisplayClipping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Nullable`1&lt;bool&gt; EnableMultiMonitorDisplayClipping" />
       <MemberSignature Language="DocId" Value="P:System.Windows.CoreCompatibilityPreferences.EnableMultiMonitorDisplayClipping" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EnableMultiMonitorDisplayClipping As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Nullable&lt;bool&gt; EnableMultiMonitorDisplayClipping { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public static bool IsAltKeyRequiredInAccessKeyDefaultScope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsAltKeyRequiredInAccessKeyDefaultScope" />
       <MemberSignature Language="DocId" Value="P:System.Windows.CoreCompatibilityPreferences.IsAltKeyRequiredInAccessKeyDefaultScope" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property IsAltKeyRequiredInAccessKeyDefaultScope As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsAltKeyRequiredInAccessKeyDefaultScope { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

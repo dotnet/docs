@@ -1,7 +1,9 @@
-<Type Name="InkCanvasStrokeCollectedEventHandler" FullName="System.Windows.Controls.InkCanvasStrokeCollectedEventHandler">
+﻿<Type Name="InkCanvasStrokeCollectedEventHandler" FullName="System.Windows.Controls.InkCanvasStrokeCollectedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void InkCanvasStrokeCollectedEventHandler(object sender, InkCanvasStrokeCollectedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasStrokeCollectedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokeCollectedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub InkCanvasStrokeCollectedEventHandler(sender As Object, e As InkCanvasStrokeCollectedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void InkCanvasStrokeCollectedEventHandler(System::Object ^ sender, InkCanvasStrokeCollectedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="GroupScope" FullName="System.DirectoryServices.AccountManagement.GroupScope">
+﻿<Type Name="GroupScope" FullName="System.DirectoryServices.AccountManagement.GroupScope">
   <TypeSignature Language="C#" Value="public enum GroupScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GroupScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GroupScope" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="Global" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Global = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Global" />
+      <MemberSignature Language="VB.NET" Value="Global" />
+      <MemberSignature Language="C++ CLI" Value="Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -29,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The group's scope is global. This group type is supported on AD DS. When a global group is specified with an AD LDS directory, a <see cref="F:System.DirectoryServices.AccountManagement.GroupScope.Local" /> group is created instead.</summary>
       </Docs>
@@ -37,6 +42,8 @@
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Local = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -46,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The scope of the group is local. This group type is supported on AD DS and AD LDS.</summary>
       </Docs>
@@ -54,6 +62,8 @@
       <MemberSignature Language="C#" Value="Universal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Universal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Universal" />
+      <MemberSignature Language="VB.NET" Value="Universal" />
+      <MemberSignature Language="C++ CLI" Value="Universal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The scope of the group is universal. This group type is supported on AD DS and AD LDS.</summary>
       </Docs>

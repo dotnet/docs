@@ -1,7 +1,9 @@
-<Type Name="IFieldInfo" FullName="System.Runtime.Serialization.Formatters.IFieldInfo">
+﻿<Type Name="IFieldInfo" FullName="System.Runtime.Serialization.Formatters.IFieldInfo">
   <TypeSignature Language="C#" Value="public interface IFieldInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.IFieldInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldInfo" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFieldInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public string[] FieldNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] FieldNames" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldNames As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ FieldNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public Type[] FieldTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] FieldTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldTypes As Type()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ FieldTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

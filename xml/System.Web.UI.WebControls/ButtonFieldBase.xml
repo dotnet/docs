@@ -1,7 +1,9 @@
-<Type Name="ButtonFieldBase" FullName="System.Web.UI.WebControls.ButtonFieldBase">
+﻿<Type Name="ButtonFieldBase" FullName="System.Web.UI.WebControls.ButtonFieldBase">
   <TypeSignature Language="C#" Value="public abstract class ButtonFieldBase : System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ButtonFieldBase extends System.Web.UI.WebControls.DataControlField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonFieldBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ButtonFieldBase&#xA;Inherits DataControlField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ButtonFieldBase abstract : System::Web::UI::WebControls::DataControlField" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected ButtonFieldBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonFieldBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ButtonFieldBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType ButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType ButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ButtonType As ButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType ButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +132,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +179,8 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ButtonFieldBase.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataControlField ^ newField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +214,8 @@
       <MemberSignature Language="C#" Value="public override bool ShowHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ShowHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ShowHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +263,8 @@
       <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ButtonFieldBase.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

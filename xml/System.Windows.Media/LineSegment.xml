@@ -1,7 +1,9 @@
-<Type Name="LineSegment" FullName="System.Windows.Media.LineSegment">
+﻿<Type Name="LineSegment" FullName="System.Windows.Media.LineSegment">
   <TypeSignature Language="C#" Value="public sealed class LineSegment : System.Windows.Media.PathSegment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineSegment extends System.Windows.Media.PathSegment" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LineSegment" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LineSegment&#xA;Inherits PathSegment" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LineSegment sealed : System::Windows::Media::PathSegment" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     <altmember cref="T:System.Windows.Media.PathFigure" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineSegment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LineSegment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LineSegment();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +59,7 @@
       <MemberSignature Language="C#" Value="public LineSegment (System.Windows.Point point, bool isStroked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point point, bool isStroked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.#ctor(System.Windows.Point,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LineSegment(System::Windows::Point point, bool isStroked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.LineSegment Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LineSegment Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As LineSegment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineSegment ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +113,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.LineSegment CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LineSegment CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As LineSegment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LineSegment ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +143,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LineSegment.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +164,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point Point { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Point" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LineSegment.Point" />
+      <MemberSignature Language="VB.NET" Value="Public Property Point As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point Point { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +199,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PointProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PointProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LineSegment.PointProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PointProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PointProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,14 +214,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.LineSegment" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="NonceCache" FullName="System.ServiceModel.Security.NonceCache">
+﻿<Type Name="NonceCache" FullName="System.ServiceModel.Security.NonceCache">
   <TypeSignature Language="C#" Value="public abstract class NonceCache" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NonceCache extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.NonceCache" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class NonceCache" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NonceCache abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="protected NonceCache ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.NonceCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NonceCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public int CacheSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CacheSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.NonceCache.CacheSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CacheSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan CachingTimeSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CachingTimeSpan" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.NonceCache.CachingTimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Property CachingTimeSpan As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CachingTimeSpan { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public abstract bool CheckNonce (byte[] nonce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CheckNonce(unsigned int8[] nonce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.NonceCache.CheckNonce(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CheckNonce (nonce As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CheckNonce(cli::array &lt;System::Byte&gt; ^ nonce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public abstract bool TryAddNonce (byte[] nonce);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryAddNonce(unsigned int8[] nonce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.NonceCache.TryAddNonce(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function TryAddNonce (nonce As Byte()) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool TryAddNonce(cli::array &lt;System::Byte&gt; ^ nonce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

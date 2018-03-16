@@ -1,7 +1,9 @@
-<Type Name="MenuItemStyleCollection" FullName="System.Web.UI.WebControls.MenuItemStyleCollection">
+﻿<Type Name="MenuItemStyleCollection" FullName="System.Web.UI.WebControls.MenuItemStyleCollection">
   <TypeSignature Language="C#" Value="public sealed class MenuItemStyleCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuItemStyleCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuItemStyleCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MenuItemStyleCollection&#xA;Inherits StateManagedCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItemStyleCollection sealed : System::Web::UI::StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.MenuItemStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.MenuItemStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.Add(System.Web.UI.WebControls.MenuItemStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (style As MenuItemStyle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::MenuItemStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +95,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.MenuItemStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.MenuItemStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.Contains(System.Web.UI.WebControls.MenuItemStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (style As MenuItemStyle) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::MenuItemStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +135,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.MenuItemStyle[] styleArray, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.MenuItemStyle[] styleArray, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.CopyTo(System.Web.UI.WebControls.MenuItemStyle[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (styleArray As MenuItemStyle(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::MenuItemStyle ^&gt; ^ styleArray, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +175,8 @@
       <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.CreateKnownType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +199,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.GetKnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.MenuItemStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.MenuItemStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.IndexOf(System.Web.UI.WebControls.MenuItemStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (style As MenuItemStyle) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::MenuItemStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -248,6 +262,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.MenuItemStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.MenuItemStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.Insert(System.Int32,System.Web.UI.WebControls.MenuItemStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, style As MenuItemStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::MenuItemStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +305,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.MenuItemStyle this[int i] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.MenuItemStyle Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MenuItemStyleCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As MenuItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::MenuItemStyle ^ default[int] { System::Web::UI::WebControls::MenuItemStyle ^ get(int i); void set(int i, System::Web::UI::WebControls::MenuItemStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -349,6 +369,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.MenuItemStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.MenuItemStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.Remove(System.Web.UI.WebControls.MenuItemStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (style As MenuItemStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::MenuItemStyle ^ style);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -388,6 +410,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -435,6 +459,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MenuItemStyleCollection.SetDirtyObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

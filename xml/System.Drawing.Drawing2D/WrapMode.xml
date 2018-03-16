@@ -1,7 +1,9 @@
-<Type Name="WrapMode" FullName="System.Drawing.Drawing2D.WrapMode">
+﻿<Type Name="WrapMode" FullName="System.Drawing.Drawing2D.WrapMode">
   <TypeSignature Language="C#" Value="public enum WrapMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WrapMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.WrapMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WrapMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class WrapMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="Clamp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WrapMode Clamp = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WrapMode.Clamp" />
+      <MemberSignature Language="VB.NET" Value="Clamp" />
+      <MemberSignature Language="C++ CLI" Value="Clamp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The texture or gradient is not tiled.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="Tile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WrapMode Tile = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WrapMode.Tile" />
+      <MemberSignature Language="VB.NET" Value="Tile" />
+      <MemberSignature Language="C++ CLI" Value="Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Tiles the gradient or texture.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="TileFlipX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WrapMode TileFlipX = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WrapMode.TileFlipX" />
+      <MemberSignature Language="VB.NET" Value="TileFlipX" />
+      <MemberSignature Language="C++ CLI" Value="TileFlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Reverses the texture or gradient horizontally and then tiles the texture or gradient.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="TileFlipXY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WrapMode TileFlipXY = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WrapMode.TileFlipXY" />
+      <MemberSignature Language="VB.NET" Value="TileFlipXY" />
+      <MemberSignature Language="C++ CLI" Value="TileFlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Reverses the texture or gradient horizontally and vertically and then tiles the texture or gradient.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="TileFlipY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WrapMode TileFlipY = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WrapMode.TileFlipY" />
+      <MemberSignature Language="VB.NET" Value="TileFlipY" />
+      <MemberSignature Language="C++ CLI" Value="TileFlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.WrapMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Reverses the texture or gradient vertically and then tiles the texture or gradient.</summary>
       </Docs>

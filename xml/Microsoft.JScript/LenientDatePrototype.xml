@@ -1,7 +1,9 @@
-<Type Name="LenientDatePrototype" FullName="Microsoft.JScript.LenientDatePrototype">
+﻿<Type Name="LenientDatePrototype" FullName="Microsoft.JScript.LenientDatePrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientDatePrototype : Microsoft.JScript.DatePrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientDatePrototype extends Microsoft.JScript.DatePrototype" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientDatePrototype" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientDatePrototype&#xA;Inherits DatePrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientDatePrototype sealed : Microsoft::JScript::DatePrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="public object getDate;" />
       <MemberSignature Language="ILAsm" Value=".field public object getDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getDate" />
+      <MemberSignature Language="VB.NET" Value="Public getDate As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getDate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public object getDay;" />
       <MemberSignature Language="ILAsm" Value=".field public object getDay" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getDay" />
+      <MemberSignature Language="VB.NET" Value="Public getDay As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getDay;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public object getFullYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object getFullYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getFullYear" />
+      <MemberSignature Language="VB.NET" Value="Public getFullYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getFullYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public object getHours;" />
       <MemberSignature Language="ILAsm" Value=".field public object getHours" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getHours" />
+      <MemberSignature Language="VB.NET" Value="Public getHours As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getHours;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -122,6 +134,8 @@
       <MemberSignature Language="C#" Value="public object getMilliseconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object getMilliseconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public getMilliseconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getMilliseconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="public object getMinutes;" />
       <MemberSignature Language="ILAsm" Value=".field public object getMinutes" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public getMinutes As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getMinutes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -162,6 +178,8 @@
       <MemberSignature Language="C#" Value="public object getMonth;" />
       <MemberSignature Language="ILAsm" Value=".field public object getMonth" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getMonth" />
+      <MemberSignature Language="VB.NET" Value="Public getMonth As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getMonth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -182,6 +200,8 @@
       <MemberSignature Language="C#" Value="public object getSeconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object getSeconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public getSeconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getSeconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -202,6 +222,8 @@
       <MemberSignature Language="C#" Value="public object getTime;" />
       <MemberSignature Language="ILAsm" Value=".field public object getTime" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getTime" />
+      <MemberSignature Language="VB.NET" Value="Public getTime As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -222,6 +244,8 @@
       <MemberSignature Language="C#" Value="public object getTimezoneOffset;" />
       <MemberSignature Language="ILAsm" Value=".field public object getTimezoneOffset" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getTimezoneOffset" />
+      <MemberSignature Language="VB.NET" Value="Public getTimezoneOffset As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getTimezoneOffset;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -242,6 +266,8 @@
       <MemberSignature Language="C#" Value="public object getUTCDate;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCDate" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCDate As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCDate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -262,6 +288,8 @@
       <MemberSignature Language="C#" Value="public object getUTCDay;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCDay" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCDay" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCDay As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCDay;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -282,6 +310,8 @@
       <MemberSignature Language="C#" Value="public object getUTCFullYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCFullYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCFullYear" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCFullYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCFullYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -302,6 +332,8 @@
       <MemberSignature Language="C#" Value="public object getUTCHours;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCHours" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCHours" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCHours As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCHours;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -322,6 +354,8 @@
       <MemberSignature Language="C#" Value="public object getUTCMilliseconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCMilliseconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCMilliseconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCMilliseconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -342,6 +376,8 @@
       <MemberSignature Language="C#" Value="public object getUTCMinutes;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCMinutes" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCMinutes As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCMinutes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -362,6 +398,8 @@
       <MemberSignature Language="C#" Value="public object getUTCMonth;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCMonth" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCMonth" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCMonth As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCMonth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -382,6 +420,8 @@
       <MemberSignature Language="C#" Value="public object getUTCSeconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object getUTCSeconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getUTCSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public getUTCSeconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getUTCSeconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -402,6 +442,8 @@
       <MemberSignature Language="C#" Value="public object getVarDate;" />
       <MemberSignature Language="ILAsm" Value=".field public object getVarDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getVarDate" />
+      <MemberSignature Language="VB.NET" Value="Public getVarDate As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getVarDate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -422,6 +464,8 @@
       <MemberSignature Language="C#" Value="public object getYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object getYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.getYear" />
+      <MemberSignature Language="VB.NET" Value="Public getYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ getYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -447,6 +491,8 @@
       <MemberSignature Language="C#" Value="public object setDate;" />
       <MemberSignature Language="ILAsm" Value=".field public object setDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setDate" />
+      <MemberSignature Language="VB.NET" Value="Public setDate As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setDate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -467,6 +513,8 @@
       <MemberSignature Language="C#" Value="public object setFullYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object setFullYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setFullYear" />
+      <MemberSignature Language="VB.NET" Value="Public setFullYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setFullYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -487,6 +535,8 @@
       <MemberSignature Language="C#" Value="public object setHours;" />
       <MemberSignature Language="ILAsm" Value=".field public object setHours" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setHours" />
+      <MemberSignature Language="VB.NET" Value="Public setHours As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setHours;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -507,6 +557,8 @@
       <MemberSignature Language="C#" Value="public object setMilliseconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object setMilliseconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public setMilliseconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setMilliseconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -527,6 +579,8 @@
       <MemberSignature Language="C#" Value="public object setMinutes;" />
       <MemberSignature Language="ILAsm" Value=".field public object setMinutes" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public setMinutes As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setMinutes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -547,6 +601,8 @@
       <MemberSignature Language="C#" Value="public object setMonth;" />
       <MemberSignature Language="ILAsm" Value=".field public object setMonth" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setMonth" />
+      <MemberSignature Language="VB.NET" Value="Public setMonth As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setMonth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -567,6 +623,8 @@
       <MemberSignature Language="C#" Value="public object setSeconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object setSeconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public setSeconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setSeconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -587,6 +645,8 @@
       <MemberSignature Language="C#" Value="public object setTime;" />
       <MemberSignature Language="ILAsm" Value=".field public object setTime" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setTime" />
+      <MemberSignature Language="VB.NET" Value="Public setTime As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setTime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -607,6 +667,8 @@
       <MemberSignature Language="C#" Value="public object setUTCDate;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCDate" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCDate" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCDate As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCDate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -627,6 +689,8 @@
       <MemberSignature Language="C#" Value="public object setUTCFullYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCFullYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCFullYear" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCFullYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCFullYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -647,6 +711,8 @@
       <MemberSignature Language="C#" Value="public object setUTCHours;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCHours" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCHours" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCHours As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCHours;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -667,6 +733,8 @@
       <MemberSignature Language="C#" Value="public object setUTCMilliseconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCMilliseconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCMilliseconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCMilliseconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -687,6 +755,8 @@
       <MemberSignature Language="C#" Value="public object setUTCMinutes;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCMinutes" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCMinutes" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCMinutes As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCMinutes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -707,6 +777,8 @@
       <MemberSignature Language="C#" Value="public object setUTCMonth;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCMonth" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCMonth" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCMonth As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCMonth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -727,6 +799,8 @@
       <MemberSignature Language="C#" Value="public object setUTCSeconds;" />
       <MemberSignature Language="ILAsm" Value=".field public object setUTCSeconds" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setUTCSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public setUTCSeconds As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setUTCSeconds;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -747,6 +821,8 @@
       <MemberSignature Language="C#" Value="public object setYear;" />
       <MemberSignature Language="ILAsm" Value=".field public object setYear" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.setYear" />
+      <MemberSignature Language="VB.NET" Value="Public setYear As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ setYear;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -772,6 +848,8 @@
       <MemberSignature Language="C#" Value="public object toDateString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toDateString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toDateString" />
+      <MemberSignature Language="VB.NET" Value="Public toDateString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toDateString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -792,6 +870,8 @@
       <MemberSignature Language="C#" Value="public object toGMTString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toGMTString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toGMTString" />
+      <MemberSignature Language="VB.NET" Value="Public toGMTString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toGMTString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -817,6 +897,8 @@
       <MemberSignature Language="C#" Value="public object toLocaleDateString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLocaleDateString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toLocaleDateString" />
+      <MemberSignature Language="VB.NET" Value="Public toLocaleDateString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleDateString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -837,6 +919,8 @@
       <MemberSignature Language="C#" Value="public object toLocaleString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLocaleString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toLocaleString" />
+      <MemberSignature Language="VB.NET" Value="Public toLocaleString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -857,6 +941,8 @@
       <MemberSignature Language="C#" Value="public object toLocaleTimeString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toLocaleTimeString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toLocaleTimeString" />
+      <MemberSignature Language="VB.NET" Value="Public toLocaleTimeString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toLocaleTimeString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -877,6 +963,8 @@
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toString" />
+      <MemberSignature Language="VB.NET" Value="Public toString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -897,6 +985,8 @@
       <MemberSignature Language="C#" Value="public object toTimeString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toTimeString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toTimeString" />
+      <MemberSignature Language="VB.NET" Value="Public toTimeString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toTimeString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -917,6 +1007,8 @@
       <MemberSignature Language="C#" Value="public object toUTCString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toUTCString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.toUTCString" />
+      <MemberSignature Language="VB.NET" Value="Public toUTCString As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toUTCString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -937,6 +1029,8 @@
       <MemberSignature Language="C#" Value="public object valueOf;" />
       <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientDatePrototype.valueOf" />
+      <MemberSignature Language="VB.NET" Value="Public valueOf As Object " />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ valueOf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

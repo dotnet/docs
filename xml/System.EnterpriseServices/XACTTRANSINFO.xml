@@ -1,7 +1,9 @@
-<Type Name="XACTTRANSINFO" FullName="System.EnterpriseServices.XACTTRANSINFO">
+﻿<Type Name="XACTTRANSINFO" FullName="System.EnterpriseServices.XACTTRANSINFO">
   <TypeSignature Language="C#" Value="public struct XACTTRANSINFO" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XACTTRANSINFO extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.XACTTRANSINFO" />
+  <TypeSignature Language="VB.NET" Value="Public Structure XACTTRANSINFO" />
+  <TypeSignature Language="C++ CLI" Value="public value class XACTTRANSINFO" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public int grfRMSupported;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfRMSupported" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupported" />
+      <MemberSignature Language="VB.NET" Value="Public grfRMSupported As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfRMSupported;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int grfRMSupportedRetaining;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfRMSupportedRetaining" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfRMSupportedRetaining" />
+      <MemberSignature Language="VB.NET" Value="Public grfRMSupportedRetaining As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfRMSupportedRetaining;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public int grfTCSupported;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfTCSupported" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupported" />
+      <MemberSignature Language="VB.NET" Value="Public grfTCSupported As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfTCSupported;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public int grfTCSupportedRetaining;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfTCSupportedRetaining" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.grfTCSupportedRetaining" />
+      <MemberSignature Language="VB.NET" Value="Public grfTCSupportedRetaining As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int grfTCSupportedRetaining;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -99,6 +109,8 @@
       <MemberSignature Language="C#" Value="public int isoFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 isoFlags" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoFlags" />
+      <MemberSignature Language="VB.NET" Value="Public isoFlags As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int isoFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -116,6 +128,8 @@
       <MemberSignature Language="C#" Value="public int isoLevel;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 isoLevel" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.isoLevel" />
+      <MemberSignature Language="VB.NET" Value="Public isoLevel As Integer " />
+      <MemberSignature Language="C++ CLI" Value="public: int isoLevel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.BOID uow;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.EnterpriseServices.BOID uow" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.XACTTRANSINFO.uow" />
+      <MemberSignature Language="VB.NET" Value="Public uow As BOID " />
+      <MemberSignature Language="C++ CLI" Value="public: System::EnterpriseServices::BOID uow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

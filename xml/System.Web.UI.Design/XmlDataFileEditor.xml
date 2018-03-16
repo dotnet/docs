@@ -1,7 +1,9 @@
-<Type Name="XmlDataFileEditor" FullName="System.Web.UI.Design.XmlDataFileEditor">
+﻿<Type Name="XmlDataFileEditor" FullName="System.Web.UI.Design.XmlDataFileEditor">
   <TypeSignature Language="C#" Value="public class XmlDataFileEditor : System.Web.UI.Design.UrlEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataFileEditor extends System.Web.UI.Design.UrlEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.XmlDataFileEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDataFileEditor&#xA;Inherits UrlEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDataFileEditor : System::Web::UI::Design::UrlEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public XmlDataFileEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XmlDataFileEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDataFileEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected override string Caption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.XmlDataFileEditor.Caption" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="protected override string Filter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.XmlDataFileEditor.Filter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Filter As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

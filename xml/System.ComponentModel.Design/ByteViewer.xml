@@ -1,7 +1,9 @@
-<Type Name="ByteViewer" FullName="System.ComponentModel.Design.ByteViewer">
+﻿<Type Name="ByteViewer" FullName="System.ComponentModel.Design.ByteViewer">
   <TypeSignature Language="C#" Value="public class ByteViewer : System.Windows.Forms.TableLayoutPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ByteViewer extends System.Windows.Forms.TableLayoutPanel" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ByteViewer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ByteViewer&#xA;Inherits TableLayoutPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ByteViewer : System::Windows::Forms::TableLayoutPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public ByteViewer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ByteViewer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public virtual byte[] GetBytes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetBytes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.GetBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetBytes () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DisplayMode GetDisplayMode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ComponentModel.Design.DisplayMode GetDisplayMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.GetDisplayMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDisplayMode () As DisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::DisplayMode GetDisplayMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -122,6 +132,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -143,6 +155,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPaint (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaint (e As PaintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaint(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -165,6 +179,8 @@
       <MemberSignature Language="C#" Value="public virtual void SaveToFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveToFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SaveToFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SaveToFile (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SaveToFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -194,6 +210,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ScrollChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ScrollChanged(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.ScrollChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ScrollChanged (source As Object, e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ScrollChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -217,6 +235,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetBytes (byte[] bytes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBytes(unsigned int8[] bytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetBytes(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetBytes (bytes As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetBytes(cli::array &lt;System::Byte&gt; ^ bytes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -239,6 +259,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetDisplayMode (System.ComponentModel.Design.DisplayMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDisplayMode(valuetype System.ComponentModel.Design.DisplayMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetDisplayMode(System.ComponentModel.Design.DisplayMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDisplayMode (mode As DisplayMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDisplayMode(System::ComponentModel::Design::DisplayMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -262,6 +284,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetFile (path As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -298,6 +322,8 @@
       <MemberSignature Language="C#" Value="public virtual void SetStartLine (int line);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStartLine(int32 line) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ByteViewer.SetStartLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetStartLine (line As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetStartLine(int line);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

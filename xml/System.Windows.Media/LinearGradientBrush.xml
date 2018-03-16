@@ -1,7 +1,9 @@
-<Type Name="LinearGradientBrush" FullName="System.Windows.Media.LinearGradientBrush">
+﻿<Type Name="LinearGradientBrush" FullName="System.Windows.Media.LinearGradientBrush">
   <TypeSignature Language="C#" Value="public sealed class LinearGradientBrush : System.Windows.Media.GradientBrush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinearGradientBrush extends System.Windows.Media.GradientBrush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.LinearGradientBrush" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinearGradientBrush&#xA;Inherits GradientBrush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinearGradientBrush sealed : System::Windows::Media::GradientBrush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +65,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +89,7 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Windows::Media::GradientStopCollection ^ gradientStopCollection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +116,7 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection, double angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection, float64 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection,System.Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Windows::Media::GradientStopCollection ^ gradientStopCollection, double angle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +144,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.Color startColor, System.Windows.Media.Color endColor, double angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color startColor, valuetype System.Windows.Media.Color endColor, float64 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startColor As Color, endColor As Color, angle As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Windows::Media::Color startColor, System::Windows::Media::Color endColor, double angle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -167,6 +175,7 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.GradientStopCollection gradientStopCollection, System.Windows.Point startPoint, System.Windows.Point endPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.GradientStopCollection gradientStopCollection, valuetype System.Windows.Point startPoint, valuetype System.Windows.Point endPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection,System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Windows::Media::GradientStopCollection ^ gradientStopCollection, System::Windows::Point startPoint, System::Windows::Point endPoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +205,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Windows.Media.Color startColor, System.Windows.Media.Color endColor, System.Windows.Point startPoint, System.Windows.Point endPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color startColor, valuetype System.Windows.Media.Color endColor, valuetype System.Windows.Point startPoint, valuetype System.Windows.Point endPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Point,System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startColor As Color, endColor As Color, startPoint As Point, endPoint As Point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Windows::Media::Color startColor, System::Windows::Media::Color endColor, System::Windows::Point startPoint, System::Windows::Point endPoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +238,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public System.Windows.Media.LinearGradientBrush Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LinearGradientBrush Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As LinearGradientBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LinearGradientBrush ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +268,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public System.Windows.Media.LinearGradientBrush CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.LinearGradientBrush CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As LinearGradientBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::LinearGradientBrush ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +298,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.LinearGradientBrush.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +319,8 @@ A diagonal linear gradient with highlighted gradient stops
       <MemberSignature Language="C#" Value="public System.Windows.Point EndPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point EndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LinearGradientBrush.EndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndPoint As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point EndPoint { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -346,6 +365,8 @@ A diagonal linear gradient
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EndPointProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EndPointProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LinearGradientBrush.EndPointProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EndPointProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EndPointProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -363,6 +384,8 @@ A diagonal linear gradient
       <MemberSignature Language="C#" Value="public System.Windows.Point StartPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point StartPoint" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.LinearGradientBrush.StartPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartPoint As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point StartPoint { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -407,6 +430,8 @@ A diagonal linear gradient
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StartPointProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StartPointProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.LinearGradientBrush.StartPointProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StartPointProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StartPointProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

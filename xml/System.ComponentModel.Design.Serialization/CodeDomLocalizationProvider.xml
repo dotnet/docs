@@ -1,7 +1,9 @@
-<Type Name="CodeDomLocalizationProvider" FullName="System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider">
+﻿<Type Name="CodeDomLocalizationProvider" FullName="System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider">
   <TypeSignature Language="C#" Value="public sealed class CodeDomLocalizationProvider : IDisposable, System.ComponentModel.Design.Serialization.IDesignerSerializationProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CodeDomLocalizationProvider extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationProvider, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeDomLocalizationProvider&#xA;Implements IDesignerSerializationProvider, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDomLocalizationProvider sealed : IDisposable, System::ComponentModel::Design::Serialization::IDesignerSerializationProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +34,21 @@
     <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDomLocalizationProvider (IServiceProvider provider, System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider, valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider, model As CodeDomLocalizationModel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomLocalizationProvider(IServiceProvider ^ provider, System::ComponentModel::Design::Serialization::CodeDomLocalizationModel model);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +79,8 @@
       <MemberSignature Language="C#" Value="public CodeDomLocalizationProvider (IServiceProvider provider, System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model, System.Globalization.CultureInfo[] supportedCultures);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider, valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel model, class System.Globalization.CultureInfo[] supportedCultures) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.#ctor(System.IServiceProvider,System.ComponentModel.Design.Serialization.CodeDomLocalizationModel,System.Globalization.CultureInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IServiceProvider, model As CodeDomLocalizationModel, supportedCultures As CultureInfo())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDomLocalizationProvider(IServiceProvider ^ provider, System::ComponentModel::Design::Serialization::CodeDomLocalizationModel model, cli::array &lt;System::Globalization::CultureInfo ^&gt; ^ supportedCultures);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,7 +115,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -118,6 +138,8 @@
       <MemberSignature Language="C#" Value="object IDesignerSerializationProvider.GetSerializer (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object currentSerializer, Type objectType, Type serializerType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object currentSerializer, class System.Type objectType, class System.Type serializerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.System#ComponentModel#Design#Serialization#IDesignerSerializationProvider#GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetSerializer (manager As IDesignerSerializationManager, currentSerializer As Object, objectType As Type, serializerType As Type) As Object Implements IDesignerSerializationProvider.GetSerializer" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationProvider.GetSerializer(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ currentSerializer, Type ^ objectType, Type ^ serializerType) = System::ComponentModel::Design::Serialization::IDesignerSerializationProvider::GetSerializer;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -149,14 +171,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

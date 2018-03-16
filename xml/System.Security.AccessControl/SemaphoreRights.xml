@@ -1,7 +1,9 @@
-<Type Name="SemaphoreRights" FullName="System.Security.AccessControl.SemaphoreRights">
+﻿<Type Name="SemaphoreRights" FullName="System.Security.AccessControl.SemaphoreRights">
   <TypeSignature Language="C#" Value="public enum SemaphoreRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SemaphoreRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SemaphoreRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SemaphoreRights" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SemaphoreRights" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="ChangePermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights ChangePermissions = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.ChangePermissions" />
+      <MemberSignature Language="VB.NET" Value="ChangePermissions" />
+      <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -71,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The right to change the security and audit rules associated with a named semaphore.</summary>
       </Docs>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights Delete = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -93,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The right to delete a named semaphore.</summary>
       </Docs>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="FullControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights FullControl = int32(2031619)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.FullControl" />
+      <MemberSignature Language="VB.NET" Value="FullControl" />
+      <MemberSignature Language="C++ CLI" Value="FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -115,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2031619</MemberValue>
       <Docs>
         <summary>The right to exert full control over a named semaphore, and to modify its access rules and audit rules.</summary>
       </Docs>
@@ -123,6 +134,8 @@
       <MemberSignature Language="C#" Value="Modify" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights Modify = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.Modify" />
+      <MemberSignature Language="VB.NET" Value="Modify" />
+      <MemberSignature Language="C++ CLI" Value="Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -137,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The right to release a named semaphore.</summary>
       </Docs>
@@ -145,6 +159,8 @@
       <MemberSignature Language="C#" Value="ReadPermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights ReadPermissions = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.ReadPermissions" />
+      <MemberSignature Language="VB.NET" Value="ReadPermissions" />
+      <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -159,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to open and copy the access rules and audit rules for a named semaphore.</summary>
       </Docs>
@@ -167,6 +184,8 @@
       <MemberSignature Language="C#" Value="Synchronize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights Synchronize = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Synchronize" />
+      <MemberSignature Language="C++ CLI" Value="Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -181,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The right to wait on a named semaphore.</summary>
       </Docs>
@@ -189,6 +209,8 @@
       <MemberSignature Language="C#" Value="TakeOwnership" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SemaphoreRights TakeOwnership = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SemaphoreRights.TakeOwnership" />
+      <MemberSignature Language="VB.NET" Value="TakeOwnership" />
+      <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -203,6 +225,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreRights</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The right to change the owner of a named semaphore.</summary>
       </Docs>

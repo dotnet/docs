@@ -1,7 +1,9 @@
-<Type Name="GlobalCatalogCollection" FullName="System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection">
+﻿<Type Name="GlobalCatalogCollection" FullName="System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection">
   <TypeSignature Language="C#" Value="public class GlobalCatalogCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalCatalogCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class GlobalCatalogCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GlobalCatalogCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.GlobalCatalog globalCatalog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.GlobalCatalog globalCatalog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.Contains(System.DirectoryServices.ActiveDirectory.GlobalCatalog)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ globalCatalog);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.GlobalCatalog[] globalCatalogs, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.GlobalCatalog[] globalCatalogs, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.CopyTo(System.DirectoryServices.ActiveDirectory.GlobalCatalog[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (globalCatalogs As GlobalCatalog(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::GlobalCatalog ^&gt; ^ globalCatalogs, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +82,7 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.GlobalCatalog globalCatalog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.GlobalCatalog globalCatalog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.IndexOf(System.DirectoryServices.ActiveDirectory.GlobalCatalog)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ globalCatalog);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.GlobalCatalog this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.GlobalCatalog Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.GlobalCatalogCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As GlobalCatalog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ default[int] { System::DirectoryServices::ActiveDirectory::GlobalCatalog ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

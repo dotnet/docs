@@ -1,7 +1,9 @@
-<Type Name="IDataServiceQueryProvider" FullName="System.Data.Services.Providers.IDataServiceQueryProvider">
+﻿<Type Name="IDataServiceQueryProvider" FullName="System.Data.Services.Providers.IDataServiceQueryProvider">
   <TypeSignature Language="C#" Value="public interface IDataServiceQueryProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceQueryProvider" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServiceQueryProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceQueryProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceQueryProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +18,8 @@
       <MemberSignature Language="C#" Value="public object CurrentDataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CurrentDataSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.IDataServiceQueryProvider.CurrentDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentDataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CurrentDataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public object GetOpenPropertyValue (object target, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOpenPropertyValue(object target, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetOpenPropertyValue(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOpenPropertyValue (target As Object, propertyName As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOpenPropertyValue(System::Object ^ target, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetOpenPropertyValues (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetOpenPropertyValues(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetOpenPropertyValues(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOpenPropertyValues (target As Object) As IEnumerable(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetOpenPropertyValues(System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -80,6 +88,7 @@
       <MemberSignature Language="C#" Value="public object GetPropertyValue (object target, System.Data.Services.Providers.ResourceProperty resourceProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPropertyValue(object target, class System.Data.Services.Providers.ResourceProperty resourceProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetPropertyValue(System.Object,System.Data.Services.Providers.ResourceProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(System::Object ^ target, System::Data::Services::Providers::ResourceProperty ^ resourceProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -104,6 +113,7 @@
       <MemberSignature Language="C#" Value="public System.Linq.IQueryable GetQueryRootForResourceSet (System.Data.Services.Providers.ResourceSet resourceSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryRootForResourceSet(class System.Data.Services.Providers.ResourceSet resourceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetQueryRootForResourceSet(System.Data.Services.Providers.ResourceSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::IQueryable ^ GetQueryRootForResourceSet(System::Data::Services::Providers::ResourceSet ^ resourceSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -126,6 +136,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType GetResourceType (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Services.Providers.ResourceType GetResourceType(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.GetResourceType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResourceType (target As Object) As ResourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Providers::ResourceType ^ GetResourceType(System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -155,6 +167,7 @@
       <MemberSignature Language="C#" Value="public object InvokeServiceOperation (System.Data.Services.Providers.ServiceOperation serviceOperation, object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeServiceOperation(class System.Data.Services.Providers.ServiceOperation serviceOperation, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceQueryProvider.InvokeServiceOperation(System.Data.Services.Providers.ServiceOperation,System.Object[])" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeServiceOperation(System::Data::Services::Providers::ServiceOperation ^ serviceOperation, cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -179,6 +192,8 @@
       <MemberSignature Language="C#" Value="public bool IsNullPropagationRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullPropagationRequired" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.IDataServiceQueryProvider.IsNullPropagationRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullPropagationRequired As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullPropagationRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

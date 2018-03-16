@@ -1,7 +1,9 @@
-<Type Name="OleDbPermission" FullName="System.Data.OleDb.OleDbPermission">
+﻿<Type Name="OleDbPermission" FullName="System.Data.OleDb.OleDbPermission">
   <TypeSignature Language="C#" Value="public sealed class OleDbPermission : System.Data.Common.DBDataPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OleDbPermission extends System.Data.Common.DBDataPermission" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbPermission&#xA;Inherits DBDataPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbPermission sealed : System::Data::Common::DBDataPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OleDbPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -54,6 +67,8 @@
       <MemberSignature Language="C#" Value="public OleDbPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +91,8 @@
       <MemberSignature Language="C#" Value="public OleDbPermission (System.Security.Permissions.PermissionState state, bool allowBlankPassword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state, bool allowBlankPassword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -135,6 +154,8 @@
       <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbPermission.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public Property Provider As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -164,14 +185,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ParallelQuery" FullName="System.Linq.ParallelQuery">
+﻿<Type Name="ParallelQuery" FullName="System.Linq.ParallelQuery">
   <TypeSignature Language="C#" Value="public class ParallelQuery : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParallelQuery extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParallelQuery&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParallelQuery : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,7 +36,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.ParallelQuery.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

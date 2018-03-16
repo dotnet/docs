@@ -1,7 +1,9 @@
-<Type Name="InlineUIContainer" FullName="System.Windows.Documents.InlineUIContainer">
+﻿<Type Name="InlineUIContainer" FullName="System.Windows.Documents.InlineUIContainer">
   <TypeSignature Language="C#" Value="public class InlineUIContainer : System.Windows.Documents.Inline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InlineUIContainer extends System.Windows.Documents.Inline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.InlineUIContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class InlineUIContainer&#xA;Inherits Inline" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InlineUIContainer : System::Windows::Documents::Inline" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     <altmember cref="T:System.Windows.Documents.BlockUIContainer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InlineUIContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineUIContainer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public InlineUIContainer (System.Windows.UIElement childUIElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement childUIElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (childUIElement As UIElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineUIContainer(System::Windows::UIElement ^ childUIElement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public InlineUIContainer (System.Windows.UIElement childUIElement, System.Windows.Documents.TextPointer insertionPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement childUIElement, class System.Windows.Documents.TextPointer insertionPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement,System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (childUIElement As UIElement, insertionPosition As TextPointer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InlineUIContainer(System::Windows::UIElement ^ childUIElement, System::Windows::Documents::TextPointer ^ insertionPosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.UIElement Child { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Child" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.InlineUIContainer.Child" />
+      <MemberSignature Language="VB.NET" Value="Public Property Child As UIElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::UIElement ^ Child { System::Windows::UIElement ^ get(); void set(System::Windows::UIElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,14 +179,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.InlineUIContainer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

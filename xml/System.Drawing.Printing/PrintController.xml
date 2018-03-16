@@ -1,7 +1,9 @@
-<Type Name="PrintController" FullName="System.Drawing.Printing.PrintController">
+﻿<Type Name="PrintController" FullName="System.Drawing.Printing.PrintController">
   <TypeSignature Language="C#" Value="public abstract class PrintController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PrintController extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintController" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PrintController" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintController abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected PrintController ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintController.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintController();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPreview { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPreview" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintController.IsPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsPreview As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPreview { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnEndPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnEndPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnEndPage (document As PrintDocument, e As PrintPageEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnEndPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnEndPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnEndPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnEndPrint (document As PrintDocument, e As PrintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnEndPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -144,6 +154,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Graphics OnStartPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Drawing.Graphics OnStartPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function OnStartPage (document As PrintDocument, e As PrintPageEventArgs) As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Drawing::Graphics ^ OnStartPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -183,6 +195,8 @@
       <MemberSignature Language="C#" Value="public virtual void OnStartPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnStartPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnStartPrint (document As PrintDocument, e As PrintEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnStartPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

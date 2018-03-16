@@ -1,7 +1,9 @@
-<Type Name="SessionSecurityTokenResolver" FullName="System.IdentityModel.Services.SessionSecurityTokenResolver">
+﻿<Type Name="SessionSecurityTokenResolver" FullName="System.IdentityModel.Services.SessionSecurityTokenResolver">
   <TypeSignature Language="C#" Value="public class SessionSecurityTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSecurityTokenResolver extends System.IdentityModel.Selectors.SecurityTokenResolver" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionSecurityTokenResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionSecurityTokenResolver&#xA;Inherits SecurityTokenResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenResolver : System::IdentityModel::Selectors::SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public SessionSecurityTokenResolver (System.IdentityModel.Tokens.SessionSecurityTokenCache tokenCache, string endpointId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SessionSecurityTokenCache tokenCache, string endpointId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.#ctor(System.IdentityModel.Tokens.SessionSecurityTokenCache,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tokenCache As SessionSecurityTokenCache, endpointId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSecurityTokenResolver(System::IdentityModel::Tokens::SessionSecurityTokenCache ^ tokenCache, System::String ^ endpointId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected override bool TryResolveSecurityKeyCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityKey key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveSecurityKeyCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, [out] class System.IdentityModel.Tokens.SecurityKey&amp; key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveSecurityKeyCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef key As SecurityKey) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveSecurityKeyCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKey ^ % key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -60,10 +66,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryResolveTokenCore">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to resolve the token from the specified key identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryResolveTokenCore">
       <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, out System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifier As SecurityKeyIdentifier, ByRef token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -89,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionSecurityTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -110,14 +129,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryResolveTokenCore">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to resolve the token from the specified key identifier.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

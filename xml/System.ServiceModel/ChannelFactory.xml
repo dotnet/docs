@@ -1,7 +1,9 @@
-<Type Name="ChannelFactory" FullName="System.ServiceModel.ChannelFactory">
+﻿<Type Name="ChannelFactory" FullName="System.ServiceModel.ChannelFactory">
   <TypeSignature Language="C#" Value="public abstract class ChannelFactory : System.ServiceModel.Channels.CommunicationObject, IDisposable, System.ServiceModel.Channels.IChannelFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelFactory extends System.ServiceModel.Channels.CommunicationObject implements class System.IDisposable, class System.ServiceModel.Channels.IChannelFactory, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ChannelFactory" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelFactory&#xA;Inherits CommunicationObject&#xA;Implements IChannelFactory, IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelFactory abstract : System::ServiceModel::Channels::CommunicationObject, IDisposable, System::ServiceModel::Channels::IChannelFactory" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected ChannelFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ApplyConfiguration (string configurationName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ApplyConfiguration(string configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.ApplyConfiguration(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ApplyConfiguration (configurationName As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ApplyConfiguration(System::String ^ configurationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +129,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Description.ServiceEndpoint CreateDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.CreateDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateDescription () As ServiceEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Description::ServiceEndpoint ^ CreateDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +157,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.IChannelFactory CreateFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.IChannelFactory CreateFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.CreateFactory" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateFactory () As IChannelFactory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::IChannelFactory ^ CreateFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +186,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ClientCredentials Credentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ClientCredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ChannelFactory.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ClientCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ClientCredentials ^ Credentials { System::ServiceModel::Description::ClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -212,9 +224,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ChannelFactory.DefaultCloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,9 +258,11 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ChannelFactory.DefaultOpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +295,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint Endpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceEndpoint Endpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ChannelFactory.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -304,6 +322,8 @@
       <MemberSignature Language="C#" Value="protected void EnsureOpened ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureOpened() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.EnsureOpened" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnsureOpened ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnsureOpened();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -337,7 +357,12 @@
       <MemberSignature Language="C#" Value="public T GetProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty(Of T As Class) () As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannelFactory.GetProperty``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -398,6 +423,8 @@
       <MemberSignature Language="C#" Value="protected void InitializeEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeEndpoint (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -435,6 +462,7 @@
       <MemberSignature Language="C#" Value="protected void InitializeEndpoint (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeEndpoint(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -469,9 +497,16 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeEndpoint">
-      <MemberSignature Language="C#" Value="protected void InitializeEndpoint (string configurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(string configurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="C#" Value="protected void InitializeEndpoint (string configurationName, System.ServiceModel.EndpointAddress address);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(string configurationName, class System.ServiceModel.EndpointAddress address) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeEndpoint (configurationName As String, address As EndpointAddress)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeEndpoint(System::String ^ configurationName, System::ServiceModel::EndpointAddress ^ address);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected void InitializeEndpoint (string configurationName, System.ServiceModel.EndpointAddress remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(string configurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.InitializeEndpoint(System.String,System.ServiceModel.EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeEndpoint (configurationName As String, remoteAddress As EndpointAddress)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeEndpoint(System::String ^ configurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -488,11 +523,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="configurationName" Type="System.String" />
-        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="configurationName" Type="System.String" Index="0" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="configurationName">The name of the configuration file used to initialize the channel factory.</param>
+        <param name="address">To be added.</param>
         <param name="remoteAddress">To be added.</param>
         <summary>Initializes the service endpoint of the channel factory with a specified address and configuration.</summary>
         <remarks>
@@ -509,6 +546,8 @@
       <MemberSignature Language="C#" Value="protected override void OnAbort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAbort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnAbort" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAbort ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnAbort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -541,6 +580,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -581,6 +622,8 @@
       <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnBeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IAsyncResult ^ OnBeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -621,6 +664,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClose (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClose(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnClose(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClose (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClose(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -649,6 +694,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnEndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndClose (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -677,6 +724,8 @@
       <MemberSignature Language="C#" Value="protected override void OnEndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnEndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEndOpen (result As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -705,6 +754,8 @@
       <MemberSignature Language="C#" Value="protected override void OnOpen (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpen(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnOpen(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpen (timeout As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpen(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -734,6 +785,8 @@
       <MemberSignature Language="C#" Value="protected override void OnOpened ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpened() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnOpened" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpened ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpened();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -766,6 +819,8 @@
       <MemberSignature Language="C#" Value="protected override void OnOpening ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnOpening() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.OnOpening" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnOpening ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnOpening();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -792,7 +847,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ChannelFactory.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

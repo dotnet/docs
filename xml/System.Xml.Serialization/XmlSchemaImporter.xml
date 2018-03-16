@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaImporter" FullName="System.Xml.Serialization.XmlSchemaImporter">
+﻿<Type Name="XmlSchemaImporter" FullName="System.Xml.Serialization.XmlSchemaImporter">
   <TypeSignature Language="C#" Value="public class XmlSchemaImporter : System.Xml.Serialization.SchemaImporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaImporter extends System.Xml.Serialization.SchemaImporter" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSchemaImporter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaImporter&#xA;Inherits SchemaImporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaImporter : System::Xml::Serialization::SchemaImporter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +44,22 @@
     <altmember cref="T:System.Web.Services.Description.ServiceDescriptionImporter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSchemaImporter (System.Xml.Serialization.XmlSchemas schemas);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.#ctor(System.Xml.Serialization.XmlSchemas)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImporter(System::Xml::Serialization::XmlSchemas ^ schemas);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -83,6 +97,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaImporter (System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.CodeIdentifiers typeIdentifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.CodeIdentifiers typeIdentifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.#ctor(System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.CodeIdentifiers)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas, typeIdentifiers As CodeIdentifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImporter(System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::CodeIdentifiers ^ typeIdentifiers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -122,6 +138,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaImporter (System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.CodeGenerationOptions options, System.Xml.Serialization.ImportContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.Xml.Serialization.ImportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.#ctor(System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.CodeGenerationOptions,System.Xml.Serialization.ImportContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas, options As CodeGenerationOptions, context As ImportContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImporter(System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::CodeGenerationOptions options, System::Xml::Serialization::ImportContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -145,6 +163,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaImporter (System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.CodeIdentifiers typeIdentifiers, System.Xml.Serialization.CodeGenerationOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas, class System.Xml.Serialization.CodeIdentifiers typeIdentifiers, valuetype System.Xml.Serialization.CodeGenerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.#ctor(System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.CodeIdentifiers,System.Xml.Serialization.CodeGenerationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas, typeIdentifiers As CodeIdentifiers, options As CodeGenerationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImporter(System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::CodeIdentifiers ^ typeIdentifiers, System::Xml::Serialization::CodeGenerationOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -177,6 +197,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaImporter (System.Xml.Serialization.XmlSchemas schemas, System.Xml.Serialization.CodeGenerationOptions options, System.CodeDom.Compiler.CodeDomProvider codeProvider, System.Xml.Serialization.ImportContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas, valuetype System.Xml.Serialization.CodeGenerationOptions options, class System.CodeDom.Compiler.CodeDomProvider codeProvider, class System.Xml.Serialization.ImportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.#ctor(System.Xml.Serialization.XmlSchemas,System.Xml.Serialization.CodeGenerationOptions,System.CodeDom.Compiler.CodeDomProvider,System.Xml.Serialization.ImportContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas, options As CodeGenerationOptions, codeProvider As CodeDomProvider, context As ImportContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaImporter(System::Xml::Serialization::XmlSchemas ^ schemas, System::Xml::Serialization::CodeGenerationOptions options, System::CodeDom::Compiler::CodeDomProvider ^ codeProvider, System::Xml::Serialization::ImportContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -202,6 +224,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportAnyType (System.Xml.XmlQualifiedName typeName, string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportAnyType(class System.Xml.XmlQualifiedName typeName, string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportAnyType(System.Xml.XmlQualifiedName,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportAnyType (typeName As XmlQualifiedName, elementName As String) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportAnyType(System::Xml::XmlQualifiedName ^ typeName, System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -241,10 +265,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportDerivedTypeMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates internal type mapping information for an element defined in an XML schema document or as a part in a WSDL document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportDerivedTypeMapping">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportDerivedTypeMapping (System.Xml.XmlQualifiedName name, Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportDerivedTypeMapping(class System.Xml.XmlQualifiedName name, class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportDerivedTypeMapping(System.Xml.XmlQualifiedName,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportDerivedTypeMapping (name As XmlQualifiedName, baseType As Type) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportDerivedTypeMapping(System::Xml::XmlQualifiedName ^ name, Type ^ baseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -286,6 +322,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportDerivedTypeMapping (System.Xml.XmlQualifiedName name, Type baseType, bool baseTypeCanBeIndirect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportDerivedTypeMapping(class System.Xml.XmlQualifiedName name, class System.Type baseType, bool baseTypeCanBeIndirect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportDerivedTypeMapping(System.Xml.XmlQualifiedName,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportDerivedTypeMapping (name As XmlQualifiedName, baseType As Type, baseTypeCanBeIndirect As Boolean) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportDerivedTypeMapping(System::Xml::XmlQualifiedName ^ name, Type ^ baseType, bool baseTypeCanBeIndirect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -326,10 +364,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportMembersMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates internal type mapping information for the element parts of a literal-use SOAP message defined in a WSDL document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportMembersMapping">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (System.Xml.XmlQualifiedName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(class System.Xml.XmlQualifiedName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (name As XmlQualifiedName) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::Xml::XmlQualifiedName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -371,6 +421,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (System.Xml.XmlQualifiedName[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(class System.Xml.XmlQualifiedName[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping(System.Xml.XmlQualifiedName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (names As XmlQualifiedName()) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ names);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -414,6 +466,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (string name, string ns, System.Xml.Serialization.SoapSchemaMember[] members);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(string name, string ns, class System.Xml.Serialization.SoapSchemaMember[] members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.SoapSchemaMember[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (name As String, ns As String, members As SoapSchemaMember()) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(System::String ^ name, System::String ^ ns, cli::array &lt;System::Xml::Serialization::SoapSchemaMember ^&gt; ^ members);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -450,6 +504,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlMembersMapping ImportMembersMapping (System.Xml.XmlQualifiedName[] names, Type baseType, bool baseTypeCanBeIndirect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlMembersMapping ImportMembersMapping(class System.Xml.XmlQualifiedName[] names, class System.Type baseType, bool baseTypeCanBeIndirect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportMembersMapping(System.Xml.XmlQualifiedName[],System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportMembersMapping (names As XmlQualifiedName(), baseType As Type, baseTypeCanBeIndirect As Boolean) As XmlMembersMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlMembersMapping ^ ImportMembersMapping(cli::array &lt;System::Xml::XmlQualifiedName ^&gt; ^ names, Type ^ baseType, bool baseTypeCanBeIndirect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -494,10 +550,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportSchemaType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportSchemaType">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportSchemaType (System.Xml.XmlQualifiedName typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportSchemaType(class System.Xml.XmlQualifiedName typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportSchemaType(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportSchemaType (typeName As XmlQualifiedName) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportSchemaType(System::Xml::XmlQualifiedName ^ typeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -530,6 +598,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportSchemaType (System.Xml.XmlQualifiedName typeName, Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportSchemaType(class System.Xml.XmlQualifiedName typeName, class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportSchemaType(System.Xml.XmlQualifiedName,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportSchemaType (typeName As XmlQualifiedName, baseType As Type) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportSchemaType(System::Xml::XmlQualifiedName ^ typeName, Type ^ baseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -564,6 +634,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportSchemaType (System.Xml.XmlQualifiedName typeName, Type baseType, bool baseTypeCanBeIndirect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportSchemaType(class System.Xml.XmlQualifiedName typeName, class System.Type baseType, bool baseTypeCanBeIndirect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportSchemaType(System.Xml.XmlQualifiedName,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportSchemaType (typeName As XmlQualifiedName, baseType As Type, baseTypeCanBeIndirect As Boolean) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportSchemaType(System::Xml::XmlQualifiedName ^ typeName, Type ^ baseType, bool baseTypeCanBeIndirect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -600,6 +672,8 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlTypeMapping ImportTypeMapping (System.Xml.XmlQualifiedName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Serialization.XmlTypeMapping ImportTypeMapping(class System.Xml.XmlQualifiedName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaImporter.ImportTypeMapping(System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportTypeMapping (name As XmlQualifiedName) As XmlTypeMapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Serialization::XmlTypeMapping ^ ImportTypeMapping(System::Xml::XmlQualifiedName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -637,45 +711,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ImportSchemaType">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates internal type mapping information for an element defined in an XML schema document.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ImportDerivedTypeMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates internal type mapping information for an element defined in an XML schema document or as a part in a WSDL document.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ImportMembersMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates internal type mapping information for the element parts of a literal-use SOAP message defined in a WSDL document.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

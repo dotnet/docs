@@ -1,7 +1,9 @@
-<Type Name="SynchronizedInputType" FullName="System.Windows.Automation.SynchronizedInputType">
+﻿<Type Name="SynchronizedInputType" FullName="System.Windows.Automation.SynchronizedInputType">
   <TypeSignature Language="C#" Value="public enum SynchronizedInputType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynchronizedInputType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SynchronizedInputType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SynchronizedInputType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SynchronizedInputType" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="KeyDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType KeyDown = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="KeyDown" />
+      <MemberSignature Language="C++ CLI" Value="KeyDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A key has been pressed.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="KeyUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType KeyUp = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="KeyUp" />
+      <MemberSignature Language="C++ CLI" Value="KeyUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A key has been released.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="MouseLeftButtonDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseLeftButtonDown = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseLeftButtonDown" />
+      <MemberSignature Language="VB.NET" Value="MouseLeftButtonDown" />
+      <MemberSignature Language="C++ CLI" Value="MouseLeftButtonDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The left mouse button has been pressed.</summary>
       </Docs>
@@ -74,6 +85,8 @@
       <MemberSignature Language="C#" Value="MouseLeftButtonUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseLeftButtonUp = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseLeftButtonUp" />
+      <MemberSignature Language="VB.NET" Value="MouseLeftButtonUp" />
+      <MemberSignature Language="C++ CLI" Value="MouseLeftButtonUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The left mouse button has been released.</summary>
       </Docs>
@@ -90,6 +104,8 @@
       <MemberSignature Language="C#" Value="MouseRightButtonDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseRightButtonDown = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseRightButtonDown" />
+      <MemberSignature Language="VB.NET" Value="MouseRightButtonDown" />
+      <MemberSignature Language="C++ CLI" Value="MouseRightButtonDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -98,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The right mouse button has been pressed.</summary>
       </Docs>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="MouseRightButtonUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.SynchronizedInputType MouseRightButtonUp = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.SynchronizedInputType.MouseRightButtonUp" />
+      <MemberSignature Language="VB.NET" Value="MouseRightButtonUp" />
+      <MemberSignature Language="C++ CLI" Value="MouseRightButtonUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -114,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.SynchronizedInputType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The right mouse button has been released.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="ResXResourceWriter" FullName="System.Resources.ResXResourceWriter">
-  <TypeSignature Language="C#" Value="public class ResXResourceWriter : System.Resources.IResourceWriter" />
+﻿<Type Name="ResXResourceWriter" FullName="System.Resources.ResXResourceWriter">
+  <TypeSignature Language="C#" Value="public class ResXResourceWriter : IDisposable, System.Resources.IResourceWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceWriter extends System.Object implements class System.IDisposable, class System.Resources.IResourceWriter" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceWriter&#xA;Implements IDisposable, IResourceWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceWriter : IDisposable, System::Resources::IResourceWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,6 +12,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Resources.IResourceWriter</InterfaceName>
     </Interface>
@@ -47,10 +52,20 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This member cannot be inherited by partially trusted code.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResXResourceWriter (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +95,7 @@
       <MemberSignature Language="C#" Value="public ResXResourceWriter (System.IO.TextWriter textWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::IO::TextWriter ^ textWriter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +116,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceWriter (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +146,7 @@
       <MemberSignature Language="C#" Value="public ResXResourceWriter (System.IO.Stream stream, Func&lt;Type,string&gt; typeNameConverter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Func`2&lt;class System.Type, string&gt; typeNameConverter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.IO.Stream,System.Func{System.Type,System.String})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::IO::Stream ^ stream, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +174,7 @@
       <MemberSignature Language="C#" Value="public ResXResourceWriter (System.IO.TextWriter textWriter, Func&lt;Type,string&gt; typeNameConverter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter textWriter, class System.Func`2&lt;class System.Type, string&gt; typeNameConverter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.IO.TextWriter,System.Func{System.Type,System.String})" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::IO::TextWriter ^ textWriter, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -182,6 +202,8 @@
       <MemberSignature Language="C#" Value="public ResXResourceWriter (string fileName, Func&lt;Type,string&gt; typeNameConverter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.Func`2&lt;class System.Type, string&gt; typeNameConverter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.#ctor(System.String,System.Func{System.Type,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeNameConverter As Func(Of Type, String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXResourceWriter(System::String ^ fileName, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -210,6 +232,7 @@
       <MemberSignature Language="C#" Value="public virtual void AddAlias (string aliasName, System.Reflection.AssemblyName assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAlias(string aliasName, class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddAlias(System.String,System.Reflection.AssemblyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAlias(System::String ^ aliasName, System::Reflection::AssemblyName ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,10 +261,21 @@
           <paramref name="assemblyName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds design-time properties to the list of resources to write.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMetadata">
       <MemberSignature Language="C#" Value="public void AddMetadata (string name, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMetadata(string name, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddMetadata(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMetadata (name As String, value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMetadata(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,6 +300,8 @@
       <MemberSignature Language="C#" Value="public void AddMetadata (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMetadata(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddMetadata(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMetadata (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMetadata(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -290,6 +326,8 @@
       <MemberSignature Language="C#" Value="public void AddMetadata (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMetadata(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddMetadata(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMetadata (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMetadata(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,10 +348,21 @@
         <exception cref="T:System.InvalidOperationException">The resource specified by the <paramref name="name" /> property has already been added.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddResource">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a resource to the list of resources to write.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddResource">
       <MemberSignature Language="C#" Value="public void AddResource (System.Resources.ResXDataNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddResource(class System.Resources.ResXDataNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddResource(System.Resources.ResXDataNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (node As ResXDataNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddResource(System::Resources::ResXDataNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -335,6 +384,8 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddResource(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -367,6 +418,8 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddResource(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -407,6 +460,8 @@
       <MemberSignature Language="C#" Value="public void AddResource (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddResource(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.AddResource(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddResource (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddResource(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -447,6 +502,8 @@
       <MemberSignature Language="C#" Value="public string BasePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BasePath" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXResourceWriter.BasePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BasePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -465,6 +522,8 @@
       <MemberSignature Language="C#" Value="public static readonly string BinSerializedObjectMimeType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string BinSerializedObjectMimeType" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.BinSerializedObjectMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BinSerializedObjectMimeType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BinSerializedObjectMimeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -482,6 +541,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ByteArraySerializedObjectMimeType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ByteArraySerializedObjectMimeType" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.ByteArraySerializedObjectMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByteArraySerializedObjectMimeType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ByteArraySerializedObjectMimeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -499,6 +560,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -524,6 +587,8 @@
       <MemberSignature Language="C#" Value="public static readonly string DefaultSerializedObjectMimeType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string DefaultSerializedObjectMimeType" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.DefaultSerializedObjectMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultSerializedObjectMimeType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DefaultSerializedObjectMimeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -537,11 +602,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Resources.ResXResourceWriter" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -568,6 +647,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -607,6 +688,8 @@
       <MemberSignature Language="C#" Value="~ResXResourceWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ResXResourceWriter ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -625,6 +708,8 @@
       <MemberSignature Language="C#" Value="public void Generate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Generate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceWriter.Generate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Generate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Generate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -653,6 +738,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ResMimeType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ResMimeType" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.ResMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResMimeType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ResMimeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -670,6 +757,8 @@
       <MemberSignature Language="C#" Value="public static readonly string ResourceSchema;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ResourceSchema" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.ResourceSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResourceSchema As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ResourceSchema;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -694,6 +783,8 @@
       <MemberSignature Language="C#" Value="public static readonly string SoapSerializedObjectMimeType;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SoapSerializedObjectMimeType" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.SoapSerializedObjectMimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SoapSerializedObjectMimeType As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SoapSerializedObjectMimeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -711,6 +802,8 @@
       <MemberSignature Language="C#" Value="public static readonly string Version;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Version" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResXResourceWriter.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Version As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Version;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,41 +817,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Resources.ResXResourceWriter" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds design-time properties to the list of resources to write.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddResource">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a resource to the list of resources to write.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceWriter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

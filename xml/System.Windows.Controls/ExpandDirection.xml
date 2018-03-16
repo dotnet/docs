@@ -1,7 +1,9 @@
-<Type Name="ExpandDirection" FullName="System.Windows.Controls.ExpandDirection">
+﻿<Type Name="ExpandDirection" FullName="System.Windows.Controls.ExpandDirection">
   <TypeSignature Language="C#" Value="public enum ExpandDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExpandDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ExpandDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ExpandDirection" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ExpandDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ExpandDirection Down = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens down.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ExpandDirection Left = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens left.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ExpandDirection Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens right.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ExpandDirection Up = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ExpandDirection.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.ExpandDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Expander" /> control opens up.</summary>
       </Docs>

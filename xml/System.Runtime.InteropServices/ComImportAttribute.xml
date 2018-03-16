@@ -1,7 +1,9 @@
-<Type Name="ComImportAttribute" FullName="System.Runtime.InteropServices.ComImportAttribute">
+﻿<Type Name="ComImportAttribute" FullName="System.Runtime.InteropServices.ComImportAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComImportAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComImportAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComImportAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComImportAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComImportAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="public ComImportAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComImportAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComImportAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

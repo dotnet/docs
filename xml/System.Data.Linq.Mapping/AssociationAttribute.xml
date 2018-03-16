@@ -1,7 +1,9 @@
-<Type Name="AssociationAttribute" FullName="System.Data.Linq.Mapping.AssociationAttribute">
+﻿<Type Name="AssociationAttribute" FullName="System.Data.Linq.Mapping.AssociationAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssociationAttribute : System.Data.Linq.Mapping.DataAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssociationAttribute extends System.Data.Linq.Mapping.DataAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AssociationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssociationAttribute&#xA;Inherits DataAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssociationAttribute sealed : System::Data::Linq::Mapping::DataAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public AssociationAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.AssociationAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssociationAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public bool DeleteOnNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DeleteOnNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.DeleteOnNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteOnNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DeleteOnNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public string DeleteRule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeleteRule" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.DeleteRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteRule As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeleteRule { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -105,6 +113,8 @@
       <MemberSignature Language="C#" Value="public bool IsForeignKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsForeignKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.IsForeignKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsForeignKey As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsForeignKey { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnique { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnique" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.IsUnique" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUnique As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnique { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -156,6 +168,8 @@
       <MemberSignature Language="C#" Value="public string OtherKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OtherKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.OtherKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property OtherKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OtherKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -189,6 +203,8 @@
       <MemberSignature Language="C#" Value="public string ThisKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThisKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.AssociationAttribute.ThisKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThisKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThisKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

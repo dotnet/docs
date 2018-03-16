@@ -1,7 +1,9 @@
-<Type Name="DesignerActionItemCollection" FullName="System.ComponentModel.Design.DesignerActionItemCollection">
+﻿<Type Name="DesignerActionItemCollection" FullName="System.ComponentModel.Design.DesignerActionItemCollection">
   <TypeSignature Language="C#" Value="public class DesignerActionItemCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionItemCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerActionItemCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionItemCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public DesignerActionItemCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionItemCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.ComponentModel.Design.DesignerActionItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.ComponentModel.Design.DesignerActionItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Add(System.ComponentModel.Design.DesignerActionItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As DesignerActionItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::ComponentModel::Design::DesignerActionItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.ComponentModel.Design.DesignerActionItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ComponentModel.Design.DesignerActionItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Contains(System.ComponentModel.Design.DesignerActionItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As DesignerActionItem) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::ComponentModel::Design::DesignerActionItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.ComponentModel.Design.DesignerActionItem[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ComponentModel.Design.DesignerActionItem[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.CopyTo(System.ComponentModel.Design.DesignerActionItem[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DesignerActionItem(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::ComponentModel::Design::DesignerActionItem ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +142,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.ComponentModel.Design.DesignerActionItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.ComponentModel.Design.DesignerActionItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.IndexOf(System.ComponentModel.Design.DesignerActionItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As DesignerActionItem) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::ComponentModel::Design::DesignerActionItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -154,6 +166,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.ComponentModel.Design.DesignerActionItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.ComponentModel.Design.DesignerActionItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Insert(System.Int32,System.ComponentModel.Design.DesignerActionItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As DesignerActionItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::ComponentModel::Design::DesignerActionItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -177,6 +191,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionItem this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionItem Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionItemCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DesignerActionItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::DesignerActionItem ^ default[int] { System::ComponentModel::Design::DesignerActionItem ^ get(int index); void set(int index, System::ComponentModel::Design::DesignerActionItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -199,6 +215,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.ComponentModel.Design.DesignerActionItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ComponentModel.Design.DesignerActionItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionItemCollection.Remove(System.ComponentModel.Design.DesignerActionItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As DesignerActionItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::ComponentModel::Design::DesignerActionItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="DocumentPaginator" FullName="System.Windows.Documents.DocumentPaginator">
+﻿<Type Name="DocumentPaginator" FullName="System.Windows.Documents.DocumentPaginator">
   <TypeSignature Language="C#" Value="public abstract class DocumentPaginator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DocumentPaginator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentPaginator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DocumentPaginator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentPaginator abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected DocumentPaginator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DocumentPaginator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public virtual void CancelAsync (object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelAsync(object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.CancelAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CancelAsync (userState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CancelAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +75,8 @@
       <MemberSignature Language="C#" Value="public virtual void ComputePageCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComputePageCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.ComputePageCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComputePageCount ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComputePageCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,10 +98,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputePageCountAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously, forces a pagination of the content, updates <see cref="P:System.Windows.Documents.DocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Documents.DocumentPaginator.IsPageCountValid" /> to <see langword="true" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputePageCountAsync">
       <MemberSignature Language="C#" Value="public virtual void ComputePageCountAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComputePageCountAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.ComputePageCountAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComputePageCountAsync ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComputePageCountAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +138,8 @@
       <MemberSignature Language="C#" Value="public virtual void ComputePageCountAsync (object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ComputePageCountAsync(object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.ComputePageCountAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ComputePageCountAsync (userState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ComputePageCountAsync(System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +170,8 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.AsyncCompletedEventHandler ComputePageCountCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AsyncCompletedEventHandler ComputePageCountCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DocumentPaginator.ComputePageCountCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ComputePageCountCompleted As AsyncCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AsyncCompletedEventHandler ^ ComputePageCountCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +189,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Documents.DocumentPage GetPage (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.DocumentPage GetPage(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.GetPage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPage (pageNumber As Integer) As DocumentPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Documents::DocumentPage ^ GetPage(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,10 +220,21 @@
           <paramref name="pageNumber" /> is negative.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPageAsync">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously returns the <see cref="T:System.Windows.Documents.DocumentPage" /> for the specified page number.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPageAsync">
       <MemberSignature Language="C#" Value="public virtual void GetPageAsync (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPageAsync(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetPageAsync (pageNumber As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPageAsync(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,6 +267,8 @@
       <MemberSignature Language="C#" Value="public virtual void GetPageAsync (int pageNumber, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPageAsync(int32 pageNumber, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.GetPageAsync(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetPageAsync (pageNumber As Integer, userState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetPageAsync(int pageNumber, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -277,6 +315,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Documents.GetPageCompletedEventHandler GetPageCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.GetPageCompletedEventHandler GetPageCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DocumentPaginator.GetPageCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event GetPageCompleted As GetPageCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::GetPageCompletedEventHandler ^ GetPageCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -295,6 +335,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsPageCountValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPageCountValid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPaginator.IsPageCountValid" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsPageCountValid As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsPageCountValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +359,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnComputePageCountCompleted (System.ComponentModel.AsyncCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnComputePageCountCompleted(class System.ComponentModel.AsyncCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.OnComputePageCountCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnComputePageCountCompleted (e As AsyncCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnComputePageCountCompleted(System::ComponentModel::AsyncCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -338,6 +382,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnGetPageCompleted (System.Windows.Documents.GetPageCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGetPageCompleted(class System.Windows.Documents.GetPageCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.OnGetPageCompleted(System.Windows.Documents.GetPageCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGetPageCompleted (e As GetPageCompletedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGetPageCompleted(System::Windows::Documents::GetPageCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -359,6 +405,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPagesChanged (System.Windows.Documents.PagesChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPagesChanged(class System.Windows.Documents.PagesChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentPaginator.OnPagesChanged(System.Windows.Documents.PagesChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPagesChanged (e As PagesChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPagesChanged(System::Windows::Documents::PagesChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -380,6 +428,8 @@
       <MemberSignature Language="C#" Value="public abstract int PageCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPaginator.PageCount" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property PageCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int PageCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,6 +460,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Documents.PagesChangedEventHandler PagesChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Documents.PagesChangedEventHandler PagesChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Documents.DocumentPaginator.PagesChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PagesChanged As PagesChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Documents::PagesChangedEventHandler ^ PagesChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -428,6 +480,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Size PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PageSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPaginator.PageSize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property PageSize As Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Size PageSize { System::Windows::Size get(); void set(System::Windows::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -461,6 +515,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Documents.IDocumentPaginatorSource Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.IDocumentPaginatorSource Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.DocumentPaginator.Source" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Source As IDocumentPaginatorSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Documents::IDocumentPaginatorSource ^ Source { System::Windows::Documents::IDocumentPaginatorSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -482,23 +538,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ComputePageCountAsync">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously, forces a pagination of the content, updates <see cref="P:System.Windows.Documents.DocumentPaginator.PageCount" /> with the new total, and sets <see cref="P:System.Windows.Documents.DocumentPaginator.IsPageCountValid" /> to <see langword="true" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPageAsync">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously returns the <see cref="T:System.Windows.Documents.DocumentPage" /> for the specified page number.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

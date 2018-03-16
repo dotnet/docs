@@ -1,7 +1,9 @@
-<Type Name="TabControlAction" FullName="System.Windows.Forms.TabControlAction">
+﻿<Type Name="TabControlAction" FullName="System.Windows.Forms.TabControlAction">
   <TypeSignature Language="C#" Value="public enum TabControlAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabControlAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TabControlAction" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TabControlAction" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="Deselected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabControlAction Deselected = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Deselected" />
+      <MemberSignature Language="VB.NET" Value="Deselected" />
+      <MemberSignature Language="C++ CLI" Value="Deselected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControlAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Represents the <see cref="E:System.Windows.Forms.TabControl.Deselected" /> event.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="Deselecting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabControlAction Deselecting = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Deselecting" />
+      <MemberSignature Language="VB.NET" Value="Deselecting" />
+      <MemberSignature Language="C++ CLI" Value="Deselecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControlAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Represents the <see cref="E:System.Windows.Forms.TabControl.Deselecting" /> event.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="Selected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabControlAction Selected = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Selected" />
+      <MemberSignature Language="VB.NET" Value="Selected" />
+      <MemberSignature Language="C++ CLI" Value="Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControlAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents the <see cref="E:System.Windows.Forms.TabControl.Selected" /> event.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="Selecting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabControlAction Selecting = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabControlAction.Selecting" />
+      <MemberSignature Language="VB.NET" Value="Selecting" />
+      <MemberSignature Language="C++ CLI" Value="Selecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControlAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents the <see cref="E:System.Windows.Forms.TabControl.Selecting" /> event.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="StatementContext" FullName="System.ComponentModel.Design.Serialization.StatementContext">
+﻿<Type Name="StatementContext" FullName="System.ComponentModel.Design.Serialization.StatementContext">
   <TypeSignature Language="C#" Value="public sealed class StatementContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StatementContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.StatementContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatementContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatementContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public StatementContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.StatementContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatementContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.Serialization.ObjectStatementCollection StatementCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.Serialization.ObjectStatementCollection StatementCollection" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.StatementContext.StatementCollection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatementCollection As ObjectStatementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ StatementCollection { System::ComponentModel::Design::Serialization::ObjectStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="RetrieveVirtualItemEventArgs" FullName="System.Windows.Forms.RetrieveVirtualItemEventArgs">
+﻿<Type Name="RetrieveVirtualItemEventArgs" FullName="System.Windows.Forms.RetrieveVirtualItemEventArgs">
   <TypeSignature Language="C#" Value="public class RetrieveVirtualItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RetrieveVirtualItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RetrieveVirtualItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class RetrieveVirtualItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RetrieveVirtualItemEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public RetrieveVirtualItemEventArgs (int itemIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RetrieveVirtualItemEventArgs.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RetrieveVirtualItemEventArgs(int itemIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem Item { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RetrieveVirtualItemEventArgs.Item" />
+      <MemberSignature Language="VB.NET" Value="Public Property Item As ListViewItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem ^ Item { System::Windows::Forms::ListViewItem ^ get(); void set(System::Windows::Forms::ListViewItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +90,8 @@
       <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RetrieveVirtualItemEventArgs.ItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

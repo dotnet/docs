@@ -1,7 +1,9 @@
-<Type Name="TreeViewDesigner" FullName="System.Web.UI.Design.WebControls.TreeViewDesigner">
+﻿<Type Name="TreeViewDesigner" FullName="System.Web.UI.Design.WebControls.TreeViewDesigner">
   <TypeSignature Language="C#" Value="public class TreeViewDesigner : System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeViewDesigner extends System.Web.UI.Design.WebControls.HierarchicalDataBoundControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.TreeViewDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class TreeViewDesigner&#xA;Inherits HierarchicalDataBoundControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeViewDesigner : System::Web::UI::Design::WebControls::HierarchicalDataBoundControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public TreeViewDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeViewDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.TreeViewDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.TreeViewDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="protected void CreateLineImages ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CreateLineImages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.CreateLineImages" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CreateLineImages ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CreateLineImages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="protected override void DataBind (System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DataBind(class System.Web.UI.WebControls.BaseDataBoundControl dataBoundControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +130,8 @@
       <MemberSignature Language="C#" Value="protected void EditBindings ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EditBindings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.EditBindings" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EditBindings ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EditBindings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +151,8 @@
       <MemberSignature Language="C#" Value="protected void EditNodes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EditNodes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.EditNodes" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EditNodes ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EditNodes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -156,6 +172,8 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -177,6 +195,8 @@
       <MemberSignature Language="C#" Value="protected override string GetEmptyDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetEmptyDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.GetEmptyDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -198,6 +218,8 @@
       <MemberSignature Language="C#" Value="protected override string GetErrorDesignTimeHtml (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetErrorDesignTimeHtml(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.GetErrorDesignTimeHtml(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -222,6 +244,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.IHierarchicalEnumerable GetSampleDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.IHierarchicalEnumerable GetSampleDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.GetSampleDataSource" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSampleDataSource () As IHierarchicalEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::IHierarchicalEnumerable ^ GetSampleDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -243,6 +267,8 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TreeViewDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -265,6 +291,8 @@
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.TreeViewDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

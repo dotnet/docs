@@ -1,7 +1,9 @@
-<Type Name="ListChangedType" FullName="System.ComponentModel.ListChangedType">
+﻿<Type Name="ListChangedType" FullName="System.ComponentModel.ListChangedType">
   <TypeSignature Language="C#" Value="public enum ListChangedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListChangedType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListChangedType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListChangedType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListChangedType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="ItemAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType ItemAdded = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.ItemAdded" />
+      <MemberSignature Language="VB.NET" Value="ItemAdded" />
+      <MemberSignature Language="C++ CLI" Value="ItemAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An item added to the list. <see cref="P:System.ComponentModel.ListChangedEventArgs.NewIndex" /> contains the index of the item that was added.</summary>
       </Docs>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="ItemChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType ItemChanged = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.ItemChanged" />
+      <MemberSignature Language="VB.NET" Value="ItemChanged" />
+      <MemberSignature Language="C++ CLI" Value="ItemChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -84,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>An item changed in the list. <see cref="P:System.ComponentModel.ListChangedEventArgs.NewIndex" /> contains the index of the item that was changed.</summary>
       </Docs>
@@ -92,6 +100,8 @@
       <MemberSignature Language="C#" Value="ItemDeleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType ItemDeleted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.ItemDeleted" />
+      <MemberSignature Language="VB.NET" Value="ItemDeleted" />
+      <MemberSignature Language="C++ CLI" Value="ItemDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An item deleted from the list. <see cref="P:System.ComponentModel.ListChangedEventArgs.NewIndex" /> contains the index of the item that was deleted.</summary>
       </Docs>
@@ -117,6 +128,8 @@
       <MemberSignature Language="C#" Value="ItemMoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType ItemMoved = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.ItemMoved" />
+      <MemberSignature Language="VB.NET" Value="ItemMoved" />
+      <MemberSignature Language="C++ CLI" Value="ItemMoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An item moved within the list. <see cref="P:System.ComponentModel.ListChangedEventArgs.OldIndex" /> contains the previous index for the item, whereas <see cref="P:System.ComponentModel.ListChangedEventArgs.NewIndex" /> contains the new index for the item.</summary>
       </Docs>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="PropertyDescriptorAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType PropertyDescriptorAdded = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.PropertyDescriptorAdded" />
+      <MemberSignature Language="VB.NET" Value="PropertyDescriptorAdded" />
+      <MemberSignature Language="C++ CLI" Value="PropertyDescriptorAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> was added, which changed the schema.</summary>
       </Docs>
@@ -167,6 +184,8 @@
       <MemberSignature Language="C#" Value="PropertyDescriptorChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType PropertyDescriptorChanged = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.PropertyDescriptorChanged" />
+      <MemberSignature Language="VB.NET" Value="PropertyDescriptorChanged" />
+      <MemberSignature Language="C++ CLI" Value="PropertyDescriptorChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +203,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> was changed, which changed the schema.</summary>
       </Docs>
@@ -192,6 +212,8 @@
       <MemberSignature Language="C#" Value="PropertyDescriptorDeleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType PropertyDescriptorDeleted = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.PropertyDescriptorDeleted" />
+      <MemberSignature Language="VB.NET" Value="PropertyDescriptorDeleted" />
+      <MemberSignature Language="C++ CLI" Value="PropertyDescriptorDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -209,6 +231,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> was deleted, which changed the schema.</summary>
       </Docs>
@@ -217,6 +240,8 @@
       <MemberSignature Language="C#" Value="Reset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.ListChangedType Reset = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListChangedType.Reset" />
+      <MemberSignature Language="VB.NET" Value="Reset" />
+      <MemberSignature Language="C++ CLI" Value="Reset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +259,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.ListChangedType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Much of the list has changed. Any listening controls should refresh all their data from the list.</summary>
       </Docs>

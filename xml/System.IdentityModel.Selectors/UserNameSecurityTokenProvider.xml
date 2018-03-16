@@ -1,7 +1,9 @@
-<Type Name="UserNameSecurityTokenProvider" FullName="System.IdentityModel.Selectors.UserNameSecurityTokenProvider">
+﻿<Type Name="UserNameSecurityTokenProvider" FullName="System.IdentityModel.Selectors.UserNameSecurityTokenProvider">
   <TypeSignature Language="C#" Value="public class UserNameSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserNameSecurityTokenProvider extends System.IdentityModel.Selectors.SecurityTokenProvider" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.UserNameSecurityTokenProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserNameSecurityTokenProvider&#xA;Inherits SecurityTokenProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserNameSecurityTokenProvider : System::IdentityModel::Selectors::SecurityTokenProvider" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public UserNameSecurityTokenProvider (string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userName, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserNameSecurityTokenProvider.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userName As String, password As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserNameSecurityTokenProvider(System::String ^ userName, System::String ^ password);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="protected override System.IdentityModel.Tokens.SecurityToken GetTokenCore (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken GetTokenCore(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.UserNameSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTokenCore (timeout As TimeSpan) As SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::IdentityModel::Tokens::SecurityToken ^ GetTokenCore(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

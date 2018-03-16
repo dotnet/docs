@@ -1,7 +1,9 @@
-<Type Name="DispatcherSynchronizationContext" FullName="System.Windows.Threading.DispatcherSynchronizationContext">
+﻿<Type Name="DispatcherSynchronizationContext" FullName="System.Windows.Threading.DispatcherSynchronizationContext">
   <TypeSignature Language="C#" Value="public sealed class DispatcherSynchronizationContext : System.Threading.SynchronizationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DispatcherSynchronizationContext extends System.Threading.SynchronizationContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherSynchronizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatcherSynchronizationContext&#xA;Inherits SynchronizationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherSynchronizationContext sealed : System::Threading::SynchronizationContext" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DispatcherSynchronizationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -41,6 +54,7 @@
       <MemberSignature Language="C#" Value="public DispatcherSynchronizationContext (System.Windows.Threading.Dispatcher dispatcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor(System.Windows.Threading.Dispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext(System::Windows::Threading::Dispatcher ^ dispatcher);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -61,6 +75,7 @@
       <MemberSignature Language="C#" Value="public DispatcherSynchronizationContext (System.Windows.Threading.Dispatcher dispatcher, System.Windows.Threading.DispatcherPriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Threading.Dispatcher dispatcher, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.#ctor(System.Windows.Threading.Dispatcher,System.Windows.Threading.DispatcherPriority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherSynchronizationContext(System::Windows::Threading::Dispatcher ^ dispatcher, System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -81,6 +96,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.SynchronizationContext CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.SynchronizationContext CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCopy () As SynchronizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::SynchronizationContext ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -100,6 +117,8 @@
       <MemberSignature Language="C#" Value="public override void Post (System.Threading.SendOrPostCallback d, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Post(class System.Threading.SendOrPostCallback d, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Post(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Post (d As SendOrPostCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Post(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -134,6 +153,8 @@
       <MemberSignature Language="C#" Value="public override void Send (System.Threading.SendOrPostCallback d, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Send(class System.Threading.SendOrPostCallback d, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Send (d As SendOrPostCallback, state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Send(System::Threading::SendOrPostCallback ^ d, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -166,6 +187,8 @@
       <MemberSignature Language="C#" Value="public override int Wait (IntPtr[] waitHandles, bool waitAll, int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Wait(native int[] waitHandles, bool waitAll, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherSynchronizationContext.Wait(System.IntPtr[],System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Wait (waitHandles As IntPtr(), waitAll As Boolean, millisecondsTimeout As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Wait(cli::array &lt;IntPtr&gt; ^ waitHandles, bool waitAll, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -197,14 +220,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

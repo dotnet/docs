@@ -1,7 +1,9 @@
-<Type Name="ForIn" FullName="Microsoft.JScript.ForIn">
+﻿<Type Name="ForIn" FullName="Microsoft.JScript.ForIn">
   <TypeSignature Language="C#" Value="public sealed class ForIn : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ForIn extends Microsoft.JScript.AST" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ForIn" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ForIn&#xA;Inherits AST" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ForIn sealed : Microsoft::JScript::AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator JScriptGetEnumerator (object coll);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerator JScriptGetEnumerator(object coll) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ForIn.JScriptGetEnumerator(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptGetEnumerator (coll As Object) As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerator ^ JScriptGetEnumerator(System::Object ^ coll);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

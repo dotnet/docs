@@ -1,7 +1,9 @@
-<Type Name="ChtmlSelectionListAdapter" FullName="System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter">
+﻿<Type Name="ChtmlSelectionListAdapter" FullName="System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter">
   <TypeSignature Language="C#" Value="public class ChtmlSelectionListAdapter : System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChtmlSelectionListAdapter extends System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChtmlSelectionListAdapter&#xA;Inherits HtmlSelectionListAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChtmlSelectionListAdapter : System::Web::UI::MobileControls::Adapters::HtmlSelectionListAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public ChtmlSelectionListAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlSelectionListAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -40,6 +44,8 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public override bool RequiresFormTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresFormTag" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ChtmlSelectionListAdapter.RequiresFormTag" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresFormTag As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresFormTag { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

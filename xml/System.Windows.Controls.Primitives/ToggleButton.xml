@@ -1,7 +1,9 @@
-<Type Name="ToggleButton" FullName="System.Windows.Controls.Primitives.ToggleButton">
+﻿<Type Name="ToggleButton" FullName="System.Windows.Controls.Primitives.ToggleButton">
   <TypeSignature Language="C#" Value="public class ToggleButton : System.Windows.Controls.Primitives.ButtonBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToggleButton extends System.Windows.Controls.Primitives.ButtonBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ToggleButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToggleButton&#xA;Inherits ButtonBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToggleButton : System::Windows::Controls::Primitives::ButtonBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ToggleButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToggleButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler Checked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler Checked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.ToggleButton.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Checked As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Checked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent CheckedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent CheckedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToggleButton.CheckedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CheckedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler Indeterminate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler Indeterminate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.ToggleButton.Indeterminate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Indeterminate As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Indeterminate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +167,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent IndeterminateEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent IndeterminateEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToggleButton.IndeterminateEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndeterminateEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ IndeterminateEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -174,6 +186,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsChecked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsChecked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ToggleButton.IsChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsChecked As Nullable(Of Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsChecked { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -248,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsCheckedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsCheckedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToggleButton.IsCheckedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsCheckedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsCheckedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -265,6 +281,8 @@
       <MemberSignature Language="C#" Value="public bool IsThreeState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsThreeState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.ToggleButton.IsThreeState" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsThreeState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsThreeState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +325,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsThreeStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsThreeStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToggleButton.IsThreeStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsThreeStateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsThreeStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -324,6 +344,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnChecked (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChecked(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnChecked(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnChecked (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnChecked(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -345,6 +367,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClick ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnClick" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -363,6 +387,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -382,6 +408,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnIndeterminate (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnIndeterminate(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnIndeterminate(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIndeterminate (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIndeterminate(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -400,9 +428,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnToggle">
-      <MemberSignature Language="C#" Value="protected virtual void OnToggle ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnToggle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnToggle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnToggle" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnToggle ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnToggle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -428,6 +458,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnUnchecked (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUnchecked(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.OnUnchecked(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUnchecked (e As RoutedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUnchecked(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -449,6 +481,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToggleButton.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -475,6 +509,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler Unchecked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler Unchecked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.ToggleButton.Unchecked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Unchecked As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Unchecked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -522,6 +558,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent UncheckedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent UncheckedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ToggleButton.UncheckedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UncheckedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ UncheckedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="CommentRegex" FullName="System.Web.RegularExpressions.CommentRegex">
+﻿<Type Name="CommentRegex" FullName="System.Web.RegularExpressions.CommentRegex">
   <TypeSignature Language="C#" Value="public class CommentRegex : System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CommentRegex extends System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.CommentRegex" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommentRegex&#xA;Inherits Regex" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommentRegex : System::Text::RegularExpressions::Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     <altmember cref="T:System.Text.RegularExpressions.Regex" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.CommentRegex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CommentRegex ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.CommentRegex.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommentRegex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -54,6 +67,8 @@
       <MemberSignature Language="C#" Value="public CommentRegex (TimeSpan A_1);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype System.TimeSpan A_1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.CommentRegex.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommentRegex(TimeSpan A_1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -76,14 +91,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.CommentRegex" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

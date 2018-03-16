@@ -1,7 +1,9 @@
-<Type Name="TrackingQueryElement" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement">
+﻿<Type Name="TrackingQueryElement" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement">
   <TypeSignature Language="C#" Value="public abstract class TrackingQueryElement : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingQueryElement extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingQueryElement&#xA;Inherits TrackingConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingQueryElement abstract : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected TrackingQueryElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingQueryElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection Annotations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection Annotations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Annotations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As AnnotationElementCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::Tracking::Configuration::AnnotationElementCollection ^ Annotations { System::ServiceModel::Activities::Tracking::Configuration::AnnotationElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public override object ElementKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ElementKey" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.ElementKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementKey As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ ElementKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Activities.Tracking.TrackingQuery NewTrackingQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Activities.Tracking.TrackingQuery NewTrackingQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.NewTrackingQuery" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function NewTrackingQuery () As TrackingQuery" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Activities::Tracking::TrackingQuery ^ NewTrackingQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -101,6 +111,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -119,6 +131,7 @@
       <MemberSignature Language="C#" Value="protected virtual void UpdateTrackingQuery (System.Activities.Tracking.TrackingQuery trackingQuery);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateTrackingQuery(class System.Activities.Tracking.TrackingQuery trackingQuery) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingQueryElement.UpdateTrackingQuery(System.Activities.Tracking.TrackingQuery)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateTrackingQuery(System::Activities::Tracking::TrackingQuery ^ trackingQuery);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

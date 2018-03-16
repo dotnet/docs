@@ -1,7 +1,9 @@
-<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
+﻿<Type Name="XPathItem" FullName="System.Xml.XPath.XPathItem">
   <TypeSignature Language="C#" Value="public abstract class XPathItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathItem" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XPathItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathItem abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="protected XPathItem ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XPathItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public abstract bool IsNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.IsNode" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsNode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsNode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -125,6 +131,8 @@
       <MemberSignature Language="C#" Value="public abstract object TypedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypedValue" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.TypedValue" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TypedValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ TypedValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -166,6 +174,8 @@
       <MemberSignature Language="C#" Value="public abstract string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.Value" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -193,10 +203,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValueAs">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the item's value as the specified type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValueAs">
       <MemberSignature Language="C#" Value="public virtual object ValueAs (Type returnType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ValueAs(class System.Type returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathItem.ValueAs(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ValueAs (returnType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ValueAs(Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -242,6 +263,8 @@
       <MemberSignature Language="C#" Value="public abstract object ValueAs (Type returnType, System.Xml.IXmlNamespaceResolver nsResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ValueAs(class System.Type returnType, class System.Xml.IXmlNamespaceResolver nsResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathItem.ValueAs(System.Type,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ValueAs (returnType As Type, nsResolver As IXmlNamespaceResolver) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ValueAs(Type ^ returnType, System::Xml::IXmlNamespaceResolver ^ nsResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -294,6 +317,8 @@
       <MemberSignature Language="C#" Value="public abstract bool ValueAsBoolean { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValueAsBoolean" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueAsBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueAsBoolean As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ValueAsBoolean { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -336,6 +361,8 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ValueAsDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValueAsDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueAsDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueAsDateTime As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTime ValueAsDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -378,6 +405,8 @@
       <MemberSignature Language="C#" Value="public abstract double ValueAsDouble { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ValueAsDouble" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueAsDouble" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueAsDouble As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double ValueAsDouble { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -421,6 +450,8 @@
       <MemberSignature Language="C#" Value="public abstract int ValueAsInt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ValueAsInt" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueAsInt" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueAsInt As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int ValueAsInt { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -464,6 +495,8 @@
       <MemberSignature Language="C#" Value="public abstract long ValueAsLong { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ValueAsLong" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueAsLong" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueAsLong As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long ValueAsLong { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -507,6 +540,8 @@
       <MemberSignature Language="C#" Value="public abstract Type ValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValueType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ ValueType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -553,6 +588,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.Schema.XmlSchemaType XmlType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaType XmlType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathItem.XmlType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property XmlType As XmlSchemaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::Schema::XmlSchemaType ^ XmlType { System::Xml::Schema::XmlSchemaType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -586,14 +623,5 @@
         <altmember cref="T:System.Xml.Schema.XmlSchemaComplexType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ValueAs">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XPath</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the item's value as the specified type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

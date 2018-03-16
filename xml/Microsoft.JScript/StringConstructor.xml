@@ -1,7 +1,9 @@
-<Type Name="StringConstructor" FullName="Microsoft.JScript.StringConstructor">
+﻿<Type Name="StringConstructor" FullName="Microsoft.JScript.StringConstructor">
   <TypeSignature Language="C#" Value="public class StringConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringConstructor extends Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StringConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringConstructor&#xA;Inherits ScriptFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringConstructor : Microsoft::JScript::ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +24,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.StringObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.StringObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringConstructor.CreateInstance(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As StringObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::StringObject ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public static string fromCharCode (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string fromCharCode(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function fromCharCode (ParamArray args As Object()) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ fromCharCode(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public string Invoke (object arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Invoke(object arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringConstructor.Invoke(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (arg As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Invoke(System::Object ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

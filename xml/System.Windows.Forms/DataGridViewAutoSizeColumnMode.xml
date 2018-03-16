@@ -1,7 +1,9 @@
-<Type Name="DataGridViewAutoSizeColumnMode" FullName="System.Windows.Forms.DataGridViewAutoSizeColumnMode">
+﻿<Type Name="DataGridViewAutoSizeColumnMode" FullName="System.Windows.Forms.DataGridViewAutoSizeColumnMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewAutoSizeColumnMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeColumnMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeColumnMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewAutoSizeColumnMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewAutoSizeColumnMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="AllCells" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode AllCells = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells" />
+      <MemberSignature Language="VB.NET" Value="AllCells" />
+      <MemberSignature Language="C++ CLI" Value="AllCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The column width adjusts to fit the contents of all cells in the column, including the header cell.</summary>
       </Docs>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="AllCellsExceptHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode AllCellsExceptHeader = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCellsExceptHeader" />
+      <MemberSignature Language="VB.NET" Value="AllCellsExceptHeader" />
+      <MemberSignature Language="C++ CLI" Value="AllCellsExceptHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The column width adjusts to fit the contents of all cells in the column, excluding the header cell.</summary>
       </Docs>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="ColumnHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode ColumnHeader = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" />
+      <MemberSignature Language="VB.NET" Value="ColumnHeader" />
+      <MemberSignature Language="C++ CLI" Value="ColumnHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The column width adjusts to fit the contents of the column header cell.</summary>
       </Docs>
@@ -95,6 +106,8 @@
       <MemberSignature Language="C#" Value="DisplayedCells" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode DisplayedCells = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells" />
+      <MemberSignature Language="VB.NET" Value="DisplayedCells" />
+      <MemberSignature Language="C++ CLI" Value="DisplayedCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The column width adjusts to fit the contents of all cells in the column that are in rows currently displayed onscreen, including the header cell.</summary>
       </Docs>
@@ -111,6 +125,8 @@
       <MemberSignature Language="C#" Value="DisplayedCellsExceptHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode DisplayedCellsExceptHeader = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCellsExceptHeader" />
+      <MemberSignature Language="VB.NET" Value="DisplayedCellsExceptHeader" />
+      <MemberSignature Language="C++ CLI" Value="DisplayedCellsExceptHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +135,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The column width adjusts to fit the contents of all cells in the column that are in rows currently displayed onscreen, excluding the header cell.</summary>
       </Docs>
@@ -127,6 +144,8 @@
       <MemberSignature Language="C#" Value="Fill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode Fill = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" />
+      <MemberSignature Language="VB.NET" Value="Fill" />
+      <MemberSignature Language="C++ CLI" Value="Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The column width adjusts so that the widths of all columns exactly fills the display area of the control, requiring horizontal scrolling only to keep column widths above the <see cref="P:System.Windows.Forms.DataGridViewColumn.MinimumWidth" /> property values. Relative column widths are determined by the relative <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property values.</summary>
       </Docs>
@@ -143,6 +163,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +173,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The column width does not automatically adjust.</summary>
       </Docs>
@@ -159,6 +182,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeColumnMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The sizing behavior of the column is inherited from the <see cref="P:System.Windows.Forms.DataGridView.AutoSizeColumnsMode" /> property.</summary>
       </Docs>

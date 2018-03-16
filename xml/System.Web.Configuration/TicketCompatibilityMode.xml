@@ -1,7 +1,9 @@
-<Type Name="TicketCompatibilityMode" FullName="System.Web.Configuration.TicketCompatibilityMode">
+﻿<Type Name="TicketCompatibilityMode" FullName="System.Web.Configuration.TicketCompatibilityMode">
   <TypeSignature Language="C#" Value="public enum TicketCompatibilityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TicketCompatibilityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TicketCompatibilityMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TicketCompatibilityMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TicketCompatibilityMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="Framework20" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TicketCompatibilityMode Framework20 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework20" />
+      <MemberSignature Language="VB.NET" Value="Framework20" />
+      <MemberSignature Language="C++ CLI" Value="Framework20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.TicketCompatibilityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the ticket expiration date is stored as local time. This is the default value.</summary>
       </Docs>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="Framework40" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TicketCompatibilityMode Framework40 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TicketCompatibilityMode.Framework40" />
+      <MemberSignature Language="VB.NET" Value="Framework40" />
+      <MemberSignature Language="C++ CLI" Value="Framework40" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.TicketCompatibilityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the ticket expiration date is stored as UTC.</summary>
       </Docs>

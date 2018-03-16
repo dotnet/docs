@@ -1,7 +1,9 @@
-<Type Name="RegistrationClassContext" FullName="System.Runtime.InteropServices.RegistrationClassContext">
+﻿<Type Name="RegistrationClassContext" FullName="System.Runtime.InteropServices.RegistrationClassContext">
   <TypeSignature Language="C#" Value="public enum RegistrationClassContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationClassContext extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RegistrationClassContext" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegistrationClassContext" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegistrationClassContext" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="DisableActivateAsActivator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext DisableActivateAsActivator = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.DisableActivateAsActivator" />
+      <MemberSignature Language="VB.NET" Value="DisableActivateAsActivator" />
+      <MemberSignature Language="C++ CLI" Value="DisableActivateAsActivator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Disables activate-as-activator (AAA) activations for this activation only.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="EnableActivateAsActivator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext EnableActivateAsActivator = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.EnableActivateAsActivator" />
+      <MemberSignature Language="VB.NET" Value="EnableActivateAsActivator" />
+      <MemberSignature Language="C++ CLI" Value="EnableActivateAsActivator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>Enables activate-as-activator (AAA) activations for this activation only.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="EnableCodeDownload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext EnableCodeDownload = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.EnableCodeDownload" />
+      <MemberSignature Language="VB.NET" Value="EnableCodeDownload" />
+      <MemberSignature Language="C++ CLI" Value="EnableCodeDownload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Allows the downloading of code from the Directory Service or the Internet.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="FromDefaultContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext FromDefaultContext = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.FromDefaultContext" />
+      <MemberSignature Language="VB.NET" Value="FromDefaultContext" />
+      <MemberSignature Language="C++ CLI" Value="FromDefaultContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>Begin this activation from the default context of the current apartment.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="InProcessHandler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessHandler = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler" />
+      <MemberSignature Language="VB.NET" Value="InProcessHandler" />
+      <MemberSignature Language="C++ CLI" Value="InProcessHandler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The code that manages objects of this class is an in-process handler.</summary>
       </Docs>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="InProcessHandler16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessHandler16 = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessHandler16" />
+      <MemberSignature Language="VB.NET" Value="InProcessHandler16" />
+      <MemberSignature Language="C++ CLI" Value="InProcessHandler16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -136,6 +156,8 @@
       <MemberSignature Language="C#" Value="InProcessServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessServer = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessServer" />
+      <MemberSignature Language="VB.NET" Value="InProcessServer" />
+      <MemberSignature Language="C++ CLI" Value="InProcessServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The code that creates and manages objects of this class is a DLL that runs in the same process as the caller of the function specifying the class context.</summary>
       </Docs>
@@ -153,6 +176,8 @@
       <MemberSignature Language="C#" Value="InProcessServer16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext InProcessServer16 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.InProcessServer16" />
+      <MemberSignature Language="VB.NET" Value="InProcessServer16" />
+      <MemberSignature Language="C++ CLI" Value="InProcessServer16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -170,6 +196,8 @@
       <MemberSignature Language="C#" Value="LocalServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext LocalServer = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.LocalServer" />
+      <MemberSignature Language="VB.NET" Value="LocalServer" />
+      <MemberSignature Language="C++ CLI" Value="LocalServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The EXE code that creates and manages objects of this class runs on same machine but is loaded in a separate process space.</summary>
       </Docs>
@@ -187,6 +216,8 @@
       <MemberSignature Language="C#" Value="NoCodeDownload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoCodeDownload = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoCodeDownload" />
+      <MemberSignature Language="VB.NET" Value="NoCodeDownload" />
+      <MemberSignature Language="C++ CLI" Value="NoCodeDownload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Disallows the downloading of code from the Directory Service or the Internet.</summary>
       </Docs>
@@ -204,6 +236,8 @@
       <MemberSignature Language="C#" Value="NoCustomMarshal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoCustomMarshal = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoCustomMarshal" />
+      <MemberSignature Language="VB.NET" Value="NoCustomMarshal" />
+      <MemberSignature Language="C++ CLI" Value="NoCustomMarshal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Specifies whether activation fails if it uses custom marshaling.</summary>
       </Docs>
@@ -221,6 +256,8 @@
       <MemberSignature Language="C#" Value="NoFailureLog" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext NoFailureLog = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.NoFailureLog" />
+      <MemberSignature Language="VB.NET" Value="NoFailureLog" />
+      <MemberSignature Language="C++ CLI" Value="NoFailureLog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +267,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Overrides the logging of failures.</summary>
       </Docs>
@@ -238,6 +276,8 @@
       <MemberSignature Language="C#" Value="RemoteServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext RemoteServer = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.RemoteServer" />
+      <MemberSignature Language="VB.NET" Value="RemoteServer" />
+      <MemberSignature Language="C++ CLI" Value="RemoteServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A remote machine context.</summary>
       </Docs>
@@ -255,6 +296,8 @@
       <MemberSignature Language="C#" Value="Reserved1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved1 = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved1" />
+      <MemberSignature Language="VB.NET" Value="Reserved1" />
+      <MemberSignature Language="C++ CLI" Value="Reserved1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -264,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -272,6 +316,8 @@
       <MemberSignature Language="C#" Value="Reserved2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved2 = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved2" />
+      <MemberSignature Language="VB.NET" Value="Reserved2" />
+      <MemberSignature Language="C++ CLI" Value="Reserved2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -281,6 +327,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -289,6 +336,8 @@
       <MemberSignature Language="C#" Value="Reserved3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved3 = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved3" />
+      <MemberSignature Language="VB.NET" Value="Reserved3" />
+      <MemberSignature Language="C++ CLI" Value="Reserved3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -298,6 +347,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -306,6 +356,8 @@
       <MemberSignature Language="C#" Value="Reserved4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved4 = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved4" />
+      <MemberSignature Language="VB.NET" Value="Reserved4" />
+      <MemberSignature Language="C++ CLI" Value="Reserved4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -315,6 +367,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -323,6 +376,8 @@
       <MemberSignature Language="C#" Value="Reserved5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationClassContext Reserved5 = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationClassContext.Reserved5" />
+      <MemberSignature Language="VB.NET" Value="Reserved5" />
+      <MemberSignature Language="C++ CLI" Value="Reserved5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -332,6 +387,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationClassContext</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>

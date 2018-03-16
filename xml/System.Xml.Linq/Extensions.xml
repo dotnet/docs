@@ -1,7 +1,9 @@
-<Type Name="Extensions" FullName="System.Xml.Linq.Extensions">
+﻿<Type Name="Extensions" FullName="System.Xml.Linq.Extensions">
   <TypeSignature Language="C#" Value="public static class Extensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Extensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.Extensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Extensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +70,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XNode;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors&lt;(class System.Xml.Linq.XNode) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Ancestors``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Ancestors(Of T As XNode) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -315,6 +319,8 @@ Ancestors
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source, System.Xml.Linq.XName name) where T : System.Xml.Linq.XNode;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors&lt;(class System.Xml.Linq.XNode) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Ancestors``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Ancestors(Of T As XNode) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -583,6 +589,8 @@ Ancestors
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; AncestorsAndSelf (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; AncestorsAndSelf(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.AncestorsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AncestorsAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -828,6 +836,8 @@ Ancestors and Self
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; AncestorsAndSelf (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source, System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; AncestorsAndSelf(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.AncestorsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AncestorsAndSelf (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1085,6 +1095,8 @@ Ancestors and Self
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XAttribute&gt; Attributes (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XAttribute&gt; Attributes(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Attributes(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Attributes (source As IEnumerable(Of XElement)) As IEnumerable(Of XAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1269,6 +1281,8 @@ aw:Att2="content6"
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XAttribute&gt; Attributes (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source, System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XAttribute&gt; Attributes(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Attributes(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Attributes (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XAttribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1366,6 +1380,8 @@ Att1="content5"
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; DescendantNodes&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; DescendantNodes&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantNodes(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ DescendantNodes(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1589,6 +1605,8 @@ Text: ddd
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; DescendantNodesAndSelf (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; DescendantNodesAndSelf(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantNodesAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantNodesAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ DescendantNodesAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1666,6 +1684,8 @@ Text: ddd
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Descendants&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Descendants&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Descendants``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Descendants(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Descendants(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1856,6 +1876,8 @@ End Module
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Descendants&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source, System.Xml.Linq.XName name) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Descendants&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Descendants``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Descendants(Of T As XContainer) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Descendants(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2072,6 +2094,8 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; DescendantsAndSelf (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; DescendantsAndSelf(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantsAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2121,6 +2145,8 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; DescendantsAndSelf (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; source, System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; DescendantsAndSelf(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantsAndSelf (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2194,6 +2220,8 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Elements&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Elements&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Elements``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Elements(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Elements(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2389,6 +2417,8 @@ End Module
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Elements&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source, System.Xml.Linq.XName name) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Elements&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Elements``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Elements(Of T As XContainer) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Elements(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2578,6 +2608,8 @@ End Module
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; InDocumentOrder&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XNode;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; InDocumentOrder&lt;(class System.Xml.Linq.XNode) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.InDocumentOrder``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InDocumentOrder(Of T As XNode) (source As IEnumerable(Of T)) As IEnumerable(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ InDocumentOrder(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2702,6 +2734,8 @@ Next
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; Nodes&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XContainer;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; Nodes&lt;(class System.Xml.Linq.XContainer) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Nodes(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ Nodes(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2810,6 +2844,8 @@ Text: ddd
       <MemberSignature Language="C#" Value="public static void Remove (this System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XAttribute&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Remove(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XAttribute&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Remove(System.Collections.Generic.IEnumerable{System.Xml.Linq.XAttribute})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Remove (source As IEnumerable(Of XAttribute))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Remove(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2896,6 +2932,8 @@ Console.WriteLine(root)
       <MemberSignature Language="C#" Value="public static void Remove&lt;T&gt; (this System.Collections.Generic.IEnumerable&lt;T&gt; source) where T : System.Xml.Linq.XNode;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Remove&lt;(class System.Xml.Linq.XNode) T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Remove``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Remove(Of T As XNode) (source As IEnumerable(Of T))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static void Remove(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>

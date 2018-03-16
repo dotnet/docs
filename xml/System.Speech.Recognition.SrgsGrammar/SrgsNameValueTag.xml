@@ -1,7 +1,9 @@
-<Type Name="SrgsNameValueTag" FullName="System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag">
+﻿<Type Name="SrgsNameValueTag" FullName="System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag">
   <TypeSignature Language="C#" Value="public class SrgsNameValueTag : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsNameValueTag extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" />
+  <TypeSignature Language="VB.NET" Value="Public Class SrgsNameValueTag&#xA;Inherits SrgsElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SrgsNameValueTag : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,10 +115,21 @@ namespace SampleRecognition
     <altmember cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SrgsNameValueTag ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsNameValueTag();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -132,6 +145,8 @@ namespace SampleRecognition
       <MemberSignature Language="C#" Value="public SrgsNameValueTag (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsNameValueTag(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -237,6 +252,8 @@ namespace SampleRecognition
       <MemberSignature Language="C#" Value="public SrgsNameValueTag (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsNameValueTag(System::String ^ name, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -263,6 +280,8 @@ namespace SampleRecognition
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -283,6 +302,8 @@ namespace SampleRecognition
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -314,14 +335,5 @@ namespace SampleRecognition
         <exception cref="T:System.ArgumentException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" /> to an invalid type.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

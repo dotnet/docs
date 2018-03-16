@@ -1,7 +1,9 @@
-<Type Name="AccessControlActions" FullName="System.Security.AccessControl.AccessControlActions">
+﻿<Type Name="AccessControlActions" FullName="System.Security.AccessControl.AccessControlActions">
   <TypeSignature Language="C#" Value="public enum AccessControlActions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessControlActions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlActions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessControlActions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessControlActions" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Change" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlActions Change = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.Change" />
+      <MemberSignature Language="VB.NET" Value="Change" />
+      <MemberSignature Language="C++ CLI" Value="Change" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlActions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies write-only access.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlActions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlActions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies no access.</summary>
       </Docs>
@@ -73,6 +81,8 @@
       <MemberSignature Language="C#" Value="View" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlActions View = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlActions.View" />
+      <MemberSignature Language="VB.NET" Value="View" />
+      <MemberSignature Language="C++ CLI" Value="View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlActions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies read-only access.</summary>
       </Docs>

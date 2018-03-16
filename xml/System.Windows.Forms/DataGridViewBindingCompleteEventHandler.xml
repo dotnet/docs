@@ -1,7 +1,9 @@
-<Type Name="DataGridViewBindingCompleteEventHandler" FullName="System.Windows.Forms.DataGridViewBindingCompleteEventHandler">
+﻿<Type Name="DataGridViewBindingCompleteEventHandler" FullName="System.Windows.Forms.DataGridViewBindingCompleteEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewBindingCompleteEventHandler(object sender, DataGridViewBindingCompleteEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewBindingCompleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewBindingCompleteEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewBindingCompleteEventHandler(sender As Object, e As DataGridViewBindingCompleteEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewBindingCompleteEventHandler(System::Object ^ sender, DataGridViewBindingCompleteEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="DelegateInArgument&lt;T&gt;" FullName="System.Activities.DelegateInArgument&lt;T&gt;">
+﻿<Type Name="DelegateInArgument&lt;T&gt;" FullName="System.Activities.DelegateInArgument&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class DelegateInArgument&lt;T&gt; : System.Activities.DelegateInArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DelegateInArgument`1&lt;T&gt; extends System.Activities.DelegateInArgument" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DelegateInArgument`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DelegateInArgument(Of T)&#xA;Inherits DelegateInArgument" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DelegateInArgument sealed : System::Activities::DelegateInArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateInArgument`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DelegateInArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateInArgument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -38,6 +51,8 @@
       <MemberSignature Language="C#" Value="public DelegateInArgument (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DelegateInArgument(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -56,6 +71,8 @@
       <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,6 +95,8 @@
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +120,8 @@
       <MemberSignature Language="C#" Value="protected override Type TypeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DelegateInArgument`1.TypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TypeCore As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ TypeCore { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -115,14 +136,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateInArgument`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

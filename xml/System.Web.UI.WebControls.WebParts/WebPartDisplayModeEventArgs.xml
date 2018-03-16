@@ -1,7 +1,9 @@
-<Type Name="WebPartDisplayModeEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs">
+﻿<Type Name="WebPartDisplayModeEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs">
   <TypeSignature Language="C#" Value="public class WebPartDisplayModeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartDisplayModeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPartDisplayModeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartDisplayModeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public WebPartDisplayModeEventArgs (System.Web.UI.WebControls.WebParts.WebPartDisplayMode oldDisplayMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartDisplayMode oldDisplayMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oldDisplayMode As WebPartDisplayMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartDisplayModeEventArgs(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ oldDisplayMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartDisplayMode OldDisplayMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartDisplayMode OldDisplayMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs.OldDisplayMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property OldDisplayMode As WebPartDisplayMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ OldDisplayMode { System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

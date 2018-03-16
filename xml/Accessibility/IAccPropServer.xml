@@ -1,7 +1,9 @@
-<Type Name="IAccPropServer" FullName="Accessibility.IAccPropServer">
+﻿<Type Name="IAccPropServer" FullName="Accessibility.IAccPropServer">
   <TypeSignature Language="C#" Value="public interface IAccPropServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccPropServer" />
   <TypeSignature Language="DocId" Value="T:Accessibility.IAccPropServer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAccPropServer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAccPropServer" />
   <AssemblyInfo>
     <AssemblyName>Accessibility</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +14,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("76C0DBBB-15E0-4E7B-B61B-20EEEA2001E0")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public void GetPropValue (ref byte pIDString, uint dwIDStringLen, Guid idProp, out object pvarValue, out int pfHasProp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPropValue([in]unsigned int8&amp; pIDString, [in]unsigned int32 dwIDStringLen, [in]valuetype System.Guid idProp, [out] object&amp; pvarValue, [out] int32&amp; pfHasProp) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Accessibility.IAccPropServer.GetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetPropValue (ByRef pIDString As Byte, dwIDStringLen As UInteger, idProp As Guid, ByRef pvarValue As Object, ByRef pfHasProp As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetPropValue(System::Byte % pIDString, System::UInt32 dwIDStringLen, Guid idProp, [Runtime::InteropServices::Out] System::Object ^ % pvarValue, [Runtime::InteropServices::Out] int % pfHasProp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Accessibility</AssemblyName>

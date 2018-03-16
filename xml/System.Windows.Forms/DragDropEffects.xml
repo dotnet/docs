@@ -1,7 +1,9 @@
-<Type Name="DragDropEffects" FullName="System.Windows.Forms.DragDropEffects">
+﻿<Type Name="DragDropEffects" FullName="System.Windows.Forms.DragDropEffects">
   <TypeSignature Language="C#" Value="public enum DragDropEffects" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragDropEffects extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragDropEffects" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DragDropEffects" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DragDropEffects" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects All = int32(-2147483645)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483645</MemberValue>
       <Docs>
         <summary>The combination of the <see cref="F:System.Windows.DragDropEffects.Copy" />, <see cref="F:System.Windows.Forms.DragDropEffects.Move" />, and <see cref="F:System.Windows.Forms.DragDropEffects.Scroll" /> effects.</summary>
       </Docs>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="Copy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects Copy = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.Copy" />
+      <MemberSignature Language="VB.NET" Value="Copy" />
+      <MemberSignature Language="C++ CLI" Value="Copy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The data from the drag source is copied to the drop target.</summary>
       </Docs>
@@ -81,6 +89,8 @@
       <MemberSignature Language="C#" Value="Link" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects Link = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.Link" />
+      <MemberSignature Language="VB.NET" Value="Link" />
+      <MemberSignature Language="C++ CLI" Value="Link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -89,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The data from the drag source is linked to the drop target.</summary>
       </Docs>
@@ -97,6 +108,8 @@
       <MemberSignature Language="C#" Value="Move" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects Move = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.Move" />
+      <MemberSignature Language="VB.NET" Value="Move" />
+      <MemberSignature Language="C++ CLI" Value="Move" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data from the drag source is moved to the drop target.</summary>
       </Docs>
@@ -113,6 +127,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The drop target does not accept the data.</summary>
       </Docs>
@@ -129,6 +146,8 @@
       <MemberSignature Language="C#" Value="Scroll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragDropEffects Scroll = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragDropEffects.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Scroll" />
+      <MemberSignature Language="C++ CLI" Value="Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>The target can be scrolled while dragging to locate a drop position that is not currently visible in the target.</summary>
       </Docs>

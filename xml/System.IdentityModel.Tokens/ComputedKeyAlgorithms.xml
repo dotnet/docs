@@ -1,7 +1,9 @@
-<Type Name="ComputedKeyAlgorithms" FullName="System.IdentityModel.Tokens.ComputedKeyAlgorithms">
+﻿<Type Name="ComputedKeyAlgorithms" FullName="System.IdentityModel.Tokens.ComputedKeyAlgorithms">
   <TypeSignature Language="C#" Value="public static class ComputedKeyAlgorithms" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ComputedKeyAlgorithms extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.ComputedKeyAlgorithms" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComputedKeyAlgorithms" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComputedKeyAlgorithms abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public const string Psha1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Psha1" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.ComputedKeyAlgorithms.Psha1" />
+      <MemberSignature Language="VB.NET" Value="Public Const Psha1 As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Psha1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

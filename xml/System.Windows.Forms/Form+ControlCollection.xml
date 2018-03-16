@@ -1,7 +1,9 @@
-<Type Name="Form+ControlCollection" FullName="System.Windows.Forms.Form+ControlCollection">
+﻿<Type Name="Form+ControlCollection" FullName="System.Windows.Forms.Form+ControlCollection">
   <TypeSignature Language="C#" Value="public class Form.ControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Form/ControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form.ControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class Form.ControlCollection&#xA;Inherits Control.ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class Form::ControlCollection : System::Windows::Forms::Control::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ControlCollection (System.Windows.Forms.Form owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Form owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.#ctor(System.Windows.Forms.Form)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Form)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlCollection(System::Windows::Forms::Form ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Windows.Forms.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Add(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (value As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Windows::Forms::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public override void Remove (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Remove(class System.Windows.Forms.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Form.ControlCollection.Remove(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Windows::Forms::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SrgsPhoneticAlphabet" FullName="System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet">
+﻿<Type Name="SrgsPhoneticAlphabet" FullName="System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet">
   <TypeSignature Language="C#" Value="public enum SrgsPhoneticAlphabet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SrgsPhoneticAlphabet extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SrgsPhoneticAlphabet" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SrgsPhoneticAlphabet" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Ipa" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet Ipa = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet.Ipa" />
+      <MemberSignature Language="VB.NET" Value="Ipa" />
+      <MemberSignature Language="C++ CLI" Value="Ipa" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>International Phonetic Alphabet phoneme set.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="Sapi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet Sapi = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet.Sapi" />
+      <MemberSignature Language="VB.NET" Value="Sapi" />
+      <MemberSignature Language="C++ CLI" Value="Sapi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Speech API phoneme set.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Ups" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet Ups = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet.Ups" />
+      <MemberSignature Language="VB.NET" Value="Ups" />
+      <MemberSignature Language="C++ CLI" Value="Ups" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.SrgsGrammar.SrgsPhoneticAlphabet</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Universal Phone Set phoneme set, which is ASCII encoding of phonemes for IPA.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="DeliveryRequirementsAttribute" FullName="System.ServiceModel.DeliveryRequirementsAttribute">
+﻿<Type Name="DeliveryRequirementsAttribute" FullName="System.ServiceModel.DeliveryRequirementsAttribute">
   <TypeSignature Language="C#" Value="public sealed class DeliveryRequirementsAttribute : Attribute, System.ServiceModel.Description.IContractBehavior, System.ServiceModel.Description.IContractBehaviorAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeliveryRequirementsAttribute extends System.Attribute implements class System.ServiceModel.Description.IContractBehavior, class System.ServiceModel.Description.IContractBehaviorAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DeliveryRequirementsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeliveryRequirementsAttribute&#xA;Inherits Attribute&#xA;Implements IContractBehavior, IContractBehaviorAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeliveryRequirementsAttribute sealed : Attribute, System::ServiceModel::Description::IContractBehavior, System::ServiceModel::Description::IContractBehaviorAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="public DeliveryRequirementsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DeliveryRequirementsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeliveryRequirementsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +82,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.QueuedDeliveryRequirementsMode QueuedDeliveryRequirements { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.QueuedDeliveryRequirementsMode QueuedDeliveryRequirements" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueuedDeliveryRequirements As QueuedDeliveryRequirementsMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::QueuedDeliveryRequirementsMode QueuedDeliveryRequirements { System::ServiceModel::QueuedDeliveryRequirementsMode get(); void set(System::ServiceModel::QueuedDeliveryRequirementsMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="public bool RequireOrderedDelivery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireOrderedDelivery" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireOrderedDelivery As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireOrderedDelivery { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,7 +154,12 @@
       <MemberSignature Language="C#" Value="void IContractBehavior.AddBindingParameters (System.ServiceModel.Description.ContractDescription description, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IContractBehavior.AddBindingParameters(class System.ServiceModel.Description.ContractDescription description, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DeliveryRequirementsAttribute.System#ServiceModel#Description#IContractBehavior#AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddBindingParameters (description As ContractDescription, endpoint As ServiceEndpoint, parameters As BindingParameterCollection) Implements IContractBehavior.AddBindingParameters" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System::ServiceModel::Description::ContractDescription ^ description, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Channels::BindingParameterCollection ^ parameters) = System::ServiceModel::Description::IContractBehavior::AddBindingParameters;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -171,7 +184,12 @@
       <MemberSignature Language="C#" Value="void IContractBehavior.ApplyClientBehavior (System.ServiceModel.Description.ContractDescription description, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.ClientRuntime proxy);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(class System.ServiceModel.Description.ContractDescription description, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime proxy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DeliveryRequirementsAttribute.System#ServiceModel#Description#IContractBehavior#ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Sub ApplyClientBehavior (description As ContractDescription, endpoint As ServiceEndpoint, proxy As ClientRuntime) Implements IContractBehavior.ApplyClientBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System::ServiceModel::Description::ContractDescription ^ description, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::ClientRuntime ^ proxy) = System::ServiceModel::Description::IContractBehavior::ApplyClientBehavior;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,7 +214,12 @@
       <MemberSignature Language="C#" Value="void IContractBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ContractDescription description, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.DispatchRuntime dispatch);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ContractDescription description, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.DispatchRuntime dispatch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DeliveryRequirementsAttribute.System#ServiceModel#Description#IContractBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Sub ApplyDispatchBehavior (description As ContractDescription, endpoint As ServiceEndpoint, dispatch As DispatchRuntime) Implements IContractBehavior.ApplyDispatchBehavior" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System::ServiceModel::Description::ContractDescription ^ description, System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Dispatcher::DispatchRuntime ^ dispatch) = System::ServiceModel::Description::IContractBehavior::ApplyDispatchBehavior;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -221,7 +244,12 @@
       <MemberSignature Language="C#" Value="void IContractBehavior.Validate (System.ServiceModel.Description.ContractDescription description, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IContractBehavior.Validate(class System.ServiceModel.Description.ContractDescription description, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DeliveryRequirementsAttribute.System#ServiceModel#Description#IContractBehavior#Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Sub Validate (description As ContractDescription, endpoint As ServiceEndpoint) Implements IContractBehavior.Validate" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IContractBehavior.Validate(System::ServiceModel::Description::ContractDescription ^ description, System::ServiceModel::Description::ServiceEndpoint ^ endpoint) = System::ServiceModel::Description::IContractBehavior::Validate;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IContractBehavior.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -244,6 +272,8 @@
       <MemberSignature Language="C#" Value="public Type TargetContract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetContract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.DeliveryRequirementsAttribute.TargetContract" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetContract As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetContract { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

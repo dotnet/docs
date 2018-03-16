@@ -1,7 +1,9 @@
-<Type Name="WorkflowIdleBehavior" FullName="System.ServiceModel.Activities.Description.WorkflowIdleBehavior">
+﻿<Type Name="WorkflowIdleBehavior" FullName="System.ServiceModel.Activities.Description.WorkflowIdleBehavior">
   <TypeSignature Language="C#" Value="public class WorkflowIdleBehavior : System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowIdleBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.WorkflowIdleBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowIdleBehavior&#xA;Implements IServiceBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowIdleBehavior : System::ServiceModel::Description::IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public WorkflowIdleBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowIdleBehavior();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -49,7 +53,11 @@
       <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBindingParameters(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase, System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ServiceEndpoint ^&gt; ^ endpoints, System::ServiceModel::Channels::BindingParameterCollection ^ bindingParameters);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,7 +84,11 @@
       <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyDispatchBehavior(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,6 +111,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan TimeToPersist { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToPersist" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToPersist As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeToPersist { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -124,6 +138,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan TimeToUnload { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToUnload" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToUnload As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimeToUnload { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -149,7 +165,11 @@
       <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ServiceDescription serviceDescription, System.ServiceModel.ServiceHostBase serviceHostBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ServiceDescription serviceDescription, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::ServiceModel::Description::ServiceDescription ^ serviceDescription, System::ServiceModel::ServiceHostBase ^ serviceHostBase);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IServiceBehavior.Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

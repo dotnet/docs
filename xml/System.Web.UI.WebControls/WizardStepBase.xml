@@ -1,7 +1,9 @@
-<Type Name="WizardStepBase" FullName="System.Web.UI.WebControls.WizardStepBase">
+﻿<Type Name="WizardStepBase" FullName="System.Web.UI.WebControls.WizardStepBase">
   <TypeSignature Language="C#" Value="public abstract class WizardStepBase : System.Web.UI.WebControls.View" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WizardStepBase extends System.Web.UI.WebControls.View" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WizardStepBase&#xA;Inherits View" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WizardStepBase abstract : System::Web::UI::WebControls::View" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected WizardStepBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WizardStepBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +60,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowReturn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowReturn" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.AllowReturn" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowReturn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowReturn { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +125,8 @@
       <MemberSignature Language="C#" Value="public override bool EnableTheming { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableTheming" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.EnableTheming" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +161,8 @@
       <MemberSignature Language="C#" Value="public override string ID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +207,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepBase.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +231,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,7 +243,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,9 +265,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepBase.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,9 +288,11 @@
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
-      <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepBase.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +314,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WizardStepType StepType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WizardStepType StepType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.StepType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepType As WizardStepType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WizardStepType StepType { System::Web::UI::WebControls::WizardStepType get(); void set(System::Web::UI::WebControls::WizardStepType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +368,8 @@
       <MemberSignature Language="C#" Value="public virtual string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Title As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,6 +415,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Wizard Wizard { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Wizard Wizard" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepBase.Wizard" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Wizard As Wizard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Wizard ^ Wizard { System::Web::UI::WebControls::Wizard ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

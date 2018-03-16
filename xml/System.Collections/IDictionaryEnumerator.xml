@@ -1,7 +1,9 @@
-<Type Name="IDictionaryEnumerator" FullName="System.Collections.IDictionaryEnumerator">
+﻿<Type Name="IDictionaryEnumerator" FullName="System.Collections.IDictionaryEnumerator">
   <TypeSignature Language="C#" Value="public interface IDictionaryEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDictionaryEnumerator implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IDictionaryEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDictionaryEnumerator&#xA;Implements IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDictionaryEnumerator : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +76,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.DictionaryEntry Entry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.DictionaryEntry Entry" />
       <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Entry" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entry As DictionaryEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::DictionaryEntry Entry { System::Collections::DictionaryEntry get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -124,6 +128,8 @@
       <MemberSignature Language="C#" Value="public object Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Key" />
       <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Key { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -171,6 +177,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Collections.IDictionaryEnumerator.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="AdRotator" FullName="System.Web.UI.WebControls.AdRotator">
+﻿<Type Name="AdRotator" FullName="System.Web.UI.WebControls.AdRotator">
   <TypeSignature Language="C#" Value="public class AdRotator : System.Web.UI.WebControls.DataBoundControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdRotator extends System.Web.UI.WebControls.DataBoundControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AdRotator" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdRotator&#xA;Inherits DataBoundControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdRotator : System::Web::UI::WebControls::DataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -191,6 +193,8 @@
       <MemberSignature Language="C#" Value="public AdRotator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AdRotator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +230,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.AdCreatedEventHandler AdCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.AdCreatedEventHandler AdCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.AdRotator.AdCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AdCreated As AdCreatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::AdCreatedEventHandler ^ AdCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +310,8 @@
       <MemberSignature Language="C#" Value="public string AdvertisementFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AdvertisementFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.AdvertisementFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdvertisementFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AdvertisementFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -409,6 +417,8 @@
       <MemberSignature Language="C#" Value="public string AlternateTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AlternateTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.AlternateTextField" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlternateTextField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlternateTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -480,6 +490,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.FontInfo Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.FontInfo Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Font As FontInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::FontInfo ^ Font { System::Web::UI::WebControls::FontInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,7 +502,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -509,6 +521,8 @@
       <MemberSignature Language="C#" Value="public string ImageUrlField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrlField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.ImageUrlField" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageUrlField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageUrlField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +595,8 @@
       <MemberSignature Language="C#" Value="public string KeywordFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeywordFilter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.KeywordFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeywordFilter As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeywordFilter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -658,6 +674,8 @@
       <MemberSignature Language="C#" Value="public string NavigateUrlField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrlField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.NavigateUrlField" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrlField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrlField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -729,6 +747,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAdCreated (System.Web.UI.WebControls.AdCreatedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAdCreated(class System.Web.UI.WebControls.AdCreatedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAdCreated (e As AdCreatedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAdCreated(System::Web::UI::WebControls::AdCreatedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -800,9 +820,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -821,9 +843,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -855,9 +879,11 @@
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
-      <MemberSignature Language="C#" Value="protected override void PerformDataBinding (System.Collections.IEnumerable data);" />
+      <MemberSignature Language="C#" Value="protected internal override void PerformDataBinding (System.Collections.IEnumerable data);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void PerformDataBinding(class System.Collections.IEnumerable data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.PerformDataBinding(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PerformDataBinding (data As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -890,6 +916,8 @@
       <MemberSignature Language="C#" Value="protected override void PerformSelect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PerformSelect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.PerformSelect" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformSelect ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformSelect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -916,9 +944,11 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.AdRotator.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -959,6 +989,8 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -986,6 +1018,8 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1074,6 +1108,8 @@
       <MemberSignature Language="C#" Value="public override string UniqueID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.AdRotator.UniqueID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueID As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

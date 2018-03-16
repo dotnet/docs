@@ -1,7 +1,9 @@
-<Type Name="FrameworkElementAdapters" FullName="System.AddIn.Pipeline.FrameworkElementAdapters">
+﻿<Type Name="FrameworkElementAdapters" FullName="System.AddIn.Pipeline.FrameworkElementAdapters">
   <TypeSignature Language="C#" Value="public static class FrameworkElementAdapters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FrameworkElementAdapters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.FrameworkElementAdapters" />
+  <TypeSignature Language="VB.NET" Value="Public Class FrameworkElementAdapters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FrameworkElementAdapters abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FrameworkElement ContractToViewAdapter (System.AddIn.Contract.INativeHandleContract nativeHandleContract);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.FrameworkElement ContractToViewAdapter(class System.AddIn.Contract.INativeHandleContract nativeHandleContract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.FrameworkElementAdapters.ContractToViewAdapter(System.AddIn.Contract.INativeHandleContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContractToViewAdapter (nativeHandleContract As INativeHandleContract) As FrameworkElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::FrameworkElement ^ ContractToViewAdapter(System::AddIn::Contract::INativeHandleContract ^ nativeHandleContract);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static System.AddIn.Contract.INativeHandleContract ViewToContractAdapter (System.Windows.FrameworkElement root);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.INativeHandleContract ViewToContractAdapter(class System.Windows.FrameworkElement root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.FrameworkElementAdapters.ViewToContractAdapter(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ViewToContractAdapter (root As FrameworkElement) As INativeHandleContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::AddIn::Contract::INativeHandleContract ^ ViewToContractAdapter(System::Windows::FrameworkElement ^ root);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>

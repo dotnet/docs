@@ -1,7 +1,9 @@
-<Type Name="Geometry3D" FullName="System.Windows.Media.Media3D.Geometry3D">
+﻿<Type Name="Geometry3D" FullName="System.Windows.Media.Media3D.Geometry3D">
   <TypeSignature Language="C#" Value="public abstract class Geometry3D : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Geometry3D extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Geometry3D" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Geometry3D&#xA;Inherits Animatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Geometry3D abstract : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Media3D.Rect3D Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Rect3D Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Geometry3D.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Bounds As Rect3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Media3D::Rect3D Bounds { System::Windows::Media::Media3D::Rect3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Geometry3D Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Geometry3D Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Geometry3D.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Geometry3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Geometry3D ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Geometry3D CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.Geometry3D CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Geometry3D.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Geometry3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Geometry3D ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

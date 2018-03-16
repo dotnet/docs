@@ -1,7 +1,9 @@
-<Type Name="ExceptionHandlingClause" FullName="System.Reflection.ExceptionHandlingClause">
+﻿<Type Name="ExceptionHandlingClause" FullName="System.Reflection.ExceptionHandlingClause">
   <TypeSignature Language="C#" Value="public class ExceptionHandlingClause" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit ExceptionHandlingClause extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.ExceptionHandlingClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExceptionHandlingClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionHandlingClause" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -71,6 +73,8 @@
       <MemberSignature Language="C#" Value="protected ExceptionHandlingClause ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ExceptionHandlingClause.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExceptionHandlingClause();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +106,8 @@
       <MemberSignature Language="C#" Value="public virtual Type CatchType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CatchType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.CatchType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CatchType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ CatchType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +168,8 @@
       <MemberSignature Language="C#" Value="public virtual int FilterOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FilterOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.FilterOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FilterOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FilterOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +208,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.ExceptionHandlingClauseOptions Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.ExceptionHandlingClauseOptions Flags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Flags As ExceptionHandlingClauseOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ExceptionHandlingClauseOptions Flags { System::Reflection::ExceptionHandlingClauseOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -260,6 +270,8 @@
       <MemberSignature Language="C#" Value="public virtual int HandlerLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.HandlerLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HandlerLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HandlerLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +331,8 @@
       <MemberSignature Language="C#" Value="public virtual int HandlerOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HandlerOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.HandlerOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HandlerOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int HandlerOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -378,6 +392,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ExceptionHandlingClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -406,6 +422,8 @@
       <MemberSignature Language="C#" Value="public virtual int TryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryLength" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.TryLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TryLength As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -466,6 +484,8 @@
       <MemberSignature Language="C#" Value="public virtual int TryOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TryOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ExceptionHandlingClause.TryOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TryOffset As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TryOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

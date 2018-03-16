@@ -1,7 +1,9 @@
-<Type Name="IMethodReturnMessage" FullName="System.Runtime.Remoting.Messaging.IMethodReturnMessage">
+﻿<Type Name="IMethodReturnMessage" FullName="System.Runtime.Remoting.Messaging.IMethodReturnMessage">
   <TypeSignature Language="C#" Value="public interface IMethodReturnMessage : System.Runtime.Remoting.Messaging.IMethodMessage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMethodReturnMessage implements class System.Runtime.Remoting.Messaging.IMessage, class System.Runtime.Remoting.Messaging.IMethodMessage" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMethodReturnMessage&#xA;Implements IMethodMessage" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMethodReturnMessage : System::Runtime::Remoting::Messaging::IMethodMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public object GetOutArg (int argNum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOutArg(int32 argNum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodReturnMessage.GetOutArg(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOutArg (argNum As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOutArg(int argNum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public string GetOutArgName (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetOutArgName(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.IMethodReturnMessage.GetOutArgName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOutArgName (index As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetOutArgName(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +132,8 @@
       <MemberSignature Language="C#" Value="public int OutArgCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutArgCount" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutArgCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutArgCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +166,8 @@
       <MemberSignature Language="C#" Value="public object[] OutArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] OutArgs" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutArgs As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ OutArgs { cli::array &lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public object ReturnValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ReturnValue" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Messaging.IMethodReturnMessage.ReturnValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ReturnValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

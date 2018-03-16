@@ -1,7 +1,9 @@
-<Type Name="ActiveDirectorySubnetCollection" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection">
+﻿<Type Name="ActiveDirectorySubnetCollection" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySubnetCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySubnetCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySubnetCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySubnetCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.Add(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (subnet As ActiveDirectorySubnet) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ subnet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -45,10 +49,22 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a range of items to this collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[] subnets);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[] subnets) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (subnets As ActiveDirectorySubnet())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^&gt; ^ subnets);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +93,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection subnets);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection subnets) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (subnets As ActiveDirectorySubnetCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnetCollection ^ subnets);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -105,6 +123,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (subnet As ActiveDirectorySubnet) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ subnet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -134,6 +154,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ActiveDirectorySubnet(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -163,6 +185,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (subnet As ActiveDirectorySubnet) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ subnet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -191,6 +215,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.Insert(System.Int32,System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, subnet As ActiveDirectorySubnet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ subnet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -222,6 +248,8 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ActiveDirectorySubnet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ get(int index); void set(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -250,6 +278,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -270,6 +300,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClearComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnClearComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -290,6 +322,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -315,6 +349,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -340,6 +376,8 @@
       <MemberSignature Language="C#" Value="protected override void OnSetComplete (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSetComplete(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnSetComplete(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -367,6 +405,8 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -395,6 +435,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet subnet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnetCollection.Remove(System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (subnet As ActiveDirectorySubnet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::ActiveDirectory::ActiveDirectorySubnet ^ subnet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -419,15 +461,5 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a range of items to this collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

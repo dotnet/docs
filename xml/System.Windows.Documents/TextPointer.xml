@@ -1,7 +1,9 @@
-<Type Name="TextPointer" FullName="System.Windows.Documents.TextPointer">
+﻿<Type Name="TextPointer" FullName="System.Windows.Documents.TextPointer">
   <TypeSignature Language="C#" Value="public class TextPointer : System.Windows.Documents.ContentPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextPointer extends System.Windows.Documents.ContentPosition" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextPointer" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextPointer&#xA;Inherits ContentPosition" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextPointer : System::Windows::Documents::ContentPosition" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +98,8 @@
       <MemberSignature Language="C#" Value="public int CompareTo (System.Windows.Documents.TextPointer position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(class System.Windows.Documents.TextPointer position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.CompareTo(System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (position As TextPointer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Windows::Documents::TextPointer ^ position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +140,8 @@
       <MemberSignature Language="C#" Value="public int DeleteTextInRun (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 DeleteTextInRun(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.DeleteTextInRun(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeleteTextInRun (count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DeleteTextInRun(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +176,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer DocumentEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer DocumentEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.DocumentEnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentEnd As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ DocumentEnd { System::Windows::Documents::TextPointer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,6 +204,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer DocumentStart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer DocumentStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.DocumentStart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentStart As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextPointer ^ DocumentStart { System::Windows::Documents::TextPointer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -224,6 +234,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject GetAdjacentElement (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyObject GetAdjacentElement(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetAdjacentElement(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAdjacentElement (direction As LogicalDirection) As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ GetAdjacentElement(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -254,7 +266,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect GetCharacterRect (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect GetCharacterRect(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetCharacterRect(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCharacterRect (direction As LogicalDirection) As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetCharacterRect(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.GetCharacterRect(System.Windows.Documents.LogicalDirection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -286,6 +303,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetInsertionPosition (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetInsertionPosition(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetInsertionPosition(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInsertionPosition (direction As LogicalDirection) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetInsertionPosition(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,10 +347,21 @@
         <altmember cref="M:System.Windows.Documents.TextPointer.GetNextInsertionPosition(System.Windows.Documents.LogicalDirection)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLineStartPosition">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the beginning of a line that is specified relative to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLineStartPosition">
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetLineStartPosition (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetLineStartPosition(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetLineStartPosition(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLineStartPosition (count As Integer) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetLineStartPosition(int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -363,6 +393,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetLineStartPosition (int count, out int actualCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetLineStartPosition(int32 count, [out] int32&amp; actualCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetLineStartPosition(System.Int32,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLineStartPosition (count As Integer, ByRef actualCount As Integer) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetLineStartPosition(int count, [Runtime::InteropServices::Out] int % actualCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +426,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetNextContextPosition (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetNextContextPosition(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetNextContextPosition(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextContextPosition (direction As LogicalDirection) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetNextContextPosition(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -443,6 +477,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetNextInsertionPosition (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetNextInsertionPosition(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetNextInsertionPosition(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNextInsertionPosition (direction As LogicalDirection) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetNextInsertionPosition(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -481,6 +517,8 @@
       <MemberSignature Language="C#" Value="public int GetOffsetToPosition (System.Windows.Documents.TextPointer position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetOffsetToPosition(class System.Windows.Documents.TextPointer position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetOffsetToPosition(System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOffsetToPosition (position As TextPointer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOffsetToPosition(System::Windows::Documents::TextPointer ^ position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -528,7 +566,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointerContext GetPointerContext (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Documents.TextPointerContext GetPointerContext(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetPointerContext(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPointerContext (direction As LogicalDirection) As TextPointerContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointerContext GetPointerContext(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.GetPointerContext(System.Windows.Documents.LogicalDirection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -556,10 +599,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPositionAtOffset">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, in symbols, from the beginning of content.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPositionAtOffset">
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetPositionAtOffset (int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetPositionAtOffset(int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetPositionAtOffset(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPositionAtOffset (offset As Integer) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetPositionAtOffset(int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -604,6 +658,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer GetPositionAtOffset (int offset, System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer GetPositionAtOffset(int32 offset, valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetPositionAtOffset(System.Int32,System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPositionAtOffset (offset As Integer, direction As LogicalDirection) As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ GetPositionAtOffset(int offset, System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -638,11 +694,25 @@
         <altmember cref="M:System.Windows.Documents.TextPointer.GetOffsetToPosition(System.Windows.Documents.TextPointer)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTextInRun">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns text adjacent to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTextInRun">
       <MemberSignature Language="C#" Value="public string GetTextInRun (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTextInRun(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetTextInRun(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTextInRun (direction As LogicalDirection) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTextInRun(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.GetTextInRun(System.Windows.Documents.LogicalDirection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -683,7 +753,12 @@
       <MemberSignature Language="C#" Value="public int GetTextInRun (System.Windows.Documents.LogicalDirection direction, char[] textBuffer, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTextInRun(valuetype System.Windows.Documents.LogicalDirection direction, char[] textBuffer, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetTextInRun(System.Windows.Documents.LogicalDirection,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTextInRun (direction As LogicalDirection, textBuffer As Char(), startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTextInRun(System::Windows::Documents::LogicalDirection direction, cli::array &lt;char&gt; ^ textBuffer, int startIndex, int count);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.GetTextInRun(System.Windows.Documents.LogicalDirection,System.Char[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -726,7 +801,12 @@
       <MemberSignature Language="C#" Value="public int GetTextRunLength (System.Windows.Documents.LogicalDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetTextRunLength(valuetype System.Windows.Documents.LogicalDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.GetTextRunLength(System.Windows.Documents.LogicalDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTextRunLength (direction As LogicalDirection) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTextRunLength(System::Windows::Documents::LogicalDirection direction);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.GetTextRunLength(System.Windows.Documents.LogicalDirection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -761,7 +841,12 @@
       <MemberSignature Language="C#" Value="public bool HasValidLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasValidLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.HasValidLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasValidLayout As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasValidLayout { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Documents.ITextPointer.HasValidLayout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -787,6 +872,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer InsertLineBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer InsertLineBreak() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.InsertLineBreak" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertLineBreak () As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ InsertLineBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -806,6 +893,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer InsertParagraphBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.TextPointer InsertParagraphBreak() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.InsertParagraphBreak" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertParagraphBreak () As TextPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::TextPointer ^ InsertParagraphBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,7 +922,12 @@
       <MemberSignature Language="C#" Value="public void InsertTextInRun (string textData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InsertTextInRun(string textData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.InsertTextInRun(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertTextInRun (textData As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InsertTextInRun(System::String ^ textData);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Documents.ITextPointer.InsertTextInRun(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -864,7 +958,12 @@
       <MemberSignature Language="C#" Value="public bool IsAtInsertionPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAtInsertionPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.IsAtInsertionPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAtInsertionPosition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAtInsertionPosition { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Documents.ITextPointer.IsAtInsertionPosition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -892,6 +991,8 @@
       <MemberSignature Language="C#" Value="public bool IsAtLineStartPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAtLineStartPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.IsAtLineStartPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAtLineStartPosition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAtLineStartPosition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -921,6 +1022,8 @@
       <MemberSignature Language="C#" Value="public bool IsInSameDocument (System.Windows.Documents.TextPointer textPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInSameDocument(class System.Windows.Documents.TextPointer textPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.IsInSameDocument(System.Windows.Documents.TextPointer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInSameDocument (textPosition As TextPointer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInSameDocument(System::Windows::Documents::TextPointer ^ textPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -961,7 +1064,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.LogicalDirection LogicalDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Documents.LogicalDirection LogicalDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.LogicalDirection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalDirection As LogicalDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::LogicalDirection LogicalDirection { System::Windows::Documents::LogicalDirection get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Documents.ITextPointer.LogicalDirection</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -986,6 +1094,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.Paragraph Paragraph { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Paragraph Paragraph" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.Paragraph" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Paragraph As Paragraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::Paragraph ^ Paragraph { System::Windows::Documents::Paragraph ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1005,6 +1115,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextPointer.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Parent { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1024,6 +1136,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextPointer.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1039,32 +1153,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetLineStartPosition">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the beginning of a line that is specified relative to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetTextInRun">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns text adjacent to the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPositionAtOffset">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, in symbols, from the beginning of content.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

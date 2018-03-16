@@ -1,7 +1,9 @@
-<Type Name="PolicyUnit" FullName="System.IO.Log.PolicyUnit">
+﻿<Type Name="PolicyUnit" FullName="System.IO.Log.PolicyUnit">
   <TypeSignature Language="C#" Value="public struct PolicyUnit" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PolicyUnit extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Structure PolicyUnit" />
+  <TypeSignature Language="C++ CLI" Value="public value class PolicyUnit" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public PolicyUnit (long value, System.IO.Log.PolicyUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value, valuetype System.IO.Log.PolicyUnitType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.#ctor(System.Int64,System.IO.Log.PolicyUnitType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long, type As PolicyUnitType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolicyUnit(long value, System::IO::Log::PolicyUnitType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Log.PolicyUnit Extents (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.IO.Log.PolicyUnit Extents(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Extents(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Extents (value As Long) As PolicyUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Log::PolicyUnit Extents(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -138,6 +148,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Equality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As PolicyUnit, right As PolicyUnit) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::IO::Log::PolicyUnit left, System::IO::Log::PolicyUnit right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Inequality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As PolicyUnit, right As PolicyUnit) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::IO::Log::PolicyUnit left, System::IO::Log::PolicyUnit right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -202,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Log.PolicyUnit Percentage (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.IO.Log.PolicyUnit Percentage(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Percentage(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Percentage (value As Long) As PolicyUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Log::PolicyUnit Percentage(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -224,6 +240,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -243,6 +261,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnitType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnitType Type" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PolicyUnitType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::PolicyUnitType Type { System::IO::Log::PolicyUnitType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -261,6 +281,8 @@
       <MemberSignature Language="C#" Value="public long Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Value { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

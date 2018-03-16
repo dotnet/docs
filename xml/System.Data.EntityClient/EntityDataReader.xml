@@ -1,7 +1,9 @@
-<Type Name="EntityDataReader" FullName="System.Data.EntityClient.EntityDataReader">
+﻿<Type Name="EntityDataReader" FullName="System.Data.EntityClient.EntityDataReader">
   <TypeSignature Language="C#" Value="public class EntityDataReader : System.Data.Common.DbDataReader, System.Data.IExtendedDataRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataReader extends System.Data.Common.DbDataReader implements class System.Data.IDataRecord, class System.Data.IExtendedDataRecord" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityDataReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityDataReader&#xA;Inherits DbDataReader&#xA;Implements IExtendedDataRecord" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataReader : System::Data::Common::DbDataReader, System::Data::IExtendedDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -77,7 +81,12 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataRecordInfo DataRecordInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataRecordInfo DataRecordInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.DataRecordInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataRecordInfo As DataRecordInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataRecordInfo ^ DataRecordInfo { System::Data::Common::DataRecordInfo ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IExtendedDataRecord.DataRecordInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +104,8 @@
       <MemberSignature Language="C#" Value="public override int Depth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.Depth" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -120,6 +131,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -157,7 +170,12 @@
       <MemberSignature Language="C#" Value="public override int FieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.FieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -182,7 +200,12 @@
       <MemberSignature Language="C#" Value="public override bool GetBoolean (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetBoolean(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetBoolean(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -204,7 +227,12 @@
       <MemberSignature Language="C#" Value="public override byte GetByte (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8 GetByte(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetByte(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (ordinal As Integer) As Byte" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -226,7 +254,12 @@
       <MemberSignature Language="C#" Value="public override long GetBytes (int ordinal, long dataOffset, byte[] buffer, int bufferOffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetBytes(int32 ordinal, int64 dataOffset, unsigned int8[] buffer, int32 bufferOffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (ordinal As Integer, dataOffset As Long, buffer As Byte(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int ordinal, long dataOffset, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset, int length);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -256,7 +289,12 @@
       <MemberSignature Language="C#" Value="public override char GetChar (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetChar(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetChar(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (ordinal As Integer) As Char" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,7 +316,12 @@
       <MemberSignature Language="C#" Value="public override long GetChars (int ordinal, long dataOffset, char[] buffer, int bufferOffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetChars(int32 ordinal, int64 dataOffset, char[] buffer, int32 bufferOffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (ordinal As Integer, dataOffset As Long, buffer As Char(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int ordinal, long dataOffset, cli::array &lt;char&gt; ^ buffer, int bufferOffset, int length);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -308,7 +351,12 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbDataReader GetDataReader (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataReader GetDataReader(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataReader (i As Integer) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataReader ^ GetDataReader(int i);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataReader(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -330,7 +378,12 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbDataRecord GetDataRecord (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataRecord GetDataRecord(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDataRecord(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataRecord (i As Integer) As DbDataRecord" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::Common::DbDataRecord ^ GetDataRecord(int i);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IExtendedDataRecord.GetDataRecord(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -352,7 +405,12 @@
       <MemberSignature Language="C#" Value="public override string GetDataTypeName (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDataTypeName(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDataTypeName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -374,7 +432,12 @@
       <MemberSignature Language="C#" Value="public override DateTime GetDateTime (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.DateTime GetDateTime(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDateTime(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (ordinal As Integer) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -396,6 +459,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader GetDbDataReader (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader GetDbDataReader(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDbDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDbDataReader (ordinal As Integer) As DbDataReader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ GetDbDataReader(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -418,7 +483,12 @@
       <MemberSignature Language="C#" Value="public override decimal GetDecimal (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Decimal GetDecimal(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDecimal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (ordinal As Integer) As Decimal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -440,7 +510,12 @@
       <MemberSignature Language="C#" Value="public override double GetDouble (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float64 GetDouble(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetDouble(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (ordinal As Integer) As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -462,6 +537,8 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -481,7 +558,12 @@
       <MemberSignature Language="C#" Value="public override Type GetFieldType (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetFieldType(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (ordinal As Integer) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -503,7 +585,12 @@
       <MemberSignature Language="C#" Value="public override float GetFloat (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance float32 GetFloat(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetFloat(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (ordinal As Integer) As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -525,7 +612,12 @@
       <MemberSignature Language="C#" Value="public override Guid GetGuid (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Guid GetGuid(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetGuid(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (ordinal As Integer) As Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -547,7 +639,12 @@
       <MemberSignature Language="C#" Value="public override short GetInt16 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int16 GetInt16(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetInt16(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (ordinal As Integer) As Short" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -569,7 +666,12 @@
       <MemberSignature Language="C#" Value="public override int GetInt32 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetInt32(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetInt32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (ordinal As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -591,7 +693,12 @@
       <MemberSignature Language="C#" Value="public override long GetInt64 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 GetInt64(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetInt64(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (ordinal As Integer) As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -613,7 +720,12 @@
       <MemberSignature Language="C#" Value="public override string GetName (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetName(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -635,7 +747,12 @@
       <MemberSignature Language="C#" Value="public override int GetOrdinal (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetOrdinal(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetOrdinal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -658,6 +775,8 @@
       <MemberSignature Language="C#" Value="public override Type GetProviderSpecificFieldType (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetProviderSpecificFieldType(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetProviderSpecificFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificFieldType (ordinal As Integer) As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetProviderSpecificFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -685,6 +804,8 @@
       <MemberSignature Language="C#" Value="public override object GetProviderSpecificValue (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetProviderSpecificValue(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetProviderSpecificValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetProviderSpecificValue(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -712,6 +833,8 @@
       <MemberSignature Language="C#" Value="public override int GetProviderSpecificValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetProviderSpecificValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetProviderSpecificValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValues (values As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetProviderSpecificValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -739,6 +862,8 @@
       <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchemaTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetSchemaTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -758,7 +883,12 @@
       <MemberSignature Language="C#" Value="public override string GetString (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetString(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (ordinal As Integer) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -780,7 +910,12 @@
       <MemberSignature Language="C#" Value="public override object GetValue (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -802,7 +937,12 @@
       <MemberSignature Language="C#" Value="public override int GetValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.GetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -824,6 +964,8 @@
       <MemberSignature Language="C#" Value="public override bool HasRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.HasRows" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -843,6 +985,8 @@
       <MemberSignature Language="C#" Value="public override bool IsClosed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.IsClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -862,7 +1006,12 @@
       <MemberSignature Language="C#" Value="public override bool IsDBNull (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDBNull(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.IsDBNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -881,11 +1030,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public override object this[int ordinal] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(ordinal As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -907,7 +1070,12 @@
       <MemberSignature Language="C#" Value="public override object this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -929,6 +1097,8 @@
       <MemberSignature Language="C#" Value="public override bool NextResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NextResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.NextResult" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -956,6 +1126,8 @@
       <MemberSignature Language="C#" Value="public override bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityDataReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -983,6 +1155,8 @@
       <MemberSignature Language="C#" Value="public override int RecordsAffected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.RecordsAffected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1008,6 +1182,8 @@
       <MemberSignature Language="C#" Value="public override int VisibleFieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleFieldCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityDataReader.VisibleFieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VisibleFieldCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleFieldCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1029,14 +1205,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

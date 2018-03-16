@@ -1,7 +1,9 @@
-<Type Name="CreditCardAttribute" FullName="System.ComponentModel.DataAnnotations.CreditCardAttribute">
+﻿<Type Name="CreditCardAttribute" FullName="System.ComponentModel.DataAnnotations.CreditCardAttribute">
   <TypeSignature Language="C#" Value="public sealed class CreditCardAttribute : System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CreditCardAttribute extends System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.CreditCardAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CreditCardAttribute&#xA;Inherits DataTypeAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CreditCardAttribute sealed : System::ComponentModel::DataAnnotations::DataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public CreditCardAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CreditCardAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreditCardAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public override bool IsValid (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValid(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CreditCardAttribute.IsValid(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Eval" FullName="Microsoft.JScript.Eval">
+﻿<Type Name="Eval" FullName="Microsoft.JScript.Eval">
   <TypeSignature Language="C#" Value="public sealed class Eval : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Eval extends Microsoft.JScript.AST" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Eval" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Eval&#xA;Inherits AST" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Eval sealed : Microsoft::JScript::AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName="JScriptEvaluate">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Evaluates JScript code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="JScriptEvaluate">
       <MemberSignature Language="C#" Value="public static object JScriptEvaluate (object source, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object JScriptEvaluate(object source, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Eval.JScriptEvaluate(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptEvaluate (source As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptEvaluate(System::Object ^ source, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static object JScriptEvaluate (object source, object unsafeOption, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object JScriptEvaluate(object source, object unsafeOption, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Eval.JScriptEvaluate(System.Object,System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptEvaluate (source As Object, unsafeOption As Object, engine As VsaEngine) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ JScriptEvaluate(System::Object ^ source, System::Object ^ unsafeOption, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -68,14 +83,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="JScriptEvaluate">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Evaluates JScript code.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

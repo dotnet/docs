@@ -1,7 +1,9 @@
-<Type Name="EnvelopedSignatureReader" FullName="System.IdentityModel.EnvelopedSignatureReader">
+﻿<Type Name="EnvelopedSignatureReader" FullName="System.IdentityModel.EnvelopedSignatureReader">
   <TypeSignature Language="C#" Value="public sealed class EnvelopedSignatureReader : System.IdentityModel.DelegatingXmlDictionaryReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvelopedSignatureReader extends System.IdentityModel.DelegatingXmlDictionaryReader" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.EnvelopedSignatureReader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnvelopedSignatureReader&#xA;Inherits DelegatingXmlDictionaryReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnvelopedSignatureReader sealed : System::IdentityModel::DelegatingXmlDictionaryReader" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,20 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.EnvelopedSignatureReader" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedSignatureReader (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.#ctor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedSignatureReader(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ securityTokenSerializer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +71,7 @@
       <MemberSignature Language="C#" Value="public EnvelopedSignatureReader (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver signingTokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver signingTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.#ctor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedSignatureReader(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ securityTokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ signingTokenResolver);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -100,6 +113,7 @@
       <MemberSignature Language="C#" Value="public EnvelopedSignatureReader (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver signingTokenResolver, bool requireSignature, bool automaticallyReadSignature, bool resolveIntrinsicSigningKeys);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenSerializer securityTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver signingTokenResolver, bool requireSignature, bool automaticallyReadSignature, bool resolveIntrinsicSigningKeys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.#ctor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedSignatureReader(System::Xml::XmlReader ^ reader, System::IdentityModel::Selectors::SecurityTokenSerializer ^ securityTokenSerializer, System::IdentityModel::Selectors::SecurityTokenResolver ^ signingTokenResolver, bool requireSignature, bool automaticallyReadSignature, bool resolveIntrinsicSigningKeys);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,6 +151,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -158,6 +174,8 @@
       <MemberSignature Language="C#" Value="public override bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -185,6 +203,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SigningCredentials SigningCredentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SigningCredentials SigningCredentials" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.EnvelopedSignatureReader.SigningCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SigningCredentials As SigningCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SigningCredentials ^ SigningCredentials { System::IdentityModel::Tokens::SigningCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -203,6 +223,8 @@
       <MemberSignature Language="C#" Value="public bool TryReadSignature ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadSignature() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.EnvelopedSignatureReader.TryReadSignature" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadSignature () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadSignature();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -226,14 +248,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.EnvelopedSignatureReader" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

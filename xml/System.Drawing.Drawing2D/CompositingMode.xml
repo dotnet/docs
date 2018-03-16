@@ -1,7 +1,9 @@
-<Type Name="CompositingMode" FullName="System.Drawing.Drawing2D.CompositingMode">
+﻿<Type Name="CompositingMode" FullName="System.Drawing.Drawing2D.CompositingMode">
   <TypeSignature Language="C#" Value="public enum CompositingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompositingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CompositingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompositingMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompositingMode" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +20,8 @@
       <MemberSignature Language="C#" Value="SourceCopy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingMode SourceCopy = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingMode.SourceCopy" />
+      <MemberSignature Language="VB.NET" Value="SourceCopy" />
+      <MemberSignature Language="C++ CLI" Value="SourceCopy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +30,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that when a color is rendered, it overwrites the background color.</summary>
       </Docs>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="SourceOver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingMode SourceOver = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingMode.SourceOver" />
+      <MemberSignature Language="VB.NET" Value="SourceOver" />
+      <MemberSignature Language="C++ CLI" Value="SourceOver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that when a color is rendered, it is blended with the background color. The blend is determined by the alpha component of the color being rendered.</summary>
       </Docs>

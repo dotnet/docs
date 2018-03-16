@@ -1,7 +1,9 @@
-<Type Name="XStreamingElement" FullName="System.Xml.Linq.XStreamingElement">
+﻿<Type Name="XStreamingElement" FullName="System.Xml.Linq.XStreamingElement">
   <TypeSignature Language="C#" Value="public class XStreamingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XStreamingElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XStreamingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class XStreamingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XStreamingElement" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -477,6 +479,8 @@ End Sub
       <MemberSignature Language="C#" Value="public XStreamingElement (System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XStreamingElement(System::Xml::Linq::XName ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -566,6 +570,8 @@ Console.WriteLine(dstTree)
       <MemberSignature Language="C#" Value="public XStreamingElement (System.Xml.Linq.XName name, object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name, object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName, content As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XStreamingElement(System::Xml::Linq::XName ^ name, System::Object ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -630,6 +636,8 @@ Console.WriteLine(dstTree)
       <MemberSignature Language="C#" Value="public XStreamingElement (System.Xml.Linq.XName name, params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName name, object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As XName, ParamArray content As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XStreamingElement(System::Xml::Linq::XName ^ name, ... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -696,10 +704,23 @@ Console.WriteLine(dstTree)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XStreamingElement" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (content As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Object ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -812,6 +833,8 @@ Console.WriteLine(dstTree)
       <MemberSignature Language="C#" Value="public void Add (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Add(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray content As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -930,6 +953,8 @@ Console.WriteLine(dstTree)
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XName Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XName Name" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XStreamingElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As XName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ Name { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1005,10 +1030,22 @@ NewRoot
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serialize this streaming element. The output can be saved to a file, an <see cref="T:System.Xml.XmlTextWriter" />, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />. Optionally, formatting (indenting) can be disabled.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1052,6 +1089,7 @@ NewRoot
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter textWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1150,6 +1188,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1244,6 +1284,8 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
       <MemberSignature Language="C#" Value="public void Save (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1338,6 +1380,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1383,6 +1426,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter textWriter, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1493,6 +1537,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (string fileName, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.Save(System.String,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String, options As SaveOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1615,6 +1661,8 @@ Console.WriteLine(File.ReadAllText("Test2.xml"))
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1708,6 +1756,8 @@ Console.WriteLine(dstTree.ToString())
       <MemberSignature Language="C#" Value="public string ToString (System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (options As SaveOptions) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1804,6 +1854,8 @@ Console.WriteLine(dstTree.ToString())
       <MemberSignature Language="C#" Value="public void WriteTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XStreamingElement.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteTo (writer As XmlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1901,27 +1953,5 @@ Console.WriteLine(sb.ToString())
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XStreamingElement" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serialize this streaming element. The output can be saved to a file, an <see cref="T:System.Xml.XmlTextWriter" />, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />. Optionally, formatting (indenting) can be disabled.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

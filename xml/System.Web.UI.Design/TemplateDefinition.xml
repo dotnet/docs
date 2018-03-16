@@ -1,7 +1,9 @@
-<Type Name="TemplateDefinition" FullName="System.Web.UI.Design.TemplateDefinition">
+﻿<Type Name="TemplateDefinition" FullName="System.Web.UI.Design.TemplateDefinition">
   <TypeSignature Language="C#" Value="public class TemplateDefinition : System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateDefinition extends System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateDefinition&#xA;Inherits DesignerObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateDefinition : System::Web::UI::Design::DesignerObject" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +38,22 @@
     <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class.</summary>
+        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designer As ControlDesigner, name As String, templatedObject As Object, templatePropertyName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateDefinition(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name, System::Object ^ templatedObject, System::String ^ templatePropertyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +85,8 @@
       <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, bool serverControlsOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, bool serverControlsOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designer As ControlDesigner, name As String, templatedObject As Object, templatePropertyName As String, serverControlsOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateDefinition(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name, System::Object ^ templatedObject, System::String ^ templatePropertyName, bool serverControlsOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +120,7 @@
       <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, System.Web.UI.WebControls.Style style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateDefinition(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name, System::Object ^ templatedObject, System::String ^ templatePropertyName, System::Web::UI::WebControls::Style ^ style);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +154,7 @@
       <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, System.Web.UI.WebControls.Style style, bool serverControlsOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, class System.Web.UI.WebControls.Style style, bool serverControlsOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Web.UI.WebControls.Style,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateDefinition(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name, System::Object ^ templatedObject, System::String ^ templatePropertyName, System::Web::UI::WebControls::Style ^ style, bool serverControlsOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -172,6 +190,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowEditing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowEditing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.AllowEditing" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowEditing As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowEditing { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -198,6 +218,8 @@
       <MemberSignature Language="C#" Value="public virtual string Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Content" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Content As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Content { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -216,6 +238,8 @@
       <MemberSignature Language="C#" Value="public bool ServerControlsOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ServerControlsOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.ServerControlsOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerControlsOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerControlsOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -235,6 +259,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style Style { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style Style" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.Style" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ Style { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -260,6 +286,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsDataBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDataBinding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.SupportsDataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportsDataBinding As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsDataBinding { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -279,6 +307,8 @@
       <MemberSignature Language="C#" Value="public object TemplatedObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TemplatedObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.TemplatedObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplatedObject As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TemplatedObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -304,6 +334,8 @@
       <MemberSignature Language="C#" Value="public string TemplatePropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TemplatePropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.TemplatePropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplatePropertyName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TemplatePropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -318,15 +350,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class.</summary>
-        <altmember cref="T:System.Web.UI.Design.TemplatedControlDesigner" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

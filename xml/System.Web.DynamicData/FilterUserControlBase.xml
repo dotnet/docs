@@ -1,7 +1,9 @@
-<Type Name="FilterUserControlBase" FullName="System.Web.DynamicData.FilterUserControlBase">
+﻿<Type Name="FilterUserControlBase" FullName="System.Web.DynamicData.FilterUserControlBase">
   <TypeSignature Language="C#" Value="public class FilterUserControlBase : System.Web.UI.UserControl, System.Web.DynamicData.IControlParameterTarget" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FilterUserControlBase extends System.Web.UI.UserControl implements class System.Web.DynamicData.IControlParameterTarget" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FilterUserControlBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class FilterUserControlBase&#xA;Inherits UserControl&#xA;Implements IControlParameterTarget" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FilterUserControlBase : System::Web::UI::UserControl, System::Web::DynamicData::IControlParameterTarget" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public FilterUserControlBase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterUserControlBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FilterUserControlBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As MetaColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="public string ContextTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.ContextTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -82,6 +90,8 @@
       <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public string InitialValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.InitialValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitialValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -126,6 +138,7 @@
       <MemberSignature Language="C#" Value="public void PopulateListControl (System.Web.UI.WebControls.ListControl listControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopulateListControl(class System.Web.UI.WebControls.ListControl listControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterUserControlBase.PopulateListControl(System.Web.UI.WebControls.ListControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PopulateListControl(System::Web::UI::WebControls::ListControl ^ listControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -154,6 +167,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataKey SelectedDataKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKey SelectedDataKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.SelectedDataKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedDataKey As DataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -172,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual string SelectedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.SelectedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -197,7 +214,12 @@
       <MemberSignature Language="C#" Value="System.Web.DynamicData.MetaColumn System.Web.DynamicData.IControlParameterTarget.FilteredColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn System.Web.DynamicData.IControlParameterTarget.FilteredColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.System#Web#DynamicData#IControlParameterTarget#FilteredColumn" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property FilteredColumn As MetaColumn Implements IControlParameterTarget.FilteredColumn" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaColumn ^ System.Web.DynamicData.IControlParameterTarget.FilteredColumn { System::Web::DynamicData::MetaColumn ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IControlParameterTarget.FilteredColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -215,7 +237,12 @@
       <MemberSignature Language="C#" Value="string IControlParameterTarget.GetPropertyNameExpression (string columnName);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.DynamicData.IControlParameterTarget.GetPropertyNameExpression(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FilterUserControlBase.System#Web#DynamicData#IControlParameterTarget#GetPropertyNameExpression(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetPropertyNameExpression (columnName As String) As String Implements IControlParameterTarget.GetPropertyNameExpression" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.DynamicData.IControlParameterTarget.GetPropertyNameExpression(System::String ^ columnName) = System::Web::DynamicData::IControlParameterTarget::GetPropertyNameExpression;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IControlParameterTarget.GetPropertyNameExpression(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -237,7 +264,12 @@
       <MemberSignature Language="C#" Value="System.Web.DynamicData.MetaTable System.Web.DynamicData.IControlParameterTarget.Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable System.Web.DynamicData.IControlParameterTarget.Table" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.System#Web#DynamicData#IControlParameterTarget#Table" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Table As MetaTable Implements IControlParameterTarget.Table" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::DynamicData::MetaTable ^ System.Web.DynamicData.IControlParameterTarget.Table { System::Web::DynamicData::MetaTable ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IControlParameterTarget.Table</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -255,6 +287,8 @@
       <MemberSignature Language="C#" Value="public string TableName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TableName" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FilterUserControlBase.TableName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TableName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Site" FullName="System.Security.Policy.Site">
+﻿<Type Name="Site" FullName="System.Security.Policy.Site">
   <TypeSignature Language="C#" Value="public sealed class Site : System.Security.Policy.EvidenceBase, System.Security.Policy.IIdentityPermissionFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Site extends System.Security.Policy.EvidenceBase implements class System.Security.Policy.IIdentityPermissionFactory" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.Site" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Site&#xA;Inherits EvidenceBase&#xA;Implements IIdentityPermissionFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Site sealed : System::Security::Policy::EvidenceBase, System::Security::Policy::IIdentityPermissionFactory" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public Site (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Site(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +70,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As EvidenceBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Policy::EvidenceBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public object Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +117,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.Site CreateFromUrl (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Site CreateFromUrl(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.CreateFromUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromUrl (url As String) As Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::Site ^ CreateFromUrl(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -141,7 +151,11 @@
       <MemberSignature Language="C#" Value="public System.Security.IPermission CreateIdentityPermission (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.CreateIdentityPermission(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::IPermission ^ CreateIdentityPermission(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Policy.IIdentityPermissionFactory.CreateIdentityPermission(System.Security.Policy.Evidence)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -168,6 +182,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +219,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +245,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.Site.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,6 +270,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.Site.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

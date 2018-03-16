@@ -1,7 +1,9 @@
-<Type Name="WindowsFormsComponentEditor" FullName="System.Windows.Forms.Design.WindowsFormsComponentEditor">
+﻿<Type Name="WindowsFormsComponentEditor" FullName="System.Windows.Forms.Design.WindowsFormsComponentEditor">
   <TypeSignature Language="C#" Value="public abstract class WindowsFormsComponentEditor : System.ComponentModel.ComponentEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WindowsFormsComponentEditor extends System.ComponentModel.ComponentEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WindowsFormsComponentEditor&#xA;Inherits ComponentEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsComponentEditor abstract : System::ComponentModel::ComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="protected WindowsFormsComponentEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WindowsFormsComponentEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,10 +48,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EditComponent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EditComponent">
       <MemberSignature Language="C#" Value="public override bool EditComponent (System.ComponentModel.ITypeDescriptorContext context, object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool EditComponent(class System.ComponentModel.ITypeDescriptorContext context, object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditComponent (context As ITypeDescriptorContext, component As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +88,8 @@
       <MemberSignature Language="C#" Value="public bool EditComponent (object component, System.Windows.Forms.IWin32Window owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EditComponent(object component, class System.Windows.Forms.IWin32Window owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.Object,System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EditComponent (component As Object, owner As IWin32Window) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EditComponent(System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public virtual bool EditComponent (System.ComponentModel.ITypeDescriptorContext context, object component, System.Windows.Forms.IWin32Window owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EditComponent(class System.ComponentModel.ITypeDescriptorContext context, object component, class System.Windows.Forms.IWin32Window owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EditComponent (context As ITypeDescriptorContext, component As Object, owner As IWin32Window) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +144,8 @@
       <MemberSignature Language="C#" Value="protected virtual Type[] GetComponentEditorPages ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Type[] GetComponentEditorPages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetComponentEditorPages" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetComponentEditorPages () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetComponentEditorPages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +179,8 @@
       <MemberSignature Language="C#" Value="protected virtual int GetInitialComponentEditorPageIndex ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetInitialComponentEditorPageIndex() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.GetInitialComponentEditorPageIndex" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetInitialComponentEditorPageIndex () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int GetInitialComponentEditorPageIndex();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,14 +207,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EditComponent">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an editor window that allows the user to edit the specified component.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

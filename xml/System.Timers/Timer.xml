@@ -1,7 +1,9 @@
-<Type Name="Timer" FullName="System.Timers.Timer">
+﻿<Type Name="Timer" FullName="System.Timers.Timer">
   <TypeSignature Language="C#" Value="public class Timer : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Timer extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Timers.Timer" />
+  <TypeSignature Language="VB.NET" Value="Public Class Timer&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Timer : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -94,10 +96,22 @@
     <altmember cref="T:System.Threading.Timer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Timers.Timer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Timer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="public Timer (double interval);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 interval) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (interval As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(double interval);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -193,6 +209,8 @@
       <MemberSignature Language="C#" Value="public bool AutoReset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoReset" />
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.AutoReset" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoReset As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoReset { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -254,7 +272,12 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -291,6 +314,8 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -325,6 +350,8 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +383,8 @@
       <MemberSignature Language="C#" Value="public event System.Timers.ElapsedEventHandler Elapsed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Timers.ElapsedEventHandler Elapsed" />
       <MemberSignature Language="DocId" Value="E:System.Timers.Timer.Elapsed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Elapsed As ElapsedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Timers::ElapsedEventHandler ^ Elapsed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -423,6 +452,8 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -495,7 +526,12 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -532,6 +568,8 @@
       <MemberSignature Language="C#" Value="public double Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Interval" />
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Interval { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -614,6 +652,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Site As ISite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -648,6 +688,8 @@
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -695,6 +737,8 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Timers.Timer.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -754,6 +798,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISynchronizeInvoke SynchronizingObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISynchronizeInvoke SynchronizingObject" />
       <MemberSignature Language="DocId" Value="P:System.Timers.Timer.SynchronizingObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizingObject As ISynchronizeInvoke" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISynchronizeInvoke ^ SynchronizingObject { System::ComponentModel::ISynchronizeInvoke ^ get(); void set(System::ComponentModel::ISynchronizeInvoke ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -822,15 +868,5 @@
         <altmember cref="E:System.Timers.Timer.Elapsed" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Timers.Timer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

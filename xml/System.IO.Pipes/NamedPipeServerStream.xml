@@ -1,7 +1,9 @@
-<Type Name="NamedPipeServerStream" FullName="System.IO.Pipes.NamedPipeServerStream">
+﻿<Type Name="NamedPipeServerStream" FullName="System.IO.Pipes.NamedPipeServerStream">
   <TypeSignature Language="C#" Value="public sealed class NamedPipeServerStream : System.IO.Pipes.PipeStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeServerStream extends System.IO.Pipes.PipeStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.NamedPipeServerStream" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeServerStream&#xA;Inherits PipeStream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeServerStream sealed : System::IO::Pipes::PipeStream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +49,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -113,6 +127,8 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String, direction As PipeDirection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -185,6 +201,8 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String, direction As PipeDirection, maxNumberOfServerInstances As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -269,6 +287,7 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (System.IO.Pipes.PipeDirection direction, bool isAsync, bool isConnected, Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, bool isAsync, bool isConnected, class Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.IO.Pipes.PipeDirection,System.Boolean,System.Boolean,Microsoft.Win32.SafeHandles.SafePipeHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::IO::Pipes::PipeDirection direction, bool isAsync, bool isConnected, Microsoft::Win32::SafeHandles::SafePipeHandle ^ safePipeHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -318,6 +337,8 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String, direction As PipeDirection, maxNumberOfServerInstances As Integer, transmissionMode As PipeTransmissionMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -388,6 +409,8 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode, System.IO.Pipes.PipeOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, valuetype System.IO.Pipes.PipeOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String, direction As PipeDirection, maxNumberOfServerInstances As Integer, transmissionMode As PipeTransmissionMode, options As PipeOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode, System::IO::Pipes::PipeOptions options);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -462,6 +485,8 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode, System.IO.Pipes.PipeOptions options, int inBufferSize, int outBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, valuetype System.IO.Pipes.PipeOptions options, int32 inBufferSize, int32 outBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pipeName As String, direction As PipeDirection, maxNumberOfServerInstances As Integer, transmissionMode As PipeTransmissionMode, options As PipeOptions, inBufferSize As Integer, outBufferSize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode, System::IO::Pipes::PipeOptions options, int inBufferSize, int outBufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -542,6 +567,7 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode, System.IO.Pipes.PipeOptions options, int inBufferSize, int outBufferSize, System.IO.Pipes.PipeSecurity pipeSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, valuetype System.IO.Pipes.PipeOptions options, int32 inBufferSize, int32 outBufferSize, class System.IO.Pipes.PipeSecurity pipeSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32,System.IO.Pipes.PipeSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode, System::IO::Pipes::PipeOptions options, int inBufferSize, int outBufferSize, System::IO::Pipes::PipeSecurity ^ pipeSecurity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -613,6 +639,7 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode, System.IO.Pipes.PipeOptions options, int inBufferSize, int outBufferSize, System.IO.Pipes.PipeSecurity pipeSecurity, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, valuetype System.IO.Pipes.PipeOptions options, int32 inBufferSize, int32 outBufferSize, class System.IO.Pipes.PipeSecurity pipeSecurity, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32,System.IO.Pipes.PipeSecurity,System.IO.HandleInheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode, System::IO::Pipes::PipeOptions options, int inBufferSize, int outBufferSize, System::IO::Pipes::PipeSecurity ^ pipeSecurity, System::IO::HandleInheritability inheritability);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -686,6 +713,7 @@
       <MemberSignature Language="C#" Value="public NamedPipeServerStream (string pipeName, System.IO.Pipes.PipeDirection direction, int maxNumberOfServerInstances, System.IO.Pipes.PipeTransmissionMode transmissionMode, System.IO.Pipes.PipeOptions options, int inBufferSize, int outBufferSize, System.IO.Pipes.PipeSecurity pipeSecurity, System.IO.HandleInheritability inheritability, System.IO.Pipes.PipeAccessRights additionalAccessRights);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pipeName, valuetype System.IO.Pipes.PipeDirection direction, int32 maxNumberOfServerInstances, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, valuetype System.IO.Pipes.PipeOptions options, int32 inBufferSize, int32 outBufferSize, class System.IO.Pipes.PipeSecurity pipeSecurity, valuetype System.IO.HandleInheritability inheritability, valuetype System.IO.Pipes.PipeAccessRights additionalAccessRights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection,System.Int32,System.IO.Pipes.PipeTransmissionMode,System.IO.Pipes.PipeOptions,System.Int32,System.Int32,System.IO.Pipes.PipeSecurity,System.IO.HandleInheritability,System.IO.Pipes.PipeAccessRights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamedPipeServerStream(System::String ^ pipeName, System::IO::Pipes::PipeDirection direction, int maxNumberOfServerInstances, System::IO::Pipes::PipeTransmissionMode transmissionMode, System::IO::Pipes::PipeOptions options, int inBufferSize, int outBufferSize, System::IO::Pipes::PipeSecurity ^ pipeSecurity, System::IO::HandleInheritability inheritability, System::IO::Pipes::PipeAccessRights additionalAccessRights);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -758,6 +786,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginWaitForConnection (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWaitForConnection(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.BeginWaitForConnection(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginWaitForConnection (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWaitForConnection(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -811,6 +841,8 @@
       <MemberSignature Language="C#" Value="public void Disconnect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disconnect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.Disconnect" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Disconnect ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Disconnect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -856,6 +888,8 @@
       <MemberSignature Language="C#" Value="public void EndWaitForConnection (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWaitForConnection(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.EndWaitForConnection(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndWaitForConnection (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWaitForConnection(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -902,6 +936,8 @@
       <MemberSignature Language="C#" Value="~NamedPipeServerStream ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!NamedPipeServerStream ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -926,6 +962,8 @@
       <MemberSignature Language="C#" Value="public string GetImpersonationUserName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetImpersonationUserName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImpersonationUserName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetImpersonationUserName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -987,6 +1025,8 @@
       <MemberSignature Language="C#" Value="public const int MaxAllowedServerInstances = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 MaxAllowedServerInstances = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />
+      <MemberSignature Language="VB.NET" Value="Public Const MaxAllowedServerInstances As Integer  = -1" />
+      <MemberSignature Language="C++ CLI" Value="public: int MaxAllowedServerInstances = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1021,6 +1061,8 @@
       <MemberSignature Language="C#" Value="public void RunAsClient (System.IO.Pipes.PipeStreamImpersonationWorker impersonationWorker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunAsClient(class System.IO.Pipes.PipeStreamImpersonationWorker impersonationWorker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.RunAsClient(System.IO.Pipes.PipeStreamImpersonationWorker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RunAsClient (impersonationWorker As PipeStreamImpersonationWorker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunAsClient(System::IO::Pipes::PipeStreamImpersonationWorker ^ impersonationWorker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1083,6 +1125,8 @@
       <MemberSignature Language="C#" Value="public void WaitForConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForConnection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.WaitForConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WaitForConnection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForConnection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1129,10 +1173,22 @@
         <exception cref="T:System.IO.IOException">The pipe connection has been broken.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WaitForConnectionAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously waits for a client to connect to this <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WaitForConnectionAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WaitForConnectionAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WaitForConnectionAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function WaitForConnectionAsync () As Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WaitForConnectionAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1169,6 +1225,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WaitForConnectionAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WaitForConnectionAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WaitForConnectionAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1206,25 +1263,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WaitForConnectionAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Pipes</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously waits for a client to connect to this <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Pipes</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="MetaAccessor" FullName="System.Data.Linq.Mapping.MetaAccessor">
+﻿<Type Name="MetaAccessor" FullName="System.Data.Linq.Mapping.MetaAccessor">
   <TypeSignature Language="C#" Value="public abstract class MetaAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaAccessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetaAccessor abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="protected MetaAccessor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetaAccessor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public abstract object GetBoxedValue (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetBoxedValue(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.GetBoxedValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBoxedValue (instance As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetBoxedValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -56,6 +62,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasAssignedValue (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasAssignedValue(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.HasAssignedValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasAssignedValue (instance As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasAssignedValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasLoadedValue (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasLoadedValue(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.HasLoadedValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasLoadedValue (instance As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasLoadedValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -102,6 +112,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HasValue (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasValue(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.HasValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasValue (instance As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HasValue(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -125,6 +137,8 @@
       <MemberSignature Language="C#" Value="public abstract void SetBoxedValue (ref object instance, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetBoxedValue(object&amp; instance, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor.SetBoxedValue(System.Object@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetBoxedValue (ByRef instance As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetBoxedValue(System::Object ^ % instance, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="public abstract Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaAccessor.Type" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

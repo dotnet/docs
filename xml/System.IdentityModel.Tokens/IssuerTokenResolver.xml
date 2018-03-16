@@ -1,7 +1,9 @@
-<Type Name="IssuerTokenResolver" FullName="System.IdentityModel.Tokens.IssuerTokenResolver">
+﻿<Type Name="IssuerTokenResolver" FullName="System.IdentityModel.Tokens.IssuerTokenResolver">
   <TypeSignature Language="C#" Value="public class IssuerTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IssuerTokenResolver extends System.IdentityModel.Selectors.SecurityTokenResolver" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.IssuerTokenResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class IssuerTokenResolver&#xA;Inherits SecurityTokenResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IssuerTokenResolver : System::IdentityModel::Selectors::SecurityTokenResolver" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IssuerTokenResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuerTokenResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public IssuerTokenResolver (System.IdentityModel.Selectors.SecurityTokenResolver wrappedTokenResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Selectors.SecurityTokenResolver wrappedTokenResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.#ctor(System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (wrappedTokenResolver As SecurityTokenResolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuerTokenResolver(System::IdentityModel::Selectors::SecurityTokenResolver ^ wrappedTokenResolver);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +74,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Security.Cryptography.X509Certificates.StoreLocation DefaultStoreLocation;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Security.Cryptography.X509Certificates.StoreLocation DefaultStoreLocation" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultStoreLocation As StoreLocation " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::StoreLocation DefaultStoreLocation;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -76,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Security.Cryptography.X509Certificates.StoreName DefaultStoreName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Security.Cryptography.X509Certificates.StoreName DefaultStoreName" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.IssuerTokenResolver.DefaultStoreName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultStoreName As StoreName " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::StoreName DefaultStoreName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected override bool TryResolveSecurityKeyCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityKey key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveSecurityKeyCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, [out] class System.IdentityModel.Tokens.SecurityKey&amp; key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveSecurityKeyCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityKey@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveSecurityKeyCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef key As SecurityKey) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveSecurityKeyCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityKey ^ % key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -114,10 +135,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryResolveTokenCore">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to retrieve the key that is referenced in the specified object. (Override of the base class methods.)</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryResolveTokenCore">
       <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, out System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifier As SecurityKeyIdentifier, ByRef token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -143,6 +175,8 @@
       <MemberSignature Language="C#" Value="protected override bool TryResolveTokenCore (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, out System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TryResolveTokenCore(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause, [out] class System.IdentityModel.Tokens.SecurityToken&amp; token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TryResolveTokenCore (keyIdentifierClause As SecurityKeyIdentifierClause, ByRef token As SecurityToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TryResolveTokenCore(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause, [Runtime::InteropServices::Out] System::IdentityModel::Tokens::SecurityToken ^ % token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -168,6 +202,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver WrappedTokenResolver { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver WrappedTokenResolver" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.IssuerTokenResolver.WrappedTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedTokenResolver As SecurityTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ WrappedTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -182,23 +218,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryResolveTokenCore">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to retrieve the key that is referenced in the specified object. (Override of the base class methods.)</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerTokenResolver" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

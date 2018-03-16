@@ -1,7 +1,9 @@
-<Type Name="IAdviseSink" FullName="System.Runtime.InteropServices.ComTypes.IAdviseSink">
+﻿<Type Name="IAdviseSink" FullName="System.Runtime.InteropServices.ComTypes.IAdviseSink">
   <TypeSignature Language="C#" Value="public interface IAdviseSink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAdviseSink" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IAdviseSink" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAdviseSink" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAdviseSink" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,7 +28,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("0000010F-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -49,6 +51,8 @@
       <MemberSignature Language="C#" Value="public void OnClose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnClose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnClose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnClose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnClose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="public void OnDataChange (ref System.Runtime.InteropServices.ComTypes.FORMATETC format, ref System.Runtime.InteropServices.ComTypes.STGMEDIUM stgmedium);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDataChange([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; format, [in]valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; stgmedium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnDataChange(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnDataChange (ByRef format As FORMATETC, ByRef stgmedium As STGMEDIUM)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnDataChange(System::Runtime::InteropServices::ComTypes::FORMATETC % format, System::Runtime::InteropServices::ComTypes::STGMEDIUM % stgmedium);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -134,6 +140,8 @@
       <MemberSignature Language="C#" Value="public void OnRename (System.Runtime.InteropServices.ComTypes.IMoniker moniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnRename(class System.Runtime.InteropServices.ComTypes.IMoniker moniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnRename(System.Runtime.InteropServices.ComTypes.IMoniker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnRename (moniker As IMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnRename(System::Runtime::InteropServices::ComTypes::IMoniker ^ moniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -176,6 +184,8 @@
       <MemberSignature Language="C#" Value="public void OnSave ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnSave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnSave" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnSave ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnSave();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -215,6 +225,8 @@
       <MemberSignature Language="C#" Value="public void OnViewChange (int aspect, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnViewChange(int32 aspect, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IAdviseSink.OnViewChange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnViewChange (aspect As Integer, index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnViewChange(int aspect, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="FileRegion" FullName="System.IO.Log.FileRegion">
+﻿<Type Name="FileRegion" FullName="System.IO.Log.FileRegion">
   <TypeSignature Language="C#" Value="public sealed class FileRegion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileRegion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.FileRegion" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileRegion" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileRegion sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public long FileLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 FileLength" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.FileLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileLength As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long FileLength { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream GetStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Stream GetStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRegion.GetStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -101,6 +107,8 @@
       <MemberSignature Language="C#" Value="public long Offset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Offset" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Long" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Offset { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -129,6 +137,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRegion.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

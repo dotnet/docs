@@ -1,7 +1,9 @@
-<Type Name="ISecuritySession" FullName="System.ServiceModel.Security.ISecuritySession">
+﻿<Type Name="ISecuritySession" FullName="System.ServiceModel.Security.ISecuritySession">
   <TypeSignature Language="C#" Value="public interface ISecuritySession : System.ServiceModel.Channels.ISession" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecuritySession implements class System.ServiceModel.Channels.ISession" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ISecuritySession" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISecuritySession&#xA;Implements ISession" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISecuritySession : System::ServiceModel::Channels::ISession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointIdentity RemoteIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointIdentity RemoteIdentity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ISecuritySession.RemoteIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteIdentity As EndpointIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointIdentity ^ RemoteIdentity { System::ServiceModel::EndpointIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

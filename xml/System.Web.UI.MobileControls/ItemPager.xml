@@ -1,7 +1,9 @@
-<Type Name="ItemPager" FullName="System.Web.UI.MobileControls.ItemPager">
+﻿<Type Name="ItemPager" FullName="System.Web.UI.MobileControls.ItemPager">
   <TypeSignature Language="C#" Value="public class ItemPager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemPager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ItemPager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemPager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemPager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +36,21 @@
     <altmember cref="T:System.Web.UI.MobileControls.PagedControl" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ItemPager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ItemPager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemPager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -60,6 +73,8 @@
       <MemberSignature Language="C#" Value="public ItemPager (System.Web.UI.MobileControls.ControlPager pager, System.Web.UI.MobileControls.MobileControl control, int itemCount, int itemsPerPage, int itemWeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.ControlPager pager, class System.Web.UI.MobileControls.MobileControl control, int32 itemCount, int32 itemsPerPage, int32 itemWeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ItemPager.#ctor(System.Web.UI.MobileControls.ControlPager,System.Web.UI.MobileControls.MobileControl,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pager As ControlPager, control As MobileControl, itemCount As Integer, itemsPerPage As Integer, itemWeight As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemPager(System::Web::UI::MobileControls::ControlPager ^ pager, System::Web::UI::MobileControls::MobileControl ^ control, int itemCount, int itemsPerPage, int itemWeight);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -93,6 +108,8 @@
       <MemberSignature Language="C#" Value="public int ItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ItemPager.ItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -119,6 +136,8 @@
       <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ItemPager.ItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -133,14 +152,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.ItemPager" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

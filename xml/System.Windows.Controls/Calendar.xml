@@ -1,7 +1,9 @@
-<Type Name="Calendar" FullName="System.Windows.Controls.Calendar">
+﻿<Type Name="Calendar" FullName="System.Windows.Controls.Calendar">
   <TypeSignature Language="C#" Value="public class Calendar : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Calendar extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Calendar" />
+  <TypeSignature Language="VB.NET" Value="Public Class Calendar&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Calendar : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,6 +98,8 @@ Calendar controls
       <MemberSignature Language="C#" Value="public Calendar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Calendar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -111,6 +115,8 @@ Calendar controls
       <MemberSignature Language="C#" Value="public System.Windows.Controls.CalendarBlackoutDatesCollection BlackoutDates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.CalendarBlackoutDatesCollection BlackoutDates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.BlackoutDates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlackoutDates As CalendarBlackoutDatesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::CalendarBlackoutDatesCollection ^ BlackoutDates { System::Windows::Controls::CalendarBlackoutDatesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +174,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Style CalendarButtonStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CalendarButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.CalendarButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarButtonStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ CalendarButtonStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +224,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CalendarButtonStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CalendarButtonStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.CalendarButtonStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CalendarButtonStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CalendarButtonStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -233,6 +243,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Style CalendarDayButtonStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CalendarDayButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.CalendarDayButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarDayButtonStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ CalendarDayButtonStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -281,6 +293,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CalendarDayButtonStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CalendarDayButtonStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.CalendarDayButtonStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CalendarDayButtonStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CalendarDayButtonStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +312,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Style CalendarItemStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CalendarItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.CalendarItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarItemStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ CalendarItemStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -346,6 +362,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CalendarItemStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CalendarItemStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.CalendarItemStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CalendarItemStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CalendarItemStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -363,6 +381,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public DateTime DisplayDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DisplayDate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.DisplayDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayDate As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime DisplayDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -425,6 +445,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Controls.CalendarDateChangedEventArgs&gt; DisplayDateChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Controls.CalendarDateChangedEventArgs&gt; DisplayDateChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Calendar.DisplayDateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DisplayDateChanged As EventHandler(Of CalendarDateChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Controls::CalendarDateChangedEventArgs ^&gt; ^ DisplayDateChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -463,6 +485,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; DisplayDateEnd { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DisplayDateEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.DisplayDateEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayDateEnd As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; DisplayDateEnd { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -518,6 +542,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateEndProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateEndProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.DisplayDateEndProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayDateEndProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayDateEndProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -535,6 +561,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.DisplayDateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayDateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayDateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -552,6 +580,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; DisplayDateStart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DisplayDateStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.DisplayDateStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayDateStart As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; DisplayDateStart { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +637,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateStartProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateStartProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.DisplayDateStartProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayDateStartProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayDateStartProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -624,6 +656,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.CalendarMode DisplayMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.CalendarMode DisplayMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.DisplayMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayMode As CalendarMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::CalendarMode DisplayMode { System::Windows::Controls::CalendarMode get(); void set(System::Windows::Controls::CalendarMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -675,6 +709,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Controls.CalendarModeChangedEventArgs&gt; DisplayModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Controls.CalendarModeChangedEventArgs&gt; DisplayModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Calendar.DisplayModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DisplayModeChanged As EventHandler(Of CalendarModeChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Controls::CalendarModeChangedEventArgs ^&gt; ^ DisplayModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -717,6 +753,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.DisplayModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayModeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -734,6 +772,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public DayOfWeek FirstDayOfWeek { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.FirstDayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstDayOfWeek As DayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DayOfWeek FirstDayOfWeek { DayOfWeek get(); void set(DayOfWeek value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -777,6 +817,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FirstDayOfWeekProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FirstDayOfWeekProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.FirstDayOfWeekProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FirstDayOfWeekProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FirstDayOfWeekProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -794,6 +836,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public bool IsTodayHighlighted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTodayHighlighted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.IsTodayHighlighted" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTodayHighlighted As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTodayHighlighted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -843,6 +887,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsTodayHighlightedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsTodayHighlightedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.IsTodayHighlightedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTodayHighlightedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsTodayHighlightedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -860,6 +906,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -885,6 +933,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -911,6 +961,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected virtual void OnDisplayDateChanged (System.Windows.Controls.CalendarDateChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisplayDateChanged(class System.Windows.Controls.CalendarDateChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnDisplayDateChanged(System.Windows.Controls.CalendarDateChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayDateChanged (e As CalendarDateChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayDateChanged(System::Windows::Controls::CalendarDateChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -935,6 +987,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected virtual void OnDisplayModeChanged (System.Windows.Controls.CalendarModeChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisplayModeChanged(class System.Windows.Controls.CalendarModeChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnDisplayModeChanged(System.Windows.Controls.CalendarModeChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayModeChanged (e As CalendarModeChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayModeChanged(System::Windows::Controls::CalendarModeChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -959,6 +1013,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -990,6 +1046,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1021,6 +1079,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected virtual void OnSelectedDatesChanged (System.Windows.Controls.SelectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedDatesChanged(class System.Windows.Controls.SelectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnSelectedDatesChanged(System.Windows.Controls.SelectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedDatesChanged (e As SelectionChangedEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedDatesChanged(System::Windows::Controls::SelectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1052,6 +1112,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionModeChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionModeChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.OnSelectionModeChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionModeChanged (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionModeChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1076,6 +1138,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; SelectedDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SelectedDate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.SelectedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; SelectedDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1137,6 +1201,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedDateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedDateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.SelectedDateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedDateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedDateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1154,6 +1220,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.SelectedDatesCollection SelectedDates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.SelectedDatesCollection SelectedDates" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.SelectedDates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedDates As SelectedDatesCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::SelectedDatesCollection ^ SelectedDates { System::Windows::Controls::SelectedDatesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1212,6 +1280,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Controls.SelectionChangedEventArgs&gt; SelectedDatesChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Controls.SelectionChangedEventArgs&gt; SelectedDatesChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Calendar.SelectedDatesChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedDatesChanged As EventHandler(Of SelectionChangedEventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Controls::SelectionChangedEventArgs ^&gt; ^ SelectedDatesChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1242,6 +1312,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent SelectedDatesChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent SelectedDatesChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.SelectedDatesChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedDatesChangedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ SelectedDatesChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1259,6 +1331,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public System.Windows.Controls.CalendarSelectionMode SelectionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.CalendarSelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Calendar.SelectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionMode As CalendarSelectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::CalendarSelectionMode SelectionMode { System::Windows::Controls::CalendarSelectionMode get(); void set(System::Windows::Controls::CalendarSelectionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1308,6 +1382,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; SelectionModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; SelectionModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Calendar.SelectionModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionModeChanged As EventHandler(Of EventArgs) " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;EventArgs ^&gt; ^ SelectionModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1325,6 +1401,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectionModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectionModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Calendar.SelectionModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionModeProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1342,6 +1420,8 @@ Calendar with dates that cannot be selected
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Calendar.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

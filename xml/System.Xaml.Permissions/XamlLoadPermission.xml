@@ -1,7 +1,9 @@
-<Type Name="XamlLoadPermission" FullName="System.Xaml.Permissions.XamlLoadPermission">
+﻿<Type Name="XamlLoadPermission" FullName="System.Xaml.Permissions.XamlLoadPermission">
   <TypeSignature Language="C#" Value="public sealed class XamlLoadPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit XamlLoadPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.Permissions.XamlLoadPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XamlLoadPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlLoadPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Collections.Generic.IEnumerable&lt;System.Xaml.Permissions.XamlAccessLevel&gt; allowedAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Xaml.Permissions.XamlAccessLevel&gt; allowedAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Collections.Generic.IEnumerable{System.Xaml.Permissions.XamlAccessLevel})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allowedAccess As IEnumerable(Of XamlAccessLevel))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlLoadPermission(System::Collections::Generic::IEnumerable&lt;System::Xaml::Permissions::XamlAccessLevel ^&gt; ^ allowedAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlLoadPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public XamlLoadPermission (System.Xaml.Permissions.XamlAccessLevel allowedAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.Permissions.XamlAccessLevel allowedAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.#ctor(System.Xaml.Permissions.XamlAccessLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allowedAccess As XamlAccessLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlLoadPermission(System::Xaml::Permissions::XamlAccessLevel ^ allowedAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.Permissions.XamlAccessLevel&gt; AllowedAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.Permissions.XamlAccessLevel&gt; AllowedAccess" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Permissions.XamlLoadPermission.AllowedAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowedAccess As IList(Of XamlAccessLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::Permissions::XamlAccessLevel ^&gt; ^ AllowedAccess { System::Collections::Generic::IList&lt;System::Xaml::Permissions::XamlAccessLevel ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -136,6 +155,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -162,6 +183,8 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement elem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (elem As SecurityElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ elem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -191,6 +214,8 @@
       <MemberSignature Language="C#" Value="public bool Includes (System.Xaml.Permissions.XamlAccessLevel requestedAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Includes(class System.Xaml.Permissions.XamlAccessLevel requestedAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Includes(System.Xaml.Permissions.XamlAccessLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Includes (requestedAccess As XamlAccessLevel) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Includes(System::Xaml::Permissions::XamlAccessLevel ^ requestedAccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -216,6 +241,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -247,6 +274,8 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -281,6 +310,8 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -301,6 +332,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -320,6 +353,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Permissions.XamlLoadPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (other As IPermission) As IPermission" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -349,14 +384,5 @@
           <paramref name="other" /> is not <see langword="null" /> or is not a <see cref="T:System.Xaml.Permissions.XamlLoadPermission" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Permissions.XamlLoadPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="TableHeaderScope" FullName="System.Web.UI.WebControls.TableHeaderScope">
+﻿<Type Name="TableHeaderScope" FullName="System.Web.UI.WebControls.TableHeaderScope">
   <TypeSignature Language="C#" Value="public enum TableHeaderScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableHeaderScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableHeaderScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TableHeaderScope" />
+  <TypeSignature Language="C++ CLI" Value="public enum class TableHeaderScope" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="Column" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope Column = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Column" />
+      <MemberSignature Language="VB.NET" Value="Column" />
+      <MemberSignature Language="C++ CLI" Value="Column" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -35,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The object that represents a header cell of a table is rendered with the <see langword="scope" /> attribute set to <c>"Column"</c>.</summary>
       </Docs>
@@ -43,6 +48,8 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see langword="scope" /> attribute is not rendered for the header cell.</summary>
       </Docs>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="Row" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableHeaderScope Row = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableHeaderScope.Row" />
+      <MemberSignature Language="VB.NET" Value="Row" />
+      <MemberSignature Language="C++ CLI" Value="Row" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableHeaderScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The object that represents a header cell of a table is rendered with the <see langword="scope" /> attribute set to <c>"Row"</c>.</summary>
       </Docs>

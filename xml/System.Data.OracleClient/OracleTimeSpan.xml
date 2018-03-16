@@ -1,7 +1,9 @@
-<Type Name="OracleTimeSpan" FullName="System.Data.OracleClient.OracleTimeSpan">
+﻿<Type Name="OracleTimeSpan" FullName="System.Data.OracleClient.OracleTimeSpan">
   <TypeSignature Language="C#" Value="public struct OracleTimeSpan : IComparable, System.Data.SqlTypes.INullable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OracleTimeSpan extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleTimeSpan" />
+  <TypeSignature Language="VB.NET" Value="Public Structure OracleTimeSpan&#xA;Implements IComparable, INullable" />
+  <TypeSignature Language="C++ CLI" Value="public value class OracleTimeSpan : IComparable, System::Data::SqlTypes::INullable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OracleTimeSpan (System.Data.OracleClient.OracleTimeSpan from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.OracleClient.OracleTimeSpan from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (from As OracleTimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(System::Data::OracleClient::OracleTimeSpan from);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public OracleTimeSpan (long ticks);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 ticks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(long ticks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -71,6 +86,8 @@
       <MemberSignature Language="C#" Value="public OracleTimeSpan (TimeSpan ts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan ts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ts As TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(TimeSpan ts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -89,6 +106,8 @@
       <MemberSignature Language="C#" Value="public OracleTimeSpan (int hours, int minutes, int seconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 hours, int32 minutes, int32 seconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hours As Integer, minutes As Integer, seconds As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(int hours, int minutes, int seconds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -112,6 +131,8 @@
       <MemberSignature Language="C#" Value="public OracleTimeSpan (int days, int hours, int minutes, int seconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 days, int32 hours, int32 minutes, int32 seconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (days As Integer, hours As Integer, minutes As Integer, seconds As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(int days, int hours, int minutes, int seconds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -137,6 +158,8 @@
       <MemberSignature Language="C#" Value="public OracleTimeSpan (int days, int hours, int minutes, int seconds, int milliseconds);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 days, int32 hours, int32 minutes, int32 seconds, int32 milliseconds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (days As Integer, hours As Integer, minutes As Integer, seconds As Integer, milliseconds As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleTimeSpan(int days, int hours, int minutes, int seconds, int milliseconds);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -164,7 +187,12 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -204,6 +232,8 @@
       <MemberSignature Language="C#" Value="public int Days { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Days" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Days" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Days As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Days { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -218,10 +248,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -245,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean Equals (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean Equals(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Equals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean Equals(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -270,6 +313,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -289,6 +334,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThan(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -313,6 +360,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThanOrEqual(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -337,6 +386,8 @@
       <MemberSignature Language="C#" Value="public int Hours { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Hours" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Hours" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hours As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hours { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -355,7 +406,12 @@
       <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.IsNull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -374,6 +430,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThan(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -398,6 +456,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThanOrEqual(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -422,6 +482,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan MaxValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan MaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As OracleTimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleTimeSpan MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -446,6 +508,8 @@
       <MemberSignature Language="C#" Value="public int Milliseconds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Milliseconds" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Milliseconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Milliseconds As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Milliseconds { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -464,6 +528,8 @@
       <MemberSignature Language="C#" Value="public int Minutes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minutes" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Minutes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minutes As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minutes { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -482,6 +548,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan MinValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan MinValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As OracleTimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleTimeSpan MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -506,6 +574,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean NotEquals (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean NotEquals(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.NotEquals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean NotEquals(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -530,6 +600,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan Null" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleTimeSpan " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleTimeSpan Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -554,6 +626,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Equality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator ==(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -577,10 +651,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> conversion.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator TimeSpan (System.Data.OracleClient.OracleTimeSpan x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Explicit(valuetype System.Data.OracleClient.OracleTimeSpan x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.Data.OracleClient.OracleTimeSpan)~System.TimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As OracleTimeSpan) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator TimeSpan(System::Data::OracleClient::OracleTimeSpan x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -603,6 +688,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleTimeSpan (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleTimeSpan op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.String)~System.Data.OracleClient.OracleTimeSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As String) As OracleTimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::OracleClient::OracleTimeSpan(System::String ^ x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -625,6 +712,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -651,6 +740,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;=(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -677,6 +768,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Inequality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator !=(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -703,6 +796,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -729,6 +824,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As OracleTimeSpan, y As OracleTimeSpan) As OracleBoolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;=(System::Data::OracleClient::OracleTimeSpan x, System::Data::OracleClient::OracleTimeSpan y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -755,6 +852,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleTimeSpan Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleTimeSpan Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As OracleTimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleTimeSpan Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -777,6 +876,8 @@
       <MemberSignature Language="C#" Value="public int Seconds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Seconds" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Seconds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Seconds As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Seconds { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -795,6 +896,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -814,6 +917,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Value { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -828,32 +933,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> conversion.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

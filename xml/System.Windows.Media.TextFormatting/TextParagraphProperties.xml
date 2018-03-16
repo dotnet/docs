@@ -1,7 +1,9 @@
-<Type Name="TextParagraphProperties" FullName="System.Windows.Media.TextFormatting.TextParagraphProperties">
+﻿<Type Name="TextParagraphProperties" FullName="System.Windows.Media.TextFormatting.TextParagraphProperties">
   <TypeSignature Language="C#" Value="public abstract class TextParagraphProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextParagraphProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextParagraphProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextParagraphProperties" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextParagraphProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="protected TextParagraphProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextParagraphProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextParagraphProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AlwaysCollapsible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysCollapsible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.AlwaysCollapsible" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AlwaysCollapsible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AlwaysCollapsible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +66,8 @@
       <MemberSignature Language="C#" Value="public virtual double DefaultIncrementalTab { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DefaultIncrementalTab" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.DefaultIncrementalTab" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultIncrementalTab As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double DefaultIncrementalTab { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +86,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextRunProperties DefaultTextRunProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRunProperties DefaultTextRunProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.DefaultTextRunProperties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DefaultTextRunProperties As TextRunProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::TextRunProperties ^ DefaultTextRunProperties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +106,8 @@
       <MemberSignature Language="C#" Value="public abstract bool FirstLineInParagraph { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FirstLineInParagraph" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.FirstLineInParagraph" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FirstLineInParagraph As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool FirstLineInParagraph { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +127,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.FlowDirection FlowDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +147,8 @@
       <MemberSignature Language="C#" Value="public abstract double Indent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Indent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.Indent" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Indent As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Indent { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +167,8 @@
       <MemberSignature Language="C#" Value="public abstract double LineHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.LineHeight" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LineHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double LineHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +187,8 @@
       <MemberSignature Language="C#" Value="public virtual double ParagraphIndent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ParagraphIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.ParagraphIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParagraphIndent As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double ParagraphIndent { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +207,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;System.Windows.Media.TextFormatting.TextTabProperties&gt; Tabs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Windows.Media.TextFormatting.TextTabProperties&gt; Tabs" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.Tabs" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Tabs As IList(Of TextTabProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextTabProperties ^&gt; ^ Tabs { System::Collections::Generic::IList&lt;System::Windows::Media::TextFormatting::TextTabProperties ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +227,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.TextAlignment TextAlignment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextAlignment As TextAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +247,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.TextDecorationCollection TextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -241,6 +267,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextMarkerProperties TextMarkerProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextMarkerProperties TextMarkerProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextMarkerProperties" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextMarkerProperties As TextMarkerProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::TextMarkerProperties ^ TextMarkerProperties { System::Windows::Media::TextFormatting::TextMarkerProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +287,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.TextWrapping TextWrapping { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextWrapping TextWrapping" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextParagraphProperties.TextWrapping" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextWrapping As TextWrapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::TextWrapping TextWrapping { System::Windows::TextWrapping get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

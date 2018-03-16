@@ -1,7 +1,9 @@
-<Type Name="TaskCompletionSource&lt;TResult&gt;" FullName="System.Threading.Tasks.TaskCompletionSource&lt;TResult&gt;">
+﻿<Type Name="TaskCompletionSource&lt;TResult&gt;" FullName="System.Threading.Tasks.TaskCompletionSource&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class TaskCompletionSource&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskCompletionSource`1&lt;TResult&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCompletionSource`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class TaskCompletionSource(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class TaskCompletionSource" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +50,23 @@
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> are thread-safe and may be used from multiple threads concurrently.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TaskCompletionSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -78,6 +93,8 @@
       <MemberSignature Language="C#" Value="public TaskCompletionSource (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -107,6 +124,8 @@
       <MemberSignature Language="C#" Value="public TaskCompletionSource (System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (creationOptions As TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -144,6 +163,8 @@
       <MemberSignature Language="C#" Value="public TaskCompletionSource (object state, System.Threading.Tasks.TaskCreationOptions creationOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object state, valuetype System.Threading.Tasks.TaskCreationOptions creationOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object, creationOptions As TaskCreationOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -176,6 +197,8 @@
       <MemberSignature Language="C#" Value="public void SetCanceled ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCanceled() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCanceled ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCanceled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -203,10 +226,23 @@
         <altmember cref="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetException">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetException">
       <MemberSignature Language="C#" Value="public void SetException (System.Collections.Generic.IEnumerable&lt;Exception&gt; exceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Collections.Generic.IEnumerable`1&lt;class System.Exception&gt; exceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetException (exceptions As IEnumerable(Of Exception))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -243,6 +279,7 @@
       <MemberSignature Language="C#" Value="public void SetException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -278,6 +315,8 @@
       <MemberSignature Language="C#" Value="public void SetResult (TResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetResult(!TResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetResult (result As TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResult(TResult result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -312,6 +351,8 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; Task" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskCompletionSource`1.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task(Of TResult)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task&lt;TResult&gt; ^ Task { System::Threading::Tasks::Task&lt;TResult&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -346,10 +387,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrySetCanceled">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" /> state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TrySetCanceled">
       <MemberSignature Language="C#" Value="public bool TrySetCanceled ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetCanceled() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySetCanceled () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -389,6 +443,7 @@
       <MemberSignature Language="C#" Value="public bool TrySetCanceled (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetCanceled(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled(System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -433,10 +488,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TrySetException">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Tasks</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TrySetException">
       <MemberSignature Language="C#" Value="public bool TrySetException (System.Collections.Generic.IEnumerable&lt;Exception&gt; exceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetException(class System.Collections.Generic.IEnumerable`1&lt;class System.Exception&gt; exceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySetException (exceptions As IEnumerable(Of Exception)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -484,6 +552,7 @@
       <MemberSignature Language="C#" Value="public bool TrySetException (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -526,6 +595,8 @@
       <MemberSignature Language="C#" Value="public bool TrySetResult (TResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetResult(!TResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySetResult (result As TResult) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetResult(TResult result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -564,49 +635,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TrySetException">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TrySetCanceled">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to transition the underlying <see cref="T:System.Threading.Tasks.Task`1" /> into the <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" /> state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetException">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Tasks</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transitions the underlying <see cref="T:System.Threading.Tasks.Task`1" /> object into the <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" /> state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

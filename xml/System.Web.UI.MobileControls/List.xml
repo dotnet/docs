@@ -1,7 +1,9 @@
-<Type Name="List" FullName="System.Web.UI.MobileControls.List">
+﻿<Type Name="List" FullName="System.Web.UI.MobileControls.List">
   <TypeSignature Language="C#" Value="public class List : System.Web.UI.MobileControls.PagedControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackEventHandler, System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit List extends System.Web.UI.MobileControls.PagedControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.List" />
+  <TypeSignature Language="VB.NET" Value="Public Class List&#xA;Inherits PagedControl&#xA;Implements INamingContainer, IPostBackEventHandler, ITemplateable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class List : System::Web::UI::MobileControls::PagedControl, System::Web::UI::INamingContainer, System::Web::UI::IPostBackEventHandler, System::Web::UI::MobileControls::ITemplateable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +77,8 @@
       <MemberSignature Language="C#" Value="public List ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; List();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -90,6 +94,8 @@
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="public override void CreateDefaultTemplatedUI (bool doDataBind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateDefaultTemplatedUI(bool doDataBind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.CreateDefaultTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDefaultTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDefaultTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CreateItems (System.Collections.IEnumerable dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateItems(class System.Collections.IEnumerable dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.CreateItems(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateItems (dataSource As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateItems(System::Collections::IEnumerable ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -180,6 +192,8 @@
       <MemberSignature Language="C#" Value="public virtual string DataMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataMember As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -216,6 +230,8 @@
       <MemberSignature Language="C#" Value="public virtual object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataSource As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -229,7 +245,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,6 +268,8 @@
       <MemberSignature Language="C#" Value="public string DataTextField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.DataTextField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataTextField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataTextField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -278,6 +296,8 @@
       <MemberSignature Language="C#" Value="public string DataValueField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataValueField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.DataValueField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataValueField As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValueField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -304,6 +324,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ListDecoration Decoration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.ListDecoration Decoration" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.Decoration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Decoration As ListDecoration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ListDecoration Decoration { System::Web::UI::MobileControls::ListDecoration get(); void set(System::Web::UI::MobileControls::ListDecoration value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -351,6 +373,8 @@
       <MemberSignature Language="C#" Value="protected override void EnsureChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void EnsureChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.EnsureChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub EnsureChildControls ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void EnsureChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -369,6 +393,8 @@
       <MemberSignature Language="C#" Value="public override void EnsureTemplatedUI ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnsureTemplatedUI() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.EnsureTemplatedUI" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EnsureTemplatedUI ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnsureTemplatedUI();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -387,6 +413,8 @@
       <MemberSignature Language="C#" Value="public bool HasItemCommandHandler { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasItemCommandHandler" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.HasItemCommandHandler" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasItemCommandHandler As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasItemCommandHandler { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -400,7 +428,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -418,6 +446,8 @@
       <MemberSignature Language="C#" Value="protected override int InternalItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InternalItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.InternalItemCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property InternalItemCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int InternalItemCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -437,6 +467,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.MobileControls.ListCommandEventHandler ItemCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.MobileControls.ListCommandEventHandler ItemCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.List.ItemCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As ListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::MobileControls::ListCommandEventHandler ^ ItemCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -477,6 +509,8 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.MobileControls.ListDataBindEventHandler ItemDataBind;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.MobileControls.ListDataBindEventHandler ItemDataBind" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.List.ItemDataBind" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBind As ListDataBindEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::MobileControls::ListDataBindEventHandler ^ ItemDataBind;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -514,6 +548,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.MobileListItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobileListItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As MobileListItemCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileListItemCollection ^ Items { System::Web::UI::MobileControls::MobileListItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -533,7 +569,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerDefaultProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -556,6 +592,8 @@
       <MemberSignature Language="C#" Value="public bool ItemsAsLinks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ItemsAsLinks" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.List.ItemsAsLinks" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsAsLinks As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ItemsAsLinks { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -590,6 +628,8 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -612,6 +652,8 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (sender As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -638,6 +680,8 @@
       <MemberSignature Language="C#" Value="protected override void OnDataBinding (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnDataBinding(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataBinding (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataBinding(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -660,6 +704,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemCommand (System.Web.UI.MobileControls.ListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCommand(class System.Web.UI.MobileControls.ListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnItemCommand(System.Web.UI.MobileControls.ListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As ListCommandEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::MobileControls::ListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -689,6 +735,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemDataBind (System.Web.UI.MobileControls.ListDataBindEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemDataBind(class System.Web.UI.MobileControls.ListDataBindEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnItemDataBind(System.Web.UI.MobileControls.ListDataBindEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBind (e As ListDataBindEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBind(System::Web::UI::MobileControls::ListDataBindEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -718,6 +766,8 @@
       <MemberSignature Language="C#" Value="protected override void OnLoadItems (System.Web.UI.MobileControls.LoadItemsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLoadItems(class System.Web.UI.MobileControls.LoadItemsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnLoadItems(System.Web.UI.MobileControls.LoadItemsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoadItems (e As LoadItemsEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoadItems(System::Web::UI::MobileControls::LoadItemsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -740,6 +790,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPageChange (int oldPageIndex, int newPageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPageChange(int32 oldPageIndex, int32 newPageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnPageChange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPageChange (oldPageIndex As Integer, newPageIndex As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPageChange(int oldPageIndex, int newPageIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -764,6 +816,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -786,6 +840,8 @@
       <MemberSignature Language="C#" Value="protected void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -807,6 +863,8 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -827,6 +885,8 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -855,6 +915,8 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.List.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

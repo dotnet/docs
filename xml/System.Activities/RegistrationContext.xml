@@ -1,7 +1,9 @@
-<Type Name="RegistrationContext" FullName="System.Activities.RegistrationContext">
+﻿<Type Name="RegistrationContext" FullName="System.Activities.RegistrationContext">
   <TypeSignature Language="C#" Value="public sealed class RegistrationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.RegistrationContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistrationContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public object FindProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object FindProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.RegistrationContext.FindProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindProperty (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

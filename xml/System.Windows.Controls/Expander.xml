@@ -1,7 +1,9 @@
-<Type Name="Expander" FullName="System.Windows.Controls.Expander">
+﻿<Type Name="Expander" FullName="System.Windows.Controls.Expander">
   <TypeSignature Language="C#" Value="public class Expander : System.Windows.Controls.HeaderedContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Expander extends System.Windows.Controls.HeaderedContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Expander" />
+  <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits HeaderedContentControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Expander : System::Windows::Controls::HeaderedContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +61,8 @@
       <MemberSignature Language="C#" Value="public Expander ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Expander();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler Collapsed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler Collapsed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Expander.Collapsed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Collapsed As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Collapsed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent CollapsedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent CollapsedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.CollapsedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CollapsedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CollapsedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ExpandDirection ExpandDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ExpandDirection ExpandDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Expander.ExpandDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpandDirection As ExpandDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ExpandDirection ExpandDirection { System::Windows::Controls::ExpandDirection get(); void set(System::Windows::Controls::ExpandDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +199,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ExpandDirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ExpandDirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.ExpandDirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandDirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ExpandDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +218,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler Expanded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler Expanded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Expander.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Expanded As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ Expanded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -254,6 +268,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ExpandedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ExpandedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.ExpandedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ExpandedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -271,6 +287,8 @@
       <MemberSignature Language="C#" Value="public bool IsExpanded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Expander.IsExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsExpanded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpanded { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -321,6 +339,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsExpandedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsExpandedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Expander.IsExpandedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandedProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsExpandedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -338,6 +358,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -357,6 +379,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCollapsed ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollapsed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnCollapsed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollapsed ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollapsed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -375,6 +399,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -394,6 +420,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnExpanded ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExpanded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Expander.OnExpanded" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExpanded ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExpanded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

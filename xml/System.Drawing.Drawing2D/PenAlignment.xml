@@ -1,7 +1,9 @@
-<Type Name="PenAlignment" FullName="System.Drawing.Drawing2D.PenAlignment">
+﻿<Type Name="PenAlignment" FullName="System.Drawing.Drawing2D.PenAlignment">
   <TypeSignature Language="C#" Value="public enum PenAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PenAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PenAlignment" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PenAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenAlignment Center = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Drawing.Pen" /> object is centered over the theoretical line.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="Inset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenAlignment Inset = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenAlignment.Inset" />
+      <MemberSignature Language="VB.NET" Value="Inset" />
+      <MemberSignature Language="C++ CLI" Value="Inset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the <see cref="T:System.Drawing.Pen" /> is positioned on the inside of the theoretical line.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenAlignment Left = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenAlignment.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned to the left of the theoretical line.</summary>
       </Docs>
@@ -73,6 +84,8 @@
       <MemberSignature Language="C#" Value="Outset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenAlignment Outset = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenAlignment.Outset" />
+      <MemberSignature Language="VB.NET" Value="Outset" />
+      <MemberSignature Language="C++ CLI" Value="Outset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned on the outside of the theoretical line.</summary>
       </Docs>
@@ -89,6 +103,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PenAlignment Right = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PenAlignment.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.PenAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Drawing.Pen" /> is positioned to the right of the theoretical line.</summary>
       </Docs>

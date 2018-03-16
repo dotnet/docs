@@ -1,7 +1,9 @@
-<Type Name="MachineKeySection" FullName="System.Web.Configuration.MachineKeySection">
+﻿<Type Name="MachineKeySection" FullName="System.Web.Configuration.MachineKeySection">
   <TypeSignature Language="C#" Value="public sealed class MachineKeySection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MachineKeySection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MachineKeySection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MachineKeySection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MachineKeySection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public MachineKeySection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeySection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MachineKeySection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +76,8 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.MachineKeyCompatibilityMode CompatibilityMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.MachineKeyCompatibilityMode CompatibilityMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.CompatibilityMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompatibilityMode As MachineKeyCompatibilityMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::MachineKeyCompatibilityMode CompatibilityMode { System::Web::Configuration::MachineKeyCompatibilityMode get(); void set(System::Web::Configuration::MachineKeyCompatibilityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +163,8 @@
       <MemberSignature Language="C#" Value="public string DataProtectorType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataProtectorType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.DataProtectorType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataProtectorType As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataProtectorType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -190,6 +200,8 @@
       <MemberSignature Language="C#" Value="public string Decryption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Decryption" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.Decryption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Decryption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Decryption { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +250,8 @@
       <MemberSignature Language="C#" Value="public string DecryptionKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DecryptionKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.DecryptionKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property DecryptionKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DecryptionKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +307,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +327,8 @@
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeySection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +350,8 @@
       <MemberSignature Language="C#" Value="protected override void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeySection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +370,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.MachineKeyValidation Validation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.MachineKeyValidation Validation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.Validation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Validation As MachineKeyValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::MachineKeyValidation Validation { System::Web::Configuration::MachineKeyValidation get(); void set(System::Web::Configuration::MachineKeyValidation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -384,6 +406,8 @@
       <MemberSignature Language="C#" Value="public string ValidationAlgorithm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.ValidationAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationAlgorithm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationAlgorithm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -426,6 +450,8 @@
       <MemberSignature Language="C#" Value="public string ValidationKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.MachineKeySection.ValidationKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

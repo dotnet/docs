@@ -1,7 +1,9 @@
-<Type Name="WebPartTracker" FullName="System.Web.UI.WebControls.WebParts.WebPartTracker">
+﻿<Type Name="WebPartTracker" FullName="System.Web.UI.WebControls.WebParts.WebPartTracker">
   <TypeSignature Language="C#" Value="public sealed class WebPartTracker : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartTracker extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTracker" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartTracker&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartTracker sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public WebPartTracker (System.Web.UI.WebControls.WebParts.WebPart webPart, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTracker.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartTracker(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ providerConnectionPoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public bool IsCircularConnection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCircularConnection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCircularConnection As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCircularConnection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,7 +82,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTracker.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

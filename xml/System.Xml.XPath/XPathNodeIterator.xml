@@ -1,7 +1,9 @@
-<Type Name="XPathNodeIterator" FullName="System.Xml.XPath.XPathNodeIterator">
+﻿<Type Name="XPathNodeIterator" FullName="System.Xml.XPath.XPathNodeIterator">
   <TypeSignature Language="C#" Value="public abstract class XPathNodeIterator : ICloneable, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XPathNodeIterator extends System.Object implements class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNodeIterator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XPathNodeIterator&#xA;Implements ICloneable, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathNodeIterator abstract : ICloneable, System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -122,6 +124,8 @@
       <MemberSignature Language="C#" Value="protected XPathNodeIterator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XPathNodeIterator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -157,6 +161,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.XPath.XPathNodeIterator Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XPath.XPathNodeIterator Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As XPathNodeIterator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Xml::XPath::XPathNodeIterator ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -197,6 +203,8 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -235,6 +243,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Xml.XPath.XPathNavigator Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XPath.XPathNavigator Current" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Current As XPathNavigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XPath::XPathNavigator ^ Current { System::Xml::XPath::XPathNavigator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -327,6 +337,8 @@
       <MemberSignature Language="C#" Value="public abstract int CurrentPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XPath.XPathNodeIterator.CurrentPosition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CurrentPosition As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int CurrentPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -365,7 +377,12 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -421,6 +438,8 @@
       <MemberSignature Language="C#" Value="public abstract bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MoveNext () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -520,7 +539,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XPath.XPathNodeIterator.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

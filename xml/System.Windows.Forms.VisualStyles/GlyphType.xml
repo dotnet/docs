@@ -1,7 +1,9 @@
-<Type Name="GlyphType" FullName="System.Windows.Forms.VisualStyles.GlyphType">
+﻿<Type Name="GlyphType" FullName="System.Windows.Forms.VisualStyles.GlyphType">
   <TypeSignature Language="C#" Value="public enum GlyphType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GlyphType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.GlyphType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GlyphType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GlyphType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="FontGlyph" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.GlyphType FontGlyph = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.GlyphType.FontGlyph" />
+      <MemberSignature Language="VB.NET" Value="FontGlyph" />
+      <MemberSignature Language="C++ CLI" Value="FontGlyph" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.GlyphType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The glyph is a font.</summary>
       </Docs>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="ImageGlyph" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.GlyphType ImageGlyph = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.GlyphType.ImageGlyph" />
+      <MemberSignature Language="VB.NET" Value="ImageGlyph" />
+      <MemberSignature Language="C++ CLI" Value="ImageGlyph" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.GlyphType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The glyph is a bitmap.</summary>
       </Docs>
@@ -57,6 +65,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.GlyphType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.GlyphType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.GlyphType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The element does not include a glyph.</summary>
       </Docs>

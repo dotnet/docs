@@ -1,7 +1,9 @@
-<Type Name="CookieHandler" FullName="System.IdentityModel.Services.CookieHandler">
+﻿<Type Name="CookieHandler" FullName="System.IdentityModel.Services.CookieHandler">
   <TypeSignature Language="C#" Value="public abstract class CookieHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CookieHandler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.CookieHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CookieHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CookieHandler abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected CookieHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CookieHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -57,10 +61,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Delete">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Delete">
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -86,6 +101,8 @@
       <MemberSignature Language="C#" Value="public void Delete (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Delete(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -116,6 +133,8 @@
       <MemberSignature Language="C#" Value="public void Delete (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Delete(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -144,6 +163,8 @@
       <MemberSignature Language="C#" Value="public void Delete (string name, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(string name, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Delete(System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (name As String, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::String ^ name, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -176,6 +197,8 @@
       <MemberSignature Language="C#" Value="public void Delete (string name, string path, string domain, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete(string name, string path, string domain, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Delete(System.String,System.String,System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (name As String, path As String, domain As String, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete(System::String ^ name, System::String ^ path, System::String ^ domain, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -205,6 +228,8 @@
       <MemberSignature Language="C#" Value="protected abstract void DeleteCore (string name, string path, string domain, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DeleteCore(string name, string path, string domain, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.DeleteCore(System.String,System.String,System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub DeleteCore (name As String, path As String, domain As String, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void DeleteCore(System::String ^ name, System::String ^ path, System::String ^ domain, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -242,6 +267,8 @@
       <MemberSignature Language="C#" Value="public virtual string Domain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Domain" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.Domain" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Domain As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -269,6 +296,8 @@
       <MemberSignature Language="C#" Value="public virtual bool HideFromClientScript { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HideFromClientScript" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.HideFromClientScript" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HideFromClientScript As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HideFromClientScript { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -299,6 +328,8 @@
       <MemberSignature Language="C#" Value="public virtual string MatchCookiePath (Uri baseUri, Uri targetUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string MatchCookiePath(class System.Uri baseUri, class System.Uri targetUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.MatchCookiePath(System.Uri,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MatchCookiePath (baseUri As Uri, targetUri As Uri) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ MatchCookiePath(Uri ^ baseUri, Uri ^ targetUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -323,6 +354,8 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -351,6 +384,8 @@
       <MemberSignature Language="C#" Value="public virtual string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -379,6 +414,8 @@
       <MemberSignature Language="C#" Value="public virtual Nullable&lt;TimeSpan&gt; PersistentSessionLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; PersistentSessionLifetime" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.PersistentSessionLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PersistentSessionLifetime As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;TimeSpan&gt; PersistentSessionLifetime { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -405,10 +442,21 @@
         <exception cref="T:System.ArgumentOutOfRangeException">A value that is less than zero is specified.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a cookie.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public byte[] Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read () As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -435,6 +483,8 @@
       <MemberSignature Language="C#" Value="public byte[] Read (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Read(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Read(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read (name As String) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Read(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -466,6 +516,8 @@
       <MemberSignature Language="C#" Value="public byte[] Read (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Read(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Read(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read (context As HttpContext) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Read(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -495,6 +547,8 @@
       <MemberSignature Language="C#" Value="public byte[] Read (string name, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Read(string name, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Read(System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read (name As String, context As HttpContext) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Read(System::String ^ name, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -521,6 +575,8 @@
       <MemberSignature Language="C#" Value="protected abstract byte[] ReadCore (string name, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] ReadCore(string name, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.ReadCore(System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReadCore (name As String, context As HttpContext) As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract cli::array &lt;System::Byte&gt; ^ ReadCore(System::String ^ name, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -555,6 +611,8 @@
       <MemberSignature Language="C#" Value="public virtual bool RequireSsl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSsl" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.CookieHandler.RequireSsl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RequireSsl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequireSsl { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -581,10 +639,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a cookie.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (byte[] value, bool isPersistent, DateTime tokenExpirationTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] value, bool isPersistent, valuetype System.DateTime tokenExpirationTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Write(System.Byte[],System.Boolean,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (value As Byte(), isPersistent As Boolean, tokenExpirationTime As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ value, bool isPersistent, DateTime tokenExpirationTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -622,6 +691,8 @@
       <MemberSignature Language="C#" Value="public void Write (byte[] value, string name, DateTime expirationTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] value, string name, valuetype System.DateTime expirationTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Write(System.Byte[],System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (value As Byte(), name As String, expirationTime As DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, DateTime expirationTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -658,6 +729,8 @@
       <MemberSignature Language="C#" Value="public void Write (byte[] value, string name, DateTime expirationTime, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] value, string name, valuetype System.DateTime expirationTime, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Write(System.Byte[],System.String,System.DateTime,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (value As Byte(), name As String, expirationTime As DateTime, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, DateTime expirationTime, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -696,6 +769,8 @@
       <MemberSignature Language="C#" Value="public void Write (byte[] value, string name, string path, string domain, DateTime expirationTime, bool requiresSsl, bool hideFromClientScript, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(unsigned int8[] value, string name, string path, string domain, valuetype System.DateTime expirationTime, bool requiresSsl, bool hideFromClientScript, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.Write(System.Byte[],System.String,System.String,System.String,System.DateTime,System.Boolean,System.Boolean,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (value As Byte(), name As String, path As String, domain As String, expirationTime As DateTime, requiresSsl As Boolean, hideFromClientScript As Boolean, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, System::String ^ path, System::String ^ domain, DateTime expirationTime, bool requiresSsl, bool hideFromClientScript, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -737,6 +812,8 @@
       <MemberSignature Language="C#" Value="protected abstract void WriteCore (byte[] value, string name, string path, string domain, DateTime expirationTime, bool secure, bool httpOnly, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteCore(unsigned int8[] value, string name, string path, string domain, valuetype System.DateTime expirationTime, bool secure, bool httpOnly, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.CookieHandler.WriteCore(System.Byte[],System.String,System.String,System.String,System.DateTime,System.Boolean,System.Boolean,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub WriteCore (value As Byte(), name As String, path As String, domain As String, expirationTime As DateTime, secure As Boolean, httpOnly As Boolean, context As HttpContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void WriteCore(cli::array &lt;System::Byte&gt; ^ value, System::String ^ name, System::String ^ path, System::String ^ domain, DateTime expirationTime, bool secure, bool httpOnly, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -780,32 +857,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a cookie.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a cookie.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Delete">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deletes a cookie.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

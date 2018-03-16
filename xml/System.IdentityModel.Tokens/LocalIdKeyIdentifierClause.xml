@@ -1,7 +1,9 @@
-<Type Name="LocalIdKeyIdentifierClause" FullName="System.IdentityModel.Tokens.LocalIdKeyIdentifierClause">
+﻿<Type Name="LocalIdKeyIdentifierClause" FullName="System.IdentityModel.Tokens.LocalIdKeyIdentifierClause">
   <TypeSignature Language="C#" Value="public class LocalIdKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalIdKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalIdKeyIdentifierClause&#xA;Inherits SecurityKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalIdKeyIdentifierClause : System::IdentityModel::Tokens::SecurityKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalIdKeyIdentifierClause(System::String ^ localId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +63,8 @@
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String, ownerType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalIdKeyIdentifierClause(System::String ^ localId, Type ^ ownerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,6 +89,8 @@
       <MemberSignature Language="C#" Value="public LocalIdKeyIdentifierClause (string localId, byte[] derivationNonce, int derivationLength, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string localId, unsigned int8[] derivationNonce, int32 derivationLength, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.#ctor(System.String,System.Byte[],System.Int32,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (localId As String, derivationNonce As Byte(), derivationLength As Integer, ownerType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalIdKeyIdentifierClause(System::String ^ localId, cli::array &lt;System::Byte&gt; ^ derivationNonce, int derivationLength, Type ^ ownerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,6 +126,8 @@
       <MemberSignature Language="C#" Value="public string LocalId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalId" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalId As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,10 +142,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Matches">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Matches">
-      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause clause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Matches (clause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Matches(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ clause);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -136,7 +171,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="clause">To be added.</param>
@@ -163,6 +199,8 @@
       <MemberSignature Language="C#" Value="public bool Matches (string localId, Type ownerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(string localId, class System.Type ownerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.Matches(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (localId As String, ownerType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::String ^ localId, Type ^ ownerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -201,6 +239,8 @@
       <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ OwnerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -219,6 +259,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -241,23 +283,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Matches">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

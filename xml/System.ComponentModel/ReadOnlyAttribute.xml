@@ -1,7 +1,9 @@
-<Type Name="ReadOnlyAttribute" FullName="System.ComponentModel.ReadOnlyAttribute">
+﻿<Type Name="ReadOnlyAttribute" FullName="System.ComponentModel.ReadOnlyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ReadOnlyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReadOnlyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ReadOnlyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReadOnlyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReadOnlyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -73,6 +75,8 @@
       <MemberSignature Language="C#" Value="public ReadOnlyAttribute (bool isReadOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isReadOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ReadOnlyAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isReadOnly As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyAttribute(bool isReadOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -122,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ReadOnlyAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ReadOnlyAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ReadOnlyAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ReadOnlyAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ReadOnlyAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -159,6 +165,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ReadOnlyAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -192,6 +200,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ReadOnlyAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -221,6 +231,8 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ReadOnlyAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -250,6 +262,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ReadOnlyAttribute.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -303,6 +317,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ReadOnlyAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ReadOnlyAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ReadOnlyAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As ReadOnlyAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ReadOnlyAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -341,6 +357,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ReadOnlyAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ReadOnlyAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ReadOnlyAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As ReadOnlyAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ReadOnlyAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

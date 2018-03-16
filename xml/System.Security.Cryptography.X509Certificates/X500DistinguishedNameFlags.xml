@@ -1,7 +1,9 @@
-<Type Name="X500DistinguishedNameFlags" FullName="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags">
+﻿<Type Name="X500DistinguishedNameFlags" FullName="System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags">
   <TypeSignature Language="C#" Value="public enum X500DistinguishedNameFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X500DistinguishedNameFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X500DistinguishedNameFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class X500DistinguishedNameFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +54,8 @@
       <MemberSignature Language="C#" Value="DoNotUsePlusSign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags DoNotUsePlusSign = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUsePlusSign" />
+      <MemberSignature Language="VB.NET" Value="DoNotUsePlusSign" />
+      <MemberSignature Language="C++ CLI" Value="DoNotUsePlusSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -71,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The distinguished name does not use the plus sign.</summary>
       </Docs>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="DoNotUseQuotes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags DoNotUseQuotes = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.DoNotUseQuotes" />
+      <MemberSignature Language="VB.NET" Value="DoNotUseQuotes" />
+      <MemberSignature Language="C++ CLI" Value="DoNotUseQuotes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -98,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The distinguished name does not use quotation marks.</summary>
       </Docs>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="ForceUTF8Encoding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags ForceUTF8Encoding = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.ForceUTF8Encoding" />
+      <MemberSignature Language="VB.NET" Value="ForceUTF8Encoding" />
+      <MemberSignature Language="C++ CLI" Value="ForceUTF8Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -125,6 +135,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Forces the distinguished name to encode specific X.500 keys as UTF-8 strings rather than printable Unicode strings. For more information and the list of X.500 keys affected, see the [X500NameFlags enumeration](http://msdn.microsoft.com/library/windows/desktop/aa379394.aspx).</summary>
       </Docs>
@@ -133,6 +144,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -152,6 +165,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The distinguished name has no special characteristics.</summary>
       </Docs>
@@ -160,6 +174,8 @@
       <MemberSignature Language="C#" Value="Reversed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags Reversed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.Reversed" />
+      <MemberSignature Language="VB.NET" Value="Reversed" />
+      <MemberSignature Language="C++ CLI" Value="Reversed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -179,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The distinguished name is reversed.</summary>
       </Docs>
@@ -187,6 +204,8 @@
       <MemberSignature Language="C#" Value="UseCommas" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags UseCommas = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseCommas" />
+      <MemberSignature Language="VB.NET" Value="UseCommas" />
+      <MemberSignature Language="C++ CLI" Value="UseCommas" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -206,6 +225,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The distinguished name uses commas.</summary>
       </Docs>
@@ -214,6 +234,8 @@
       <MemberSignature Language="C#" Value="UseNewLines" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags UseNewLines = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseNewLines" />
+      <MemberSignature Language="VB.NET" Value="UseNewLines" />
+      <MemberSignature Language="C++ CLI" Value="UseNewLines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -233,6 +255,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The distinguished name uses the new line character.</summary>
       </Docs>
@@ -241,6 +264,8 @@
       <MemberSignature Language="C#" Value="UseSemicolons" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags UseSemicolons = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseSemicolons" />
+      <MemberSignature Language="VB.NET" Value="UseSemicolons" />
+      <MemberSignature Language="C++ CLI" Value="UseSemicolons" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -260,6 +285,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The distinguished name uses semicolons.</summary>
       </Docs>
@@ -268,6 +294,8 @@
       <MemberSignature Language="C#" Value="UseT61Encoding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags UseT61Encoding = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseT61Encoding" />
+      <MemberSignature Language="VB.NET" Value="UseT61Encoding" />
+      <MemberSignature Language="C++ CLI" Value="UseT61Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -287,6 +315,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The distinguished name uses T61 encoding.</summary>
       </Docs>
@@ -295,6 +324,8 @@
       <MemberSignature Language="C#" Value="UseUTF8Encoding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags UseUTF8Encoding = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags.UseUTF8Encoding" />
+      <MemberSignature Language="VB.NET" Value="UseUTF8Encoding" />
+      <MemberSignature Language="C++ CLI" Value="UseUTF8Encoding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -314,6 +345,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X500DistinguishedNameFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The distinguished name uses UTF8 encoding instead of Unicode character encoding.</summary>
       </Docs>

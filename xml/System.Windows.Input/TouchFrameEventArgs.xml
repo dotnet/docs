@@ -1,7 +1,9 @@
-<Type Name="TouchFrameEventArgs" FullName="System.Windows.Input.TouchFrameEventArgs">
+﻿<Type Name="TouchFrameEventArgs" FullName="System.Windows.Input.TouchFrameEventArgs">
   <TypeSignature Language="C#" Value="public sealed class TouchFrameEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TouchFrameEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchFrameEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TouchFrameEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TouchFrameEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.TouchPoint GetPrimaryTouchPoint (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.TouchPoint GetPrimaryTouchPoint(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchFrameEventArgs.GetPrimaryTouchPoint(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrimaryTouchPoint (relativeTo As IInputElement) As TouchPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPoint ^ GetPrimaryTouchPoint(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +81,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.TouchPointCollection GetTouchPoints (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.TouchPointCollection GetTouchPoints(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchFrameEventArgs.GetTouchPoints(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTouchPoints (relativeTo As IInputElement) As TouchPointCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::TouchPointCollection ^ GetTouchPoints(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +117,8 @@
       <MemberSignature Language="C#" Value="public void SuspendMousePromotionUntilTouchUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendMousePromotionUntilTouchUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchFrameEventArgs.SuspendMousePromotionUntilTouchUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SuspendMousePromotionUntilTouchUp ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendMousePromotionUntilTouchUp();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +144,8 @@
       <MemberSignature Language="C#" Value="public int Timestamp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timestamp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchFrameEventArgs.Timestamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Timestamp As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timestamp { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

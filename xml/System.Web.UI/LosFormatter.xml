@@ -1,7 +1,9 @@
-<Type Name="LosFormatter" FullName="System.Web.UI.LosFormatter">
+﻿<Type Name="LosFormatter" FullName="System.Web.UI.LosFormatter">
   <TypeSignature Language="C#" Value="public sealed class LosFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LosFormatter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.LosFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LosFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LosFormatter sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LosFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LosFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +56,8 @@
       <MemberSignature Language="C#" Value="public LosFormatter (bool enableMac, byte[] macKeyModifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableMac, unsigned int8[] macKeyModifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor(System.Boolean,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (enableMac As Boolean, macKeyModifier As Byte())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LosFormatter(bool enableMac, cli::array &lt;System::Byte&gt; ^ macKeyModifier);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +79,8 @@
       <MemberSignature Language="C#" Value="public LosFormatter (bool enableMac, string macKeyModifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableMac, string macKeyModifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.#ctor(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (enableMac As Boolean, macKeyModifier As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LosFormatter(bool enableMac, System::String ^ macKeyModifier);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +121,7 @@
       <MemberSignature Language="C#" Value="public object Deserialize (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.IO.Stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +155,8 @@
       <MemberSignature Language="C#" Value="public object Deserialize (System.IO.TextReader input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.IO.TextReader input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize (input As TextReader) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::IO::TextReader ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +190,8 @@
       <MemberSignature Language="C#" Value="public object Deserialize (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Deserialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize (input As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,10 +222,20 @@
         <altmember cref="M:System.Web.UI.LosFormatter.Serialize(System.IO.Stream,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Serialize">
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.Stream stream, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.Stream stream, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Serialize(System.IO.Stream,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::Stream ^ stream, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +267,8 @@
       <MemberSignature Language="C#" Value="public void Serialize (System.IO.TextWriter output, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.IO.TextWriter output, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.LosFormatter.Serialize(System.IO.TextWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Serialize (output As TextWriter, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::IO::TextWriter ^ output, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,23 +295,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.LosFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Serialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transforms a limited object serialization (LOS)-formatted object into a view-state value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="Manifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest">
+﻿<Type Name="Manifest" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest">
   <TypeSignature Language="C#" Value="public abstract class Manifest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Manifest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Manifest" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Manifest abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,9 +23,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected Manifest ();" />
+      <MemberSignature Language="C#" Value="protected internal Manifest ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; Manifest();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity AssemblyIdentity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity AssemblyIdentity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.AssemblyIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyIdentity As AssemblyIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ AssemblyIdentity { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection AssemblyReferences { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection AssemblyReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.AssemblyReferences" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyReferences As AssemblyReferenceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReferenceCollection ^ AssemblyReferences { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -108,6 +118,8 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference EntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EntryPoint As AssemblyReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ EntryPoint { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -131,6 +143,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReferenceCollection FileReferences { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReferenceCollection FileReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.FileReferences" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileReferences As FileReferenceCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::FileReferenceCollection ^ FileReferences { Microsoft::Build::Tasks::Deployment::ManifestUtilities::FileReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -154,6 +168,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream InputStream { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream InputStream" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputStream As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ InputStream { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -184,6 +200,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection OutputMessages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection OutputMessages" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.OutputMessages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputMessages As OutputMessageCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::OutputMessageCollection ^ OutputMessages { Microsoft::Build::Tasks::Deployment::ManifestUtilities::OutputMessageCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -207,6 +225,8 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -233,10 +253,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveFiles">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates all specified assembly and file references.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveFiles">
       <MemberSignature Language="C#" Value="public void ResolveFiles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveFiles() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ResolveFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveFiles ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveFiles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -262,6 +293,8 @@
       <MemberSignature Language="C#" Value="public void ResolveFiles (string[] searchPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResolveFiles(string[] searchPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ResolveFiles(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveFiles (searchPaths As String())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveFiles(cli::array &lt;System::String ^&gt; ^ searchPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -290,6 +323,8 @@
       <MemberSignature Language="C#" Value="public string SourcePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourcePath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.SourcePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourcePath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourcePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -313,6 +348,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -349,6 +386,8 @@
       <MemberSignature Language="C#" Value="public void UpdateFileInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateFileInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateFileInfo ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateFileInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -374,6 +413,8 @@
       <MemberSignature Language="C#" Value="public void UpdateFileInfo (string targetFrameworkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateFileInfo(string targetFrameworkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateFileInfo (targetFrameworkVersion As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateFileInfo(System::String ^ targetFrameworkVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -402,6 +443,8 @@
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -427,6 +470,8 @@
       <MemberSignature Language="C#" Value="protected void ValidatePlatform ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ValidatePlatform() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ValidatePlatform" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ValidatePlatform ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidatePlatform();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -452,6 +497,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity XmlAssemblyIdentity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity XmlAssemblyIdentity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.XmlAssemblyIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlAssemblyIdentity As AssemblyIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ XmlAssemblyIdentity { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ get(); void set(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -481,6 +528,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference[] XmlAssemblyReferences { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference[] XmlAssemblyReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.XmlAssemblyReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlAssemblyReferences As AssemblyReference()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^&gt; ^ XmlAssemblyReferences { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -510,6 +559,8 @@
       <MemberSignature Language="C#" Value="public string XmlDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.XmlDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDescription As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -539,6 +590,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference[] XmlFileReferences { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference[] XmlFileReferences" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.XmlFileReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlFileReferences As FileReference()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::FileReference ^&gt; ^ XmlFileReferences { cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::FileReference ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Tasks::Deployment::ManifestUtilities::FileReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -568,6 +621,8 @@
       <MemberSignature Language="C#" Value="public string XmlSchema { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlSchema" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.XmlSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlSchema As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlSchema { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -593,14 +648,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveFiles">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Locates all specified assembly and file references.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="AppSettingsReader" FullName="System.Configuration.AppSettingsReader">
+﻿<Type Name="AppSettingsReader" FullName="System.Configuration.AppSettingsReader">
   <TypeSignature Language="C#" Value="public class AppSettingsReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AppSettingsReader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.AppSettingsReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppSettingsReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppSettingsReader" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,6 +76,8 @@ class Program
       <MemberSignature Language="C#" Value="public AppSettingsReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsReader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppSettingsReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +148,7 @@ class Program
       <MemberSignature Language="C#" Value="public object GetValue (string key, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(string key, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.AppSettingsReader.GetValue(System.String,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ key, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

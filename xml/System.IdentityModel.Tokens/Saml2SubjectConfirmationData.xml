@@ -1,7 +1,9 @@
-<Type Name="Saml2SubjectConfirmationData" FullName="System.IdentityModel.Tokens.Saml2SubjectConfirmationData">
+﻿<Type Name="Saml2SubjectConfirmationData" FullName="System.IdentityModel.Tokens.Saml2SubjectConfirmationData">
   <TypeSignature Language="C#" Value="public class Saml2SubjectConfirmationData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2SubjectConfirmationData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
+  <TypeSignature Language="VB.NET" Value="Public Class Saml2SubjectConfirmationData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Saml2SubjectConfirmationData" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public Saml2SubjectConfirmationData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Saml2SubjectConfirmationData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -43,6 +47,8 @@
       <MemberSignature Language="C#" Value="public string Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Address" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2Id InResponseTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2Id InResponseTo" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.InResponseTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property InResponseTo As Saml2Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::Saml2Id ^ InResponseTo { System::IdentityModel::Tokens::Saml2Id ^ get(); void set(System::IdentityModel::Tokens::Saml2Id ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -93,6 +101,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.SecurityKeyIdentifier&gt; KeyIdentifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.SecurityKeyIdentifier&gt; KeyIdentifiers" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.KeyIdentifiers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyIdentifiers As Collection(Of SecurityKeyIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::SecurityKeyIdentifier ^&gt; ^ KeyIdentifiers { System::Collections::ObjectModel::Collection&lt;System::IdentityModel::Tokens::SecurityKeyIdentifier ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -118,6 +128,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; NotBefore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NotBefore" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotBefore" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotBefore As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotBefore { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -143,6 +155,8 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; NotOnOrAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NotOnOrAfter" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.NotOnOrAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotOnOrAfter As Nullable(Of DateTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotOnOrAfter { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -168,6 +182,8 @@
       <MemberSignature Language="C#" Value="public Uri Recipient { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Recipient" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmationData.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Recipient { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

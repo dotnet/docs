@@ -1,7 +1,9 @@
-<Type Name="MimePartCollection" FullName="System.Web.Services.Description.MimePartCollection">
+﻿<Type Name="MimePartCollection" FullName="System.Web.Services.Description.MimePartCollection">
   <TypeSignature Language="C#" Value="public sealed class MimePartCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimePartCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimePartCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimePartCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimePartCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="public MimePartCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MimePartCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -54,6 +58,7 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.MimePart mimePart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.MimePart mimePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.Add(System.Web.Services.Description.MimePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::MimePart ^ mimePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -88,6 +93,7 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.MimePart mimePart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.MimePart mimePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.Contains(System.Web.Services.Description.MimePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::MimePart ^ mimePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -123,6 +129,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.MimePart[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.MimePart[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.CopyTo(System.Web.Services.Description.MimePart[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As MimePart(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::MimePart ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -158,6 +166,7 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.MimePart mimePart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.MimePart mimePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.IndexOf(System.Web.Services.Description.MimePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::MimePart ^ mimePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -192,6 +201,7 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.MimePart mimePart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.MimePart mimePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.Insert(System.Int32,System.Web.Services.Description.MimePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::MimePart ^ mimePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -241,6 +251,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MimePart this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MimePart Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimePartCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As MimePart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MimePart ^ default[int] { System::Web::Services::Description::MimePart ^ get(int index); void set(int index, System::Web::Services::Description::MimePart ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -275,6 +287,7 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.MimePart mimePart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.MimePart mimePart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimePartCollection.Remove(System.Web.Services.Description.MimePart)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::MimePart ^ mimePart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

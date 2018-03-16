@@ -1,7 +1,9 @@
-<Type Name="DataGridTextBox" FullName="System.Windows.Forms.DataGridTextBox">
+﻿<Type Name="DataGridTextBox" FullName="System.Windows.Forms.DataGridTextBox">
   <TypeSignature Language="C#" Value="public class DataGridTextBox : System.Windows.Forms.TextBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridTextBox extends System.Windows.Forms.TextBox" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridTextBox&#xA;Inherits TextBox" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridTextBox : System::Windows::Forms::TextBox" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,7 +23,7 @@
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public DataGridTextBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridTextBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public bool IsInEditOrNavigateMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInEditOrNavigateMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridTextBox.IsInEditOrNavigateMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInEditOrNavigateMode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInEditOrNavigateMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyPress (System.Windows.Forms.KeyPressEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyPress(class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +133,8 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,9 +153,11 @@
       </Docs>
     </Member>
     <Member MemberName="ProcessKeyMessage">
-      <MemberSignature Language="C#" Value="protected override bool ProcessKeyMessage (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ProcessKeyMessage (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ProcessKeyMessage(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.ProcessKeyMessage(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ProcessKeyMessage (ByRef m As Message) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ProcessKeyMessage(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +188,8 @@
       <MemberSignature Language="C#" Value="public void SetDataGrid (System.Windows.Forms.DataGrid parentGrid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDataGrid(class System.Windows.Forms.DataGrid parentGrid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.SetDataGrid(System.Windows.Forms.DataGrid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDataGrid (parentGrid As DataGrid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataGrid(System::Windows::Forms::DataGrid ^ parentGrid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +222,8 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridTextBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

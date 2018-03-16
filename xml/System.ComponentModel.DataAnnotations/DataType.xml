@@ -1,7 +1,9 @@
-<Type Name="DataType" FullName="System.ComponentModel.DataAnnotations.DataType">
+﻿<Type Name="DataType" FullName="System.ComponentModel.DataAnnotations.DataType">
   <TypeSignature Language="C#" Value="public enum DataType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DataType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataType" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -60,6 +62,8 @@
       <MemberSignature Language="C#" Value="CreditCard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType CreditCard = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.CreditCard" />
+      <MemberSignature Language="VB.NET" Value="CreditCard" />
+      <MemberSignature Language="C++ CLI" Value="CreditCard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -74,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Represents a credit card number.</summary>
       </Docs>
@@ -82,6 +87,8 @@
       <MemberSignature Language="C#" Value="Currency" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Currency = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Currency" />
+      <MemberSignature Language="VB.NET" Value="Currency" />
+      <MemberSignature Language="C++ CLI" Value="Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -96,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Represents a currency value.</summary>
       </Docs>
@@ -104,6 +112,8 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Custom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -118,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents a custom data type.</summary>
       </Docs>
@@ -126,6 +137,8 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Date = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -140,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Represents a date value.</summary>
       </Docs>
@@ -148,6 +162,8 @@
       <MemberSignature Language="C#" Value="DateTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType DateTime = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -162,6 +178,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents an instant in time, expressed as a date and time of day.</summary>
       </Docs>
@@ -170,6 +187,8 @@
       <MemberSignature Language="C#" Value="Duration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Duration = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Duration" />
+      <MemberSignature Language="VB.NET" Value="Duration" />
+      <MemberSignature Language="C++ CLI" Value="Duration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -184,6 +203,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Represents a continuous time during which an object exists.</summary>
       </Docs>
@@ -192,6 +212,8 @@
       <MemberSignature Language="C#" Value="EmailAddress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType EmailAddress = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.EmailAddress" />
+      <MemberSignature Language="VB.NET" Value="EmailAddress" />
+      <MemberSignature Language="C++ CLI" Value="EmailAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -206,6 +228,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Represents an email address.</summary>
       </Docs>
@@ -214,6 +237,8 @@
       <MemberSignature Language="C#" Value="Html" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Html = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Html" />
+      <MemberSignature Language="VB.NET" Value="Html" />
+      <MemberSignature Language="C++ CLI" Value="Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -228,6 +253,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Represents an HTML file.</summary>
       </Docs>
@@ -236,6 +262,8 @@
       <MemberSignature Language="C#" Value="ImageUrl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType ImageUrl = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="ImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="ImageUrl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -250,6 +278,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Represents a URL to an image.</summary>
       </Docs>
@@ -258,6 +287,8 @@
       <MemberSignature Language="C#" Value="MultilineText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType MultilineText = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.MultilineText" />
+      <MemberSignature Language="VB.NET" Value="MultilineText" />
+      <MemberSignature Language="C++ CLI" Value="MultilineText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -272,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Represents multi-line text.</summary>
       </Docs>
@@ -280,6 +312,8 @@
       <MemberSignature Language="C#" Value="Password" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Password = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Password" />
+      <MemberSignature Language="VB.NET" Value="Password" />
+      <MemberSignature Language="C++ CLI" Value="Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -294,6 +328,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Represent a password value.</summary>
       </Docs>
@@ -302,6 +337,8 @@
       <MemberSignature Language="C#" Value="PhoneNumber" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType PhoneNumber = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.PhoneNumber" />
+      <MemberSignature Language="VB.NET" Value="PhoneNumber" />
+      <MemberSignature Language="C++ CLI" Value="PhoneNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -316,6 +353,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Represents a phone number value.</summary>
       </Docs>
@@ -324,6 +362,8 @@
       <MemberSignature Language="C#" Value="PostalCode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType PostalCode = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.PostalCode" />
+      <MemberSignature Language="VB.NET" Value="PostalCode" />
+      <MemberSignature Language="C++ CLI" Value="PostalCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -338,6 +378,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Represents a postal code.</summary>
       </Docs>
@@ -346,6 +387,8 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Text = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -360,6 +403,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Represents text that is displayed.</summary>
       </Docs>
@@ -368,6 +412,8 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Time = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -382,6 +428,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Represents a time value.</summary>
       </Docs>
@@ -390,6 +437,8 @@
       <MemberSignature Language="C#" Value="Upload" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Upload = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Upload" />
+      <MemberSignature Language="VB.NET" Value="Upload" />
+      <MemberSignature Language="C++ CLI" Value="Upload" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -404,6 +453,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Represents file upload data type.</summary>
       </Docs>
@@ -412,6 +462,8 @@
       <MemberSignature Language="C#" Value="Url" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataAnnotations.DataType Url = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataAnnotations.DataType.Url" />
+      <MemberSignature Language="VB.NET" Value="Url" />
+      <MemberSignature Language="C++ CLI" Value="Url" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -426,6 +478,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataAnnotations.DataType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Represents a URL value.</summary>
       </Docs>

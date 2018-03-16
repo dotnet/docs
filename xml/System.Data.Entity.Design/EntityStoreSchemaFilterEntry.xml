@@ -1,7 +1,9 @@
-<Type Name="EntityStoreSchemaFilterEntry" FullName="System.Data.Entity.Design.EntityStoreSchemaFilterEntry">
+﻿<Type Name="EntityStoreSchemaFilterEntry" FullName="System.Data.Entity.Design.EntityStoreSchemaFilterEntry">
   <TypeSignature Language="C#" Value="public class EntityStoreSchemaFilterEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityStoreSchemaFilterEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityStoreSchemaFilterEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityStoreSchemaFilterEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <altmember cref="M:System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry})" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityStoreSchemaFilterEntry (string catalog, string schema, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string catalog, string schema, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As String, schema As String, name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaFilterEntry(System::String ^ catalog, System::String ^ schema, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -42,6 +55,8 @@
       <MemberSignature Language="C#" Value="public EntityStoreSchemaFilterEntry (string catalog, string schema, string name, System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes types, System.Data.Entity.Design.EntityStoreSchemaFilterEffect effect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string catalog, string schema, string name, valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes types, valuetype System.Data.Entity.Design.EntityStoreSchemaFilterEffect effect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.#ctor(System.String,System.String,System.String,System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes,System.Data.Entity.Design.EntityStoreSchemaFilterEffect)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As String, schema As String, name As String, types As EntityStoreSchemaFilterObjectTypes, effect As EntityStoreSchemaFilterEffect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityStoreSchemaFilterEntry(System::String ^ catalog, System::String ^ schema, System::String ^ name, System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes types, System::Data::Entity::Design::EntityStoreSchemaFilterEffect effect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public string Catalog { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Catalog" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Catalog" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Catalog As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Catalog { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Entity.Design.EntityStoreSchemaFilterEffect Effect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Entity.Design.EntityStoreSchemaFilterEffect Effect" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Effect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Effect As EntityStoreSchemaFilterEffect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::EntityStoreSchemaFilterEffect Effect { System::Data::Entity::Design::EntityStoreSchemaFilterEffect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -114,6 +133,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -137,6 +158,8 @@
       <MemberSignature Language="C#" Value="public string Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Schema" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schema As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Schema { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -160,6 +183,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes Types { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Entity.Design.EntityStoreSchemaFilterObjectTypes Types" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityStoreSchemaFilterEntry.Types" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Types As EntityStoreSchemaFilterObjectTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes Types { System::Data::Entity::Design::EntityStoreSchemaFilterObjectTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -179,14 +204,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityStoreSchemaFilterEntry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

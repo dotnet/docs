@@ -1,7 +1,9 @@
-<Type Name="VBCodeProvider" FullName="Microsoft.VisualBasic.VBCodeProvider">
+﻿<Type Name="VBCodeProvider" FullName="Microsoft.VisualBasic.VBCodeProvider">
   <TypeSignature Language="C#" Value="public class VBCodeProvider : System.CodeDom.Compiler.CodeDomProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VBCodeProvider extends System.CodeDom.Compiler.CodeDomProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBCodeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class VBCodeProvider&#xA;Inherits CodeDomProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VBCodeProvider : System::CodeDom::Compiler::CodeDomProvider" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +45,21 @@
     <altmember cref="N:System.CodeDom.Compiler" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.VBCodeProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VBCodeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VBCodeProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +81,8 @@
       <MemberSignature Language="C#" Value="public VBCodeProvider (System.Collections.Generic.IDictionary&lt;string,string&gt; providerOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; providerOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerOptions As IDictionary(Of String, String))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VBCodeProvider(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ providerOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +148,8 @@
       <MemberSignature Language="C#" Value="public override System.CodeDom.Compiler.ICodeCompiler CreateCompiler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.Compiler.ICodeCompiler CreateCompiler() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.CreateCompiler" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCompiler () As ICodeCompiler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeCompiler ^ CreateCompiler();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +179,8 @@
       <MemberSignature Language="C#" Value="public override System.CodeDom.Compiler.ICodeGenerator CreateGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.Compiler.ICodeGenerator CreateGenerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.CreateGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateGenerator () As ICodeGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::Compiler::ICodeGenerator ^ CreateGenerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +210,8 @@
       <MemberSignature Language="C#" Value="public override string FileExtension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileExtension" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBCodeProvider.FileExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FileExtension As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileExtension { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -220,6 +241,8 @@
       <MemberSignature Language="C#" Value="public override void GenerateCodeFromMember (System.CodeDom.CodeTypeMember member, System.IO.TextWriter writer, System.CodeDom.Compiler.CodeGeneratorOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCodeFromMember(class System.CodeDom.CodeTypeMember member, class System.IO.TextWriter writer, class System.CodeDom.Compiler.CodeGeneratorOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.GenerateCodeFromMember(System.CodeDom.CodeTypeMember,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateCodeFromMember (member As CodeTypeMember, writer As TextWriter, options As CodeGeneratorOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCodeFromMember(System::CodeDom::CodeTypeMember ^ member, System::IO::TextWriter ^ writer, System::CodeDom::Compiler::CodeGeneratorOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -272,6 +295,7 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter GetConverter (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter GetConverter(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBCodeProvider.GetConverter(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter ^ GetConverter(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,6 +329,8 @@
       <MemberSignature Language="C#" Value="public override System.CodeDom.Compiler.LanguageOptions LanguageOptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.Compiler.LanguageOptions LanguageOptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBCodeProvider.LanguageOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LanguageOptions As LanguageOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::CodeDom::Compiler::LanguageOptions LanguageOptions { System::CodeDom::Compiler::LanguageOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -324,14 +350,5 @@
         <altmember cref="T:System.CodeDom.Compiler.LanguageOptions" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.VBCodeProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

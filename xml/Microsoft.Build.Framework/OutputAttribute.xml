@@ -1,7 +1,9 @@
-<Type Name="OutputAttribute" FullName="Microsoft.Build.Framework.OutputAttribute">
+﻿<Type Name="OutputAttribute" FullName="Microsoft.Build.Framework.OutputAttribute">
   <TypeSignature Language="C#" Value="public sealed class OutputAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OutputAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.OutputAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OutputAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public OutputAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.OutputAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OutputAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

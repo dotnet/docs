@@ -1,7 +1,9 @@
-<Type Name="BYOT" FullName="System.EnterpriseServices.BYOT">
+﻿<Type Name="BYOT" FullName="System.EnterpriseServices.BYOT">
   <TypeSignature Language="C#" Value="public sealed class BYOT" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BYOT extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.BYOT" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BYOT" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BYOT sealed" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static object CreateWithTipTransaction (string url, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithTipTransaction(string url, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.BYOT.CreateWithTipTransaction(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWithTipTransaction (url As String, t As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateWithTipTransaction(System::String ^ url, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static object CreateWithTransaction (object transaction, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateWithTransaction(object transaction, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.BYOT.CreateWithTransaction(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWithTransaction (transaction As Object, t As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateWithTransaction(System::Object ^ transaction, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="DataPagerFieldCollection" FullName="System.Web.UI.WebControls.DataPagerFieldCollection">
+﻿<Type Name="DataPagerFieldCollection" FullName="System.Web.UI.WebControls.DataPagerFieldCollection">
   <TypeSignature Language="C#" Value="public class DataPagerFieldCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPagerFieldCollection&#xA;Inherits StateManagedCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerFieldCollection : System::Web::UI::StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,7 @@
       <MemberSignature Language="C#" Value="public DataPagerFieldCollection (System.Web.UI.WebControls.DataPager dataPager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPager dataPager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.#ctor(System.Web.UI.WebControls.DataPager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPagerFieldCollection(System::Web::UI::WebControls::DataPager ^ dataPager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.DataPagerField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Add(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (field As DataPagerField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::WebControls::DataPagerField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -102,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerFieldCollection CloneFields (System.Web.UI.WebControls.DataPager pager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.DataPagerFieldCollection CloneFields(class System.Web.UI.WebControls.DataPager pager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CloneFields(System.Web.UI.WebControls.DataPager)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneFields (pager As DataPager) As DataPagerFieldCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::DataPagerFieldCollection ^ CloneFields(System::Web::UI::WebControls::DataPager ^ pager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -132,6 +139,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.DataPagerField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Contains(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (field As DataPagerField) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::DataPagerField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -156,6 +165,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.DataPagerField[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.DataPagerField[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CopyTo(System.Web.UI.WebControls.DataPagerField[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DataPagerField(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::DataPagerField ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -179,6 +190,8 @@
       <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -210,6 +223,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler FieldsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FieldsChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FieldsChanged As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FieldsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -240,6 +255,8 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -260,6 +277,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.DataPagerField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.IndexOf(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As DataPagerField) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::DataPagerField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -283,6 +302,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.DataPagerField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.DataPagerField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, field As DataPagerField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::DataPagerField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -307,6 +328,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerField this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerField Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As DataPagerField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPagerField ^ default[int] { System::Web::UI::WebControls::DataPagerField ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -335,6 +358,8 @@
       <MemberSignature Language="C#" Value="protected override void OnClearComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnClearComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -361,6 +386,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -392,6 +419,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -424,6 +453,8 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -457,6 +488,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.DataPagerField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (field As DataPagerField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::DataPagerField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -478,6 +511,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -499,6 +534,8 @@
       <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.SetDirtyObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

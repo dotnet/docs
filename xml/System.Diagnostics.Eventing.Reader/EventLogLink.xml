@@ -1,7 +1,9 @@
-<Type Name="EventLogLink" FullName="System.Diagnostics.Eventing.Reader.EventLogLink">
+﻿<Type Name="EventLogLink" FullName="System.Diagnostics.Eventing.Reader.EventLogLink">
   <TypeSignature Language="C#" Value="public sealed class EventLogLink" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLogLink extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogLink" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogLink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogLink sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogLink.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public bool IsImported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogLink.IsImported" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public string LogName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LogName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogLink.LogName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

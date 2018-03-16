@@ -1,7 +1,9 @@
-<Type Name="ManipulationVelocities" FullName="System.Windows.Input.ManipulationVelocities">
+﻿<Type Name="ManipulationVelocities" FullName="System.Windows.Input.ManipulationVelocities">
   <TypeSignature Language="C#" Value="public class ManipulationVelocities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManipulationVelocities extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationVelocities" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManipulationVelocities" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManipulationVelocities" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ManipulationVelocities (System.Windows.Vector linearVelocity, double angularVelocity, System.Windows.Vector expansionVelocity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Vector linearVelocity, float64 angularVelocity, valuetype System.Windows.Vector expansionVelocity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationVelocities.#ctor(System.Windows.Vector,System.Double,System.Windows.Vector)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (linearVelocity As Vector, angularVelocity As Double, expansionVelocity As Vector)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManipulationVelocities(System::Windows::Vector linearVelocity, double angularVelocity, System::Windows::Vector expansionVelocity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public double AngularVelocity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 AngularVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationVelocities.AngularVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AngularVelocity As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AngularVelocity { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Vector ExpansionVelocity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector ExpansionVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationVelocities.ExpansionVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpansionVelocity As Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector ExpansionVelocity { System::Windows::Vector get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Vector LinearVelocity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector LinearVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationVelocities.LinearVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinearVelocity As Vector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Vector LinearVelocity { System::Windows::Vector get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

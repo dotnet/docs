@@ -1,7 +1,9 @@
-<Type Name="LegendCollection" FullName="System.Web.UI.DataVisualization.Charting.LegendCollection">
+﻿<Type Name="LegendCollection" FullName="System.Web.UI.DataVisualization.Charting.LegendCollection">
   <TypeSignature Language="C#" Value="public class LegendCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.Legend&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LegendCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.Legend&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class LegendCollection&#xA;Inherits ChartNamedElementCollection(Of Legend)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LegendCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::Legend ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Legend Add (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.Legend Add(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As Legend" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::Legend ^ Add(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

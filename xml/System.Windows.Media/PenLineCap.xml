@@ -1,7 +1,9 @@
-<Type Name="PenLineCap" FullName="System.Windows.Media.PenLineCap">
+﻿<Type Name="PenLineCap" FullName="System.Windows.Media.PenLineCap">
   <TypeSignature Language="C#" Value="public enum PenLineCap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenLineCap extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenLineCap" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PenLineCap" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PenLineCap" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@ Line caps
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Flat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +40,7 @@ Line caps
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A cap that does not extend past the last point of the line. Comparable to no line cap.</summary>
       </Docs>
@@ -44,6 +49,8 @@ Line caps
       <MemberSignature Language="C#" Value="Round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Round = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +59,7 @@ Line caps
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A semicircle that has a diameter equal to the line thickness.</summary>
       </Docs>
@@ -60,6 +68,8 @@ Line caps
       <MemberSignature Language="C#" Value="Square" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Square = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Square" />
+      <MemberSignature Language="VB.NET" Value="Square" />
+      <MemberSignature Language="C++ CLI" Value="Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +78,7 @@ Line caps
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A rectangle that has a height equal to the line thickness and a length equal to half the line thickness.</summary>
       </Docs>
@@ -76,6 +87,8 @@ Line caps
       <MemberSignature Language="C#" Value="Triangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Triangle = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Triangle" />
+      <MemberSignature Language="VB.NET" Value="Triangle" />
+      <MemberSignature Language="C++ CLI" Value="Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +97,7 @@ Line caps
       <ReturnValue>
         <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An isosceles right triangle whose base length is equal to the thickness of the line.</summary>
       </Docs>

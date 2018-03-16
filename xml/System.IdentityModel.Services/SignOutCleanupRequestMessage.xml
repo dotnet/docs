@@ -1,7 +1,9 @@
-<Type Name="SignOutCleanupRequestMessage" FullName="System.IdentityModel.Services.SignOutCleanupRequestMessage">
+﻿<Type Name="SignOutCleanupRequestMessage" FullName="System.IdentityModel.Services.SignOutCleanupRequestMessage">
   <TypeSignature Language="C#" Value="public class SignOutCleanupRequestMessage : System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SignOutCleanupRequestMessage extends System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class SignOutCleanupRequestMessage&#xA;Inherits WSFederationMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignOutCleanupRequestMessage : System::IdentityModel::Services::WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SignOutCleanupRequestMessage (Uri baseUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutCleanupRequestMessage(Uri ^ baseUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -51,6 +64,8 @@
       <MemberSignature Language="C#" Value="public SignOutCleanupRequestMessage (Uri baseUrl, string reply);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl, string reply) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri, reply As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignOutCleanupRequestMessage(Uri ^ baseUrl, System::String ^ reply);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public string Reply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Reply" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SignOutCleanupRequestMessage.Reply" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="protected override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.Validate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="public override void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SignOutCleanupRequestMessage.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -155,14 +176,5 @@
           <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SignOutCleanupRequestMessage" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

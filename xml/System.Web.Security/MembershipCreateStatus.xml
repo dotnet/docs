@@ -1,7 +1,9 @@
-<Type Name="MembershipCreateStatus" FullName="System.Web.Security.MembershipCreateStatus">
+﻿<Type Name="MembershipCreateStatus" FullName="System.Web.Security.MembershipCreateStatus">
   <TypeSignature Language="C#" Value="public enum MembershipCreateStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MembershipCreateStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipCreateStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MembershipCreateStatus" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MembershipCreateStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Web.ApplicationServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="DuplicateEmail" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateEmail = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateEmail" />
+      <MemberSignature Language="VB.NET" Value="DuplicateEmail" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateEmail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -51,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The email address already exists in the database for the application.</summary>
       </Docs>
@@ -59,6 +64,8 @@
       <MemberSignature Language="C#" Value="DuplicateProviderUserKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateProviderUserKey = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateProviderUserKey" />
+      <MemberSignature Language="VB.NET" Value="DuplicateProviderUserKey" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateProviderUserKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -67,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The provider user key already exists in the database for the application.</summary>
       </Docs>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="DuplicateUserName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateUserName = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateUserName" />
+      <MemberSignature Language="VB.NET" Value="DuplicateUserName" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateUserName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The user name already exists in the database for the application.</summary>
       </Docs>
@@ -91,6 +102,8 @@
       <MemberSignature Language="C#" Value="InvalidAnswer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidAnswer = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidAnswer" />
+      <MemberSignature Language="VB.NET" Value="InvalidAnswer" />
+      <MemberSignature Language="C++ CLI" Value="InvalidAnswer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -99,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The password answer is not formatted correctly.</summary>
       </Docs>
@@ -107,6 +121,8 @@
       <MemberSignature Language="C#" Value="InvalidEmail" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidEmail = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidEmail" />
+      <MemberSignature Language="VB.NET" Value="InvalidEmail" />
+      <MemberSignature Language="C++ CLI" Value="InvalidEmail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -115,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The email address is not formatted correctly.</summary>
       </Docs>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="InvalidPassword" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidPassword = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidPassword" />
+      <MemberSignature Language="VB.NET" Value="InvalidPassword" />
+      <MemberSignature Language="C++ CLI" Value="InvalidPassword" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -131,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The password is not formatted correctly.</summary>
       </Docs>
@@ -139,6 +159,8 @@
       <MemberSignature Language="C#" Value="InvalidProviderUserKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidProviderUserKey = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidProviderUserKey" />
+      <MemberSignature Language="VB.NET" Value="InvalidProviderUserKey" />
+      <MemberSignature Language="C++ CLI" Value="InvalidProviderUserKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -147,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The provider user key is of an invalid type or format.</summary>
       </Docs>
@@ -155,6 +178,8 @@
       <MemberSignature Language="C#" Value="InvalidQuestion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidQuestion = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidQuestion" />
+      <MemberSignature Language="VB.NET" Value="InvalidQuestion" />
+      <MemberSignature Language="C++ CLI" Value="InvalidQuestion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -163,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The password question is not formatted correctly.</summary>
       </Docs>
@@ -171,6 +197,8 @@
       <MemberSignature Language="C#" Value="InvalidUserName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidUserName = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidUserName" />
+      <MemberSignature Language="VB.NET" Value="InvalidUserName" />
+      <MemberSignature Language="C++ CLI" Value="InvalidUserName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -179,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user name was not found in the database.</summary>
       </Docs>
@@ -187,6 +216,8 @@
       <MemberSignature Language="C#" Value="ProviderError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus ProviderError = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.ProviderError" />
+      <MemberSignature Language="VB.NET" Value="ProviderError" />
+      <MemberSignature Language="C++ CLI" Value="ProviderError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -195,6 +226,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The provider returned an error that is not described by other <see cref="T:System.Web.Security.MembershipCreateStatus" /> enumeration values.</summary>
       </Docs>
@@ -203,6 +235,8 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -211,6 +245,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The user was successfully created.</summary>
       </Docs>
@@ -219,6 +254,8 @@
       <MemberSignature Language="C#" Value="UserRejected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus UserRejected = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.UserRejected" />
+      <MemberSignature Language="VB.NET" Value="UserRejected" />
+      <MemberSignature Language="C++ CLI" Value="UserRejected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.ApplicationServices</AssemblyName>
@@ -227,6 +264,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The user was not created, for a reason defined by the provider.</summary>
       </Docs>

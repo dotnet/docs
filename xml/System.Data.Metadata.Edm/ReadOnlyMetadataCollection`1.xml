@@ -1,7 +1,9 @@
-<Type Name="ReadOnlyMetadataCollection&lt;T&gt;" FullName="System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;">
+﻿<Type Name="ReadOnlyMetadataCollection&lt;T&gt;" FullName="System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ReadOnlyMetadataCollection&lt;T&gt; : System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; where T : MetadataItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReadOnlyMetadataCollection`1&lt;(class System.Data.Metadata.Edm.MetadataItem) T&gt; extends System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReadOnlyMetadataCollection(Of T)&#xA;Inherits ReadOnlyCollection(Of T)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : MetadataItempublic ref class ReadOnlyMetadataCollection : System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (string identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (identity As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -53,6 +57,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlyMetadataCollection(Of T).Enumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -72,6 +78,8 @@
       <MemberSignature Language="C#" Value="public virtual T GetValue (string identity, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T GetValue(string identity, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.GetValue(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (identity As String, ignoreCase As Boolean) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual T GetValue(System::String ^ identity, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +105,8 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IndexOf(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As T) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -119,6 +129,8 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -138,6 +150,8 @@
       <MemberSignature Language="C#" Value="public virtual T this[string identity] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(identity As String) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property T default[System::String ^] { T get(System::String ^ identity); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -160,6 +174,8 @@
       <MemberSignature Language="C#" Value="public virtual bool TryGetValue (string identity, bool ignoreCase, out T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string identity, bool ignoreCase, [out] !T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1.TryGetValue(System.String,System.Boolean,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryGetValue (identity As String, ignoreCase As Boolean, ByRef item As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ identity, bool ignoreCase, [Runtime::InteropServices::Out] T % item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

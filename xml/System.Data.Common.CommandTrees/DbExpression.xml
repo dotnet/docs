@@ -1,7 +1,9 @@
-<Type Name="DbExpression" FullName="System.Data.Common.CommandTrees.DbExpression">
+﻿<Type Name="DbExpression" FullName="System.Data.Common.CommandTrees.DbExpression">
   <TypeSignature Language="C#" Value="public abstract class DbExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbExpression extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbExpression abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public abstract void Accept (System.Data.Common.CommandTrees.DbExpressionVisitor visitor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Accept(class System.Data.Common.CommandTrees.DbExpressionVisitor visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Accept (visitor As DbExpressionVisitor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Accept(System::Data::Common::CommandTrees::DbExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public abstract TResultType Accept&lt;TResultType&gt; (System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt; visitor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TResultType Accept&lt;TResultType&gt;(class System.Data.Common.CommandTrees.DbExpressionVisitor`1&lt;!!TResultType&gt; visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Accept(Of TResultType) (visitor As DbExpressionVisitor(Of TResultType)) As TResultType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; abstract TResultType Accept(System::Data::Common::CommandTrees::DbExpressionVisitor&lt;TResultType&gt; ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -101,6 +109,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpressionKind ExpressionKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Common.CommandTrees.DbExpressionKind ExpressionKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpression.ExpressionKind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionKind As DbExpressionKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbExpressionKind ExpressionKind { System::Data::Common::CommandTrees::DbExpressionKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -119,6 +129,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromBinary (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromBinary(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromBinary(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromBinary (value As Byte()) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromBinary(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -141,6 +153,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromBoolean (Nullable&lt;bool&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromBoolean(valuetype System.Nullable`1&lt;bool&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromBoolean(System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromBoolean (value As Nullable(Of Boolean)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromBoolean(Nullable&lt;bool&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -163,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromByte (Nullable&lt;byte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromByte(valuetype System.Nullable`1&lt;unsigned int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromByte(System.Nullable{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromByte (value As Nullable(Of Byte)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromByte(Nullable&lt;System::Byte&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -185,6 +201,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromDateTime (Nullable&lt;DateTime&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromDateTime(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromDateTime(System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromDateTime (value As Nullable(Of DateTime)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromDateTime(Nullable&lt;DateTime&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -207,6 +225,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromDateTimeOffset (Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromDateTimeOffset(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromDateTimeOffset(System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromDateTimeOffset (value As Nullable(Of DateTimeOffset)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromDateTimeOffset(Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -229,6 +249,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromDecimal (Nullable&lt;decimal&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromDecimal(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromDecimal(System.Nullable{System.Decimal})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromDecimal (value As Nullable(Of Decimal)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromDecimal(Nullable&lt;System::Decimal&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -251,6 +273,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromDouble (Nullable&lt;double&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromDouble(valuetype System.Nullable`1&lt;float64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromDouble(System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromDouble (value As Nullable(Of Double)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromDouble(Nullable&lt;double&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -273,6 +297,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromGeography (System.Data.Spatial.DbGeography value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromGeography(class System.Data.Spatial.DbGeography value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromGeography(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromGeography (value As DbGeography) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromGeography(System::Data::Spatial::DbGeography ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -295,6 +321,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromGeometry (System.Data.Spatial.DbGeometry value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromGeometry(class System.Data.Spatial.DbGeometry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromGeometry(System.Data.Spatial.DbGeometry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromGeometry (value As DbGeometry) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromGeometry(System::Data::Spatial::DbGeometry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -317,6 +345,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromGuid (Nullable&lt;Guid&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromGuid(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromGuid(System.Nullable{System.Guid})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromGuid (value As Nullable(Of Guid)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromGuid(Nullable&lt;Guid&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -339,6 +369,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromInt16 (Nullable&lt;short&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromInt16(valuetype System.Nullable`1&lt;int16&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromInt16(System.Nullable{System.Int16})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt16 (value As Nullable(Of Short)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromInt16(Nullable&lt;short&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -361,6 +393,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromInt32 (Nullable&lt;int&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromInt32(valuetype System.Nullable`1&lt;int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromInt32(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt32 (value As Nullable(Of Integer)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromInt32(Nullable&lt;int&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -383,6 +417,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromInt64 (Nullable&lt;long&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromInt64(valuetype System.Nullable`1&lt;int64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromInt64(System.Nullable{System.Int64})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt64 (value As Nullable(Of Long)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromInt64(Nullable&lt;long&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -405,6 +441,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromSingle (Nullable&lt;float&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromSingle(valuetype System.Nullable`1&lt;float32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromSingle(System.Nullable{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromSingle (value As Nullable(Of Single)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromSingle(Nullable&lt;float&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -427,6 +465,8 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression FromString (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression FromString(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (value As String) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::CommandTrees::DbExpression ^ FromString(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -449,6 +489,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -464,10 +506,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an object to a <see cref="T:System.Data.Common.CommandTrees.DbExpression" /></summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Byte[])~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Byte()) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -490,6 +543,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Spatial.DbGeography value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Spatial.DbGeography value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Data.Spatial.DbGeography)~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DbGeography) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(System::Data::Spatial::DbGeography ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -512,6 +567,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Spatial.DbGeometry value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Spatial.DbGeometry value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Data.Spatial.DbGeometry)~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As DbGeometry) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(System::Data::Spatial::DbGeometry ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -534,6 +591,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;bool&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;bool&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Boolean})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Boolean)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;bool&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -556,6 +615,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;byte&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;unsigned int8&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Byte})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Byte)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;System::Byte&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -578,6 +639,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;DateTime&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.DateTime})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of DateTime)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;DateTime&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -600,6 +663,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.DateTimeOffset})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of DateTimeOffset)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;DateTimeOffset&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -622,6 +687,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;decimal&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Decimal})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Decimal)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;System::Decimal&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -644,6 +711,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;double&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;float64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Double})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Double)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;double&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -666,6 +735,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;Guid&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Guid})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Guid)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;Guid&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -688,6 +759,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;short&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int16&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int16})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Short)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;short&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -710,6 +783,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;int&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int32})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Integer)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;int&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -732,6 +807,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;long&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;int64&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Int64})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Long)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;long&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -754,6 +831,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (Nullable&lt;float&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(valuetype System.Nullable`1&lt;float32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.Nullable{System.Single})~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Nullable(Of Single)) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(Nullable&lt;float&gt; value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -776,6 +855,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbExpression.op_Implicit(System.String)~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As DbExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -798,6 +879,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage ResultType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.TypeUsage ResultType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbExpression.ResultType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResultType As TypeUsage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::TypeUsage ^ ResultType { System::Data::Metadata::Edm::TypeUsage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -812,14 +895,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="op_Implicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts an object to a <see cref="T:System.Data.Common.CommandTrees.DbExpression" /></summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

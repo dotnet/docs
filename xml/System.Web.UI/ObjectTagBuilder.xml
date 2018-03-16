@@ -1,7 +1,9 @@
-<Type Name="ObjectTagBuilder" FullName="System.Web.UI.ObjectTagBuilder">
+﻿<Type Name="ObjectTagBuilder" FullName="System.Web.UI.ObjectTagBuilder">
   <TypeSignature Language="C#" Value="public sealed class ObjectTagBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectTagBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ObjectTagBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectTagBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectTagBuilder sealed : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ObjectTagBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectTagBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public override void AppendLiteralString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.AppendLiteralString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (s As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +64,8 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +88,7 @@
       <MemberSignature Language="C#" Value="public override void Init (System.Web.UI.TemplateParser parser, System.Web.UI.ControlBuilder parentBuilder, Type type, string tagName, string id, System.Collections.IDictionary attribs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attribs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ObjectTagBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attribs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

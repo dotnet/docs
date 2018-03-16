@@ -1,7 +1,9 @@
-<Type Name="AxWrapperGen" FullName="System.Windows.Forms.Design.AxWrapperGen">
+﻿<Type Name="AxWrapperGen" FullName="System.Windows.Forms.Design.AxWrapperGen">
   <TypeSignature Language="C#" Value="public class AxWrapperGen" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AxWrapperGen extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxWrapperGen" />
+  <TypeSignature Language="VB.NET" Value="Public Class AxWrapperGen" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AxWrapperGen" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public AxWrapperGen (Type axType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type axType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxWrapperGen.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (axType As Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AxWrapperGen(Type ^ axType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -39,6 +43,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList GeneratedSources;" />
       <MemberSignature Language="ILAsm" Value=".field public static class System.Collections.ArrayList GeneratedSources" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.AxWrapperGen.GeneratedSources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared GeneratedSources As ArrayList " />
+      <MemberSignature Language="C++ CLI" Value="public: static System::Collections::ArrayList ^ GeneratedSources;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

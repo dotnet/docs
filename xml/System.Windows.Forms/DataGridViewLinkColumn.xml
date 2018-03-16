@@ -1,7 +1,9 @@
-<Type Name="DataGridViewLinkColumn" FullName="System.Windows.Forms.DataGridViewLinkColumn">
+﻿<Type Name="DataGridViewLinkColumn" FullName="System.Windows.Forms.DataGridViewLinkColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewLinkColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewLinkColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewLinkColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewLinkColumn&#xA;Inherits DataGridViewColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewLinkColumn : System::Windows::Forms::DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +63,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewLinkColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewLinkColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ActiveLinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ActiveLinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.ActiveLinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActiveLinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ActiveLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +135,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,7 +147,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -180,6 +188,8 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkColumn.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +221,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.LinkBehavior LinkBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.LinkBehavior LinkBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.LinkBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkBehavior As LinkBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::LinkBehavior LinkBehavior { System::Windows::Forms::LinkBehavior get(); void set(System::Windows::Forms::LinkBehavior value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +271,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color LinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color LinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.LinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color LinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -302,6 +316,8 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -341,6 +357,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewLinkColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -361,6 +379,8 @@
       <MemberSignature Language="C#" Value="public bool TrackVisitedState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrackVisitedState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.TrackVisitedState" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackVisitedState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrackVisitedState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -409,6 +429,8 @@
       <MemberSignature Language="C#" Value="public bool UseColumnTextForLinkValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseColumnTextForLinkValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.UseColumnTextForLinkValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseColumnTextForLinkValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseColumnTextForLinkValue { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -456,6 +478,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color VisitedLinkColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color VisitedLinkColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewLinkColumn.VisitedLinkColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisitedLinkColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color VisitedLinkColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

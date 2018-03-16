@@ -1,7 +1,9 @@
-<Type Name="ObjectListSelectEventHandler" FullName="System.Web.UI.MobileControls.ObjectListSelectEventHandler">
+﻿<Type Name="ObjectListSelectEventHandler" FullName="System.Web.UI.MobileControls.ObjectListSelectEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ObjectListSelectEventHandler(object sender, ObjectListSelectEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListSelectEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListSelectEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectListSelectEventHandler(sender As Object, e As ObjectListSelectEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ObjectListSelectEventHandler(System::Object ^ sender, ObjectListSelectEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

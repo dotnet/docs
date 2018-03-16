@@ -1,7 +1,9 @@
-<Type Name="EncryptionRequired" FullName="System.Messaging.EncryptionRequired">
+﻿<Type Name="EncryptionRequired" FullName="System.Messaging.EncryptionRequired">
   <TypeSignature Language="C#" Value="public enum EncryptionRequired" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EncryptionRequired extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.EncryptionRequired" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EncryptionRequired" />
+  <TypeSignature Language="C++ CLI" Value="public enum class EncryptionRequired" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="Body" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.EncryptionRequired Body = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.EncryptionRequired.Body" />
+      <MemberSignature Language="VB.NET" Value="Body" />
+      <MemberSignature Language="C++ CLI" Value="Body" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -36,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Accepts only private (encrypted) messages.</summary>
       </Docs>
@@ -44,6 +49,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.EncryptionRequired None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.EncryptionRequired.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -52,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Accepts only non-private (non-encrypted) messages.</summary>
       </Docs>
@@ -60,6 +68,8 @@
       <MemberSignature Language="C#" Value="Optional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.EncryptionRequired Optional = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.EncryptionRequired.Optional" />
+      <MemberSignature Language="VB.NET" Value="Optional" />
+      <MemberSignature Language="C++ CLI" Value="Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.EncryptionRequired</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Does not force privacy. Accepts private (encrypted) messages and non-private (non-encrypted) messages.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="InsertKeyMode" FullName="System.Windows.Forms.InsertKeyMode">
+﻿<Type Name="InsertKeyMode" FullName="System.Windows.Forms.InsertKeyMode">
   <TypeSignature Language="C#" Value="public enum InsertKeyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InsertKeyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InsertKeyMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InsertKeyMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class InsertKeyMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -34,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Honors the current INSERT key mode of the keyboard.</summary>
       </Docs>
@@ -42,6 +47,8 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Insert = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the insertion mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
       </Docs>
@@ -58,6 +66,8 @@
       <MemberSignature Language="C#" Value="Overwrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Overwrite = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Overwrite" />
+      <MemberSignature Language="VB.NET" Value="Overwrite" />
+      <MemberSignature Language="C++ CLI" Value="Overwrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the overwrite mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
       </Docs>

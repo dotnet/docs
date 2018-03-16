@@ -1,7 +1,9 @@
-<Type Name="CompositeActivityCodeGenerator" FullName="System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator">
+﻿<Type Name="CompositeActivityCodeGenerator" FullName="System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator">
   <TypeSignature Language="C#" Value="public class CompositeActivityCodeGenerator : System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivityCodeGenerator extends System.Workflow.ComponentModel.Compiler.ActivityCodeGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityCodeGenerator&#xA;Inherits ActivityCodeGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityCodeGenerator : System::Workflow::ComponentModel::Compiler::ActivityCodeGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public CompositeActivityCodeGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivityCodeGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -50,6 +54,8 @@
       <MemberSignature Language="C#" Value="public override void GenerateCode (System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Workflow.ComponentModel.Compiler.CodeGenerationManager manager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator.GenerateCode(System.Workflow.ComponentModel.Compiler.CodeGenerationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateCode (manager As CodeGenerationManager, obj As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Workflow::ComponentModel::Compiler::CodeGenerationManager ^ manager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

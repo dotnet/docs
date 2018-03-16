@@ -1,7 +1,9 @@
-<Type Name="TransformPattern" FullName="System.Windows.Automation.TransformPattern">
+﻿<Type Name="TransformPattern" FullName="System.Windows.Automation.TransformPattern">
   <TypeSignature Language="C#" Value="public class TransformPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransformPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TransformPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransformPattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransformPattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TransformPattern.TransformPatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TransformPattern/TransformPatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As TransformPattern.TransformPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TransformPattern::TransformPatternInformation Cached { System::Windows::Automation::TransformPattern::TransformPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanMoveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanMoveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TransformPattern.CanMoveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanMoveProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanMoveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanResizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanResizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TransformPattern.CanResizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanResizeProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanResizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -119,6 +127,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanRotateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanRotateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TransformPattern.CanRotateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanRotateProperty As AutomationProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanRotateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -151,6 +161,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TransformPattern.TransformPatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TransformPattern/TransformPatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As TransformPattern.TransformPatternInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TransformPattern::TransformPatternInformation Current { System::Windows::Automation::TransformPattern::TransformPatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -178,6 +190,8 @@
       <MemberSignature Language="C#" Value="public void Move (double x, double y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Move(float64 x, float64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TransformPattern.Move(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (x As Double, y As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(double x, double y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -219,6 +233,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TransformPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -253,6 +269,8 @@
       <MemberSignature Language="C#" Value="public void Resize (double width, double height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resize(float64 width, float64 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TransformPattern.Resize(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resize (width As Double, height As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(double width, double height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -296,6 +314,8 @@
       <MemberSignature Language="C#" Value="public void Rotate (double degrees);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Rotate(float64 degrees) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TransformPattern.Rotate(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Rotate (degrees As Double)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Rotate(double degrees);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

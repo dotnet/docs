@@ -1,7 +1,9 @@
-<Type Name="IDesignerDataSchema" FullName="System.ComponentModel.Design.Data.IDesignerDataSchema">
+﻿<Type Name="IDesignerDataSchema" FullName="System.ComponentModel.Design.Data.IDesignerDataSchema">
   <TypeSignature Language="C#" Value="public interface IDesignerDataSchema" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerDataSchema" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.IDesignerDataSchema" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerDataSchema" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerDataSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetSchemaItems (System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetSchemaItems(class System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems(System.ComponentModel.Design.Data.DesignerDataSchemaClass)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSchemaItems (schemaClass As DesignerDataSchemaClass) As ICollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetSchemaItems(System::ComponentModel::Design::Data::DesignerDataSchemaClass ^ schemaClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsSchemaClass (System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsSchemaClass(class System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass(System.ComponentModel.Design.Data.DesignerDataSchemaClass)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SupportsSchemaClass (schemaClass As DesignerDataSchemaClass) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SupportsSchemaClass(System::ComponentModel::Design::Data::DesignerDataSchemaClass ^ schemaClass);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

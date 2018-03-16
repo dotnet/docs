@@ -1,7 +1,9 @@
-<Type Name="ToolBarTextAlign" FullName="System.Windows.Forms.ToolBarTextAlign">
+﻿<Type Name="ToolBarTextAlign" FullName="System.Windows.Forms.ToolBarTextAlign">
   <TypeSignature Language="C#" Value="public enum ToolBarTextAlign" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarTextAlign extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarTextAlign" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolBarTextAlign" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolBarTextAlign" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarTextAlign Right = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarTextAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The text is aligned to the right of the toolbar button image.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Underneath" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarTextAlign Underneath = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarTextAlign.Underneath" />
+      <MemberSignature Language="VB.NET" Value="Underneath" />
+      <MemberSignature Language="C++ CLI" Value="Underneath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarTextAlign</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The text is aligned underneath the toolbar button image.</summary>
       </Docs>

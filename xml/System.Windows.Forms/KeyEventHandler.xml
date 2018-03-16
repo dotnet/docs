@@ -1,7 +1,9 @@
-<Type Name="KeyEventHandler" FullName="System.Windows.Forms.KeyEventHandler">
+﻿<Type Name="KeyEventHandler" FullName="System.Windows.Forms.KeyEventHandler">
   <TypeSignature Language="C#" Value="public delegate void KeyEventHandler(object sender, KeyEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyEventHandler(sender As Object, e As KeyEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void KeyEventHandler(System::Object ^ sender, KeyEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

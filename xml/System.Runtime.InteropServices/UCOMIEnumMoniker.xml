@@ -1,7 +1,9 @@
-<Type Name="UCOMIEnumMoniker" FullName="System.Runtime.InteropServices.UCOMIEnumMoniker">
+﻿<Type Name="UCOMIEnumMoniker" FullName="System.Runtime.InteropServices.UCOMIEnumMoniker">
   <TypeSignature Language="C#" Value="public interface UCOMIEnumMoniker" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIEnumMoniker" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIEnumMoniker" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UCOMIEnumMoniker" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UCOMIEnumMoniker" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +37,8 @@
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.UCOMIEnumMoniker ppenum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.UCOMIEnumMoniker&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumMoniker.Clone(System.Runtime.InteropServices.UCOMIEnumMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As UCOMIEnumMoniker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumMoniker ^ % ppenum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.UCOMIMoniker[] rgelt, out int pceltFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] class System.Runtime.InteropServices.UCOMIMoniker[] rgelt, [out] int32&amp; pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumMoniker.Next(System.Int32,System.Runtime.InteropServices.UCOMIMoniker[],System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As UCOMIMoniker(), ByRef pceltFetched As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::UCOMIMoniker ^&gt; ^ rgelt, [Runtime::InteropServices::Out] int % pceltFetched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +105,8 @@
       <MemberSignature Language="C#" Value="public int Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumMoniker.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public int Skip (int celt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumMoniker.Skip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

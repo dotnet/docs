@@ -1,7 +1,9 @@
-<Type Name="WebHttpEndpoint" FullName="System.ServiceModel.Description.WebHttpEndpoint">
+﻿<Type Name="WebHttpEndpoint" FullName="System.ServiceModel.Description.WebHttpEndpoint">
   <TypeSignature Language="C#" Value="public class WebHttpEndpoint : System.ServiceModel.Description.WebServiceEndpoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHttpEndpoint extends System.ServiceModel.Description.WebServiceEndpoint" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.WebHttpEndpoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebHttpEndpoint&#xA;Inherits WebServiceEndpoint" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHttpEndpoint : System::ServiceModel::Description::WebServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebHttpEndpoint (System.ServiceModel.Description.ContractDescription contract);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpEndpoint.#ctor(System.ServiceModel.Description.ContractDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contract As ContractDescription)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpEndpoint(System::ServiceModel::Description::ContractDescription ^ contract);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -52,6 +65,8 @@
       <MemberSignature Language="C#" Value="public WebHttpEndpoint (System.ServiceModel.Description.ContractDescription contract, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.WebHttpEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contract As ContractDescription, address As EndpointAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpEndpoint(System::ServiceModel::Description::ContractDescription ^ contract, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -72,6 +87,8 @@
       <MemberSignature Language="C#" Value="public bool AutomaticFormatSelectionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticFormatSelectionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.AutomaticFormatSelectionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticFormatSelectionEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticFormatSelectionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Web.WebMessageFormat DefaultOutgoingResponseFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Web.WebMessageFormat DefaultOutgoingResponseFormat" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.DefaultOutgoingResponseFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultOutgoingResponseFormat As WebMessageFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Web::WebMessageFormat DefaultOutgoingResponseFormat { System::ServiceModel::Web::WebMessageFormat get(); void set(System::ServiceModel::Web::WebMessageFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -116,6 +135,8 @@
       <MemberSignature Language="C#" Value="public bool FaultExceptionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FaultExceptionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.FaultExceptionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property FaultExceptionEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FaultExceptionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -134,6 +155,8 @@
       <MemberSignature Language="C#" Value="public bool HelpEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HelpEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.HelpEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpEnabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HelpEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -153,6 +176,8 @@
       <MemberSignature Language="C#" Value="protected override Type WebEndpointType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type WebEndpointType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.WebHttpEndpoint.WebEndpointType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property WebEndpointType As Type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ WebEndpointType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -167,14 +192,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.WebHttpEndpoint" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

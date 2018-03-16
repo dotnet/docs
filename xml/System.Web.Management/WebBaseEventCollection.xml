@@ -1,7 +1,9 @@
-<Type Name="WebBaseEventCollection" FullName="System.Web.Management.WebBaseEventCollection">
+﻿<Type Name="WebBaseEventCollection" FullName="System.Web.Management.WebBaseEventCollection">
   <TypeSignature Language="C#" Value="public sealed class WebBaseEventCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebBaseEventCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEventCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBaseEventCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBaseEventCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public WebBaseEventCollection (System.Collections.ICollection events);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (events As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBaseEventCollection(System::Collections::ICollection ^ events);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Management.WebBaseEvent value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Management.WebBaseEvent value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.Contains(System.Web.Management.WebBaseEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As WebBaseEvent) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Management::WebBaseEvent ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +113,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Management.WebBaseEvent value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Management.WebBaseEvent value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.IndexOf(System.Web.Management.WebBaseEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As WebBaseEvent) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Management::WebBaseEvent ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +149,8 @@
       <MemberSignature Language="C#" Value="public System.Web.Management.WebBaseEvent this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebBaseEvent Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEventCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As WebBaseEvent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebBaseEvent ^ default[int] { System::Web::Management::WebBaseEvent ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

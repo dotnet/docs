@@ -1,7 +1,9 @@
-<Type Name="XPathQueryGenerator" FullName="System.Runtime.Serialization.XPathQueryGenerator">
+﻿<Type Name="XPathQueryGenerator" FullName="System.Runtime.Serialization.XPathQueryGenerator">
   <TypeSignature Language="C#" Value="public static class XPathQueryGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XPathQueryGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XPathQueryGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class XPathQueryGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathQueryGenerator abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,10 +54,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateFromDataContractSerializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an XPath from a data contract.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateFromDataContractSerializer">
       <MemberSignature Language="C#" Value="public static string CreateFromDataContractSerializer (Type type, System.Reflection.MemberInfo[] pathToMember, out System.Xml.XmlNamespaceManager namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Type type, class System.Reflection.MemberInfo[] pathToMember, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer(System.Type,System.Reflection.MemberInfo[],System.Xml.XmlNamespaceManager@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateFromDataContractSerializer(Type ^ type, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ pathToMember, [Runtime::InteropServices::Out] System::Xml::XmlNamespaceManager ^ % namespaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -109,6 +122,7 @@
       <MemberSignature Language="C#" Value="public static string CreateFromDataContractSerializer (Type type, System.Reflection.MemberInfo[] pathToMember, System.Text.StringBuilder rootElementXpath, out System.Xml.XmlNamespaceManager namespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CreateFromDataContractSerializer(class System.Type type, class System.Reflection.MemberInfo[] pathToMember, class System.Text.StringBuilder rootElementXpath, [out] class System.Xml.XmlNamespaceManager&amp; namespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XPathQueryGenerator.CreateFromDataContractSerializer(System.Type,System.Reflection.MemberInfo[],System.Text.StringBuilder,System.Xml.XmlNamespaceManager@)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CreateFromDataContractSerializer(Type ^ type, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ pathToMember, System::Text::StringBuilder ^ rootElementXpath, [Runtime::InteropServices::Out] System::Xml::XmlNamespaceManager ^ % namespaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -145,15 +159,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateFromDataContractSerializer">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an XPath from a data contract.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="InertiaRotationBehavior2D" FullName="System.Windows.Input.Manipulations.InertiaRotationBehavior2D">
+﻿<Type Name="InertiaRotationBehavior2D" FullName="System.Windows.Input.Manipulations.InertiaRotationBehavior2D">
   <TypeSignature Language="C#" Value="public sealed class InertiaRotationBehavior2D : System.Windows.Input.Manipulations.InertiaParameters2D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InertiaRotationBehavior2D extends System.Windows.Input.Manipulations.InertiaParameters2D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.InertiaRotationBehavior2D" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InertiaRotationBehavior2D&#xA;Inherits InertiaParameters2D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InertiaRotationBehavior2D sealed : System::Windows::Input::Manipulations::InertiaParameters2D" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public InertiaRotationBehavior2D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InertiaRotationBehavior2D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public float DesiredDeceleration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DesiredDeceleration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredDeceleration" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredDeceleration As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DesiredDeceleration { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -63,6 +69,8 @@
       <MemberSignature Language="C#" Value="public float DesiredRotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 DesiredRotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.DesiredRotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredRotation As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float DesiredRotation { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -99,6 +107,8 @@
       <MemberSignature Language="C#" Value="public float InitialVelocity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 InitialVelocity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.InertiaRotationBehavior2D.InitialVelocity" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialVelocity As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float InitialVelocity { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

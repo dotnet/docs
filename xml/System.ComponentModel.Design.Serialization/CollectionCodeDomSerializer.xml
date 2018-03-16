@@ -1,7 +1,9 @@
-<Type Name="CollectionCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer">
+﻿<Type Name="CollectionCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer">
   <TypeSignature Language="C#" Value="public class CollectionCodeDomSerializer : System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionCodeDomSerializer extends System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionCodeDomSerializer&#xA;Inherits CodeDomSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionCodeDomSerializer : System::ComponentModel::Design::Serialization::CodeDomSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public CollectionCodeDomSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CollectionCodeDomSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected bool MethodSupportsSerialization (System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool MethodSupportsSerialization(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.MethodSupportsSerialization(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function MethodSupportsSerialization (method As MethodInfo) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool MethodSupportsSerialization(System::Reflection::MethodInfo ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -74,6 +80,8 @@
       <MemberSignature Language="C#" Value="public override object Serialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Serialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize (manager As IDesignerSerializationManager, value As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected virtual object SerializeCollection (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeExpression targetExpression, Type targetType, System.Collections.ICollection originalCollection, System.Collections.ICollection valuesToSerialize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object SerializeCollection(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeExpression targetExpression, class System.Type targetType, class System.Collections.ICollection originalCollection, class System.Collections.ICollection valuesToSerialize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CollectionCodeDomSerializer.SerializeCollection(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeExpression,System.Type,System.Collections.ICollection,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function SerializeCollection (manager As IDesignerSerializationManager, targetExpression As CodeExpression, targetType As Type, originalCollection As ICollection, valuesToSerialize As ICollection) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ SerializeCollection(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeExpression ^ targetExpression, Type ^ targetType, System::Collections::ICollection ^ originalCollection, System::Collections::ICollection ^ valuesToSerialize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

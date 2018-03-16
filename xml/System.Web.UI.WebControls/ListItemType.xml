@@ -1,7 +1,9 @@
-<Type Name="ListItemType" FullName="System.Web.UI.WebControls.ListItemType">
+﻿<Type Name="ListItemType" FullName="System.Web.UI.WebControls.ListItemType">
   <TypeSignature Language="C#" Value="public enum ListItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListItemType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListItemType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="AlternatingItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType AlternatingItem = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.AlternatingItem" />
+      <MemberSignature Language="VB.NET" Value="AlternatingItem" />
+      <MemberSignature Language="C++ CLI" Value="AlternatingItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>An item in alternating (zero-based even-indexed) cells. It is data-bound.</summary>
       </Docs>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="EditItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType EditItem = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.EditItem" />
+      <MemberSignature Language="VB.NET" Value="EditItem" />
+      <MemberSignature Language="C++ CLI" Value="EditItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>An item in a list control currently in edit mode. It is data-bound.</summary>
       </Docs>
@@ -66,6 +74,8 @@
       <MemberSignature Language="C#" Value="Footer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType Footer = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Footer" />
+      <MemberSignature Language="VB.NET" Value="Footer" />
+      <MemberSignature Language="C++ CLI" Value="Footer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A footer for the list control. It is not data-bound.</summary>
       </Docs>
@@ -82,6 +93,8 @@
       <MemberSignature Language="C#" Value="Header" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType Header = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Header" />
+      <MemberSignature Language="VB.NET" Value="Header" />
+      <MemberSignature Language="C++ CLI" Value="Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A header for the list control. It is not data-bound.</summary>
       </Docs>
@@ -98,6 +112,8 @@
       <MemberSignature Language="C#" Value="Item" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType Item = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Item" />
+      <MemberSignature Language="VB.NET" Value="Item" />
+      <MemberSignature Language="C++ CLI" Value="Item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An item in the list control. It is data-bound.</summary>
       </Docs>
@@ -114,6 +131,8 @@
       <MemberSignature Language="C#" Value="Pager" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType Pager = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Pager" />
+      <MemberSignature Language="VB.NET" Value="Pager" />
+      <MemberSignature Language="C++ CLI" Value="Pager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A pager that displays the controls to navigate to different pages associated with the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. It is not data-bound.</summary>
       </Docs>
@@ -130,6 +150,8 @@
       <MemberSignature Language="C#" Value="SelectedItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType SelectedItem = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="SelectedItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A selected item in the list control. It is data-bound.</summary>
       </Docs>
@@ -146,6 +169,8 @@
       <MemberSignature Language="C#" Value="Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListItemType Separator = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListItemType.Separator" />
+      <MemberSignature Language="VB.NET" Value="Separator" />
+      <MemberSignature Language="C++ CLI" Value="Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A separator between items in a list control. It is not data-bound.</summary>
       </Docs>

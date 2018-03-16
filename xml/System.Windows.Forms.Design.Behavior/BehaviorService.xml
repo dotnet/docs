@@ -1,7 +1,9 @@
-<Type Name="BehaviorService" FullName="System.Windows.Forms.Design.Behavior.BehaviorService">
+﻿<Type Name="BehaviorService" FullName="System.Windows.Forms.Design.Behavior.BehaviorService">
   <TypeSignature Language="C#" Value="public sealed class BehaviorService : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BehaviorService extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BehaviorService&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BehaviorService sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +48,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection Adorners { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection Adorners" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adorners As BehaviorServiceAdornerCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollection ^ Adorners { System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics AdornerWindowGraphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics AdornerWindowGraphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowGraphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdornerWindowGraphics As Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ AdornerWindowGraphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -105,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point AdornerWindowPointToScreen (System.Drawing.Point p);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point AdornerWindowPointToScreen(valuetype System.Drawing.Point p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowPointToScreen(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdornerWindowPointToScreen (p As Point) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point AdornerWindowPointToScreen(System::Drawing::Point p);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point AdornerWindowToScreen ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point AdornerWindowToScreen() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowToScreen" />
+      <MemberSignature Language="VB.NET" Value="Public Function AdornerWindowToScreen () As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point AdornerWindowToScreen();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler BeginDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler BeginDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeginDrag As BehaviorDragDropEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::Design::Behavior::BehaviorDragDropEventHandler ^ BeginDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -181,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ControlRectInAdornerWindow (System.Windows.Forms.Control c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle ControlRectInAdornerWindow(class System.Windows.Forms.Control c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ControlRectInAdornerWindow(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ControlRectInAdornerWindow (c As Control) As Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle ControlRectInAdornerWindow(System::Windows::Forms::Control ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -213,6 +227,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point ControlToAdornerWindow (System.Windows.Forms.Control c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point ControlToAdornerWindow(class System.Windows.Forms.Control c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ControlToAdornerWindow(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ControlToAdornerWindow (c As Control) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ControlToAdornerWindow(System::Windows::Forms::Control ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -249,6 +265,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.Behavior CurrentBehavior { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.Behavior CurrentBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.CurrentBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentBehavior As Behavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::Behavior ^ CurrentBehavior { System::Windows::Forms::Design::Behavior::Behavior ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -267,7 +285,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -295,6 +318,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler EndDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler EndDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EndDrag As BehaviorDragDropEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::Design::Behavior::BehaviorDragDropEventHandler ^ EndDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -324,6 +349,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.Behavior GetNextBehavior (System.Windows.Forms.Design.Behavior.Behavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Design.Behavior.Behavior GetNextBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.GetNextBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Design::Behavior::Behavior ^ GetNextBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -342,10 +368,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the adorner window of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -374,6 +411,8 @@
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Rectangle rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Drawing.Rectangle rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate(System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate (rect As Rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Rectangle rect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -405,6 +444,8 @@
       <MemberSignature Language="C#" Value="public void Invalidate (System.Drawing.Region r);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(class System.Drawing.Region r) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate(System.Drawing.Region)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate (r As Region)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Region ^ r);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -436,6 +477,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point MapAdornerWindowPoint (IntPtr handle, System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point MapAdornerWindowPoint(native int handle, valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.MapAdornerWindowPoint(System.IntPtr,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapAdornerWindowPoint (handle As IntPtr, pt As Point) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point MapAdornerWindowPoint(IntPtr handle, System::Drawing::Point pt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -463,6 +506,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.Behavior.Behavior PopBehavior (System.Windows.Forms.Design.Behavior.Behavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Design.Behavior.Behavior PopBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PopBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Design::Behavior::Behavior ^ PopBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -496,6 +540,7 @@
       <MemberSignature Language="C#" Value="public void PushBehavior (System.Windows.Forms.Design.Behavior.Behavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PushBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -529,6 +574,7 @@
       <MemberSignature Language="C#" Value="public void PushCaptureBehavior (System.Windows.Forms.Design.Behavior.Behavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushCaptureBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PushCaptureBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushCaptureBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -562,6 +608,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point ScreenToAdornerWindow (System.Drawing.Point p);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point ScreenToAdornerWindow(valuetype System.Drawing.Point p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ScreenToAdornerWindow(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ScreenToAdornerWindow (p As Point) As Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ScreenToAdornerWindow(System::Drawing::Point p);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -587,6 +635,8 @@
       <MemberSignature Language="C#" Value="public event EventHandler Synchronize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Synchronize" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Synchronize As EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Synchronize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -614,6 +664,8 @@
       <MemberSignature Language="C#" Value="public void SyncSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SyncSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.SyncSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SyncSelection ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SyncSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -631,14 +683,5 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Invalidate">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invalidates the adorner window of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

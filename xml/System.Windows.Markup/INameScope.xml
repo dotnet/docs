@@ -1,7 +1,9 @@
-<Type Name="INameScope" FullName="System.Windows.Markup.INameScope">
+﻿<Type Name="INameScope" FullName="System.Windows.Markup.INameScope">
   <TypeSignature Language="C#" Value="public interface INameScope" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameScope" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScope" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INameScope" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INameScope" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="public object FindName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.FindName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindName (name As String) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public void RegisterName (string name, object scopedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public void UnregisterName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.INameScope.UnregisterName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

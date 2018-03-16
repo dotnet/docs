@@ -1,7 +1,9 @@
-<Type Name="WebPartVerbCollection" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbCollection">
+﻿<Type Name="WebPartVerbCollection" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbCollection">
   <TypeSignature Language="C#" Value="public sealed class WebPartVerbCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartVerbCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartVerbCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartVerbCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +35,21 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebPartVerbCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +72,8 @@
       <MemberSignature Language="C#" Value="public WebPartVerbCollection (System.Collections.ICollection verbs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection verbs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (verbs As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbCollection(System::Collections::ICollection ^ verbs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +99,8 @@
       <MemberSignature Language="C#" Value="public WebPartVerbCollection (System.Web.UI.WebControls.WebParts.WebPartVerbCollection existingVerbs, System.Collections.ICollection verbs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartVerbCollection existingVerbs, class System.Collections.ICollection verbs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor(System.Web.UI.WebControls.WebParts.WebPartVerbCollection,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (existingVerbs As WebPartVerbCollection, verbs As ICollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartVerbCollection(System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ existingVerbs, System::Collections::ICollection ^ verbs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +128,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.WebPartVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.WebPartVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Contains(System.Web.UI.WebControls.WebParts.WebPartVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As WebPartVerb) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::WebPartVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +160,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.WebPartVerb[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.WebPartVerb[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartVerb[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As WebPartVerb(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::WebPartVerb ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +192,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.WebPartVerbCollection Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Empty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As WebPartVerbCollection " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartVerbCollection ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +218,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.WebPartVerb value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.WebPartVerb value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPartVerb)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As WebPartVerb) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::WebPartVerb ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +249,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartVerb this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As WebPartVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartVerb ^ default[int] { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,14 +276,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

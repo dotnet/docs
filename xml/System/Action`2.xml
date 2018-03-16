@@ -1,7 +1,9 @@
-<Type Name="Action&lt;T1,T2&gt;" FullName="System.Action&lt;T1,T2&gt;">
+﻿<Type Name="Action&lt;T1,T2&gt;" FullName="System.Action&lt;T1,T2&gt;">
   <TypeSignature Language="C#" Value="public delegate void Action&lt;in T1,in T2&gt;(T1 arg1, T2 arg2);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action`2&lt;- T1, - T2&gt; extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Action`2" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub Action(Of In T1, In T2)(arg1 As T1, arg2 As T2)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2&gt;&#xA;public delegate void Action(T1 arg1, T2 arg2);" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

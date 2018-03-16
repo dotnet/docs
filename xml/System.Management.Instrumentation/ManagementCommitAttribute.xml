@@ -1,7 +1,9 @@
-<Type Name="ManagementCommitAttribute" FullName="System.Management.Instrumentation.ManagementCommitAttribute">
+﻿<Type Name="ManagementCommitAttribute" FullName="System.Management.Instrumentation.ManagementCommitAttribute">
   <TypeSignature Language="C#" Value="public sealed class ManagementCommitAttribute : System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementCommitAttribute extends System.Management.Instrumentation.ManagementMemberAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementCommitAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManagementCommitAttribute&#xA;Inherits ManagementMemberAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementCommitAttribute sealed : System::Management::Instrumentation::ManagementMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +68,8 @@ public class Process
       <MemberSignature Language="C#" Value="public ManagementCommitAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementCommitAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManagementCommitAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

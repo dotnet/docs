@@ -1,7 +1,9 @@
-<Type Name="StandardCommands" FullName="System.ComponentModel.Design.StandardCommands">
+﻿<Type Name="StandardCommands" FullName="System.ComponentModel.Design.StandardCommands">
   <TypeSignature Language="C#" Value="public class StandardCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StandardCommands extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.StandardCommands" />
+  <TypeSignature Language="VB.NET" Value="Public Class StandardCommands" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StandardCommands" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public StandardCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.StandardCommands.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StandardCommands();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignBottom;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignBottom" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignBottom" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignBottom As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignBottom;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignHorizontalCenters;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignHorizontalCenters" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignHorizontalCenters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignHorizontalCenters As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignHorizontalCenters;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignLeft;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignLeft" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignLeft As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignLeft;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignRight;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignRight" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignRight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignRight As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignRight;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +190,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignToGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignToGrid" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignToGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignToGrid As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignToGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +218,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignTop;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignTop" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignTop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignTop As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignTop;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +246,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID AlignVerticalCenters;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID AlignVerticalCenters" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.AlignVerticalCenters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignVerticalCenters As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ AlignVerticalCenters;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +274,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ArrangeBottom;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ArrangeBottom" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ArrangeBottom" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ArrangeBottom As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ArrangeBottom;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +302,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ArrangeIcons;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ArrangeIcons" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ArrangeIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ArrangeIcons As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ArrangeIcons;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -308,6 +330,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ArrangeRight;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ArrangeRight" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ArrangeRight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ArrangeRight As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ArrangeRight;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -334,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID BringForward;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID BringForward" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.BringForward" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BringForward As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ BringForward;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -360,6 +386,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID BringToFront;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID BringToFront" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.BringToFront" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BringToFront As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ BringToFront;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -386,6 +414,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID CenterHorizontally;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID CenterHorizontally" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.CenterHorizontally" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterHorizontally As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ CenterHorizontally;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -412,6 +442,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID CenterVertically;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID CenterVertically" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.CenterVertically" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterVertically As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ CenterVertically;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +470,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Copy;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Copy" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Copy As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Copy;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -464,6 +498,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Cut;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Cut" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Cut As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Cut;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,6 +526,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Delete;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Delete" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Delete As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Delete;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -516,6 +554,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID DocumentOutline;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID DocumentOutline" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.DocumentOutline" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DocumentOutline As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ DocumentOutline;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -542,6 +582,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID F1Help;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID F1Help" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.F1Help" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly F1Help As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ F1Help;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -568,6 +610,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Group;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Group" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Group As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Group;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -594,6 +638,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID HorizSpaceConcatenate;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID HorizSpaceConcatenate" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.HorizSpaceConcatenate" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizSpaceConcatenate As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ HorizSpaceConcatenate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -620,6 +666,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID HorizSpaceDecrease;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID HorizSpaceDecrease" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.HorizSpaceDecrease" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizSpaceDecrease As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ HorizSpaceDecrease;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -646,6 +694,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID HorizSpaceIncrease;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID HorizSpaceIncrease" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.HorizSpaceIncrease" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizSpaceIncrease As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ HorizSpaceIncrease;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -672,6 +722,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID HorizSpaceMakeEqual;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID HorizSpaceMakeEqual" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.HorizSpaceMakeEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizSpaceMakeEqual As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ HorizSpaceMakeEqual;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -698,6 +750,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID LineupIcons;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID LineupIcons" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.LineupIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineupIcons As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ LineupIcons;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -724,6 +778,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID LockControls;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID LockControls" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.LockControls" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LockControls As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ LockControls;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -750,6 +806,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID MultiLevelRedo;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID MultiLevelRedo" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.MultiLevelRedo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MultiLevelRedo As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ MultiLevelRedo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +834,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID MultiLevelUndo;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID MultiLevelUndo" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.MultiLevelUndo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MultiLevelUndo As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ MultiLevelUndo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -802,6 +862,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Paste;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Paste" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Paste As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Paste;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -828,6 +890,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Properties;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Properties" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Properties As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Properties;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -854,6 +918,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID PropertiesWindow;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID PropertiesWindow" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.PropertiesWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PropertiesWindow As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ PropertiesWindow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -880,6 +946,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Redo;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Redo" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Redo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Redo As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Redo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -906,6 +974,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Replace;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Replace" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Replace" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Replace As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Replace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -932,6 +1002,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SelectAll;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SelectAll" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectAll As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SelectAll;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -958,6 +1030,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SendBackward;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SendBackward" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SendBackward" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SendBackward As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SendBackward;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -984,6 +1058,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SendToBack;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SendToBack" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SendToBack" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SendToBack As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SendToBack;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1010,6 +1086,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ShowGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ShowGrid" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ShowGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowGrid As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ShowGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1036,6 +1114,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ShowLargeIcons;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ShowLargeIcons" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ShowLargeIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowLargeIcons As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ShowLargeIcons;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1062,6 +1142,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SizeToControl;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SizeToControl" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SizeToControl" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToControl As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SizeToControl;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1088,6 +1170,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SizeToControlHeight;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SizeToControlHeight" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SizeToControlHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToControlHeight As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SizeToControlHeight;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1114,6 +1198,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SizeToControlWidth;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SizeToControlWidth" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SizeToControlWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToControlWidth As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SizeToControlWidth;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1140,6 +1226,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SizeToFit;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SizeToFit" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SizeToFit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToFit As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SizeToFit;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1166,6 +1254,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SizeToGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SizeToGrid" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SizeToGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToGrid As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SizeToGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1192,6 +1282,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID SnapToGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID SnapToGrid" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.SnapToGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SnapToGrid As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ SnapToGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1218,6 +1310,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID TabOrder;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID TabOrder" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.TabOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabOrder As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ TabOrder;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1244,6 +1338,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Undo;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Undo" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Undo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Undo As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Undo;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1270,6 +1366,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID Ungroup;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID Ungroup" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.Ungroup" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Ungroup As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ Ungroup;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1296,6 +1394,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VerbFirst;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VerbFirst" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VerbFirst" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerbFirst As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VerbFirst;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1333,6 +1433,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VerbLast;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VerbLast" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VerbLast" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerbLast As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VerbLast;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1370,6 +1472,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VertSpaceConcatenate;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VertSpaceConcatenate" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VertSpaceConcatenate" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VertSpaceConcatenate As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VertSpaceConcatenate;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1396,6 +1500,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VertSpaceDecrease;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VertSpaceDecrease" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VertSpaceDecrease" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VertSpaceDecrease As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VertSpaceDecrease;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1422,6 +1528,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VertSpaceIncrease;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VertSpaceIncrease" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VertSpaceIncrease" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VertSpaceIncrease As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VertSpaceIncrease;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1448,6 +1556,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID VertSpaceMakeEqual;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID VertSpaceMakeEqual" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.VertSpaceMakeEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VertSpaceMakeEqual As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ VertSpaceMakeEqual;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1474,6 +1584,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ViewCode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ViewCode" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ViewCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewCode As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ViewCode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1500,6 +1612,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.Design.CommandID ViewGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.Design.CommandID ViewGrid" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.StandardCommands.ViewGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewGrid As CommandID " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::Design::CommandID ^ ViewGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TargetInvocationException" FullName="System.Reflection.TargetInvocationException">
+﻿<Type Name="TargetInvocationException" FullName="System.Reflection.TargetInvocationException">
   <TypeSignature Language="C#" Value="public sealed class TargetInvocationException : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TargetInvocationException extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TargetInvocationException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TargetInvocationException&#xA;Inherits ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetInvocationException sealed : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +51,23 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.TargetInvocationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TargetInvocationException (Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetInvocationException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetInvocationException(Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -101,6 +116,8 @@
       <MemberSignature Language="C#" Value="public TargetInvocationException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TargetInvocationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetInvocationException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -147,16 +164,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.TargetInvocationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

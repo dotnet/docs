@@ -1,7 +1,9 @@
-<Type Name="Annotation" FullName="System.Activities.Presentation.Annotations.Annotation">
+﻿<Type Name="Annotation" FullName="System.Activities.Presentation.Annotations.Annotation">
   <TypeSignature Language="C#" Value="public static class Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Annotation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Annotations.Annotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Annotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Annotation abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier AnnotationTextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier AnnotationTextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnnotationTextProperty As AttachableMemberIdentifier " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xaml::AttachableMemberIdentifier ^ AnnotationTextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public static readonly string AnnotationTextPropertyName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string AnnotationTextPropertyName" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Annotations.Annotation.AnnotationTextPropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnnotationTextPropertyName As String " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AnnotationTextPropertyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -53,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static string GetAnnotationText (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAnnotationText(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.GetAnnotationText(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAnnotationText (instance As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetAnnotationText(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -75,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static void SetAnnotationText (object instance, string annotationText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAnnotationText(object instance, string annotationText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Annotations.Annotation.SetAnnotationText(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAnnotationText (instance As Object, annotationText As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetAnnotationText(System::Object ^ instance, System::String ^ annotationText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

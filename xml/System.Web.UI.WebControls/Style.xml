@@ -1,7 +1,9 @@
-<Type Name="Style" FullName="System.Web.UI.WebControls.Style">
+﻿<Type Name="Style" FullName="System.Web.UI.WebControls.Style">
   <TypeSignature Language="C#" Value="public class Style : System.ComponentModel.Component, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Style extends System.ComponentModel.Component implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Style" />
+  <TypeSignature Language="VB.NET" Value="Public Class Style&#xA;Inherits Component&#xA;Implements IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Style : System::ComponentModel::Component, System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,10 +56,21 @@
     <altmember cref="P:System.Web.UI.WebControls.Style.Width" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Style ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Style();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +106,8 @@
       <MemberSignature Language="C#" Value="public Style (System.Web.UI.StateBag bag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.StateBag bag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.#ctor(System.Web.UI.StateBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Style(System::Web::UI::StateBag ^ bag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,10 +130,21 @@
         <altmember cref="T:System.Web.UI.StateBag" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddAttributesToRender">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />. This method is primarily used by control developers.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAttributesToRender">
       <MemberSignature Language="C#" Value="public void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +176,8 @@
       <MemberSignature Language="C#" Value="public virtual void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer, System.Web.UI.WebControls.WebControl owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebControl owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.AddAttributesToRender(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebControl)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddAttributesToRender (writer As HtmlTextWriter, owner As WebControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebControl ^ owner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +219,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -257,6 +287,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +351,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +417,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderWidth As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -439,6 +475,8 @@
       <MemberSignature Language="C#" Value="public virtual void CopyFrom (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyFrom(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.CopyFrom(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CopyFrom (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -475,6 +513,8 @@
       <MemberSignature Language="C#" Value="public string CssClass { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CssClass" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.CssClass" />
+      <MemberSignature Language="VB.NET" Value="Public Property CssClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CssClass { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -526,6 +566,8 @@
       <MemberSignature Language="C#" Value="protected virtual void FillStyleAttributes (System.Web.UI.CssStyleCollection attributes, System.Web.UI.IUrlResolutionService urlResolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FillStyleAttributes(class System.Web.UI.CssStyleCollection attributes, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.FillStyleAttributes(System.Web.UI.CssStyleCollection,System.Web.UI.IUrlResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub FillStyleAttributes (attributes As CssStyleCollection, urlResolver As IUrlResolutionService)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void FillStyleAttributes(System::Web::UI::CssStyleCollection ^ attributes, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -558,6 +600,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.FontInfo Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.FontInfo Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As FontInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FontInfo ^ Font { System::Web::UI::WebControls::FontInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -565,7 +609,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -612,6 +656,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -665,6 +711,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.CssStyleCollection GetStyleAttributes (System.Web.UI.IUrlResolutionService urlResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.CssStyleCollection GetStyleAttributes(class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.GetStyleAttributes(System.Web.UI.IUrlResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStyleAttributes (urlResolver As IUrlResolutionService) As CssStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::CssStyleCollection ^ GetStyleAttributes(System::Web::UI::IUrlResolutionService ^ urlResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -696,6 +744,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Height" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit Height { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -731,6 +781,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -741,7 +793,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -758,7 +810,12 @@
       <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -781,10 +838,15 @@
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
-      <MemberSignature Language="C#" Value="protected void LoadViewState (object state);" />
+      <MemberSignature Language="C#" Value="protected internal void LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub LoadViewState (state As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void LoadViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -805,6 +867,8 @@
       <MemberSignature Language="C#" Value="public virtual void MergeWith (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MergeWith(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.MergeWith(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MergeWith (s As Style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -839,6 +903,8 @@
       <MemberSignature Language="C#" Value="public string RegisteredCssClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegisteredCssClass" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.RegisteredCssClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegisteredCssClass As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegisteredCssClass { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -849,7 +915,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -877,6 +943,8 @@
       <MemberSignature Language="C#" Value="public virtual void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -899,10 +967,15 @@
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
-      <MemberSignature Language="C#" Value="protected virtual object SaveViewState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -918,9 +991,11 @@
       </Docs>
     </Member>
     <Member MemberName="SetBit">
-      <MemberSignature Language="C#" Value="protected virtual void SetBit (int bit);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void SetBit (int bit);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SetBit(int32 bit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.SetBit(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetBit (bit As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetBit(int bit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -942,6 +1017,8 @@
       <MemberSignature Language="C#" Value="public void SetDirty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDirty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.SetDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDirty ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDirty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -967,7 +1044,12 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -993,7 +1075,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1021,7 +1108,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1047,7 +1139,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1069,10 +1166,15 @@
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
-      <MemberSignature Language="C#" Value="protected virtual void TrackViewState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Style.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void TrackViewState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1087,9 +1189,11 @@
       </Docs>
     </Member>
     <Member MemberName="ViewState">
-      <MemberSignature Language="C#" Value="protected System.Web.UI.StateBag ViewState { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Web.UI.StateBag ViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.StateBag ViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.ViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ViewState As StateBag" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::UI::StateBag ^ ViewState { System::Web::UI::StateBag ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1100,7 +1204,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1123,6 +1227,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Unit Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Width" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Style.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Unit Width { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1154,23 +1260,5 @@
         <altmember cref="T:System.Web.UI.WebControls.Unit" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddAttributesToRender">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds HTML attributes and styles that need to be rendered to the specified <see cref="T:System.Web.UI.HtmlTextWriter" />. This method is primarily used by control developers.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

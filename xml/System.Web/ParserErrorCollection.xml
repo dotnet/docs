@@ -1,7 +1,9 @@
-<Type Name="ParserErrorCollection" FullName="System.Web.ParserErrorCollection">
+﻿<Type Name="ParserErrorCollection" FullName="System.Web.ParserErrorCollection">
   <TypeSignature Language="C#" Value="public sealed class ParserErrorCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ParserErrorCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.ParserErrorCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParserErrorCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParserErrorCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +50,21 @@
     <altmember cref="T:System.Web.HttpException" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ParserErrorCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserErrorCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +90,8 @@
       <MemberSignature Language="C#" Value="public ParserErrorCollection (System.Web.ParserError[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ParserError[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.#ctor(System.Web.ParserError[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As ParserError())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParserErrorCollection(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +117,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.ParserError value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Add(System.Web.ParserError)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As ParserError) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,10 +154,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds <see cref="T:System.Web.ParserError" /> objects to a collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Web.ParserError[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Web.ParserError[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.AddRange(System.Web.ParserError[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ParserError())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Web::ParserError ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -179,6 +207,8 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.Web.ParserErrorCollection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Web.ParserErrorCollection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.AddRange(System.Web.ParserErrorCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (value As ParserErrorCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Web::ParserErrorCollection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -216,6 +246,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.ParserError value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Contains(System.Web.ParserError)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ParserError) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +286,8 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.ParserError[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.ParserError[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.CopyTo(System.Web.ParserError[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ParserError(), index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::ParserError ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +334,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.ParserError value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.IndexOf(System.Web.ParserError)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ParserError) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -337,6 +373,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.ParserError value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Insert(System.Int32,System.Web.ParserError)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As ParserError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,6 +415,8 @@
       <MemberSignature Language="C#" Value="public System.Web.ParserError this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ParserError Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.ParserErrorCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ParserError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ParserError ^ default[int] { System::Web::ParserError ^ get(int index); void set(int index, System::Web::ParserError ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,6 +446,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.ParserError value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.ParserError value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ParserErrorCollection.Remove(System.Web.ParserError)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As ParserError)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::ParserError ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -438,23 +480,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.ParserErrorCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds <see cref="T:System.Web.ParserError" /> objects to a collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

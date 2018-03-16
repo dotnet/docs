@@ -1,7 +1,9 @@
-<Type Name="DefaultSection" FullName="System.Configuration.DefaultSection">
+﻿<Type Name="DefaultSection" FullName="System.Configuration.DefaultSection">
   <TypeSignature Language="C#" Value="public sealed class DefaultSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefaultSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.DefaultSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public DefaultSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -46,9 +50,10 @@
       </Docs>
     </Member>
     <Member MemberName="DeserializeSection">
-      <MemberSignature Language="C#" Value="protected override void DeserializeSection (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="C#" Value="protected internal override void DeserializeSection (System.Xml.XmlReader xmlReader);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void DeserializeSection(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.DeserializeSection(System.Xml.XmlReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void DeserializeSection(System::Xml::XmlReader ^ xmlReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -71,9 +76,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsModified">
-      <MemberSignature Language="C#" Value="protected override bool IsModified ();" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsModified ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool IsModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.IsModified" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function IsModified () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool IsModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -94,9 +101,11 @@
       </Docs>
     </Member>
     <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.DefaultSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -116,9 +125,11 @@
       </Docs>
     </Member>
     <Member MemberName="Reset">
-      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentSection);" />
+      <MemberSignature Language="C#" Value="protected internal override void Reset (System.Configuration.ConfigurationElement parentSection);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentSection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Reset (parentSection As ConfigurationElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentSection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -141,9 +152,11 @@
       </Docs>
     </Member>
     <Member MemberName="ResetModified">
-      <MemberSignature Language="C#" Value="protected override void ResetModified ();" />
+      <MemberSignature Language="C#" Value="protected internal override void ResetModified ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ResetModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.ResetModified" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ResetModified ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ResetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -163,9 +176,11 @@
       </Docs>
     </Member>
     <Member MemberName="SerializeSection">
-      <MemberSignature Language="C#" Value="protected override string SerializeSection (System.Configuration.ConfigurationElement parentSection, string name, System.Configuration.ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="C#" Value="protected internal override string SerializeSection (System.Configuration.ConfigurationElement parentSection, string name, System.Configuration.ConfigurationSaveMode saveMode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string SerializeSection(class System.Configuration.ConfigurationElement parentSection, string name, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSection.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SerializeSection (parentSection As ConfigurationElement, name As String, saveMode As ConfigurationSaveMode) As String" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ SerializeSection(System::Configuration::ConfigurationElement ^ parentSection, System::String ^ name, System::Configuration::ConfigurationSaveMode saveMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

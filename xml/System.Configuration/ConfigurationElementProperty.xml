@@ -1,7 +1,9 @@
-<Type Name="ConfigurationElementProperty" FullName="System.Configuration.ConfigurationElementProperty">
+﻿<Type Name="ConfigurationElementProperty" FullName="System.Configuration.ConfigurationElementProperty">
   <TypeSignature Language="C#" Value="public sealed class ConfigurationElementProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationElementProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationElementProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationElementProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationElementProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public ConfigurationElementProperty (System.Configuration.ConfigurationValidatorBase validator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Configuration.ConfigurationValidatorBase validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationElementProperty.#ctor(System.Configuration.ConfigurationValidatorBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (validator As ConfigurationValidatorBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationElementProperty(System::Configuration::ConfigurationValidatorBase ^ validator);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationValidatorBase Validator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase Validator" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationElementProperty.Validator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validator As ConfigurationValidatorBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationValidatorBase ^ Validator { System::Configuration::ConfigurationValidatorBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

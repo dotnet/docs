@@ -1,7 +1,9 @@
-<Type Name="TypeNameConverter" FullName="System.Configuration.TypeNameConverter">
+﻿<Type Name="TypeNameConverter" FullName="System.Configuration.TypeNameConverter">
   <TypeSignature Language="C#" Value="public sealed class TypeNameConverter : System.Configuration.ConfigurationConverterBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeNameConverter extends System.Configuration.ConfigurationConverterBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.TypeNameConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeNameConverter&#xA;Inherits ConfigurationConverterBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeNameConverter sealed : System::Configuration::ConfigurationConverterBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +73,8 @@
       <MemberSignature Language="C#" Value="public TypeNameConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TypeNameConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeNameConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -97,6 +101,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TypeNameConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (ctx As ITypeDescriptorContext, ci As CultureInfo, data As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -135,6 +141,7 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TypeNameConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

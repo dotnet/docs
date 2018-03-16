@@ -1,7 +1,9 @@
-<Type Name="ToolStripItemClickedEventHandler" FullName="System.Windows.Forms.ToolStripItemClickedEventHandler">
+﻿<Type Name="ToolStripItemClickedEventHandler" FullName="System.Windows.Forms.ToolStripItemClickedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripItemClickedEventHandler(object sender, ToolStripItemClickedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemClickedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemClickedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripItemClickedEventHandler(sender As Object, e As ToolStripItemClickedEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripItemClickedEventHandler(System::Object ^ sender, ToolStripItemClickedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

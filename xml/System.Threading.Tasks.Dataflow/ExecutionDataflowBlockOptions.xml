@@ -1,7 +1,9 @@
-<Type Name="ExecutionDataflowBlockOptions" FullName="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions">
+﻿<Type Name="ExecutionDataflowBlockOptions" FullName="System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions">
   <TypeSignature Language="C#" Value="public class ExecutionDataflowBlockOptions : System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExecutionDataflowBlockOptions extends System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExecutionDataflowBlockOptions&#xA;Inherits DataflowBlockOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExecutionDataflowBlockOptions : System::Threading::Tasks::Dataflow::DataflowBlockOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public ExecutionDataflowBlockOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExecutionDataflowBlockOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public int MaxDegreeOfParallelism { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDegreeOfParallelism" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.MaxDegreeOfParallelism" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDegreeOfParallelism As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDegreeOfParallelism { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -80,6 +86,8 @@
       <MemberSignature Language="C#" Value="public bool SingleProducerConstrained { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SingleProducerConstrained" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions.SingleProducerConstrained" />
+      <MemberSignature Language="VB.NET" Value="Public Property SingleProducerConstrained As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SingleProducerConstrained { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

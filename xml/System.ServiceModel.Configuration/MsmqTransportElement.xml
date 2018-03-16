@@ -1,7 +1,9 @@
-<Type Name="MsmqTransportElement" FullName="System.ServiceModel.Configuration.MsmqTransportElement">
+﻿<Type Name="MsmqTransportElement" FullName="System.ServiceModel.Configuration.MsmqTransportElement">
   <TypeSignature Language="C#" Value="public sealed class MsmqTransportElement : System.ServiceModel.Configuration.MsmqElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqTransportElement extends System.ServiceModel.Configuration.MsmqElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MsmqTransportElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqTransportElement&#xA;Inherits MsmqElementBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqTransportElement sealed : System::ServiceModel::Configuration::MsmqElementBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public MsmqTransportElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MsmqTransportElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqTransportElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +47,7 @@
       <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MsmqTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +69,8 @@
       <MemberSignature Language="C#" Value="public override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MsmqTransportElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +89,8 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MsmqTransportElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +112,8 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.TransportBindingElement CreateDefaultBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Channels.TransportBindingElement CreateDefaultBindingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MsmqTransportElement.CreateDefaultBindingElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDefaultBindingElement () As TransportBindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Channels::TransportBindingElement ^ CreateDefaultBindingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,9 +130,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MsmqTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +155,8 @@
       <MemberSignature Language="C#" Value="public int MaxPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MsmqTransportElement.MaxPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPoolSize As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPoolSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +190,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MsmqTransportElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +210,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.QueueTransferProtocol QueueTransferProtocol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.QueueTransferProtocol QueueTransferProtocol" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MsmqTransportElement.QueueTransferProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueueTransferProtocol As QueueTransferProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::QueueTransferProtocol QueueTransferProtocol { System::ServiceModel::QueueTransferProtocol get(); void set(System::ServiceModel::QueueTransferProtocol value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +242,8 @@
       <MemberSignature Language="C#" Value="public bool UseActiveDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseActiveDirectory" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MsmqTransportElement.UseActiveDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseActiveDirectory As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseActiveDirectory { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

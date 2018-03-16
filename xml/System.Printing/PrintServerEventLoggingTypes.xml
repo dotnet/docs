@@ -1,7 +1,9 @@
-<Type Name="PrintServerEventLoggingTypes" FullName="System.Printing.PrintServerEventLoggingTypes">
+﻿<Type Name="PrintServerEventLoggingTypes" FullName="System.Printing.PrintServerEventLoggingTypes">
   <TypeSignature Language="C#" Value="public enum PrintServerEventLoggingTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintServerEventLoggingTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintServerEventLoggingTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PrintServerEventLoggingTypes" />
+  <TypeSignature Language="C++ CLI" Value="public enum class PrintServerEventLoggingTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="LogAllPrintingEvents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogAllPrintingEvents = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogAllPrintingEvents" />
+      <MemberSignature Language="VB.NET" Value="LogAllPrintingEvents" />
+      <MemberSignature Language="C++ CLI" Value="LogAllPrintingEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -38,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>All printing events.</summary>
       </Docs>
@@ -46,6 +51,8 @@
       <MemberSignature Language="C#" Value="LogPrintingErrorEvents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingErrorEvents = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingErrorEvents" />
+      <MemberSignature Language="VB.NET" Value="LogPrintingErrorEvents" />
+      <MemberSignature Language="C++ CLI" Value="LogPrintingErrorEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -54,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Error events for printing.</summary>
       </Docs>
@@ -62,6 +70,8 @@
       <MemberSignature Language="C#" Value="LogPrintingInformationEvents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingInformationEvents = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingInformationEvents" />
+      <MemberSignature Language="VB.NET" Value="LogPrintingInformationEvents" />
+      <MemberSignature Language="C++ CLI" Value="LogPrintingInformationEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Information events for printing.</summary>
       </Docs>
@@ -78,6 +89,8 @@
       <MemberSignature Language="C#" Value="LogPrintingSuccessEvents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingSuccessEvents = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingSuccessEvents" />
+      <MemberSignature Language="VB.NET" Value="LogPrintingSuccessEvents" />
+      <MemberSignature Language="C++ CLI" Value="LogPrintingSuccessEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -86,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Successful printing events.</summary>
       </Docs>
@@ -94,6 +108,8 @@
       <MemberSignature Language="C#" Value="LogPrintingWarningEvents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes LogPrintingWarningEvents = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.LogPrintingWarningEvents" />
+      <MemberSignature Language="VB.NET" Value="LogPrintingWarningEvents" />
+      <MemberSignature Language="C++ CLI" Value="LogPrintingWarningEvents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -102,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Warning events.</summary>
       </Docs>
@@ -110,6 +127,8 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintServerEventLoggingTypes None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PrintServerEventLoggingTypes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -118,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PrintServerEventLoggingTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No events.</summary>
       </Docs>

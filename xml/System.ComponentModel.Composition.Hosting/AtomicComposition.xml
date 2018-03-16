@@ -1,7 +1,9 @@
-<Type Name="AtomicComposition" FullName="System.ComponentModel.Composition.Hosting.AtomicComposition">
+﻿<Type Name="AtomicComposition" FullName="System.ComponentModel.Composition.Hosting.AtomicComposition">
   <TypeSignature Language="C#" Value="public class AtomicComposition : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AtomicComposition extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.AtomicComposition" />
+  <TypeSignature Language="VB.NET" Value="Public Class AtomicComposition&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AtomicComposition : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +31,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AtomicComposition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AtomicComposition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomicComposition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -49,6 +63,8 @@
       <MemberSignature Language="C#" Value="public AtomicComposition (System.ComponentModel.Composition.Hosting.AtomicComposition outerAtomicComposition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Hosting.AtomicComposition outerAtomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor(System.ComponentModel.Composition.Hosting.AtomicComposition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (outerAtomicComposition As AtomicComposition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomicComposition(System::ComponentModel::Composition::Hosting::AtomicComposition ^ outerAtomicComposition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -68,6 +84,8 @@
       <MemberSignature Language="C#" Value="public void AddCompleteAction (Action completeAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCompleteAction(class System.Action completeAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.AddCompleteAction(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCompleteAction (completeAction As Action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCompleteAction(Action ^ completeAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -90,6 +108,8 @@
       <MemberSignature Language="C#" Value="public void AddRevertAction (Action revertAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRevertAction(class System.Action revertAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.AddRevertAction(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRevertAction (revertAction As Action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRevertAction(Action ^ revertAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -112,6 +132,8 @@
       <MemberSignature Language="C#" Value="public void Complete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Complete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -134,11 +156,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.AtomicComposition" />, and mark this composition operation as failed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -169,6 +206,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -192,6 +231,8 @@
       <MemberSignature Language="C#" Value="public void SetValue (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (key As Object, value As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -212,10 +253,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetValue&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value saved by the <see cref="M:System.ComponentModel.Composition.Hosting.AtomicComposition.SetValue(System.Object,System.Object)" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetValue&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetValue&lt;T&gt; (object key, out T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue&lt;T&gt;(object key, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.TryGetValue``1(System.Object,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As Object, ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; bool TryGetValue(System::Object ^ key, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -246,6 +299,8 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue&lt;T&gt; (object key, bool localAtomicCompositionOnly, out T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue&lt;T&gt;(object key, bool localAtomicCompositionOnly, [out] !!T&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.AtomicComposition.TryGetValue``1(System.Object,System.Boolean,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T) (key As Object, localAtomicCompositionOnly As Boolean, ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; bool TryGetValue(System::Object ^ key, bool localAtomicCompositionOnly, [Runtime::InteropServices::Out] T % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -275,35 +330,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryGetValue&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value saved by the <see cref="M:System.ComponentModel.Composition.Hosting.AtomicComposition.SetValue(System.Object,System.Object)" /> method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.AtomicComposition" />, and mark this composition operation as failed.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.AtomicComposition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

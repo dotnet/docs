@@ -1,7 +1,9 @@
-<Type Name="RemoteEndpointMessageProperty" FullName="System.ServiceModel.Channels.RemoteEndpointMessageProperty">
+﻿<Type Name="RemoteEndpointMessageProperty" FullName="System.ServiceModel.Channels.RemoteEndpointMessageProperty">
   <TypeSignature Language="C#" Value="public sealed class RemoteEndpointMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RemoteEndpointMessageProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RemoteEndpointMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RemoteEndpointMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemoteEndpointMessageProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public RemoteEndpointMessageProperty (string address, int port);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string address, int32 port) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RemoteEndpointMessageProperty.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As String, port As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemoteEndpointMessageProperty(System::String ^ address, int port);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RemoteEndpointMessageProperty.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RemoteEndpointMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public int Port { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Port" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RemoteEndpointMessageProperty.Port" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Port As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Port { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

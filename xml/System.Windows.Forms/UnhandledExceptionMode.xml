@@ -1,7 +1,9 @@
-<Type Name="UnhandledExceptionMode" FullName="System.Windows.Forms.UnhandledExceptionMode">
+﻿<Type Name="UnhandledExceptionMode" FullName="System.Windows.Forms.UnhandledExceptionMode">
   <TypeSignature Language="C#" Value="public enum UnhandledExceptionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnhandledExceptionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UnhandledExceptionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UnhandledExceptionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class UnhandledExceptionMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="Automatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.UnhandledExceptionMode Automatic = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Route all exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler, unless the application's configuration file specifies otherwise.</summary>
       </Docs>
@@ -55,6 +60,8 @@
       <MemberSignature Language="C#" Value="CatchException" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.UnhandledExceptionMode CatchException = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.CatchException" />
+      <MemberSignature Language="VB.NET" Value="CatchException" />
+      <MemberSignature Language="C++ CLI" Value="CatchException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Always route exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler. Ignore the application configuration file.</summary>
       </Docs>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="ThrowException" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.UnhandledExceptionMode ThrowException = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.UnhandledExceptionMode.ThrowException" />
+      <MemberSignature Language="VB.NET" Value="ThrowException" />
+      <MemberSignature Language="C++ CLI" Value="ThrowException" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.UnhandledExceptionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Never route exceptions to the <see cref="E:System.Windows.Forms.Application.ThreadException" /> handler. Ignore the application configuration file.</summary>
       </Docs>

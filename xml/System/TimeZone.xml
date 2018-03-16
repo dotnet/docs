@@ -1,7 +1,9 @@
-<Type Name="TimeZone" FullName="System.TimeZone">
+﻿<Type Name="TimeZone" FullName="System.TimeZone">
   <TypeSignature Language="C#" Value="public abstract class TimeZone" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit TimeZone extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.TimeZone" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TimeZone" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimeZone abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +64,8 @@
       <MemberSignature Language="C#" Value="protected TimeZone ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TimeZone();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -86,6 +90,8 @@
       <MemberSignature Language="C#" Value="public static TimeZone CurrentTimeZone { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.TimeZone CurrentTimeZone" />
       <MemberSignature Language="DocId" Value="P:System.TimeZone.CurrentTimeZone" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentTimeZone As TimeZone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeZone ^ CurrentTimeZone { TimeZone ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +139,8 @@
       <MemberSignature Language="C#" Value="public abstract string DaylightName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DaylightName" />
       <MemberSignature Language="DocId" Value="P:System.TimeZone.DaylightName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DaylightName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ DaylightName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,6 +187,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Globalization.DaylightTime GetDaylightChanges (int year);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Globalization.DaylightTime GetDaylightChanges(int32 year) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.GetDaylightChanges(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDaylightChanges (year As Integer) As DaylightTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Globalization::DaylightTime ^ GetDaylightChanges(int year);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -225,6 +235,8 @@
       <MemberSignature Language="C#" Value="public abstract TimeSpan GetUtcOffset (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TimeSpan GetUtcOffset(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetUtcOffset (time As DateTime) As TimeSpan" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract TimeSpan GetUtcOffset(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,10 +285,22 @@
         <altmember cref="M:System.TimeZoneInfo.GetUtcOffset(System.DateTime)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDaylightSavingTime">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether a specified date and time is within a daylight saving time period.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsDaylightSavingTime">
       <MemberSignature Language="C#" Value="public virtual bool IsDaylightSavingTime (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDaylightSavingTime(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.IsDaylightSavingTime(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsDaylightSavingTime (time As DateTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsDaylightSavingTime(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +343,8 @@
       <MemberSignature Language="C#" Value="public static bool IsDaylightSavingTime (DateTime time, System.Globalization.DaylightTime daylightTimes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDaylightSavingTime(valuetype System.DateTime time, class System.Globalization.DaylightTime daylightTimes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.IsDaylightSavingTime(System.DateTime,System.Globalization.DaylightTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsDaylightSavingTime (time As DateTime, daylightTimes As DaylightTime) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDaylightSavingTime(DateTime time, System::Globalization::DaylightTime ^ daylightTimes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -363,6 +389,8 @@
       <MemberSignature Language="C#" Value="public abstract string StandardName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StandardName" />
       <MemberSignature Language="DocId" Value="P:System.TimeZone.StandardName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property StandardName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ StandardName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -408,6 +436,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime ToLocalTime (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToLocalTime(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.ToLocalTime(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToLocalTime (time As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ToLocalTime(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -468,6 +498,8 @@
       <MemberSignature Language="C#" Value="public virtual DateTime ToUniversalTime (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToUniversalTime(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZone.ToUniversalTime(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToUniversalTime (time As DateTime) As DateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTime ToUniversalTime(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -512,15 +544,5 @@
         <altmember cref="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsDaylightSavingTime">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value indicating whether a specified date and time is within a daylight saving time period.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

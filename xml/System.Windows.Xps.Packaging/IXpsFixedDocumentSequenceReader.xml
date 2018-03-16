@@ -1,7 +1,9 @@
-<Type Name="IXpsFixedDocumentSequenceReader" FullName="System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader">
+﻿<Type Name="IXpsFixedDocumentSequenceReader" FullName="System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader">
   <TypeSignature Language="C#" Value="public interface IXpsFixedDocumentSequenceReader" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXpsFixedDocumentSequenceReader" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXpsFixedDocumentSequenceReader" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXpsFixedDocumentSequenceReader" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.IXpsFixedDocumentReader&gt; FixedDocuments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Xps.Packaging.IXpsFixedDocumentReader&gt; FixedDocuments" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.FixedDocuments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FixedDocuments As ReadOnlyCollection(Of IXpsFixedDocumentReader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Xps::Packaging::IXpsFixedDocumentReader ^&gt; ^ FixedDocuments { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Xps::Packaging::IXpsFixedDocumentReader ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentReader GetFixedDocument (Uri documentSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Xps.Packaging.IXpsFixedDocumentReader GetFixedDocument(class System.Uri documentSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.GetFixedDocument(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFixedDocument (documentSource As Uri) As IXpsFixedDocumentReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::IXpsFixedDocumentReader ^ GetFixedDocument(Uri ^ documentSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -81,6 +87,8 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintTicket PrintTicket { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket PrintTicket" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.PrintTicket" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintTicket As PrintTicket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ PrintTicket { System::Printing::PrintTicket ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -107,6 +115,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsThumbnail Thumbnail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.XpsThumbnail Thumbnail" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.Thumbnail" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Thumbnail As XpsThumbnail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::XpsThumbnail ^ Thumbnail { System::Windows::Xps::Packaging::XpsThumbnail ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -125,6 +135,8 @@
       <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

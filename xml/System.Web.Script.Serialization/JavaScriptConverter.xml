@@ -1,7 +1,9 @@
-<Type Name="JavaScriptConverter" FullName="System.Web.Script.Serialization.JavaScriptConverter">
+﻿<Type Name="JavaScriptConverter" FullName="System.Web.Script.Serialization.JavaScriptConverter">
   <TypeSignature Language="C#" Value="public abstract class JavaScriptConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JavaScriptConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.JavaScriptConverter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class JavaScriptConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JavaScriptConverter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="protected JavaScriptConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JavaScriptConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +69,7 @@
       <MemberSignature Language="C#" Value="public abstract object Deserialize (System.Collections.Generic.IDictionary&lt;string,object&gt; dictionary, Type type, System.Web.Script.Serialization.JavaScriptSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; dictionary, class System.Type type, class System.Web.Script.Serialization.JavaScriptSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptConverter.Deserialize(System.Collections.Generic.IDictionary{System.String,System.Object},System.Type,System.Web.Script.Serialization.JavaScriptSerializer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Deserialize(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ dictionary, Type ^ type, System::Web::Script::Serialization::JavaScriptSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -98,6 +103,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IDictionary&lt;string,object&gt; Serialize (object obj, System.Web.Script.Serialization.JavaScriptSerializer serializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Serialize(object obj, class System.Web.Script.Serialization.JavaScriptSerializer serializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.JavaScriptConverter.Serialize(System.Object,System.Web.Script.Serialization.JavaScriptSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Serialize (obj As Object, serializer As JavaScriptSerializer) As IDictionary(Of String, Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Serialize(System::Object ^ obj, System::Web::Script::Serialization::JavaScriptSerializer ^ serializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -134,6 +141,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;Type&gt; SupportedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; SupportedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.JavaScriptConverter.SupportedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SupportedTypes As IEnumerable(Of Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ SupportedTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

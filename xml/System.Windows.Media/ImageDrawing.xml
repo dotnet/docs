@@ -1,7 +1,9 @@
-<Type Name="ImageDrawing" FullName="System.Windows.Media.ImageDrawing">
+﻿<Type Name="ImageDrawing" FullName="System.Windows.Media.ImageDrawing">
   <TypeSignature Language="C#" Value="public sealed class ImageDrawing : System.Windows.Media.Drawing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageDrawing extends System.Windows.Media.Drawing" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ImageDrawing" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ImageDrawing&#xA;Inherits Drawing" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageDrawing sealed : System::Windows::Media::Drawing" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +26,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageDrawing" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ImageDrawing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageDrawing();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +56,7 @@
       <MemberSignature Language="C#" Value="public ImageDrawing (System.Windows.Media.ImageSource imageSource, System.Windows.Rect rect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.ImageSource imageSource, valuetype System.Windows.Rect rect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.#ctor(System.Windows.Media.ImageSource,System.Windows.Rect)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageDrawing(System::Windows::Media::ImageSource ^ imageSource, System::Windows::Rect rect);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +77,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageDrawing Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.ImageDrawing Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As ImageDrawing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageDrawing ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +107,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageDrawing CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.ImageDrawing CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As ImageDrawing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageDrawing ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +137,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageDrawing.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +158,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ImageDrawing.ImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageSource As ImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,6 +210,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ImageDrawing.ImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +229,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect Rect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Rect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ImageDrawing.Rect" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rect As Rect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Rect { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +264,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RectProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RectProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.ImageDrawing.RectProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RectProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RectProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,14 +279,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ImageDrawing" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

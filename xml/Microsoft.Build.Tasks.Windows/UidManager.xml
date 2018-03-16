@@ -1,7 +1,9 @@
-<Type Name="UidManager" FullName="Microsoft.Build.Tasks.Windows.UidManager">
+﻿<Type Name="UidManager" FullName="Microsoft.Build.Tasks.Windows.UidManager">
   <TypeSignature Language="C#" Value="public sealed class UidManager : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UidManager extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.UidManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UidManager&#xA;Inherits Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UidManager sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,8 @@
       <MemberSignature Language="C#" Value="public UidManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.UidManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UidManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +40,8 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.UidManager.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -57,6 +63,8 @@
       <MemberSignature Language="C#" Value="public string IntermediateDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IntermediateDirectory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.IntermediateDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntermediateDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IntermediateDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -76,6 +84,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] MarkupFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] MarkupFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.MarkupFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property MarkupFiles As ITaskItem()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ MarkupFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -100,6 +110,8 @@
       <MemberSignature Language="C#" Value="public string Task { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Task" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UidManager.Task" />
+      <MemberSignature Language="VB.NET" Value="Public Property Task As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Task { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="SecurityContext" FullName="System.Security.SecurityContext">
+﻿<Type Name="SecurityContext" FullName="System.Security.SecurityContext">
   <TypeSignature Language="C#" Value="public sealed class SecurityContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityContext sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +45,8 @@
       <MemberSignature Language="C#" Value="public static System.Security.SecurityContext Capture ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.SecurityContext Capture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Capture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Capture () As SecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::SecurityContext ^ Capture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityContext CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityContext CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCopy () As SecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityContext ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,7 +112,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -141,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static bool IsFlowSuppressed ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsFlowSuppressed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.IsFlowSuppressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsFlowSuppressed () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsFlowSuppressed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +186,8 @@
       <MemberSignature Language="C#" Value="public static bool IsWindowsIdentityFlowSuppressed ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsWindowsIdentityFlowSuppressed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.IsWindowsIdentityFlowSuppressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsWindowsIdentityFlowSuppressed () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsWindowsIdentityFlowSuppressed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static void RestoreFlow ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RestoreFlow() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.RestoreFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RestoreFlow ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RestoreFlow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -236,6 +253,7 @@
       <MemberSignature Language="C#" Value="public static void Run (System.Security.SecurityContext securityContext, System.Threading.ContextCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Run(class System.Security.SecurityContext securityContext, class System.Threading.ContextCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.Run(System.Security.SecurityContext,System.Threading.ContextCallback,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Run(System::Security::SecurityContext ^ securityContext, System::Threading::ContextCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -292,6 +310,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.AsyncFlowControl SuppressFlow ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.AsyncFlowControl SuppressFlow() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.SuppressFlow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuppressFlow () As AsyncFlowControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::AsyncFlowControl SuppressFlow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -330,6 +350,8 @@
       <MemberSignature Language="C#" Value="public static System.Threading.AsyncFlowControl SuppressFlowWindowsIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.AsyncFlowControl SuppressFlowWindowsIdentity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.SecurityContext.SuppressFlowWindowsIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SuppressFlowWindowsIdentity () As AsyncFlowControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::AsyncFlowControl SuppressFlowWindowsIdentity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

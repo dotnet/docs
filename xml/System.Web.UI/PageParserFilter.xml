@@ -1,7 +1,9 @@
-<Type Name="PageParserFilter" FullName="System.Web.UI.PageParserFilter">
+﻿<Type Name="PageParserFilter" FullName="System.Web.UI.PageParserFilter">
   <TypeSignature Language="C#" Value="public abstract class PageParserFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageParserFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageParserFilter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageParserFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageParserFilter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected PageParserFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PageParserFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +67,7 @@
       <MemberSignature Language="C#" Value="protected void AddControl (Type type, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddControl(class System.Type type, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AddControl(System.Type,System.Collections.IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddControl(Type ^ type, System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +98,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowBaseType (Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowBaseType(class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowBaseType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowBaseType (baseType As Type) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowBaseType(Type ^ baseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +130,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.AllowCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowCode As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowCode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +158,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowControl (Type controlType, System.Web.UI.ControlBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowControl(class System.Type controlType, class System.Web.UI.ControlBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowControl(System.Type,System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowControl (controlType As Type, builder As ControlBuilder) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowControl(Type ^ controlType, System::Web::UI::ControlBuilder ^ builder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +192,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowServerSideInclude (string includeVirtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowServerSideInclude(string includeVirtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowServerSideInclude(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowServerSideInclude (includeVirtualPath As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowServerSideInclude(System::String ^ includeVirtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +224,8 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowVirtualReference (string referenceVirtualPath, System.Web.UI.VirtualReferenceType referenceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowVirtualReference(string referenceVirtualPath, valuetype System.Web.UI.VirtualReferenceType referenceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowVirtualReference(System.String,System.Web.UI.VirtualReferenceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AllowVirtualReference (referenceVirtualPath As String, referenceType As VirtualReferenceType) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool AllowVirtualReference(System::String ^ referenceVirtualPath, System::Web::UI::VirtualReferenceType referenceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +259,8 @@
       <MemberSignature Language="C#" Value="protected bool CalledFromParseControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CalledFromParseControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.CalledFromParseControl" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CalledFromParseControl As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool CalledFromParseControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +287,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.CompilationMode GetCompilationMode (System.Web.UI.CompilationMode current);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.UI.CompilationMode GetCompilationMode(valuetype System.Web.UI.CompilationMode current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetCompilationMode(System.Web.UI.CompilationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCompilationMode (current As CompilationMode) As CompilationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::CompilationMode GetCompilationMode(System::Web::UI::CompilationMode current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +319,8 @@
       <MemberSignature Language="C#" Value="public virtual Type GetNoCompileUserControlType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNoCompileUserControlType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetNoCompileUserControlType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNoCompileUserControlType () As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetNoCompileUserControlType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +350,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -354,6 +377,8 @@
       <MemberSignature Language="C#" Value="protected int Line { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.Line" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Line As Integer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Line { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -381,6 +406,8 @@
       <MemberSignature Language="C#" Value="public virtual int NumberOfControlsAllowed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfControlsAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfControlsAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfControlsAllowed As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int NumberOfControlsAllowed { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,6 +433,8 @@
       <MemberSignature Language="C#" Value="public virtual int NumberOfDirectDependenciesAllowed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfDirectDependenciesAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfDirectDependenciesAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfDirectDependenciesAllowed As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int NumberOfDirectDependenciesAllowed { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +461,8 @@
       <MemberSignature Language="C#" Value="public virtual void ParseComplete (System.Web.UI.ControlBuilder rootBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseComplete(class System.Web.UI.ControlBuilder rootBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ParseComplete(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ParseComplete (rootBuilder As ControlBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ParseComplete(System::Web::UI::ControlBuilder ^ rootBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +484,8 @@
       <MemberSignature Language="C#" Value="public virtual void PreprocessDirective (string directiveName, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PreprocessDirective(string directiveName, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.PreprocessDirective(System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PreprocessDirective (directiveName As String, attributes As IDictionary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PreprocessDirective(System::String ^ directiveName, System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -483,6 +516,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ProcessCodeConstruct (System.Web.UI.CodeConstructType codeType, string code);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessCodeConstruct(valuetype System.Web.UI.CodeConstructType codeType, string code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessCodeConstruct(System.Web.UI.CodeConstructType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessCodeConstruct (codeType As CodeConstructType, code As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessCodeConstruct(System::Web::UI::CodeConstructType codeType, System::String ^ code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -520,6 +555,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ProcessDataBindingAttribute (string controlId, string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessDataBindingAttribute(string controlId, string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessDataBindingAttribute (controlId As String, name As String, value As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessDataBindingAttribute(System::String ^ controlId, System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +593,8 @@
       <MemberSignature Language="C#" Value="public virtual bool ProcessEventHookup (string controlId, string eventName, string handlerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessEventHookup(string controlId, string eventName, string handlerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessEventHookup(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProcessEventHookup (controlId As String, eventName As String, handlerName As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ProcessEventHookup(System::String ^ controlId, System::String ^ eventName, System::String ^ handlerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -592,6 +631,8 @@
       <MemberSignature Language="C#" Value="protected void SetPageProperty (string filter, string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetPageProperty(string filter, string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.SetPageProperty(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetPageProperty (filter As String, name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetPageProperty(System::String ^ filter, System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -625,6 +666,8 @@
       <MemberSignature Language="C#" Value="public virtual int TotalNumberOfDependenciesAllowed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TotalNumberOfDependenciesAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.TotalNumberOfDependenciesAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TotalNumberOfDependenciesAllowed As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int TotalNumberOfDependenciesAllowed { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -651,6 +694,8 @@
       <MemberSignature Language="C#" Value="protected string VirtualPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VirtualPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.VirtualPath" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property VirtualPath As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ VirtualPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

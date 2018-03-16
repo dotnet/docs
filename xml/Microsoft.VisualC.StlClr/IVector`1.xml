@@ -1,7 +1,9 @@
-<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
+﻿<Type Name="IVector&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IVector&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IVector&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IVector`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IRandomAccessContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IVector`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVector(Of TValue)&#xA;Implements ICloneable, ICollection, IRandomAccessContainer(Of TValue)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IVector : ICloneable, Microsoft::VisualC::StlClr::Generic::IRandomAccessContainer&lt;TValue&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -54,6 +56,8 @@
       <MemberSignature Language="C#" Value="public void assign (System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class System.Collections.IEnumerable _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_Right As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -82,6 +86,8 @@
       <MemberSignature Language="C#" Value="public void assign (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -112,6 +118,8 @@
       <MemberSignature Language="C#" Value="public void assign (int _Count, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(int32 _Count, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.assign(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_Count As Integer, _Val As TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public TValue at (int _Pos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue at(int32 _Pos) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.at(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function at (_Pos As Integer) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % at(int _Pos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public TValue back ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue back() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.back" />
+      <MemberSignature Language="VB.NET" Value="Public Function back () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -197,6 +209,8 @@
       <MemberSignature Language="C#" Value="public TValue back_item { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue back_item" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.back_item" />
+      <MemberSignature Language="VB.NET" Value="Public Property back_item As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue back_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -222,6 +236,8 @@
       <MemberSignature Language="C#" Value="public void begin (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.begin(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function begin (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ begin(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -251,6 +267,8 @@
       <MemberSignature Language="C#" Value="public int capacity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 capacity() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Function capacity () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int capacity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -277,6 +295,8 @@
       <MemberSignature Language="C#" Value="public void clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -302,6 +322,8 @@
       <MemberSignature Language="C#" Value="public bool empty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool empty() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.empty" />
+      <MemberSignature Language="VB.NET" Value="Public Function empty () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool empty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -329,6 +351,8 @@
       <MemberSignature Language="C#" Value="public void end (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.end(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function end (ByRef  As ContainerRandomAccessIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ end(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -375,6 +399,8 @@
       <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerRandomAccessIterator(Of TValue), _Where As ContainerRandomAccessIterator) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -406,6 +432,8 @@
       <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Last_iter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerRandomAccessIterator(Of TValue), _First_iter As ContainerRandomAccessIterator, _Last_iter As ContainerRandomAccessIterator) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Last_iter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -423,7 +451,7 @@
         <param name="">To be added.</param>
         <param name="_First_iter">The beginning of the range of elements to erase.</param>
         <param name="_Last_iter">The first position beyond the range of elements to erase.</param>
-        <summary>Removes the elements of the controlled sequence in the range <c>[</c><paramref name="_First_iter" /><c>,</c> <paramref name="_Last_iter" /><c>)</c>.</summary>
+        <summary>Removes the elements of the controlled sequence in the range <c>[</c><paramref name="_First_iter" /><c>,</c><paramref name="_Last_iter" /><c>)</c>.</summary>
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -439,6 +467,8 @@
       <MemberSignature Language="C#" Value="public TValue front ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue front() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.front" />
+      <MemberSignature Language="VB.NET" Value="Public Function front () As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % front();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -465,6 +495,8 @@
       <MemberSignature Language="C#" Value="public TValue front_item { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue front_item" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.front_item" />
+      <MemberSignature Language="VB.NET" Value="Public Property front_item As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue front_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -507,6 +539,8 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where_iter, System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where_iter As ContainerRandomAccessIterator, _Right As IEnumerable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where_iter, System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -537,6 +571,8 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerRandomAccessIterator, _First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -569,6 +605,8 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, int _Count, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, int32 _Count, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerRandomAccessIterator, _Count As Integer, _Val As TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -601,6 +639,8 @@
       <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator _Where, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerRandomAccessIterator(Of TValue), _Where As ContainerRandomAccessIterator, _Val As TValue) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerRandomAccessIterator ^ _Where, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -634,6 +674,8 @@
       <MemberSignature Language="C#" Value="public TValue this[int _Pos] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IVector`1.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(_Pos As Integer) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[int] { TValue get(int _Pos); void set(int _Pos, TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -663,6 +705,8 @@
       <MemberSignature Language="C#" Value="public void pop_back ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_back() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.pop_back" />
+      <MemberSignature Language="VB.NET" Value="Public Sub pop_back ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void pop_back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -688,6 +732,8 @@
       <MemberSignature Language="C#" Value="public void push_back (TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_back(!TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.push_back(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub push_back (_Val As TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void push_back(TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -716,6 +762,8 @@
       <MemberSignature Language="C#" Value="public void rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function rbegin (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rbegin(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -745,6 +793,8 @@
       <MemberSignature Language="C#" Value="public void rend (ref Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.rend(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function rend (ByRef  As ReverseRandomAccessIterator(Of TValue)) As Void" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rend(Microsoft::VisualC::StlClr::Generic::ReverseRandomAccessIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -774,6 +824,8 @@
       <MemberSignature Language="C#" Value="public void reserve (int _Capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void reserve(int32 _Capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.reserve(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub reserve (_Capacity As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void reserve(int _Capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -819,6 +871,8 @@
       <MemberSignature Language="C#" Value="public void resize (int _Newsize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.resize(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -847,6 +901,8 @@
       <MemberSignature Language="C#" Value="public void resize (int _Newsize, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.resize(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer, _Val As TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -877,6 +933,8 @@
       <MemberSignature Language="C#" Value="public int size ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 size() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.size" />
+      <MemberSignature Language="VB.NET" Value="Public Function size () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int size();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -903,6 +961,8 @@
       <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IVector&lt;TValue&gt; A_0);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IVector`1&lt;!TValue&gt; A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IVector`1.swap(Microsoft.VisualC.StlClr.IVector{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub swap (A_0 As IVector(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Comparer" FullName="System.Collections.Comparer">
+﻿<Type Name="Comparer" FullName="System.Collections.Comparer">
   <TypeSignature Language="C#" Value="public sealed class Comparer : System.Collections.IComparer, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Comparer extends System.Object implements class System.Collections.IComparer, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Comparer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Comparer&#xA;Implements IComparer, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Comparer sealed : System::Collections::IComparer, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -69,6 +71,8 @@
       <MemberSignature Language="C#" Value="public Comparer (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Comparer.#ctor(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Comparer(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -120,7 +124,12 @@
       <MemberSignature Language="C#" Value="public int Compare (object a, object b);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object a, object b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Comparer.Compare(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (a As Object, b As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Object ^ a, System::Object ^ b);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -204,6 +213,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Comparer Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Comparer Default" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Comparer.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As Comparer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::Comparer ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -243,6 +254,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Collections.Comparer DefaultInvariant;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Comparer DefaultInvariant" />
       <MemberSignature Language="DocId" Value="F:System.Collections.Comparer.DefaultInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultInvariant As Comparer " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Collections::Comparer ^ DefaultInvariant;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -291,7 +304,12 @@
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Comparer.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

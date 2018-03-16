@@ -1,7 +1,9 @@
-<Type Name="ICscHostObject2" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject2">
+﻿<Type Name="ICscHostObject2" FullName="Microsoft.Build.Tasks.Hosting.ICscHostObject2">
   <TypeSignature Language="C#" Value="public interface ICscHostObject2 : Microsoft.Build.Framework.ITaskHost, Microsoft.Build.Tasks.Hosting.ICscHostObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICscHostObject2 implements class Microsoft.Build.Framework.ITaskHost, class Microsoft.Build.Tasks.Hosting.ICscHostObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Hosting.ICscHostObject2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICscHostObject2&#xA;Implements ICscHostObject, ITaskHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICscHostObject2 : Microsoft::Build::Framework::ITaskHost, Microsoft::Build::Tasks::Hosting::ICscHostObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("D6D4E228-259A-4076-B5D0-0627338BCC10")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public bool SetWin32Manifest (string win32Manifest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SetWin32Manifest(string win32Manifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Hosting.ICscHostObject2.SetWin32Manifest(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetWin32Manifest (win32Manifest As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetWin32Manifest(System::String ^ win32Manifest);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

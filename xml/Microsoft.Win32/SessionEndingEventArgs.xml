@@ -1,7 +1,9 @@
-<Type Name="SessionEndingEventArgs" FullName="Microsoft.Win32.SessionEndingEventArgs">
+﻿<Type Name="SessionEndingEventArgs" FullName="Microsoft.Win32.SessionEndingEventArgs">
   <TypeSignature Language="C#" Value="public class SessionEndingEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionEndingEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionEndingEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionEndingEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public SessionEndingEventArgs (Microsoft.Win32.SessionEndReasons reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Win32.SessionEndReasons reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SessionEndingEventArgs.#ctor(Microsoft.Win32.SessionEndReasons)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As SessionEndReasons)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionEndingEventArgs(Microsoft::Win32::SessionEndReasons reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -49,6 +53,8 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SessionEndingEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SessionEndReasons Reason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Win32.SessionEndReasons Reason" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SessionEndingEventArgs.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As SessionEndReasons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SessionEndReasons Reason { Microsoft::Win32::SessionEndReasons get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

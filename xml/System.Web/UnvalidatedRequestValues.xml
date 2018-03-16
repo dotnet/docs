@@ -1,7 +1,9 @@
-<Type Name="UnvalidatedRequestValues" FullName="System.Web.UnvalidatedRequestValues">
+﻿<Type Name="UnvalidatedRequestValues" FullName="System.Web.UnvalidatedRequestValues">
   <TypeSignature Language="C#" Value="public sealed class UnvalidatedRequestValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UnvalidatedRequestValues extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UnvalidatedRequestValues" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UnvalidatedRequestValues" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnvalidatedRequestValues sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpCookieCollection Cookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCookieCollection Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cookies As HttpCookieCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieCollection ^ Cookies { System::Web::HttpCookieCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpFileCollection Files { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpFileCollection Files" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As HttpFileCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpFileCollection ^ Files { System::Web::HttpFileCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection Form { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Form" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Form" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Form { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +120,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ Headers { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +149,8 @@
       <MemberSignature Language="C#" Value="public string this[string field] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(field As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ field); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +182,8 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +211,8 @@
       <MemberSignature Language="C#" Value="public string PathInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PathInfo" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.PathInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PathInfo As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathInfo { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,6 +240,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection QueryString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection QueryString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryString As NameValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameValueCollection ^ QueryString { System::Collections::Specialized::NameValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +269,8 @@
       <MemberSignature Language="C#" Value="public string RawUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RawUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.RawUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawUrl As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RawUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +300,8 @@
       <MemberSignature Language="C#" Value="public Uri Url { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Url" />
       <MemberSignature Language="DocId" Value="P:System.Web.UnvalidatedRequestValues.Url" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TableCellsCollectionEditor" FullName="System.Web.UI.Design.WebControls.TableCellsCollectionEditor">
+﻿<Type Name="TableCellsCollectionEditor" FullName="System.Web.UI.Design.WebControls.TableCellsCollectionEditor">
   <TypeSignature Language="C#" Value="public class TableCellsCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableCellsCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.TableCellsCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableCellsCollectionEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableCellsCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,7 @@
       <MemberSignature Language="C#" Value="public TableCellsCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TableCellsCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableCellsCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TableCellsCollectionEditor.CanSelectMultipleInstances" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="protected override object CreateInstance (Type itemType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.TableCellsCollectionEditor.CreateInstance(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstance (itemType As Type) As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(Type ^ itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

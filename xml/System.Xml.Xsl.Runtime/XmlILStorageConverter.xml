@@ -1,7 +1,9 @@
-<Type Name="XmlILStorageConverter" FullName="System.Xml.Xsl.Runtime.XmlILStorageConverter">
+﻿<Type Name="XmlILStorageConverter" FullName="System.Xml.Xsl.Runtime.XmlILStorageConverter">
   <TypeSignature Language="C#" Value="public static class XmlILStorageConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XmlILStorageConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlILStorageConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlILStorageConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlILStorageConverter abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue BooleanToAtomicValue (bool value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue BooleanToAtomicValue(bool value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.BooleanToAtomicValue(System.Boolean,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BooleanToAtomicValue (value As Boolean, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ BooleanToAtomicValue(bool value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -60,6 +64,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue BytesToAtomicValue (byte[] value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue BytesToAtomicValue(unsigned int8[] value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.BytesToAtomicValue(System.Byte[],System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BytesToAtomicValue (value As Byte(), index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ BytesToAtomicValue(cli::array &lt;System::Byte&gt; ^ value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -91,6 +97,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue DateTimeToAtomicValue (DateTime value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue DateTimeToAtomicValue(valuetype System.DateTime value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.DateTimeToAtomicValue(System.DateTime,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateTimeToAtomicValue (value As DateTime, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ DateTimeToAtomicValue(DateTime value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -122,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue DecimalToAtomicValue (decimal value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue DecimalToAtomicValue(valuetype System.Decimal value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.DecimalToAtomicValue(System.Decimal,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecimalToAtomicValue (value As Decimal, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ DecimalToAtomicValue(System::Decimal value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -153,6 +163,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue DoubleToAtomicValue (double value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue DoubleToAtomicValue(float64 value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.DoubleToAtomicValue(System.Double,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DoubleToAtomicValue (value As Double, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ DoubleToAtomicValue(double value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -184,6 +196,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue Int32ToAtomicValue (int value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue Int32ToAtomicValue(int32 value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.Int32ToAtomicValue(System.Int32,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Int32ToAtomicValue (value As Integer, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ Int32ToAtomicValue(int value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -215,6 +229,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue Int64ToAtomicValue (long value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue Int64ToAtomicValue(int64 value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.Int64ToAtomicValue(System.Int64,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Int64ToAtomicValue (value As Long, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ Int64ToAtomicValue(long value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -246,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; ItemsToNavigators (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; listItems);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathNavigator&gt; ItemsToNavigators(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; listItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.ItemsToNavigators(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ItemsToNavigators (listItems As IList(Of XPathItem)) As IList(Of XPathNavigator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ ItemsToNavigators(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ listItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -273,6 +291,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; NavigatorsToItems (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; listNavigators);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; NavigatorsToItems(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathNavigator&gt; listNavigators) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.NavigatorsToItems(System.Collections.Generic.IList{System.Xml.XPath.XPathNavigator})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NavigatorsToItems (listNavigators As IList(Of XPathNavigator)) As IList(Of XPathItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ NavigatorsToItems(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ listNavigators);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -300,6 +320,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue SingleToAtomicValue (float value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue SingleToAtomicValue(float32 value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.SingleToAtomicValue(System.Single,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SingleToAtomicValue (value As Single, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ SingleToAtomicValue(float value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -331,6 +353,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue StringToAtomicValue (string value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue StringToAtomicValue(string value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.StringToAtomicValue(System.String,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StringToAtomicValue (value As String, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ StringToAtomicValue(System::String ^ value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -362,6 +386,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue TimeSpanToAtomicValue (TimeSpan value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue TimeSpanToAtomicValue(valuetype System.TimeSpan value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.TimeSpanToAtomicValue(System.TimeSpan,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TimeSpanToAtomicValue (value As TimeSpan, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ TimeSpanToAtomicValue(TimeSpan value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -393,6 +419,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlAtomicValue XmlQualifiedNameToAtomicValue (System.Xml.XmlQualifiedName value, int index, System.Xml.Xsl.Runtime.XmlQueryRuntime runtime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlAtomicValue XmlQualifiedNameToAtomicValue(class System.Xml.XmlQualifiedName value, int32 index, class System.Xml.Xsl.Runtime.XmlQueryRuntime runtime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILStorageConverter.XmlQualifiedNameToAtomicValue(System.Xml.XmlQualifiedName,System.Int32,System.Xml.Xsl.Runtime.XmlQueryRuntime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function XmlQualifiedNameToAtomicValue (value As XmlQualifiedName, index As Integer, runtime As XmlQueryRuntime) As XmlAtomicValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlAtomicValue ^ XmlQualifiedNameToAtomicValue(System::Xml::XmlQualifiedName ^ value, int index, System::Xml::Xsl::Runtime::XmlQueryRuntime ^ runtime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

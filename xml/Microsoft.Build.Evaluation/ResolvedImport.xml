@@ -1,7 +1,9 @@
-<Type Name="ResolvedImport" FullName="Microsoft.Build.Evaluation.ResolvedImport">
+﻿<Type Name="ResolvedImport" FullName="Microsoft.Build.Evaluation.ResolvedImport">
   <TypeSignature Language="C#" Value="public struct ResolvedImport" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ResolvedImport extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ResolvedImport" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ResolvedImport" />
+  <TypeSignature Language="C++ CLI" Value="public value class ResolvedImport" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectRootElement ImportedProject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ProjectRootElement ImportedProject" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.ImportedProject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportedProject As ProjectRootElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectRootElement ^ ImportedProject { Microsoft::Build::Construction::ProjectRootElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -37,6 +41,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectImportElement ImportingElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ProjectImportElement ImportingElement" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.ImportingElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImportingElement As ProjectImportElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ProjectImportElement ^ ImportingElement { Microsoft::Build::Construction::ProjectImportElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -55,6 +61,8 @@
       <MemberSignature Language="C#" Value="public bool IsImported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ResolvedImport.IsImported" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

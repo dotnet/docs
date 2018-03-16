@@ -1,7 +1,9 @@
-<Type Name="RootDesignerSerializerAttribute" FullName="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute">
+﻿<Type Name="RootDesignerSerializerAttribute" FullName="System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute">
   <TypeSignature Language="C#" Value="public sealed class RootDesignerSerializerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RootDesignerSerializerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RootDesignerSerializerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RootDesignerSerializerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,10 +59,22 @@
     <altmember cref="T:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" /> class using the specified attributes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RootDesignerSerializerAttribute (string serializerTypeName, string baseSerializerTypeName, bool reloadable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serializerTypeName, string baseSerializerTypeName, bool reloadable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serializerTypeName As String, baseSerializerTypeName As String, reloadable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(System::String ^ serializerTypeName, System::String ^ baseSerializerTypeName, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +114,8 @@
       <MemberSignature Language="C#" Value="public RootDesignerSerializerAttribute (string serializerTypeName, Type baseSerializerType, bool reloadable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serializerTypeName, class System.Type baseSerializerType, bool reloadable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.String,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serializerTypeName As String, baseSerializerType As Type, reloadable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(System::String ^ serializerTypeName, Type ^ baseSerializerType, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +155,8 @@
       <MemberSignature Language="C#" Value="public RootDesignerSerializerAttribute (Type serializerType, Type baseSerializerType, bool reloadable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type serializerType, class System.Type baseSerializerType, bool reloadable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.#ctor(System.Type,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serializerType As Type, baseSerializerType As Type, reloadable As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RootDesignerSerializerAttribute(Type ^ serializerType, Type ^ baseSerializerType, bool reloadable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public bool Reloadable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Reloadable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.Reloadable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reloadable As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Reloadable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -215,6 +235,8 @@
       <MemberSignature Language="C#" Value="public string SerializerBaseTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SerializerBaseTypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerBaseTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializerBaseTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializerBaseTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -242,6 +264,8 @@
       <MemberSignature Language="C#" Value="public string SerializerTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SerializerTypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.SerializerTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializerTypeName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SerializerTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -269,6 +293,8 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -299,15 +325,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootDesignerSerializerAttribute" /> class using the specified attributes.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

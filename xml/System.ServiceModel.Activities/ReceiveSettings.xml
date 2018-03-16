@@ -1,7 +1,9 @@
-<Type Name="ReceiveSettings" FullName="System.ServiceModel.Activities.ReceiveSettings">
+﻿<Type Name="ReceiveSettings" FullName="System.ServiceModel.Activities.ReceiveSettings">
   <TypeSignature Language="C#" Value="public sealed class ReceiveSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReceiveSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.ReceiveSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReceiveSettings" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReceiveSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public ReceiveSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.ReceiveSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReceiveSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +58,8 @@
       <MemberSignature Language="C#" Value="public bool CanCreateInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCreateInstance" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.CanCreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanCreateInstance As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanCreateInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="public string OwnerDisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OwnerDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.ReceiveSettings.OwnerDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerDisplayName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OwnerDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

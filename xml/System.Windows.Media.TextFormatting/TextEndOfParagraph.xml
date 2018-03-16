@@ -1,7 +1,9 @@
-<Type Name="TextEndOfParagraph" FullName="System.Windows.Media.TextFormatting.TextEndOfParagraph">
+﻿<Type Name="TextEndOfParagraph" FullName="System.Windows.Media.TextFormatting.TextEndOfParagraph">
   <TypeSignature Language="C#" Value="public class TextEndOfParagraph : System.Windows.Media.TextFormatting.TextEndOfLine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextEndOfParagraph extends System.Windows.Media.TextFormatting.TextEndOfLine" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfParagraph" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextEndOfParagraph&#xA;Inherits TextEndOfLine" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextEndOfParagraph : System::Windows::Media::TextFormatting::TextEndOfLine" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +25,21 @@
     <altmember cref="T:System.Windows.Media.TextFormatting.TextEndOfLine" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEndOfParagraph" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TextEndOfParagraph (int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfParagraph.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfParagraph(int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +58,7 @@
       <MemberSignature Language="C#" Value="public TextEndOfParagraph (int length, System.Windows.Media.TextFormatting.TextRunProperties textRunProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length, class System.Windows.Media.TextFormatting.TextRunProperties textRunProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfParagraph.#ctor(System.Int32,System.Windows.Media.TextFormatting.TextRunProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfParagraph(int length, System::Windows::Media::TextFormatting::TextRunProperties ^ textRunProperties);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,14 +75,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextEndOfParagraph" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,9 @@
-<Type Name="ObjectListFieldCollection" FullName="System.Web.UI.MobileControls.ObjectListFieldCollection">
+﻿<Type Name="ObjectListFieldCollection" FullName="System.Web.UI.MobileControls.ObjectListFieldCollection">
   <TypeSignature Language="C#" Value="public class ObjectListFieldCollection : System.Web.UI.MobileControls.ArrayListCollectionBase, System.Collections.ICollection, System.Web.UI.IStateManager, System.Web.UI.MobileControls.IObjectListFieldCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListFieldCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Web.UI.IStateManager, class System.Web.UI.MobileControls.IObjectListFieldCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListFieldCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectListFieldCollection&#xA;Inherits ArrayListCollectionBase&#xA;Implements ICollection, IObjectListFieldCollection, IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectListFieldCollection : System::Web::UI::MobileControls::ArrayListCollectionBase, System::Collections::ICollection, System::Web::UI::IStateManager, System::Web::UI::MobileControls::IObjectListFieldCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +50,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.MobileControls.ObjectListField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.MobileControls.ObjectListField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Add(System.Web.UI.MobileControls.ObjectListField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (field As ObjectListField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::MobileControls::ObjectListField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -81,6 +85,8 @@
       <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.MobileControls.ObjectListField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.MobileControls.ObjectListField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.AddAt(System.Int32,System.Web.UI.MobileControls.ObjectListField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAt (index As Integer, field As ObjectListField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(int index, System::Web::UI::MobileControls::ObjectListField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -118,6 +124,8 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -148,7 +156,12 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListField[] GetAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.MobileControls.ObjectListField[] GetAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.GetAll" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAll () As ObjectListField()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Web::UI::MobileControls::ObjectListField ^&gt; ^ GetAll();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IObjectListFieldCollection.GetAll</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -164,11 +177,25 @@
         <altmember cref="T:System.Web.UI.MobileControls.ObjectListField" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public int IndexOf (string fieldIDOrName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string fieldIDOrName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (fieldIDOrName As String) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::String ^ fieldIDOrName);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -202,7 +229,12 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.MobileControls.ObjectListField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Web.UI.MobileControls.ObjectListField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (field As ObjectListField) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Web::UI::MobileControls::ObjectListField ^ field);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IObjectListFieldCollection.IndexOf(System.Web.UI.MobileControls.ObjectListField)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -236,6 +268,8 @@
       <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListFieldCollection.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -255,7 +289,12 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListField this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectListField Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListFieldCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ObjectListField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListField ^ default[int] { System::Web::UI::MobileControls::ObjectListField ^ get(int index); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IObjectListFieldCollection.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,6 +317,8 @@
       <MemberSignature Language="C#" Value="protected void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -299,6 +340,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.MobileControls.ObjectListField field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.MobileControls.ObjectListField field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.Remove(System.Web.UI.MobileControls.ObjectListField)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (field As ObjectListField)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::MobileControls::ObjectListField ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -334,6 +377,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -357,6 +402,8 @@
       <MemberSignature Language="C#" Value="protected object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SaveViewState () As Object" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -376,6 +423,8 @@
       <MemberSignature Language="C#" Value="public void SetAll (System.Web.UI.MobileControls.ObjectListField[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAll(class System.Web.UI.MobileControls.ObjectListField[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.SetAll(System.Web.UI.MobileControls.ObjectListField[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAll (value As ObjectListField())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAll(cli::array &lt;System::Web::UI::MobileControls::ObjectListField ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -399,6 +448,8 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListFieldCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -425,6 +476,8 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -454,6 +507,8 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -481,6 +536,8 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -507,6 +564,8 @@
       <MemberSignature Language="C#" Value="protected void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListFieldCollection.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -528,14 +587,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the index of a field. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

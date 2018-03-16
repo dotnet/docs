@@ -1,7 +1,9 @@
-<Type Name="TextEndOfSegment" FullName="System.Windows.Media.TextFormatting.TextEndOfSegment">
+﻿<Type Name="TextEndOfSegment" FullName="System.Windows.Media.TextFormatting.TextEndOfSegment">
   <TypeSignature Language="C#" Value="public class TextEndOfSegment : System.Windows.Media.TextFormatting.TextRun" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextEndOfSegment extends System.Windows.Media.TextFormatting.TextRun" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextEndOfSegment" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextEndOfSegment&#xA;Inherits TextRun" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextEndOfSegment : System::Windows::Media::TextFormatting::TextRun" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public TextEndOfSegment (int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextEndOfSegment.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextEndOfSegment(int length);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.CharacterBufferReference" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property CharacterBufferReference As CharacterBufferReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::CharacterBufferReference CharacterBufferReference { System::Windows::Media::TextFormatting::CharacterBufferReference get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public override sealed int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Length As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextRunProperties Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRunProperties Properties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextEndOfSegment.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Properties As TextRunProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TextFormatting::TextRunProperties ^ Properties { System::Windows::Media::TextFormatting::TextRunProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

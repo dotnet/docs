@@ -1,7 +1,9 @@
-<Type Name="TemplatedEditableDesignerRegion" FullName="System.Web.UI.Design.TemplatedEditableDesignerRegion">
+﻿<Type Name="TemplatedEditableDesignerRegion" FullName="System.Web.UI.Design.TemplatedEditableDesignerRegion">
   <TypeSignature Language="C#" Value="public class TemplatedEditableDesignerRegion : System.Web.UI.Design.EditableDesignerRegion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatedEditableDesignerRegion extends System.Web.UI.Design.EditableDesignerRegion" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplatedEditableDesignerRegion&#xA;Inherits EditableDesignerRegion" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplatedEditableDesignerRegion : System::Web::UI::Design::EditableDesignerRegion" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +22,7 @@
       <MemberSignature Language="C#" Value="public TemplatedEditableDesignerRegion (System.Web.UI.Design.TemplateDefinition templateDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.TemplateDefinition templateDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedEditableDesignerRegion.#ctor(System.Web.UI.Design.TemplateDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplatedEditableDesignerRegion(System::Web::UI::Design::TemplateDefinition ^ templateDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSingleInstanceTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleInstanceTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.IsSingleInstanceTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsSingleInstanceTemplate As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSingleInstanceTemplate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +62,8 @@
       <MemberSignature Language="C#" Value="public override bool SupportsDataBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDataBinding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.SupportsDataBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SupportsDataBinding As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDataBinding { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -77,6 +84,8 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateDefinition TemplateDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateDefinition TemplateDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateDefinition As TemplateDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::TemplateDefinition ^ TemplateDefinition { System::Web::UI::Design::TemplateDefinition ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

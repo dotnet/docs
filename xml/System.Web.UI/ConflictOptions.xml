@@ -1,7 +1,9 @@
-<Type Name="ConflictOptions" FullName="System.Web.UI.ConflictOptions">
+﻿<Type Name="ConflictOptions" FullName="System.Web.UI.ConflictOptions">
   <TypeSignature Language="C#" Value="public enum ConflictOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConflictOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ConflictOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConflictOptions" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConflictOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="CompareAllValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ConflictOptions CompareAllValues = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ConflictOptions.CompareAllValues" />
+      <MemberSignature Language="VB.NET" Value="CompareAllValues" />
+      <MemberSignature Language="C++ CLI" Value="CompareAllValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ConflictOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A data source control uses the <paramref name="oldValues" /> collection of the <see langword="Update" /> and <see langword="Delete" /> methods to determine whether the data has been changed by another process.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="OverwriteChanges" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ConflictOptions OverwriteChanges = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ConflictOptions.OverwriteChanges" />
+      <MemberSignature Language="VB.NET" Value="OverwriteChanges" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ConflictOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A data source control overwrites all values in a data row with its own values for the row.</summary>
       </Docs>

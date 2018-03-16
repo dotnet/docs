@@ -1,7 +1,9 @@
-<Type Name="IndexerReference&lt;TOperand,TItem&gt;" FullName="System.Activities.Expressions.IndexerReference&lt;TOperand,TItem&gt;">
+﻿<Type Name="IndexerReference&lt;TOperand,TItem&gt;" FullName="System.Activities.Expressions.IndexerReference&lt;TOperand,TItem&gt;">
   <TypeSignature Language="C#" Value="public sealed class IndexerReference&lt;TOperand,TItem&gt; : System.Activities.CodeActivity&lt;System.Activities.Location&lt;TItem&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IndexerReference`2&lt;TOperand, TItem&gt; extends System.Activities.CodeActivity`1&lt;class System.Activities.Location`1&lt;!TItem&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.IndexerReference`2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IndexerReference(Of TOperand, TItem)&#xA;Inherits CodeActivity(Of Location(Of TItem))" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TOperand, typename TItem&gt;&#xA;public ref class IndexerReference sealed : System::Activities::CodeActivity&lt;System::Activities::Location&lt;TItem&gt; ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +97,8 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="C#" Value="public IndexerReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.IndexerReference`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IndexerReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -110,6 +114,8 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.IndexerReference`2.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -131,6 +137,8 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="C#" Value="protected override System.Activities.Location&lt;TItem&gt; Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Location`1&lt;!TItem&gt; Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.IndexerReference`2.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As Location(Of TItem)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Activities::Location&lt;TItem&gt; ^ Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -153,6 +161,8 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.InArgument&gt; Indices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.InArgument&gt; Indices" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.IndexerReference`2.Indices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Indices As Collection(Of InArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument ^&gt; ^ Indices { System::Collections::ObjectModel::Collection&lt;System::Activities::InArgument ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -186,6 +196,8 @@ public static void IndexerReferenceSample()
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;TOperand&gt; Operand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!TOperand&gt; Operand" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.IndexerReference`2.Operand" />
+      <MemberSignature Language="VB.NET" Value="Public Property Operand As InArgument(Of TOperand)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;TOperand&gt; ^ Operand { System::Activities::InArgument&lt;TOperand&gt; ^ get(); void set(System::Activities::InArgument&lt;TOperand&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="AnnotationElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection">
+﻿<Type Name="AnnotationElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection">
   <TypeSignature Language="C#" Value="public class AnnotationElementCollection : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;System.ServiceModel.Activities.Tracking.Configuration.AnnotationElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationElementCollection extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1&lt;class System.ServiceModel.Activities.Tracking.Configuration.AnnotationElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnnotationElementCollection&#xA;Inherits TrackingConfigurationCollection(Of AnnotationElement)" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::AnnotationElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public AnnotationElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -42,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.AnnotationElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

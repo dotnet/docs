@@ -1,7 +1,9 @@
-<Type Name="WCFBuildProvider" FullName="System.Web.Compilation.WCFBuildProvider">
+﻿<Type Name="WCFBuildProvider" FullName="System.Web.Compilation.WCFBuildProvider">
   <TypeSignature Language="C#" Value="public class WCFBuildProvider : System.Web.Compilation.BuildProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WCFBuildProvider extends System.Web.Compilation.BuildProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.WCFBuildProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class WCFBuildProvider&#xA;Inherits BuildProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WCFBuildProvider : System::Web::Compilation::BuildProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="public WCFBuildProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WCFBuildProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -49,6 +53,7 @@
       <MemberSignature Language="C#" Value="public override void GenerateCode (System.Web.Compilation.AssemblyBuilder assemblyBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateCode(class System.Web.Compilation.AssemblyBuilder assemblyBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.WCFBuildProvider.GenerateCode(System.Web.Compilation.AssemblyBuilder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateCode(System::Web::Compilation::AssemblyBuilder ^ assemblyBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

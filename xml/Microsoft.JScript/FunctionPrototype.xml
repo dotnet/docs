@@ -1,7 +1,9 @@
-<Type Name="FunctionPrototype" FullName="Microsoft.JScript.FunctionPrototype">
+﻿<Type Name="FunctionPrototype" FullName="Microsoft.JScript.FunctionPrototype">
   <TypeSignature Language="C#" Value="public class FunctionPrototype : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FunctionPrototype extends Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FunctionPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public Class FunctionPrototype&#xA;Inherits ScriptFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FunctionPrototype : Microsoft::JScript::ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public static object apply (object thisob, object thisarg, object argArray);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object apply(object thisob, object thisarg, object argArray) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionPrototype.apply(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function apply (thisob As Object, thisarg As Object, argArray As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ apply(System::Object ^ thisob, System::Object ^ thisarg, System::Object ^ argArray);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static object call (object thisob, object thisarg, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object call(object thisob, object thisarg, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function call (thisob As Object, thisarg As Object, ParamArray args As Object()) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ call(System::Object ^ thisob, System::Object ^ thisarg, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -95,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.FunctionConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.FunctionConstructor constructor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.FunctionPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As FunctionConstructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::FunctionConstructor ^ constructor { Microsoft::JScript::FunctionConstructor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FunctionPrototype.toString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

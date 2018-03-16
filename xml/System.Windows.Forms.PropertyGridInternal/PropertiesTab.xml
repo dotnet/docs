@@ -1,7 +1,9 @@
-<Type Name="PropertiesTab" FullName="System.Windows.Forms.PropertyGridInternal.PropertiesTab">
+﻿<Type Name="PropertiesTab" FullName="System.Windows.Forms.PropertyGridInternal.PropertiesTab">
   <TypeSignature Language="C#" Value="public class PropertiesTab : System.Windows.Forms.Design.PropertyTab" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertiesTab extends System.Windows.Forms.Design.PropertyTab" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGridInternal.PropertiesTab" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertiesTab&#xA;Inherits PropertyTab" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertiesTab : System::Windows::Forms::Design::PropertyTab" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public PropertiesTab ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertiesTab();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptor GetDefaultProperty (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetDefaultProperty(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultProperty (obj As Object) As PropertyDescriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,10 +59,21 @@
         <altmember cref="M:System.Windows.Forms.Design.PropertyTab.GetDefaultProperty(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the properties of the specified component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetProperties(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +99,8 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyGridInternal.PropertiesTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +128,8 @@
       <MemberSignature Language="C#" Value="public override string HelpKeyword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGridInternal.PropertiesTab.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HelpKeyword As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpKeyword { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +148,8 @@
       <MemberSignature Language="C#" Value="public override string TabName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TabName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyGridInternal.PropertiesTab.TabName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TabName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ TabName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,14 +164,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the properties of the specified component.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

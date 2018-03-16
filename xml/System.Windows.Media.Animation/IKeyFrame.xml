@@ -1,7 +1,9 @@
-<Type Name="IKeyFrame" FullName="System.Windows.Media.Animation.IKeyFrame">
+﻿<Type Name="IKeyFrame" FullName="System.Windows.Media.Animation.IKeyFrame">
   <TypeSignature Language="C#" Value="public interface IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.IKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.KeyTime KeyTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.KeyTime KeyTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.IKeyFrame.KeyTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +45,8 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.IKeyFrame.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

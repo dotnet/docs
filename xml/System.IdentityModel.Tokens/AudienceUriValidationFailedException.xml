@@ -1,7 +1,9 @@
-<Type Name="AudienceUriValidationFailedException" FullName="System.IdentityModel.Tokens.AudienceUriValidationFailedException">
+﻿<Type Name="AudienceUriValidationFailedException" FullName="System.IdentityModel.Tokens.AudienceUriValidationFailedException">
   <TypeSignature Language="C#" Value="public class AudienceUriValidationFailedException : System.IdentityModel.Tokens.SecurityTokenValidationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AudienceUriValidationFailedException extends System.IdentityModel.Tokens.SecurityTokenValidationException" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class AudienceUriValidationFailedException&#xA;Inherits SecurityTokenValidationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AudienceUriValidationFailedException : System::IdentityModel::Tokens::SecurityTokenValidationException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +18,21 @@
     <altmember cref="M:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AudienceUriValidationFailedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceUriValidationFailedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -35,6 +48,8 @@
       <MemberSignature Language="C#" Value="public AudienceUriValidationFailedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceUriValidationFailedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -53,6 +68,8 @@
       <MemberSignature Language="C#" Value="protected AudienceUriValidationFailedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AudienceUriValidationFailedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -73,6 +90,8 @@
       <MemberSignature Language="C#" Value="public AudienceUriValidationFailedException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AudienceUriValidationFailedException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -89,14 +108,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AudienceUriValidationFailedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

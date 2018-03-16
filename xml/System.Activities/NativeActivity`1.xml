@@ -1,7 +1,9 @@
-<Type Name="NativeActivity&lt;TResult&gt;" FullName="System.Activities.NativeActivity&lt;TResult&gt;">
+﻿<Type Name="NativeActivity&lt;TResult&gt;" FullName="System.Activities.NativeActivity&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public abstract class NativeActivity&lt;TResult&gt; : System.Activities.Activity&lt;TResult&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NativeActivity`1&lt;TResult&gt; extends System.Activities.Activity`1&lt;!TResult&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivity`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class NativeActivity(Of TResult)&#xA;Inherits Activity(Of TResult)" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class NativeActivity abstract : System::Activities::Activity&lt;TResult&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected NativeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Abort (System.Activities.NativeActivityAbortContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Abort(class System.Activities.NativeActivityAbortContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Abort(System.Activities.NativeActivityAbortContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Abort (context As NativeActivityAbortContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Abort(System::Activities::NativeActivityAbortContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void CacheMetadata (System.Activities.ActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.ActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.ActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub CacheMetadata (metadata As ActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::ActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -152,6 +162,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Cancel (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Cancel(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Cancel(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Cancel (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Cancel(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +194,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanInduceIdle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.CanInduceIdle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CanInduceIdle As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -210,6 +224,8 @@
       <MemberSignature Language="C#" Value="protected abstract void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -240,6 +256,8 @@
       <MemberSignature Language="C#" Value="protected override sealed Func&lt;System.Activities.Activity&gt; Implementation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`1&lt;class System.Activities.Activity&gt; Implementation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.Implementation" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Property Implementation As Func(Of Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Func&lt;System::Activities::Activity ^&gt; ^ Implementation { Func&lt;System::Activities::Activity ^&gt; ^ get(); void set(Func&lt;System::Activities::Activity ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -260,9 +278,11 @@
       </Docs>
     </Member>
     <Member MemberName="ImplementationVersion">
-      <MemberSignature Language="C#" Value="protected override sealed Version ImplementationVersion { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal override sealed Version ImplementationVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ImplementationVersion" />
       <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivity`1.ImplementationVersion" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Property ImplementationVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property Version ^ ImplementationVersion { Version ^ get(); void set(Version ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -277,10 +297,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnCreateDynamicUpdateMap">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Raises an event when creating a map for the dynamic update.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnCreateDynamicUpdateMap">
       <MemberSignature Language="C#" Value="protected virtual void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -304,6 +335,8 @@
       <MemberSignature Language="C#" Value="protected override sealed void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.UpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.UpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.UpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub OnCreateDynamicUpdateMap (metadata As UpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::UpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -327,6 +360,8 @@
       <MemberSignature Language="C#" Value="protected virtual void UpdateInstance (System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateInstance(class System.Activities.DynamicUpdate.NativeActivityUpdateContext updateContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivity`1.UpdateInstance(System.Activities.DynamicUpdate.NativeActivityUpdateContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UpdateInstance (updateContext As NativeActivityUpdateContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateInstance(System::Activities::DynamicUpdate::NativeActivityUpdateContext ^ updateContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -344,14 +379,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OnCreateDynamicUpdateMap">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Raises an event when creating a map for the dynamic update.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

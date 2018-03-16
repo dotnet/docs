@@ -1,7 +1,9 @@
-<Type Name="ProcessorArchitecture" FullName="Microsoft.Build.Utilities.ProcessorArchitecture">
+﻿<Type Name="ProcessorArchitecture" FullName="Microsoft.Build.Utilities.ProcessorArchitecture">
   <TypeSignature Language="C#" Value="public static class ProcessorArchitecture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProcessorArchitecture extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.ProcessorArchitecture" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProcessorArchitecture" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessorArchitecture abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +30,8 @@
       <MemberSignature Language="C#" Value="public const string AMD64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AMD64" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.AMD64" />
+      <MemberSignature Language="VB.NET" Value="Public Const AMD64 As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AMD64;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public const string ARM;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ARM" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.ARM" />
+      <MemberSignature Language="VB.NET" Value="Public Const ARM As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ARM;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static string CurrentProcessArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string CurrentProcessArchitecture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.ProcessorArchitecture.CurrentProcessArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentProcessArchitecture As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CurrentProcessArchitecture { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -80,6 +88,8 @@
       <MemberSignature Language="C#" Value="public const string IA64;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string IA64" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.IA64" />
+      <MemberSignature Language="VB.NET" Value="Public Const IA64 As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ IA64;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -97,6 +107,8 @@
       <MemberSignature Language="C#" Value="public const string MSIL;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string MSIL" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.MSIL" />
+      <MemberSignature Language="VB.NET" Value="Public Const MSIL As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ MSIL;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -114,6 +126,8 @@
       <MemberSignature Language="C#" Value="public const string X86;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string X86" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.ProcessorArchitecture.X86" />
+      <MemberSignature Language="VB.NET" Value="Public Const X86 As String " />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ X86;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ToolboxControl" FullName="System.Activities.Presentation.Toolbox.ToolboxControl">
+﻿<Type Name="ToolboxControl" FullName="System.Activities.Presentation.Toolbox.ToolboxControl">
   <TypeSignature Language="C#" Value="public sealed class ToolboxControl : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolboxControl extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolboxControl" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolboxControl&#xA;Inherits Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolboxControl sealed : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,8 @@
       <MemberSignature Language="C#" Value="public ToolboxControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.WorkflowDesigner AssociatedDesigner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.WorkflowDesigner AssociatedDesigner" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.AssociatedDesigner" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssociatedDesigner As WorkflowDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::WorkflowDesigner ^ AssociatedDesigner { System::Activities::Presentation::WorkflowDesigner ^ get(); void set(System::Activities::Presentation::WorkflowDesigner ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -73,6 +79,8 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Toolbox.ToolboxCategoryItems Categories { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Toolbox.ToolboxCategoryItems Categories" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.Categories" />
+      <MemberSignature Language="VB.NET" Value="Public Property Categories As ToolboxCategoryItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Toolbox::ToolboxCategoryItems ^ Categories { System::Activities::Presentation::Toolbox::ToolboxCategoryItems ^ get(); void set(System::Activities::Presentation::Toolbox::ToolboxCategoryItems ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,7 +88,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style CategoryItemStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CategoryItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryItemStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ CategoryItemStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -121,6 +131,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CategoryItemStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CategoryItemStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryItemStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CategoryItemStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CategoryItemStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -138,6 +150,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate CategoryTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate CategoryTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryTemplate As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ CategoryTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -156,6 +170,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CategoryTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CategoryTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.CategoryTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CategoryTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CategoryTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -173,6 +189,8 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxControl.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -198,6 +216,8 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxControl.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -219,6 +239,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem SelectedTool { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Design.ToolboxItem SelectedTool" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.SelectedTool" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedTool As ToolboxItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Design::ToolboxItem ^ SelectedTool { System::Drawing::Design::ToolboxItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -237,6 +259,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedToolProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedToolProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.SelectedToolProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedToolProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectedToolProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -254,6 +278,8 @@
       <MemberSignature Language="C#" Value="public string ToolboxFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolboxFile" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolboxFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolboxFile As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolboxFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -272,6 +298,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolboxFileProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolboxFileProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.ToolboxFileProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolboxFileProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolboxFileProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -289,6 +317,8 @@
       <MemberSignature Language="C#" Value="public event System.Activities.Presentation.Toolbox.ToolCreatedEventHandler ToolCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Activities.Presentation.Toolbox.ToolCreatedEventHandler ToolCreated" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Toolbox.ToolboxControl.ToolCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ToolCreated As ToolCreatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Activities::Presentation::Toolbox::ToolCreatedEventHandler ^ ToolCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -306,6 +336,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ToolCreatedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ToolCreatedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.ToolCreatedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolCreatedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolCreatedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -323,6 +355,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style ToolItemStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ToolItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolItemStyle As Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ ToolItemStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -341,6 +375,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolItemStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolItemStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.ToolItemStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolItemStyleProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolItemStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -358,6 +394,8 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler ToolSelected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler ToolSelected" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Toolbox.ToolboxControl.ToolSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ToolSelected As RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ ToolSelected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -375,6 +413,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ToolSelectedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ToolSelectedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.ToolSelectedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolSelectedEvent As RoutedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ToolSelectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -392,6 +432,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate ToolTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate ToolTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxControl.ToolTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTemplate As DataTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ToolTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -410,6 +452,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Toolbox.ToolboxControl.ToolTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

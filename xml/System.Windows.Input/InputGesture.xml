@@ -1,7 +1,9 @@
-<Type Name="InputGesture" FullName="System.Windows.Input.InputGesture">
+﻿<Type Name="InputGesture" FullName="System.Windows.Input.InputGesture">
   <TypeSignature Language="C#" Value="public abstract class InputGesture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InputGesture extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputGesture" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InputGesture" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputGesture abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected InputGesture ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGesture.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InputGesture();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +49,7 @@
       <MemberSignature Language="C#" Value="public abstract bool Matches (object targetElement, System.Windows.Input.InputEventArgs inputEventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Matches(object targetElement, class System.Windows.Input.InputEventArgs inputEventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Matches(System::Object ^ targetElement, System::Windows::Input::InputEventArgs ^ inputEventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

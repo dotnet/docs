@@ -1,7 +1,9 @@
-<Type Name="DsmlInvalidDocumentException" FullName="System.DirectoryServices.Protocols.DsmlInvalidDocumentException">
+﻿<Type Name="DsmlInvalidDocumentException" FullName="System.DirectoryServices.Protocols.DsmlInvalidDocumentException">
   <TypeSignature Language="C#" Value="public class DsmlInvalidDocumentException : System.DirectoryServices.Protocols.DirectoryException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DsmlInvalidDocumentException extends System.DirectoryServices.Protocols.DirectoryException" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DsmlInvalidDocumentException&#xA;Inherits DirectoryException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DsmlInvalidDocumentException : System::DirectoryServices::Protocols::DirectoryException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +17,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlInvalidDocumentException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -41,6 +54,8 @@
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlInvalidDocumentException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -59,6 +74,8 @@
       <MemberSignature Language="C#" Value="protected DsmlInvalidDocumentException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DsmlInvalidDocumentException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +96,8 @@
       <MemberSignature Language="C#" Value="public DsmlInvalidDocumentException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DsmlInvalidDocumentException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -95,14 +114,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlInvalidDocumentException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

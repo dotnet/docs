@@ -1,7 +1,9 @@
-<Type Name="GetValueOverride" FullName="System.Workflow.ComponentModel.GetValueOverride">
+﻿<Type Name="GetValueOverride" FullName="System.Workflow.ComponentModel.GetValueOverride">
   <TypeSignature Language="C#" Value="public delegate object GetValueOverride(DependencyObject d);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetValueOverride extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.GetValueOverride" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function GetValueOverride(d As DependencyObject) As Object " />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ GetValueOverride(DependencyObject ^ d);" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

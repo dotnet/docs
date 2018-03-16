@@ -1,7 +1,9 @@
-<Type Name="TableLayoutSettings" FullName="System.Windows.Forms.TableLayoutSettings">
+﻿<Type Name="TableLayoutSettings" FullName="System.Windows.Forms.TableLayoutSettings">
   <TypeSignature Language="C#" Value="public sealed class TableLayoutSettings : System.Windows.Forms.LayoutSettings, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TableLayoutSettings extends System.Windows.Forms.LayoutSettings implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TableLayoutSettings&#xA;Inherits LayoutSettings&#xA;Implements ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableLayoutSettings sealed : System::Windows::Forms::LayoutSettings, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public int ColumnCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.ColumnCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +102,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TableLayoutColumnStyleCollection ColumnStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TableLayoutColumnStyleCollection ColumnStyles" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.ColumnStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnStyles As TableLayoutColumnStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutColumnStyleCollection ^ ColumnStyles { System::Windows::Forms::TableLayoutColumnStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,7 +111,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,6 +137,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TableLayoutPanelCellPosition GetCellPosition (object control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.TableLayoutPanelCellPosition GetCellPosition(object control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.GetCellPosition(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCellPosition (control As Object) As TableLayoutPanelCellPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::TableLayoutPanelCellPosition GetCellPosition(System::Object ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -171,6 +179,8 @@
       <MemberSignature Language="C#" Value="public int GetColumn (object control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumn(object control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.GetColumn(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumn (control As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumn(System::Object ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +211,8 @@
       <MemberSignature Language="C#" Value="public int GetColumnSpan (object control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumnSpan(object control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.GetColumnSpan(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnSpan (control As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetColumnSpan(System::Object ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +236,8 @@
       <MemberSignature Language="C#" Value="public int GetRow (object control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetRow(object control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.GetRow(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRow (control As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRow(System::Object ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +268,8 @@
       <MemberSignature Language="C#" Value="public int GetRowSpan (object control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetRowSpan(object control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.GetRowSpan(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowSpan (control As Object) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetRowSpan(System::Object ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -277,6 +293,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TableLayoutPanelGrowStyle GrowStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.TableLayoutPanelGrowStyle GrowStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.GrowStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property GrowStyle As TableLayoutPanelGrowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutPanelGrowStyle GrowStyle { System::Windows::Forms::TableLayoutPanelGrowStyle get(); void set(System::Windows::Forms::TableLayoutPanelGrowStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +328,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Layout.LayoutEngine LayoutEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Layout.LayoutEngine LayoutEngine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.LayoutEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -341,6 +361,8 @@
       <MemberSignature Language="C#" Value="public int RowCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.RowCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +406,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TableLayoutRowStyleCollection RowStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TableLayoutRowStyleCollection RowStyles" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TableLayoutSettings.RowStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowStyles As TableLayoutRowStyleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TableLayoutRowStyleCollection ^ RowStyles { System::Windows::Forms::TableLayoutRowStyleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,7 +415,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -417,6 +441,8 @@
       <MemberSignature Language="C#" Value="public void SetCellPosition (object control, System.Windows.Forms.TableLayoutPanelCellPosition cellPosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCellPosition(object control, valuetype System.Windows.Forms.TableLayoutPanelCellPosition cellPosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.SetCellPosition(System.Object,System.Windows.Forms.TableLayoutPanelCellPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCellPosition (control As Object, cellPosition As TableLayoutPanelCellPosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCellPosition(System::Object ^ control, System::Windows::Forms::TableLayoutPanelCellPosition cellPosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +484,8 @@
       <MemberSignature Language="C#" Value="public void SetColumn (object control, int column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumn(object control, int32 column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.SetColumn(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumn (control As Object, column As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumn(System::Object ^ control, int column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +514,8 @@
       <MemberSignature Language="C#" Value="public void SetColumnSpan (object control, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnSpan(object control, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.SetColumnSpan(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnSpan (control As Object, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnSpan(System::Object ^ control, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +544,8 @@
       <MemberSignature Language="C#" Value="public void SetRow (object control, int row);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRow(object control, int32 row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.SetRow(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRow (control As Object, row As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRow(System::Object ^ control, int row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -542,6 +574,8 @@
       <MemberSignature Language="C#" Value="public void SetRowSpan (object control, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRowSpan(object control, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.SetRowSpan(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRowSpan (control As Object, value As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRowSpan(System::Object ^ control, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -570,7 +604,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TableLayoutSettings.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,9 @@
-<Type Name="SoapMessage" FullName="System.Runtime.Serialization.Formatters.SoapMessage">
+﻿<Type Name="SoapMessage" FullName="System.Runtime.Serialization.Formatters.SoapMessage">
   <TypeSignature Language="C#" Value="public class SoapMessage : System.Runtime.Serialization.Formatters.ISoapMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SoapMessage extends System.Object implements class System.Runtime.Serialization.Formatters.ISoapMessage" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.SoapMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapMessage&#xA;Implements ISoapMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapMessage : System::Runtime::Serialization::Formatters::ISoapMessage" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SoapMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Formatters.SoapMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapMessage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -52,7 +56,12 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.Header[] Headers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.Header[] Headers" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Headers As Header()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ Headers { cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ get(); void set(cli::array &lt;System::Runtime::Remoting::Messaging::Header ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.Headers</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -72,7 +81,12 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.MethodName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -91,7 +105,12 @@
       <MemberSignature Language="C#" Value="public string[] ParamNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ParamNames" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamNames As String()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ParamNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -110,7 +129,12 @@
       <MemberSignature Language="C#" Value="public Type[] ParamTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] ParamTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamTypes As Type()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ParamTypes { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -129,7 +153,12 @@
       <MemberSignature Language="C#" Value="public object[] ParamValues { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] ParamValues" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.ParamValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParamValues As Object()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ParamValues { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -148,7 +177,12 @@
       <MemberSignature Language="C#" Value="public string XmlNameSpace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlNameSpace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.SoapMessage.XmlNameSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlNameSpace As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlNameSpace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

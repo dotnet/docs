@@ -1,7 +1,9 @@
-<Type Name="FileExtensionsAttribute" FullName="System.ComponentModel.DataAnnotations.FileExtensionsAttribute">
+﻿<Type Name="FileExtensionsAttribute" FullName="System.ComponentModel.DataAnnotations.FileExtensionsAttribute">
   <TypeSignature Language="C#" Value="public sealed class FileExtensionsAttribute : System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileExtensionsAttribute extends System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.FileExtensionsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileExtensionsAttribute&#xA;Inherits DataTypeAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileExtensionsAttribute sealed : System::ComponentModel::DataAnnotations::DataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +20,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public FileExtensionsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FileExtensionsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileExtensionsAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public string Extensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Extensions" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.FileExtensionsAttribute.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extensions As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extensions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public override string FormatErrorMessage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatErrorMessage(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FileExtensionsAttribute.FormatErrorMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -103,6 +111,8 @@
       <MemberSignature Language="C#" Value="public override bool IsValid (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValid(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.FileExtensionsAttribute.IsValid(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

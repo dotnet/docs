@@ -1,7 +1,9 @@
-<Type Name="RegistrationConnectionType" FullName="System.Runtime.InteropServices.RegistrationConnectionType">
+﻿<Type Name="RegistrationConnectionType" FullName="System.Runtime.InteropServices.RegistrationConnectionType">
   <TypeSignature Language="C#" Value="public enum RegistrationConnectionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationConnectionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RegistrationConnectionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegistrationConnectionType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegistrationConnectionType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +36,8 @@
       <MemberSignature Language="C#" Value="MultipleUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultipleUse = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse" />
+      <MemberSignature Language="VB.NET" Value="MultipleUse" />
+      <MemberSignature Language="C++ CLI" Value="MultipleUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Multiple applications can connect to the class object through calls to <see langword="CoGetClassObject" />.</summary>
       </Docs>
@@ -51,6 +56,8 @@
       <MemberSignature Language="C#" Value="MultiSeparate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultiSeparate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate" />
+      <MemberSignature Language="VB.NET" Value="MultiSeparate" />
+      <MemberSignature Language="C++ CLI" Value="MultiSeparate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Registers separate CLSCTX_LOCAL_SERVER and CLSCTX_INPROC_SERVER class factories.</summary>
       </Docs>
@@ -68,6 +76,8 @@
       <MemberSignature Language="C#" Value="SingleUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType SingleUse = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.SingleUse" />
+      <MemberSignature Language="VB.NET" Value="SingleUse" />
+      <MemberSignature Language="C++ CLI" Value="SingleUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Once an application is connected to a class object with <see langword="CoGetClassObject" />, the class object is removed from public view so that no other applications can connect to it. This value is commonly used for single document interface (SDI) applications.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Surrogate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Surrogate = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Surrogate" />
+      <MemberSignature Language="VB.NET" Value="Surrogate" />
+      <MemberSignature Language="C++ CLI" Value="Surrogate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The class object is a surrogate process used to run DLL servers.</summary>
       </Docs>
@@ -102,6 +116,8 @@
       <MemberSignature Language="C#" Value="Suspended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Suspended = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Suspended" />
+      <MemberSignature Language="VB.NET" Value="Suspended" />
+      <MemberSignature Language="C++ CLI" Value="Suspended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Suspends registration and activation requests for the specified CLSID until there is a call to <see langword="CoResumeClassObjects" />.</summary>
       </Docs>

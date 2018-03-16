@@ -1,7 +1,9 @@
-<Type Name="INameCreationService" FullName="System.ComponentModel.Design.Serialization.INameCreationService">
+﻿<Type Name="INameCreationService" FullName="System.ComponentModel.Design.Serialization.INameCreationService">
   <TypeSignature Language="C#" Value="public interface INameCreationService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameCreationService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.INameCreationService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INameCreationService" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INameCreationService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +43,8 @@
       <MemberSignature Language="C#" Value="public string CreateName (System.ComponentModel.IContainer container, Type dataType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateName(class System.ComponentModel.IContainer container, class System.Type dataType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateName (container As IContainer, dataType As Type) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateName(System::ComponentModel::IContainer ^ container, Type ^ dataType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +97,8 @@
       <MemberSignature Language="C#" Value="public bool IsValidName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidName (name As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +147,8 @@
       <MemberSignature Language="C#" Value="public void ValidateName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateName (name As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

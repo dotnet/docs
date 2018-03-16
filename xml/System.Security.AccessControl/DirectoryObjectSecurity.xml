@@ -1,7 +1,9 @@
-<Type Name="DirectoryObjectSecurity" FullName="System.Security.AccessControl.DirectoryObjectSecurity">
+﻿<Type Name="DirectoryObjectSecurity" FullName="System.Security.AccessControl.DirectoryObjectSecurity">
   <TypeSignature Language="C#" Value="public abstract class DirectoryObjectSecurity : System.Security.AccessControl.ObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DirectoryObjectSecurity extends System.Security.AccessControl.ObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DirectoryObjectSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DirectoryObjectSecurity&#xA;Inherits ObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryObjectSecurity abstract : System::Security::AccessControl::ObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DirectoryObjectSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryObjectSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -46,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected DirectoryObjectSecurity (System.Security.AccessControl.CommonSecurityDescriptor securityDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.AccessControl.CommonSecurityDescriptor securityDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.#ctor(System.Security.AccessControl.CommonSecurityDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (securityDescriptor As CommonSecurityDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryObjectSecurity(System::Security::AccessControl::CommonSecurityDescriptor ^ securityDescriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -70,6 +86,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="protected void AddAccessRule (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddAccessRule(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AddAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddAccessRule (rule As ObjectAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -146,6 +165,8 @@
       <MemberSignature Language="C#" Value="protected void AddAuditRule (System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddAuditRule(class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AddAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddAuditRule (rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -180,6 +201,7 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -223,6 +245,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.AuthorizationRuleCollection GetAccessRules (bool includeExplicit, bool includeInherited, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.AuthorizationRuleCollection GetAccessRules(bool includeExplicit, bool includeInherited, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAccessRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -257,6 +281,8 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.AuthorizationRuleCollection GetAuditRules (bool includeExplicit, bool includeInherited, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.AuthorizationRuleCollection GetAuditRules(bool includeExplicit, bool includeInherited, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.GetAuditRules(System.Boolean,System.Boolean,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAuditRules (includeExplicit As Boolean, includeInherited As Boolean, targetType As Type) As AuthorizationRuleCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::AuthorizationRuleCollection ^ GetAuditRules(bool includeExplicit, bool includeInherited, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -291,6 +317,8 @@
       <MemberSignature Language="C#" Value="protected override bool ModifyAccess (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AccessRule rule, out bool modified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAccess(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AccessRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAccess (modification As AccessControlModification, rule As AccessRule, ByRef modified As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAccess(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AccessRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -325,6 +353,8 @@
       <MemberSignature Language="C#" Value="protected override bool ModifyAudit (System.Security.AccessControl.AccessControlModification modification, System.Security.AccessControl.AuditRule rule, out bool modified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ModifyAudit(valuetype System.Security.AccessControl.AccessControlModification modification, class System.Security.AccessControl.AuditRule rule, [out] bool&amp; modified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ModifyAudit (modification As AccessControlModification, rule As AuditRule, ByRef modified As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ModifyAudit(System::Security::AccessControl::AccessControlModification modification, System::Security::AccessControl::AuditRule ^ rule, [Runtime::InteropServices::Out] bool % modified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -359,6 +389,8 @@
       <MemberSignature Language="C#" Value="protected bool RemoveAccessRule (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function RemoveAccessRule (rule As ObjectAccessRule) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -397,6 +429,8 @@
       <MemberSignature Language="C#" Value="protected void RemoveAccessRuleAll (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRuleAll(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleAll (rule As ObjectAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -424,6 +458,8 @@
       <MemberSignature Language="C#" Value="protected void RemoveAccessRuleSpecific (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAccessRuleSpecific (rule As ObjectAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -451,6 +487,8 @@
       <MemberSignature Language="C#" Value="protected bool RemoveAuditRule (System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function RemoveAuditRule (rule As ObjectAuditRule) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool RemoveAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -489,6 +527,8 @@
       <MemberSignature Language="C#" Value="protected void RemoveAuditRuleAll (System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRuleAll(System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleAll (rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -516,6 +556,8 @@
       <MemberSignature Language="C#" Value="protected void RemoveAuditRuleSpecific (System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveAuditRuleSpecific (rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -543,6 +585,8 @@
       <MemberSignature Language="C#" Value="protected void ResetAccessRule (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResetAccessRule(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.ResetAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ResetAccessRule (rule As ObjectAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResetAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -570,6 +614,8 @@
       <MemberSignature Language="C#" Value="protected void SetAccessRule (System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetAccessRule(class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.SetAccessRule(System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetAccessRule (rule As ObjectAccessRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAccessRule(System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -597,6 +643,8 @@
       <MemberSignature Language="C#" Value="protected void SetAuditRule (System.Security.AccessControl.ObjectAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetAuditRule(class System.Security.AccessControl.ObjectAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DirectoryObjectSecurity.SetAuditRule(System.Security.AccessControl.ObjectAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetAuditRule (rule As ObjectAuditRule)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetAuditRule(System::Security::AccessControl::ObjectAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -620,15 +668,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DirectoryObjectSecurity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

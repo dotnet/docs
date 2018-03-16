@@ -1,7 +1,9 @@
-<Type Name="ScopeElement" FullName="System.ServiceModel.Discovery.Configuration.ScopeElement">
+﻿<Type Name="ScopeElement" FullName="System.ServiceModel.Discovery.Configuration.ScopeElement">
   <TypeSignature Language="C#" Value="public sealed class ScopeElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScopeElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.ScopeElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScopeElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScopeElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ScopeElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.ScopeElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScopeElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ScopeElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -75,6 +81,8 @@
       <MemberSignature Language="C#" Value="public Uri Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Scope" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.ScopeElement.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Scope { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -85,7 +93,7 @@
           <AttributeName>System.Configuration.CallbackValidator(CallbackMethodName="ScopeValidatorCallback", Type=typeof(System.ServiceModel.Discovery.Configuration.ScopeElement))</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("scope", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("scope", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

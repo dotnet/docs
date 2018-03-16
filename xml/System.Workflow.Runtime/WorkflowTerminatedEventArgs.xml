@@ -1,7 +1,9 @@
-<Type Name="WorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.WorkflowTerminatedEventArgs">
+﻿<Type Name="WorkflowTerminatedEventArgs" FullName="System.Workflow.Runtime.WorkflowTerminatedEventArgs">
   <TypeSignature Language="C#" Value="public class WorkflowTerminatedEventArgs : System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowTerminatedEventArgs extends System.Workflow.Runtime.WorkflowEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowTerminatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowTerminatedEventArgs&#xA;Inherits WorkflowEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTerminatedEventArgs : System::Workflow::Runtime::WorkflowEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +47,8 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowTerminatedEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TransportHeaders" FullName="System.Runtime.Remoting.Channels.TransportHeaders">
+﻿<Type Name="TransportHeaders" FullName="System.Runtime.Remoting.Channels.TransportHeaders">
   <TypeSignature Language="C#" Value="public class TransportHeaders : System.Runtime.Remoting.Channels.ITransportHeaders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TransportHeaders extends System.Object implements class System.Runtime.Remoting.Channels.ITransportHeaders" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.TransportHeaders" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransportHeaders&#xA;Implements ITransportHeaders" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransportHeaders : System::Runtime::Remoting::Channels::ITransportHeaders" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +41,8 @@
       <MemberSignature Language="C#" Value="public TransportHeaders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.TransportHeaders.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportHeaders();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,7 +60,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.TransportHeaders.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.ITransportHeaders.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -77,7 +86,12 @@
       <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.TransportHeaders.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Remoting.Channels.ITransportHeaders.Item(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

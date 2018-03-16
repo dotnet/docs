@@ -1,7 +1,9 @@
-<Type Name="SerialData" FullName="System.IO.Ports.SerialData">
+﻿<Type Name="SerialData" FullName="System.IO.Ports.SerialData">
   <TypeSignature Language="C#" Value="public enum SerialData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerialData extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialData" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerialData" />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerialData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="Chars" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialData Chars = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Chars" />
+      <MemberSignature Language="VB.NET" Value="Chars" />
+      <MemberSignature Language="C++ CLI" Value="Chars" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialData</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A character was received and placed in the input buffer.</summary>
       </Docs>
@@ -49,6 +54,8 @@
       <MemberSignature Language="C#" Value="Eof" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialData Eof = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Eof" />
+      <MemberSignature Language="VB.NET" Value="Eof" />
+      <MemberSignature Language="C++ CLI" Value="Eof" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialData</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The end of file character was received and placed in the input buffer.</summary>
       </Docs>

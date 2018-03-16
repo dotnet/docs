@@ -1,7 +1,9 @@
-<Type Name="DataObjectMethodType" FullName="System.ComponentModel.DataObjectMethodType">
+﻿<Type Name="DataObjectMethodType" FullName="System.ComponentModel.DataObjectMethodType">
   <TypeSignature Language="C#" Value="public enum DataObjectMethodType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectMethodType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataObjectMethodType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataObjectMethodType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataObjectMethodType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +40,8 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataObjectMethodType Delete = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -55,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that a method is used for a data operation that deletes data.</summary>
       </Docs>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="Fill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataObjectMethodType Fill = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Fill" />
+      <MemberSignature Language="VB.NET" Value="Fill" />
+      <MemberSignature Language="C++ CLI" Value="Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that a method is used for a data operation that fills a <see cref="T:System.Data.DataSet" /> object.</summary>
       </Docs>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataObjectMethodType Insert = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that a method is used for a data operation that inserts data.</summary>
       </Docs>
@@ -113,6 +124,8 @@
       <MemberSignature Language="C#" Value="Select" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataObjectMethodType Select = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Select" />
+      <MemberSignature Language="VB.NET" Value="Select" />
+      <MemberSignature Language="C++ CLI" Value="Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -130,6 +143,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a method is used for a data operation that retrieves data.</summary>
       </Docs>
@@ -138,6 +152,8 @@
       <MemberSignature Language="C#" Value="Update" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DataObjectMethodType Update = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DataObjectMethodType.Update" />
+      <MemberSignature Language="VB.NET" Value="Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DataObjectMethodType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that a method is used for a data operation that updates data.</summary>
       </Docs>

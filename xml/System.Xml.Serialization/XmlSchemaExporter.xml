@@ -1,7 +1,9 @@
-<Type Name="XmlSchemaExporter" FullName="System.Xml.Serialization.XmlSchemaExporter">
+﻿<Type Name="XmlSchemaExporter" FullName="System.Xml.Serialization.XmlSchemaExporter">
   <TypeSignature Language="C#" Value="public class XmlSchemaExporter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaExporter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSchemaExporter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaExporter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaExporter" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +49,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaExporter (System.Xml.Serialization.XmlSchemas schemas);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSchemas schemas) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.#ctor(System.Xml.Serialization.XmlSchemas)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schemas As XmlSchemas)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaExporter(System::Xml::Serialization::XmlSchemas ^ schemas);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -78,10 +82,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportAnyType">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration for an object or type to a SOAP message or to an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExportAnyType">
       <MemberSignature Language="C#" Value="public string ExportAnyType (string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExportAnyType(string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportAnyType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportAnyType (ns As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ExportAnyType(System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -125,6 +141,8 @@
       <MemberSignature Language="C#" Value="public string ExportAnyType (System.Xml.Serialization.XmlMembersMapping members);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ExportAnyType(class System.Xml.Serialization.XmlMembersMapping members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportAnyType(System.Xml.Serialization.XmlMembersMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportAnyType (members As XmlMembersMapping) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ExportAnyType(System::Xml::Serialization::XmlMembersMapping ^ members);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -153,10 +171,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportMembersMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> for each of the element parts of a literal SOAP message definition.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExportMembersMapping">
       <MemberSignature Language="C#" Value="public void ExportMembersMapping (System.Xml.Serialization.XmlMembersMapping xmlMembersMapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportMembersMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportMembersMapping(System.Xml.Serialization.XmlMembersMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportMembersMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -197,6 +226,7 @@
       <MemberSignature Language="C#" Value="public void ExportMembersMapping (System.Xml.Serialization.XmlMembersMapping xmlMembersMapping, bool exportEnclosingType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportMembersMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping, bool exportEnclosingType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportMembersMapping(System.Xml.Serialization.XmlMembersMapping,System.Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportMembersMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping, bool exportEnclosingType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -227,10 +257,21 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportTypeMapping">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an element declaration for an object or type to a SOAP message or an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExportTypeMapping">
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName ExportTypeMapping (System.Xml.Serialization.XmlMembersMapping xmlMembersMapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName ExportTypeMapping(class System.Xml.Serialization.XmlMembersMapping xmlMembersMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportTypeMapping(System.Xml.Serialization.XmlMembersMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ ExportTypeMapping(System::Xml::Serialization::XmlMembersMapping ^ xmlMembersMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -272,6 +313,7 @@
       <MemberSignature Language="C#" Value="public void ExportTypeMapping (System.Xml.Serialization.XmlTypeMapping xmlTypeMapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportTypeMapping(class System.Xml.Serialization.XmlTypeMapping xmlTypeMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaExporter.ExportTypeMapping(System.Xml.Serialization.XmlTypeMapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportTypeMapping(System::Xml::Serialization::XmlTypeMapping ^ xmlTypeMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -299,35 +341,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ExportAnyType">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an element declaration for an object or type to a SOAP message or to an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExportTypeMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an element declaration for an object or type to a SOAP message or an <see cref="T:System.Xml.Schema.XmlSchema" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExportMembersMapping">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an element declaration to the applicable <see cref="T:System.Xml.Schema.XmlSchema" /> for each of the element parts of a literal SOAP message definition.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

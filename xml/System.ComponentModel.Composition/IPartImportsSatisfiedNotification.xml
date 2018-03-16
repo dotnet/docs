@@ -1,7 +1,9 @@
-<Type Name="IPartImportsSatisfiedNotification" FullName="System.ComponentModel.Composition.IPartImportsSatisfiedNotification">
+﻿<Type Name="IPartImportsSatisfiedNotification" FullName="System.ComponentModel.Composition.IPartImportsSatisfiedNotification">
   <TypeSignature Language="C#" Value="public interface IPartImportsSatisfiedNotification" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPartImportsSatisfiedNotification" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.IPartImportsSatisfiedNotification" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPartImportsSatisfiedNotification" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPartImportsSatisfiedNotification" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -17,6 +19,8 @@
       <MemberSignature Language="C#" Value="public void OnImportsSatisfied ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnImportsSatisfied() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.IPartImportsSatisfiedNotification.OnImportsSatisfied" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnImportsSatisfied ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnImportsSatisfied();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

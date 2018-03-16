@@ -1,7 +1,9 @@
-<Type Name="OleDbInfoMessageEventHandler" FullName="System.Data.OleDb.OleDbInfoMessageEventHandler">
+﻿<Type Name="OleDbInfoMessageEventHandler" FullName="System.Data.OleDb.OleDbInfoMessageEventHandler">
   <TypeSignature Language="C#" Value="public delegate void OleDbInfoMessageEventHandler(object sender, OleDbInfoMessageEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OleDbInfoMessageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbInfoMessageEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub OleDbInfoMessageEventHandler(sender As Object, e As OleDbInfoMessageEventArgs)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void OleDbInfoMessageEventHandler(System::Object ^ sender, OleDbInfoMessageEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

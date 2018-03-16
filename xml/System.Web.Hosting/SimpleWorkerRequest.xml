@@ -1,7 +1,9 @@
-<Type Name="SimpleWorkerRequest" FullName="System.Web.Hosting.SimpleWorkerRequest">
+﻿<Type Name="SimpleWorkerRequest" FullName="System.Web.Hosting.SimpleWorkerRequest">
   <TypeSignature Language="C#" Value="public class SimpleWorkerRequest : System.Web.HttpWorkerRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SimpleWorkerRequest extends System.Web.HttpWorkerRequest" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.SimpleWorkerRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class SimpleWorkerRequest&#xA;Inherits HttpWorkerRequest" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SimpleWorkerRequest : System::Web::HttpWorkerRequest" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.SimpleWorkerRequest" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SimpleWorkerRequest (string page, string query, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string page, string query, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.#ctor(System.String,System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (page As String, query As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleWorkerRequest(System::String ^ page, System::String ^ query, System::IO::TextWriter ^ output);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +66,8 @@
       <MemberSignature Language="C#" Value="public SimpleWorkerRequest (string appVirtualDir, string appPhysicalDir, string page, string query, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appVirtualDir, string appPhysicalDir, string page, string query, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.#ctor(System.String,System.String,System.String,System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appVirtualDir As String, appPhysicalDir As String, page As String, query As String, output As TextWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SimpleWorkerRequest(System::String ^ appVirtualDir, System::String ^ appPhysicalDir, System::String ^ page, System::String ^ query, System::IO::TextWriter ^ output);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +95,8 @@
       <MemberSignature Language="C#" Value="public override void EndOfRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndOfRequest() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.EndOfRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndOfRequest ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndOfRequest();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +115,8 @@
       <MemberSignature Language="C#" Value="public override void FlushResponse (bool finalFlush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FlushResponse(bool finalFlush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.FlushResponse(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FlushResponse (finalFlush As Boolean)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FlushResponse(bool finalFlush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +139,8 @@
       <MemberSignature Language="C#" Value="public override string GetAppPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetAppPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetAppPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAppPath () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAppPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +160,8 @@
       <MemberSignature Language="C#" Value="public override string GetAppPathTranslated ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetAppPathTranslated() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetAppPathTranslated" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAppPathTranslated () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetAppPathTranslated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -158,6 +181,8 @@
       <MemberSignature Language="C#" Value="public override string GetFilePath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetFilePath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetFilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFilePath () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetFilePath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +202,8 @@
       <MemberSignature Language="C#" Value="public override string GetFilePathTranslated ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetFilePathTranslated() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetFilePathTranslated" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFilePathTranslated () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetFilePathTranslated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +223,8 @@
       <MemberSignature Language="C#" Value="public override string GetHttpVerbName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetHttpVerbName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetHttpVerbName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHttpVerbName () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetHttpVerbName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +244,8 @@
       <MemberSignature Language="C#" Value="public override string GetHttpVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetHttpVersion() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetHttpVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHttpVersion () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetHttpVersion();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +265,8 @@
       <MemberSignature Language="C#" Value="public override string GetLocalAddress ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetLocalAddress() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetLocalAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocalAddress () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetLocalAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +286,8 @@
       <MemberSignature Language="C#" Value="public override int GetLocalPort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetLocalPort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetLocalPort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetLocalPort () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetLocalPort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +307,8 @@
       <MemberSignature Language="C#" Value="public override string GetPathInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPathInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetPathInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPathInfo () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPathInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +328,8 @@
       <MemberSignature Language="C#" Value="public override string GetQueryString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetQueryString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetQueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryString () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetQueryString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +349,8 @@
       <MemberSignature Language="C#" Value="public override string GetRawUrl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetRawUrl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetRawUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRawUrl () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetRawUrl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,6 +375,8 @@
       <MemberSignature Language="C#" Value="public override string GetRemoteAddress ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetRemoteAddress() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetRemoteAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRemoteAddress () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetRemoteAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +396,8 @@
       <MemberSignature Language="C#" Value="public override int GetRemotePort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetRemotePort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetRemotePort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRemotePort () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetRemotePort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -372,6 +417,8 @@
       <MemberSignature Language="C#" Value="public override string GetServerVariable (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetServerVariable(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetServerVariable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetServerVariable (name As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetServerVariable(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +441,8 @@
       <MemberSignature Language="C#" Value="public override string GetUriPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUriPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetUriPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUriPath () As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUriPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -413,6 +462,8 @@
       <MemberSignature Language="C#" Value="public override IntPtr GetUserToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance native int GetUserToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.GetUserToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUserToken () As IntPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IntPtr GetUserToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +483,8 @@
       <MemberSignature Language="C#" Value="public override string MachineConfigPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineConfigPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.SimpleWorkerRequest.MachineConfigPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MachineConfigPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +503,8 @@
       <MemberSignature Language="C#" Value="public override string MachineInstallDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineInstallDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.SimpleWorkerRequest.MachineInstallDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MachineInstallDirectory As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MachineInstallDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +523,8 @@
       <MemberSignature Language="C#" Value="public override string MapPath (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string MapPath(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.MapPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MapPath (path As String) As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ MapPath(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +547,8 @@
       <MemberSignature Language="C#" Value="public override string RootWebConfigPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootWebConfigPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.SimpleWorkerRequest.RootWebConfigPath" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RootWebConfigPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RootWebConfigPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -508,6 +567,8 @@
       <MemberSignature Language="C#" Value="public override void SendKnownResponseHeader (int index, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendKnownResponseHeader(int32 index, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendKnownResponseHeader(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendKnownResponseHeader (index As Integer, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendKnownResponseHeader(int index, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -527,10 +588,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SendResponseFromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the contents of a file to the response.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SendResponseFromFile">
       <MemberSignature Language="C#" Value="public override void SendResponseFromFile (IntPtr handle, long offset, long length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendResponseFromFile(native int handle, int64 offset, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendResponseFromFile(System.IntPtr,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendResponseFromFile (handle As IntPtr, offset As Long, length As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendResponseFromFile(IntPtr handle, long offset, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -556,6 +628,8 @@
       <MemberSignature Language="C#" Value="public override void SendResponseFromFile (string filename, long offset, long length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendResponseFromFile(string filename, int64 offset, int64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendResponseFromFile(System.String,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendResponseFromFile (filename As String, offset As Long, length As Long)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendResponseFromFile(System::String ^ filename, long offset, long length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +655,8 @@
       <MemberSignature Language="C#" Value="public override void SendResponseFromMemory (byte[] data, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendResponseFromMemory(unsigned int8[] data, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendResponseFromMemory(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendResponseFromMemory (data As Byte(), length As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendResponseFromMemory(cli::array &lt;System::Byte&gt; ^ data, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -604,6 +680,8 @@
       <MemberSignature Language="C#" Value="public override void SendStatus (int statusCode, string statusDescription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendStatus(int32 statusCode, string statusDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendStatus(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendStatus (statusCode As Integer, statusDescription As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendStatus(int statusCode, System::String ^ statusDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -627,6 +705,8 @@
       <MemberSignature Language="C#" Value="public override void SendUnknownResponseHeader (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SendUnknownResponseHeader(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.SimpleWorkerRequest.SendUnknownResponseHeader(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SendUnknownResponseHeader (name As String, value As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SendUnknownResponseHeader(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -646,23 +726,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SendResponseFromFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the contents of a file to the response.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.SimpleWorkerRequest" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

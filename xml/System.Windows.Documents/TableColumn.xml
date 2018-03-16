@@ -1,7 +1,9 @@
-<Type Name="TableColumn" FullName="System.Windows.Documents.TableColumn">
+﻿<Type Name="TableColumn" FullName="System.Windows.Documents.TableColumn">
   <TypeSignature Language="C#" Value="public class TableColumn : System.Windows.FrameworkContentElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableColumn extends System.Windows.FrameworkContentElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TableColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableColumn&#xA;Inherits FrameworkContentElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableColumn : System::Windows::FrameworkContentElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +21,8 @@
       <MemberSignature Language="C#" Value="public TableColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableColumn.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +72,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableColumn.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +91,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.GridLength Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.GridLength Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableColumn.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As GridLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::GridLength Width { System::Windows::GridLength get(); void set(System::Windows::GridLength value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +125,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableColumn.WidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

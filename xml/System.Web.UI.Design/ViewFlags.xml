@@ -1,7 +1,9 @@
-<Type Name="ViewFlags" FullName="System.Web.UI.Design.ViewFlags">
+﻿<Type Name="ViewFlags" FullName="System.Web.UI.Design.ViewFlags">
   <TypeSignature Language="C#" Value="public enum ViewFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ViewFlags" />
+  <TypeSignature Language="C++ CLI" Value="public enum class ViewFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="CustomPaint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags CustomPaint = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.CustomPaint" />
+      <MemberSignature Language="VB.NET" Value="CustomPaint" />
+      <MemberSignature Language="C++ CLI" Value="CustomPaint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -32,6 +36,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Enables painting events for displaying a custom control at design time.</summary>
       </Docs>
@@ -40,6 +45,8 @@
       <MemberSignature Language="C#" Value="DesignTimeHtmlRequiresLoadComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags DesignTimeHtmlRequiresLoadComplete = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.DesignTimeHtmlRequiresLoadComplete" />
+      <MemberSignature Language="VB.NET" Value="DesignTimeHtmlRequiresLoadComplete" />
+      <MemberSignature Language="C++ CLI" Value="DesignTimeHtmlRequiresLoadComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Postpones all events until after the control is completely loaded.</summary>
       </Docs>
@@ -56,6 +64,8 @@
       <MemberSignature Language="C#" Value="TemplateEditing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags TemplateEditing = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.TemplateEditing" />
+      <MemberSignature Language="VB.NET" Value="TemplateEditing" />
+      <MemberSignature Language="C++ CLI" Value="TemplateEditing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Enables template editing at design time.</summary>
       </Docs>

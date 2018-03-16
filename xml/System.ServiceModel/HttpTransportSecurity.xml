@@ -1,7 +1,9 @@
-<Type Name="HttpTransportSecurity" FullName="System.ServiceModel.HttpTransportSecurity">
+﻿<Type Name="HttpTransportSecurity" FullName="System.ServiceModel.HttpTransportSecurity">
   <TypeSignature Language="C#" Value="public sealed class HttpTransportSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpTransportSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.HttpTransportSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpTransportSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpTransportSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public HttpTransportSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpTransportSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HttpClientCredentialType ClientCredentialType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HttpClientCredentialType ClientCredentialType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As HttpClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpClientCredentialType ClientCredentialType { System::ServiceModel::HttpClientCredentialType get(); void set(System::ServiceModel::HttpClientCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +114,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ExtendedProtectionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedProtectionPolicy As ExtendedProtectionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ ExtendedProtectionPolicy { System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ get(); void set(System::Security::Authentication::ExtendedProtection::ExtendedProtectionPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HttpProxyCredentialType ProxyCredentialType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HttpProxyCredentialType ProxyCredentialType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.ProxyCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyCredentialType As HttpProxyCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HttpProxyCredentialType ProxyCredentialType { System::ServiceModel::HttpProxyCredentialType get(); void set(System::ServiceModel::HttpProxyCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public string Realm { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Realm" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.HttpTransportSecurity.Realm" />
+      <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -194,6 +206,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeClientCredentialType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeClientCredentialType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeClientCredentialType () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeClientCredentialType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +233,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeExtendedProtectionPolicy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeExtendedProtectionPolicy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeExtendedProtectionPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeExtendedProtectionPolicy () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeExtendedProtectionPolicy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +260,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeProxyCredentialType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeProxyCredentialType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeProxyCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeProxyCredentialType () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProxyCredentialType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -269,6 +287,8 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeRealm ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeRealm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.HttpTransportSecurity.ShouldSerializeRealm" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeRealm () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeRealm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

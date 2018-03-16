@@ -1,7 +1,9 @@
-<Type Name="LabelExpression" FullName="System.Linq.Expressions.LabelExpression">
+﻿<Type Name="LabelExpression" FullName="System.Linq.Expressions.LabelExpression">
   <TypeSignature Language="C#" Value="public sealed class LabelExpression : System.Linq.Expressions.Expression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LabelExpression extends System.Linq.Expressions.Expression" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.LabelExpression" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LabelExpression&#xA;Inherits Expression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LabelExpression sealed : System::Linq::Expressions::Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,9 +35,11 @@
   </Docs>
   <Members>
     <Member MemberName="Accept">
-      <MemberSignature Language="C#" Value="protected override System.Linq.Expressions.Expression Accept (System.Linq.Expressions.ExpressionVisitor visitor);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Linq.Expressions.Expression Accept (System.Linq.Expressions.ExpressionVisitor visitor);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Linq.Expressions.Expression Accept(class System.Linq.Expressions.ExpressionVisitor visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LabelExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -70,6 +74,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression DefaultValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultValue As Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ DefaultValue { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -100,6 +106,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Linq.Expressions.ExpressionType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Linq.Expressions.ExpressionType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property NodeType As ExpressionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType NodeType { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -130,6 +138,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.LabelTarget Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.LabelTarget Target" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As LabelTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::LabelTarget ^ Target { System::Linq::Expressions::LabelTarget ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -160,6 +170,8 @@
       <MemberSignature Language="C#" Value="public override sealed Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.LabelExpression.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -190,6 +202,8 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.LabelExpression Update (System.Linq.Expressions.LabelTarget target, System.Linq.Expressions.Expression defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.LabelExpression Update(class System.Linq.Expressions.LabelTarget target, class System.Linq.Expressions.Expression defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.LabelExpression.Update(System.Linq.Expressions.LabelTarget,System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update (target As LabelTarget, defaultValue As Expression) As LabelExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::LabelExpression ^ Update(System::Linq::Expressions::LabelTarget ^ target, System::Linq::Expressions::Expression ^ defaultValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="LoggerVerbosity" FullName="Microsoft.Build.Framework.LoggerVerbosity">
+﻿<Type Name="LoggerVerbosity" FullName="Microsoft.Build.Framework.LoggerVerbosity">
   <TypeSignature Language="C#" Value="public enum LoggerVerbosity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoggerVerbosity extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.LoggerVerbosity" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LoggerVerbosity" />
+  <TypeSignature Language="C++ CLI" Value="public enum class LoggerVerbosity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +39,8 @@
       <MemberSignature Language="C#" Value="Detailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Detailed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Detailed" />
+      <MemberSignature Language="VB.NET" Value="Detailed" />
+      <MemberSignature Language="C++ CLI" Value="Detailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -45,6 +49,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Detailed verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" /> or <see cref="F:Microsoft.Build.Framework.MessageImportance.Normal" />, all status events, and a build summary.</summary>
       </Docs>
@@ -53,6 +58,8 @@
       <MemberSignature Language="C#" Value="Diagnostic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Diagnostic = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Diagnostic" />
+      <MemberSignature Language="VB.NET" Value="Diagnostic" />
+      <MemberSignature Language="C++ CLI" Value="Diagnostic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -61,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Diagnostic verbosity, which displays all errors, warnings, messages, status events, and a build summary.</summary>
       </Docs>
@@ -69,6 +77,8 @@
       <MemberSignature Language="C#" Value="Minimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Minimal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Minimal" />
+      <MemberSignature Language="VB.NET" Value="Minimal" />
+      <MemberSignature Language="C++ CLI" Value="Minimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Minimal verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" />, and a build summary.</summary>
       </Docs>
@@ -85,6 +96,8 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Normal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -93,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Normal verbosity, which displays errors, warnings, messages with <see cref="T:Microsoft.Build.Framework.MessageImportance" /> values of <see cref="F:Microsoft.Build.Framework.MessageImportance.High" />, some status events, and a build summary.</summary>
       </Docs>
@@ -101,6 +115,8 @@
       <MemberSignature Language="C#" Value="Quiet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Framework.LoggerVerbosity Quiet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Framework.LoggerVerbosity.Quiet" />
+      <MemberSignature Language="VB.NET" Value="Quiet" />
+      <MemberSignature Language="C++ CLI" Value="Quiet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -109,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Framework.LoggerVerbosity</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Quiet verbosity, which displays a build summary.</summary>
       </Docs>

@@ -1,7 +1,9 @@
-<Type Name="Plus" FullName="Microsoft.JScript.Plus">
+﻿<Type Name="Plus" FullName="Microsoft.JScript.Plus">
   <TypeSignature Language="C#" Value="public sealed class Plus : Microsoft.JScript.BinaryOp" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Plus extends Microsoft.JScript.BinaryOp" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Plus" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Plus&#xA;Inherits BinaryOp" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Plus sealed : Microsoft::JScript::BinaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +23,8 @@
       <MemberSignature Language="C#" Value="public Plus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Plus.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Plus();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public static object DoOp (object v1, object v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object DoOp(object v1, object v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Plus.DoOp(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DoOp (v1 As Object, v2 As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ DoOp(System::Object ^ v1, System::Object ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +70,8 @@
       <MemberSignature Language="C#" Value="public object EvaluatePlus (object v1, object v2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EvaluatePlus(object v1, object v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Plus.EvaluatePlus(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluatePlus (v1 As Object, v2 As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ EvaluatePlus(System::Object ^ v1, System::Object ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

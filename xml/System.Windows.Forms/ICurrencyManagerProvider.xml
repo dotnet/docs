@@ -1,7 +1,9 @@
-<Type Name="ICurrencyManagerProvider" FullName="System.Windows.Forms.ICurrencyManagerProvider">
+﻿<Type Name="ICurrencyManagerProvider" FullName="System.Windows.Forms.ICurrencyManagerProvider">
   <TypeSignature Language="C#" Value="public interface ICurrencyManagerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICurrencyManagerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ICurrencyManagerProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICurrencyManagerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICurrencyManagerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.CurrencyManager CurrencyManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CurrencyManager CurrencyManager" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrencyManager As CurrencyManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::CurrencyManager ^ CurrencyManager { System::Windows::Forms::CurrencyManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.CurrencyManager GetRelatedCurrencyManager (string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.CurrencyManager GetRelatedCurrencyManager(string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ICurrencyManagerProvider.GetRelatedCurrencyManager(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelatedCurrencyManager (dataMember As String) As CurrencyManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::CurrencyManager ^ GetRelatedCurrencyManager(System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

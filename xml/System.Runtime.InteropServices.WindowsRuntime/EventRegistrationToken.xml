@@ -1,7 +1,9 @@
-<Type Name="EventRegistrationToken" FullName="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken">
+﻿<Type Name="EventRegistrationToken" FullName="System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken">
   <TypeSignature Language="C#" Value="public struct EventRegistrationToken" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EventRegistrationToken extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken" />
+  <TypeSignature Language="VB.NET" Value="Public Structure EventRegistrationToken" />
+  <TypeSignature Language="C++ CLI" Value="public value class EventRegistrationToken" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -86,6 +92,8 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken left, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken left, valuetype System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.op_Equality(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As EventRegistrationToken, right As EventRegistrationToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken left, System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken left, System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken left, valuetype System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken.op_Inequality(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken,System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As EventRegistrationToken, right As EventRegistrationToken) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken left, System::Runtime::InteropServices::WindowsRuntime::EventRegistrationToken right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TableCell" FullName="System.Windows.Documents.TableCell">
+﻿<Type Name="TableCell" FullName="System.Windows.Documents.TableCell">
   <TypeSignature Language="C#" Value="public class TableCell : System.Windows.Documents.TextElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableCell extends System.Windows.Documents.TextElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TableCell" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableCell&#xA;Inherits TextElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableCell : System::Windows::Documents::TextElement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.TableCell" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TableCell ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableCell.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableCell();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +76,8 @@
       <MemberSignature Language="C#" Value="public TableCell (System.Windows.Documents.Block blockItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.Block blockItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableCell.#ctor(System.Windows.Documents.Block)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (blockItem As Block)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableCell(System::Windows::Documents::Block ^ blockItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +106,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.BlockCollection Blocks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.BlockCollection Blocks" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.Blocks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Blocks As BlockCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::BlockCollection ^ Blocks { System::Windows::Documents::BlockCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,7 +115,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -123,6 +140,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush BorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ BorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +194,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.BorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +213,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness BorderThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness BorderThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness BorderThickness { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -282,6 +305,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BorderThicknessProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BorderThicknessProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.BorderThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BorderThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BorderThicknessProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -299,6 +324,8 @@
       <MemberSignature Language="C#" Value="public int ColumnSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.ColumnSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnSpan { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -334,6 +361,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnSpanProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnSpanProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.ColumnSpanProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnSpanProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnSpanProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -351,6 +380,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.FlowDirection FlowDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); void set(System::Windows::FlowDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -400,6 +431,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FlowDirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FlowDirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.FlowDirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FlowDirectionProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FlowDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -417,6 +450,8 @@
       <MemberSignature Language="C#" Value="public double LineHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 LineHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.LineHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double LineHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -514,6 +549,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineHeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.LineHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineHeightProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineHeightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -531,6 +568,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.LineStackingStrategy LineStackingStrategy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.LineStackingStrategy LineStackingStrategy" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.LineStackingStrategy" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineStackingStrategy As LineStackingStrategy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::LineStackingStrategy LineStackingStrategy { System::Windows::LineStackingStrategy get(); void set(System::Windows::LineStackingStrategy value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -574,6 +613,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LineStackingStrategyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LineStackingStrategyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.LineStackingStrategyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LineStackingStrategyProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LineStackingStrategyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -591,6 +632,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TableCell.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -617,6 +660,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Thickness Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Thickness Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Thickness Padding { System::Windows::Thickness get(); void set(System::Windows::Thickness value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -706,6 +751,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PaddingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PaddingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.PaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PaddingProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PaddingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -723,6 +770,8 @@
       <MemberSignature Language="C#" Value="public int RowSpan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowSpan" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.RowSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowSpan As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowSpan { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -758,6 +807,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RowSpanProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RowSpanProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.RowSpanProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowSpanProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RowSpanProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -775,6 +826,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.TextAlignment TextAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.TextAlignment TextAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TableCell.TextAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextAlignment As TextAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextAlignment TextAlignment { System::Windows::TextAlignment get(); void set(System::Windows::TextAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,6 +886,8 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextAlignmentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextAlignmentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TableCell.TextAlignmentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextAlignmentProperty As DependencyProperty " />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextAlignmentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -846,14 +901,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.TableCell" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

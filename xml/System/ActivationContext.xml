@@ -1,7 +1,9 @@
-<Type Name="ActivationContext" FullName="System.ActivationContext">
+﻿<Type Name="ActivationContext" FullName="System.ActivationContext">
   <TypeSignature Language="C#" Value="public sealed class ActivationContext : IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActivationContext extends System.Object implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.ActivationContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivationContext&#xA;Implements IDisposable, ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivationContext sealed : IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +52,8 @@
       <MemberSignature Language="C#" Value="public byte[] ApplicationManifestBytes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ApplicationManifestBytes" />
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.ApplicationManifestBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationManifestBytes As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ApplicationManifestBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,10 +75,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreatePartialActivationContext">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ActivationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreatePartialActivationContext">
       <MemberSignature Language="C#" Value="public static ActivationContext CreatePartialActivationContext (ApplicationIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ActivationContext CreatePartialActivationContext(class System.ApplicationIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.CreatePartialActivationContext(System.ApplicationIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartialActivationContext (identity As ApplicationIdentity) As ActivationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ActivationContext ^ CreatePartialActivationContext(ApplicationIdentity ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +124,8 @@
       <MemberSignature Language="C#" Value="public static ActivationContext CreatePartialActivationContext (ApplicationIdentity identity, string[] manifestPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ActivationContext CreatePartialActivationContext(class System.ApplicationIdentity identity, string[] manifestPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.CreatePartialActivationContext(System.ApplicationIdentity,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartialActivationContext (identity As ApplicationIdentity, manifestPaths As String()) As ActivationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ActivationContext ^ CreatePartialActivationContext(ApplicationIdentity ^ identity, cli::array &lt;System::String ^&gt; ^ manifestPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +173,8 @@
       <MemberSignature Language="C#" Value="public byte[] DeploymentManifestBytes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] DeploymentManifestBytes" />
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.DeploymentManifestBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeploymentManifestBytes As Byte()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ DeploymentManifestBytes { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -180,7 +200,12 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -209,6 +234,8 @@
       <MemberSignature Language="C#" Value="~ActivationContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="C++ CLI" Value="!ActivationContext ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +255,8 @@
       <MemberSignature Language="C#" Value="public ActivationContext.ContextForm Form { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ActivationContext/ContextForm Form" />
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.Form" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As ActivationContext.ContextForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ActivationContext::ContextForm Form { ActivationContext::ContextForm get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +283,8 @@
       <MemberSignature Language="C#" Value="public ApplicationIdentity Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:System.ActivationContext.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As ApplicationIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationIdentity ^ Identity { ApplicationIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -288,7 +319,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ActivationContext.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -309,15 +345,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreatePartialActivationContext">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ActivationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

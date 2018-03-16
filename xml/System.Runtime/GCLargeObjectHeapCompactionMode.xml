@@ -1,7 +1,9 @@
-<Type Name="GCLargeObjectHeapCompactionMode" FullName="System.Runtime.GCLargeObjectHeapCompactionMode">
+﻿<Type Name="GCLargeObjectHeapCompactionMode" FullName="System.Runtime.GCLargeObjectHeapCompactionMode">
   <TypeSignature Language="C#" Value="public enum GCLargeObjectHeapCompactionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GCLargeObjectHeapCompactionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.GCLargeObjectHeapCompactionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GCLargeObjectHeapCompactionMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class GCLargeObjectHeapCompactionMode" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="CompactOnce" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.GCLargeObjectHeapCompactionMode CompactOnce = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLargeObjectHeapCompactionMode.CompactOnce" />
+      <MemberSignature Language="VB.NET" Value="CompactOnce" />
+      <MemberSignature Language="C++ CLI" Value="CompactOnce" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -62,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.GCLargeObjectHeapCompactionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The large object heap (LOH) will be compacted during the next blocking generation 2 garbage collection.</summary>
       </Docs>
@@ -70,6 +75,8 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.GCLargeObjectHeapCompactionMode Default = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.GCLargeObjectHeapCompactionMode.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -90,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.GCLargeObjectHeapCompactionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The large object heap (LOH) is not compacted.</summary>
       </Docs>

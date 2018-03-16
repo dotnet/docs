@@ -1,7 +1,9 @@
-<Type Name="DesignTimeResourceProviderFactory" FullName="System.Web.UI.Design.DesignTimeResourceProviderFactory">
+﻿<Type Name="DesignTimeResourceProviderFactory" FullName="System.Web.UI.Design.DesignTimeResourceProviderFactory">
   <TypeSignature Language="C#" Value="public abstract class DesignTimeResourceProviderFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignTimeResourceProviderFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignTimeResourceProviderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignTimeResourceProviderFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeResourceProviderFactory abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="protected DesignTimeResourceProviderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignTimeResourceProviderFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +42,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateDesignTimeGlobalResourceProvider (IServiceProvider serviceProvider, string classKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateDesignTimeGlobalResourceProvider(class System.IServiceProvider serviceProvider, string classKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider(System.IServiceProvider,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeGlobalResourceProvider (serviceProvider As IServiceProvider, classKey As String) As IResourceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateDesignTimeGlobalResourceProvider(IServiceProvider ^ serviceProvider, System::String ^ classKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.Compilation.IResourceProvider CreateDesignTimeLocalResourceProvider (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Compilation.IResourceProvider CreateDesignTimeLocalResourceProvider(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeLocalResourceProvider (serviceProvider As IServiceProvider) As IResourceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Compilation::IResourceProvider ^ CreateDesignTimeLocalResourceProvider(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.UI.Design.IDesignTimeResourceWriter CreateDesignTimeLocalResourceWriter (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDesignTimeResourceWriter CreateDesignTimeLocalResourceWriter(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateDesignTimeLocalResourceWriter (serviceProvider As IServiceProvider) As IDesignTimeResourceWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::Design::IDesignTimeResourceWriter ^ CreateDesignTimeLocalResourceWriter(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

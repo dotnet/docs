@@ -134,12 +134,12 @@ namespace HowToStrings
                     Console.Write("Not found. Sorts between: ");
 
                     if (index == 0)
-                        Console.Write("beginning of array and ");
+                        Console.Write("beginning of sequence and ");
                     else
                         Console.Write($"{array[index - 1]} and ");
 
                     if (index == array.Length)
-                        Console.WriteLine("end of array.");
+                        Console.WriteLine("end of sequence.");
                     else
                         Console.WriteLine($"{array[index]}.");
                 }
@@ -206,12 +206,12 @@ namespace HowToStrings
                     Console.Write("Not found. Sorts between: ");
 
                     if (index == 0)
-                        Console.Write("beginning of array and ");
+                        Console.Write("beginning of sequence and ");
                     else
                         Console.Write($"{collection[index - 1]} and ");
 
                     if (index == collection.Count)
-                        Console.WriteLine("end of array.");
+                        Console.WriteLine("end of sequence.");
                     else
                         Console.WriteLine($"{collection[index]}.");
                 }

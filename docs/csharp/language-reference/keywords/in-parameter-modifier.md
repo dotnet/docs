@@ -49,7 +49,7 @@ class InOverloads
 
 ## Overload resolution rules
 
-You can most understand the overload resolution rules for methods with by value vs. `in` arguments through understanding the motivation for `in` arguments. Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. 
+You can understand the overload resolution rules for methods with by value vs. `in` arguments through understanding the motivation for `in` arguments. Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. 
 
 Specifying `in` on arguments at the call site is typically optional because the `in` modifier doesn't allow the value of the argument to be modified. You would explicitly add the `in` modifier at the callsite to ensure the argument is passed by reference, not by value. Explicitly using `in` has two effects:
 

@@ -99,7 +99,7 @@ The template is finished. At this point, you have two options for template distr
    </package>
    ```
 
-1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder that holds the NuGet assets is at *C:\Users\\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp\*. But wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
+1. [Create the package](/nuget/create-packages/creating-a-package#creating-the-package) using the `nuget pack <PATH_TO_NUSPEC_FILE>` command. The following command assumes that the folder that holds the NuGet assets is at *C:\Users\\\<USER>\Documents\Templates\GarciaSoftware.ConsoleTemplate.CSharp*. But wherever you place the folder on your system, the `nuget pack` command accepts the path to the *nuspec* file:
 
    ```console
    nuget pack C:\Users\<USER>\Documents\NuGetTemplates\GarciaSoftware.ConsoleTemplate.CSharp\GarciaSoftware.ConsoleTemplate.CSharp.nuspec

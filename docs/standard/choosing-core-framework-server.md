@@ -3,7 +3,7 @@ title: Choose between .NET Core and .NET Framework for server apps
 description: A guide on which implementation of .NET you should consider when building a server app in .NET.
 author: cartermp
 ms.author: mairaw
-ms.date: 08/15/2016
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: .net
 ms.workload: 
@@ -74,6 +74,7 @@ In most cases, you don’t need to migrate your existing applications to .NET Co
 ### A need to use third-party .NET libraries or NuGet packages not available for .NET Core
 
 Libraries are quickly embracing .NET Standard. .NET Standard enables sharing code across all .NET implementations including .NET Core. With .NET Standard 2.0, this is even easier:
+
 - The API surface became much larger. 
 - Introduced a .NET Framework compatibility mode. This compatibility mode allows .NET Standard/.NET Core projects to reference .NET Framework libraries. To learn more about the compatibility mode, see [Announcing .NET Standard 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-standard-2-0/).
 
@@ -87,7 +88,7 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 
 * ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. ASP.NET Core [Razor Pages](/aspnet/core/mvc/razor-pages/) have many similarities with Web Pages.
 
-* ASP.NET SignalR server/client implementation. Currently, ASP.NET SignalR isn't available for ASP.NET Core (not client or server). ASP.NET Core SignalR is scheduled for ASP.NET Core 2.1. See the [ASP.NET Core Schedule and Roadmap](https://github.com/aspnet/Home/wiki/Roadmap). Preview state is available at the [Server-side](https://github.com/aspnet/SignalR-Server) and [Client Library](https://github.com/aspnet/SignalR-Client-Net) GitHub repositories.
+* ASP.NET SignalR server/client implementation. Currently, [ASP.NET SignalR](https://github.com/aspnet/SignalR) is available in preview mode with ASP.NET Core 2.1.
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 

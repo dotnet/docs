@@ -42,7 +42,7 @@ int i = 0;
   
  Remember that it is an error to declare a default constructor for a [struct](../../../csharp/language-reference/keywords/struct.md) because every value type implicitly has a public default constructor. It is possible to declare parameterized constructors on a struct type to set its initial values, but this is only necessary if values other than the default are required.  
   
- Both value-type objects such as structs and reference-type objects such as classes are destroyed automatically, but value-type objects are destroyed when they go out of scope, whereas reference-type objects are destroyed by the garbage collector at an unspecified time after the last reference to them is removed. For types that contain resources such as file handles, or network connections, it is desirable to employ deterministic cleanup to ensure that the resources they contain are released as soon as possible. For more information, see [using Statement](../../../csharp/language-reference/keywords/using-statement.md).  
+ Both value-type objects such as structs and reference-type objects such as classes are destroyed automatically, but value-type objects are destroyed when their containing context is destroyed, whereas reference-type objects are destroyed by the garbage collector at an unspecified time after the last reference to them is removed. For types that contain resources such as file handles, or network connections, it is desirable to employ deterministic cleanup to ensure that the resources they contain are released as soon as possible. For more information, see [using Statement](../../../csharp/language-reference/keywords/using-statement.md).  
   
  The `new` operator cannot be overloaded.  
   

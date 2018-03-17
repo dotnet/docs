@@ -2430,7 +2430,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The order of the elements in the collection is preserved in the <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(*n* + *m*) operation, where *n* is the number of elements to be added and *m* is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n* * *m*) operation, where *n* is the number of elements to be added and *m* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   

@@ -33,7 +33,7 @@ The following table lists all versions of .NET Standard and the platforms suppor
 [!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
 
 To find the highest version of .NET Standard that you can target, do the following:
-1. Find the row that indicate the .NET implementation you want to run on.
+1. Find the row that indicates the .NET implementation you want to run on.
 2. Find the column in that row that indicates your version starting from right to left.
 3. The column header indicates the .NET Standard version that your target supports (and any lower .NET Standard versions will also support it).
 4. Repeat this process for each platform you want to target. If you have more than one target platform, you should pick the smaller version among them. For example, if you want to run on .NET Framework 4.5 and .NET Core 1.0, the highest .NET Standard version you can use is .NET Standard 1.1.

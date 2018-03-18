@@ -62,7 +62,7 @@ that calculates the distance between two points in 3D space.
 [!code-csharp[InArgument](../../samples/csharp/reference-semantics/Program.cs#InArgument "Specifying an In argument")]
 
 The arguments are two structures that each contain three doubles. A double is 8 bytes,
-so each argument is 24 bytes. By specifying the `in` modifier, you pass 4 byte
+so each argument is 24 bytes. By specifying the `in` modifier, you pass a 4-byte
 or 8-byte reference to those arguments, depending on the
 architecture of the machine. The difference in size is small, but it can quickly add
 up when your application calls this method in a tight loop using many different
@@ -94,7 +94,8 @@ These rules apply to any field of an `in` parameter provided the
 field is a `struct` type and the parameter is also a `struct` type. In fact, these rules
 apply for multiple layers of member access provided the types at all levels
 of member access are `structs`.
-The compiler enforces the `in` argument and its `struct` members are readonly variables.
+The compiler enforces that `struct` types passed as  `in` arguments and their
+`struct` members are readonly variables.
 
 The use of `in` parameters is to avoid the potential performance costs
 of copies. It does not change the semantics of any method call. Therefore,
@@ -111,7 +112,7 @@ reference arguments. Inside the called method, you can call any instance
 method that uses by value parameters. In
 those instances, a copy of the `in` parameter is created. Because the compiler
 can create a temporary variable for any `in` parameter, you can also specify default
-values for any `in` parameter. The follow code uses that to specify the origin
+values for any `in` parameter. The following code uses that to specify the origin
 (point 0,0) as the default value for the second point:
 
 [!code-csharp[InArgumentDefault](../../samples/csharp/reference-semantics/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]

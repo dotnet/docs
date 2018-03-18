@@ -26,7 +26,7 @@ Parameters declared for a method without [in](../../../csharp/language-reference
   
 -   [ref](../../../csharp/language-reference/keywords/ref.md) specifies that this parameter is passed by reference, and may be read or written by the called method.
   
--   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifiese that this parameter is passed by reference, and is written by the called method.
+-   [out](../../../csharp/language-reference/keywords/out-parameter-modifier.md) specifies that this parameter is passed by reference, and is written by the called method.
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)  

@@ -95,7 +95,7 @@ static void Method(in int argument)
 Method(5); // Calls overload passed by value
 Method(5L); // CS1503: no implicit conversion from long to int
 short s = 0;
-Method(s); // Calls overload passed by value, creates a temporary int with the value 0
+Method(s); // Calls overload passed by value.
 Method(in s); // CS1503: cannot convert from in short to in int
 int i = 42;
 Method(i); // Calls overload passed by value

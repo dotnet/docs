@@ -3,7 +3,7 @@ title: F# Guide
 description: This guide provides an overview of various learning materials for F#, a functional programming language that runs on .NET.
 author: jackfoxy
 ms.author: phcart
-ms.date: 02/28/2018
+ms.date: 03/19/2018
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -25,7 +25,11 @@ let getGreeting name =
 // Use the EntryPoint attribute to run the program.
 [<EntryPoint>]
 let main args =
-    args                    
+    // Define a list of names
+    let names = [| "Don"; "Julia"; "Xi" |]
+    
+    // Print a fun greeting for each name!
+    names
     |> Array.map getGreeting
     |> Array.iter (fun greeting -> printfn "%s" greeting)
 

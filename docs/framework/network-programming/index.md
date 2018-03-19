@@ -24,6 +24,10 @@ ms.workload:
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be quickly and easily integrated into your applications. Your network applications can build on pluggable protocols to automatically take advantage of new Internet protocols, or they can use a managed implementation of the Windows socket interface to work with the network on the socket level.  
   
 ## In This Section  
+
+ [Transport Layer Security (TLS) best practices with .NET Framework](../../../docs/framework/network-programming/tls.md)  
+ Describes TLS best practices with the .NET Framwork.
+ 
  [Introducing Pluggable Protocols](../../../docs/framework/network-programming/introducing-pluggable-protocols.md)  
  Describes how to access an Internet resource without regard to the access protocol that it requires.  
   

@@ -379,7 +379,7 @@ class SampleClass : ISampleInterface
  To define a generic class:  
   
 ```csharp  
-Public class SampleGeneric<T>   
+public class SampleGeneric<T>   
 {  
     public T Field;  
 }  

@@ -25,9 +25,9 @@ let getGreeting name =
 // Use the EntryPoint attribute to run the program.
 [<EntryPoint>]
 let main args =
-    args                     // Use F# pipe operators to send the args into some functions.
-    |> Array.map getGreeting // Turn each name into a friendly greeting.
-    |> Array.iter printfn    // Print them!
+    args                    
+    |> Array.map getGreeting
+    |> Array.iter (fun greeting -> printfn "%s" greeting)
 
     0
 ```

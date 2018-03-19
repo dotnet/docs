@@ -26,7 +26,7 @@ ms.workload:
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  
   
--   For Transport Layer Security (TLS) best practices, see [Transport Layer Security (TLS) best practices with .NET Framework](../../../docs/framework/network-programming/tls.md).
+-   For Transport Layer Security (TLS) best practices, see [Transport Layer Security (TLS) best practices with .NET Framework](tls.md).
 
 -   Use <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> whenever possible instead of type casting to descendant classes. Applications that use **WebRequest** and **WebResponse** can take advantage of new Internet protocols without needing extensive code changes.  
   

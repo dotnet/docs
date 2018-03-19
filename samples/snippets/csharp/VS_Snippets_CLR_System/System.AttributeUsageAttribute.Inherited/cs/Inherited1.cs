@@ -37,14 +37,14 @@ public class Example
       Type typeA = typeof(DerivedA);
       Console.WriteLine("DerivedA has Inherited attribute: {0}", 
                         typeA.GetCustomAttributes(typeof(InheritedAttribute), true).Length > 0); 
-      MethodInfo memberA = typeA.GetMethod("MethodA");
+      MethodInfo memberA = typeA.GetMethod(nameof(DerivedA.MethodA));
       Console.WriteLine("DerivedA.MemberA has Inherited attribute: {0}\n", 
                         memberA.GetCustomAttributes(typeof(InheritedAttribute), true).Length > 0); 
       
       Type typeB = typeof(DerivedB);
       Console.WriteLine("DerivedB has NotInherited attribute: {0}", 
                         typeB.GetCustomAttributes(typeof(NotInheritedAttribute), true).Length > 0); 
-      MethodInfo memberB = typeB.GetMethod("MethodB");
+      MethodInfo memberB = typeB.GetMethod(nameof(DerivedB.MethodB));
       Console.WriteLine("DerivedB.MemberB has NotInherited attribute: {0}", 
                         memberB.GetCustomAttributes(typeof(NotInheritedAttribute), true).Length > 0); 
    }

@@ -25,9 +25,6 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
   
 ## In This Section  
 
- [Transport Layer Security (TLS) best practices with .NET Framework](../../../docs/framework/network-programming/tls.md)  
- Describes TLS best practices with the .NET Framwork.
- 
  [Introducing Pluggable Protocols](../../../docs/framework/network-programming/introducing-pluggable-protocols.md)  
  Describes how to access an Internet resource without regard to the access protocol that it requires.  
   
@@ -144,6 +141,8 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
  Provides support for configuration of authentication using extended protection for applications.  
   
 ## See Also  
+
+ [Transport Layer Security (TLS) best practices with .NET Framework](../../../docs/framework/network-programming/tls.md)
  [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)  

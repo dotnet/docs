@@ -14,13 +14,13 @@ ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
 author: rpetrusha
 ms.author: ronpett
 ---
-# -modulleassemblyname
+# -moduleassemblyname
 Specifies the name of the assembly that this module will be a part of.  
   
 ## Syntax  
   
 ```  
--modulleassemblyname:assembly_name  
+-moduleassemblyname:assembly_name  
 ```  
   
 ## Arguments  
@@ -30,9 +30,9 @@ Specifies the name of the assembly that this module will be a part of.
 |`assembly_name`|The name of the assembly that this module will be a part of.|  
   
 ## Remarks  
- The compiler processes the `-modulleassemblyname` option only if the `-target:module` option has been specified. This causes the compiler to create a module. The module created by the compiler is valid only for the assembly specified with the `-modulleassemblyname` option. If you place the module in a different assembly, run-time errors will occur.  
+ The compiler processes the `-moduleassemblyname` option only if the `-target:module` option has been specified. This causes the compiler to create a module. The module created by the compiler is valid only for the assembly specified with the `-moduleassemblyname` option. If you place the module in a different assembly, run-time errors will occur.  
   
- The `-modulleassemblyname` option is needed only when the following are true:  
+ The `-moduleassemblyname` option is needed only when the following are true:  
   
 -   A data type in the module needs access to a `Friend` type in a referenced assembly.  
   
@@ -41,7 +41,7 @@ Specifies the name of the assembly that this module will be a part of.
  For more information about creating a module, see [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md). For more information about friend assemblies, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
   
 > [!NOTE]
->  The `-modulleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
+>  The `-moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See Also  
  [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)  

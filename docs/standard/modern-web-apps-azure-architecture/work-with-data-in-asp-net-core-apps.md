@@ -231,7 +231,7 @@ If you need to build more complex object graphs with Dapper, you need to write t
 
 ```sql
 select * from #Posts p
-left join \#Users u on u.Id = p.OwnerId
+left join #Users u on u.Id = p.OwnerId
 Order by p.Id
 ```
 

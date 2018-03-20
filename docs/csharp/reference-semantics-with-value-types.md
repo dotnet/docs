@@ -209,7 +209,7 @@ Declaring a struct as `readonly ref` combines the benefits and restrictions of `
 The following example demonstrates the declaration of `readonly ref struct`.
 
 ```csharp
-readonly ref struct RefReadOnlyPoint2D
+readonly ref struct ReadOnlyRefPoint2D
 {
     public int X { get; }
     public int Y { get; }

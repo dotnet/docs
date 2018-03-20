@@ -202,6 +202,20 @@ types.
 These restrictions ensure that you do not accidentally use a `ref struct`
 in a manner that could promote it to the managed heap.
 
+## `readonly ref struct` type
+
+Declaring a struct as `readonly ref` combines the benefits and restrictions of `ref struct` and `readonly struct` delcarations. 
+
+The following example demonstrates the declaration of `readonly ref struct`.
+
+```csharp
+readonly ref struct RefReadOnlyPoint2D
+{
+    public int X { get; }
+    public int Y { get; }
+}
+```
+
 ## Conclusions
 
 These enhancements to the C# language are designed for performance critical

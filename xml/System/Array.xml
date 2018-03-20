@@ -5420,7 +5420,7 @@ int[,,] TDArray = new int[1,1,1];
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method allocates a new array with the specified size, copies elements from the old array to the new one, and then replaces the old array with the new one.`array` must be a one-dimensional array.  
+ This method allocates a new array with the specified size, copies elements from the old array to the new one, and then replaces the old array with the new one. `array` must be a one-dimensional array.  
   
  If `array` is `null`, this method creates a new array with the specified size.  
   

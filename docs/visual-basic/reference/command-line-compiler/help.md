@@ -1,8 +1,7 @@
 ---
-title: "/help, -? (Visual Basic)"
-ms.date: 07/20/2015
+title: "-help, -? (Visual Basic)"
+ms.date: 03/10/2018
 ms.prod: .net
-ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
@@ -15,32 +14,31 @@ helpviewer_keywords:
   - "-? compiler option [Visual Basic]"
   - "? compiler option [Visual Basic]"
 ms.assetid: eb984aa5-ac98-4d0b-a0d2-24238d7bc8dc
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 ---
-# /help, /? (Visual Basic)
+# -help, -? (Visual Basic)
 Displays the compiler options.  
   
 ## Syntax  
   
 ```  
-/help  
+-help  
 ' -or-  
-/?  
+-?  
 ```  
   
 ## Remarks  
  If you include this option in a compilation, no output file is created and no compilation takes place.  
   
 > [!NOTE]
->  The `/help` option is not available from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  
+>  The `-help` option is not available from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] development environment; it is available only when compiling from the command line.  
   
 ## Example  
  The following code displays help from the command line.  
   
 ```  
-vbc /help  
+vbc -help  
 ```  
   
 ## See Also  

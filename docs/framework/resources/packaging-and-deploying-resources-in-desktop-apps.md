@@ -172,11 +172,15 @@ Greeting=Добрый день
   
  You can then compile C# source code from the command line as follows:  
   
- **csc Example1.cs**  
+```console 
+csc Example1.cs
+```
   
  The command for the Visual Basic compiler is very similar:  
   
- **vbc Example1.vb**  
+```console
+vbc Example1.vb
+```  
   
  Because there are no resources embedded in the main assembly, you do not have to compile by using the `/resource` switch.  
   

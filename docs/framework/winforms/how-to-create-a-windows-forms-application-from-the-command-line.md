@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Windows Forms application from the command line"
-ms.date: "03/30/2017"
+ms.date: "03/14/2018"
 ms.prod: ".net-framework"
 ms.technology: 
   - "dotnet-winforms"
@@ -13,10 +13,8 @@ helpviewer_keywords:
   - "Windows Forms, getting started"
   - "Windows Forms, creating basic form"
 ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
+author: rpetrusha
+ms.author: ronpet
 ms.workload: 
   - dotnet
 ---
@@ -46,9 +44,9 @@ The following procedures describe the basic steps that you must complete to crea
   
 4.  Add a `Main` method to the class.  
   
-    1.  Apply the <xref:System.STAThreadAttribute> to the `Main` method to specify your Windows Forms application is a single threaded apartment.  
+    1.  Apply the <xref:System.STAThreadAttribute> to the C# `Main` method to specify your Windows Forms application is a single-threaded apartment. (The attribute is not necessary in Visual Basic, since Windows forms applications developed with Visual Basic use a single-threaded apartment model by default.)  
   
-    2.  Call <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> to give a Windows XP appearance to your application.  
+    2.  Call <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> to apply operating system styles to your application.  
   
     3.  Create an instance of the form and run it.  
   
@@ -65,7 +63,7 @@ The following procedures describe the basic steps that you must complete to crea
   
          `-or-`  
   
-    -   If you are using Visual Basic, type: `vbc form1.vb /r:system.dll,system.drawing.dll,system.windows.forms.dll`  
+    -   If you are using Visual Basic, type: `vbc form1.vb`  
   
 3.  At the command prompt, type: `Form1.exe`  
   

@@ -1,6 +1,6 @@
 ---
 title: "/debug (Visual Basic)"
-ms.date: 07/20/2015
+ms.date: 03/10/2018
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -13,19 +13,18 @@ helpviewer_keywords:
   - "-debug compiler option [Visual Basic]"
   - "debug compiler option [Visual Basic]"
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
+author: rpetrusha
+ms.author: ronpet
 ---
-# /debug (Visual Basic)
+# -debug (Visual Basic)
 Causes the compiler to generate debugging information and place it in the output file(s).  
   
 ## Syntax  
   
 ```  
-/debug[+ | -]  
+-debug[+ | -]  
 ' -or-  
-/debug:[full | pdbonly]  
+-debug:[full | pdbonly]  
 ```  
   
 ## Arguments  
@@ -42,7 +41,7 @@ Causes the compiler to generate debugging information and place it in the output
   
  For information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
-|To set /debug in the Visual Studio integrated development environment|  
+|To set -debug in the Visual Studio integrated development environment|  
 |---|  
 |1.  With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Click **Advanced Compile Options**.<br />4.  Modify the value in the **Generate Debug Info** box.|  
   
@@ -50,7 +49,7 @@ Causes the compiler to generate debugging information and place it in the output
  The following example puts debugging information in output file `App.exe`.  
   
 ```  
-vbc /debug /out:app.exe test.vb  
+vbc -debug -out:app.exe test.vb  
 ```  
   
 ## See Also  

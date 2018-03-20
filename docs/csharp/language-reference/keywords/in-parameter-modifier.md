@@ -56,7 +56,10 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
   
 - Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
 
-You typically declare `in` arguments to avoid the copy operations necessary for passing arguments by value. This is most useful when arguments are structures or arrays of structures.
+You typically declare `in` arguments to avoid the copy operations necessary for passing arguments by value. This is most useful when arguments are value types such as structures where copy operations are more expensive than passing by reference.
+
+> [!WARNING]
+>  `in` parameters can be even more expensive if misused. The compiler cannot know if any member method modifies the state of the struct. To ensure that the object is not modified, the compiler creates a copy and calls member references using that copy. Any modifications are to that defensive copy. Given this, you should consider defining structures as `readonly struct`.
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
@@ -66,3 +69,4 @@ You typically declare `in` arguments to avoid the copy operations necessary for 
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)  
  [Method Parameters](../../../csharp/language-reference/keywords/method-parameters.md)
+ [Reference Semantics with Value Types](../../../csharp/reference-semantics-with-value-types.md)

@@ -24,7 +24,7 @@ SOLID principles are critical techniques to be used in any modern and mission-cr
 
 -   Liskov substitution principle
 
--   Inversion Segregation principle
+-   Interface Segregation principle
 
 -   Dependency Inversion principle
 

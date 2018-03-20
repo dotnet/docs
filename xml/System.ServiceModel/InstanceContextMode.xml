@@ -51,7 +51,7 @@
         <ReturnType>System.ServiceModel.InstanceContextMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created prior to and recycled subsequent to each call. If the channel does not create a session this value behaves as if it were <see cref="F:System.ServiceModel.InstanceContextMode.PerCall" />.</summary>
+        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created prior to and recycled subsequent to each call.</summary>
       </Docs>
     </Member>
     <Member MemberName="PerSession">
@@ -68,7 +68,7 @@
         <ReturnType>System.ServiceModel.InstanceContextMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created for each session.</summary>
+        <summary>A new <see cref="T:System.ServiceModel.InstanceContext" /> object is created for each session. If the channel does not create a session this value behaves as if it were <see cref="F:System.ServiceModel.InstanceContextMode.PerCall" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Single">

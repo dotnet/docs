@@ -402,7 +402,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.XmlWriter" /> does not escape URI attributes.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Xml.XmlWriter" /> do not escape URI attributes; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Xml.XmlWriter" /> does not escape URI attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

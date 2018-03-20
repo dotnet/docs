@@ -22,7 +22,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in t
 
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 
-- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. See [Ref locals](#ref-locals) for more information.
+- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. See [Ref locals](#ref-locals) for more information.
 
 ## Passing an argument by reference
 
@@ -104,7 +104,13 @@ For example, the following statement defines a ref local value that is returned 
 ref decimal estValue = ref Building.GetEstimatedValue();
 ```
 
-Note that the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value." 
+You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
+
+```csharp
+ref VeryLargeStruct reflocal = ref veryLargeStruct;
+```
+
+Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value." 
  
 ## A ref returns and ref locals example
 

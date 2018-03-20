@@ -56,6 +56,10 @@ There are two primary versioning rules:
 - Additive: .NET Standard versions are logically concentric circles: higher versions incorporate all APIs from previous versions. There are no breaking changes between versions.
 - Immutable. Once shipped, .NET Standard versions are frozen. New APIs will first become available in specific .NET implementations, such as .NET Core. If the .NET Standard review board believes the new APIs should be made available everywhere, they'll be added in a new .NET Standard version.
 
+### Accessing APIs outside of .NET Standard
+
+Sometimes you need to access APIs outside the .NET Standard. This could either be framework-specific .NET APIs or OS-specific APIs. In those case you should use [multi-targeting](class-libraries-multi-targeting.md), which allows you create .NET Standard-based wrappers.
+
 ## Comparison to Portable Class Libraries
 
 .NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".

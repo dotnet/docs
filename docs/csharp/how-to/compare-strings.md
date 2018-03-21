@@ -1,7 +1,7 @@
 ---
 title: "How to: Compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
-ms.date: 03/13/2018
+ms.date: 03/20/2018
 ms.prod: .net
 ms.technology: 
   - "devlang-csharp"
@@ -14,9 +14,59 @@ ms.author: "wiwagn"
 ---
 # How to compare strings in C# #
 
-When you compare strings, you define an order among them. Comparisons are used to sort a sequence of strings. Once the sequence is in a known order, it is easier to search, both for software and for humans. Other comparisons may check if strings are the same. These sameness checks are similar to equality, but some differences, such as case differences, may be ignored.
+You compare strings to answer one of two questions: "Are these two strings
+equal?" or "In what order should these strings be placed when sorting them?"
+
+Those two questions are complicated by factors that affect string
+comparisons: 
+- You can choose an ordinal or linguistic comparison.
+- You can choose if case matters.
+- You can choose to compare string values, or the references to the string storage.
+- You can choose culture specific comparisons.
+- Culture sensitive comparisons are platform-dependent.
+
+<< Insert table when done>>
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
+
+When you compare strings, you define an order among them. Comparisons are
+used to sort a sequence of strings. Once the sequence is in a known order,
+it is easier to search, both for software and for humans. Other comparisons
+may check if strings are the same. These sameness checks are similar to
+equality, but some differences, such as case differences, may be ignored.
+
+## Default ordinal comparisons
+
+The most common operations, <xref:System.String.CompareTo%2A?displayProperty=nameWithType> and
+<xref:System.String.Equals%2A?displayProperty=nameWithType> or <xref:System.String.op_equality?displayProperty=nameWithType> use
+an ordinal comparison, a case-sensitive comparison, and use the current
+culture. The results are shown in the following example.
+
+[!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
+
+Ordinal comparisons do not take linguistic rules into account when comparing
+strings. They will compare the strings character by character. Case-sensitive
+comparisons use capitalization in their comparisons. The most important point
+about these default comparison methods is that because they use the current
+culture, the results depend on the locale and language settings of the
+machine where they run. These comparisons are unsuitable for comparisons
+where order should be consistent across machines or locations.
+
+## Case-insensitive ordinal comparisons
+
+The <xref:System.String.Equals%2A?displayProperty=nameWithType> method
+enables you to specify a <xref:System.StringComparison> value to specify
+a case-insensitive comparison. There is also a static <xref:System.String.Compare%2A>
+method that supports this option as well. All of these methods are shown
+in the following code:
+
+[!code-csharp-interactive[Comparing strings ignoring case](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
+
+You use the <xref:System.StringComparison.OrdinalIgnoreCase?displayProperty=nameWithType>
+value to specify that you want case-insensitive comparisons. 
+
+## Linguistic comparisons
+
 
 The methods that compare strings indicate that one string is greater than or less than the other, or that the two strings are equal. The comparison result depends on rules that specify whether to perform an *ordinal comparison* or a *culture-sensitive comparison* and if case should be considered. You pick the rules that match your scenario.
 
@@ -31,16 +81,10 @@ Culture-sensitive comparisons are typically used to compare and sort strings inp
 
 The following example shows how to correctly compare strings whose sort order will not change based on the locale of the user's computer. It declares and initializes two string variables. The two strings are compared for equality using an ordinal comparison. Try it yourself to see that the two strings are not considered equal using an ordinal comparison.
 
-[!code-csharp-interactive[Comparing strings using an ordinal comparison](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#1)]
-
 
 The following code compares the two strings using a case insensitive ordinal comparison. Case-insensitive means "user" equals "User". The result is the same as comparing the value returned by <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> using an ordinal comparison. Run it to verify that the two strings are equal.
 
-[!code-csharp-interactive[Comparing strings ignoring case](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#2)]
-
 The <xref:System.String> class also contains static <xref:System.String.Equals%2A> methods you can use similar to the instance methods. The following code shows both case-sensitive and case-insensitive ordinal comparisons using the static methods: 
-
-[!code-csharp-interactive[Comparing for equality with static string methods](../../../samples/snippets/csharp/how-to/strings/CompareStrings.cs#3)]
 
 The following example demonstrates the *string interning* feature of C#. When a program declares two or more identical string variables, the compiler stores them all in the same location. By calling the <xref:System.Object.ReferenceEquals%2A> method, you can see that the two strings actually refer to the same object in memory. Use the <xref:System.String.Copy%2A?displayProperty=nameWithType> method to avoid interning. After the copy has been made, the two strings have different storage locations, even though they have the same value. Run the following sample to show that strings `a` and `b` are *interned* meaning they share the same storage. The strings `a` and `c` are not.
 

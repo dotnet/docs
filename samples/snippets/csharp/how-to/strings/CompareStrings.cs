@@ -9,7 +9,6 @@ namespace HowToStrings
         public static void Examples()
         {
             OrdinalEquality();
-            OrdinalIgnoreCase();
             OrdinalStaticComparison();
             ReferenceEqualAndInterning();
 
@@ -28,34 +27,36 @@ namespace HowToStrings
             string root = @"C:\users";
             string root2 = @"C:\Users";
 
-            bool result = root.Equals(root2, StringComparison.Ordinal);
-
+            bool result = root.Equals(root2);
+            int comparison = root.CompareTo(root2);
             Console.WriteLine($"Ordinal comparison: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
+            if (comparison < 0)
+                Console.WriteLine($"<{root}> is less than <{root2}>");
+            else if (comparison > 0)
+                Console.WriteLine($"<{root}> is greater than <{root2}>");
+            else
+                Console.WriteLine($"<{root}> and <{root2}> are equivalent in order");
+
+            result = root.Equals(root2, StringComparison.Ordinal);
+            Console.WriteLine($"Ordinal comparison: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
+
+            Console.WriteLine($"Using == says that <{root}> and <{root2}> are {(root == root2 ? "equal" : "not equal")}");               
             // </Snippet1>
         }
 
-        private static void OrdinalIgnoreCase()
+        private static void OrdinalStaticComparison()
         {
             // <Snippet2>
             string root = @"C:\users";
             string root2 = @"C:\Users";
 
             bool result = root.Equals(root2, StringComparison.OrdinalIgnoreCase);
-            Console.WriteLine($"Ordinal ignore case: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
-            // </Snippet2>
-        }
-
-        private static void OrdinalStaticComparison()
-        {
-            // <Snippet3>
-            string root = @"C:\users";
-            string root2 = @"C:\Users";
-
-            bool areEqual = String.Equals(root, root2, StringComparison.Ordinal);
+            Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(result ? "equal." : "not equal.")}");
+            bool areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
             Console.WriteLine($"Ordinal static: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
             areEqual = String.Equals(root, root2, StringComparison.OrdinalIgnoreCase);
             Console.WriteLine($"Ordinal static ignore case: <{root}> and <{root2}> are {(areEqual ? "equal." : "not equal.")}");
-            // </Snippet3>
+            // </Snippet2>
         }
         private static void ReferenceEqualAndInterning()
         {

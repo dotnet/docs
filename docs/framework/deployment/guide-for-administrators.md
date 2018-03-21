@@ -228,7 +228,7 @@ This step-by-step article describes how a system administrator can deploy the [!
  The following log files are generated during [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] setup:  
   
  %temp%\Microsoft .NET Framework 4.5*.txt  
- %temp%\Microsoft .NET Framework 4.5\*.html  
+ %temp%\Microsoft .NET Framework 4.5*.html  
   
  You can use the [log collection tool](http://www.microsoft.com/download/details.aspx?id=12493) to collect the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] log files and to create a compressed cabinet (.cab) file that reduces the size of the files.  
   
